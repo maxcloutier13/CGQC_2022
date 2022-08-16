@@ -1646,7 +1646,7 @@ class cgqc_heli_ah6 : cgqc_heli_melb_base
             property = "ExtLongL";
             control = "CheckboxNumber";
             expression = "_this animateSource ['ExtLongL',_value,true]";
-            defaultValue = "1";
+            defaultValue = "0";
         };
         class rhs_ExtLongR
         {
@@ -1655,7 +1655,7 @@ class cgqc_heli_ah6 : cgqc_heli_melb_base
             property = "ExtLongR";
             control = "CheckboxNumber";
             expression = "_this animateSource ['ExtLongR',_value,true]";
-            defaultValue = "1";
+            defaultValue = "0";
         };
     };
     class Components : Components
@@ -1721,6 +1721,33 @@ class cgqc_heli_ah6 : cgqc_heli_melb_base
                 };
             };
         };
+    };
+};
+
+class cgqc_heli_cloutier : cgqc_heli_ah6
+{
+    scope = 1;
+    author = "silent1";
+    displayName = "Cloutier's Little Bird";
+    slingLoadMaxCargoMass = 1900;
+    transportSoldier = 1;
+    class rhs_ExtLongL
+    {
+        displayName = "Extend left pylon";
+        tooltip = "Extended weapon pylon on the port side \nSome clipping occurs with GAU-19";
+        property = "ExtLongL";
+        control = "CheckboxNumber";
+        expression = "_this animateSource ['ExtLongL',_value,true]";
+        defaultValue = "1";
+    };
+    class rhs_ExtLongR
+    {
+        displayName = "Extend right pylon";
+        tooltip = "Extended weapon pylon on the starboard side";
+        property = "ExtLongR";
+        control = "CheckboxNumber";
+        expression = "_this animateSource ['ExtLongR',_value,true]";
+        defaultValue = "1";
     };
 };
 

@@ -21,7 +21,7 @@ _unit addPrimaryWeaponItem "Tier1_M4BII_NGAL_M300C_Black_FL";
 _unit addPrimaryWeaponItem "Tier1_EXPS3_0_3xMag_Black_Up";
 _unit addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
 _unit addPrimaryWeaponItem "rhsusf_acc_grip2";
-_unit addWeapon "cgqc_gun_law_wood";
+_unit addWeapon "rhs_weap_m72a7";
 _unit addWeapon "cgqc_gun_glock19_wood";
 _unit addHandgunItem "Tier1_15Rnd_9x19_JHP";
 

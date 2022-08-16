@@ -86,7 +86,6 @@ class CfgPatches
 			"cgqc_vest_mk1_pilot",
 			"cgqc_vest_mk1_pilot_black",
 			"cgqc_gun_glock19_wood",
-			"cgqc_gun_law_wood",
 			"cgqc_acc_M8541A_wood",
 			"cgqc_acc_bipod_wood",
 			"cgqc_acc_anpeq15_laser_wood",

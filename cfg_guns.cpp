@@ -1,5 +1,4 @@
 class Tier1_Glock19_WAR_TB;
-class rhs_weap_m72a7;
 class rhs_weap_m4a1_blockII;
 class rhs_weap_m4a1_blockII_M203;
 class rhs_weap_mk18;
@@ -29,17 +28,6 @@ class cgqc_gun_glock19_wood : Tier1_Glock19_WAR_TB
 	*/
 };
 
-// Law
-class cgqc_gun_law_wood : rhs_weap_m72a7
-{
-	scope = 2;
-	author = "silent1";
-	_generalMacro = "cgqc_gun_law_wood";
-	baseWeapon = "cgqc_gun_law_wood";
-	displayName = "CGQC m72a7 LAW";
-	// hiddenSelectionsTextures[] = {"\CGQC_2022\guns\cgqc_gun_law_wood.paa"};
-};
-
 // Items -----------------------------------------------------------------------
 class cgqc_item_rangefinder : Rangefinder
 {
@@ -67,7 +55,7 @@ class cgqc_gun_mk1_m4a1blkII : rhs_weap_m4a1_blockII
 	_generalMacro = "cgqc_gun_mk1_m4a1blkII";
 	baseWeapon = "cgqc_gun_mk1_m4a1blkII";
 	displayName = "CGQC m4a1 Block II";
-	// hiddenSelectionsTextures[] = {"\CGQC\guns\cgqc_gun_law_wood.paa"};
+	// hiddenSelectionsTextures[] = {"\CGQC\guns\rhs_weap_m72a7.paa"};
 };
 
 class cgqc_gun_mk1_m4a1blkII_gl : rhs_weap_m4a1_blockII_M203
@@ -77,7 +65,7 @@ class cgqc_gun_mk1_m4a1blkII_gl : rhs_weap_m4a1_blockII_M203
 	_generalMacro = "cgqc_gun_mk1_m4a1blkII_gl";
 	baseWeapon = "cgqc_gun_mk1_m4a1blkII_gl";
 	displayName = "CGQC m4a1 Block II m203";
-	// hiddenSelectionsTextures[] = {"\CGQC\guns\cgqc_gun_law_wood.paa"};
+	// hiddenSelectionsTextures[] = {"\CGQC\guns\rhs_weap_m72a7.paa"};
 };
 
 class cgqc_gun_mk1_mk18 : rhs_weap_mk18
@@ -87,7 +75,7 @@ class cgqc_gun_mk1_mk18 : rhs_weap_mk18
 	_generalMacro = "cgqc_gun_mk1_mk18";
 	baseWeapon = "cgqc_gun_mk1_mk18";
 	displayName = "CGQC mk18";
-	// hiddenSelectionsTextures[] = {"\CGQC\guns\cgqc_gun_law_wood.paa"};
+	// hiddenSelectionsTextures[] = {"\CGQC\guns\rhs_weap_m72a7.paa"};
 };
 
 class cgqc_gun_mk1_hk417 : arifle_SPAR_03_blk_F
@@ -97,7 +85,7 @@ class cgqc_gun_mk1_hk417 : arifle_SPAR_03_blk_F
 	_generalMacro = "cgqc_gun_mk1_hk417";
 	baseWeapon = "cgqc_gun_mk1_hk417";
 	displayName = "CGQC hk417";
-	// hiddenSelectionsTextures[] = {"\CGQC\guns\cgqc_gun_law_wood.paa"};
+	// hiddenSelectionsTextures[] = {"\CGQC\guns\rhs_weap_m72a7.paa"};
 	class LinkedItems
 	{
 		class LinkedItemsMuzzle

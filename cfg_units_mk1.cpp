@@ -62,8 +62,8 @@ class CGQC_units_mk1_1_Rifleman_Carbine : cgqc_soldat_moderne
     side = 1;
     displayName = "Rifleman (Carbine)";
     uniformClass = "cgqc_uniform_mk1";
-    weapons[] = {"cgqc_gun_mk1_rifleman_m4a1", "cgqc_gun_law_wood", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
-    respawnWeapons[] = {"cgqc_gun_mk1_rifleman_m4a1", "cgqc_gun_law_wood", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
+    weapons[] = {"cgqc_gun_mk1_rifleman_m4a1", "rhs_weap_m72a7", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
+    respawnWeapons[] = {"cgqc_gun_mk1_rifleman_m4a1", "rhs_weap_m72a7", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
     items[] = {"ACRE_PRC343", "ACRE_PRC152", "ItemAndroid", "ACE_microDAGR", "ItemcTabHCam", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_IR_Strobe_Item", "ACE_RangeCard"};
     respawnItems[] = {items};
     magazines[] = {"Tier1_15Rnd_9x19_JHP", "ACE_M84", "ACE_M84", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "HandGrenade", "HandGrenade"};
@@ -81,8 +81,8 @@ class CGQC_units_mk1_1_Rifleman_CQB : cgqc_soldat_moderne
     side = 1;
     displayName = "Rifleman (CQB)";
     uniformClass = "cgqc_uniform_mk1";
-    weapons[] = {"cgqc_gun_mk1_rifleman_mk18", "cgqc_gun_law_wood", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
-    respawnWeapons[] = {"cgqc_gun_mk1_rifleman_mk18", "cgqc_gun_law_wood", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
+    weapons[] = {"cgqc_gun_mk1_rifleman_mk18", "rhs_weap_m72a7", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
+    respawnWeapons[] = {"cgqc_gun_mk1_rifleman_mk18", "rhs_weap_m72a7", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
     items[] = {"ACRE_PRC343", "ACRE_PRC152", "ItemAndroid", "ACE_microDAGR", "ItemcTabHCam", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_IR_Strobe_Item", "ACE_RangeCard"};
     respawnItems[] = {items};
     magazines[] = {"Tier1_15Rnd_9x19_JHP", "ACE_M84", "ACE_M84", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "HandGrenade", "HandGrenade"};

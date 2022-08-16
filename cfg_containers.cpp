@@ -37,6 +37,15 @@ class cgqc_box_mk1_rolebox : Box_NATO_Equip_F
     };
 };
 
+class cgqc_box_mk1_rolebox_green : cgqc_box_mk1_rolebox
+{
+    author = "silent1";
+    _generalMacro = "cgqc_box_mk1_rolebox_green";
+    displayName = "CGQC MK1 Rolebox (Green)";
+    hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_rolebox_green.paa",
+                                  "\CGQC_2022\containers\cgqc_box_mk1_rolebox_label.paa"};
+};
+
 // Mk1+ box
 class cgqc_box_mk1_plus : cgqc_box_mk1_rolebox
 {
@@ -50,6 +59,15 @@ class cgqc_box_mk1_plus : cgqc_box_mk1_rolebox
     {
         init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1_plus.sqf'";
     };
+};
+
+class cgqc_box_mk1_plus_green : cgqc_box_mk1_plus
+{
+    author = "silent1";
+    _generalMacro = "cgqc_box_mk1_plus_green";
+    displayName = "CGQC MK1+ Rolebox (Green)";
+    hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_rolebox_green.paa",
+                                  "\CGQC_2022\containers\cgqc_box_mk1_plus_label.paa"};
 };
 
 // Original training map box
@@ -82,6 +100,14 @@ class cgqc_box_original : B_supplyCrate_F
     class TransportItems
     {
     };
+};
+
+class cgqc_box_original_green : B_supplyCrate_F
+{
+    author = "silent1";
+    _generalMacro = "cgqc_box_original_green";
+    displayName = "CGQC SupplyBox Originale (green)";
+    hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_originale_green.paa"};
 };
 
 // Basic Backpacks --------------------------------------------------------------------------------------

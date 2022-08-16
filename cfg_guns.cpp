@@ -13,6 +13,8 @@ class srifle_LRR_F;
 class arifle_SPAR_03_blk_F;
 class Rangefinder;
 class Laserdesignator_03;
+class CBA_MiscItem_ItemInfo;
+class MRH_BluForTransponder;
 
 // Pistol.
 class cgqc_gun_glock19_wood : Tier1_Glock19_WAR_TB
@@ -29,6 +31,25 @@ class cgqc_gun_glock19_wood : Tier1_Glock19_WAR_TB
 };
 
 // Items -----------------------------------------------------------------------
+class cgqc_item_transponder : MRH_BluForTransponder
+{
+	scope = 2;
+	scopeArsenal = 2;
+	scopeCurator = 2;
+	author = "silent1";
+	displayName = "CGQC BluFor Transponder";
+	editorCategory = "EdCat_Equipment";
+	editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Default\Prop.jpg";
+	editorSubcategory = "EdSubcat_InventoryItems";
+	// picture = "\MRHSatellite\paa\transponder.paa";
+	descriptionShort = "Transponder (plus léger)";
+	ace_arsenal_hide = 0;
+	class ItemInfo : CBA_MiscItem_ItemInfo
+	{
+		mass = 1;
+	};
+};
+
 class cgqc_item_rangefinder : Rangefinder
 {
 	scope = 2;

@@ -1,4 +1,5 @@
 class Air;
+class B_Plane_CAS_01_dynamicLoadout_F;
 class Helicopter : Air
 {
     class ViewPilot;
@@ -7197,4 +7198,16 @@ class cgqc_heli_ch47_10 : cgqc_heli_ch47f
     crew = "CGQC_units_mk1_4_Pilot_heli";
     typicalCargo[] = {"CGQC_units_mk1_4_crew_heli"};
     editorPreview = "rhsusf\addons\rhsusf_editorPreviews\data\RHS_CH_47F_10.paa";
+};
+
+// Planes
+
+class cgqc_plane_a10 : B_Plane_CAS_01_dynamicLoadout_F
+{
+    scope = 2;
+    faction = "cgqc";
+    author = "silent1";
+    displayName = "A10";
+    crew = "CGQC_units_mk1_4_Pilot_jet";
+    typicalCargo[] = {"CGQC_units_mk1_4_Pilot_jet"};
 };

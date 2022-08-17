@@ -74,7 +74,8 @@ class CfgPatches
 			"cgqc_heli_mh6",
 			"cgqc_heli_uh1",
 			"cgqc_heli_uh60m",
-			"cgqc_heli_ch47_10"};
+			"cgqc_heli_ch47_10",
+			"cgqc_plane_a10"};
 		weapons[] = {
 			"cgqc_helmet_mk1",
 			"cgqc_helmet_mk1_medic",

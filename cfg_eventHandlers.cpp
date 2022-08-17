@@ -6,23 +6,6 @@ class Extended_PreInit_EventHandlers
         // init = QUOTE(call COMPILE_FILE(XEH_preInit));
         // Load the arsenal categories
         init = "execVM '\cgqc_2022\scripts\arsenal_modifs.sqf'";
-        // Hide some bullshit items
-        class ItemMicroDAGR
-        {
-            scope = 0;
-        };
-        class ACE_DAGR
-        {
-            scope = 0;
-        };
-        class ACE_HuntIR_monitor
-        {
-            scope = 0;
-        };
-        class ACE_clacker
-        {
-            scope = 0;
-        };
     };
 };
 

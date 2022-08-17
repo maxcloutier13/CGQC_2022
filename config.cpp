@@ -159,3 +159,5 @@ class cfgVehicles
 };
 // Groups ---------------------------------------------------------------------------------
 #include "cfg_groups.cpp"
+// Eventhandlers
+#include "cfg_eventHandlers.cpp"

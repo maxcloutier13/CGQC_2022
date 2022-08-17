@@ -1895,7 +1895,7 @@ class cgqc_heli_mh6 : cgqc_heli_melb_base
 
 class cgqc_heli_dickforce : cgqc_heli_mh6
 {
-    scope = 2;
+    scope = 1;
     author = "silent1";
     displayName = "MH-6 Dickforce";
     hiddenSelectionsTextures[] = {

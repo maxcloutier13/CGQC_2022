@@ -72,6 +72,8 @@ class CfgPatches
 			"CGQC_units_mk1_4_crew_heli",
 			"cgqc_heli_ah6",
 			"cgqc_heli_mh6",
+			"cgqc_heli_dickforce",
+			"cgqc_heli_cloutier",
 			"cgqc_heli_uh1",
 			"cgqc_heli_uh60m",
 			"cgqc_heli_ch47_10",
@@ -157,3 +159,5 @@ class cfgVehicles
 };
 // Groups ---------------------------------------------------------------------------------
 #include "cfg_groups.cpp"
+// Eventhandlers
+#include "cfg_eventHandlers.cpp"

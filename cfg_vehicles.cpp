@@ -170,7 +170,9 @@ class cgqc_heli_melb_base : Helicopter_Base_H
     weapons[] = {"rhsusf_weap_LWIRCM"};
     magazines[] = {"rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM"};
     hiddenSelections[] = {"camo1", "d_SN"};
-    hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_melb\data\melb_ext_co.paa", "rhsusf\addons\rhsusf_melb\data\decals\SN\blank_ca.paa"};
+    hiddenSelectionsTextures[] = {
+        "cgqc_2022\vehicles\cgqc_heli_airforce.paa",
+        "rhsusf\addons\rhsusf_melb\data\decals\SN\blank_ca.paa"};
     class MFD
     {
     };
@@ -1891,6 +1893,15 @@ class cgqc_heli_mh6 : cgqc_heli_melb_base
     };
 };
 
+class cgqc_heli_dickforce : cgqc_heli_mh6
+{
+    scope = 1;
+    author = "silent1";
+    displayName = "MH-6 Dickforce";
+    hiddenSelectionsTextures[] = {
+        "cgqc_2022\vehicles\cgqc_heli_dickforce.paa",
+        "rhsusf\addons\rhsusf_melb\data\decals\SN\blank_ca.paa"};
+};
 // Huey ----------------------------------------------------------------------------------------------------
 class cgqc_heli_uh1_base : Helicopter_Base_H
 {

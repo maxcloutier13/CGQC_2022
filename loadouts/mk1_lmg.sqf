@@ -34,7 +34,6 @@ _unit addWeapon "cgqc_item_rangefinder";
 
 comment "Add items to containers";
 _unit addItemToUniform "ACRE_PRC343";
-_unit addItemToUniform "ACRE_PRC152";
 _unit addItemToUniform "ItemAndroid";
 _unit addItemToUniform "ACE_microDAGR";
 _unit addItemToUniform "ItemcTabHCam";

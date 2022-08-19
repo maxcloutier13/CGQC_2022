@@ -38,7 +38,7 @@ comment "Add items to containers";
 this addItemToUniform "ACRE_PRC343";
 this addItemToUniform "ItemAndroid";
 this addItemToUniform "ACE_microDAGR";
-this addItemToUniform "ItemcTabHCam";
+this addItemToUniform "cgqc_item_helmetCam";
 for "_i" from 1 to 10 do {
 	this addItemToUniform "ACE_fieldDressing";
 };

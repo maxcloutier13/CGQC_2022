@@ -38,7 +38,7 @@ comment "Add items to containers";
 _unit addItemToUniform "ACRE_PRC343";
 _unit addItemToUniform "ItemAndroid";
 _unit addItemToUniform "ACE_microDAGR";
-_unit addItemToUniform "ItemcTabHCam";
+_unit addItemToUniform "cgqc_item_helmetCam";
 for "_i" from 1 to 10 do {
 	_unit addItemToUniform "ACE_fieldDressing";
 };

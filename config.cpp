@@ -95,7 +95,7 @@ class CfgPatches
 			"cgqc_acc_M8541A_wood",
 			"cgqc_acc_bipod_wood",
 			"cgqc_acc_anpeq15_laser_wood",
-			"cgqc_acc_silencer_wood"
+			"cgqc_acc_silencer_wood",
 			"cgqc_gun_mk1_m4a1blkII",
 			"cgqc_gun_mk1_m4a1blkII_gl",
 			"cgqc_gun_mk1_mk18",

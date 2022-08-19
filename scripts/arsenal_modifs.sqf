@@ -55,6 +55,7 @@ private _electronics = [
 	"REV_darter_item",
 	"REV_demine_item",
 	"ItemAndroid",
+	"cgqc_item_helmetCam",
 	"ItemcTabHCam",
 	"ItemcTab",
 	"MRH_FoldedSatcomAntenna",

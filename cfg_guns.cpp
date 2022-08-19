@@ -31,6 +31,20 @@ class cgqc_gun_glock19_wood : Tier1_Glock19_WAR_TB
 };
 
 // Items -----------------------------------------------------------------------
+class cgqc_item_helmetCam : CBA_MiscItem
+{
+	scope = 2;
+	author = "Gundy-Riouken-Raspu";
+	displayname = "CGQC Camera";
+	descriptionshort = "Caméra de casque";
+	descriptionuse = "<t color='#9cf953'>Use: </t>Used to record and stream video";
+	picture = "\cTab\img\cTab_helmetCam_ico.paa";
+	simulation = "Weapon";
+	class ItemInfo : CBA_MiscItem_ItemInfo
+	{
+		mass = 1;
+	};
+};
 class cgqc_item_transponder : MRH_BluForTransponder
 {
 	scope = 2;

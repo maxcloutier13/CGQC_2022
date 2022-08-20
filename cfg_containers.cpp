@@ -70,6 +70,30 @@ class cgqc_box_mk1_plus_green : cgqc_box_mk1_plus
                                   "\CGQC_2022\containers\cgqc_box_mk1_plus_label.paa"};
 };
 
+// Mk1++ box
+class cgqc_box_mk1_plus_plus : cgqc_box_mk1_rolebox
+{
+    author = "silent1";
+    _generalMacro = "cgqc_box_mk1_plus_plus";
+    displayName = "CGQC MK1++ Rolebox";
+    hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_rolebox_texture.paa",
+                                  "\CGQC_2022\containers\cgqc_box_mk1_plus_plus_label.paa"};
+    editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\Box_NATO_Equip_F.jpg";
+    class EventHandlers
+    {
+        init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1_plus_plus.sqf'";
+    };
+};
+
+class cgqc_box_mk1_plus_plus_green : cgqc_box_mk1_plus_plus
+{
+    author = "silent1";
+    _generalMacro = "cgqc_box_mk1_plus_plus_green";
+    displayName = "CGQC MK1++ Rolebox (Green)";
+    hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_rolebox_green.paa",
+                                  "\CGQC_2022\containers\cgqc_box_mk1_plus_plus_label.paa"};
+};
+
 // Original training map box
 class cgqc_box_original : B_supplyCrate_F
 {

@@ -31,6 +31,8 @@ class CfgPatches
 			"cgqc_box_mk1_rolebox_green",
 			"cgqc_box_mk1_plus",
 			"cgqc_box_mk1_plus_green",
+			"cgqc_box_mk1_plus_plus",
+			"cgqc_box_mk1_plus_plus_green",
 			"cgqc_box_original",
 			"cgqc_box_original_green",
 			"CGQC_units_mk1_0_HQ_pack",

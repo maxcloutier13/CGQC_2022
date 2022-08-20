@@ -15,6 +15,7 @@ class Rangefinder;
 class Laserdesignator_03;
 class CBA_MiscItem_ItemInfo;
 class MRH_BluForTransponder;
+class CBA_MiscItem;
 
 // Pistol.
 class cgqc_gun_glock19_wood : Tier1_Glock19_WAR_TB

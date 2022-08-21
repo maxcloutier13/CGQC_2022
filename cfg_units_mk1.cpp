@@ -43,7 +43,7 @@ class CGQC_units_mk1_0_SquadLeader : cgqc_soldat_moderne
     side = 1;
     displayName = "Squad Leader";
     uniformClass = "cgqc_uniform_mk1";
-    weapons[] = {"cgqc_gun_mk1_hq_m4a1", "cgqc_gun_glock19_wood", "cgqc_item_laserdesignator", "Put", "Throw"};
+    weapons[] = {"cgqc_gun_mk1_TL_m4a1", "cgqc_gun_glock19_wood", "cgqc_item_laserdesignator", "Put", "Throw"};
     respawnWeapons[] = {"cgqc_gun_mk1_TL_m4a1", "cgqc_gun_glock19_wood", "cgqc_item_laserdesignator", "Put", "Throw"};
     items[] = {"ACRE_PRC343", "ACRE_PRC152", "ACE_microDAGR", "cgqc_item_helmetCam", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_IR_Strobe_Item", "ACE_RangeCard", "cgqc_item_transponder"};
     respawnItems[] = {"ACRE_PRC343", "ACRE_PRC152", "ACE_microDAGR", "cgqc_item_helmetCam", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_IR_Strobe_Item", "ACE_RangeCard", "cgqc_item_transponder"};

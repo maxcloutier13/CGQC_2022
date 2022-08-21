@@ -15,7 +15,7 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 comment "Add weapons";
-_unit addWeapon "cgqc_gun_mk1_m4a1blkII";
+_unit addWeapon "cgqc_gun_mk1_TL_m4a1";
 _unit addPrimaryWeaponItem "Tier1_KAC_556_QDC_CQB_Black";
 _unit addPrimaryWeaponItem "Tier1_M4BII_NGAL_M600V_Black";
 _unit addPrimaryWeaponItem "Tier1_Razor_Gen2_16_Geissele_Docter";
@@ -84,6 +84,18 @@ for "_i" from 1 to 3 do {
 _unit addItemToBackpack "B_IR_Grenade";
 for "_i" from 1 to 8 do {
 	_unit addItemToBackpack "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
+};
+for "_i" from 1 to 5 do {
+	_unit addItemToBackpack "1Rnd_HE_Grenade_shell";
+};
+for "_i" from 1 to 3 do {
+	_unit addItemToBackpack "UGL_FlareRed_F";
+};
+for "_i" from 1 to 3 do {
+	_unit addItemToBackpack "1Rnd_SmokeBlue_Grenade_shell";
+};
+for "_i" from 1 to 3 do {
+	_unit addItemToBackpack "1Rnd_Smoke_Grenade_shell";
 };
 _unit addItemToBackpack "rev_darter_item";
 _unit addItemToBackpack "itemcTab";

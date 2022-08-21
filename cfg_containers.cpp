@@ -342,10 +342,25 @@ class CGQC_units_mk1_0_SquadLeader_pack : cgqc_pack_mk1_kitbag
             count = 1;
             magazine = "B_IR_Grenade";
         };
-        class _xx_rhsusf_m112_mag
+        class _xx_1Rnd_HE_Grenade_shell
         {
-            count = 1;
-            magazine = "rhsusf_m112_mag";
+            count = 5;
+            magazine = "1Rnd_HE_Grenade_shell";
+        };
+        class _xx_UGL_FlareRed_F
+        {
+            count = 4;
+            magazine = "UGL_FlareRed_F";
+        };
+        class _xx_1Rnd_SmokeBlue_Grenade_shell
+        {
+            count = 4;
+            magazine = "1Rnd_SmokeBlue_Grenade_shell";
+        };
+        class _xx_1Rnd_Smoke_Grenade_shell
+        {
+            count = 4;
+            magazine = "1Rnd_Smoke_Grenade_shell";
         };
     };
     class TransportItems

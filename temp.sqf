@@ -426,3 +426,74 @@ cgqc_vest_mk1_tan
 cgqc_vest_mk1_tan_lr
 cgqc_vest_mk1_tan_rf
 cgqc_vest_mk1_tan_ar
+
+
+
+// Ace action attempt
+_action = ["Rifleman (Carbine)", "Rôles MK1", "", {
+	[this] spawn {
+		execVM "\CGQC_2022\loadouts\mk1_rifleman_carbine.sqf";
+	};
+}, {true}] call ace_interact_menu_fnc_createAction;
+[this, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
+
+
+_action = {execVM "\CGQC_2022\loadouts\mk1_rifleman_carbine.sqf";};
+_actionCreated = ['Rifleman', 'Rifleman', '', _action, {true}] call ace_interact_menu_fnc_createAction;
+[this, 1, ["ACE_MainActions"], _actionCreated] call ace_interact_menu_fnc_addActionToObject;
+
+
+
+myaction = ['TestAction 1', 'Test', '', {
+	hint 'test1';
+}, {
+	true
+}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions"], myaction] call ace_interact_menu_fnc_addActionToObject;
+myaction = ['TestAction 2', 'Test', '', {
+	hint 'test2';
+}, {
+	true
+}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions"], myaction] call ace_interact_menu_fnc_addActionToObject;
+
+
+// Example
+_action = ["mytrack","My Track Name","",{params ["_target"]; [_target,"my_track_1"] execVM "KIF_Gramophon\play_track.sqf";},{true}] call ace_interact_menu_fnc_createAction;
+[this, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
+
+
+// More example 
+_actionHeliGo = {execVM "EGX_HeliTransport\OrderHeliGO.sqf";};
+_OrderHeliGo = ['OrderHeliGO', 'Order heli GO', '', _actionHeliGo, {true}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions"], _OrderHeliGo] call ace_interact_menu_fnc_addActionToObject;
+
+};
+
+
+// Longer example 
+private _breakWindowAction = [
+	"Break_Window",
+	"Break Window",
+	["", "#C4D4E0"],
+	{
+		params ["_target", "_player", "_params"];
+		_params params ["_building", "_selectionName"];
+		_building setHit [_selectionName, 1, true];
+	}, // statement
+	{
+		params ["_target", "_player", "_params"];
+		_params params ["_building", "_selectionName"];
+		(_building getHit _selectionName) < 1;
+	// true;
+	}, // condition
+	{}, // child code
+	[_building, _x], // params
+	[0,0,0], // position
+	2, // distance
+	//[showDisabled,enableInside,canCollapse,runOnHover,doNotCheckLOS] // special params
+	[false, true, true, false, true]
+] call ace_interact_menu_fnc_createAction;
+
+// [typeOf _building, 0, [], _breakWindowAction] call ace_interact_menu_fnc_addActionToClass;
+[_helperObject, 0, [], _breakWindowAction] call ace_interact_menu_fnc_addActionToObject;

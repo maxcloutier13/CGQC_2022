@@ -127,16 +127,16 @@ class CfgPatches
 // Weapons ------------------------------------------------------------------------
 class cfgWeapons
 {
-// Custom helmets ---------------------------------------
-#include "cfg_helmets.cpp"
-// Custom uniforms ---------------------------------------
-#include "cfg_uniforms.cpp"
-// Custom vests ---------------------------------------
-#include "cfg_vests.cpp"
-// Custom guns ---------------------------------------
-#include "cfg_guns.cpp"
-// Custom accessories ---------------------------------------
-#include "cfg_acc.cpp"
+	// Custom helmets ---------------------------------------
+	#include "cfg_helmets.cpp"
+	// Custom uniforms ---------------------------------------
+	#include "cfg_uniforms.cpp"
+	// Custom vests ---------------------------------------
+	#include "cfg_vests.cpp"
+	// Custom guns ---------------------------------------
+	#include "cfg_guns.cpp"
+	// Custom accessories ---------------------------------------
+	#include "cfg_acc.cpp"
 };
 // Custom Editor category for units ------------------------------------------------
 class CfgEditorSubcategories
@@ -150,14 +150,14 @@ class CfgEditorSubcategories
 #include "cfg_pre_vehicles.cpp"
 class cfgVehicles
 {
-// Containers
-#include "cfg_containers.cpp"
-// Training units
-#include "cfg_units_training.cpp"
-// mk1 units
-#include "cfg_units_mk1.cpp"
-// mk1 vehicles
-#include "cfg_vehicles.cpp"
+	// Containers
+	#include "cfg_containers.cpp"
+	// Training units
+	#include "cfg_units_training.cpp"
+	// mk1 units
+	#include "cfg_units_mk1.cpp"
+	// mk1 vehicles
+	#include "cfg_vehicles.cpp"
 };
 // Groups ---------------------------------------------------------------------------------
 #include "cfg_groups.cpp"

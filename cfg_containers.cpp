@@ -3,7 +3,6 @@ class B_Parachute;
 class Box_NATO_Equip_F;
 class B_supplyCrate_F;
 class cgqc_pack_mk1_magic;
-
 // Mk1 box
 class cgqc_box_mk1_rolebox : Box_NATO_Equip_F
 {
@@ -36,7 +35,6 @@ class cgqc_box_mk1_rolebox : Box_NATO_Equip_F
     {
     };
 };
-
 class cgqc_box_mk1_rolebox_green : cgqc_box_mk1_rolebox
 {
     author = "silent1";
@@ -45,7 +43,6 @@ class cgqc_box_mk1_rolebox_green : cgqc_box_mk1_rolebox
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_rolebox_green.paa",
                                   "\CGQC_2022\containers\cgqc_box_mk1_rolebox_label.paa"};
 };
-
 // Mk1+ box
 class cgqc_box_mk1_plus : cgqc_box_mk1_rolebox
 {
@@ -60,7 +57,6 @@ class cgqc_box_mk1_plus : cgqc_box_mk1_rolebox
         init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1_plus.sqf'";
     };
 };
-
 class cgqc_box_mk1_plus_green : cgqc_box_mk1_plus
 {
     author = "silent1";
@@ -69,7 +65,6 @@ class cgqc_box_mk1_plus_green : cgqc_box_mk1_plus
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_rolebox_green.paa",
                                   "\CGQC_2022\containers\cgqc_box_mk1_plus_label.paa"};
 };
-
 // Mk1++ box
 class cgqc_box_mk1_plus_plus : cgqc_box_mk1_rolebox
 {
@@ -84,7 +79,6 @@ class cgqc_box_mk1_plus_plus : cgqc_box_mk1_rolebox
         init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1_plus_plus.sqf'";
     };
 };
-
 class cgqc_box_mk1_plus_plus_green : cgqc_box_mk1_plus_plus
 {
     author = "silent1";
@@ -93,7 +87,6 @@ class cgqc_box_mk1_plus_plus_green : cgqc_box_mk1_plus_plus
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_rolebox_green.paa",
                                   "\CGQC_2022\containers\cgqc_box_mk1_plus_plus_label.paa"};
 };
-
 // Original training map box
 class cgqc_box_original : B_supplyCrate_F
 {
@@ -125,7 +118,6 @@ class cgqc_box_original : B_supplyCrate_F
     {
     };
 };
-
 class cgqc_box_original_green : B_supplyCrate_F
 {
     author = "silent1";
@@ -133,7 +125,6 @@ class cgqc_box_original_green : B_supplyCrate_F
     displayName = "CGQC SupplyBox Originale (green)";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_originale_green.paa"};
 };
-
 // Basic Backpacks --------------------------------------------------------------------------------------
 class cgqc_pack_mk1_kitbag : B_Kitbag_rgr
 {
@@ -144,9 +135,96 @@ class cgqc_pack_mk1_kitbag : B_Kitbag_rgr
     mass = 20;
     displayName = "CGQC Kitbag mk1 Vert";
 };
-
 // mk1 Backpacks --------------------------------------------------------------------------------------
 class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_kitbag
+{
+    scope = 1;
+    class TransportMagazines
+    {
+        class _xx_ACE_Chemlight_HiRed
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_HiRed";
+        };
+        class _xx_ACE_Chemlight_IR
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_IR";
+        };
+        class _xx_SmokeShell
+        {
+            count = 1;
+            magazine = "SmokeShell";
+        };
+        class _xx_SmokeShellBlue
+        {
+            count = 1;
+            magazine = "SmokeShellBlue";
+        };
+        class _xx_SmokeShellRed
+        {
+            count = 1;
+            magazine = "SmokeShellRed";
+        };
+        class _xx_B_IR_Grenade
+        {
+            count = 1;
+            magazine = "B_IR_Grenade";
+        };
+    };
+    class TransportItems
+    {
+        class _xx_ACE_fieldDressing
+        {
+            count = 5;
+            name = "ACE_fieldDressing";
+        };
+        class _xx_ACE_salineIV_500
+        {
+            count = 1;
+            name = "ACE_salineIV_500";
+        };
+        class _xx_ACE_EntrenchingTool
+        {
+            count = 1;
+            name = "ACE_EntrenchingTool";
+        };
+        class _xx_G_mas_can_gasmask
+        {
+            count = 1;
+            name = "G_mas_can_gasmask";
+        };
+        class _xx_ItemcTab
+        {
+            count = 1;
+            name = "ItemcTab";
+        };
+        class _xx_MRH_FoldedSatcomAntenna
+        {
+            count = 1;
+            name = "MRH_FoldedSatcomAntenna";
+        };
+        class _xx_MRH_TacticalDisplay
+        {
+            count = 1;
+            name = "MRH_TacticalDisplay";
+        };
+        class _xx_ACRE_PRC117F
+        {
+            count = 1;
+            name = "ACRE_PRC117F";
+        };
+        class _xx_Rev_darter_item
+        {
+            count = 1;
+            name = "Rev_darter_item";
+        };
+    };
+    class TransportWeapons
+    {
+    };
+};
+class CGQC_units_mk1_0_Drone_operator_pack : cgqc_pack_mk1_kitbag
 {
     scope = 1;
     class TransportMagazines
@@ -175,6 +253,11 @@ class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_kitbag
         {
             count = 3;
             magazine = "SmokeShellRed";
+        };
+        class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
+        {
+            count = 5;
+            magazine = "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
         };
         class _xx_B_IR_Grenade
         {
@@ -209,32 +292,99 @@ class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_kitbag
             count = 1;
             name = "G_mas_can_gasmask";
         };
-        class _xx_ItemcTab
+        class _xx_Rev_darter_item
         {
-            count = 1;
-            name = "ItemcTab";
-        };
-        class _xx_MRH_FoldedSatcomAntenna
-        {
-            count = 1;
-            name = "MRH_FoldedSatcomAntenna";
-        };
-        class _xx_MRH_TacticalDisplay
-        {
-            count = 1;
-            name = "MRH_TacticalDisplay";
-        };
-        class _xx_ACRE_PRC117F
-        {
-            count = 1;
-            name = "ACRE_PRC117F";
+            count = 2;
+            name = "Rev_darter_item";
         };
     };
     class TransportWeapons
     {
     };
 };
-
+class CGQC_units_mk1_0_SquadLeader_pack : cgqc_pack_mk1_kitbag
+{
+    scope = 1;
+    class TransportMagazines
+    {
+        class _xx_ACE_Chemlight_HiRed
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_HiRed";
+        };
+        class _xx_ACE_Chemlight_IR
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_IR";
+        };
+        class _xx_SmokeShell
+        {
+            count = 3;
+            magazine = "SmokeShell";
+        };
+        class _xx_SmokeShellBlue
+        {
+            count = 3;
+            magazine = "SmokeShellBlue";
+        };
+        class _xx_SmokeShellRed
+        {
+            count = 3;
+            magazine = "SmokeShellRed";
+        };
+        class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
+        {
+            count = 5;
+            magazine = "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
+        };
+        class _xx_B_IR_Grenade
+        {
+            count = 1;
+            magazine = "B_IR_Grenade";
+        };
+        class _xx_rhsusf_m112_mag
+        {
+            count = 1;
+            magazine = "rhsusf_m112_mag";
+        };
+    };
+    class TransportItems
+    {
+        class _xx_ACE_fieldDressing
+        {
+            count = 10;
+            name = "ACE_fieldDressing";
+        };
+        class _xx_ACE_salineIV_500
+        {
+            count = 2;
+            name = "ACE_salineIV_500";
+        };
+        class _xx_ACE_EntrenchingTool
+        {
+            count = 1;
+            name = "ACE_EntrenchingTool";
+        };
+        class _xx_G_mas_can_gasmask
+        {
+            count = 1;
+            name = "G_mas_can_gasmask";
+        };
+        class _xx_Rev_darter_item
+        {
+            count = 1;
+            name = "Rev_darter_item";
+        };
+        class _xx_ItemcTab
+        {
+            count = 1;
+            name = "ItemcTab";
+        };
+    };
+    class TransportWeapons
+    {
+    };
+};
 class CGQC_units_mk1_0_TeamLeader_Carbine_pack : cgqc_pack_mk1_kitbag
 {
     scope = 1;
@@ -328,7 +478,6 @@ class CGQC_units_mk1_0_TeamLeader_Carbine_pack : cgqc_pack_mk1_kitbag
     {
     };
 };
-
 class CGQC_units_mk1_0_TeamLeader_CQB_pack : cgqc_pack_mk1_kitbag
 {
     scope = 1;
@@ -422,7 +571,6 @@ class CGQC_units_mk1_0_TeamLeader_CQB_pack : cgqc_pack_mk1_kitbag
     {
     };
 };
-
 class CGQC_units_mk1_1_Rifleman_Carbine_pack : cgqc_pack_mk1_kitbag
 {
     scope = 1;
@@ -491,7 +639,6 @@ class CGQC_units_mk1_1_Rifleman_Carbine_pack : cgqc_pack_mk1_kitbag
     {
     };
 };
-
 class CGQC_units_mk1_1_Rifleman_CQB_pack : cgqc_pack_mk1_kitbag
 {
     scope = 1;
@@ -565,7 +712,6 @@ class CGQC_units_mk1_1_Rifleman_CQB_pack : cgqc_pack_mk1_kitbag
     {
     };
 };
-
 class CGQC_units_mk1_1_Medic_pack : cgqc_pack_mk1_kitbag
 {
     scope = 1;
@@ -659,7 +805,6 @@ class CGQC_units_mk1_1_Medic_pack : cgqc_pack_mk1_kitbag
     {
     };
 };
-
 class CGQC_units_mk1_1_Engineer_pack : cgqc_pack_mk1_kitbag
 {
     scope = 1;
@@ -764,7 +909,6 @@ class CGQC_units_mk1_1_Engineer_pack : cgqc_pack_mk1_kitbag
     {
     };
 };
-
 class CGQC_units_mk1_2_LMG_pack : cgqc_pack_mk1_kitbag
 {
     scope = 1;
@@ -838,7 +982,6 @@ class CGQC_units_mk1_2_LMG_pack : cgqc_pack_mk1_kitbag
     {
     };
 };
-
 class CGQC_units_mk1_2_HMG_pack : cgqc_pack_mk1_kitbag
 {
     scope = 1;
@@ -912,7 +1055,6 @@ class CGQC_units_mk1_2_HMG_pack : cgqc_pack_mk1_kitbag
     {
     };
 };
-
 class CGQC_units_mk1_2_Marksman_pack : cgqc_pack_mk1_kitbag
 {
     scope = 1;
@@ -996,7 +1138,6 @@ class CGQC_units_mk1_2_Marksman_pack : cgqc_pack_mk1_kitbag
     {
     };
 };
-
 class CGQC_units_mk1_2_Sniper_pack : cgqc_pack_mk1_kitbag
 {
     scope = 1;
@@ -1080,7 +1221,6 @@ class CGQC_units_mk1_2_Sniper_pack : cgqc_pack_mk1_kitbag
     {
     };
 };
-
 class CGQC_units_mk1_3_AT_MAAWS_pack : cgqc_pack_mk1_kitbag
 {
     scope = 1;
@@ -1154,7 +1294,6 @@ class CGQC_units_mk1_3_AT_MAAWS_pack : cgqc_pack_mk1_kitbag
     {
     };
 };
-
 class CGQC_units_mk1_3_AT_Javelin_pack : cgqc_pack_mk1_kitbag
 {
     scope = 1;
@@ -1228,7 +1367,6 @@ class CGQC_units_mk1_3_AT_Javelin_pack : cgqc_pack_mk1_kitbag
     {
     };
 };
-
 class CGQC_units_mk1_4_Tank_Driver_pack : cgqc_pack_mk1_magic
 {
     scope = 1;
@@ -1247,7 +1385,6 @@ class CGQC_units_mk1_4_Tank_Driver_pack : cgqc_pack_mk1_magic
     {
     };
 };
-
 class CGQC_units_mk1_4_Pilot_heli_pack : B_Parachute
 {
     scope = 1;
@@ -1261,7 +1398,6 @@ class CGQC_units_mk1_4_Pilot_heli_pack : B_Parachute
     {
     };
 };
-
 class CGQC_units_mk1_4_Pilot_Jet_pack : B_Parachute
 {
     scope = 1;
@@ -1275,7 +1411,6 @@ class CGQC_units_mk1_4_Pilot_Jet_pack : B_Parachute
     {
     };
 };
-
 class CGQC_units_mk1_4_crew_heli_pack : B_Parachute
 {
     scope = 1;

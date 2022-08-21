@@ -108,7 +108,6 @@ class Heli_Transport_01_base_F : Helicopter_Base_H
 class Heli_Transport_02_base_F : Helicopter_Base_H
 {
 };
-
 // Little birds --------------------------------------------------------------------------------------------
 class cgqc_heli_melb_base : Helicopter_Base_H
 {
@@ -1557,7 +1556,6 @@ class cgqc_heli_melb_base : Helicopter_Base_H
         };
     };
 };
-
 class cgqc_heli_ah6 : cgqc_heli_melb_base
 {
     scope = 2;
@@ -1726,7 +1724,6 @@ class cgqc_heli_ah6 : cgqc_heli_melb_base
         };
     };
 };
-
 class cgqc_heli_cloutier : cgqc_heli_ah6
 {
     scope = 1;
@@ -1753,7 +1750,6 @@ class cgqc_heli_cloutier : cgqc_heli_ah6
         defaultValue = "1";
     };
 };
-
 class cgqc_heli_mh6 : cgqc_heli_melb_base
 {
     scope = 2;
@@ -1892,7 +1888,6 @@ class cgqc_heli_mh6 : cgqc_heli_melb_base
         };
     };
 };
-
 class cgqc_heli_dickforce : cgqc_heli_mh6
 {
     scope = 1;
@@ -3079,7 +3074,6 @@ class cgqc_heli_uh1_base : Helicopter_Base_H
         };
     };
 };
-
 class cgqc_heli_uh1 : cgqc_heli_uh1_base
 {
     scope = 2;
@@ -3155,7 +3149,6 @@ class cgqc_heli_uh1 : cgqc_heli_uh1_base
         };
     };
 };
-
 // Blackhawk ------------------------------------------------------------------------------------------------
 class cgqc_heli_U60_base : Heli_Transport_01_base_F
 {
@@ -3210,7 +3203,6 @@ class cgqc_heli_U60_base : Heli_Transport_01_base_F
     preciseGetInOut = 1;
     getInRadius = 1.5;
 };
-
 class cgqc_heli_UH60M_base : cgqc_heli_U60_base
 {
     scope = 0;
@@ -4139,7 +4131,6 @@ class cgqc_heli_UH60M_base : cgqc_heli_U60_base
         maxTailRotorStress = 60000;
     };
 };
-
 class cgqc_heli_uh60m : cgqc_heli_UH60M_base
 {
     scope = 2;
@@ -4528,7 +4519,6 @@ class cgqc_heli_uh60m : cgqc_heli_UH60M_base
         };
     };
 };
-
 // Chinook --------------------------------------------------------------------------------------------------
 class cgqc_heli_ch47_base : Heli_Transport_02_base_F
 {
@@ -7186,7 +7176,6 @@ class cgqc_heli_ch47_base : Heli_Transport_02_base_F
         };
     };
 };
-
 class cgqc_heli_ch47f : cgqc_heli_ch47_base
 {
     scope = 0;
@@ -7199,7 +7188,6 @@ class cgqc_heli_ch47f : cgqc_heli_ch47_base
     accuracy = 1000;
     editorPreview = "rhsusf\addons\rhsusf_editorPreviews\data\RHS_CH_47F.paa";
 };
-
 class cgqc_heli_ch47_10 : cgqc_heli_ch47f
 {
     scope = 2;
@@ -7210,9 +7198,7 @@ class cgqc_heli_ch47_10 : cgqc_heli_ch47f
     typicalCargo[] = {"CGQC_units_mk1_4_crew_heli"};
     editorPreview = "rhsusf\addons\rhsusf_editorPreviews\data\RHS_CH_47F_10.paa";
 };
-
 // Planes
-
 class cgqc_plane_a10 : B_Plane_CAS_01_dynamicLoadout_F
 {
     scope = 2;

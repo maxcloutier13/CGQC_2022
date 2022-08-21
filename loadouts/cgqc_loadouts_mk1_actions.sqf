@@ -1,3 +1,4 @@
+// Old school actions
 _source addAction ["---- Change de rôle mk1------", ""];
 _source addAction ["- Rifleman - Carbine", "\CGQC_2022\loadouts\mk1_rifleman_carbine.sqf"];
 _source addAction ["- Rifleman - CQB", "\CGQC_2022\loadouts\mk1_rifleman_cqb.sqf"];

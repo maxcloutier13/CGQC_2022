@@ -34,6 +34,7 @@ _unit addItemToUniform "ACRE_PRC343";
 _unit addItemToUniform "ACRE_PRC152";
 _unit addItemToUniform "ItemAndroid";
 _unit addItemToUniform "ACE_microDAGR";
+_unit addItemToUniform "cgqc_item_transponder";
 _unit addItemToUniform "cgqc_item_helmetCam";
 for "_i" from 1 to 10 do {
 	_unit addItemToUniform "ACE_fieldDressing";

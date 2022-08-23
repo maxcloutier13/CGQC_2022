@@ -147,6 +147,10 @@ class CfgEditorSubcategories
 	{
 		displayName = "Men (mk1)";
 	};
+	class EdSubcat_cgqc_funstuff
+	{
+		displayName = "Funstuff";
+	};
 };
 // Custom units ----------------------------------------------------------------------------
 #include "cfg_pre_vehicles.cpp"

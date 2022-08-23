@@ -1890,9 +1890,20 @@ class cgqc_heli_mh6 : cgqc_heli_melb_base
 };
 class cgqc_heli_dickforce : cgqc_heli_mh6
 {
-    scope = 1;
+    scope = 2;
     author = "silent1";
     displayName = "MH-6 Dickforce";
+    editorSubcategory = "EdSubcat_cgqc_funstuff";
+    hiddenSelectionsTextures[] = {
+        "cgqc_2022\vehicles\cgqc_heli_dickforce.paa",
+        "rhsusf\addons\rhsusf_melb\data\decals\SN\blank_ca.paa"};
+};
+class cgqc_heli_dickforce_ah6 : cgqc_heli_ah6
+{
+    scope = 2;
+    author = "silent1";
+    displayName = "AH-6 Dickforce";
+    editorSubcategory = "EdSubcat_cgqc_funstuff";
     hiddenSelectionsTextures[] = {
         "cgqc_2022\vehicles\cgqc_heli_dickforce.paa",
         "rhsusf\addons\rhsusf_melb\data\decals\SN\blank_ca.paa"};

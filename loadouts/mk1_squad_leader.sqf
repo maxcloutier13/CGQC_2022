@@ -15,7 +15,7 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 comment "Add weapons";
-_unit addWeapon "cgqc_gun_mk1_TL_m4a1";
+_unit addWeapon "cgqc_gun_mk1_m4a1blkII_gl";
 _unit addPrimaryWeaponItem "Tier1_KAC_556_QDC_CQB_Black";
 _unit addPrimaryWeaponItem "Tier1_M4BII_NGAL_M600V_Black";
 _unit addPrimaryWeaponItem "Tier1_Razor_Gen2_16_Geissele_Docter";

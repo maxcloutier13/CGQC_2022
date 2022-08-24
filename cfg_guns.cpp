@@ -64,7 +64,6 @@ class cgqc_item_transponder : MRH_BluForTransponder
 		mass = 1;
 	};
 };
-
 class cgqc_item_rangefinder : Rangefinder
 {
 	scope = 2;
@@ -73,7 +72,6 @@ class cgqc_item_rangefinder : Rangefinder
 	baseWeapon = "cgqc_item_rangefinder";
 	displayName = "CGQC Rangefinder";
 };
-
 class cgqc_item_laserdesignator : Laserdesignator_03
 {
 	scope = 2;
@@ -93,7 +91,6 @@ class cgqc_gun_mk1_m4a1blkII : rhs_weap_m4a1_blockII
 	displayName = "CGQC m4a1 Block II";
 	// hiddenSelectionsTextures[] = {"\CGQC\guns\rhs_weap_m72a7.paa"};
 };
-
 class cgqc_gun_mk1_m4a1blkII_gl : rhs_weap_m4a1_blockII_M203
 {
 	scope = 2;
@@ -103,7 +100,6 @@ class cgqc_gun_mk1_m4a1blkII_gl : rhs_weap_m4a1_blockII_M203
 	displayName = "CGQC m4a1 Block II m203";
 	// hiddenSelectionsTextures[] = {"\CGQC\guns\rhs_weap_m72a7.paa"};
 };
-
 class cgqc_gun_mk1_mk18 : rhs_weap_mk18
 {
 	scope = 2;
@@ -113,7 +109,6 @@ class cgqc_gun_mk1_mk18 : rhs_weap_mk18
 	displayName = "CGQC mk18";
 	// hiddenSelectionsTextures[] = {"\CGQC\guns\rhs_weap_m72a7.paa"};
 };
-
 class cgqc_gun_mk1_hk417 : arifle_SPAR_03_blk_F
 {
 	scope = 2;
@@ -146,7 +141,6 @@ class cgqc_gun_mk1_hk417 : arifle_SPAR_03_blk_F
 		};
 	};
 };
-
 class cgqc_gun_mk1_mk46 : Tier1_MK46_Mod1_Savit
 {
 	scope = 2;
@@ -178,7 +172,6 @@ class cgqc_gun_mk1_mk46 : Tier1_MK46_Mod1_Savit
 		};
 	};
 };
-
 class cgqc_gun_mk1_mk48 : Tier1_MK48_Mod0
 {
 	scope = 2;
@@ -210,7 +203,6 @@ class cgqc_gun_mk1_mk48 : Tier1_MK48_Mod0
 		};
 	};
 };
-
 class cgqc_gun_mk1_MAAWS : launch_MRAWS_green_F
 {
 	scope = 2;
@@ -222,7 +214,6 @@ class cgqc_gun_mk1_MAAWS : launch_MRAWS_green_F
 	{
 	};
 };
-
 class cgqc_gun_mk1_mp7 : arifle_mas_can_mp7_F
 {
 	scope = 2;
@@ -239,7 +230,6 @@ class cgqc_gun_mk1_mp7 : arifle_mas_can_mp7_F
 		};
 	};
 };
-
 class cgqc_gun_mk1_mk18_gl : rhs_weap_mk18_m320
 {
 	scope = 2;
@@ -266,7 +256,6 @@ class cgqc_gun_mk1_mk18_gl : rhs_weap_mk18_m320
 		};
 	};
 };
-
 class cgqc_gun_mk1_Javelin : launch_mas_can_javelin_F
 {
 	scope = 2;
@@ -278,7 +267,6 @@ class cgqc_gun_mk1_Javelin : launch_mas_can_javelin_F
 	{
 	};
 };
-
 class cgqc_gun_mk1_m200 : srifle_LRR_F
 {
 	scope = 2;
@@ -319,7 +307,6 @@ class cgqc_gun_mk1_hq_m4a1 : cgqc_gun_mk1_m4a1blkII
 		};
 	};
 };
-
 class cgqc_gun_mk1_TL_m4a1 : cgqc_gun_mk1_m4a1blkII_gl
 {
 	scope = 1;
@@ -342,7 +329,6 @@ class cgqc_gun_mk1_TL_m4a1 : cgqc_gun_mk1_m4a1blkII_gl
 		};
 	};
 };
-
 class cgqc_gun_mk1_rifleman_m4a1 : cgqc_gun_mk1_m4a1blkII
 {
 	scope = 1;
@@ -370,7 +356,6 @@ class cgqc_gun_mk1_rifleman_m4a1 : cgqc_gun_mk1_m4a1blkII
 		};
 	};
 };
-
 class cgqc_gun_mk1_rifleman_mk18 : cgqc_gun_mk1_mk18
 {
 	scope = 1;
@@ -398,7 +383,6 @@ class cgqc_gun_mk1_rifleman_mk18 : cgqc_gun_mk1_mk18
 		};
 	};
 };
-
 class cgqc_gun_mk1_marksman_417 : cgqc_gun_hk417_wood
 {
 	scope = 1;
@@ -426,7 +410,6 @@ class cgqc_gun_mk1_marksman_417 : cgqc_gun_hk417_wood
 		};
 	};
 };
-
 class cgqc_gun_mk1_engineer_m4a1 : cgqc_gun_mk1_m4a1blkII
 {
 	scope = 1;
@@ -454,7 +437,6 @@ class cgqc_gun_mk1_engineer_m4a1 : cgqc_gun_mk1_m4a1blkII
 		};
 	};
 };
-
 class cgqc_gun_mk1_medic_m4a1 : cgqc_gun_mk1_m4a1blkII
 {
 	scope = 1;
@@ -482,7 +464,6 @@ class cgqc_gun_mk1_medic_m4a1 : cgqc_gun_mk1_m4a1blkII
 		};
 	};
 };
-
 class cgqc_gun_mk1_AT_m4a1 : cgqc_gun_mk1_m4a1blkII
 {
 	scope = 1;

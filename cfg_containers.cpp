@@ -138,7 +138,7 @@ class cgqc_pack_mk1_kitbag : B_Kitbag_rgr
 // mk1 Backpacks --------------------------------------------------------------------------------------
 class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_kitbag
 {
-    scope = 1;
+    scope = 0;
     class TransportMagazines
     {
         class _xx_ACE_Chemlight_HiRed

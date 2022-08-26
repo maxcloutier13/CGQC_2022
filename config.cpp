@@ -169,3 +169,6 @@ class cfgVehicles
 #include "cfg_groups.cpp"
 // Eventhandlers
 #include "cfg_eventHandlers.cpp"
+
+// Audio ---------------------------------------------------------------------------------------
+#include "cfg_audio.cpp"

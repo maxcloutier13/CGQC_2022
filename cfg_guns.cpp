@@ -8,7 +8,7 @@ class cgqc_gun_hk417_wood;
 class launch_MRAWS_green_F;
 class arifle_mas_can_mp7_F;
 class rhs_weap_mk18_m320;
-class launch_mas_can_javelin_F;
+class launch_B_Titan_short_F;
 class srifle_LRR_F;
 class arifle_SPAR_03_blk_F;
 class Rangefinder;
@@ -256,17 +256,24 @@ class cgqc_gun_mk1_mk18_gl : rhs_weap_mk18_m320
 		};
 	};
 };
-class cgqc_gun_mk1_Javelin : launch_mas_can_javelin_F
+class cgqc_gun_mk1_Javelin: launch_B_Titan_short_F
 {
 	scope = 2;
 	author = "silent1";
 	_generalMacro = "cgqc_gun_mk1_Javelin";
+	displayName = "CGQC Javelin mk1";
+	scopeArsenal = 2;
 	baseWeapon = "cgqc_gun_mk1_Javelin";
-	displayName = "CGQC Javelin";
-	class LinkedItems
-	{
-	};
+	model = "\mas_can_lite\akm\mas_Javelin_Launcher.p3d";
+	picture = "\mas_can_lite\akm\gear_javelin_x_ca.paa";
+	reloadAction = "ReloadRPG";
+	magazines[] = {"jav_AT_mas_can","jav_AP_mas_can"};
+	descriptionshort = "Anti Tank Launcher<br />Caliber: 127 mm";
+	hiddenSelections[] = {};
+	hiddenSelectionsTextures[] = {};
+	ace_javelin_enabled = 1;
 };
+
 class cgqc_gun_mk1_m200 : srifle_LRR_F
 {
 	scope = 2;

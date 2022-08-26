@@ -497,3 +497,9 @@ private _breakWindowAction = [
 
 // [typeOf _building, 0, [], _breakWindowAction] call ace_interact_menu_fnc_addActionToClass;
 [_helperObject, 0, [], _breakWindowAction] call ace_interact_menu_fnc_addActionToObject;
+
+
+
+
+		
+	

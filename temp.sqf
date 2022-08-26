@@ -502,4 +502,7 @@ private _breakWindowAction = [
 
 
 		
-	
+[max_radio, false] call klpq_musicRadio_fnc_addRadio;
+_this addAction ["Relax", "\scripts\change_music.sqf", [0]]
+_this addAction ["Heavier", "\CGQC_2022\loadouts\mk1_driver_tank.sqf"]
+_this addAction ["Oldies", "\CGQC_2022\loadouts\mk1_driver_tank.sqf"]	

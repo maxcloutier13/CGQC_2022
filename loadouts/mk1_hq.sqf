@@ -94,7 +94,7 @@ for "_i" from 1 to 3 do {
 	_unit addItemToBackpack "SmokeShellRed";
 };
 _unit addItemToBackpack "B_IR_Grenade";
-_unit addItemToBackpack "rhsusf_m112_mag";
+ 
 _unit addHeadgear "cgqc_helmet_mk1";
 _unit addGoggles "G_mas_can_shemag_gog_l";
 

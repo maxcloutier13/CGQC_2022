@@ -264,11 +264,6 @@ class CGQC_units_mk1_0_Drone_operator_pack : cgqc_pack_mk1_kitbag
             count = 1;
             magazine = "B_IR_Grenade";
         };
-        class _xx_rhsusf_m112_mag
-        {
-            count = 1;
-            magazine = "rhsusf_m112_mag";
-        };
     };
     class TransportItems
     {
@@ -435,11 +430,6 @@ class CGQC_units_mk1_0_TeamLeader_Carbine_pack : cgqc_pack_mk1_kitbag
             count = 1;
             magazine = "B_IR_Grenade";
         };
-        class _xx_rhsusf_m112_mag
-        {
-            count = 1;
-            magazine = "rhsusf_m112_mag";
-        };
         class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
         {
             count = 12;
@@ -527,11 +517,6 @@ class CGQC_units_mk1_0_TeamLeader_CQB_pack : cgqc_pack_mk1_kitbag
         {
             count = 1;
             magazine = "B_IR_Grenade";
-        };
-        class _xx_rhsusf_m112_mag
-        {
-            count = 1;
-            magazine = "rhsusf_m112_mag";
         };
         class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
         {
@@ -688,11 +673,6 @@ class CGQC_units_mk1_1_Rifleman_CQB_pack : cgqc_pack_mk1_kitbag
         {
             count = 1;
             magazine = "B_IR_Grenade";
-        };
-        class _xx_rhsusf_m112_mag
-        {
-            count = 1;
-            magazine = "rhsusf_m112_mag";
         };
         class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
         {
@@ -959,11 +939,6 @@ class CGQC_units_mk1_2_LMG_pack : cgqc_pack_mk1_kitbag
             count = 1;
             magazine = "B_IR_Grenade";
         };
-        class _xx_rhsusf_m112_mag
-        {
-            count = 1;
-            magazine = "rhsusf_m112_mag";
-        };
         class _xx_rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote
         {
             count = 4;
@@ -1032,11 +1007,6 @@ class CGQC_units_mk1_2_HMG_pack : cgqc_pack_mk1_kitbag
             count = 1;
             magazine = "B_IR_Grenade";
         };
-        class _xx_rhsusf_m112_mag
-        {
-            count = 1;
-            magazine = "rhsusf_m112_mag";
-        };
         class _xx_Tier1_250Rnd_762x51_Belt_M993_AP
         {
             count = 2;
@@ -1104,11 +1074,6 @@ class CGQC_units_mk1_2_Marksman_pack : cgqc_pack_mk1_kitbag
         {
             count = 1;
             magazine = "B_IR_Grenade";
-        };
-        class _xx_rhsusf_m112_mag
-        {
-            count = 1;
-            magazine = "rhsusf_m112_mag";
         };
         class _xx_ACE_20Rnd_762x51_Mk319_Mod_0_Mag
         {
@@ -1188,11 +1153,7 @@ class CGQC_units_mk1_2_Sniper_pack : cgqc_pack_mk1_kitbag
             count = 1;
             magazine = "B_IR_Grenade";
         };
-        class _xx_rhsusf_m112_mag
-        {
-            count = 1;
-            magazine = "rhsusf_m112_mag";
-        };
+
         class _xx_7Rnd_408_Mag
         {
             count = 14;

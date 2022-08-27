@@ -87,7 +87,7 @@ for "_i" from 1 to 3 do {
 	_unit addItemToBackpack "SmokeShellRed";
 };
 _unit addItemToBackpack "B_IR_Grenade";
-_unit addItemToBackpack "rhsusf_m112_mag";
+ 
 for "_i" from 1 to 8 do {
 	_unit addItemToBackpack "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
 };

@@ -59,6 +59,9 @@ for "_i" from 1 to 2 do {
 _unit addItemToUniform "ACE_IR_Strobe_Item";
 _unit addItemToUniform "ACE_RangeCard";
 for "_i" from 1 to 2 do {
+	_unit addItemToVest "Tier1_15Rnd_9x19_JHP";
+};
+for "_i" from 1 to 2 do {
 	_unit addItemToVest "ACE_M84";
 };
 for "_i" from 1 to 7 do {

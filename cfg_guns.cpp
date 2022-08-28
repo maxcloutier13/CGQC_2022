@@ -107,7 +107,13 @@ class cgqc_gun_mk1_mk18 : rhs_weap_mk18
 	_generalMacro = "cgqc_gun_mk1_mk18";
 	baseWeapon = "cgqc_gun_mk1_mk18";
 	displayName = "CGQC mk18";
-	// hiddenSelectionsTextures[] = {"\CGQC\guns\rhs_weap_m72a7.paa"};
+	//model = "\cgqc_2022\guns\MK18.p3d";
+	hiddenSelectionsTextures[] = {"cgqc_2022\guns\m4\m4_cgqc.paa",
+								  "\rhsusf\addons\rhsusf_weapons3\M4BII\Data\rhs_mk18rail_t_co.paa",
+								  "rhsusf\addons\rhsusf_weapons\acc\grips\grippod\data\acc_co.paa",
+								  "rhsusf\addons\rhsusf_weapons\m4\data\m4acc_co.paa",
+								  "rhsusf\addons\rhsusf_weapons\m4\data\magpulstock_co.paa",
+								  "\rhsusf\addons\rhsusf_weapons\m320\data\m320_co.paa"};
 };
 class cgqc_gun_mk1_hk417 : arifle_SPAR_03_blk_F
 {
@@ -256,7 +262,7 @@ class cgqc_gun_mk1_mk18_gl : rhs_weap_mk18_m320
 		};
 	};
 };
-class cgqc_gun_mk1_Javelin: launch_B_Titan_short_F
+class cgqc_gun_mk1_Javelin : launch_B_Titan_short_F
 {
 	scope = 2;
 	author = "silent1";
@@ -267,13 +273,12 @@ class cgqc_gun_mk1_Javelin: launch_B_Titan_short_F
 	model = "\mas_can_lite\akm\mas_Javelin_Launcher.p3d";
 	picture = "\mas_can_lite\akm\gear_javelin_x_ca.paa";
 	reloadAction = "ReloadRPG";
-	magazines[] = {"jav_AT_mas_can","jav_AP_mas_can"};
+	magazines[] = {"jav_AT_mas_can", "jav_AP_mas_can"};
 	descriptionshort = "Anti Tank Launcher<br />Caliber: 127 mm";
 	hiddenSelections[] = {};
 	hiddenSelectionsTextures[] = {};
 	ace_javelin_enabled = 1;
 };
-
 class cgqc_gun_mk1_m200 : srifle_LRR_F
 {
 	scope = 2;
@@ -289,6 +294,24 @@ class cgqc_gun_mk1_m200 : srifle_LRR_F
 			item = "rhsusf_acc_nxs_5522x56_md_sun";
 		};
 	};
+};
+
+// Custom skins
+// Fortin
+class cgqc_gun_mk1_mk18_fortin : cgqc_gun_mk1_mk18
+{
+	scope = 2;
+	author = "silent1";
+	_generalMacro = "cgqc_gun_mk1_mk18_fortin";
+	baseWeapon = "cgqc_gun_mk1_mk18_fortin";
+	displayName = "CGQC mk18 - Fortin";
+	//model = "\cgqc_2022\guns\MK18.p3d";
+	hiddenSelectionsTextures[] = {"cgqc_2022\guns\m4\m4_fortin.paa",
+								  "\rhsusf\addons\rhsusf_weapons3\M4BII\Data\rhs_mk18rail_t_co.paa",
+								  "rhsusf\addons\rhsusf_weapons\acc\grips\grippod\data\acc_co.paa",
+								  "rhsusf\addons\rhsusf_weapons\m4\data\m4acc_co.paa",
+								  "rhsusf\addons\rhsusf_weapons\m4\data\magpulstock_co.paa",
+								  "\rhsusf\addons\rhsusf_weapons\m320\data\m320_co.paa"};
 };
 
 // mk1 setup ----------------------------------------------------------------------------------

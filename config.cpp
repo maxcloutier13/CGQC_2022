@@ -85,6 +85,24 @@ class CfgPatches
 		weapons[] = {
 			"cgqc_helmet_mk1",
 			"cgqc_helmet_mk1_medic",
+			"cgqc_helmet_mk1_black",
+			"cgqc_helmet_mk1_black_medic",
+			"cgqc_helmet_mk1_white",
+			"cgqc_helmet_mk1_white_medic",
+			"cgqc_helmet_mk1_desert",
+			"cgqc_helmet_mk1_desert_medic",
+			"cgqc_helmet_mk1_mcam",
+			"cgqc_helmet_mk1_mcam_medic",
+			"cgqc_helmet_mk1_cadpat",
+			"cgqc_helmet_mk1_cadpat_medic",
+			"cgqc_helmet_mk1_f_gray",
+			"cgqc_helmet_mk1_f_gray_medic",
+			"cgqc_helmet_mk1_f_coyote",
+			"cgqc_helmet_mk1_f_coyote_medic",
+			"cgqc_helmet_mk1_f_black",
+			"cgqc_helmet_mk1_f_gray_black",
+			"cgqc_helmet_mk1_f_green",
+			"cgqc_helmet_mk1_f_green_medic",
 			"cgqc_helmet_mk1_tank",
 			"cgqc_helmet_mk1_jetpilot",
 			"cgqc_uniform_mk1",
@@ -103,6 +121,7 @@ class CfgPatches
 			"cgqc_gun_mk1_m4a1blkII",
 			"cgqc_gun_mk1_m4a1blkII_gl",
 			"cgqc_gun_mk1_mk18",
+			"cgqc_gun_mk1_mk18_fortin",
 			"cgqc_gun_mk1_hk417",
 			"cgqc_gun_mk1_hq_m4a1",
 			"cgqc_gun_mk1_TL_m4a1",
@@ -129,16 +148,16 @@ class CfgPatches
 // Weapons ------------------------------------------------------------------------
 class cfgWeapons
 {
-	// Custom helmets ---------------------------------------
-	#include "cfg_helmets.cpp"
-	// Custom uniforms ---------------------------------------
-	#include "cfg_uniforms.cpp"
-	// Custom vests ---------------------------------------
-	#include "cfg_vests.cpp"
-	// Custom guns ---------------------------------------
-	#include "cfg_guns.cpp"
-	// Custom accessories ---------------------------------------
-	#include "cfg_acc.cpp"
+// Custom helmets ---------------------------------------
+#include "cfg_helmets.cpp"
+// Custom uniforms ---------------------------------------
+#include "cfg_uniforms.cpp"
+// Custom vests ---------------------------------------
+#include "cfg_vests.cpp"
+// Custom guns ---------------------------------------
+#include "cfg_guns.cpp"
+// Custom accessories ---------------------------------------
+#include "cfg_acc.cpp"
 };
 // Custom Editor category for units ------------------------------------------------
 class CfgEditorSubcategories
@@ -156,14 +175,14 @@ class CfgEditorSubcategories
 #include "cfg_pre_vehicles.cpp"
 class cfgVehicles
 {
-	// Containers
-	#include "cfg_containers.cpp"
-	// Training units
-	#include "cfg_units_training.cpp"
-	// mk1 units
-	#include "cfg_units_mk1.cpp"
-	// mk1 vehicles
-	#include "cfg_vehicles.cpp"
+// Containers
+#include "cfg_containers.cpp"
+// Training units
+#include "cfg_units_training.cpp"
+// mk1 units
+#include "cfg_units_mk1.cpp"
+// mk1 vehicles
+#include "cfg_vehicles.cpp"
 };
 // Groups ---------------------------------------------------------------------------------
 #include "cfg_groups.cpp"

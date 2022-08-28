@@ -507,3 +507,24 @@ _this addAction ["Relax", "cgqc_2022\scripts\change_music.sqf", [0]];
 _this addAction ["Heavier", "cgqc_2022\scripts\change_music.sqf", [1]];
 _this addAction ["Oldies", "cgqc_2022\scripts\change_music.sqf", [2]];
 [_this, false] call klpq_musicRadio_fnc_addRadio;	
+
+
+
+"H_mas_can_opscore_b",
+"H_mas_can_opscore_aor1",
+"H_mas_can_opscore_g",
+"H_mas_can_opscore",
+"H_mas_can_opscore_t",
+"H_mas_can_opscore_w",
+"H_mas_can_opscore_aor2",
+
+"H_mas_can_opscore_gog_b",
+"H_mas_can_opscore_gog_aor1",
+"H_mas_can_opscore_gog_g",
+"H_mas_can_opscore_gog",
+"H_mas_can_opscore_gog_t",
+"H_mas_can_opscore_gog_w",
+"H_mas_can_opscore_gog_aor2"
+
+"H_mas_can_opscorn",
+"H_mas_can_opscorn_gog",

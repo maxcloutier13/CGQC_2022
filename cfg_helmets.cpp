@@ -136,7 +136,7 @@ class cgqc_helmet_mk1_mcam_medic : cgqc_helmet_mk1
         "\cgqc_2022\helmets\cgqc_helmet_mk1_velcro_medic.paa",
         "\cgqc_2022\helmets\inside.paa"};
 };
-//Other helmets
+// Other helmets
 class cgqc_helmet_mk1_tank : rhsusf_cvc_green_ess
 {
     author = "silent1";
@@ -163,6 +163,10 @@ class cgqc_helmet_mk1_f_gray : H_mas_can_opscore
         "\cgqc_2022\helmets\gray.paa",
         "\cgqc_2022\helmets\cgqc_helmet_mk1_velcro.paa",
         "\cgqc_2022\helmets\inside_dark.paa"};
+    // Grad helmet compatibility
+    grad_slingHelmet_allow = true;
+    // Ctab camera compat
+    CTAB_Camera = true;
 };
 class cgqc_helmet_mk1_f_gray_medic : cgqc_helmet_mk1_f_gray
 {
@@ -191,7 +195,7 @@ class cgqc_helmet_mk1_f_black_medic : cgqc_helmet_mk1_f_gray
     _generalMacro = "cgqc_helmet_mk1_f_black_medic";
     displayName = "CGQC Casque Medic mk1 - Noir mat";
     hiddenSelectionsTextures[] = {
-         "\cgqc_2022\helmets\flat_black.paa",
+        "\cgqc_2022\helmets\flat_black.paa",
         "\cgqc_2022\helmets\cgqc_helmet_mk1_velcro_black_medic.paa",
         "\cgqc_2022\helmets\inside_dark.paa"};
 };

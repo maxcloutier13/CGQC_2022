@@ -100,7 +100,7 @@ class CfgPatches
 			"cgqc_helmet_mk1_f_coyote",
 			"cgqc_helmet_mk1_f_coyote_medic",
 			"cgqc_helmet_mk1_f_black",
-			"cgqc_helmet_mk1_f_gray_black",
+			"cgqc_helmet_mk1_f_black_medic",
 			"cgqc_helmet_mk1_f_green",
 			"cgqc_helmet_mk1_f_green_medic",
 			"cgqc_helmet_mk1_tank",

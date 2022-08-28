@@ -107,7 +107,7 @@ class cgqc_gun_mk1_mk18 : rhs_weap_mk18
 	_generalMacro = "cgqc_gun_mk1_mk18";
 	baseWeapon = "cgqc_gun_mk1_mk18";
 	displayName = "CGQC mk18";
-	model = "\cgqc_2022\guns\MK18.p3d";
+	//model = "\cgqc_2022\guns\MK18.p3d";
 	hiddenSelectionsTextures[] = {"cgqc_2022\guns\m4\m4_cgqc.paa",
 								  "\rhsusf\addons\rhsusf_weapons3\M4BII\Data\rhs_mk18rail_t_co.paa",
 								  "rhsusf\addons\rhsusf_weapons\acc\grips\grippod\data\acc_co.paa",
@@ -305,7 +305,7 @@ class cgqc_gun_mk1_mk18_fortin : cgqc_gun_mk1_mk18
 	_generalMacro = "cgqc_gun_mk1_mk18_fortin";
 	baseWeapon = "cgqc_gun_mk1_mk18_fortin";
 	displayName = "CGQC mk18 - Fortin";
-	model = "\cgqc_2022\guns\MK18.p3d";
+	//model = "\cgqc_2022\guns\MK18.p3d";
 	hiddenSelectionsTextures[] = {"cgqc_2022\guns\m4\m4_fortin.paa",
 								  "\rhsusf\addons\rhsusf_weapons3\M4BII\Data\rhs_mk18rail_t_co.paa",
 								  "rhsusf\addons\rhsusf_weapons\acc\grips\grippod\data\acc_co.paa",

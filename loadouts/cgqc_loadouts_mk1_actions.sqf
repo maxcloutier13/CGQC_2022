@@ -1,5 +1,5 @@
 // Old school actions
-_source addAction ["---- Change de rôle mk1------", ""];
+_source addAction ["---- Change de rôle mk1------", [], 6, true, true, "", "(_this distance _target) < 5"];
 _source addAction ["- Rifleman - Carbine", "\CGQC_2022\loadouts\mk1_rifleman_carbine.sqf", [], 6, true, true, "", "(_this distance _target) < 5"];
 _source addAction ["- Rifleman - CQB", "\CGQC_2022\loadouts\mk1_rifleman_cqb.sqf", [], 6, true, true, "", "(_this distance _target) < 5"];
 _source addAction ["- Medic", "\CGQC_2022\loadouts\mk1_medic.sqf", [], 6, true, true, "", "(_this distance _target) < 5"];

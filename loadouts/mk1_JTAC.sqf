@@ -15,29 +15,28 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 comment "Add weapons";
-_unit addWeapon "cgqc_gun_mk1_m4a1blkII_gl";
+_unit addWeapon "rhs_weap_m16a4_imod";
 _unit addPrimaryWeaponItem "Tier1_KAC_556_QDC_CQB_Black";
 _unit addPrimaryWeaponItem "Tier1_M4BII_NGAL_M600V_Black";
-_unit addPrimaryWeaponItem "Tier1_Razor_Gen2_16_Geissele_Docter";
+_unit addPrimaryWeaponItem "NForce_Atcr_RMR_Top_SKeetIR_Down";
 _unit addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
+_unit addPrimaryWeaponItem "Tier1_Harris_Bipod_Black";
 _unit addWeapon "cgqc_gun_glock19_wood";
+_unit addHandgunItem "Tier1_X300U";
 _unit addHandgunItem "Tier1_15Rnd_9x19_JHP";
 
 comment "Add containers";
 _unit forceAddUniform "cgqc_uniform_mk1";
 _unit addVest "cgqc_vest_mk1_tan";
-_unit addBackpack "cgqc_pack_mk1_kitbag";
+_unit addBackpack "CGQC_units_mk1_0_JTAC_pack";
 
 comment "Add binoculars";
 _unit addMagazine "Laserbatteries";
 _unit addWeapon "Laserdesignator_01_khk_F";
 
 comment "Add items to containers";
-_unit addItemToUniform "ACRE_PRC343";
-_unit addItemToUniform "ACRE_PRC152";
+_unit addItemToUniform "ItemAndroid";
 _unit addItemToUniform "ACE_microDAGR";
-_unit addItemToUniform "cgqc_item_transponder";
- 
 for "_i" from 1 to 10 do {
 	_unit addItemToUniform "ACE_fieldDressing";
 };
@@ -57,15 +56,19 @@ for "_i" from 1 to 2 do {
 };
 _unit addItemToUniform "ACE_IR_Strobe_Item";
 _unit addItemToUniform "ACE_RangeCard";
-for "_i" from 1 to 2 do {
-	_unit addItemToVest "Tier1_15Rnd_9x19_JHP";
-};
+_unit addItemToUniform "cgqc_item_transponder";
+_unit addItemToUniform "ACRE_PRC152";
+_unit addItemToUniform "Tier1_15Rnd_9x19_JHP";
 for "_i" from 1 to 2 do {
 	_unit addItemToVest "ACE_M84";
 };
-for "_i" from 1 to 12 do {
+for "_i" from 1 to 4 do {
+	_unit addItemToVest "HandGrenade";
+};
+for "_i" from 1 to 9 do {
 	_unit addItemToVest "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
 };
+_unit addItemToVest "Laserbatteries";
 for "_i" from 1 to 10 do {
 	_unit addItemToBackpack "ACE_fieldDressing";
 };
@@ -74,6 +77,13 @@ for "_i" from 1 to 2 do {
 };
 _unit addItemToBackpack "ACE_EntrenchingTool";
 _unit addItemToBackpack "G_mas_can_gasmask";
+_unit addItemToBackpack "Rev_darter_item";
+_unit addItemToBackpack "ACE_SpottingScope";
+_unit addItemToBackpack "ACE_Tripod";
+for "_i" from 1 to 2 do {
+	_unit addItemToBackpack "sps_black_hornet_01_Static_F";
+};
+_unit addItemToBackpack "ItemcTab";
 _unit addItemToBackpack "ACE_Chemlight_HiRed";
 _unit addItemToBackpack "ACE_Chemlight_IR";
 for "_i" from 1 to 3 do {
@@ -86,24 +96,10 @@ for "_i" from 1 to 3 do {
 	_unit addItemToBackpack "SmokeShellRed";
 };
 _unit addItemToBackpack "B_IR_Grenade";
-for "_i" from 1 to 8 do {
+_unit addItemToBackpack "rhsusf_m112_mag";
+for "_i" from 1 to 5 do {
 	_unit addItemToBackpack "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
 };
-for "_i" from 1 to 5 do {
-	_unit addItemToBackpack "1Rnd_HE_Grenade_shell";
-};
-for "_i" from 1 to 3 do {
-	_unit addItemToBackpack "UGL_FlareRed_F";
-};
-for "_i" from 1 to 3 do {
-	_unit addItemToBackpack "1Rnd_SmokeBlue_Grenade_shell";
-};
-for "_i" from 1 to 3 do {
-	_unit addItemToBackpack "1Rnd_Smoke_Grenade_shell";
-};
-_unit addItemToBackpack "sps_black_hornet_01_Static_F";
-_unit addItemToBackpack "rev_darter_item";
-_unit addItemToBackpack "itemcTab";
 _unit addHeadgear "cgqc_helmet_mk1";
 _unit addGoggles "G_mas_can_wrap_gog_B";
 

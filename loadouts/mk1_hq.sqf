@@ -30,7 +30,7 @@ _unit addBackpack "cgqc_pack_mk1_kitbag";
 
 comment "Add binoculars";
 _unit addMagazine "Laserbatteries";
-_unit addWeapon "cgqc_item_laserdesignator";
+_unit addWeapon "Laserdesignator_01_khk_F";
 
 comment "Add items to containers";
 _unit addItemToUniform "ACRE_PRC343";
@@ -83,6 +83,7 @@ _unit addItemToBackpack "MRH_FoldedSatcomAntenna";
 _unit addItemToBackpack "MRH_TacticalDisplay";
 _unit addItemToBackpack "ACRE_PRC117F";
 _unit addItemToBackpack "ACE_Chemlight_HiRed";
+_unit addItemToBackpack "sps_black_hornet_01_Static_F";
 _unit addItemToBackpack "ACE_Chemlight_IR";
 for "_i" from 1 to 3 do {
 	_unit addItemToBackpack "SmokeShell";

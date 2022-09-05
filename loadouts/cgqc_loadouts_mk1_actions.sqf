@@ -1,5 +1,9 @@
 // Old school actions
-_source addAction ["---- Change de rôle mk1------", [], 6, true, true, "", "(_this distance _target) < 5"];
+_source addAction ["---- Change de rôle mk1 (garde loadout)------", "\CGQC_2022\loadouts\empty.sqf", [], 6, true, true, "", "(_this distance _target) < 5"];
+_source addAction ["- Medic", "\CGQC_2022\loadouts\role_medic.sqf", [], 6, true, true, "", "(_this distance _target) < 5"];
+_source addAction ["- Ingénieur", "\CGQC_2022\loadouts\role_engineer.sqf", [], 6, true, true, "", "(_this distance _target) < 5"];
+_source addAction ["- EOD", "\CGQC_2022\loadouts\role_EOD.sqf", [], 6, true, true, "", "(_this distance _target) < 5"];
+_source addAction ["---- Change de loadout mk1------", "\CGQC_2022\loadouts\empty.sqf", [], 6, true, true, "", "(_this distance _target) < 5"];
 _source addAction ["- Rifleman - Carbine", "\CGQC_2022\loadouts\mk1_rifleman_carbine.sqf", [], 6, true, true, "", "(_this distance _target) < 5"];
 _source addAction ["- Rifleman - CQB", "\CGQC_2022\loadouts\mk1_rifleman_cqb.sqf", [], 6, true, true, "", "(_this distance _target) < 5"];
 _source addAction ["- Medic", "\CGQC_2022\loadouts\mk1_medic.sqf", [], 6, true, true, "", "(_this distance _target) < 5"];
@@ -13,6 +17,7 @@ _source addAction ["- MG (Heavy)", "\CGQC_2022\loadouts\mk1_hmg.sqf", [], 6, tru
 _source addAction ["- Marksman", "\CGQC_2022\loadouts\mk1_marksman.sqf", [], 6, true, true, "", "(_this distance _target) < 5"];
 _source addAction ["- Sniper", "\CGQC_2022\loadouts\mk1_sniper.sqf", [], 6, true, true, "", "(_this distance _target) < 5"];
 _source addAction ["- Drone Operator", "\CGQC_2022\loadouts\mk1_drone_operator.sqf", [], 6, true, true, "", "(_this distance _target) < 5"];
+_source addAction ["- FAC/JTAC", "\CGQC_2022\loadouts\mk1_JTAC.sqf", [], 6, true, true, "", "(_this distance _target) < 5"];
 _source addAction ["- Anti-Tank (MAAWS)", "\CGQC_2022\loadouts\mk1_at_maaws.sqf", [], 6, true, true, "", "(_this distance _target) < 5"];
 _source addAction ["- Anti-Tank (Javelin)", "\CGQC_2022\loadouts\mk1_at_javelin.sqf", [], 6, true, true, "", "(_this distance _target) < 5"];
 _source addAction ["- Helicopter Pilot", "\CGQC_2022\loadouts\mk1_heli_pilot.sqf", [], 6, true, true, "", "(_this distance _target) < 5"];

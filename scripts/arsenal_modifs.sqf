@@ -41,6 +41,7 @@ private _electronics = [
 	"ACRE_SEM52SL",
 	"ACRE_SEM70",
 	"ACE_UAVBattery",
+	"Laserbatteries",
 	"ACRE_VHF30108SPIKE",
 	"ACRE_VHF30108",
 	"ACRE_VHF30108MAST",
@@ -58,7 +59,9 @@ private _electronics = [
 	"ItemcTabHCam",
 	"ItemcTab",
 	"MRH_FoldedSatcomAntenna",
-	"MRH_TacticalDisplay"
+	"MRH_TacticalDisplay",
+	"sps_black_hornet_01_Static_F",
+	"WBK_HeadLampItem"
 ];
 
 [_medical, "Medical", "cgqc_2022\textures\medical.paa", 0] call ace_arsenal_fnc_addRightPanelButton;

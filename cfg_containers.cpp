@@ -174,6 +174,11 @@ class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_kitbag
     };
     class TransportItems
     {
+        class _xx_cgqc_beret_green
+        {
+            count = 1;
+            name = "cgqc_beret_green";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 5;
@@ -267,6 +272,11 @@ class CGQC_units_mk1_0_Drone_operator_pack : cgqc_pack_mk1_kitbag
     };
     class TransportItems
     {
+        class _xx_cgqc_beret_green
+        {
+            count = 1;
+            name = "cgqc_beret_green";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -360,6 +370,11 @@ class CGQC_units_mk1_0_SquadLeader_pack : cgqc_pack_mk1_kitbag
     };
     class TransportItems
     {
+        class _xx_cgqc_beret_green
+        {
+            count = 1;
+            name = "cgqc_beret_green";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -389,6 +404,11 @@ class CGQC_units_mk1_0_SquadLeader_pack : cgqc_pack_mk1_kitbag
         {
             count = 1;
             name = "ItemcTab";
+        };
+        class _xx_sps_black_hornet_01_Static_F
+        {
+            count = 1;
+            name = "sps_black_hornet_01_Static_F";
         };
     };
     class TransportWeapons
@@ -458,6 +478,11 @@ class CGQC_units_mk1_0_TeamLeader_Carbine_pack : cgqc_pack_mk1_kitbag
     };
     class TransportItems
     {
+        class _xx_cgqc_beret_green
+        {
+            count = 1;
+            name = "cgqc_beret_green";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -477,6 +502,11 @@ class CGQC_units_mk1_0_TeamLeader_Carbine_pack : cgqc_pack_mk1_kitbag
         {
             count = 1;
             name = "G_mas_can_gasmask";
+        };
+        class _xx_sps_black_hornet_01_Static_F
+        {
+            count = 1;
+            name = "sps_black_hornet_01_Static_F";
         };
     };
     class TransportWeapons
@@ -546,6 +576,11 @@ class CGQC_units_mk1_0_TeamLeader_CQB_pack : cgqc_pack_mk1_kitbag
     };
     class TransportItems
     {
+        class _xx_cgqc_beret_green
+        {
+            count = 1;
+            name = "cgqc_beret_green";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -565,6 +600,124 @@ class CGQC_units_mk1_0_TeamLeader_CQB_pack : cgqc_pack_mk1_kitbag
         {
             count = 1;
             name = "G_mas_can_gasmask";
+        };
+        class _xx_sps_black_hornet_01_Static_F
+        {
+            count = 1;
+            name = "sps_black_hornet_01_Static_F";
+        };
+    };
+    class TransportWeapons
+    {
+    };
+};
+class CGQC_units_mk1_0_JTAC_pack : cgqc_pack_mk1_kitbag
+{
+    scope = 1;
+    class TransportMagazines
+    {
+        class _xx_ACE_Chemlight_HiRed
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_HiRed";
+        };
+        class _xx_ACE_Chemlight_IR
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_IR";
+        };
+        class _xx_SmokeShell
+        {
+            count = 3;
+            magazine = "SmokeShell";
+        };
+        class _xx_SmokeShellBlue
+        {
+            count = 3;
+            magazine = "SmokeShellBlue";
+        };
+        class _xx_SmokeShellRed
+        {
+            count = 3;
+            magazine = "SmokeShellRed";
+        };
+        class _xx_B_IR_Grenade
+        {
+            count = 1;
+            magazine = "B_IR_Grenade";
+        };
+        class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
+        {
+            count = 5;
+            magazine = "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
+        };
+        class _xx_Laserbatteries
+        {
+            count = 1;
+            magazine = "Laserbatteries";
+        };
+    };
+    class TransportItems
+    {
+        class _xx_cgqc_beret_green
+        {
+            count = 1;
+            name = "cgqc_beret_green";
+        };
+        class _xx_ACE_fieldDressing
+        {
+            count = 10;
+            name = "ACE_fieldDressing";
+        };
+        class _xx_ACE_salineIV_500
+        {
+            count = 2;
+            name = "ACE_salineIV_500";
+        };
+        class _xx_ACE_EntrenchingTool
+        {
+            count = 1;
+            name = "ACE_EntrenchingTool";
+        };
+        class _xx_G_mas_can_gasmask
+        {
+            count = 1;
+            name = "G_mas_can_gasmask";
+        };
+        class _xx_Rev_darter_item
+        {
+            count = 1;
+            name = "Rev_darter_item";
+        };
+        class _xx_ACE_SpottingScope
+        {
+            count = 1;
+            name = "ACE_SpottingScope";
+        };
+        class _xx_ACE_Tripod
+        {
+            count = 1;
+            name = "ACE_Tripod";
+        };
+        class _xx_sps_black_hornet_01_Static_F
+        {
+            count = 2;
+            name = "sps_black_hornet_01_Static_F";
+        };
+        class _xx_ItemcTab
+        {
+            count = 1;
+            name = "ItemcTab";
+        };
+        class _xx_ACE_ATragMX
+        {
+            count = 1;
+            name = "ACE_ATragMX";
+        };
+        class _xx_ACE_Kestrel4500
+        {
+            count = 1;
+            name = "ACE_Kestrel4500";
         };
     };
     class TransportWeapons
@@ -614,6 +767,11 @@ class CGQC_units_mk1_1_Rifleman_Carbine_pack : cgqc_pack_mk1_kitbag
     };
     class TransportItems
     {
+        class _xx_cgqc_beret_green
+        {
+            count = 1;
+            name = "cgqc_beret_green";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -680,8 +838,14 @@ class CGQC_units_mk1_1_Rifleman_CQB_pack : cgqc_pack_mk1_kitbag
             magazine = "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
         };
     };
+
     class TransportItems
     {
+        class _xx_cgqc_beret_green
+        {
+            count = 1;
+            name = "cgqc_beret_green";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -750,6 +914,11 @@ class CGQC_units_mk1_1_Medic_pack : cgqc_pack_mk1_kitbag
     };
     class TransportItems
     {
+        class _xx_cgqc_beret_green
+        {
+            count = 1;
+            name = "cgqc_beret_green";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 50;
@@ -859,6 +1028,11 @@ class CGQC_units_mk1_1_Engineer_pack : cgqc_pack_mk1_kitbag
     };
     class TransportItems
     {
+        class _xx_cgqc_beret_green
+        {
+            count = 1;
+            name = "cgqc_beret_green";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -947,6 +1121,11 @@ class CGQC_units_mk1_2_LMG_pack : cgqc_pack_mk1_kitbag
     };
     class TransportItems
     {
+        class _xx_cgqc_beret_green
+        {
+            count = 1;
+            name = "cgqc_beret_green";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -1015,6 +1194,11 @@ class CGQC_units_mk1_2_HMG_pack : cgqc_pack_mk1_kitbag
     };
     class TransportItems
     {
+        class _xx_cgqc_beret_green
+        {
+            count = 1;
+            name = "cgqc_beret_green";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -1083,6 +1267,11 @@ class CGQC_units_mk1_2_Marksman_pack : cgqc_pack_mk1_kitbag
     };
     class TransportItems
     {
+        class _xx_cgqc_beret_green
+        {
+            count = 1;
+            name = "cgqc_beret_green";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -1112,6 +1301,11 @@ class CGQC_units_mk1_2_Marksman_pack : cgqc_pack_mk1_kitbag
         {
             count = 1;
             name = "ACE_Kestrel4500";
+        };
+        class _xx_sps_black_hornet_01_Static_F
+        {
+            count = 1;
+            name = "sps_black_hornet_01_Static_F";
         };
     };
     class TransportWeapons
@@ -1162,6 +1356,11 @@ class CGQC_units_mk1_2_Sniper_pack : cgqc_pack_mk1_kitbag
     };
     class TransportItems
     {
+        class _xx_cgqc_beret_green
+        {
+            count = 1;
+            name = "cgqc_beret_green";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -1191,6 +1390,11 @@ class CGQC_units_mk1_2_Sniper_pack : cgqc_pack_mk1_kitbag
         {
             count = 1;
             name = "ACE_Kestrel4500";
+        };
+        class _xx_sps_black_hornet_01_Static_F
+        {
+            count = 1;
+            name = "sps_black_hornet_01_Static_F";
         };
     };
     class TransportWeapons
@@ -1245,6 +1449,11 @@ class CGQC_units_mk1_3_AT_MAAWS_pack : cgqc_pack_mk1_kitbag
     };
     class TransportItems
     {
+        class _xx_cgqc_beret_green
+        {
+            count = 1;
+            name = "cgqc_beret_green";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -1318,6 +1527,11 @@ class CGQC_units_mk1_3_AT_Javelin_pack : cgqc_pack_mk1_kitbag
     };
     class TransportItems
     {
+        class _xx_cgqc_beret_green
+        {
+            count = 1;
+            name = "cgqc_beret_green";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -1351,6 +1565,11 @@ class CGQC_units_mk1_4_Tank_Driver_pack : cgqc_pack_mk1_magic
     };
     class TransportItems
     {
+        class _xx_cgqc_beret_green
+        {
+            count = 1;
+            name = "cgqc_beret_green";
+        };
         class _xx_ToolKit
         {
             count = 1;

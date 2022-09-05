@@ -16,6 +16,7 @@ class Laserdesignator_03;
 class CBA_MiscItem_ItemInfo;
 class MRH_BluForTransponder;
 class CBA_MiscItem;
+class rhs_weap_m16a4_imod;
 
 // Pistol.
 class cgqc_gun_glock19_wood : Tier1_Glock19_WAR_TB
@@ -520,4 +521,32 @@ class cgqc_gun_mk1_AT_m4a1 : cgqc_gun_mk1_m4a1blkII
 			item = "rhsusf_acc_grip2";
 		};
 	};
+};
+class cgqc_gun_mk1_jtac_m16a3: rhs_weap_m16a4_imod
+{
+displayName="M16A4 (IMOD Stock)";
+scope=1;
+class LinkedItems
+{
+	class LinkedItemsMuzzle
+	{
+	slot="MuzzleSlot";
+	item="Tier1_KAC_556_QDC_CQB_Black";
+	};
+	class LinkedItemsOptic
+	{
+	slot="CowsSlot";
+	item="NForce_Atcr_RMR_Top_SKeetIR_Down";
+	};
+	class LinkedItemsAcc
+	{
+	slot="PointerSlot";
+	item="Tier1_M4BII_NGAL_M600V_Black";
+	};
+	class LinkedItemsUnder
+	{
+	slot="UnderBarrelSlot";
+	item="Tier1_Harris_Bipod_Black";
+	};
+};
 };

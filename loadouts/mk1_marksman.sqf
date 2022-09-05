@@ -80,6 +80,7 @@ _unit addItemToBackpack "ACE_EntrenchingTool";
 _unit addItemToBackpack "G_mas_can_gasmask";
 _unit addItemToBackpack "ACE_ATragMX";
 _unit addItemToBackpack "ACE_Kestrel4500";
+_unit addItemToBackpack "sps_black_hornet_01_Static_F";
 _unit addItemToBackpack "ACE_Chemlight_HiRed";
 _unit addItemToBackpack "ACE_Chemlight_IR";
 for "_i" from 1 to 3 do {

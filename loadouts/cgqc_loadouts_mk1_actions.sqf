@@ -44,6 +44,19 @@ _adding = [ TypeOf _source, 0, ["ACE_MainActions","menu_cgqc","menu_basic"], _ac
 _action = [ "base_pack", "Med+Items -> Sac à dos", "", {execVM "\CGQC_2022\loadouts\base_backpack.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ TypeOf _source, 0, ["ACE_MainActions","menu_cgqc","menu_basic"], _action ] call ace_interact_menu_fnc_addActionToClass;
 
+// Radios --------------------------------------------------------------------------------------------------------------
+_action = [ "menu_radios", "Radios", "", {""}, {true} ] call ace_interact_menu_fnc_createAction;
+_adding = [ TypeOf _source, 0, ["ACE_MainActions","menu_cgqc"], _action ] call ace_interact_menu_fnc_addActionToClass;
+// Meds to Radio1 
+_action = [ "meds_radio1", "343", "", {execVM "\CGQC_2022\loadouts\radio_1.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+_adding = [ TypeOf _source, 0, ["ACE_MainActions","menu_cgqc","menu_radios"], _action ] call ace_interact_menu_fnc_addActionToClass;
+// Meds to Radio2
+_action = [ "meds_radio2", "343+152", "", {execVM "\CGQC_2022\loadouts\radio_2.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+_adding = [ TypeOf _source, 0, ["ACE_MainActions","menu_cgqc","menu_radios"], _action ] call ace_interact_menu_fnc_addActionToClass;
+// Items to Radio3 
+_action = [ "base_radio3", "343+152+152", "", {execVM "\CGQC_2022\loadouts\radio_3.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+_adding = [ TypeOf _source, 0, ["ACE_MainActions","menu_cgqc","menu_radios"], _action ] call ace_interact_menu_fnc_addActionToClass;
+
 
 // Skill switcher ---------------------------------------------------------------------------------------------------------
 _action = [ "menu_skill", "Change de skills", "", {""}, {true} ] call ace_interact_menu_fnc_createAction;

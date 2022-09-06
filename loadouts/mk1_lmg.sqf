@@ -1,102 +1,101 @@
-_unit = _this select 1;
 execVM "\CGQC_2022\loadouts\transition.sqf";
 sleep 2;
-_unit setUnitTrait ["Medic", false];
-_unit setUnitTrait ["engineer", false];
-_unit setUnitTrait ["explosiveSpecialist", false];
+player setUnitTrait ["Medic", false];
+player setUnitTrait ["engineer", false];
+player setUnitTrait ["explosiveSpecialist", false];
 comment "Remove existing items";
-removeAllWeapons _unit;
-removeAllItems _unit;
-removeAllAssignedItems _unit;
-removeUniform _unit;
-removeVest _unit;
-removeBackpack _unit;
-removeHeadgear _unit;
-removeGoggles _unit;
+removeAllWeapons player;
+removeAllItems player;
+removeAllAssignedItems player;
+removeUniform player;
+removeVest player;
+removeBackpack player;
+removeHeadgear player;
+removeGoggles player;
 
 comment "Add weapons";
-_unit addWeapon "cgqc_gun_mk1_mk46";
-_unit addPrimaryWeaponItem "Tier1_KAC_556_QDC_CQB_Black";
-_unit addPrimaryWeaponItem "Tier1_Mk46Mod1_LA5_M600V_Black";
-_unit addPrimaryWeaponItem "Tier1_EXPS3_0_3xMag_Black_Up";
-_unit addPrimaryWeaponItem "rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote";
-_unit addPrimaryWeaponItem "Tier1_SAW_Bipod_DD";
-_unit addWeapon "cgqc_gun_glock19_wood";
-_unit addHandgunItem "Tier1_15Rnd_9x19_JHP";
+player addWeapon "cgqc_gun_mk1_mk46";
+player addPrimaryWeaponItem "Tier1_KAC_556_QDC_CQB_Black";
+player addPrimaryWeaponItem "Tier1_Mk46Mod1_LA5_M600V_Black";
+player addPrimaryWeaponItem "Tier1_EXPS3_0_3xMag_Black_Up";
+player addPrimaryWeaponItem "rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote";
+player addPrimaryWeaponItem "Tier1_SAW_Bipod_DD";
+player addWeapon "cgqc_gun_glock19_wood";
+player addHandgunItem "Tier1_15Rnd_9x19_JHP";
 
 comment "Add containers";
-_unit forceAddUniform "cgqc_uniform_mk1";
-_unit addVest "cgqc_vest_mk1_tan_ar";
-_unit addBackpack "cgqc_pack_mk1_kitbag";
+player forceAddUniform "cgqc_uniform_mk1";
+player addVest "cgqc_vest_mk1_tan_ar";
+player addBackpack "cgqc_pack_mk1_kitbag";
 
 comment "Add binoculars";
-_unit addWeapon "cgqc_item_rangefinder";
+player addWeapon "cgqc_item_rangefinder";
 
 comment "Add items to containers";
-_unit addItemToUniform "ACRE_PRC343";
-_unit addItemToUniform "ItemAndroid";
-_unit addItemToUniform "ACE_microDAGR";
-_unit addItemToUniform "cgqc_item_transponder";
+player addItemToUniform "ACRE_PRC343";
+player addItemToUniform "ItemAndroid";
+player addItemToUniform "ACE_microDAGR";
+player addItemToUniform "cgqc_item_transponder";
  
 for "_i" from 1 to 10 do {
-	_unit addItemToUniform "ACE_fieldDressing";
+	player addItemToUniform "ACE_fieldDressing";
 };
 for "_i" from 1 to 2 do {
-	_unit addItemToUniform "ACE_epinephrine";
+	player addItemToUniform "ACE_epinephrine";
 };
-_unit addItemToUniform "ACE_EarPlugs";
+player addItemToUniform "ACE_EarPlugs";
 for "_i" from 1 to 2 do {
-	_unit addItemToUniform "ACE_morphine";
+	player addItemToUniform "ACE_morphine";
 };
-_unit addItemToUniform "ACE_splint";
+player addItemToUniform "ACE_splint";
 for "_i" from 1 to 2 do {
-	_unit addItemToUniform "ACE_tourniquet";
-};
-for "_i" from 1 to 2 do {
-	_unit addItemToUniform "ACE_CableTie";
-};
-_unit addItemToUniform "ACE_IR_Strobe_Item";
-_unit addItemToUniform "ACE_RangeCard";
-for "_i" from 1 to 2 do {
-	_unit addItemToVest "Tier1_15Rnd_9x19_JHP";
+	player addItemToUniform "ACE_tourniquet";
 };
 for "_i" from 1 to 2 do {
-	_unit addItemToVest "ACE_M84";
+	player addItemToUniform "ACE_CableTie";
 };
-_unit addItemToVest "rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote";
+player addItemToUniform "ACE_IR_Strobe_Item";
+player addItemToUniform "ACE_RangeCard";
 for "_i" from 1 to 2 do {
-	_unit addItemToVest "HandGrenade";
+	player addItemToVest "Tier1_15Rnd_9x19_JHP";
+};
+for "_i" from 1 to 2 do {
+	player addItemToVest "ACE_M84";
+};
+player addItemToVest "rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote";
+for "_i" from 1 to 2 do {
+	player addItemToVest "HandGrenade";
 };
 for "_i" from 1 to 10 do {
-	_unit addItemToBackpack "ACE_fieldDressing";
+	player addItemToBackpack "ACE_fieldDressing";
 };
 for "_i" from 1 to 2 do {
-	_unit addItemToBackpack "ACE_salineIV_500";
+	player addItemToBackpack "ACE_salineIV_500";
 };
-_unit addItemToBackpack "ACE_EntrenchingTool";
-_unit addItemToBackpack "G_mas_can_gasmask";
-_unit addItemToBackpack "ACE_Chemlight_HiRed";
-_unit addItemToBackpack "ACE_Chemlight_IR";
+player addItemToBackpack "ACE_EntrenchingTool";
+player addItemToBackpack "G_mas_can_gasmask";
+player addItemToBackpack "ACE_Chemlight_HiRed";
+player addItemToBackpack "ACE_Chemlight_IR";
 for "_i" from 1 to 3 do {
-	_unit addItemToBackpack "SmokeShell";
-};
-for "_i" from 1 to 3 do {
-	_unit addItemToBackpack "SmokeShellBlue";
+	player addItemToBackpack "SmokeShell";
 };
 for "_i" from 1 to 3 do {
-	_unit addItemToBackpack "SmokeShellRed";
+	player addItemToBackpack "SmokeShellBlue";
 };
-_unit addItemToBackpack "B_IR_Grenade";
+for "_i" from 1 to 3 do {
+	player addItemToBackpack "SmokeShellRed";
+};
+player addItemToBackpack "B_IR_Grenade";
  
 for "_i" from 1 to 4 do {
-	_unit addItemToBackpack "rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote";
+	player addItemToBackpack "rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote";
 };
-_unit addHeadgear "cgqc_helmet_mk1";
-_unit addGoggles "G_mas_can_balaM_T";
+player addHeadgear "cgqc_helmet_mk1";
+player addGoggles "G_mas_can_balaM_T";
 
 comment "Add items";
-_unit linkItem "ItemMap";
-_unit linkItem "ItemCompass";
-_unit linkItem "ItemWatch";
-_unit linkItem "ItemGPS";
-_unit linkItem "NVGoggles_mas_can_hv";
+player linkItem "ItemMap";
+player linkItem "ItemCompass";
+player linkItem "ItemWatch";
+player linkItem "ItemGPS";
+player linkItem "NVGoggles_mas_can_hv";

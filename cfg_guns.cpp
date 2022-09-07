@@ -17,6 +17,7 @@ class CBA_MiscItem_ItemInfo;
 class MRH_BluForTransponder;
 class CBA_MiscItem;
 class rhs_weap_m16a4_imod;
+class gtr_weap_Mk12_Base;
 
 // Pistol.
 class cgqc_gun_glock19_wood : Tier1_Glock19_WAR_TB
@@ -108,7 +109,7 @@ class cgqc_gun_mk1_mk18 : rhs_weap_mk18
 	_generalMacro = "cgqc_gun_mk1_mk18";
 	baseWeapon = "cgqc_gun_mk1_mk18";
 	displayName = "CGQC mk18";
-	//model = "\cgqc_2022\guns\MK18.p3d";
+	// model = "\cgqc_2022\guns\MK18.p3d";
 	hiddenSelectionsTextures[] = {"cgqc_2022\guns\m4\m4_cgqc.paa",
 								  "\rhsusf\addons\rhsusf_weapons3\M4BII\Data\rhs_mk18rail_t_co.paa",
 								  "rhsusf\addons\rhsusf_weapons\acc\grips\grippod\data\acc_co.paa",
@@ -296,6 +297,70 @@ class cgqc_gun_mk1_m200 : srifle_LRR_F
 		};
 	};
 };
+class cgqc_gun_mk1_m16a4 : rhs_weap_m16a4_imod
+{
+	scope = 2;
+	scopeArsenal = 2;
+	author = "silent1";
+	_generalMacro = "cgqc_gun_mk1_m16a4";
+	displayName = "CGQC m16a4";
+	baseWeapon = "cgqc_gun_mk1_m16a4";
+	class LinkedItems
+	{
+		class LinkedItemsMuzzle
+		{
+			slot = "MuzzleSlot";
+			item = "Tier1_KAC_556_QDC_CQB_Black";
+		};
+		class LinkedItemsOptic
+		{
+			slot = "CowsSlot";
+			item = "NForce_Atcr_RMR_Top_SKeetIR_Down";
+		};
+		class LinkedItemsAcc
+		{
+			slot = "PointerSlot";
+			item = "Tier1_M4BII_NGAL_M600V_Black";
+		};
+		class LinkedItemsUnder
+		{
+			slot = "UnderBarrelSlot";
+			item = "Tier1_Harris_Bipod_Black";
+		};
+	};
+};
+class cgqc_gun_mk1_mk12 : gtr_weap_Mk12_Base
+{
+	scope = 2;
+	scopeArsenal = 2;
+	author = "silent1";
+	_generalMacro = "cgqc_gun_mk1_mk12";
+	displayName = "CGQC mk12";
+	baseWeapon = "cgqc_gun_mk1_mk12";
+	class LinkedItems
+	{
+		class LinkedItemsMuzzle
+		{
+			slot = "MuzzleSlot";
+			item = "Tier1_KAC_556_QDC_CQB_Black";
+		};
+		class LinkedItemsOptic
+		{
+			slot = "CowsSlot";
+			item = "NForce_Atcr_RMR_Top_SKeetIR_Down";
+		};
+		class LinkedItemsAcc
+		{
+			slot = "PointerSlot";
+			item = "Tier1_M4BII_NGAL_M600V_Black";
+		};
+		class LinkedItemsUnder
+		{
+			slot = "UnderBarrelSlot";
+			item = "Tier1_Harris_Bipod_Black";
+		};
+	};
+};
 
 // Custom skins
 // Fortin
@@ -306,7 +371,7 @@ class cgqc_gun_mk1_mk18_fortin : cgqc_gun_mk1_mk18
 	_generalMacro = "cgqc_gun_mk1_mk18_fortin";
 	baseWeapon = "cgqc_gun_mk1_mk18_fortin";
 	displayName = "CGQC mk18 - Fortin";
-	//model = "\cgqc_2022\guns\MK18.p3d";
+	// model = "\cgqc_2022\guns\MK18.p3d";
 	hiddenSelectionsTextures[] = {"cgqc_2022\guns\m4\m4_fortin.paa",
 								  "\rhsusf\addons\rhsusf_weapons3\M4BII\Data\rhs_mk18rail_t_co.paa",
 								  "rhsusf\addons\rhsusf_weapons\acc\grips\grippod\data\acc_co.paa",
@@ -522,31 +587,30 @@ class cgqc_gun_mk1_AT_m4a1 : cgqc_gun_mk1_m4a1blkII
 		};
 	};
 };
-class cgqc_gun_mk1_jtac_m16a3: rhs_weap_m16a4_imod
+class cgqc_gun_mk1_jtac_mk12 : cgqc_gun_mk1_mk12
 {
-displayName="M16A4 (IMOD Stock)";
-scope=1;
-class LinkedItems
-{
-	class LinkedItemsMuzzle
+	scope = 1;
+	class LinkedItems
 	{
-	slot="MuzzleSlot";
-	item="Tier1_KAC_556_QDC_CQB_Black";
+		class LinkedItemsMuzzle
+		{
+			slot = "MuzzleSlot";
+			item = "Tier1_KAC_556_QDC_CQB_Black";
+		};
+		class LinkedItemsOptic
+		{
+			slot = "CowsSlot";
+			item = "NForce_Atcr_RMR_Top_SKeetIR_Down";
+		};
+		class LinkedItemsAcc
+		{
+			slot = "PointerSlot";
+			item = "Tier1_M4BII_NGAL_M600V_Black";
+		};
+		class LinkedItemsUnder
+		{
+			slot = "UnderBarrelSlot";
+			item = "Tier1_Harris_Bipod_Black";
+		};
 	};
-	class LinkedItemsOptic
-	{
-	slot="CowsSlot";
-	item="NForce_Atcr_RMR_Top_SKeetIR_Down";
-	};
-	class LinkedItemsAcc
-	{
-	slot="PointerSlot";
-	item="Tier1_M4BII_NGAL_M600V_Black";
-	};
-	class LinkedItemsUnder
-	{
-	slot="UnderBarrelSlot";
-	item="Tier1_Harris_Bipod_Black";
-	};
-};
 };

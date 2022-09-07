@@ -27,7 +27,7 @@ player addHandgunItem "Tier1_15Rnd_9x19_JHP";
 comment "Add containers";
 player forceAddUniform "cgqc_uniform_mk1";
 player addVest "cgqc_vest_mk1_tan";
-player addBackpack "CGQCplayers_mk1_0_JTAC_pack";
+player addBackpack "CGQC_units_mk1_0_JTAC_pack";
 
 comment "Add binoculars";
 player addMagazine "Laserbatteries";
@@ -75,6 +75,7 @@ for "_i" from 1 to 2 do {
 	player addItemToBackpack "ACE_salineIV_500";
 };
 player addItemToBackpack "ACE_EntrenchingTool";
+player addItemToBackpack "cgqc_beret_green";
 player addItemToBackpack "G_mas_can_gasmask";
 player addItemToBackpack "Rev_darter_item";
 player addItemToBackpack "ACE_SpottingScope";

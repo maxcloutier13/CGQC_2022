@@ -27,7 +27,7 @@ player addHandgunItem "Tier1_15Rnd_9x19_JHP";
 comment "Add containers";
 player forceAddUniform "cgqc_uniform_mk1";
 player addVest "cgqc_vest_mk1_tan";
-player addBackpack "CGQCplayers_mk1_0_JTAC_pack";
+player addBackpack "CGQC_units_mk1_0_JTAC_pack";
 
 comment "Add binoculars";
 player addMagazine "Laserbatteries";

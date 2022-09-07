@@ -73,6 +73,7 @@ for "_i" from 1 to 2 do {
 	player addItemToBackpack "ACE_salineIV_500";
 };
 player addItemToBackpack "ACE_EntrenchingTool";
+player addItemToBackpack "cgqc_beret_green";
 player addItemToBackpack "G_mas_can_gasmask";
 player addItemToBackpack "ACE_Chemlight_HiRed";
 player addItemToBackpack "ACE_Chemlight_IR";

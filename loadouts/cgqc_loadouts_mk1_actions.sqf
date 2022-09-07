@@ -68,16 +68,16 @@ _adding = [ _source, 0, ["ACE_MainActions", "menu_cgqc", "menu_mk1", "menu_mk1_i
 _action = [ "menu_mk1_spec", "Spécialistes", "", {""}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _source, 0, ["ACE_MainActions", "menu_cgqc", "menu_mk1"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // MG (Light) 
-_action = [ "menu_mk1_inf_LMG", "Rifleman", "", {execVM "\CGQC_2022\loadouts\mk1_lmg.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+_action = [ "menu_mk1_inf_LMG", "Light machinegun", "", {execVM "\CGQC_2022\loadouts\mk1_lmg.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _source, 0, ["ACE_MainActions", "menu_cgqc", "menu_mk1", "menu_mk1_spec"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 //  MG (Heavy) 
-_action = [ "menu_mk1_inf_HMG", "Rifleman CQB", "", {execVM "\CGQC_2022\loadouts\mk1_hmg.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+_action = [ "menu_mk1_inf_HMG", "Heavy machinegun", "", {execVM "\CGQC_2022\loadouts\mk1_hmg.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _source, 0, ["ACE_MainActions", "menu_cgqc", "menu_mk1", "menu_mk1_spec"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Marksman 
-_action = [ "menu_mk1_inf_marks", "Medic", "", {execVM "\CGQC_2022\loadouts\mk1_marksman.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+_action = [ "menu_mk1_inf_marks", "Marksman", "", {execVM "\CGQC_2022\loadouts\mk1_marksman.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _source, 0, ["ACE_MainActions", "menu_cgqc", "menu_mk1", "menu_mk1_spec"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Sniper
-_action = [ "menu_mk1_inf_snipe", "Engineer", "", {execVM "\CGQC_2022\loadouts\mk1_sniper.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+_action = [ "menu_mk1_inf_snipe", "Sniper", "", {execVM "\CGQC_2022\loadouts\mk1_sniper.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _source, 0, ["ACE_MainActions", "menu_cgqc", "menu_mk1", "menu_mk1_spec"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Anti-Tank (MAAWS)
 _action = [ "menu_mk1_inf_maaws", "Anti-Tank (MAAWS)", "", {execVM "\CGQC_2022\loadouts\mk1_at_maaws.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;

@@ -131,14 +131,14 @@ class cgqc_pack_mk1_kitbag : B_Kitbag_rgr
     scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_pack_mk1_kitbag";
-    maximumLoad = 320;
+    maximumLoad = 350;
     mass = 20;
     displayName = "CGQC Kitbag mk1 Vert";
 };
 // mk1 Backpacks --------------------------------------------------------------------------------------
 class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_kitbag
 {
-    scope = 0;
+    scope = 1;
     class TransportMagazines
     {
         class _xx_ACE_Chemlight_HiRed

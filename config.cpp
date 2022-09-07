@@ -17,7 +17,6 @@ class CfgPatches
 							"ace_hearing",
 							"ace_captives",
 							"ace_maptools",
-							"cTab",
 							"ace_attach",
 							"acre_sys_prc343",
 							"acre_sys_prc152",

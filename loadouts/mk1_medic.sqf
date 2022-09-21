@@ -77,6 +77,7 @@ for "_i" from 1 to 7 do {
 };
 player addItemToBackpack "ACE_EntrenchingTool";
 player addItemToBackpack "cgqc_beret_green";
+player addItemToBackpack "WBK_HeadLampItem";
 player addItemToBackpack "G_mas_can_gasmask";
 for "_i" from 1 to 5 do {
 	player addItemToBackpack "ACE_salineIV";
@@ -98,11 +99,14 @@ player addItemToBackpack "ACE_Chemlight_IR";
 for "_i" from 1 to 3 do {
 	player addItemToBackpack "SmokeShell";
 };
-for "_i" from 1 to 3 do {
+for "_i" from 1 to 2 do {
 	player addItemToBackpack "SmokeShellBlue";
 };
-for "_i" from 1 to 3 do {
+for "_i" from 1 to 2 do {
 	player addItemToBackpack "SmokeShellRed";
+};
+for "_i" from 1 to 3 do {
+	player addItemToBackpack "SmokeShellPurple";
 };
 player addItemToBackpack "B_IR_Grenade";
 for "_i" from 1 to 6 do {

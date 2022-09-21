@@ -56,6 +56,8 @@ for "_i" from 1 to 2 do {
 player addItemToUniform "ACE_IR_Strobe_Item";
 player addItemToUniform "ACE_RangeCard";
 player addItemToUniform "cgqc_item_transponder";
+player addItemToUniform "ACRE_PRC343";
+player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "Tier1_15Rnd_9x19_JHP";
 for "_i" from 1 to 2 do {
@@ -75,6 +77,7 @@ for "_i" from 1 to 2 do {
 };
 player addItemToBackpack "ACE_EntrenchingTool";
 player addItemToBackpack "cgqc_beret_green";
+player addItemToBackpack "WBK_HeadLampItem";
 player addItemToBackpack "G_mas_can_gasmask";
 player addItemToBackpack "Rev_darter_item";
 player addItemToBackpack "ACE_SpottingScope";

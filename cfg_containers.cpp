@@ -179,6 +179,11 @@ class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_kitbag
             count = 1;
             name = "cgqc_beret_green";
         };
+        class _xx_WBK_HeadLampItem
+        {
+            count = 1;
+            name = "WBK_HeadLampItem";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 5;
@@ -277,6 +282,11 @@ class CGQC_units_mk1_0_Drone_operator_pack : cgqc_pack_mk1_kitbag
             count = 1;
             name = "cgqc_beret_green";
         };
+        class _xx_WBK_HeadLampItem
+        {
+            count = 1;
+            name = "WBK_HeadLampItem";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -374,6 +384,11 @@ class CGQC_units_mk1_0_SquadLeader_pack : cgqc_pack_mk1_kitbag
         {
             count = 1;
             name = "cgqc_beret_green";
+        };
+        class _xx_WBK_HeadLampItem
+        {
+            count = 1;
+            name = "WBK_HeadLampItem";
         };
         class _xx_ACE_fieldDressing
         {
@@ -483,6 +498,11 @@ class CGQC_units_mk1_0_TeamLeader_Carbine_pack : cgqc_pack_mk1_kitbag
             count = 1;
             name = "cgqc_beret_green";
         };
+        class _xx_WBK_HeadLampItem
+        {
+            count = 1;
+            name = "WBK_HeadLampItem";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -581,6 +601,11 @@ class CGQC_units_mk1_0_TeamLeader_CQB_pack : cgqc_pack_mk1_kitbag
             count = 1;
             name = "cgqc_beret_green";
         };
+        class _xx_WBK_HeadLampItem
+        {
+            count = 1;
+            name = "WBK_HeadLampItem";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -663,6 +688,11 @@ class CGQC_units_mk1_0_JTAC_pack : cgqc_pack_mk1_kitbag
         {
             count = 1;
             name = "cgqc_beret_green";
+        };
+        class _xx_WBK_HeadLampItem
+        {
+            count = 1;
+            name = "WBK_HeadLampItem";
         };
         class _xx_ACE_fieldDressing
         {
@@ -772,6 +802,11 @@ class CGQC_units_mk1_1_Rifleman_Carbine_pack : cgqc_pack_mk1_kitbag
             count = 1;
             name = "cgqc_beret_green";
         };
+        class _xx_WBK_HeadLampItem
+        {
+            count = 1;
+            name = "WBK_HeadLampItem";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -846,6 +881,11 @@ class CGQC_units_mk1_1_Rifleman_CQB_pack : cgqc_pack_mk1_kitbag
             count = 1;
             name = "cgqc_beret_green";
         };
+        class _xx_WBK_HeadLampItem
+        {
+            count = 1;
+            name = "WBK_HeadLampItem";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -901,6 +941,11 @@ class CGQC_units_mk1_1_Medic_pack : cgqc_pack_mk1_kitbag
             count = 3;
             magazine = "SmokeShellRed";
         };
+        class _xx_SmokeShellPurple
+        {
+            count = 3;
+            magazine = "SmokeShellPurple";
+        };
         class _xx_B_IR_Grenade
         {
             count = 1;
@@ -918,6 +963,11 @@ class CGQC_units_mk1_1_Medic_pack : cgqc_pack_mk1_kitbag
         {
             count = 1;
             name = "cgqc_beret_green";
+        };
+        class _xx_WBK_HeadLampItem
+        {
+            count = 1;
+            name = "WBK_HeadLampItem";
         };
         class _xx_ACE_fieldDressing
         {
@@ -1033,6 +1083,11 @@ class CGQC_units_mk1_1_Engineer_pack : cgqc_pack_mk1_kitbag
             count = 1;
             name = "cgqc_beret_green";
         };
+        class _xx_WBK_HeadLampItem
+        {
+            count = 1;
+            name = "WBK_HeadLampItem";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -1126,6 +1181,11 @@ class CGQC_units_mk1_2_LMG_pack : cgqc_pack_mk1_kitbag
             count = 1;
             name = "cgqc_beret_green";
         };
+        class _xx_WBK_HeadLampItem
+        {
+            count = 1;
+            name = "WBK_HeadLampItem";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -1199,6 +1259,11 @@ class CGQC_units_mk1_2_HMG_pack : cgqc_pack_mk1_kitbag
             count = 1;
             name = "cgqc_beret_green";
         };
+        class _xx_WBK_HeadLampItem
+        {
+            count = 1;
+            name = "WBK_HeadLampItem";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -1271,6 +1336,11 @@ class CGQC_units_mk1_2_Marksman_pack : cgqc_pack_mk1_kitbag
         {
             count = 1;
             name = "cgqc_beret_green";
+        };
+        class _xx_WBK_HeadLampItem
+        {
+            count = 1;
+            name = "WBK_HeadLampItem";
         };
         class _xx_ACE_fieldDressing
         {
@@ -1360,6 +1430,11 @@ class CGQC_units_mk1_2_Sniper_pack : cgqc_pack_mk1_kitbag
         {
             count = 1;
             name = "cgqc_beret_green";
+        };
+        class _xx_WBK_HeadLampItem
+        {
+            count = 1;
+            name = "WBK_HeadLampItem";
         };
         class _xx_ACE_fieldDressing
         {
@@ -1454,6 +1529,11 @@ class CGQC_units_mk1_3_AT_MAAWS_pack : cgqc_pack_mk1_kitbag
             count = 1;
             name = "cgqc_beret_green";
         };
+        class _xx_WBK_HeadLampItem
+        {
+            count = 1;
+            name = "WBK_HeadLampItem";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -1532,6 +1612,11 @@ class CGQC_units_mk1_3_AT_Javelin_pack : cgqc_pack_mk1_kitbag
             count = 1;
             name = "cgqc_beret_green";
         };
+        class _xx_WBK_HeadLampItem
+        {
+            count = 1;
+            name = "WBK_HeadLampItem";
+        };
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -1569,6 +1654,11 @@ class CGQC_units_mk1_4_Tank_Driver_pack : cgqc_pack_mk1_magic
         {
             count = 1;
             name = "cgqc_beret_green";
+        };
+        class _xx_WBK_HeadLampItem
+        {
+            count = 1;
+            name = "WBK_HeadLampItem";
         };
         class _xx_ToolKit
         {

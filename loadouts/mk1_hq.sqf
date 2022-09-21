@@ -32,7 +32,8 @@ player addMagazine "Laserbatteries";
 player addWeapon "Laserdesignator_01_khk_F";
 
 comment "Add items to containers";
-player addItemToUniform "ACRE_PRC343";
+player addItemToUniform "ACRE_PRC152";
+player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "ItemAndroid";
 player addItemToUniform "ACE_microDAGR";
@@ -77,6 +78,7 @@ for "_i" from 1 to 2 do {
 };
 player addItemToBackpack "ACE_EntrenchingTool";
 player addItemToBackpack "cgqc_beret_green";
+player addItemToBackpack "WBK_HeadLampItem";
 player addItemToBackpack "G_mas_can_gasmask";
 player addItemToBackpack "ItemcTab";
 player addItemToBackpack "MRH_FoldedSatcomAntenna";

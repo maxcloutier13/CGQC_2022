@@ -74,6 +74,7 @@ for "_i" from 1 to 2 do {
 };
 player addItemToBackpack "ACE_EntrenchingTool";
 player addItemToBackpack "cgqc_beret_green";
+player addItemToBackpack "WBK_HeadLampItem";
 player addItemToBackpack "G_mas_can_gasmask";
 player addItemToBackpack "ACE_ATragMX";
 player addItemToBackpack "ACE_Kestrel4500";

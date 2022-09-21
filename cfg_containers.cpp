@@ -991,7 +991,7 @@ class CGQC_units_mk1_1_Medic_pack : cgqc_pack_mk1_kitbag
         };
         class _xx_ACE_salineIV
         {
-            count = 5;
+            count = 4;
             name = "ACE_salineIV";
         };
         class _xx_ACE_morphine

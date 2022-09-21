@@ -79,7 +79,7 @@ player addItemToBackpack "ACE_EntrenchingTool";
 player addItemToBackpack "cgqc_beret_green";
 player addItemToBackpack "WBK_HeadLampItem";
 player addItemToBackpack "G_mas_can_gasmask";
-for "_i" from 1 to 5 do {
+for "_i" from 1 to 4 do {
 	player addItemToBackpack "ACE_salineIV";
 };
 for "_i" from 1 to 20 do {

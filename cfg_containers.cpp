@@ -941,6 +941,11 @@ class CGQC_units_mk1_1_Medic_pack : cgqc_pack_mk1_kitbag
             count = 3;
             magazine = "SmokeShellRed";
         };
+        class _xx_SmokeShellPurple
+        {
+            count = 3;
+            magazine = "SmokeShellPurple";
+        };
         class _xx_B_IR_Grenade
         {
             count = 1;

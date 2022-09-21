@@ -99,11 +99,14 @@ player addItemToBackpack "ACE_Chemlight_IR";
 for "_i" from 1 to 3 do {
 	player addItemToBackpack "SmokeShell";
 };
-for "_i" from 1 to 3 do {
+for "_i" from 1 to 2 do {
 	player addItemToBackpack "SmokeShellBlue";
 };
-for "_i" from 1 to 3 do {
+for "_i" from 1 to 2 do {
 	player addItemToBackpack "SmokeShellRed";
+};
+for "_i" from 1 to 3 do {
+	player addItemToBackpack "SmokeShellPurple";
 };
 player addItemToBackpack "B_IR_Grenade";
 for "_i" from 1 to 6 do {

@@ -1014,6 +1014,11 @@ class CGQC_units_mk1_1_Medic_pack : cgqc_pack_mk1_kitbag
             count = 4;
             name = "ACE_tourniquet";
         };
+        class _xx_FSGm_ItemMedicBag
+        {
+            count = 1;
+            name = "FSGm_ItemMedicBag";
+        };
     };
     class TransportWeapons
     {

@@ -98,6 +98,8 @@ for "_i" from 1 to 3 do {
 	player addItemToBackpack "SmokeShellRed";
 };
 player addItemToBackpack "B_IR_Grenade";
+player addItemToBackpack "ACE_UAVBattery";
+player addItemToBackpack "ACE_UAVBattery";
 player addItemToBackpack "rhsusf_m112_mag";
 player addHeadgear "cgqc_helmet_mk1";
 player addGoggles "G_mas_can_wrap_gog_B";

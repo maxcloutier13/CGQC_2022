@@ -7248,8 +7248,17 @@ class UAV_01_base_F : Helicopter_Base_F
 {
     fuelCapacity = 1000;
 };
+"B_UAV_06_F", 
+"B_UAV_06_medical_F", 
+"sps_black_hornet_01_F", 
+"B_UAV_05_F", 
+"B_UAV_02_dynamicLoadout_F", 
+"B_T_UAV_03_dynamicLoadout_F"
+
+// Apache fuel
 class RHS_AH64_base: Heli_Attack_01_base_F
 {
     fuelCapacity = 2500;
 	fuelConsumptionRate = 0.2;
 };
+

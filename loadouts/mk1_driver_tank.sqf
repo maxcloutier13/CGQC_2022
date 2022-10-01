@@ -28,7 +28,7 @@ comment "Add binoculars";
 player addWeapon "cgqc_item_rangefinder";
 
 comment "Add items to containers";
-player addItemToUniform "ACRE_PRC343";
+player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "ItemAndroid";
 player addItemToUniform "ACE_microDAGR";

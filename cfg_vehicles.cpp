@@ -1,5 +1,17 @@
 class Air;
+class Plane: Air
+{
+    class HitPoints;
+};
 class B_Plane_CAS_01_dynamicLoadout_F;
+class UAV: Plane
+{
+    class NewTurret;
+    class ViewPilot;
+    class ViewOptics;
+    class AnimationSources;
+    class Components;
+};
 class Helicopter : Air
 {
     class ViewPilot;
@@ -7246,14 +7258,24 @@ class cgqc_plane_a10 : B_Plane_CAS_01_dynamicLoadout_F
 // Drones - Attempt to override fuel capacity
 class UAV_01_base_F : Helicopter_Base_F
 {
+    fuelCapacity = 300;
+};
+class UAV_06_base_F: Helicopter_Base_F // Pelican
+{
     fuelCapacity = 1000;
 };
-"B_UAV_06_F", 
-"B_UAV_06_medical_F", 
-"sps_black_hornet_01_F", 
-"B_UAV_05_F", 
-"B_UAV_02_dynamicLoadout_F", 
-"B_T_UAV_03_dynamicLoadout_F"
+class UAV_03_base_F: Helicopter_Base_F //Falcon
+{
+    fuelCapacity = 300;
+};
+class UAV_02_base_F: UAV // Yabhon
+{
+    fuelCapacity = 2000;
+};
+class UAV_05_Base_F: UAV // Sentinel
+{
+    fuelCapacity = 2000;
+};
 
 // Apache fuel
 class RHS_AH64_base: Heli_Attack_01_base_F

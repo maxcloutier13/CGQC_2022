@@ -108,6 +108,30 @@ class Heli_Transport_01_base_F : Helicopter_Base_H
 class Heli_Transport_02_base_F : Helicopter_Base_H
 {
 };
+class Heli_Attack_01_base_F: Helicopter_Base_F
+{
+    class HitPoints: HitPoints
+    {
+        class HitHull;
+        class HitFuel;
+        class HitAvionics;
+        class HitMissiles;
+        class HitEngine1;
+        class HitEngine2;
+        class HitEngine;
+        class HitHRotor;
+        class HitVRotor;
+        class HitGlass1;
+        class HitGlass2;
+        class HitGlass3;
+        class HitGlass4;
+        class HitGlass5;
+        class HitGlass6;
+        class HitGlass7;
+        class HitGlass8;
+    };
+    class Sounds;
+};
 // Little birds --------------------------------------------------------------------------------------------
 class cgqc_heli_melb_base : Helicopter_Base_H
 {
@@ -7218,4 +7242,14 @@ class cgqc_plane_a10 : B_Plane_CAS_01_dynamicLoadout_F
     displayName = "A10";
     crew = "CGQC_units_mk1_4_Pilot_jet";
     typicalCargo[] = {"CGQC_units_mk1_4_Pilot_jet"};
+};
+// Drones - Attempt to override fuel capacity
+class UAV_01_base_F : Helicopter_Base_F
+{
+    fuelCapacity = 1000;
+};
+class RHS_AH64_base: Heli_Attack_01_base_F
+{
+    fuelCapacity = 2500;
+	fuelConsumptionRate = 0.2;
 };

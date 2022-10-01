@@ -56,7 +56,7 @@ for "_i" from 1 to 2 do {
 player addItemToUniform "ACE_IR_Strobe_Item";
 player addItemToUniform "ACE_RangeCard";
 player addItemToUniform "cgqc_item_transponder";
-player addItemToUniform "ACRE_PRC343";
+player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "Tier1_15Rnd_9x19_JHP";

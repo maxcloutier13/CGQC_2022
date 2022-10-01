@@ -264,11 +264,6 @@ class CGQC_units_mk1_0_Drone_operator_pack : cgqc_pack_mk1_kitbag
             count = 3;
             magazine = "SmokeShellRed";
         };
-        class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
-        {
-            count = 5;
-            magazine = "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
-        };
         class _xx_B_IR_Grenade
         {
             count = 1;
@@ -346,11 +341,6 @@ class CGQC_units_mk1_0_SquadLeader_pack : cgqc_pack_mk1_kitbag
         {
             count = 3;
             magazine = "SmokeShellRed";
-        };
-        class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
-        {
-            count = 5;
-            magazine = "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
         };
         class _xx_B_IR_Grenade
         {
@@ -465,11 +455,6 @@ class CGQC_units_mk1_0_TeamLeader_Carbine_pack : cgqc_pack_mk1_kitbag
             count = 1;
             magazine = "B_IR_Grenade";
         };
-        class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
-        {
-            count = 12;
-            magazine = "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
-        };
         class _xx_1Rnd_HE_Grenade_shell
         {
             count = 10;
@@ -568,11 +553,6 @@ class CGQC_units_mk1_0_TeamLeader_CQB_pack : cgqc_pack_mk1_kitbag
             count = 1;
             magazine = "B_IR_Grenade";
         };
-        class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
-        {
-            count = 12;
-            magazine = "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
-        };
         class _xx_1Rnd_HE_Grenade_shell
         {
             count = 10;
@@ -670,11 +650,6 @@ class CGQC_units_mk1_0_JTAC_pack : cgqc_pack_mk1_kitbag
         {
             count = 1;
             magazine = "B_IR_Grenade";
-        };
-        class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
-        {
-            count = 5;
-            magazine = "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
         };
         class _xx_Laserbatteries
         {
@@ -789,11 +764,6 @@ class CGQC_units_mk1_1_Rifleman_Carbine_pack : cgqc_pack_mk1_kitbag
             count = 1;
             magazine = "B_IR_Grenade";
         };
-        class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
-        {
-            count = 10;
-            magazine = "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
-        };
     };
     class TransportItems
     {
@@ -866,11 +836,6 @@ class CGQC_units_mk1_1_Rifleman_CQB_pack : cgqc_pack_mk1_kitbag
         {
             count = 1;
             magazine = "B_IR_Grenade";
-        };
-        class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
-        {
-            count = 10;
-            magazine = "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
         };
     };
 
@@ -950,11 +915,6 @@ class CGQC_units_mk1_1_Medic_pack : cgqc_pack_mk1_kitbag
         {
             count = 1;
             magazine = "B_IR_Grenade";
-        };
-        class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
-        {
-            count = 6;
-            magazine = "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
         };
     };
     class TransportItems
@@ -1063,11 +1023,6 @@ class CGQC_units_mk1_1_Engineer_pack : cgqc_pack_mk1_kitbag
         {
             count = 2;
             magazine = "rhsusf_m112_mag";
-        };
-        class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
-        {
-            count = 4;
-            magazine = "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
         };
         class _xx_rhsusf_m112x4_mag
         {
@@ -1516,11 +1471,6 @@ class CGQC_units_mk1_3_AT_MAAWS_pack : cgqc_pack_mk1_kitbag
             count = 1;
             magazine = "B_IR_Grenade";
         };
-        class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
-        {
-            count = 5;
-            magazine = "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
-        };
         class _xx_MRAWS_HEAT_F
         {
             count = 2;
@@ -1603,11 +1553,6 @@ class CGQC_units_mk1_3_AT_Javelin_pack : cgqc_pack_mk1_kitbag
         {
             count = 3;
             magazine = "jav_AT_mas_can";
-        };
-        class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
-        {
-            count = 5;
-            magazine = "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
         };
     };
     class TransportItems

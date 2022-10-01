@@ -91,9 +91,6 @@ for "_i" from 1 to 3 do {
 	player addItemToBackpack "SmokeShellRed";
 };
 player addItemToBackpack "B_IR_Grenade";
-for "_i" from 1 to 10 do {
-	player addItemToBackpack "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
-};
 for "_i" from 1 to 2 do {
 	player addItemToBackpack "HandGrenade";
 };

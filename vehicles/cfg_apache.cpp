@@ -39237,6 +39237,7 @@ class cgqc_heli_AH64D : cgqc_heli_AH64_base
 };
 class cgqc_heli_AH64D_dickforce : cgqc_heli_AH64D
 {
+    displayName = "AH-64D Apache Dickforce";
     editorSubcategory = "EdSubcat_cgqc_funstuff";
     hiddenSelections[] = {"camo1", "camo2", "camo3", "Pilot_MFD_L", "Pilot_MFD_R", "Gunner_MFD_L", "Gunner_MFD_R"};
     hiddenSelectionsTextures[] = {

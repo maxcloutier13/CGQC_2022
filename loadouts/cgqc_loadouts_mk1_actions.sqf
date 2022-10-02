@@ -118,7 +118,7 @@ _adding = [ _source, 0, ["ACE_MainActions", "menu_cgqc", "menu_mk1", "menu_mk1_p
 _action = [ "menu_mk1_inf_medic", "Jet pilot ", "", {execVM "\CGQC_2022\loadouts\mk1_jet_pilot.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _source, 0, ["ACE_MainActions", "menu_cgqc", "menu_mk1", "menu_mk1_pilots"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Tank driver
-_action = [ "menu_mk1_inf_eng", "ank driver", "", {execVM "\CGQC_2022\loadouts\mk1_driver_tank.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+_action = [ "menu_mk1_inf_eng", "Tank driver", "", {execVM "\CGQC_2022\loadouts\mk1_driver_tank.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _source, 0, ["ACE_MainActions", "menu_cgqc", "menu_mk1", "menu_mk1_pilots"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 
 

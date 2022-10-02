@@ -144,14 +144,11 @@ class Heli_Attack_01_base_F : Helicopter_Base_F
     };
     class Sounds;
 };
-// Little birds --------------------------------------------------------------------------------------------
 #include "vehicles\cfg_littlebird.cpp"
-// Huey ----------------------------------------------------------------------------------------------------
 #include "vehicles\cfg_huey.cpp"
-// Blackhawk ------------------------------------------------------------------------------------------------
 #include "vehicles\cfg_blackhawk.cpp"
-// Chinook --------------------------------------------------------------------------------------------------
 #include "vehicles\cfg_chinook.cpp"
+#include "vehicles\cfg_apache.cpp"
 // Planes
 class cgqc_plane_a10 : B_Plane_CAS_01_dynamicLoadout_F
 {
@@ -182,22 +179,4 @@ class UAV_02_base_F : UAV // Yabhon
 class UAV_05_Base_F : UAV // Sentinel
 {
     fuelCapacity = 2000;
-};
-
-// Apache fuel
-class RHS_AH64_base : Heli_Attack_01_base_F
-{
-    fuelCapacity = 2500;
-    fuelConsumptionRate = 0.2;
-};
-// Apache IHADSS on our helmets
-class RHS_AH64D : RHS_AH64_base
-{
-    class UserActions
-    {
-        class IHADSS
-        {
-            condition = "((call rhsusf_fnc_findPlayer) in this)";
-        };
-    };
 };

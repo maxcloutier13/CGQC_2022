@@ -1,6 +1,12 @@
 class SensorTemplatePassiveRadar;
 class SensorTemplateLaser;
 class SensorTemplateDataLink;
+class SensorTemplateAntiRadiation;
+class SensorTemplateActiveRadar;
+class SensorTemplateIR;
+class SensorTemplateVisual;
+class SensorTemplateMan;
+class SensorTemplateNV;
 class DefaultVehicleSystemsDisplayManagerLeft
 {
     class components;

@@ -5,7 +5,7 @@ class cgqc_heli_AH64_base : Heli_Attack_01_base_F
     hiddenSelectionsTextures[] = {
     "cgqc_2022\vehicles\cgqc_heli_ah64.paa", 
     "cgqc_2022\vehicles\cgqc_heli_ah64_details.paa", 
-    "cgqc_2022\vehicles\cgqc_heli_ah64_decal.paa",
+    "",
     "#(argb,8,8,3)color(0,0,0,1.0,co)", 
     "#(argb,8,8,3)color(0,0,0,1.0,co)", 
     "#(argb,8,8,3)color(0,0,0,1.0,co)", 
@@ -39243,7 +39243,7 @@ class cgqc_heli_AH64D_dickforce : cgqc_heli_AH64D
     hiddenSelectionsTextures[] = {
     "cgqc_2022\vehicles\cgqc_heli_ah64_dickforce.paa", 
     "cgqc_2022\vehicles\cgqc_heli_ah64_details.paa", 
-    "cgqc_2022\vehicles\cgqc_heli_ah64_decal.paa",
+    "",
     "#(argb,8,8,3)color(0,0,0,1.0,co)", 
     "#(argb,8,8,3)color(0,0,0,1.0,co)", 
     "#(argb,8,8,3)color(0,0,0,1.0,co)", 

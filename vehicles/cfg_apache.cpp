@@ -1,6 +1,15 @@
 class cgqc_heli_AH64_base : Heli_Attack_01_base_F
 {
     dlc = "RHS_USAF";
+    hiddenSelections[] = {"camo1", "camo2", "camo3", "Pilot_MFD_L", "Pilot_MFD_R", "Gunner_MFD_L", "Gunner_MFD_R"};
+    hiddenSelectionsTextures[] = {
+    "cgqc_2022\vehicles\cgqc_heli_ah64.paa", 
+    "cgqc_2022\vehicles\cgqc_heli_ah64_details.paa", 
+    "cgqc_2022\vehicles\cgqc_heli_ah64_decal.paa",
+    "#(argb,8,8,3)color(0,0,0,1.0,co)", 
+    "#(argb,8,8,3)color(0,0,0,1.0,co)", 
+    "#(argb,8,8,3)color(0,0,0,1.0,co)", 
+    "#(argb,8,8,3)color(0,0,0,1.0,co)"};
     LESH_canBeTowed = 1;
     LESH_towFromFront = 0;
     LESH_AxisOffsetTarget[] = {0, -8.3, -1};
@@ -18943,9 +18952,7 @@ class cgqc_heli_AH64_base : Heli_Attack_01_base_F
             volume = "(1-camPos)*3*(rotorThrust-0.9)";
         };
     };
-    hiddenSelections[] = {"camo1", "camo2", "camo3", "Pilot_MFD_L", "Pilot_MFD_R", "Gunner_MFD_L", "Gunner_MFD_R"};
-    hiddenSelectionsTextures[] = {"\rhsusf\addons\rhsusf_a2port_air\ah64\data\ah64d_body_co.paa", "\rhsusf\addons\rhsusf_a2port_air\ah64\data\ah64d_details_co.paa", "\rhsusf\addons\rhsusf_a2port_air\ah64\data\ah64d_alfa_ca.paa", "#(argb,8,8,3)color(0,0,0,1.0,co)", "#(argb,8,8,3)color(0,0,0,1.0,co)", "#(argb,8,8,3)color(0,0,0,1.0,co)", "#(argb,8,8,3)color(0,0,0,1.0,co)"};
-    class textureSources
+        class textureSources
     {
         class standard
         {
@@ -39227,4 +39234,17 @@ class cgqc_heli_AH64D : cgqc_heli_AH64_base
 			init = "if (local (_this select 0)) then {[(_this select 0), """", [], false] call bis_fnc_initVehicle;}";
 		};
     };
+};
+class cgqc_heli_AH64D_dickforce : cgqc_heli_AH64D
+{
+    editorSubcategory = "EdSubcat_cgqc_funstuff";
+    hiddenSelections[] = {"camo1", "camo2", "camo3", "Pilot_MFD_L", "Pilot_MFD_R", "Gunner_MFD_L", "Gunner_MFD_R"};
+    hiddenSelectionsTextures[] = {
+    "cgqc_2022\vehicles\cgqc_heli_ah64_dickforce.paa", 
+    "cgqc_2022\vehicles\cgqc_heli_ah64_details.paa", 
+    "cgqc_2022\vehicles\cgqc_heli_ah64_decal.paa",
+    "#(argb,8,8,3)color(0,0,0,1.0,co)", 
+    "#(argb,8,8,3)color(0,0,0,1.0,co)", 
+    "#(argb,8,8,3)color(0,0,0,1.0,co)", 
+    "#(argb,8,8,3)color(0,0,0,1.0,co)"};
 };

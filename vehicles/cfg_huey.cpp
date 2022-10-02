@@ -1191,7 +1191,7 @@ class cgqc_heli_uh1 : cgqc_heli_uh1_base
     hiddenSelectionsTextures[] = {"cgqc_2022\vehicles\cgqc_heli_uh-1_exterior.paa",
                                   "cgqc_2022\vehicles\cgqc_heli_uh-1_interior.paa",
                                   "rhsgref\addons\rhsgref_air\uh1h\data\mlod_hidf_grey_co.paa",
-                                  "rhsgref\addons\rhsgref_air\uh1h\data\decals\uh1h_hidf_decals_ca.paa"};
+                                  ""};
     class textureSources : textureSources
     {
         class hidf_grey : hidf_grey

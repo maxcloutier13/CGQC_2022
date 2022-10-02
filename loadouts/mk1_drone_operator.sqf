@@ -88,10 +88,8 @@ for "_i" from 1 to 3 do {
 	player addItemToBackpack "SmokeShellRed";
 };
 player addItemToBackpack "B_IR_Grenade";
- 
-for "_i" from 1 to 8 do {
-	player addItemToBackpack "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
-};
+player addItemToBackpack "ACE_UAVBattery";
+player addItemToBackpack "ACE_UAVBattery";
 for "_i" from 1 to 2 do {
 	player addItemToBackpack "rev_darter_item";
 };

@@ -94,9 +94,6 @@ player addItemToBackpack "B_IR_Grenade";
  
 player addItemToBackpack "jav_AT_mas_can";
 player addItemToBackpack "jav_AT_mas_can";
-for "_i" from 1 to 5 do {
-	player addItemToBackpack "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
-};
 player addHeadgear "cgqc_helmet_mk1";
 player addGoggles "G_mas_can_balaM_T";
 

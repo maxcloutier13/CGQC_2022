@@ -56,7 +56,7 @@ for "_i" from 1 to 2 do {
 player addItemToUniform "ACE_IR_Strobe_Item";
 player addItemToUniform "ACE_RangeCard";
 player addItemToUniform "cgqc_item_transponder";
-player addItemToUniform "ACRE_PRC343";
+player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "Tier1_15Rnd_9x19_JHP";
@@ -98,10 +98,9 @@ for "_i" from 1 to 3 do {
 	player addItemToBackpack "SmokeShellRed";
 };
 player addItemToBackpack "B_IR_Grenade";
+player addItemToBackpack "ACE_UAVBattery";
+player addItemToBackpack "ACE_UAVBattery";
 player addItemToBackpack "rhsusf_m112_mag";
-for "_i" from 1 to 5 do {
-	player addItemToBackpack "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
-};
 player addHeadgear "cgqc_helmet_mk1";
 player addGoggles "G_mas_can_wrap_gog_B";
 

@@ -54,3 +54,4 @@ class cgqc_acc_anpeq15_light_wood : rhsusf_acc_anpeq15_light
 	weaponInfoType = "RHS_Flashlight2";
 	model = "\CGQC_2022\acc\cgqc_acc_ANPEQ15_wood";
 };
+

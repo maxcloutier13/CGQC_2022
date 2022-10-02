@@ -171,11 +171,6 @@ class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_kitbag
             count = 1;
             magazine = "B_IR_Grenade";
         };
-        class _xx_ACE_UAVBattery
-        {
-            count = 2;
-            magazine = "ACE_UAVBattery";
-        };
     };
     class TransportItems
     {
@@ -188,6 +183,11 @@ class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_kitbag
         {
             count = 1;
             name = "WBK_HeadLampItem";
+        };
+        class _xx_ACE_UAVBattery
+        {
+            count = 2;
+            name = "ACE_UAVBattery";
         };
         class _xx_ACE_fieldDressing
         {
@@ -269,12 +269,6 @@ class CGQC_units_mk1_0_Drone_operator_pack : cgqc_pack_mk1_kitbag
             count = 3;
             magazine = "SmokeShellRed";
         };
-        class _xx_ACE_UAVBattery
-        {
-            count = 2;
-            magazine = "ACE_UAVBattery";
-        };
-        
         class _xx_B_IR_Grenade
         {
             count = 1;
@@ -317,6 +311,11 @@ class CGQC_units_mk1_0_Drone_operator_pack : cgqc_pack_mk1_kitbag
         {
             count = 2;
             name = "Rev_darter_item";
+        };
+        class _xx_ACE_UAVBattery
+        {
+            count = 2;
+            name = "ACE_UAVBattery";
         };
     };
     class TransportWeapons
@@ -667,11 +666,6 @@ class CGQC_units_mk1_0_JTAC_pack : cgqc_pack_mk1_kitbag
             count = 1;
             magazine = "Laserbatteries";
         };
-        class _xx_ACE_UAVBattery
-        {
-            count = 2;
-            magazine = "ACE_UAVBattery";
-        };
     };
     class TransportItems
     {
@@ -739,6 +733,11 @@ class CGQC_units_mk1_0_JTAC_pack : cgqc_pack_mk1_kitbag
         {
             count = 1;
             name = "ACE_Kestrel4500";
+        };
+        class _xx_ACE_UAVBattery
+        {
+            count = 2;
+            name = "ACE_UAVBattery";
         };
     };
     class TransportWeapons

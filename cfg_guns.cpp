@@ -219,7 +219,7 @@ class cgqc_gun_mk1_MAAWS : launch_MRAWS_green_F
 	baseWeapon = "cgqc_gun_mk1_MAAWS";
 	displayName = "CGQC MAAWS";
 	hiddenSelectionsTextures[] = {
-		"\A3\Weapons_F_Tank\Launchers\MRAWS\Data\launch_MRAWS_darkgreen_01_F_co",
+		"\CGQC_2022\guns\cgqc_gun_maaws_darkgreen",
 		"\A3\Weapons_F_Tank\Launchers\MRAWS\Data\launch_MRAWS_02_F_co"};
 	class LinkedItems
 	{
@@ -364,7 +364,6 @@ class cgqc_gun_mk1_mk12 : gtr_weap_Mk12_Base
 		};
 	};
 };
-
 // Custom skins
 class cgqc_gun_mk1_mk18_fortin : cgqc_gun_mk1_mk18 
 {
@@ -423,7 +422,6 @@ class cgqc_gun_mk1_MAAWS_woodland : launch_MRAWS_green_F
 	{
 	};
 };
-
 // mk1 setup ----------------------------------------------------------------------------------
 class cgqc_gun_mk1_hq_m4a1 : cgqc_gun_mk1_m4a1blkII
 {

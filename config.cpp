@@ -139,6 +139,7 @@ class CfgPatches
 			"cgqc_gun_mk1_medic_m4a1",
 			"cgqc_gun_mk1_jtac_mk12",
 			"cgqc_gun_mk1_MAAWS",
+			"cgqc_gun_mk1_MAAWS_laforest",
 			"cgqc_gun_mk1_mp7",
 			"cgqc_gun_mk1_mk18_gl",
 			"cgqc_gun_mk1_AT_m4a1",

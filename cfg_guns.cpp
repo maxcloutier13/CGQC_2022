@@ -218,6 +218,9 @@ class cgqc_gun_mk1_MAAWS : launch_MRAWS_green_F
 	_generalMacro = "cgqc_gun_mk1_MAAWS";
 	baseWeapon = "cgqc_gun_mk1_MAAWS";
 	displayName = "CGQC MAAWS";
+	hiddenSelectionsTextures[] = {
+		"\A3\Weapons_F_Tank\Launchers\MRAWS\Data\launch_MRAWS_darkgreen_01_F_co",
+		"\A3\Weapons_F_Tank\Launchers\MRAWS\Data\launch_MRAWS_02_F_co"};
 	class LinkedItems
 	{
 	};
@@ -364,7 +367,7 @@ class cgqc_gun_mk1_mk12 : gtr_weap_Mk12_Base
 
 // Custom skins
 // Fortin
-class cgqc_gun_mk1_mk18_fortin : cgqc_gun_mk1_mk18
+class cgqc_gun_mk1_mk18_fortin : cgqc_gun_mk1_mk18 // Fortin
 {
 	scope = 2;
 	author = "silent1";
@@ -379,7 +382,20 @@ class cgqc_gun_mk1_mk18_fortin : cgqc_gun_mk1_mk18
 								  "rhsusf\addons\rhsusf_weapons\m4\data\magpulstock_co.paa",
 								  "\rhsusf\addons\rhsusf_weapons\m320\data\m320_co.paa"};
 };
-
+class cgqc_gun_mk1_MAAWS_laforest : launch_MRAWS_green_F 
+{
+	scope = 2;
+	author = "silent1";
+	_generalMacro = "cgqc_gun_mk1_MAAWS_laforest";
+	baseWeapon = "cgqc_gun_mk1_MAAWS_laforest";
+	displayName = "CGQC MAAWS - Laforest";
+	hiddenSelectionsTextures[] = {
+	"\CGQC_2022\guns\cgqc_gun_maaws_laforest",
+	"\A3\Weapons_F_Tank\Launchers\MRAWS\Data\launch_MRAWS_02_F_co"};
+	class LinkedItems
+	{
+	};
+};
 // mk1 setup ----------------------------------------------------------------------------------
 class cgqc_gun_mk1_hq_m4a1 : cgqc_gun_mk1_m4a1blkII
 {

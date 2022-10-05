@@ -422,6 +422,41 @@ class cgqc_gun_mk1_MAAWS_woodland : launch_MRAWS_green_F
 	{
 	};
 };
+class cgqc_gun_mk1_mk12_woodland : gtr_weap_Mk12_Base
+{
+	scope = 2;
+	scopeArsenal = 2;
+	author = "silent1";
+	_generalMacro = "cgqc_gun_mk1_mk12_woodland";
+	displayName = "CGQC mk12 - woodland";
+	baseWeapon = "cgqc_gun_mk1_mk12_woodland";
+	class LinkedItems
+	{
+		class LinkedItemsMuzzle
+		{
+			slot = "MuzzleSlot";
+			item = "Tier1_KAC_556_QDC_CQB_Black";
+		};
+		class LinkedItemsOptic
+		{
+			slot = "CowsSlot";
+			item = "NForce_Atcr_RMR_Top_SKeetIR_Down";
+		};
+		class LinkedItemsAcc
+		{
+			slot = "PointerSlot";
+			item = "Tier1_M4BII_NGAL_M600V_Black";
+		};
+		class LinkedItemsUnder
+		{
+			slot = "UnderBarrelSlot";
+			item = "Tier1_Harris_Bipod_Black";
+		};
+	};
+	hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\cgqc_2022\guns\cgqc_gun_mk12_woodland.paa"};
+};
+
 // mk1 setup ----------------------------------------------------------------------------------
 class cgqc_gun_mk1_hq_m4a1 : cgqc_gun_mk1_m4a1blkII
 {

@@ -78,7 +78,7 @@ for "_i" from 1 to 2 do {
 	player addItemToBackpack "ACE_salineIV_500";
 };
 player addItemToBackpack "ACE_EntrenchingTool";
-player addItemToBackpack "cgqc_beret_green";
+ 
 player addItemToBackpack "WBK_HeadLampItem";
 player addItemToBackpack "G_mas_can_gasmask";
 player addItemToBackpack "ACE_Chemlight_HiRed";
@@ -94,6 +94,7 @@ for "_i" from 1 to 3 do {
 };
 player addItemToBackpack "B_IR_Grenade";
  
+player addItemToBackpack "jav_AT_mas_can";
 player addItemToBackpack "jav_AT_mas_can";
 player addItemToBackpack "jav_AT_mas_can";
 player addHeadgear "cgqc_helmet_mk1";

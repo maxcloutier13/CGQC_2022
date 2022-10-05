@@ -79,7 +79,7 @@ for "_i" from 1 to 2 do {
 	player addItemToBackpack "ACE_salineIV_500";
 };
 player addItemToBackpack "ACE_EntrenchingTool";
-player addItemToBackpack "cgqc_beret_green";
+ 
 player addItemToBackpack "WBK_HeadLampItem";
 player addItemToBackpack "G_mas_can_gasmask";
 player addItemToBackpack "ACE_Chemlight_HiRed";
@@ -94,6 +94,7 @@ for "_i" from 1 to 3 do {
 	player addItemToBackpack "SmokeShellRed";
 };
 player addItemToBackpack "B_IR_Grenade";
+player addItemToBackpack "MRAWS_HEAT_F";
 player addItemToBackpack "MRAWS_HEAT_F";
 player addItemToBackpack "MRAWS_HEAT_F";
 for "_i" from 1 to 2 do {

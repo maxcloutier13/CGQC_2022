@@ -144,6 +144,7 @@ class Heli_Attack_01_base_F : Helicopter_Base_F
     };
     class Sounds;
 };
+// Helicopters definitions
 #include "vehicles\cfg_littlebird.cpp"
 #include "vehicles\cfg_huey.cpp"
 #include "vehicles\cfg_blackhawk.cpp"
@@ -160,7 +161,7 @@ class cgqc_plane_a10 : B_Plane_CAS_01_dynamicLoadout_F
     typicalCargo[] = {"CGQC_units_mk1_4_Pilot_jet"};
 };
 // Drones - Attempt to override fuel capacity
-class UAV_01_base_F : Helicopter_Base_F
+class UAV_01_base_F : Helicopter_Base_F // Darter
 {
     fuelCapacity = 300;
 };
@@ -179,4 +180,44 @@ class UAV_02_base_F : UAV // Yabhon
 class UAV_05_Base_F : UAV // Sentinel
 {
     fuelCapacity = 2000;
+};
+// Drones CGQC versions
+class B_UAV_01_F;
+class cgqc_drone_darter : B_UAV_01_F
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_drones";
+    displayName = "CGQC - Darter";
+    camouflage = 0.2;
+	audible = 0.05;
+    maxSpeed = 125;
+    radarTargetSize = 0.05;
+	visualTargetSize = 0.05;
+    class SimpleObject
+    {
+        eden = 1;
+        animate[] = {{"damagehide", 0}, {"rotorimpacthide", 0}, {"tailrotorimpacthide", 0}, {"propeller1_rotation", 0}, {"propeller1_blur_rotation", 0}, {"propeller2_rotation", 0}, {"propeller2_blur_rotation", 0}, {"propeller3_rotation", 0}, {"propeller3_blur_rotation", 0}, {"propeller4_rotation", 0}, {"propeller4_blur_rotation", 0}, {"propeller1_hide", 0}, {"propeller1_blur_hide", 0}, {"propeller2_hide", 0}, {"propeller2_blur_hide", 0}, {"propeller3_hide", 0}, {"propeller3_blur_hide", 0}, {"propeller4_hide", 0}, {"propeller4_blur_hide", 0}, {"mainturret", 0}, {"maingun", -0.05}};
+        hide[] = {"zasleh", "tail rotor blur", "main rotor blur", "zadni svetlo", "clan", "podsvit pristroju", "poskozeni"};
+        verticalOffset = 0.15;
+        verticalOffsetWorld = -0.001;
+        init = "''";
+    };
+    editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\B_UAV_01_F.jpg";
+    _generalMacro = "cgqc_drone_darter";
+    crew = "B_UAV_AI";
+    typicalCargo[] = {"B_UAV_AI"};
+    accuracy = 0.5;
+    class assembleInfo
+    {
+        primary = 1;
+        base = "";
+        assembleTo = "";
+        displayName = "";
+        dissasembleTo[] = {"B_UAV_01_backpack_F"};
+    };
+    hiddenSelectionsTextures[] = {"\CGQC_2022\vehicles\cgqc_drone_darter_dark.paa"};
+    textureList[] = {"Blufor", 1};
 };

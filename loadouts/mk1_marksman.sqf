@@ -32,6 +32,8 @@ comment "Add binoculars";
 player addWeapon "ACE_Vector";
 
 comment "Add items to containers";
+player addItemToUniform "FF_Painkiller";
+player addItemToUniform "FF_Painkiller";
 player addItemToUniform "ACRE_PRC343";
 player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "ItemAndroid";

@@ -32,6 +32,8 @@ player addMagazine "Laserbatteries";
 player addWeapon "Laserdesignator_01_khk_F";
 
 comment "Add items to containers";
+player addItemToUniform "FF_Painkiller";
+player addItemToUniform "FF_Painkiller";
 player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "ACRE_PRC152";

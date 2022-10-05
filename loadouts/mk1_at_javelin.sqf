@@ -34,6 +34,8 @@ comment "Add binoculars";
 player addWeapon "cgqc_item_rangefinder";
 
 comment "Add items to containers";
+player addItemToUniform "FF_Painkiller";
+player addItemToUniform "FF_Painkiller";
 player addItemToUniform "ACRE_PRC343";
 player addItemToUniform "ItemAndroid";
 player addItemToUniform "ACE_microDAGR";

@@ -34,6 +34,8 @@ player addMagazine "Laserbatteries";
 player addWeapon "Laserdesignator_01_khk_F";
 
 comment "Add items to containers";
+player addItemToUniform "FF_Painkiller";
+player addItemToUniform "FF_Painkiller";
 player addItemToUniform "ItemAndroid";
 player addItemToUniform "ACE_microDAGR";
 for "_i" from 1 to 10 do {

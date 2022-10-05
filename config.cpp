@@ -82,7 +82,8 @@ class CfgPatches
 			"cgqc_heli_uh60m",
 			"cgqc_heli_ch47_10",
 			"cgqc_heli_AH64D",
-			"cgqc_plane_a10"};
+			"cgqc_plane_a10",
+			"cgqc_drone_darter"};
 		weapons[] = {
 			"cgqc_helmet_mk1",
 			"cgqc_helmet_mk1_medic",
@@ -177,6 +178,10 @@ class CfgEditorSubcategories
 	class EdSubcat_cgqc_funstuff
 	{
 		displayName = "Funstuff";
+	};
+	class EdSubcat_cgqc_drones
+	{
+		displayName = "Drones";
 	};
 };
 // Custom units ----------------------------------------------------------------------------

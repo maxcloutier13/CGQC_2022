@@ -1488,7 +1488,7 @@ class CGQC_units_mk1_3_AT_MAAWS_pack : cgqc_pack_mk1_kitbag
         };
         class _xx_MRAWS_HEAT_F
         {
-            count = 2;
+            count = 3;
             magazine = "MRAWS_HEAT_F";
         };
     };

@@ -96,6 +96,7 @@ for "_i" from 1 to 3 do {
 player addItemToBackpack "B_IR_Grenade";
 player addItemToBackpack "MRAWS_HEAT_F";
 player addItemToBackpack "MRAWS_HEAT_F";
+player addItemToBackpack "MRAWS_HEAT_F";
 for "_i" from 1 to 2 do {
 	player addItemToBackpack "HandGrenade";
 };

@@ -96,6 +96,7 @@ player addItemToBackpack "B_IR_Grenade";
  
 player addItemToBackpack "jav_AT_mas_can";
 player addItemToBackpack "jav_AT_mas_can";
+player addItemToBackpack "jav_AT_mas_can";
 player addHeadgear "cgqc_helmet_mk1";
 player addGoggles "G_mas_can_balaM_T";
 

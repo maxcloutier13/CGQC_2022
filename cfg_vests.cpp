@@ -81,81 +81,80 @@ class cgqc_vest_mk1_mcam_ar : V_mas_can_PlateCarrierAR_rgr
     _generalMacro = "cgqc_vest_mk1_mcam_ar";
     displayName = "CGQC Veste mk1 AR - Multicam";
 };
-
 // Woodland
 class cgqc_vest_mk1_cadpat : V_mas_can_PlateCarrier1_green
 {
     author = "silent1";
-    _generalMacro = "cgqc_vest_mk1_tan";
-    displayName = "CGQC Veste mk1";
+    _generalMacro = "cgqc_vest_mk1_cadpat";
+    displayName = "CGQC Veste mk1 - Cadpat";
 };
 class cgqc_vest_mk1_cadpat_lr : V_mas_can_PlateCarrierLR_green
 {
     author = "silent1";
-    _generalMacro = "cgqc_vest_mk1_tan_lr";
-    displayName = "CGQC Veste mk1 LR";
+    _generalMacro = "cgqc_vest_mk1_cadpat_lr";
+    displayName = "CGQC Veste mk1 LR - Cadpat";
 };
 class cgqc_vest_mk1_cadpat_rf : V_mas_can_PlateCarrierRF_green
 {
     author = "silent1";
-    _generalMacro = "cgqc_vest_mk1_tan_rf";
-    displayName = "CGQC Veste mk1 RF";
+    _generalMacro = "cgqc_vest_mk1_cadpat_rf";
+    displayName = "CGQC Veste mk1 RF - Cadpat";
 };
 class cgqc_vest_mk1_cadpat_ar : V_mas_can_PlateCarrierAR_green
 {
     author = "silent1";
-    _generalMacro = "cgqc_vest_mk1_tan_ar";
-    displayName = "CGQC Veste mk1 AR";
+    _generalMacro = "cgqc_vest_mk1_cadpat_ar";
+    displayName = "CGQC Veste mk1 AR - Cadpat";
 };
 // Black
 class cgqc_vest_mk1_black : V_mas_can_PlateCarrier1_swat
 {
     author = "silent1";
-    _generalMacro = "cgqc_vest_mk1_tan";
-    displayName = "CGQC Veste mk1";
+    _generalMacro = "cgqc_vest_mk1_black";
+    displayName = "CGQC Veste mk1 - Black";
 };
 class cgqc_vest_mk1_black_lr : V_mas_can_PlateCarrierLR_swat
 {
     author = "silent1";
-    _generalMacro = "cgqc_vest_mk1_tan_lr";
-    displayName = "CGQC Veste mk1 LR";
+    _generalMacro = "cgqc_vest_mk1_black_lr";
+    displayName = "CGQC Veste mk1 LR - Black";
 };
 class cgqc_vest_mk1_black_rf : V_mas_can_PlateCarrierRF_swat
 {
     author = "silent1";
-    _generalMacro = "cgqc_vest_mk1_tan_rf";
-    displayName = "CGQC Veste mk1 RF";
+    _generalMacro = "cgqc_vest_mk1_black_rf";
+    displayName = "CGQC Veste mk1 RF - Black";
 };
 class cgqc_vest_mk1_black_ar : V_mas_can_PlateCarrierAR_swat
 {
     author = "silent1";
-    _generalMacro = "cgqc_vest_mk1_tan_ar";
-    displayName = "CGQC Veste mk1 AR";
+    _generalMacro = "cgqc_vest_mk1_black_ar";
+    displayName = "CGQC Veste mk1 AR - Black";
 };
 // Winter
 class cgqc_vest_mk1_white : V_mas_can_PlateCarrier1_wint
 {
     author = "silent1";
-    _generalMacro = "cgqc_vest_mk1_tan";
-    displayName = "CGQC Veste mk1";
+    _generalMacro = "cgqc_vest_mk1_white";
+    displayName = "CGQC Veste mk1 - White";
 };
 class cgqc_vest_mk1_white_lr : V_mas_can_PlateCarrierLR_wint
 {
     author = "silent1";
-    _generalMacro = "cgqc_vest_mk1_tan_lr";
-    displayName = "CGQC Veste mk1 LR";
+    _generalMacro = "cgqc_vest_mk1_white_lr";
+    displayName = "CGQC Veste mk1 LR - White";
 };
 class cgqc_vest_mk1_white_rf : V_mas_can_PlateCarrierRF_wint
 {
     author = "silent1";
-    _generalMacro = "cgqc_vest_mk1_tan_rf";
-    displayName = "CGQC Veste mk1 RF";
+    _generalMacro = "cgqc_vest_mk1_white_rf";
+    displayName = "CGQC Veste mk1 RF - White";
 };
 class cgqc_vest_mk1_white_ar : V_mas_can_PlateCarrierAR_wint
 {
     author = "silent1";
-    _generalMacro = "cgqc_vest_mk1_tan_ar";
-    displayName = "CGQC Veste mk1 AR";
+    _generalMacro = "cgqc_vest_mk1_white_ar";
+    displayName = "CGQC Veste mk1 AR - White";
 };
 
 // Pilot

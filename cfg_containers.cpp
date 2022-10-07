@@ -1,4 +1,9 @@
 class B_Kitbag_rgr;
+class B_mas_can_Kitbag_d;
+class B_mas_can_Kitbag_m;
+class rhssaf_kitbag_digital;
+class UK3CB_CW_US_B_LATE_B_RIF_04;
+class B_mas_can_Kitbag_LW;
 class B_Parachute;
 class Box_NATO_Equip_F;
 class B_supplyCrate_F;
@@ -8,7 +13,7 @@ class cgqc_box_mk1_rolebox : Box_NATO_Equip_F
 {
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_rolebox";
-    displayName = "CGQC MK1 Rolebox";
+    displayName = "CGQC MK1 Basic";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_rolebox_texture.paa",
                                   "\CGQC_2022\containers\cgqc_box_mk1_rolebox_label.paa"};
     editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\Box_NATO_Equip_F.jpg";
@@ -39,7 +44,7 @@ class cgqc_box_mk1_rolebox_green : cgqc_box_mk1_rolebox
 {
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_rolebox_green";
-    displayName = "CGQC MK1 Rolebox (Green)";
+    displayName = "CGQC MK1 Basic (Green)";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_rolebox_green.paa",
                                   "\CGQC_2022\containers\cgqc_box_mk1_rolebox_label.paa"};
 };
@@ -48,7 +53,7 @@ class cgqc_box_mk1_plus : cgqc_box_mk1_rolebox
 {
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_plus";
-    displayName = "CGQC MK1+ Rolebox";
+    displayName = "CGQC MK1+ Variantes";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_rolebox_texture.paa",
                                   "\CGQC_2022\containers\cgqc_box_mk1_plus_label.paa"};
     editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\Box_NATO_Equip_F.jpg";
@@ -61,7 +66,7 @@ class cgqc_box_mk1_plus_green : cgqc_box_mk1_plus
 {
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_plus_green";
-    displayName = "CGQC MK1+ Rolebox (Green)";
+    displayName = "CGQC MK1+ Variantes (Green)";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_rolebox_green.paa",
                                   "\CGQC_2022\containers\cgqc_box_mk1_plus_label.paa"};
 };
@@ -70,7 +75,7 @@ class cgqc_box_mk1_plus_plus : cgqc_box_mk1_rolebox
 {
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_plus_plus";
-    displayName = "CGQC MK1++ Rolebox";
+    displayName = "CGQC MK1++ Full";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_rolebox_texture.paa",
                                   "\CGQC_2022\containers\cgqc_box_mk1_plus_plus_label.paa"};
     editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\Box_NATO_Equip_F.jpg";
@@ -83,9 +88,31 @@ class cgqc_box_mk1_plus_plus_green : cgqc_box_mk1_plus_plus
 {
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_plus_plus_green";
-    displayName = "CGQC MK1++ Rolebox (Green)";
+    displayName = "CGQC MK1++ Full (Green)";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_rolebox_green.paa",
                                   "\CGQC_2022\containers\cgqc_box_mk1_plus_plus_label.paa"};
+};
+// Mk1 Loadout only box
+class cgqc_box_mk1_loadouts : cgqc_box_mk1_rolebox
+{
+    author = "silent1";
+    _generalMacro = "cgqc_box_mk1_plus_plus";
+    displayName = "CGQC MK1 Loadouts Only";
+    hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_rolebox_texture.paa",
+                                  "\CGQC_2022\containers\cgqc_box_mk1_loadouts.paa"};
+    editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\Box_NATO_Equip_F.jpg";
+    class EventHandlers
+    {
+        init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1_loadouts.sqf'";
+    };
+};
+class cgqc_box_mk1_loadouts_green : cgqc_box_mk1_loadouts
+{
+    author = "silent1";
+    _generalMacro = "cgqc_box_mk1_plus_plus_green";
+    displayName = "CGQC MK1 Loadouts Only (Green)";
+    hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_rolebox_green.paa",
+                                  "\CGQC_2022\containers\cgqc_box_mk1_loadouts.paa"};
 };
 // Original training map box
 class cgqc_box_original : B_supplyCrate_F
@@ -134,6 +161,56 @@ class cgqc_pack_mk1_kitbag : B_Kitbag_rgr
     maximumLoad = 350;
     mass = 20;
     displayName = "CGQC Kitbag mk1 Vert";
+};
+// Desert
+class cgqc_pack_mk1_kitbag_desert : B_mas_can_Kitbag_d
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_pack_mk1_kitbag_desert";
+    maximumLoad = 350;
+    mass = 20;
+    displayName = "CGQC Kitbag mk1 Desert";
+};
+// Multicam
+class cgqc_pack_mk1_kitbag_mcam : B_mas_can_Kitbag_m
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_pack_mk1_kitbag_mcam";
+    maximumLoad = 350;
+    mass = 20;
+    displayName = "CGQC Kitbag mk1 Multicam";
+};
+// Woodland
+class cgqc_pack_mk1_kitbag_cadpat : rhssaf_kitbag_digital
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_pack_mk1_kitbag_cadpat";
+    maximumLoad = 350;
+    mass = 20;
+    displayName = "CGQC Kitbag mk1 Cadpat";
+};
+// Black
+class cgqc_pack_mk1_kitbag_black : UK3CB_CW_US_B_LATE_B_RIF_04
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_pack_mk1_kitbag_black";
+    maximumLoad = 350;
+    mass = 20;
+    displayName = "CGQC Kitbag mk1 Black";
+};
+// Winter
+class cgqc_pack_mk1_kitbag_white : B_mas_can_Kitbag_LW
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_pack_mk1_kitbag_white";
+    maximumLoad = 350;
+    mass = 20;
+    displayName = "CGQC Kitbag mk1 White";
 };
 // mk1 Backpacks --------------------------------------------------------------------------------------
 class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_kitbag

@@ -22,8 +22,8 @@ _adding = [ _crate, 0, ["ACE_MainActions","menu_cgqc","menu_basic"], _action ] c
 */
 
 // Mk1 Loadout switcher ---------------------------------------------------------------------------------------------------------
-_action = [ "menu_mk1", "MK1 Loadouts/Rôles", "", {""}, {true} ] call ace_interact_menu_fnc_createAction;
-_adding = [ _crate, 0, ["ACE_MainActions", "menu_cgqc"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+_action = [ "menu_mk1", "Change de Loadouts/Rôles", "CGQC_2022\textures\cgqc_ace_icon", {""}, {true} ] call ace_interact_menu_fnc_createAction;
+_adding = [ _crate, 0, ["ACE_MainActions"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Infanterie ---------------------------------------------------------------------------------------------------------
 _action = [ "menu_mk1_inf", "Infanterie", "", {""}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions", "menu_mk1"], _action ] call  ace_interact_menu_fnc_addActionToObject;
@@ -98,8 +98,8 @@ _action = [ "menu_mk1_inf_eng", "Tank driver", "", {execVM "\CGQC_2022\loadouts\
 _adding = [ _crate, 0, ["ACE_MainActions", "menu_mk1", "menu_mk1_pilots"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 
 // Mk1 Camo Switcher ---------------------------------------------------------------------------------------------------------
-_action = [ "menu_mk1_camo", "Change Camo", "", {""}, {true} ] call ace_interact_menu_fnc_createAction;
-_adding = [ _crate, 0, ["ACE_MainActions", "menu_cgqc"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+_action = [ "menu_mk1_camo", "Change de Camo", "CGQC_2022\textures\cgqc_ace_icon", {""}, {true} ] call ace_interact_menu_fnc_createAction;
+_adding = [ _crate, 0, ["ACE_MainActions"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Base/Training uniform 
 _action = [ "menu_mk1_camo_base", "Training - Vert", "", {["base"]execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions", "menu_mk1_camo"], _action ] call  ace_interact_menu_fnc_addActionToObject;
@@ -110,7 +110,7 @@ _adding = [ _crate, 0, ["ACE_MainActions", "menu_mk1_camo"], _action ] call  ace
 _action = [ "menu_mk1_camo_multicam", "Multicam", "", {["multicam"]execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions", "menu_mk1_camo"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Woodland uniform 
-_action = [ "menu_mk1_camo_woodland", "Woodland", "", {["woodland"]execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+_action = [ "menu_mk1_camo_woodland", "Cadpat", "", {["woodland"]execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions", "menu_mk1_camo"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Black uniform 
 _action = [ "menu_mk1_camo_black", "Black", "", {["black"]execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
@@ -120,30 +120,27 @@ _action = [ "menu_mk1_camo_winter", "Winter", "", {["winter"]execVM "\CGQC_2022\
 _adding = [ _crate, 0, ["ACE_MainActions", "menu_mk1_camo"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 
 // Radios --------------------------------------------------------------------------------------------------------------
-_action = [ "menu_radios", "Radios", "", {""}, {true} ] call ace_interact_menu_fnc_createAction;
-_adding = [ _crate, 0, ["ACE_MainActions","menu_cgqc"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+_action = [ "menu_radios", "Radios", "CGQC_2022\textures\cgqc_ace_icon", {""}, {true} ] call ace_interact_menu_fnc_createAction;
+_adding = [ _crate, 0, ["ACE_MainActions"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 //  Radio1 
 _action = [ "meds_radio1", "343", "", {execVM "\CGQC_2022\loadouts\radio_1.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
-_adding = [ _crate, 0, ["ACE_MainActions","menu_cgqc","menu_radios"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+_adding = [ _crate, 0, ["ACE_MainActions", "menu_radios"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 //Radio2
-_action = [ "meds_radio2", "343+152", "", {execVM "\CGQC_2022\loadouts\radio_2.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
-_adding = [ _crate, 0, ["ACE_MainActions","menu_cgqc","menu_radios"], _action ] call  ace_interact_menu_fnc_addActionToObject;
-// Radio3 
-_action = [ "base_radio3", "343+152+152", "", {execVM "\CGQC_2022\loadouts\radio_3.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
-_adding = [ _crate, 0, ["ACE_MainActions","menu_cgqc","menu_radios"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+_action = [ "meds_radio2", "152", "", {execVM "\CGQC_2022\loadouts\radio_2.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+_adding = [ _crate, 0, ["ACE_MainActions", "menu_radios"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 
 // Skill switcher ---------------------------------------------------------------------------------------------------------
-_action = [ "menu_skill", "Skills", "", {""}, {true} ] call ace_interact_menu_fnc_createAction;
-_adding = [ _crate, 0, ["ACE_MainActions", "menu_cgqc"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+_action = [ "menu_skill", "Skills", "CGQC_2022\textures\cgqc_ace_icon", {""}, {true} ] call ace_interact_menu_fnc_createAction;
+_adding = [ _crate, 0, ["ACE_MainActions"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Meds to uniform 
 _action = [ "skill_medic", "Medic", "", {execVM "\CGQC_2022\loadouts\role_medic.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
-_adding = [ _crate, 0, ["ACE_MainActions","menu_cgqc","menu_skill"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+_adding = [ _crate, 0, ["ACE_MainActions", "menu_skill"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Meds to backpack
 _action = [ "skill_eng", "Ingénieur", "", {execVM "\CGQC_2022\loadouts\role_engineer.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
-_adding = [ _crate, 0, ["ACE_MainActions","menu_cgqc","menu_skill"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+_adding = [ _crate, 0, ["ACE_MainActions", "menu_skill"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Items to uniform 
 _action = [ "skill_eod", "EOD", "", {execVM "\CGQC_2022\loadouts\role_EOD.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
-_adding = [ _crate, 0, ["ACE_MainActions","menu_cgqc","menu_skill"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+_adding = [ _crate, 0, ["ACE_MainActions","menu_skill"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 
 
 

@@ -119,15 +119,18 @@ _adding = [ _crate, 0, ["ACE_MainActions", "menu_mk1_camo"], _action ] call  ace
 _action = [ "menu_mk1_camo_winter", "Winter", "", {["winter"]execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions", "menu_mk1_camo"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 
-// Radios --------------------------------------------------------------------------------------------------------------
-_action = [ "menu_radios", "Radios", "CGQC_2022\textures\cgqc_ace_icon", {""}, {true} ] call ace_interact_menu_fnc_createAction;
+// Items --------------------------------------------------------------------------------------------------------------
+_action = [ "menu_items", "Items", "CGQC_2022\textures\cgqc_ace_icon", {""}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 //  Radio1 
-_action = [ "meds_radio1", "343", "", {execVM "\CGQC_2022\loadouts\radio_1.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
-_adding = [ _crate, 0, ["ACE_MainActions", "menu_radios"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+_action = [ "menu_items1", "343", "", {["343"] execVM "\CGQC_2022\loadouts\mk1_box_get_items.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+_adding = [ _crate, 0, ["ACE_MainActions", "menu_items"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 //Radio2
-_action = [ "meds_radio2", "152", "", {execVM "\CGQC_2022\loadouts\radio_2.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
-_adding = [ _crate, 0, ["ACE_MainActions", "menu_radios"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+_action = [ "menu_items2", "152", "", {["152"]execVM "\CGQC_2022\loadouts\mk1_box_get_items.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+_adding = [ _crate, 0, ["ACE_MainActions", "menu_items"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+//Earplugs
+_action = [ "menu_items3", "Earplugs", "", {["earplugs"]execVM "\CGQC_2022\loadouts\mk1_box_get_items.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+_adding = [ _crate, 0, ["ACE_MainActions", "menu_items"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 
 // Skill switcher ---------------------------------------------------------------------------------------------------------
 _action = [ "menu_skill", "Skills", "CGQC_2022\textures\cgqc_ace_icon", {""}, {true} ] call ace_interact_menu_fnc_createAction;

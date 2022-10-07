@@ -203,7 +203,7 @@ class cgqc_pack_mk1_kitbag_black : UK3CB_CW_US_B_LATE_B_RIF_04 // Black
     mass = 20;
     displayName = "CGQC Kitbag mk1 Black";
 };
-class cgqc_pack_mk1_kitbag_white : B_mas_can_Kitbag_LW // Winter
+class cgqc_pack_mk1_kitbag_white : B_Kitbag_rgr // Winter
 {
     scope = 2;
     author = "silent1";
@@ -211,6 +211,7 @@ class cgqc_pack_mk1_kitbag_white : B_mas_can_Kitbag_LW // Winter
     maximumLoad = 350;
     mass = 20;
     displayName = "CGQC Kitbag mk1 White";
+    hiddenSelectionsTextures[] = {"\cgqc_2022\containers\cgqc_kitbag_white.paa"};
 };
 // mk1 Backpacks --------------------------------------------------------------------------------------
 class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_kitbag

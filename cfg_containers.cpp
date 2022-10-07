@@ -4,6 +4,11 @@ class B_mas_can_Kitbag_m;
 class rhssaf_kitbag_digital;
 class UK3CB_CW_US_B_LATE_B_RIF_04;
 class B_mas_can_Kitbag_LW;
+class B_RadioBag_01_black_F;
+class B_RadioBag_01_tropic_F;
+class B_RadioBag_01_eaf_F;
+class B_RadioBag_01_wdl_F;
+class B_RadioBag_01_oucamo_F;
 class B_Parachute;
 class Box_NATO_Equip_F;
 class B_supplyCrate_F;
@@ -153,7 +158,7 @@ class cgqc_box_original_green : B_supplyCrate_F
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_originale_green.paa"};
 };
 // Basic Backpacks --------------------------------------------------------------------------------------
-class cgqc_pack_mk1_kitbag : B_Kitbag_rgr
+class cgqc_pack_mk1_kitbag : B_Kitbag_rgr // Base
 {
     scope = 2;
     author = "silent1";
@@ -162,8 +167,7 @@ class cgqc_pack_mk1_kitbag : B_Kitbag_rgr
     mass = 20;
     displayName = "CGQC Kitbag mk1 Vert";
 };
-// Desert
-class cgqc_pack_mk1_kitbag_desert : B_mas_can_Kitbag_d
+class cgqc_pack_mk1_kitbag_desert : B_mas_can_Kitbag_d // Desert
 {
     scope = 2;
     author = "silent1";
@@ -172,8 +176,7 @@ class cgqc_pack_mk1_kitbag_desert : B_mas_can_Kitbag_d
     mass = 20;
     displayName = "CGQC Kitbag mk1 Desert";
 };
-// Multicam
-class cgqc_pack_mk1_kitbag_mcam : B_mas_can_Kitbag_m
+class cgqc_pack_mk1_kitbag_mcam : B_mas_can_Kitbag_m // Multicam
 {
     scope = 2;
     author = "silent1";
@@ -182,8 +185,7 @@ class cgqc_pack_mk1_kitbag_mcam : B_mas_can_Kitbag_m
     mass = 20;
     displayName = "CGQC Kitbag mk1 Multicam";
 };
-// Woodland
-class cgqc_pack_mk1_kitbag_cadpat : rhssaf_kitbag_digital
+class cgqc_pack_mk1_kitbag_cadpat : rhssaf_kitbag_digital // Woodland
 {
     scope = 2;
     author = "silent1";
@@ -192,8 +194,7 @@ class cgqc_pack_mk1_kitbag_cadpat : rhssaf_kitbag_digital
     mass = 20;
     displayName = "CGQC Kitbag mk1 Cadpat";
 };
-// Black
-class cgqc_pack_mk1_kitbag_black : UK3CB_CW_US_B_LATE_B_RIF_04
+class cgqc_pack_mk1_kitbag_black : UK3CB_CW_US_B_LATE_B_RIF_04 // Black
 {
     scope = 2;
     author = "silent1";
@@ -202,8 +203,7 @@ class cgqc_pack_mk1_kitbag_black : UK3CB_CW_US_B_LATE_B_RIF_04
     mass = 20;
     displayName = "CGQC Kitbag mk1 Black";
 };
-// Winter
-class cgqc_pack_mk1_kitbag_white : B_mas_can_Kitbag_LW
+class cgqc_pack_mk1_kitbag_white : B_mas_can_Kitbag_LW // Winter
 {
     scope = 2;
     author = "silent1";
@@ -1682,4 +1682,59 @@ class CGQC_units_mk1_4_crew_heli_pack : B_Parachute
     class TransportWeapons
     {
     };
+};
+// Radio Backpacks --------------------------------------------------------------------------------------
+class cgqc_pack_mk1_radiobag : B_Kitbag_rgr // Base
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_pack_mk1_radiobag";
+    maximumLoad = 350;
+    mass = 20;
+    displayName = "CGQC Radiobag mk1 Vert";
+};
+class cgqc_pack_mk1_radiobag_desert : B_RadioBag_01_eaf_F // Desert
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_pack_mk1_radiobag_desert";
+    maximumLoad = 350;
+    mass = 20;
+    displayName = "CGQC Radiobag mk1 Desert";
+};
+class cgqc_pack_mk1_radiobag_mcam : B_RadioBag_01_wdl_F // Multicam
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_pack_mk1_radiobag_mcam";
+    maximumLoad = 350;
+    mass = 20;
+    displayName = "CGQC Radiobag mk1 Multicam";
+};
+class cgqc_pack_mk1_radiobag_cadpat : B_RadioBag_01_tropic_F // Base
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_pack_mk1_radiobag_cadpat";
+    maximumLoad = 350;
+    mass = 20;
+    displayName = "CGQC Radiobag mk1 Cadpat";
+};
+class cgqc_pack_mk1_radiobag_black : B_RadioBag_01_black_F // Base
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_pack_mk1_radiobag_black";
+    maximumLoad = 350;
+    mass = 20;
+    displayName = "CGQC Radiobag mk1 Black";
+};
+class cgqc_pack_mk1_radiobag_white : B_RadioBag_01_oucamo_F // Base
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_pack_mk1_radiobag_white";
+    maximumLoad = 350;
+    mass = 20;
+    displayName = "CGQC Radiobag mk1 White";
 };

@@ -1246,10 +1246,22 @@ class cgqc_heli_uh1 : cgqc_heli_uh1_base
             statement = "[this] execVM '\CGQC_2022\scripts\get_gunners.sqf'";
             position = "";
             radius = 10;
-            priority = 10.5;
+            priority = 0;
             onlyforplayer = 1;
             showWindow = 0;
-            hideOnUse = 0;
+            hideOnUse = 1;
+        };
+        class KillGunners
+        {
+            displayName = "Remove Crew";
+            condition = "((call rhs_fnc_findPlayer) isEqualTo (driver this))";
+            statement = "[this] execVM '\CGQC_2022\scripts\remove_gunners.sqf'";
+            position = "";
+            radius = 10;
+            priority = 0;
+            onlyforplayer = 1;
+            showWindow = 0;
+            hideOnUse = 1;
         };
     };
     textureList[] = {};

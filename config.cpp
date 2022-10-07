@@ -150,7 +150,6 @@ class CfgPatches
 			"cgqc_item_rangefinder"};
 	};
 };
-
 // Rails setup
 	#include "cfg_rails.cpp"
 // Weapons ------------------------------------------------------------------------

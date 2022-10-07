@@ -107,4 +107,4 @@ player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemGPS";
-player linkItem "NVGoggles_mas_can_hv";
+player linkItem "USP_GPNVG18";

@@ -386,7 +386,7 @@ class cgqc_gun_mk1_MAAWS_laforest : launch_MRAWS_green_F
 	author = "silent1";
 	_generalMacro = "cgqc_gun_mk1_MAAWS_laforest";
 	baseWeapon = "cgqc_gun_mk1_MAAWS_laforest";
-	displayName = "CGQC MAAWS - Laforest";
+	displayName = "CGQC - Le Scalpel de Laforest";
 	hiddenSelectionsTextures[] = {
 	"\CGQC_2022\guns\cgqc_gun_maaws_laforest",
 	"\A3\Weapons_F_Tank\Launchers\MRAWS\Data\launch_MRAWS_02_F_co"};

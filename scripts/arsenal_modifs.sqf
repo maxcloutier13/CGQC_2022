@@ -20,7 +20,8 @@ private _medical = [
 	"ACE_splint",
 	"ACE_surgicalKit",
 	"ACE_tourniquet",
-	"FSGm_ItemMedicBag"
+	"FSGm_ItemMedicBag",
+	"FF_Painkiller"
 ];
 
 private _electronics = [

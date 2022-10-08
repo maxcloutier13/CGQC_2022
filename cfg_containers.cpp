@@ -1685,7 +1685,7 @@ class CGQC_units_mk1_4_crew_heli_pack : B_Parachute
     };
 };
 // Radio Backpacks --------------------------------------------------------------------------------------
-class cgqc_pack_mk1_radiobag : B_Kitbag_rgr // Base
+class cgqc_pack_mk1_radiobag : B_RadioBag_01_eaf_F // Base
 {
     scope = 2;
     author = "silent1";

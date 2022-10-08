@@ -116,4 +116,4 @@ player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "B_UavTerminal";
-player linkItem "NVGoggles_mas_can_hv";
+player linkItem "JAS_GPNVG18_blk";

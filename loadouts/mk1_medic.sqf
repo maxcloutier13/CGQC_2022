@@ -111,6 +111,9 @@ for "_i" from 1 to 2 do {
 for "_i" from 1 to 3 do {
 	player addItemToBackpack "SmokeShellPurple";
 };
+for "_i" from 1 to 20 do {
+	player addItemToBackpack "FF_Painkiller";
+};
 player addItemToBackpack "B_IR_Grenade";
 player addItemToBackpack "HandGrenade";
 player addItemToBackpack "FSGm_ItemMedicBag";

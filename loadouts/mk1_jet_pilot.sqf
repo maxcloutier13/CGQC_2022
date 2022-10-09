@@ -32,7 +32,7 @@ comment "Add items to containers";
 for "_i" from 1 to 5 do {
 	player addItemToUniform "FF_Painkiller";
 };
-player addItemToUniform "ACRE_PRC343";
+player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "ItemAndroid";
 player addItemToUniform "ACE_microDAGR";

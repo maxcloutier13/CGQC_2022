@@ -273,6 +273,11 @@ class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_kitbag
             count = 1;
             name = "ACE_salineIV_500";
         };
+        class _xx_FF_Painkiller
+        {
+            count = 5;
+            name = "FF_Painkiller";
+        };
         class _xx_ACE_EntrenchingTool
         {
             count = 1;
@@ -361,6 +366,11 @@ class CGQC_units_mk1_0_Drone_operator_pack : cgqc_pack_mk1_kitbag
         {
             count = 10;
             name = "ACE_fieldDressing";
+        };
+        class _xx_FF_Painkiller
+        {
+            count = 5;
+            name = "FF_Painkiller";
         };
         class _xx_ACE_salineIV_500
         {
@@ -460,6 +470,11 @@ class CGQC_units_mk1_0_SquadLeader_pack : cgqc_pack_mk1_kitbag
         {
             count = 10;
             name = "ACE_fieldDressing";
+        };
+        class _xx_FF_Painkiller
+        {
+            count = 5;
+            name = "FF_Painkiller";
         };
         class _xx_ACE_salineIV_500
         {
@@ -565,6 +580,11 @@ class CGQC_units_mk1_0_TeamLeader_Carbine_pack : cgqc_pack_mk1_kitbag
             count = 10;
             name = "ACE_fieldDressing";
         };
+        class _xx_FF_Painkiller
+        {
+            count = 5;
+            name = "FF_Painkiller";
+        };
         class _xx_ACE_salineIV_500
         {
             count = 2;
@@ -659,6 +679,11 @@ class CGQC_units_mk1_0_TeamLeader_CQB_pack : cgqc_pack_mk1_kitbag
             count = 10;
             name = "ACE_fieldDressing";
         };
+        class _xx_FF_Painkiller
+        {
+            count = 5;
+            name = "FF_Painkiller";
+        };
         class _xx_ACE_salineIV_500
         {
             count = 2;
@@ -737,6 +762,11 @@ class CGQC_units_mk1_0_JTAC_pack : cgqc_pack_mk1_kitbag
         {
             count = 10;
             name = "ACE_fieldDressing";
+        };
+        class _xx_FF_Painkiller
+        {
+            count = 5;
+            name = "FF_Painkiller";
         };
         class _xx_ACE_salineIV_500
         {
@@ -847,6 +877,11 @@ class CGQC_units_mk1_1_Rifleman_Carbine_pack : cgqc_pack_mk1_kitbag
             count = 10;
             name = "ACE_fieldDressing";
         };
+        class _xx_FF_Painkiller
+        {
+            count = 5;
+            name = "FF_Painkiller";
+        };
         class _xx_ACE_salineIV_500
         {
             count = 2;
@@ -916,6 +951,11 @@ class CGQC_units_mk1_1_Rifleman_CQB_pack : cgqc_pack_mk1_kitbag
         {
             count = 10;
             name = "ACE_fieldDressing";
+        };
+        class _xx_FF_Painkiller
+        {
+            count = 5;
+            name = "FF_Painkiller";
         };
         class _xx_ACE_salineIV_500
         {
@@ -1106,6 +1146,11 @@ class CGQC_units_mk1_1_Engineer_pack : cgqc_pack_mk1_kitbag
             count = 10;
             name = "ACE_fieldDressing";
         };
+        class _xx_FF_Painkiller
+        {
+            count = 5;
+            name = "FF_Painkiller";
+        };
         class _xx_ACE_salineIV_500
         {
             count = 2;
@@ -1200,6 +1245,11 @@ class CGQC_units_mk1_2_LMG_pack : cgqc_pack_mk1_kitbag
             count = 10;
             name = "ACE_fieldDressing";
         };
+        class _xx_FF_Painkiller
+        {
+            count = 5;
+            name = "FF_Painkiller";
+        };
         class _xx_ACE_salineIV_500
         {
             count = 2;
@@ -1274,6 +1324,11 @@ class CGQC_units_mk1_2_HMG_pack : cgqc_pack_mk1_kitbag
             count = 10;
             name = "ACE_fieldDressing";
         };
+        class _xx_FF_Painkiller
+        {
+            count = 5;
+            name = "FF_Painkiller";
+        };
         class _xx_ACE_salineIV_500
         {
             count = 2;
@@ -1347,6 +1402,11 @@ class CGQC_units_mk1_2_Marksman_pack : cgqc_pack_mk1_kitbag
         {
             count = 10;
             name = "ACE_fieldDressing";
+        };
+        class _xx_FF_Painkiller
+        {
+            count = 5;
+            name = "FF_Painkiller";
         };
         class _xx_ACE_salineIV_500
         {
@@ -1438,6 +1498,11 @@ class CGQC_units_mk1_2_Sniper_pack : cgqc_pack_mk1_kitbag
             count = 10;
             name = "ACE_fieldDressing";
         };
+        class _xx_FF_Painkiller
+        {
+            count = 5;
+            name = "FF_Painkiller";
+        };
         class _xx_ACE_salineIV_500
         {
             count = 2;
@@ -1527,6 +1592,11 @@ class CGQC_units_mk1_3_AT_MAAWS_pack : cgqc_pack_mk1_kitbag
             count = 10;
             name = "ACE_fieldDressing";
         };
+        class _xx_FF_Painkiller
+        {
+            count = 5;
+            name = "FF_Painkiller";
+        };
         class _xx_ACE_salineIV_500
         {
             count = 2;
@@ -1600,6 +1670,11 @@ class CGQC_units_mk1_3_AT_Javelin_pack : cgqc_pack_mk1_kitbag
         {
             count = 10;
             name = "ACE_fieldDressing";
+        };
+        class _xx_FF_Painkiller
+        {
+            count = 5;
+            name = "FF_Painkiller";
         };
         class _xx_ACE_salineIV_500
         {

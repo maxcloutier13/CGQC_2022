@@ -76,11 +76,16 @@ for "_i" from 1 to 2 do {
 for "_i" from 1 to 10 do {
 	player addItemToBackpack "ACE_fieldDressing";
 };
+for "_i" from 1 to 5 do {
+	player addItemToBackpack "FF_Painkiller";
+};
 for "_i" from 1 to 2 do {
 	player addItemToBackpack "ACE_salineIV_500";
 };
 player addItemToBackpack "ACE_EntrenchingTool";
- 
+for "_i" from 1 to 5 do {
+	player addItemToBackpack "FF_Painkiller";
+};
 player addItemToBackpack "WBK_HeadLampItem";
 player addItemToBackpack "G_mas_can_gasmask";
 player addItemToBackpack "ItemcTab";

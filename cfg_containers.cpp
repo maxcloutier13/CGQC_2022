@@ -214,6 +214,61 @@ class cgqc_pack_mk1_kitbag_white : B_Kitbag_rgr // Winter
     displayName = "CGQC Kitbag mk1 White";
     hiddenSelectionsTextures[] = {"\cgqc_2022\containers\cgqc_kitbag_white.paa"};
 };
+// Radio Backpacks --------------------------------------------------------------------------------------
+class cgqc_pack_mk1_radiobag : B_RadioBag_01_eaf_F // Base
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_pack_mk1_radiobag";
+    maximumLoad = 350;
+    mass = 20;
+    displayName = "CGQC Radiobag mk1 Vert";
+};
+class cgqc_pack_mk1_radiobag_desert : B_RadioBag_01_eaf_F // Desert
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_pack_mk1_radiobag_desert";
+    maximumLoad = 350;
+    mass = 20;
+    displayName = "CGQC Radiobag mk1 Desert";
+};
+class cgqc_pack_mk1_radiobag_mcam : B_RadioBag_01_wdl_F // Multicam
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_pack_mk1_radiobag_mcam";
+    maximumLoad = 350;
+    mass = 20;
+    displayName = "CGQC Radiobag mk1 Multicam";
+};
+class cgqc_pack_mk1_radiobag_cadpat : B_RadioBag_01_tropic_F // Base
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_pack_mk1_radiobag_cadpat";
+    maximumLoad = 350;
+    mass = 20;
+    displayName = "CGQC Radiobag mk1 Cadpat";
+};
+class cgqc_pack_mk1_radiobag_black : B_RadioBag_01_black_F // Base
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_pack_mk1_radiobag_black";
+    maximumLoad = 350;
+    mass = 20;
+    displayName = "CGQC Radiobag mk1 Black";
+};
+class cgqc_pack_mk1_radiobag_white : B_RadioBag_01_oucamo_F // Base
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_pack_mk1_radiobag_white";
+    maximumLoad = 350;
+    mass = 20;
+    displayName = "CGQC Radiobag mk1 White";
+};
 // mk1 Backpacks --------------------------------------------------------------------------------------
 class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_kitbag
 {
@@ -1758,59 +1813,4 @@ class CGQC_units_mk1_4_crew_heli_pack : B_Parachute
     class TransportWeapons
     {
     };
-};
-// Radio Backpacks --------------------------------------------------------------------------------------
-class cgqc_pack_mk1_radiobag : B_RadioBag_01_eaf_F // Base
-{
-    scope = 2;
-    author = "silent1";
-    _generalMacro = "cgqc_pack_mk1_radiobag";
-    maximumLoad = 350;
-    mass = 20;
-    displayName = "CGQC Radiobag mk1 Vert";
-};
-class cgqc_pack_mk1_radiobag_desert : B_RadioBag_01_eaf_F // Desert
-{
-    scope = 2;
-    author = "silent1";
-    _generalMacro = "cgqc_pack_mk1_radiobag_desert";
-    maximumLoad = 350;
-    mass = 20;
-    displayName = "CGQC Radiobag mk1 Desert";
-};
-class cgqc_pack_mk1_radiobag_mcam : B_RadioBag_01_wdl_F // Multicam
-{
-    scope = 2;
-    author = "silent1";
-    _generalMacro = "cgqc_pack_mk1_radiobag_mcam";
-    maximumLoad = 350;
-    mass = 20;
-    displayName = "CGQC Radiobag mk1 Multicam";
-};
-class cgqc_pack_mk1_radiobag_cadpat : B_RadioBag_01_tropic_F // Base
-{
-    scope = 2;
-    author = "silent1";
-    _generalMacro = "cgqc_pack_mk1_radiobag_cadpat";
-    maximumLoad = 350;
-    mass = 20;
-    displayName = "CGQC Radiobag mk1 Cadpat";
-};
-class cgqc_pack_mk1_radiobag_black : B_RadioBag_01_black_F // Base
-{
-    scope = 2;
-    author = "silent1";
-    _generalMacro = "cgqc_pack_mk1_radiobag_black";
-    maximumLoad = 350;
-    mass = 20;
-    displayName = "CGQC Radiobag mk1 Black";
-};
-class cgqc_pack_mk1_radiobag_white : B_RadioBag_01_oucamo_F // Base
-{
-    scope = 2;
-    author = "silent1";
-    _generalMacro = "cgqc_pack_mk1_radiobag_white";
-    maximumLoad = 350;
-    mass = 20;
-    displayName = "CGQC Radiobag mk1 White";
 };

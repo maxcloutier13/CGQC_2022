@@ -13,6 +13,7 @@ class B_Parachute;
 class Box_NATO_Equip_F;
 class B_supplyCrate_F;
 class cgqc_pack_mk1_magic;
+
 // Mk1 box
 class cgqc_box_mk1_rolebox : Box_NATO_Equip_F
 {
@@ -709,7 +710,7 @@ class CGQC_units_mk1_0_TeamLeader_CQB_pack : cgqc_pack_mk1_kitbag
     {
     };
 };
-class CGQC_units_mk1_0_JTAC_pack : cgqc_pack_mk1_kitbag
+class CGQC_units_mk1_0_JTAC_pack : cgqc_pack_mk1_radiobag
 {
     scope = 1;
     class TransportMagazines
@@ -752,7 +753,6 @@ class CGQC_units_mk1_0_JTAC_pack : cgqc_pack_mk1_kitbag
     };
     class TransportItems
     {
-
         class _xx_WBK_HeadLampItem
         {
             count = 1;
@@ -785,7 +785,7 @@ class CGQC_units_mk1_0_JTAC_pack : cgqc_pack_mk1_kitbag
         };
         class _xx_Rev_darter_item
         {
-            count = 1;
+            count = 2;
             name = "Rev_darter_item";
         };
         class _xx_ACE_SpottingScope

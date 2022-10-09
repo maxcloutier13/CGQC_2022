@@ -7,7 +7,6 @@ class U_mas_can_B_CombatUniform_S_NTOG;
 class U_mas_can_B_CombatUniform_S_SWAT;
 class U_I_pilotCoveralls;
 
-
 // Base/training
 class cgqc_uniform_mk1 : U_mas_can_B_CombatUniform_S_NTOG
 {

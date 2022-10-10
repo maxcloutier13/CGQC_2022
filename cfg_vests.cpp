@@ -56,6 +56,10 @@ class cgqc_vest_mk1_tan_ar : V_mas_can_PlateCarrierAR_tan
     displayName = "CGQC Veste mk1 AR";
 };
 
+class cgqc_vest_mk1_desert : cgqc_vest_mk1_tan{};
+class cgqc_vest_mk1_desert_lr : cgqc_vest_mk1_tan_lr{};
+class cgqc_vest_mk1_desert_rf : cgqc_vest_mk1_tan_rf{};
+class cgqc_vest_mk1_desert_ar : cgqc_vest_mk1_tan_ar{};
 // Multicam
 class cgqc_vest_mk1_mcam : V_mas_can_PlateCarrier1_rgr
 {

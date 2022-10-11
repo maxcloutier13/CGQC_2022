@@ -23,6 +23,7 @@ player addPrimaryWeaponItem "Tier1_Harris_Bipod_Black";
 player addWeapon "cgqc_gun_glock19_wood";
 player addHandgunItem "Tier1_X300U";
 player addHandgunItem "Tier1_15Rnd_9x19_JHP";
+player addHandgunItem "tier1_dbalpl";
 
 comment "Add containers";
 player forceAddUniform "cgqc_uniform_mk1";

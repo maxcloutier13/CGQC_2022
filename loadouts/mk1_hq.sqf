@@ -21,6 +21,7 @@ player addPrimaryWeaponItem "Tier1_EXPS3_0_3xMag_Black_Up";
 player addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
 player addWeapon "cgqc_gun_glock19_wood";
 player addHandgunItem "Tier1_15Rnd_9x19_JHP";
+player addHandgunItem "tier1_dbalpl";
 
 comment "Add containers";
 player forceAddUniform "cgqc_uniform_mk1";

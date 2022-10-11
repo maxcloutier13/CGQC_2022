@@ -22,6 +22,7 @@ player addPrimaryWeaponItem "ACE_20Rnd_762x51_Mk319_Mod_0_Mag";
 player addPrimaryWeaponItem "bipod_01_F_blk";
 player addWeapon "cgqc_gun_glock19_wood";
 player addHandgunItem "Tier1_15Rnd_9x19_JHP";
+player addHandgunItem "tier1_dbalpl";
 
 comment "Add containers";
 player forceAddUniform "cgqc_uniform_mk1";

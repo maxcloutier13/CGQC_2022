@@ -81,7 +81,7 @@ class cgqc_item_rangefinder : Rangefinder
 	author = "silent1";
 	_generalMacro = "cgqc_item_rangefinder";
 	baseWeapon = "cgqc_item_rangefinder";
-	displayName = "CGQC Rangefinder";
+	displayName = "CGQC Rangefinder ";
 };
 class cgqc_item_laserdesignator : Laserdesignator_03
 {

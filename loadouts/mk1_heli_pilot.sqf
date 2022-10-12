@@ -1,4 +1,5 @@
 execVM "\CGQC_2022\loadouts\transition.sqf";
+disableUserInput true;
 sleep 2;
 player setUnitTrait ["Medic", false];
 player setUnitTrait ["engineer", true];
@@ -77,3 +78,4 @@ player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemGPS";
 player linkItem "JAS_GPNVG18_blk";
+disableUserInput false;

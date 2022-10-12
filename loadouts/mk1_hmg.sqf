@@ -66,7 +66,7 @@ for "_i" from 1 to 2 do {
 for "_i" from 1 to 2 do {
 	player addItemToVest "ACE_M84";
 };
-player addItemToVest "Tier1_250Rnd_762x51_Belt_M993_AP";
+player addItemToVest "rhsusf_100Rnd_762x51_m61_ap";
 for "_i" from 1 to 2 do {
 	player addItemToVest "rhs_mag_m67";
 };
@@ -98,7 +98,7 @@ for "_i" from 1 to 3 do {
 player addItemToBackpack "B_IR_Grenade";
  
 for "_i" from 1 to 2 do {
-	player addItemToBackpack "Tier1_250Rnd_762x51_Belt_M993_AP";
+	player addItemToBackpack "rhsusf_100Rnd_762x51_m61_ap";
 };
 for "_i" from 1 to 2 do {
 	player addItemToBackpack "HandGrenade";

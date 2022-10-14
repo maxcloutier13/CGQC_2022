@@ -24,6 +24,7 @@ player addWeapon "cgqc_gun_mk1_Javelin";
 player addSecondaryWeaponItem "jav_AT_mas_can";
 player addWeapon "cgqc_gun_glock19_wood";
 player addHandgunItem "Tier1_15Rnd_9x19_JHP";
+player addHandgunItem "tier1_dbalpl";
 
 comment "Add containers";
 player forceAddUniform "cgqc_uniform_mk1";

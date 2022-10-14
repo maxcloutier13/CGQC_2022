@@ -23,6 +23,7 @@ player addPrimaryWeaponItem "rhsusf_acc_grip2";
 player addWeapon "rhs_weap_m72a7";
 player addWeapon "cgqc_gun_glock19_wood";
 player addHandgunItem "Tier1_15Rnd_9x19_JHP";
+player addHandgunItem "tier1_dbalpl";
 
 comment "Add containers";
 player forceAddUniform "cgqc_uniform_mk1";

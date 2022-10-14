@@ -27,10 +27,19 @@ class cgqc_gun_glock19_wood : Tier1_Glock19_WAR_TB
 	_generalMacro = "cgqc_gun_glock19_wood";
 	baseWeapon = "cgqc_gun_glock19_wood";
 	displayName = "CGQC Glock19";
+	//model = "\cgqc_2022\guns\cgqc_gun_g19_wood.p3d";
 	/*
 	hiddenSelectionsTextures[] = {
 		"\CGQC\guns\cgqc_gun_p99_wood.paa"};
 	*/
+	class LinkedItems
+	{
+		class LinkedItemsAcc
+		{
+			slot = "PointerSlot";
+			item = "tier1_dbalpl";
+		};
+	};
 };
 
 // Items -----------------------------------------------------------------------
@@ -72,7 +81,7 @@ class cgqc_item_rangefinder : Rangefinder
 	author = "silent1";
 	_generalMacro = "cgqc_item_rangefinder";
 	baseWeapon = "cgqc_item_rangefinder";
-	displayName = "CGQC Rangefinder";
+	displayName = "CGQC Rangefinder ";
 };
 class cgqc_item_laserdesignator : Laserdesignator_03
 {
@@ -296,7 +305,12 @@ class cgqc_gun_mk1_m200 : srifle_LRR_F
 		class LinkedItemsOptic
 		{
 			slot = "CowsSlot";
-			item = "rhsusf_acc_nxs_5522x56_md_sun";
+			item = "optic_lrps";
+		};
+		class LinkedItemsAcc
+		{
+			slot = "PointerSlot";
+			item = "ace_acc_pointer_green";
 		};
 	};
 };

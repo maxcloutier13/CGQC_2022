@@ -15,10 +15,12 @@ removeGoggles player;
 
 comment "Add weapons";
 player addWeapon "cgqc_gun_mk1_m200";
-player addPrimaryWeaponItem "rhsusf_acc_nxs_5522x56_md_sun";
+player addPrimaryWeaponItem "optic_lrps";
+player addPrimaryWeaponItem "ace_acc_pointer_green";
 player addPrimaryWeaponItem "7Rnd_408_Mag";
 player addWeapon "cgqc_gun_glock19_wood";
 player addHandgunItem "Tier1_15Rnd_9x19_JHP";
+player addHandgunItem "tier1_dbalpl";
 
 comment "Add containers";
 player forceAddUniform "cgqc_uniform_mk1";

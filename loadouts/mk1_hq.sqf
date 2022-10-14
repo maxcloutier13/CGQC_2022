@@ -21,6 +21,7 @@ player addPrimaryWeaponItem "Tier1_EXPS3_0_3xMag_Black_Up";
 player addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
 player addWeapon "cgqc_gun_glock19_wood";
 player addHandgunItem "Tier1_15Rnd_9x19_JHP";
+player addHandgunItem "tier1_dbalpl";
 
 comment "Add containers";
 player forceAddUniform "cgqc_uniform_mk1";
@@ -67,7 +68,7 @@ for "_i" from 1 to 2 do {
 for "_i" from 1 to 2 do {
 	player addItemToVest "ACE_M84";
 };
-for "_i" from 1 to 6 do {
+for "_i" from 1 to 9 do {
 	player addItemToVest "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
 };
 for "_i" from 1 to 2 do {

@@ -135,18 +135,18 @@ _adding = [ _crate, 0, ["ACE_MainActions", "menu_items"], _action ] call  ace_in
 // Skill switcher ---------------------------------------------------------------------------------------------------------
 _action = [ "menu_skill", "Skills", "CGQC_2022\textures\cgqc_ace_icon", {""}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions"], _action ] call  ace_interact_menu_fnc_addActionToObject;
-// Meds to uniform 
+// Medic
 _action = [ "skill_medic", "Medic", "", {execVM "\CGQC_2022\loadouts\role_medic.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions", "menu_skill"], _action ] call  ace_interact_menu_fnc_addActionToObject;
-// Meds to backpack
+// Engineer
 _action = [ "skill_eng", "Ingénieur", "", {execVM "\CGQC_2022\loadouts\role_engineer.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions", "menu_skill"], _action ] call  ace_interact_menu_fnc_addActionToObject;
-// Items to uniform 
+// EOD
 _action = [ "skill_eod", "EOD", "", {execVM "\CGQC_2022\loadouts\role_EOD.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions","menu_skill"], _action ] call  ace_interact_menu_fnc_addActionToObject;
-
-
-
+// Sniper
+_action = [ "skill_sniper", "Sniper", "", {execVM "\CGQC_2022\loadouts\mk1_action_ghillie_menu.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+_adding = [ _crate, 0, ["ACE_MainActions","menu_skill"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 
 // Old school actions
 // _crate addAction ["---- Change de rôle mk1 (garde loadout)------", "\CGQC_2022\loadouts\empty.sqf", [], 6, true, true, "", "(_this distance _target) < 5"];

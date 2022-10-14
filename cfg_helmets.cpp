@@ -11,11 +11,12 @@ class cgqc_helmet_mk1 : H_mas_can_opscorn
     _generalMacro = "cgqc_helmet_mk1";
     displayName = "CGQC Casque mk1";
     picture = "\mas_can_lite\ui\green_sf.paa";
-
     hiddenSelectionsTextures[] = {
         "\cgqc_2022\helmets\green.paa",
         "\cgqc_2022\helmets\cgqc_helmet_mk1_velcro.paa",
         "\cgqc_2022\helmets\inside.paa"};
+    ace_hearing_protection = 0.75;
+	ace_hearing_lowerVolume = 0;
     // Grad helmet compatibility
     grad_slingHelmet_allow = true;
     // Ctab camera compat
@@ -163,6 +164,8 @@ class cgqc_helmet_mk1_f_gray : H_mas_can_opscore
         "\cgqc_2022\helmets\gray.paa",
         "\cgqc_2022\helmets\cgqc_helmet_mk1_velcro.paa",
         "\cgqc_2022\helmets\inside_dark.paa"};
+    ace_hearing_protection = 0.75;
+	ace_hearing_lowerVolume = 0;
     // Grad helmet compatibility
     grad_slingHelmet_allow = true;
     // Ctab camera compat

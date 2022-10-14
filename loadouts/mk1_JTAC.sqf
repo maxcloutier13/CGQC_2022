@@ -1,8 +1,10 @@
 execVM "\CGQC_2022\loadouts\transition.sqf";
+disableUserInput true;
 sleep 2;
 player setUnitTrait ["Medic", false];
 player setUnitTrait ["engineer", false];
 player setUnitTrait ["explosiveSpecialist", false];
+execVM "\CGQC_2022\loadouts\mk1_action_ghillie_menu.sqf";
 comment "Remove existing items";
 removeAllWeapons player;
 removeAllItems player;
@@ -117,3 +119,4 @@ player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "B_UavTerminal";
 player linkItem "JAS_GPNVG18_blk";
+disableUserInput false;

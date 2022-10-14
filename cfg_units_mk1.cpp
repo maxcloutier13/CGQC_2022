@@ -213,8 +213,8 @@ class CGQC_units_mk1_2_HMG : cgqc_soldat_moderne
     respawnWeapons[] = {"cgqc_gun_mk1_mk48", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
     items[] = {"FF_Painkiller", "FF_Painkiller", "FF_Painkiller", "FF_Painkiller", "FF+Painkiller", "ACRE_PRC343", "ItemAndroid", "ACE_microDAGR", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_IR_Strobe_Item", "ACE_RangeCard", "cgqc_item_transponder"};
     respawnItems[] = {"FF_Painkiller", "FF_Painkiller", "FF_Painkiller", "FF_Painkiller", "FF+Painkiller", "ACRE_PRC343", "ItemAndroid", "ACE_microDAGR", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_IR_Strobe_Item", "ACE_RangeCard", "cgqc_item_transponder"};
-    magazines[] = {"Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "ACE_M84", "ACE_M84", "Tier1_250Rnd_762x51_Belt_M993_AP", "Tier1_100Rnd_762x51_Belt_M993_AP"};
-    respawnMagazines[] = {"Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "ACE_M84", "ACE_M84", "Tier1_250Rnd_762x51_Belt_M993_AP", "Tier1_100Rnd_762x51_Belt_M993_AP"};
+    magazines[] = {"Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "ACE_M84", "ACE_M84", "rhsusf_100Rnd_762x51_m61_ap", "Tier1_100Rnd_762x51_Belt_M993_AP"};
+    respawnMagazines[] = {"Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "ACE_M84", "ACE_M84", "rhsusf_100Rnd_762x51_m61_ap", "Tier1_100Rnd_762x51_Belt_M993_AP"};
     linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "JAS_GPNVG18_blk", "cgqc_item_rangefinder", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_ar", "G_mas_can_balaM_T"};
     respawnLinkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "JAS_GPNVG18_blk", "cgqc_item_rangefinder", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_ar", "G_mas_can_balaM_T"};
     backpack = "CGQC_units_mk1_2_HMG_pack";
@@ -329,25 +329,6 @@ class CGQC_units_mk1_4_Pilot_heli : cgqc_soldat_moderne
     backpack = "CGQC_units_mk1_4_Pilot_heli_pack";
     editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_4_Pilot_heli.jpg";
 };
-class CGQC_units_mk1_4_Pilot_Jet : cgqc_soldat_moderne
-{
-    faction = "CGQC";
-    editorSubcategory = "EdSubcat_cgqc_mk1";
-    side = 1;
-    displayName = "Jet Pilot";
-    engineer = 1;
-    uniformClass = "cgqc_uniform_mk1_jetpilot";
-    weapons[] = {"cgqc_gun_mk1_mp7", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
-    respawnWeapons[] = {"cgqc_gun_mk1_mp7", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
-    items[] = {"FF_Painkiller", "FF_Painkiller", "FF_Painkiller", "FF_Painkiller", "FF+Painkiller", "ACRE_PRC152", "ACRE_PRC152", "ItemAndroid", "ACE_microDAGR", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_IR_Strobe_Item", "ACE_RangeCard", "cgqc_item_transponder"};
-    respawnItems[] = {"FF_Painkiller", "FF_Painkiller", "FF_Painkiller", "FF_Painkiller", "FF+Painkiller", "ACRE_PRC152", "ACRE_PRC152", "ItemAndroid", "ACE_microDAGR", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_IR_Strobe_Item", "ACE_RangeCard", "cgqc_item_transponder"};
-    magazines[] = {"Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "Tier1_20Rnd_9x19_FMJ", "ACE_M84", "ACE_M84", "40Rnd_46x30SD_mas_can_mag", "40Rnd_46x30SD_mas_can_mag", "40Rnd_46x30SD_mas_can_mag", "40Rnd_46x30SD_mas_can_mag"};
-    respawnMagazines[] = {"Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "Tier1_20Rnd_9x19_FMJ", "ACE_M84", "ACE_M84", "40Rnd_46x30SD_mas_can_mag", "40Rnd_46x30SD_mas_can_mag", "40Rnd_46x30SD_mas_can_mag", "40Rnd_46x30SD_mas_can_mag"};
-    linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "cgqc_item_rangefinder", "cgqc_helmet_mk1_jetpilot", "cgqc_vest_mk1_pilot", "G_Combat"};
-    respawnLinkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "cgqc_item_rangefinder", "cgqc_helmet_mk1_jetpilot", "cgqc_vest_mk1_pilot", "G_Combat"};
-    backpack = "CGQC_units_mk1_4_Pilot_Jet_pack";
-    editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_4_Pilot_Jet.jpg";
-};
 class CGQC_units_mk1_4_crew_heli : cgqc_soldat_moderne
 {
     faction = "CGQC";
@@ -367,3 +348,23 @@ class CGQC_units_mk1_4_crew_heli : cgqc_soldat_moderne
     backpack = "CGQC_units_mk1_4_crew_heli_pack";
     editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_4_crew_heli.jpg";
 };
+class CGQC_units_mk1_4_Pilot_Jet : cgqc_soldat_moderne
+{
+    faction = "CGQC";
+    editorSubcategory = "EdSubcat_cgqc_mk1";
+    side = 1;
+    displayName = "Jet Pilot";
+    engineer = 1;
+    uniformClass = "cgqc_uniform_mk1_jetpilot";
+    weapons[] = {"cgqc_gun_mk1_mp7", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
+    respawnWeapons[] = {"cgqc_gun_mk1_mp7", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
+    items[] = {"FF_Painkiller", "FF_Painkiller", "FF_Painkiller", "FF_Painkiller", "FF+Painkiller", "ACRE_PRC152", "ACRE_PRC152", "ItemAndroid", "ACE_microDAGR", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_IR_Strobe_Item", "ACE_RangeCard", "cgqc_item_transponder"};
+    respawnItems[] = {"FF_Painkiller", "FF_Painkiller", "FF_Painkiller", "FF_Painkiller", "FF+Painkiller", "ACRE_PRC152", "ACRE_PRC152", "ItemAndroid", "ACE_microDAGR", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_IR_Strobe_Item", "ACE_RangeCard", "cgqc_item_transponder"};
+    magazines[] = {"Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "Tier1_20Rnd_9x19_FMJ", "ACE_M84", "ACE_M84", "40Rnd_46x30SD_mas_can_mag", "40Rnd_46x30SD_mas_can_mag", "40Rnd_46x30SD_mas_can_mag", "40Rnd_46x30SD_mas_can_mag"};
+    respawnMagazines[] = {"Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "Tier1_20Rnd_9x19_FMJ", "ACE_M84", "ACE_M84", "40Rnd_46x30SD_mas_can_mag", "40Rnd_46x30SD_mas_can_mag", "40Rnd_46x30SD_mas_can_mag", "40Rnd_46x30SD_mas_can_mag"};
+    linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "cgqc_item_rangefinder", "cgqc_helmet_mk1_jetpilot", "cgqc_vest_mk1_pilot", "G_Combat"};
+    respawnLinkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "cgqc_item_rangefinder", "cgqc_helmet_mk1_jetpilot", "cgqc_vest_mk1_pilot", "G_Combat"};
+    backpack = "CGQC_units_mk1_4_Pilot_Jet_pack";
+    editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_4_Pilot_Jet.jpg";
+};
+

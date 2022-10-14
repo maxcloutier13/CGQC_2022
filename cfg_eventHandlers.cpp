@@ -5,7 +5,7 @@ class Extended_PreInit_EventHandlers
         // This will be executed once in 3DEN, main menu and before briefing has started for every mission
         // init = QUOTE(call COMPILE_FILE(XEH_preInit));
         // Load the arsenal categories
-        init = "execVM '\cgqc_2022\scripts\arsenal_modifs.sqf'";
+        init = "execVM '\cgqc_2022\factions\pre_init_player.sqf'";
     };
 };
 
@@ -13,9 +13,10 @@ class Extended_PostInit_EventHandlers
 {
     class ADDON
     {
-        // This will be executed once for each mission, once the mission has started
-        // init = "execVM '\cgqc\factions\init_player.sqf'";
+        // This will be executed once for each mission, once the mission has started       
         // init = QUOTE(call COMPILE_FILE(XEH_postInit));
+        // Custom init
+        //init = "execVM '\cgqc_2022\factions\init_player.sqf';";
     };
 };
 

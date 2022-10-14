@@ -1,4 +1,5 @@
 execVM "\CGQC_2022\loadouts\transition.sqf";
+disableUserInput true;
 sleep 2;
 player setUnitTrait ["Medic", false];
 player setUnitTrait ["engineer", true];

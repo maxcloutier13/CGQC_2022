@@ -13,9 +13,10 @@ class Extended_PostInit_EventHandlers
 {
     class ADDON
     {
-        // This will be executed once for each mission, once the mission has started
-        //init = "execVM '\cgqc_2022\factions\init_player.sqf';";
+        // This will be executed once for each mission, once the mission has started       
         // init = QUOTE(call COMPILE_FILE(XEH_postInit));
+        // Custom init
+        //init = "execVM '\cgqc_2022\factions\init_player.sqf';";
     };
 };
 

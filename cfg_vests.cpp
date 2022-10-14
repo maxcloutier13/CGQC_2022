@@ -36,6 +36,33 @@ class cgqc_vest_mk1_tan : V_mas_can_PlateCarrier1_tan
     author = "silent1";
     _generalMacro = "cgqc_vest_mk1_tan";
     displayName = "CGQC Veste mk1";
+    mass = 40;
+    class HitpointsProtectionInfo
+    {
+        class Chest
+        {
+            hitpointName = "HitChest";
+            armor = 20; //original = 28
+            passThrough = 0.2;
+        };
+        class Diaphragm
+        {
+            hitpointName = "HitDiaphragm";
+            armor = 20;
+            passThrough = 0.2;
+        };
+        class Abdomen
+        {
+            hitpointName = "HitAbdomen";
+            armor = 20;
+            passThrough = 0.4;
+        };
+        class Body
+        {
+            hitpointName = "HitBody";
+            passThrough = 0.4;
+        };
+    };
 };
 class cgqc_vest_mk1_tan_lr : V_mas_can_PlateCarrierLR_tan
 {

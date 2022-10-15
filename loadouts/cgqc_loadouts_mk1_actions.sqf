@@ -145,7 +145,7 @@ _adding = [ _crate, 0, ["ACE_MainActions", "menu_skill"], _action ] call  ace_in
 _action = [ "skill_eod", "EOD", "", {execVM "\CGQC_2022\loadouts\role_EOD.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions","menu_skill"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Sniper
-_action = [ "skill_sniper", "Sniper", "", {execVM "\CGQC_2022\loadouts\mk1_action_ghillie_menu.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+_action = [ "skill_sniper", "Sniper", "", {execVM "\CGQC_2022\loadouts\mk1_action_ghillie_menu.sqf"}, {ghillie_isOn == 0} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions","menu_skill"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 
 // Old school actions

@@ -83,7 +83,10 @@ class CfgPatches
 			"cgqc_heli_ch47_10",
 			"cgqc_heli_AH64D",
 			"cgqc_plane_a10",
-			"cgqc_drone_darter"};
+			"cgqc_drone_darter",
+			"cgqc_vic_badger",
+			"cgqc_vic_warrior",
+			"cgqc_vic_bradley"};
 		weapons[] = {
 			"cgqc_helmet_mk1",
 			"cgqc_helmet_mk1_medic",
@@ -110,11 +113,36 @@ class CfgPatches
 			"cgqc_uniform_mk1",
 			"cgqc_uniform_mk1_jetpilot",
 			"cgqc_uniform_mk1_helipilot",
+			"cgqc_vest_mk1_belt",
 			"cgqc_vest_mk1_tan_lr",
 			"cgqc_vest_mk1_tan_rf",
 			"cgqc_vest_mk1_tan_ar",
 			"cgqc_vest_mk1_pilot",
 			"cgqc_vest_mk1_pilot_black",
+			"cgqc_vest_mk1_desert",
+			"cgqc_vest_mk1_desert_lr",
+			"cgqc_vest_mk1_desert_rf",
+			"cgqc_vest_mk1_desert_ar",
+			"cgqc_vest_mk1_mcam",
+			"cgqc_vest_mk1_mcam_lr",
+			"cgqc_vest_mk1_mcam_rf",
+			"cgqc_vest_mk1_mcam_ar",
+			"cgqc_vest_mk1_cadpat",
+			"cgqc_vest_mk1_cadpat_lr",
+			"cgqc_vest_mk1_cadpat_rf",
+			"cgqc_vest_mk1_black",
+			"cgqc_vest_mk1_black_lr", 
+			"cgqc_vest_mk1_black_rf",
+			"cgqc_vest_mk1_black_ar", 
+			"cgqc_vest_mk1_white",
+			"cgqc_vest_mk1_white_lr", 
+			"cgqc_vest_mk1_white_rf", 
+			"cgqc_vest_mk1_white_ar", 
+			"cgqc_vest_mk1_driver",
+			"cgqc_vest_test1",
+			"cgqc_vest_test2",
+			"cgqc_vest_test3",
+			"cgqc_vest_test4",
 			"cgqc_gun_glock19_wood",
 			"cgqc_acc_M8541A_wood",
 			"cgqc_acc_bipod_wood",
@@ -182,6 +210,10 @@ class CfgEditorSubcategories
 	class EdSubcat_cgqc_drones
 	{
 		displayName = "Drones";
+	};
+	class EdSubcat_cgqc_vic
+	{
+		displayName = "Land Vehicles";
 	};
 };
 // Custom units ----------------------------------------------------------------------------

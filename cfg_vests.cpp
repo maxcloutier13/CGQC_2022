@@ -30,7 +30,6 @@ class cgqc_vest_mk1_belt : V_Rangemaster_belt
     _generalMacro = "cgqc_vest_mk1_belt";
     displayName = "CGQC Ceinture mk1";
 };
-
 // Base/training
 class cgqc_vest_mk1_tan : V_mas_can_PlateCarrier1_tan
 {
@@ -207,4 +206,135 @@ class cgqc_vest_mk1_driver : UK3CB_TKA_B_V_GA_LITE_TAN
     author = "silent1";
     _generalMacro = "cgqc_vest_mk1_driver";
     displayName = "CGQC Veste mk1 Driver (Tan)";
+};
+
+// Vest settings test
+// Original
+class cgqc_vest_test1 : cgqc_vest_mk1_tan
+{
+    author = "silent1";
+    _generalMacro = "cgqc_vest_test1_og";
+    displayName = "CGQC Veste test 1 - 28 (OG)";
+    class HitpointsProtectionInfo
+    {
+        class Chest
+        {
+            hitpointName = "HitChest";
+            armor = 28; //original = 28
+            passThrough = 0.1;
+        };
+        class Diaphragm
+        {
+            hitpointName = "HitDiaphragm";
+            armor = 28;
+            passThrough = 0.1;
+        };
+        class Abdomen
+        {
+            hitpointName = "HitAbdomen";
+            armor = 28;
+            passThrough = 0.4;
+        };
+        class Body
+        {
+            hitpointName = "HitBody";
+            passThrough = 0.4;
+        };
+    };
+};
+class cgqc_vest_test2 : cgqc_vest_mk1_black
+{
+    author = "silent1";
+    _generalMacro = "cgqc_vest_test2_og";
+    displayName = "CGQC Veste test 2 - 20";
+    class HitpointsProtectionInfo
+    {
+        class Chest
+        {
+            hitpointName = "HitChest";
+            armor = 20; //original = 28
+            passThrough = 0.1;
+        };
+        class Diaphragm
+        {
+            hitpointName = "HitDiaphragm";
+            armor = 20;
+            passThrough = 0.1;
+        };
+        class Abdomen
+        {
+            hitpointName = "HitAbdomen";
+            armor = 20;
+            passThrough = 0.4;
+        };
+        class Body
+        {
+            hitpointName = "HitBody";
+            passThrough = 0.4;
+        };
+    };
+};
+class cgqc_vest_test3 : cgqc_vest_mk1_mcam
+{
+    author = "silent1";
+    _generalMacro = "cgqc_vest_mk1_tan";
+    displayName = "CGQC Veste test 3 - 20+pass";
+    class HitpointsProtectionInfo
+    {
+        class Chest
+        {
+            hitpointName = "HitChest";
+            armor = 20; //original = 28
+            passThrough = 0.3;
+        };
+        class Diaphragm
+        {
+            hitpointName = "HitDiaphragm";
+            armor = 20;
+            passThrough = 0.3;
+        };
+        class Abdomen
+        {
+            hitpointName = "HitAbdomen";
+            armor = 20;
+            passThrough = 0.4;
+        };
+        class Body
+        {
+            hitpointName = "HitBody";
+            passThrough = 0.4;
+        };
+    };
+};
+class cgqc_vest_test4 : cgqc_vest_mk1_cadpat
+{
+    author = "silent1";
+    _generalMacro = "cgqc_vest_mk1_tan";
+    displayName = "CGQC Veste test 4 - 16 (Vanilla)";
+    class HitpointsProtectionInfo
+    {
+        class Chest
+        {
+            hitpointName = "HitChest";
+            armor = 16; //original = 28
+            passThrough = 0.3;
+        };
+        class Diaphragm
+        {
+            hitpointName = "HitDiaphragm";
+            armor = 16; //original = 28
+            passThrough = 0.3;
+        };
+        class Abdomen
+        {
+            hitpointName = "HitAbdomen";
+            armor = 16; //original = 28
+            passThrough = 0.3;
+        };
+        class Body
+        {
+            hitpointName = "HitBody";
+            passThrough = 0.3;
+        };
+    };
 };

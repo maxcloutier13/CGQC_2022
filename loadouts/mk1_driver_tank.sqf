@@ -15,7 +15,7 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add weapons";
-player addWeapon "SMG_03C_TR_khaki";
+player addWeapon "cgqc_gun_mk1_p90_khaki";
 player addPrimaryWeaponItem "muzzle_snds_570";
 player addPrimaryWeaponItem "Tier1_NGAL_Side";
 player addPrimaryWeaponItem "optic_ACO_grn";
@@ -79,6 +79,34 @@ for "_i" from 1 to 2 do {
 	player addItemToBackpack "HandGrenade";
 };
 player addItemToBackpack "sps_black_hornet_01_Static_F";
+for "_i" from 1 to 10 do {
+	player addItemToBackpack "ACE_fieldDressing";
+};
+for "_i" from 1 to 5 do {
+	player addItemToBackpack "FF_Painkiller";
+};
+for "_i" from 1 to 2 do {
+	player addItemToBackpack "ACE_salineIV_500";
+};
+player addItemToBackpack "ACE_EntrenchingTool";
+ 
+player addItemToBackpack "WBK_HeadLampItem";
+player addItemToBackpack "G_mas_can_gasmask";
+player addItemToBackpack "ACE_Chemlight_HiRed";
+player addItemToBackpack "ACE_Chemlight_IR";
+for "_i" from 1 to 3 do {
+	player addItemToBackpack "SmokeShell";
+};
+for "_i" from 1 to 3 do {
+	player addItemToBackpack "SmokeShellBlue";
+};
+for "_i" from 1 to 3 do {
+	player addItemToBackpack "SmokeShellRed";
+};
+player addItemToBackpack "B_IR_Grenade";
+
+
+
 player addHeadgear "cgqc_helmet_mk1_tank";
 player addGoggles "G_mas_can_balaM_b";
 

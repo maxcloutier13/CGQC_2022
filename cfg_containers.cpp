@@ -1770,6 +1770,11 @@ class CGQC_units_mk1_4_Tank_Driver_pack : cgqc_pack_mk1_magic
             count = 1;
             name = "ToolKit";
         };
+        class _xx_sps_black_hornet_01_Static_F
+        {
+            count = 1;
+            name = "sps_black_hornet_01_Static_F";
+        };
     };
     class TransportWeapons
     {

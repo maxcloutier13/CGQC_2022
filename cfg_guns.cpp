@@ -378,6 +378,33 @@ class cgqc_gun_mk1_mk12 : gtr_weap_Mk12_Base
 		};
 	};
 };
+class cgqc_gun_mk1_p90_khaki : SMG_03C_TR_khaki
+{
+	scope = 2;
+	scopeArsenal = 2;
+	author = "silent1";
+	_generalMacro = "cgqc_gun_mk1_p90_khaki";
+	displayName = "CGQC P90 - Khaki";
+	baseWeapon = "cgqc_gun_mk1_p90_khaki";
+	class LinkedItems
+	{
+		class LinkedItemsMuzzle
+		{
+			slot = "MuzzleSlot";
+			item = "muzzle_snds_570";
+		};
+		class LinkedItemsOptic
+		{
+			slot = "CowsSlot";
+			item = "optic_ACO_grn";
+		};
+		class LinkedItemsAcc
+		{
+			slot = "PointerSlot";
+			item = "Tier1_NGAL_Side";
+		};
+	};
+};
 // Custom skins
 class cgqc_gun_mk1_mk18_fortin : cgqc_gun_mk1_mk18 
 {

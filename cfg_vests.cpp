@@ -20,6 +20,7 @@ class V_mas_can_PlateCarrierRF_wint;
 class V_mas_can_PlateCarrierAR_wint;
 class UK3CB_V_Pilot_Vest;
 class UK3CB_V_Pilot_Vest_Black;
+class UK3CB_TKA_B_V_GA_LITE_TAN;
 class V_Rangemaster_belt;
 
 // Training belt
@@ -82,7 +83,7 @@ class cgqc_vest_mk1_tan_ar : V_mas_can_PlateCarrierAR_tan
     _generalMacro = "cgqc_vest_mk1_tan_ar";
     displayName = "CGQC Veste mk1 AR";
 };
-
+// Desert
 class cgqc_vest_mk1_desert : cgqc_vest_mk1_tan{};
 class cgqc_vest_mk1_desert_lr : cgqc_vest_mk1_tan_lr{};
 class cgqc_vest_mk1_desert_rf : cgqc_vest_mk1_tan_rf{};
@@ -187,7 +188,6 @@ class cgqc_vest_mk1_white_ar : V_mas_can_PlateCarrierAR_wint
     _generalMacro = "cgqc_vest_mk1_white_ar";
     displayName = "CGQC Veste mk1 AR - White";
 };
-
 // Pilot
 class cgqc_vest_mk1_pilot : UK3CB_V_Pilot_Vest
 {
@@ -200,4 +200,11 @@ class cgqc_vest_mk1_pilot_black : UK3CB_V_Pilot_Vest_Black
     author = "silent1";
     _generalMacro = "cgqc_vest_mk1_pilot_black";
     displayName = "CGQC Veste mk1 Pilote (Noir)";
+};
+// Tank driver
+class cgqc_vest_mk1_driver : UK3CB_TKA_B_V_GA_LITE_TAN
+{
+    author = "silent1";
+    _generalMacro = "cgqc_vest_mk1_driver";
+    displayName = "CGQC Veste mk1 Driver (Tan)";
 };

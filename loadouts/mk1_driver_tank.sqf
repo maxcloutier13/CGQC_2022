@@ -15,14 +15,19 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add weapons";
-player addWeapon "cgqc_gun_mk1_mp7";
+player addWeapon "SMG_03C_TR_khaki";
+player addPrimaryWeaponItem "muzzle_snds_570";
+player addPrimaryWeaponItem "Tier1_NGAL_Side";
 player addPrimaryWeaponItem "optic_ACO_grn";
-player addPrimaryWeaponItem "40Rnd_46x30SD_mas_can_mag";
+player addPrimaryWeaponItem "50Rnd_570x28_SMG_03";
 player addWeapon "cgqc_gun_glock19_wood";
+player addHandgunItem "Tier1_15Rnd_9x19_JHP";
+player addHandgunItem "tier1_dbalpl";
+
 
 comment "Add containers";
 player forceAddUniform "cgqc_uniform_mk1";
-player addVest "cgqc_vest_mk1_pilot";
+player addVest "cgqc_vest_mk1_driver";
 player addBackpack "cgqc_pack_mk1_kitbag";
 
 comment "Add binoculars";
@@ -66,13 +71,14 @@ for "_i" from 1 to 3 do {
 for "_i" from 1 to 2 do {
 	player addItemToVest "ACE_M84";
 };
-for "_i" from 1 to 3 do {
-	player addItemToVest "40Rnd_46x30SD_mas_can_mag";
+for "_i" from 1 to 10 do {
+	player addItemToVest "50Rnd_570x28_SMG_03";
 };
 player addItemToBackpack "ToolKit";
 for "_i" from 1 to 2 do {
 	player addItemToBackpack "HandGrenade";
 };
+player addItemToBackpack "sps_black_hornet_01_Static_F";
 player addHeadgear "cgqc_helmet_mk1_tank";
 player addGoggles "G_mas_can_balaM_b";
 
@@ -80,6 +86,6 @@ comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-player linkItem "ItemGPS";
+player linkItem "B_UavTerminal";
 
 disableUserInput false;

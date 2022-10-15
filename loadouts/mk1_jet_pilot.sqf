@@ -77,3 +77,4 @@ player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemGPS";
+disableUserInput false;

@@ -1775,6 +1775,31 @@ class CGQC_units_mk1_4_Tank_Driver_pack : cgqc_pack_mk1_magic
             count = 1;
             name = "sps_black_hornet_01_Static_F";
         };
+        class _xx_ACE_fieldDressing
+        {
+            count = 10;
+            name = "ACE_fieldDressing";
+        };
+        class _xx_FF_Painkiller
+        {
+            count = 5;
+            name = "FF_Painkiller";
+        };
+        class _xx_ACE_salineIV_500
+        {
+            count = 2;
+            name = "ACE_salineIV_500";
+        };
+        class _xx_ACE_EntrenchingTool
+        {
+            count = 1;
+            name = "ACE_EntrenchingTool";
+        };
+        class _xx_G_mas_can_gasmask
+        {
+            count = 1;
+            name = "G_mas_can_gasmask";
+        };
     };
     class TransportWeapons
     {

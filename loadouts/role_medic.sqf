@@ -1,4 +1,4 @@
-execVM "\CGQC_2022\loadouts\transition.sqf";
+execVM "\CGQC_2022\scripts\transition.sqf";
 sleep 2;
 player setUnitTrait ["Medic", true];
 player setUnitTrait ["engineer", false];

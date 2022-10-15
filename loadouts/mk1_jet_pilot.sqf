@@ -1,4 +1,4 @@
-execVM "\CGQC_2022\loadouts\transition.sqf";
+execVM "\CGQC_2022\scripts\transition.sqf";
 disableUserInput true;
 sleep 2;
 player setUnitTrait ["Medic", false];
@@ -77,3 +77,4 @@ player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemGPS";
+disableUserInput false;

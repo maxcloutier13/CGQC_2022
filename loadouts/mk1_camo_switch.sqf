@@ -1,6 +1,6 @@
 _camo = _this select 0;
 // Fade to black transition
-execVM "\CGQC_2022\loadouts\transition.sqf";
+execVM "\CGQC_2022\scripts\transition.sqf";
 disableUserInput true;
 sleep 1;
 

@@ -18,6 +18,8 @@ class MRH_BluForTransponder;
 class CBA_MiscItem;
 class rhs_weap_m16a4_imod;
 class gtr_weap_Mk12_Base;
+class SMG_03C_TR_khaki;
+class SMG_03C_TR_black;
 
 // Pistol.
 class cgqc_gun_glock19_wood : Tier1_Glock19_WAR_TB
@@ -378,14 +380,14 @@ class cgqc_gun_mk1_mk12 : gtr_weap_Mk12_Base
 		};
 	};
 };
-class cgqc_gun_mk1_p90_khaki : SMG_03C_TR_khaki
+class cgqc_gun_mk1_p90 : SMG_03C_TR_black
 {
 	scope = 2;
 	scopeArsenal = 2;
 	author = "silent1";
-	_generalMacro = "cgqc_gun_mk1_p90_khaki";
-	displayName = "CGQC P90 - Khaki";
-	baseWeapon = "cgqc_gun_mk1_p90_khaki";
+	_generalMacro = "cgqc_gun_mk1_p90";
+	displayName = "CGQC P90";
+	baseWeapon = "cgqc_gun_mk1_p90";
 	class LinkedItems
 	{
 		class LinkedItemsMuzzle
@@ -404,6 +406,18 @@ class cgqc_gun_mk1_p90_khaki : SMG_03C_TR_khaki
 			item = "Tier1_NGAL_Side";
 		};
 	};
+};
+class cgqc_gun_mk1_p90_khaki : cgqc_gun_mk1_p90
+{
+	scope = 2;
+	scopeArsenal = 2;
+	author = "silent1";
+	_generalMacro = "cgqc_gun_mk1_p90_khaki";
+	displayName = "CGQC P90 - Khaki";
+	baseWeapon = "cgqc_gun_mk1_p90_khaki";
+	picture = "\A3\Weapons_F_Mod\SMGs\SMG_03\data\UI\gear_adr97_c_tr_khaki_ca.paa";
+	hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\A3\Weapons_F_Mod\SMGs\SMG_03\data\body_khaki_co.paa"};
 };
 // Custom skins
 class cgqc_gun_mk1_mk18_fortin : cgqc_gun_mk1_mk18 

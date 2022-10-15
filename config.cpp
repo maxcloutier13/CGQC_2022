@@ -147,6 +147,7 @@ class CfgPatches
 			"cgqc_gun_mk1_mk18_gl",
 			"cgqc_gun_mk1_AT_m4a1",
 			"cgqc_gun_mk1_Javelin",
+			"cgqc_gun_mk1_p90",
 			"cgqc_gun_mk1_p90_khaki",
 			"cgqc_item_rangefinder"};
 	};

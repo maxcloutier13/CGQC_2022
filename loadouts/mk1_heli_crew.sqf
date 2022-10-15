@@ -15,9 +15,11 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add weapons";
-player addWeapon "cgqc_gun_mk1_mp7";
+player addWeapon "cgqc_gun_mk1_p90";
+player addPrimaryWeaponItem "muzzle_snds_570";
+player addPrimaryWeaponItem "Tier1_NGAL_Side";
 player addPrimaryWeaponItem "optic_ACO_grn";
-player addPrimaryWeaponItem "40Rnd_46x30SD_mas_can_mag";
+player addPrimaryWeaponItem "50Rnd_570x28_SMG_03";
 player addWeapon "cgqc_gun_glock19_wood";
 
 comment "Add containers";
@@ -66,9 +68,11 @@ for "_i" from 1 to 3 do {
 for "_i" from 1 to 2 do {
 	player addItemToVest "ACE_M84";
 };
-for "_i" from 1 to 3 do {
-	player addItemToVest "40Rnd_46x30SD_mas_can_mag";
+for "_i" from 1 to 5 do {
+	player addItemToVest "50Rnd_570x28_SMG_03";
 };
+player addItemToVest "WBK_HeadLampItem";
+
 player addHeadgear "cgqc_helmet_crew_black";
 player addGoggles "G_mas_can_wrap_B";
 

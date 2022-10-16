@@ -160,27 +160,6 @@ class cgqc_plane_a10 : B_Plane_CAS_01_dynamicLoadout_F
     crew = "CGQC_units_mk1_4_Pilot_jet";
     typicalCargo[] = {"CGQC_units_mk1_4_Pilot_jet"};
 };
-// Drones - Attempt to override fuel capacity
-class UAV_01_base_F : Helicopter_Base_F // Darter
-{
-    fuelCapacity = 300;
-};
-class UAV_06_base_F : Helicopter_Base_F // Pelican
-{
-    fuelCapacity = 1000;
-};
-class UAV_03_base_F : Helicopter_Base_F // Falcon
-{
-    fuelCapacity = 300;
-};
-class UAV_02_base_F : UAV // Yabhon
-{
-    fuelCapacity = 2000;
-};
-class UAV_05_Base_F : UAV // Sentinel
-{
-    fuelCapacity = 2000;
-};
 // Drones CGQC versions
 class B_UAV_01_F;
 class cgqc_drone_darter : B_UAV_01_F
@@ -220,4 +199,90 @@ class cgqc_drone_darter : B_UAV_01_F
     };
     hiddenSelectionsTextures[] = {"\CGQC_2022\vehicles\cgqc_drone_darter_dark.paa"};
     textureList[] = {"Blufor", 1};
+};
+// Land vehicles
+class B_W_APC_Wheeled_01_cannon_F;
+class UK3CB_MDF_B_Warrior_Cage;
+class RHS_M2A3_BUSKIII_wd;
+class cgqc_vic_badger : B_W_APC_Wheeled_01_cannon_F
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic";
+    displayName = "CGQC - Badger (3+8)";
+    crew = "CGQC_units_mk1_4_Tank_Driver";
+    hiddenSelectionsTextures[] = {
+        "A3\Armor_F_Exp\APC_Wheeled_01\data\APC_Wheeled_01_base_olive_CO.paa",
+        "A3\Armor_F_Exp\APC_Wheeled_01\data\APC_Wheeled_01_adds_olive_co.paa",
+        "A3\Armor_F_Exp\APC_Wheeled_01\data\APC_Wheeled_01_tows_olive_co.paa",
+        "a3\Armor_F\Data\camonet_NATO_Green_CO.paa",
+        "a3\Armor_F\Data\cage_olive_CO.paa"
+    };
+};
+class cgqc_vic_warrior : UK3CB_MDF_B_Warrior_Cage
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic";
+    displayName = "CGQC - Warrior (3+6)";
+    crew = "CGQC_units_mk1_4_Tank_Driver";
+    /*
+    hiddenSelectionsTextures[] = {
+        "\UK3CB_Factions\addons\UK3CB_Factions_Vehicles\apc\UK3CB_Factions_Vehicles_Warrior\data\mdf_apc_tracked_03_ext_co.paa",
+        "\UK3CB_Factions\addons\UK3CB_Factions_Vehicles\apc\UK3CB_Factions_Vehicles_Warrior\data\mdf_apc_tracked_03_ext2_co.paa",
+        "\UK3CB_Factions\addons\UK3CB_Factions_Vehicles\apc\UK3CB_Factions_Vehicles_Warrior\data\mdf_camonet_co.paa",
+        "\UK3CB_Factions\addons\UK3CB_Factions_Vehicles\apc\UK3CB_Factions_Vehicles_Warrior\data\mdf_cage_co.paa"
+    };*/
+};
+class cgqc_vic_bradley : RHS_M2A3_BUSKIII_wd
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic";
+    displayName = "CGQC - Bradley (3+6)";
+    crew = "CGQC_units_mk1_4_Tank_Driver";
+
+    hiddenSelectionsTextures[] = {
+        "cgqc_2022\vehicles\cgqc_vic_bradley_1.paa",
+        "cgqc_2022\vehicles\cgqc_vic_bradley_2.paa",
+        "\rhsusf\addons\rhsusf_a2port_armor\m2a2_bradley\data\woodland\ultralp_co.paa",
+        "cgqc_2022\vehicles\cgqc_vic_bradley_3.paa",
+        "\rhsusf\addons\rhsusf_m1a1\duke\data\duke_antennae_wd_co.paa"
+    };
+    /* hiddenSelectionsTextures[] = {
+        "\rhsusf\addons\rhsusf_a2port_armor\M2A2_Bradley\data\woodland\base_buskiii_co.paa",
+        "\rhsusf\addons\rhsusf_a2port_armor\M2A2_Bradley\data\woodland\a3_buskiii_co.paa",
+        "\rhsusf\addons\rhsusf_a2port_armor\m2a2_bradley\data\woodland\ultralp_co.paa",
+        "\rhsusf\addons\rhsusf_a2port_armor\m2a2_bradley\data\woodland\BUSKIII_co.paa",
+        "\rhsusf\addons\rhsusf_m1a1\duke\data\duke_antennae_wd_co.paa"
+    }; */
+};
+
+// Modifications to existing vehicles
+// Drones - Attempt to override fuel capacity
+class UAV_01_base_F : Helicopter_Base_F // Darter
+{
+    fuelCapacity = 300;
+};
+class UAV_06_base_F : Helicopter_Base_F // Pelican
+{
+    fuelCapacity = 1000;
+};
+class UAV_03_base_F : Helicopter_Base_F // Falcon
+{
+    fuelCapacity = 300;
+};
+class UAV_02_base_F : UAV // Yabhon
+{
+    fuelCapacity = 2000;
+};
+class UAV_05_Base_F : UAV // Sentinel
+{
+    fuelCapacity = 2000;
 };

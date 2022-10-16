@@ -211,9 +211,9 @@ class CfgEditorSubcategories
 	{
 		displayName = "Drones";
 	};
-	class EdSubcat_cgqc_vic
+	class EdSubcat_cgqc_ifv
 	{
-		displayName = "Land Vehicles";
+		displayName = "APC/IFV";
 	};
 };
 // Custom units ----------------------------------------------------------------------------

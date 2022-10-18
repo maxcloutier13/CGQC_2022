@@ -120,7 +120,7 @@ _action = [ "menu_mk1_camo_winter", "Winter", "", {["white"]execVM "\CGQC_2022\l
 _adding = [ _crate, 0, ["ACE_MainActions", "menu_mk1_camo"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 
 // Items --------------------------------------------------------------------------------------------------------------
-_action = [ "menu_items", "Items", "CGQC_2022\textures\cgqc_ace_icon", {""}, {true} ] call ace_interact_menu_fnc_createAction;
+_action = [ "menu_items", "Items Rapides", "CGQC_2022\textures\cgqc_ace_icon", {""}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 //  Radio1 
 _action = [ "menu_items1", "343", "", {["343"] execVM "\CGQC_2022\loadouts\mk1_box_get_items.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;

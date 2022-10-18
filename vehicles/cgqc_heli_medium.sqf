@@ -75,6 +75,11 @@ class TransportMagazines
 class TransportItems
 {
 	// Meds ------------------------------------------------
+	class _xx_FF_Painkiller
+	{
+		count = 10;
+		name = "FF_Painkiller";
+	};
 	class _xx_ACE_fieldDressing
 	{
 		count = 50;
@@ -114,32 +119,32 @@ class TransportItems
 	// items ------------------------------------------------
 	class _xx_ACE_EarPlugs
 	{
-		count = 5;
+		count = 2;
 		name = "ACE_EarPlugs";
 	};
 	class _xx_ACRE_PRC343
 	{
-		count = 5;
+		count = 2;
 		name = "ACRE_PRC343";
 	};
 	class _xx_ACRE_PRC152
 	{
-		count = 5;
+		count = 2;
 		name = "ACRE_PRC152";
 	};
 	class _xx_ACE_EntrenchingTool
 	{
-		count = 5;
+		count = 2;
 		name = "ACE_EntrenchingTool";
 	};
 	class _xx_ACE_microDAGR
 	{
-		count = 5;
+		count = 2;
 		name = "ACE_microDAGR";
 	};
 	class _xx_ACE_RangeCard
 	{
-		count = 5;
+		count = 2;
 		name = "ACE_RangeCard";
 	};
 	class _xx_G_mas_can_gasmask

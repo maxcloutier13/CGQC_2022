@@ -213,7 +213,7 @@ class CfgEditorSubcategories
 	};
 	class EdSubcat_cgqc_ifv
 	{
-		displayName = "APC/IFV";
+		displayName = "Véhicules (IFV)";
 	};
 };
 // Custom units ----------------------------------------------------------------------------

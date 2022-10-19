@@ -6,7 +6,7 @@ class cgqc_heli_melb_base : Helicopter_Base_H
     dlc = "RHS_USAF";
     side = 1;
     faction = "cgqc";
-#include "cgqc_heli_light.sqf"
+#include "cgqc_loadout_heli_light.sqf"
     crew = "CGQC_units_mk1_4_Pilot_heli";
     model = "rhsusf\addons\rhsusf_melb\MELB.p3d";
     picture = "rhsusf\addons\rhsusf_melb\Data\ui\melb_h_6m_ca.paa";

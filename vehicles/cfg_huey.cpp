@@ -1185,7 +1185,7 @@ class cgqc_heli_uh1 : cgqc_heli_uh1_base
     faction = "cgqc";
     crew = "CGQC_units_mk1_4_Pilot_heli";
     typicalCargo[] = {"CGQC_units_mk1_4_crew_heli"};
-#include "cgqc_heli_medium.sqf"
+#include "cgqc_loadout_heli_medium.sqf"
     enableSweep = 0;
     hiddenSelections[] = {"Camo1", "Camo2", "Camo_mlod", "decals"};
     hiddenSelectionsTextures[] = {"cgqc_2022\vehicles\cgqc_heli_uh-1_exterior.paa",

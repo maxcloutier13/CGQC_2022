@@ -24,7 +24,7 @@ class V_mas_can_PlateCarrierRF_wint;
 class V_mas_can_PlateCarrierAR_wint;
 class UK3CB_V_Pilot_Vest;
 class UK3CB_V_Pilot_Vest_Black;
-class UK3CB_TKA_B_V_GA_LITE_TAN;
+class rhsgref_otv_khaki;
 class V_Rangemaster_belt;
 
 
@@ -244,11 +244,12 @@ class cgqc_vest_mk1_pilot_black : UK3CB_V_Pilot_Vest_Black
     displayName = "CGQC Veste mk1 Pilote (Noir)";
 };
 // Tank driver
-class cgqc_vest_mk1_driver : UK3CB_TKA_B_V_GA_LITE_TAN
+class cgqc_vest_mk1_driver : rhsgref_otv_khaki
 {
     author = "silent1";
     _generalMacro = "cgqc_vest_mk1_driver";
     displayName = "CGQC Veste mk1 Driver (Tan)";
+    hiddenSelectionsTextures[] = {"\cgqc_2022\vests\cgqc_vest_tank_green.paa"};
 };
 
 // Vest settings test

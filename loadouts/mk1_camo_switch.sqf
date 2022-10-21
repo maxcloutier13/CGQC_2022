@@ -107,3 +107,5 @@ player addBackpack _backpack_new;
 {
 	player addItemToBackpack _x
 } forEach _items_pack;
+
+disableUserInput false;

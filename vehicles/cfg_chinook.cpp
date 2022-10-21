@@ -2431,7 +2431,7 @@ class cgqc_heli_ch47_base : Heli_Transport_02_base_F
     {
     };
 // Inventory
-#include "cgqc_loadout_heli_heavy.sqf"
+#include "cgqc_heli_heavy.sqf"
     class Library
     {
         libTextDesc = "CH-47F";

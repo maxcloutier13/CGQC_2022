@@ -75,11 +75,6 @@ class TransportMagazines
 class TransportItems
 {
 	// Meds ------------------------------------------------
-	class _xx_FF_Painkiller
-	{
-		count = 25;
-		name = "FF_Painkiller";
-	};
 	class _xx_ACE_fieldDressing
 	{
 		count = 100;

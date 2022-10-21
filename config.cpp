@@ -34,7 +34,6 @@ class CfgPatches
 			"cgqc_box_mk1_plus_plus_green",
 			"cgqc_box_original",
 			"cgqc_box_original_green",
-			"cgqc_box_mk1_supplies",
 			"CGQC_units_mk1_0_HQ_pack",
 			"CGQC_units_mk1_0_TeamLeader_Carbine_pack",
 			"CGQC_units_mk1_0_TeamLeader_CQB_pack",
@@ -212,9 +211,9 @@ class CfgEditorSubcategories
 	{
 		displayName = "Drones";
 	};
-	class EdSubcat_cgqc_ifv
+	class EdSubcat_cgqc_vic
 	{
-		displayName = "Véhicules (IFV)";
+		displayName = "Land Vehicles";
 	};
 };
 // Custom units ----------------------------------------------------------------------------

@@ -3648,7 +3648,7 @@ class cgqc_heli_UH60M_base : cgqc_heli_U60_base
             };
         };
     };
-#include "cgqc_loadout_heli_medium.sqf"
+#include "cgqc_heli_medium.sqf"
     radarType = 0;
     attenuationEffectType = "HeliAttenuation";
     occludeSoundsWhenIn = 0.56234133;

@@ -210,7 +210,7 @@ class cgqc_vic_badger : B_W_APC_Wheeled_01_cannon_F
     side = 1;
     author = "silent1";
     faction = "cgqc";
-    editorSubcategory = "EdSubcat_cgqc_ifv";
+    editorSubcategory = "EdSubcat_cgqc_vic";
     displayName = "CGQC - Badger (3+8)";
     crew = "CGQC_units_mk1_4_Tank_Driver";
     hiddenSelectionsTextures[] = {
@@ -227,7 +227,7 @@ class cgqc_vic_warrior : UK3CB_MDF_B_Warrior_Cage
     side = 1;
     author = "silent1";
     faction = "cgqc";
-    editorSubcategory = "EdSubcat_cgqc_ifv";
+    editorSubcategory = "EdSubcat_cgqc_vic";
     displayName = "CGQC - Warrior (3+6)";
     crew = "CGQC_units_mk1_4_Tank_Driver";
     /*
@@ -244,7 +244,7 @@ class cgqc_vic_bradley : RHS_M2A3_BUSKIII_wd
     side = 1;
     author = "silent1";
     faction = "cgqc";
-    editorSubcategory = "EdSubcat_cgqc_ifv";
+    editorSubcategory = "EdSubcat_cgqc_vic";
     displayName = "CGQC - Bradley (3+6)";
     crew = "CGQC_units_mk1_4_Tank_Driver";
 
@@ -253,8 +253,15 @@ class cgqc_vic_bradley : RHS_M2A3_BUSKIII_wd
         "cgqc_2022\vehicles\cgqc_vic_bradley_2.paa",
         "\rhsusf\addons\rhsusf_a2port_armor\m2a2_bradley\data\woodland\ultralp_co.paa",
         "cgqc_2022\vehicles\cgqc_vic_bradley_3.paa",
-        "cgqc_2022\vehicles\cgqc_vic_bradley_4.paa"
+        "\rhsusf\addons\rhsusf_m1a1\duke\data\duke_antennae_wd_co.paa"
     };
+    /* hiddenSelectionsTextures[] = {
+        "\rhsusf\addons\rhsusf_a2port_armor\M2A2_Bradley\data\woodland\base_buskiii_co.paa",
+        "\rhsusf\addons\rhsusf_a2port_armor\M2A2_Bradley\data\woodland\a3_buskiii_co.paa",
+        "\rhsusf\addons\rhsusf_a2port_armor\m2a2_bradley\data\woodland\ultralp_co.paa",
+        "\rhsusf\addons\rhsusf_a2port_armor\m2a2_bradley\data\woodland\BUSKIII_co.paa",
+        "\rhsusf\addons\rhsusf_m1a1\duke\data\duke_antennae_wd_co.paa"
+    }; */
 };
 
 // Modifications to existing vehicles

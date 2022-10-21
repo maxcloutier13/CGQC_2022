@@ -1,5 +1,4 @@
-// Medium helicopter loadout 
-
+// Light helicopter loadout
 class TransportMagazines
 {
 	// Grenades ------------------------------------------------
@@ -63,26 +62,21 @@ class TransportMagazines
 	// Explosives ------------------------------------------------
 	class _xx_rhsusf_m112_mag
 	{
-		count = 3;
+		count = 2;
 		magazine = "rhsusf_m112_mag";
 	};
 	class _xx_rhsusf_m112x4_mag
 	{
-		count = 2;
+		count = 1;
 		magazine = "rhsusf_m112x4_mag";
 	};
 };
 class TransportItems
 {
 	// Meds ------------------------------------------------
-	class _xx_FF_Painkiller
-	{
-		count = 10;
-		name = "FF_Painkiller";
-	};
 	class _xx_ACE_fieldDressing
 	{
-		count = 50;
+		count = 30;
 		name = "ACE_fieldDressing";
 	};
 	class _xx_ACE_salineIV_500
@@ -139,22 +133,22 @@ class TransportItems
 	};
 	class _xx_ACE_microDAGR
 	{
-		count = 2;
+		count = 1;
 		name = "ACE_microDAGR";
 	};
 	class _xx_ACE_RangeCard
 	{
-		count = 2;
+		count = 5;
 		name = "ACE_RangeCard";
 	};
 	class _xx_G_mas_can_gasmask
 	{
-		count = 10;
+		count = 4;
 		name = "G_mas_can_gasmask";
 	};
 	class _xx_ToolKit
 	{
-		count = 2;
+		count = 1;
 		name = "ToolKit";
 	};
 	class _xx_ACE_DefusalKit
@@ -180,6 +174,6 @@ class TransportBackpacks
 	class _xx_B_Parachute
 	{
 		backpack = "B_Parachute";
-		count = 10;
+		count = 7;
 	};
 };

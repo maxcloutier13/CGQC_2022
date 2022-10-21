@@ -204,6 +204,7 @@ class cgqc_drone_darter : B_UAV_01_F
 class B_W_APC_Wheeled_01_cannon_F;
 class UK3CB_MDF_B_Warrior_Cage;
 class RHS_M2A3_BUSKIII_wd;
+class I_LT_01_scout_F;
 class cgqc_vic_badger : B_W_APC_Wheeled_01_cannon_F
 {
     scope = 2;
@@ -262,6 +263,22 @@ class cgqc_vic_bradley : RHS_M2A3_BUSKIII_wd
         "\rhsusf\addons\rhsusf_a2port_armor\m2a2_bradley\data\woodland\BUSKIII_co.paa",
         "\rhsusf\addons\rhsusf_m1a1\duke\data\duke_antennae_wd_co.paa"
     }; */
+};
+class cgqc_vic_wiezel : I_LT_01_scout_F
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_cmd";
+    displayName = "CGQC - Command Wiezel (2)";
+    crew = "CGQC_units_mk1_4_Tank_Driver";
+    hiddenSelectionsTextures[] = {
+        "cgqc_2022\vehicles\cgqc_vic_command_main.paa",
+        "cgqc_2022\vehicles\cgqc_vic_command_radar.paa",
+        "cgqc_2022\vehicles\cgqc_vic_command_camonet.paa",
+        "cgqc_2022\vehicles\cgqc_vic_command_cage.paa"};
+    #include "vehicles\cgqc_vic_command.sqf"
 };
 
 // Modifications to existing vehicles

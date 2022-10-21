@@ -253,15 +253,8 @@ class cgqc_vic_bradley : RHS_M2A3_BUSKIII_wd
         "cgqc_2022\vehicles\cgqc_vic_bradley_2.paa",
         "\rhsusf\addons\rhsusf_a2port_armor\m2a2_bradley\data\woodland\ultralp_co.paa",
         "cgqc_2022\vehicles\cgqc_vic_bradley_3.paa",
-        "\rhsusf\addons\rhsusf_m1a1\duke\data\duke_antennae_wd_co.paa"
+        "cgqc_2022\vehicles\cgqc_vic_bradley_4.paa"
     };
-    /* hiddenSelectionsTextures[] = {
-        "\rhsusf\addons\rhsusf_a2port_armor\M2A2_Bradley\data\woodland\base_buskiii_co.paa",
-        "\rhsusf\addons\rhsusf_a2port_armor\M2A2_Bradley\data\woodland\a3_buskiii_co.paa",
-        "\rhsusf\addons\rhsusf_a2port_armor\m2a2_bradley\data\woodland\ultralp_co.paa",
-        "\rhsusf\addons\rhsusf_a2port_armor\m2a2_bradley\data\woodland\BUSKIII_co.paa",
-        "\rhsusf\addons\rhsusf_m1a1\duke\data\duke_antennae_wd_co.paa"
-    }; */
 };
 
 // Modifications to existing vehicles

@@ -313,7 +313,6 @@ class cgqc_box_mk1_supplies : cgqc_box_mk1_rolebox
             count = 4;
             magazine = "rhs_weap_m72a7";
         };
-        
     };
     class TransportItems
     {

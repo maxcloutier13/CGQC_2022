@@ -87,7 +87,8 @@ class CfgPatches
 			"cgqc_drone_darter",
 			"cgqc_vic_badger",
 			"cgqc_vic_warrior",
-			"cgqc_vic_bradley"};
+			"cgqc_vic_bradley",
+			"cgqc_vic_wiezel"};
 		weapons[] = {
 			"cgqc_helmet_mk1",
 			"cgqc_helmet_mk1_medic",
@@ -217,6 +218,11 @@ class CfgEditorSubcategories
 	{
 		displayName = "Vehicles (IFV)";
 	};
+	class EdSubcat_cgqc_cmd
+	{
+		displayName = "Vehicles (Command)";
+	};
+	
 };
 // Custom units ----------------------------------------------------------------------------
 #include "cfg_pre_vehicles.cpp"

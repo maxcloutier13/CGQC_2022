@@ -306,7 +306,7 @@ class CGQC_units_mk1_4_Tank_Driver : cgqc_soldat_moderne
     magazines[] = {"Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "HandGrenade", "ACE_M84", "ACE_M84", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03"};
     respawnMagazines[] = {"Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "HandGrenade", "ACE_M84", "ACE_M84", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03"};
     linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "cgqc_item_rangefinder", "cgqc_helmet_mk1_tank", "cgqc_vest_mk1_driver", "G_mas_can_balaM_b"};
-    respawnLinkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "cgqc_item_rangefinder", "cgqc_helmet_mk1_tank", "cgqc_vest_mk1_driver", "G_mas_can_balaM_b"};
+    respawnLinkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "cgqc_item_rangefinder", "cgqc_helmet_mk1_tank", "cgqc_vest_mk1_driver", "G_mas_can_wrap_gog_B"};
     backpack = "CGQC_units_mk1_4_Tank_Driver_pack";
     editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_4_Tank_Driver.jpg";
 };

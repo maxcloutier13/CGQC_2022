@@ -108,7 +108,7 @@ player addItemToBackpack "B_IR_Grenade";
 
 
 player addHeadgear "cgqc_helmet_mk1_tank";
-player addGoggles "G_mas_can_balaM_b";
+player addGoggles "G_mas_can_wrap_gog_B";
 
 comment "Add items";
 player linkItem "ItemMap";

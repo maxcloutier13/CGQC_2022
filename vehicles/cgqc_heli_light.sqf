@@ -4,58 +4,58 @@ class TransportMagazines
 	// Grenades ------------------------------------------------
 	class _xx_HandGrenade
 	{
-		count = 5;
+		count = 2;
 		magazine = "HandGrenade";
 	};
 	class _xx_ACE_Chemlight_HiRed
 	{
-		count = 5;
+		count = 2;
 		magazine = "ACE_Chemlight_HiRed";
 	};
 	class _xx_ACE_Chemlight_IR
 	{
-		count = 5;
+		count = 2;
 		magazine = "ACE_Chemlight_IR";
 	};
 	class _xx_SmokeShell
 	{
-		count = 5;
+		count = 2;
 		magazine = "SmokeShell";
 	};
 	class _xx_SmokeShellBlue
 	{
-		count = 5;
+		count = 2;
 		magazine = "SmokeShellBlue";
 	};
 	class _xx_SmokeShellRed
 	{
-		count = 5;
+		count = 2;
 		magazine = "SmokeShellRed";
 	};
 	class _xx_B_IR_Grenade
 	{
-		count = 5;
+		count = 2;
 		magazine = "B_IR_Grenade";
 	};
 	// ammo ------------------------------------------------
 	class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
 	{
-		count = 20;
+		count = 10;
 		magazine = "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
 	};
 	class _xx_ACE_20Rnd_762x51_Mk319_Mod_0_Mag
 	{
-		count = 20;
+		count = 10;
 		magazine = "ACE_20Rnd_762x51_Mk319_Mod_0_Mag";
 	};
 	class _xx_7Rnd_408_Mag
 	{
-		count = 20;
+		count = 10;
 		magazine = "7Rnd_408_Mag";
 	};
 	class _xx_Tier1_15Rnd_9x19_JHP
 	{
-		count = 20;
+		count = 10;
 		magazine = "Tier1_15Rnd_9x19_JHP";
 	};
 
@@ -74,6 +74,11 @@ class TransportMagazines
 class TransportItems
 {
 	// Meds ------------------------------------------------
+	class _xx_FF_Painkiller
+	{
+		count = 5;
+		name = "FF_Painkiller";
+	};
 	class _xx_ACE_fieldDressing
 	{
 		count = 30;
@@ -118,17 +123,17 @@ class TransportItems
 	};
 	class _xx_ACRE_PRC343
 	{
-		count = 2;
+		count = 1;
 		name = "ACRE_PRC343";
 	};
 	class _xx_ACRE_PRC152
 	{
-		count = 2;
+		count = 1;
 		name = "ACRE_PRC152";
 	};
 	class _xx_ACE_EntrenchingTool
 	{
-		count = 2;
+		count = 1;
 		name = "ACE_EntrenchingTool";
 	};
 	class _xx_ACE_microDAGR
@@ -138,7 +143,7 @@ class TransportItems
 	};
 	class _xx_ACE_RangeCard
 	{
-		count = 5;
+		count = 1;
 		name = "ACE_RangeCard";
 	};
 	class _xx_G_mas_can_gasmask

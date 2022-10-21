@@ -143,6 +143,7 @@ class CfgPatches
 			"cgqc_vest_test2",
 			"cgqc_vest_test3",
 			"cgqc_vest_test4",
+			"cgqc_vest_mk1_driver",
 			"cgqc_gun_glock19_wood",
 			"cgqc_acc_M8541A_wood",
 			"cgqc_acc_bipod_wood",

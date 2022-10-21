@@ -214,7 +214,7 @@ class CfgEditorSubcategories
 	};
 	class EdSubcat_cgqc_vic
 	{
-		displayName = "Land Vehicles";
+		displayName = "Vehicles (IFV)";
 	};
 };
 // Custom units ----------------------------------------------------------------------------

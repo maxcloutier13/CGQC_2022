@@ -28,7 +28,7 @@ player addHandgunItem "tier1_dbalpl";
 comment "Add containers";
 player forceAddUniform "cgqc_uniform_mk1";
 player addVest "cgqc_vest_mk1_driver";
-player addBackpack "cgqc_pack_mk1_kitbag";
+player addBackpack "cgqc_pack_mk1_magic";
 
 comment "Add binoculars";
 player addWeapon "cgqc_item_rangefinder";

@@ -297,6 +297,9 @@ class CGQC_units_mk1_4_Tank_Driver : cgqc_soldat_moderne
     faction = "CGQC";
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
+    canDeactivateMines = 1;
+    engineer = 1;
+    detectSkill = 31;
     displayName = "Tank Driver";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_p90_khaki", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};

@@ -283,17 +283,6 @@ class cgqc_vic_wiezel : I_LT_01_scout_F
         "cgqc_2022\vehicles\cgqc_vic_command_cage.paa"};
     //Custom inventory
     #include "vehicles\cgqc_vic_command.cpp"
-    // Custom racks
-    class AcreRacks {
-        class Rack_1 {
-            displayName = "Dash Upper"; // Name is displayed in the interaction menu.
-            shortName = "D.Up";
-            componentName = "ACRE_VRC110";
-            allowedPositions[] = {"driver", "commander"}; // Who has access "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
-            isRadioRemovable = 1;
-            intercom[] = {"intercom_1"};
-        };
-    };
 };
 
 // Modifications to existing vehicles

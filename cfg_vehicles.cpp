@@ -273,12 +273,27 @@ class cgqc_vic_wiezel : I_LT_01_scout_F
     editorSubcategory = "EdSubcat_cgqc_cmd";
     displayName = "CGQC - Command Wiezel (2)";
     crew = "CGQC_units_mk1_4_Tank_Driver";
+    // Boosted speed and space
+    maxSpeed = 110;
+    maximumLoad = 2000;
     hiddenSelectionsTextures[] = {
         "cgqc_2022\vehicles\cgqc_vic_command_main.paa",
         "cgqc_2022\vehicles\cgqc_vic_command_radar.paa",
         "cgqc_2022\vehicles\cgqc_vic_command_camonet.paa",
         "cgqc_2022\vehicles\cgqc_vic_command_cage.paa"};
-    #include "vehicles\cgqc_vic_command.sqf"
+    //Custom inventory
+    #include "vehicles\cgqc_vic_command.cpp"
+    // Custom racks
+    class AcreRacks {
+        class Rack_1 {
+            displayName = "Dash Upper"; // Name is displayed in the interaction menu.
+            shortName = "D.Up";
+            componentName = "ACRE_VRC110";
+            allowedPositions[] = {"driver", "commander"}; // Who has access "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
+            isRadioRemovable = 1;
+            intercom[] = {"intercom_1"};
+        };
+    };
 };
 
 // Modifications to existing vehicles

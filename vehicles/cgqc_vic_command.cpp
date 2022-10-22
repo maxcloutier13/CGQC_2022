@@ -1,5 +1,13 @@
-    class TransportMagazines
+class TransportBackpacks
 {
+	class _xx_B_Carryall_satellite
+	{
+		backpack = "B_Carryall_satellite";
+		count = 1;
+	};
+};
+
+class TransportMagazines{
 	class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
 	{
 		count = 20;
@@ -10,70 +18,14 @@
 		count = 10;
 		magazine = "ACE_20Rnd_762x51_Mk319_Mod_0_Mag";
 	};
-	class _xx_7Rnd_408_Mag
-	{
-		count = 10;
-		magazine = "7Rnd_408_Mag";
-	};
-	class _xx_ACE_Chemlight_HiRed
-	{
-		count = 2;
-		magazine = "ACE_Chemlight_HiRed";
-	};
-	class _xx_ACE_Chemlight_IR
-	{
-		count = 2;
-		magazine = "ACE_Chemlight_IR";
-	};
-	class _xx_SmokeShell
-	{
-		count = 3;
-		magazine = "SmokeShell";
-	};
-	class _xx_SmokeShellBlue
-	{
-		count = 3;
-		magazine = "SmokeShellBlue";
-	};
-	class _xx_SmokeShellRed
-	{
-		count = 3;
-		magazine = "SmokeShellRed";
-	};
-	class _xx_B_IR_Grenade
-	{
-		count = 5;
-		magazine = "B_IR_Grenade";
-	};
-	class _xx_1Rnd_HE_Grenade_shell
-	{
-		count = 5;
-		magazine = "1Rnd_HE_Grenade_shell";
-	};
-	class _xx_UGL_FlareRed_F
-	{
-		count = 3;
-		magazine = "UGL_FlareRed_F";
-	};
-	class _xx_1Rnd_SmokeBlue_Grenade_shell
-	{
-		count = 3;
-		magazine = "1Rnd_SmokeBlue_Grenade_shell";
-	};
-	class _xx_1Rnd_Smoke_Grenade_shell
-	{
-		count = 3;
-		magazine = "1Rnd_Smoke_Grenade_shell";
-	};
 	class _xx_rhsusf_m112_mag
 	{
 		count = 4;
 		magazine = "rhsusf_m112_mag";
 	};
-	
 };
-class TransportItems
-{
+
+class TransportItems{
 	class _xx_ACRE_PRC152
 	{
 		count = 2;
@@ -144,16 +96,6 @@ class TransportItems
 		count = 1;
 		name = "ItemcTab";
 	};
-	class _xx_MRH_FoldedSatcomAntenna
-	{
-		count = 1;
-		name = "MRH_FoldedSatcomAntenna";
-	};
-	class _xx_MRH_TacticalDisplay
-	{
-		count = 1;
-		name = "MRH_TacticalDisplay";
-	};
 	class _xx_Rev_darter_item
 	{
 		count = 2;
@@ -164,13 +106,12 @@ class TransportItems
 		count = 2;
 		name = "sps_black_hornet_01_Static_F";
 	};
-};
-class TransportWeapons
-{
-	class _xx_rhs_weap_M136
+	class _xx_ACE_Fortify
 	{
 		count = 2;
-		magazine = "rhs_weap_M136";
+		name = "ACE_Fortify";
 	};
 };
+
+
 

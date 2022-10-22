@@ -45,16 +45,16 @@ class cgqc_heli_melb_base : Helicopter_Base_H
     threat[] = {0, 0, 0};
     radarType = 0;
     irTarget = 1;
-    irTargetSize = 0.7;
+    irTargetSize = 0.5;
     visualTarget = 1;
-    visualTargetSize = 0.8;
+    visualTargetSize = 0.5;
     radarTarget = 1;
-    radarTargetSize = 0.8;
+    radarTargetSize = 0.3;
     receiveRemoteTargets = 1;
     reportRemoteTargets = 1;
     reportOwnPosition = 1;
-    LockDetectionSystem = "4 + 8";
-    incomingMissileDetectionSystem = 16;
+    LockDetectionSystem = 12;
+    incomingMissileDetectionSystem = 26;
     weapons[] = {"rhsusf_weap_LWIRCM"};
     magazines[] = {"rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM"};
     hiddenSelections[] = {"camo1", "d_SN"};
@@ -79,7 +79,7 @@ class cgqc_heli_melb_base : Helicopter_Base_H
     memorypointcm[] = {"flare_launcher1"};
     memorypointcmdir[] = {"flare_launcher1_dir"};
     driveOnComponent[] = {"Skids"};
-    fuelCapacity = 236;
+    fuelCapacity = 400;
     fuelConsumptionRate = 0.06;
     maxFordingDepth = 0.65;
     mainBladeRadius = 4.32;
@@ -107,7 +107,7 @@ class cgqc_heli_melb_base : Helicopter_Base_H
     };
     startDuration = 10;
     washDownStrength = "0.7f";
-    maxSpeed = 200;
+    maxSpeed = 240;
     slingLoadMemoryPoint = "slingLoad0";
     slingLoadMaxCargoMass = 900;
     liftForceCoef = 1;
@@ -116,7 +116,7 @@ class cgqc_heli_melb_base : Helicopter_Base_H
     backrotorforcecoef = 0.9;
     bodyFrictionCoef = 0.3;
     sensitivity = 2.5;
-    maximumLoad = 1000;
+    maximumLoad = 2000;
     cost = 4000000;
     memoryPointSupply = "memsupply";
     supplyradius = 4;
@@ -611,7 +611,7 @@ class cgqc_heli_melb_base : Helicopter_Base_H
     {
         libTextDesc = "Syko's Little Birds";
     };
-    armor = 35;
+    armor = 40;
     armorStructural = 20.0;
     epeImpulseDamageCoef = 20;
     damageResistance = 0.01039;
@@ -1369,43 +1369,11 @@ class cgqc_heli_melb_base : Helicopter_Base_H
                     opticsPPEffects[] = {"OpticsCHAbera3", "OpticsBlur3"};
                     gunnerOpticsEffect[] = {"TankCommanderOptics2"};
                 };
-                class WideT : Wide
-                {
-                    initFov = 0.2;
-                    minFov = 0.2;
-                    maxFov = 0.2;
-                    gunnerOpticsModel = "rhsusf\addons\rhsusf_melb\data\optics\melb_flir_w2.p3d";
-                };
-                class MediumT : WideT
-                {
-                    initFov = 0.1;
-                    minFov = 0.1;
-                    maxFov = 0.1;
-                    gunnerOpticsModel = "rhsusf\addons\rhsusf_melb\data\optics\melb_flir_m.p3d";
-                };
-                class NarrowT : WideT
-                {
-                    initFov = 0.022;
-                    minFov = 0.022;
-                    maxFov = 0.022;
-                    gunnerOpticsModel = "rhsusf\addons\rhsusf_melb\data\optics\melb_flir_n.p3d";
-                };
-                class NarrowT2 : WideT
-                {
-                    initFov = 0.0092;
-                    minFov = 0.0092;
-                    maxFov = 0.0092;
-                    gunnerOpticsModel = "rhsusf\addons\rhsusf_melb\data\optics\melb_flir_n2.p3d";
-                };
             };
             class Components
             {
-                class VehicleSystemsDisplayManagerComponentLeft : VehicleSystemsTemplateLeftPilot
-                {
-                };
-                class VehicleSystemsDisplayManagerComponentRight : VehicleSystemsTemplateRightPilot
-                {
-                };
+                class VehicleSystemsDisplayManagerComponentLeft : VehicleSystemsTemplateLeftPilot  {};
+                class VehicleSystemsDisplayManagerComponentRight : VehicleSystemsTemplateRightPilot  {};
             };
             class Hitpoints
             {
@@ -1423,17 +1391,89 @@ class cgqc_heli_melb_base : Helicopter_Base_H
     class Components : Components
     {
         class SensorsManagerComponent
-        {
+		{
             class Components
             {
-                class DataLinkSensorComponent : SensorTemplateDataLink
+                class IRSensorComponent: SensorTemplateIR
                 {
+                    class AirTarget
+                    {
+                        minRange = 500;
+                        maxRange = 4000;
+                        objectDistanceLimitCoef = -1;
+                        viewDistanceLimitCoef = 1;
+                    };
+                    class GroundTarget
+                    {
+                        minRange = 500;
+                        maxRange = 3000;
+                        objectDistanceLimitCoef = 1;
+                        viewDistanceLimitCoef = 1;
+                    };
+                    maxTrackableSpeed = 75;
+                    angleRangeHorizontal = 240;
+                    angleRangeVertical = 110;
+                    animDirection = "commanderview";
                 };
-                class PassiveRadarSensorComponent : SensorTemplatePassiveRadar
+                class VisualSensorComponent: SensorTemplateVisual
                 {
+                    class AirTarget
+                    {
+                        minRange = 500;
+                        maxRange = 4000;
+                        objectDistanceLimitCoef = -1;
+                        viewDistanceLimitCoef = 1;
+                    };
+                    class GroundTarget
+                    {
+                        minRange = 500;
+                        maxRange = 3000;
+                        objectDistanceLimitCoef = 1;
+                        viewDistanceLimitCoef = 1;
+                    };
+                    maxTrackableSpeed = 75;
+                    angleRangeHorizontal = 240;
+                    angleRangeVertical = 110;
+                    aimDown = 1;
+                    animDirection = "commanderview";
                 };
-                class LaserSensorComponent : SensorTemplateLaser
+                class ActiveRadarSensorComponent: SensorTemplateActiveRadar
                 {
+                    class AirTarget
+                    {
+                        minRange = 7000;
+                        maxRange = 7000;
+                        objectDistanceLimitCoef = -1;
+                        viewDistanceLimitCoef = -1;
+                    };
+                    class GroundTarget
+                    {
+                        minRange = 4000;
+                        maxRange = 4000;
+                        objectDistanceLimitCoef = -1;
+                        viewDistanceLimitCoef = -1;
+                    };
+                    angleRangeHorizontal = 240;
+                    angleRangeVertical = 110;
+                    groundNoiseDistanceCoef = -1;
+                    maxGroundNoiseDistance = -1;
+                    minSpeedThreshold = 0;
+                    maxSpeedThreshold = 0;
+                    aimDown = 35;
+                };
+                class DataLinkSensorComponent: SensorTemplateDataLink{};
+                class PassiveRadarSensorComponent: SensorTemplatePassiveRadar{};
+                class LaserSensorComponent: SensorTemplateLaser
+                {
+                    angleRangeHorizontal = 360;
+                    angleRangeVertical = 120;
+                    aimDown = 30;
+                };
+                class NVSensorComponent: SensorTemplateNV
+                {
+                    angleRangeHorizontal = 360;
+                    angleRangeVertical = 120;
+                    aimDown = 30;
                 };
             };
         };
@@ -1456,7 +1496,7 @@ class cgqc_heli_ah6 : cgqc_heli_melb_base
     picture = "rhsusf\addons\rhsusf_melb\Data\ui\melb_ah_6m_ca.paa";
     icon = "rhsusf\addons\rhsusf_melb\Data\ui\map_melb_ah_6m_l_ca.paa";
     slingLoadMaxCargoMass = 0;
-    fuelCapacity = 436;
+    fuelCapacity = 600;
     fuelConsumptionRate = 0.08;
     transportSoldier = 1;
     cargoProxyIndexes[] = {10};

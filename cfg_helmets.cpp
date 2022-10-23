@@ -145,6 +145,17 @@ class cgqc_helmet_mk1_tank : rhsusf_cvc_green_ess
     displayName = "CGQC Casque Tank mk1";
     grad_slingHelmet_allow = true;
 };
+// Custom helmets
+class cgqc_helmet_mk1_turcotte : cgqc_helmet_mk1_tank
+{
+    author = "silent1";
+    _generalMacro = "cgqc_helmet_mk1_turcotte";
+    displayName = "CGQC Casque Tank Turcotte";
+    grad_slingHelmet_allow = true;
+    hiddenSelectionsTextures[] = {
+        "\cgqc_2022\helmets\cgqc_helmet_tank_turcotte.paa",
+        "\rhsusf\addons\rhsusf_infantry\gear\head\data\crew_equip_co.paa"};
+};
 class cgqc_helmet_mk1_jetpilot : H_PilotHelmetFighter_B
 {
     author = "silent1";

@@ -86,7 +86,6 @@ class CfgPatches
 			"cgqc_plane_a10",
 			"cgqc_drone_darter",
 			"cgqc_vic_badger",
-			"cgqc_vic_warrior",
 			"cgqc_vic_bradley",
 			"cgqc_vic_wiezel"};
 		weapons[] = {
@@ -222,6 +221,11 @@ class CfgEditorSubcategories
 	{
 		displayName = "Vehicles (Command)";
 	};
+	class EdSubcat_cgqc_offroad
+	{
+		displayName = "Vehicles (Unarmed)";
+	};
+	
 	
 };
 // Custom units ----------------------------------------------------------------------------

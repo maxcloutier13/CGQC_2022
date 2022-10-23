@@ -87,7 +87,11 @@ class CfgPatches
 			"cgqc_drone_darter",
 			"cgqc_vic_badger",
 			"cgqc_vic_bradley",
-			"cgqc_vic_wiezel"};
+			"cgqc_vic_wiezel",
+			"cgqc_vic_suv",
+			"cgqc_vic_motocross",
+			"cgqc_vic_quad"
+		};
 		weapons[] = {
 			"cgqc_helmet_mk1",
 			"cgqc_helmet_mk1_medic",

@@ -283,6 +283,8 @@ class MRAP_03_base_F: Car_F {
         };
     };
 };
+
+
 // APC Acre settings--------------------------------------------------------------------------
 class Wheeled_APC_F: Car_F {
     class AcreRacks {
@@ -336,29 +338,12 @@ class cgqc_vic_badger : B_W_APC_Wheeled_01_cannon_F
     displayName = "CGQC - Badger (3+8)";
     crew = "CGQC_units_mk1_4_Tank_Driver";
     hiddenSelectionsTextures[] = {
-        "A3\Armor_F_Exp\APC_Wheeled_01\data\APC_Wheeled_01_base_olive_CO.paa",
+        "cgqc_2022\vehicles\cgqc_vic_badger_main.paa",
         "A3\Armor_F_Exp\APC_Wheeled_01\data\APC_Wheeled_01_adds_olive_co.paa",
-        "A3\Armor_F_Exp\APC_Wheeled_01\data\APC_Wheeled_01_tows_olive_co.paa",
+        "cgqc_2022\vehicles\cgqc_vic_badger_tow.paa",
         "a3\Armor_F\Data\camonet_NATO_Green_CO.paa",
         "a3\Armor_F\Data\cage_olive_CO.paa"
     };
-};
-class cgqc_vic_warrior : UK3CB_MDF_B_Warrior_Cage
-{
-    scope = 2;
-    side = 1;
-    author = "silent1";
-    faction = "cgqc";
-    editorSubcategory = "EdSubcat_cgqc_vic";
-    displayName = "CGQC - Warrior (3+6)";
-    crew = "CGQC_units_mk1_4_Tank_Driver";
-    /*
-    hiddenSelectionsTextures[] = {
-        "\UK3CB_Factions\addons\UK3CB_Factions_Vehicles\apc\UK3CB_Factions_Vehicles_Warrior\data\mdf_apc_tracked_03_ext_co.paa",
-        "\UK3CB_Factions\addons\UK3CB_Factions_Vehicles\apc\UK3CB_Factions_Vehicles_Warrior\data\mdf_apc_tracked_03_ext2_co.paa",
-        "\UK3CB_Factions\addons\UK3CB_Factions_Vehicles\apc\UK3CB_Factions_Vehicles_Warrior\data\mdf_camonet_co.paa",
-        "\UK3CB_Factions\addons\UK3CB_Factions_Vehicles\apc\UK3CB_Factions_Vehicles_Warrior\data\mdf_cage_co.paa"
-    };*/
 };
 class cgqc_vic_bradley : RHS_M2A3_BUSKIII_wd
 {
@@ -375,7 +360,7 @@ class cgqc_vic_bradley : RHS_M2A3_BUSKIII_wd
         "cgqc_2022\vehicles\cgqc_vic_bradley_2.paa",
         "\rhsusf\addons\rhsusf_a2port_armor\m2a2_bradley\data\woodland\ultralp_co.paa",
         "cgqc_2022\vehicles\cgqc_vic_bradley_3.paa",
-        "\rhsusf\addons\rhsusf_m1a1\duke\data\duke_antennae_wd_co.paa"
+        "cgqc_2022\vehicles\cgqc_vic_bradley_duke.paa"
     };
     /* hiddenSelectionsTextures[] = {
         "\rhsusf\addons\rhsusf_a2port_armor\M2A2_Bradley\data\woodland\base_buskiii_co.paa",
@@ -404,6 +389,19 @@ class cgqc_vic_wiezel : I_LT_01_scout_F
         "cgqc_2022\vehicles\cgqc_vic_command_cage.paa"};
     //Custom inventory
     #include "vehicles\cgqc_vic_command.cpp"
+};
+
+// Offroad -----------------------------------------------------------------------------------
+class B_W_Quadbike_01_F;
+class cgqc_vic_quad : B_W_Quadbike_01_F
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_offroad";
+    displayName = "CGQC - Quad (1+1)";
+    crew = "CGQC_units_mk1_1_Rifleman_Carbine";
 };
 
 // Modifications to existing vehicles

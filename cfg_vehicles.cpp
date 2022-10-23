@@ -29,6 +29,7 @@ class Helicopter : Air
         class HitAvionics;
     };
 };
+// Helicopter acre settings
 class Helicopter_Base_F : Helicopter
 {
     class Turrets : Turrets
@@ -59,6 +60,21 @@ class Helicopter_Base_F : Helicopter
     class Reflectors
     {
         class Right;
+    };
+    class AcreRacks {
+        class Rack_1 {
+            displayName = "Dash Upper"; // Name is displayed in the interaction menu.
+            shortName = "Rack1";
+            componentName = "ACRE_VRC103";
+            allowedPositions[] = {"driver", "gunner", "copilot", "external"}; // Attack helicopters have "gunner" copilots usually
+            mountedRadio = "ACRE_PRC117F";
+            intercom[] = {};
+        };
+
+        class Rack_2: Rack_1 {
+            displayName = "Dash Lower"; // If you have multiple racks a text label helps identify the particular rack.
+            shortName = "Rack2";
+        };
     };
 };
 class Helicopter_Base_H : Helicopter_Base_F
@@ -205,6 +221,111 @@ class B_W_APC_Wheeled_01_cannon_F;
 class UK3CB_MDF_B_Warrior_Cage;
 class RHS_M2A3_BUSKIII_wd;
 class I_LT_01_scout_F;
+// Mraps Acre settings--------------------------------------------------------------------------
+class Car_F;
+class MRAP_01_base_F : Car_F {
+    class AcreRacks {
+        class Rack_1 {
+            displayName = "Dash Upper"; // Name is displayed in the interaction menu.
+            shortName = "Rack1";
+            componentName = "ACRE_VRC103";
+            allowedPositions[] = {"driver", {"cargo", 0}, "external"};
+            mountedRadio = "ACRE_PRC117F";
+            intercom[] = {};
+        };
+        class Rack_2 {
+            displayName = "Dash Lower"; // If you have multiple racks a text label helps identify the particular rack.
+            shortName = "Rack2";
+            componentName = "ACRE_VRC103";
+            allowedPositions[] = {"driver", {"cargo", 0}};
+            mountedRadio = "ACRE_PRC117F";
+            intercom[] = {};
+        };
+    };
+};
+class MRAP_02_base_F: Car_F {
+    class AcreRacks {
+        class Rack_1 {
+            displayName = "Dash Upper"; // Name is displayed in the interaction menu.
+            shortName = "Rack1";
+            componentName = "ACRE_VRC103";
+            allowedPositions[] = {"driver", {"cargo", 0}};
+            mountedRadio = "ACRE_PRC117F";
+            intercom[] = {};
+        };
+        class Rack_2 {
+            displayName = "Dash Lower"; // If you have multiple racks a text label helps identify the particular rack.
+            shortName = "Rack2";
+            componentName = "ACRE_VRC103";
+            allowedPositions[] = {"driver", {"cargo", 0}};
+            mountedRadio = "ACRE_PRC117F";
+            intercom[] = {};
+        };
+    };
+};
+class MRAP_03_base_F: Car_F {
+    class AcreRacks {
+        class Rack_1 {
+            displayName = "Dash Upper"; // Name is displayed in the interaction menu.
+            shortName = "Rack1";
+            componentName = "ACRE_VRC103";
+            allowedPositions[] = {"driver", {"cargo", 0}};
+            mountedRadio = "ACRE_PRC117F";
+            intercom[] = {};
+        };
+        class Rack_2 {
+            displayName = "Dash Lower"; // If you have multiple racks a text label helps identify the particular rack.
+            shortName = "Rack2";
+            componentName = "ACRE_VRC103";
+            allowedPositions[] = {"driver", {"cargo", 0}};
+            mountedRadio = "ACRE_PRC117F";
+            intercom[] = {};
+        };
+    };
+};
+// APC Acre settings--------------------------------------------------------------------------
+class Wheeled_APC_F: Car_F {
+    class AcreRacks {
+        class Rack_1 {
+            displayName = "Dash Upper"; // Name is displayed in the interaction menu.
+            shortName = "Rack1";
+            componentName = "ACRE_VRC103";
+            allowedPositions[] = {"driver", "commander", "gunner", "external"}; // Who has access "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
+            mountedRadio = "ACRE_PRC117F";
+            intercom[] = {};
+        };
+        class Rack_2 {
+            displayName = "Dash Lower"; // If you have multiple racks a text label helps identify the particular rack.
+            shortName = "Rack2";
+            componentName = "ACRE_VRC103";
+            allowedPositions[] = {"driver", "commander", "gunner", "external"}; // Who has access "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
+            mountedRadio = "ACRE_PRC117F";
+            intercom[] = {};
+        };
+     };
+};
+// Tank   Acre settings -----------------------------------------------------------------------
+class Tank;
+class Tank_F: Tank {
+    class AcreRacks {
+        class Rack_1 {
+            displayName = "Dash Upper"; // Name is displayed in the interaction menu.
+            shortName = "Rack1";
+            componentName = "ACRE_VRC103";
+            allowedPositions[] = {"driver", "commander", "gunner", "external"}; // Who has access "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
+            mountedRadio = "ACRE_PRC117F";
+            intercom[] = {};
+        };
+        class Rack_2 {
+            displayName = "Dash Lower"; // If you have multiple racks a text label helps identify the particular rack.
+            shortName = "Rack2";
+            componentName = "ACRE_VRC103";
+            allowedPositions[] = {"driver", "commander", "gunner", "external"}; // Who has access "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
+            mountedRadio = "ACRE_PRC117F";
+            intercom[] = {};
+        };
+     };
+};
 class cgqc_vic_badger : B_W_APC_Wheeled_01_cannon_F
 {
     scope = 2;

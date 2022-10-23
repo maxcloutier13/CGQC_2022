@@ -71,9 +71,9 @@ class cgqc_heli_uh1_base : Helicopter_Base_H
     visualTarget = 1;
     visualTargetSize = 1;
     radarTarget = 1;
-    radarTargetSize = 1;
-    LockDetectionSystem = "0";
-    incomingMissileDetectionSystem = "0";
+    radarTargetSize = 0.5;
+    LockDetectionSystem = 12;
+    incomingMissileDetectionSystem = 26;
     class RotorLibHelicopterProperties : RotorLibHelicopterProperties
     {
         RTDconfig = "rhsgref\addons\rhsgref_c_air\uh1h\rtd_uh1h.xml";

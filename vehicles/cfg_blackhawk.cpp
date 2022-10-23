@@ -16,9 +16,9 @@ class cgqc_heli_U60_base : Heli_Transport_01_base_F
     visualTarget = 1;
     visualTargetSize = 1;
     radarTarget = 1;
-    radarTargetSize = 1;
-    LockDetectionSystem = "4 + 8";
-    incomingMissileDetectionSystem = "2 + 8 + 16";
+    radarTargetSize = 0.5;
+    LockDetectionSystem = 12;
+    incomingMissileDetectionSystem = 26;
     class pilotCamera
     {
     };

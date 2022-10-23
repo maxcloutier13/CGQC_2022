@@ -344,6 +344,8 @@ class cgqc_vic_badger : B_W_APC_Wheeled_01_cannon_F
         "a3\Armor_F\Data\camonet_NATO_Green_CO.paa",
         "a3\Armor_F\Data\cage_olive_CO.paa"
     };
+    //Custom inventory
+    #include "vehicles\cgqc_vic_loadout_ifv.cpp"
 };
 class cgqc_vic_bradley : RHS_M2A3_BUSKIII_wd
 {
@@ -362,13 +364,7 @@ class cgqc_vic_bradley : RHS_M2A3_BUSKIII_wd
         "cgqc_2022\vehicles\cgqc_vic_bradley_3.paa",
         "cgqc_2022\vehicles\cgqc_vic_bradley_duke.paa"
     };
-    /* hiddenSelectionsTextures[] = {
-        "\rhsusf\addons\rhsusf_a2port_armor\M2A2_Bradley\data\woodland\base_buskiii_co.paa",
-        "\rhsusf\addons\rhsusf_a2port_armor\M2A2_Bradley\data\woodland\a3_buskiii_co.paa",
-        "\rhsusf\addons\rhsusf_a2port_armor\m2a2_bradley\data\woodland\ultralp_co.paa",
-        "\rhsusf\addons\rhsusf_a2port_armor\m2a2_bradley\data\woodland\BUSKIII_co.paa",
-        "\rhsusf\addons\rhsusf_m1a1\duke\data\duke_antennae_wd_co.paa"
-    }; */
+    #include "vehicles\cgqc_vic_loadout_ifv.cpp"
 };
 class cgqc_vic_wiezel : I_LT_01_scout_F
 {
@@ -388,7 +384,8 @@ class cgqc_vic_wiezel : I_LT_01_scout_F
         "cgqc_2022\vehicles\cgqc_vic_command_camonet.paa",
         "cgqc_2022\vehicles\cgqc_vic_command_cage.paa"};
     //Custom inventory
-    #include "vehicles\cgqc_vic_command.cpp"
+    //#include "vehicles\cgqc_vic_loadout_command"
+    #include "vehicles\cgqc_vic_loadout_command.cpp"
 };
 
 // Offroad -----------------------------------------------------------------------------------
@@ -401,6 +398,28 @@ class cgqc_vic_quad : B_W_Quadbike_01_F
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_offroad";
     displayName = "CGQC - Quad (1+1)";
+    crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+};
+class UK3CB_B_M1030_USMC_WDL;
+class cgqc_vic_motocross : UK3CB_B_M1030_USMC_WDL
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_offroad";
+    displayName = "CGQC - Motocross (1+1)";
+    crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+};
+class UK3CB_AAF_B_SUV_Armoured;
+class cgqc_vic_suv : UK3CB_AAF_B_SUV_Armoured
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_offroad";
+    displayName = "CGQC - SUV (1+5)";
     crew = "CGQC_units_mk1_1_Rifleman_Carbine";
 };
 

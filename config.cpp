@@ -236,8 +236,6 @@ class cfgVehicles
 	#include "cfg_units_mk1.cpp"
 	// mk1 vehicles
 	#include "cfg_vehicles.cpp"
-	// Acre modifications
-	#include "cfg_vehicles_radio.cpp"
 };
 // Groups ---------------------------------------------------------------------------------
 #include "cfg_groups.cpp"

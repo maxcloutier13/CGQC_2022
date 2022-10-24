@@ -111,8 +111,11 @@ for "_i" from 1 to 3 do {
 player addItemToBackpack "sps_black_hornet_01_Static_F";
 player addItemToBackpack "rev_darter_item";
 player addItemToBackpack "itemcTab";
+player addItemToBackpack "ACRE_PRC117F";
+
 player addHeadgear "cgqc_helmet_mk1";
 player addGoggles "G_mas_can_wrap_gog_B";
+
 
 comment "Add items";
 player linkItem "ItemMap";

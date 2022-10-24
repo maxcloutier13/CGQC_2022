@@ -283,8 +283,6 @@ class MRAP_03_base_F: Car_F {
         };
     };
 };
-
-
 // APC Acre settings--------------------------------------------------------------------------
 class Wheeled_APC_F: Car_F {
     class AcreRacks {
@@ -337,6 +335,7 @@ class cgqc_vic_badger : B_W_APC_Wheeled_01_cannon_F
     editorSubcategory = "EdSubcat_cgqc_vic";
     displayName = "CGQC - Badger (3+8)";
     crew = "CGQC_units_mk1_4_Tank_Driver";
+    maximumLoad = 6000;
     hiddenSelectionsTextures[] = {
         "cgqc_2022\vehicles\cgqc_vic_badger_main.paa",
         "A3\Armor_F_Exp\APC_Wheeled_01\data\APC_Wheeled_01_adds_olive_co.paa",
@@ -356,7 +355,6 @@ class cgqc_vic_bradley : RHS_M2A3_BUSKIII_wd
     editorSubcategory = "EdSubcat_cgqc_vic";
     displayName = "CGQC - Bradley (3+6)";
     crew = "CGQC_units_mk1_4_Tank_Driver";
-
     hiddenSelectionsTextures[] = {
         "cgqc_2022\vehicles\cgqc_vic_bradley_1.paa",
         "cgqc_2022\vehicles\cgqc_vic_bradley_2.paa",
@@ -387,7 +385,6 @@ class cgqc_vic_wiezel : I_LT_01_scout_F
     //#include "vehicles\cgqc_vic_loadout_command"
     #include "vehicles\cgqc_vic_loadout_command.cpp"
 };
-
 // Offroad -----------------------------------------------------------------------------------
 class B_W_Quadbike_01_F;
 class cgqc_vic_quad : B_W_Quadbike_01_F
@@ -399,6 +396,7 @@ class cgqc_vic_quad : B_W_Quadbike_01_F
     editorSubcategory = "EdSubcat_cgqc_offroad";
     displayName = "CGQC - Quad (1+1)";
     crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+    #include "vehicles\cgqc_vic_loadout_small.cpp"
 };
 class UK3CB_B_M1030_USMC_WDL;
 class cgqc_vic_motocross : UK3CB_B_M1030_USMC_WDL
@@ -410,6 +408,7 @@ class cgqc_vic_motocross : UK3CB_B_M1030_USMC_WDL
     editorSubcategory = "EdSubcat_cgqc_offroad";
     displayName = "CGQC - Motocross (1+1)";
     crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+    #include "vehicles\cgqc_vic_loadout_small.cpp"
 };
 class UK3CB_AAF_B_SUV_Armoured;
 class cgqc_vic_suv : UK3CB_AAF_B_SUV_Armoured
@@ -421,8 +420,8 @@ class cgqc_vic_suv : UK3CB_AAF_B_SUV_Armoured
     editorSubcategory = "EdSubcat_cgqc_offroad";
     displayName = "CGQC - SUV (1+5)";
     crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+    #include "vehicles\cgqc_vic_loadout_ifv.cpp"
 };
-
 // Modifications to existing vehicles
 // Drones - Attempt to override fuel capacity
 class UAV_01_base_F : Helicopter_Base_F // Darter

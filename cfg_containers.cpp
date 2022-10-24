@@ -503,7 +503,7 @@ class cgqc_pack_mk1_radiobag_white : B_RadioBag_01_oucamo_F // Base
     displayName = "CGQC Radiobag mk1 White";
 };
 // mk1 Backpacks --------------------------------------------------------------------------------------
-class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_kitbag
+class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_radiobag
 {
     scope = 1;
     class TransportMagazines
@@ -691,7 +691,7 @@ class CGQC_units_mk1_0_Drone_operator_pack : cgqc_pack_mk1_kitbag
     {
     };
 };
-class CGQC_units_mk1_0_SquadLeader_pack : cgqc_pack_mk1_kitbag
+class CGQC_units_mk1_0_SquadLeader_pack : cgqc_pack_mk1_radiobag
 {
     scope = 1;
     class TransportMagazines
@@ -790,6 +790,11 @@ class CGQC_units_mk1_0_SquadLeader_pack : cgqc_pack_mk1_kitbag
             count = 1;
             name = "ItemcTab";
         };
+        class _xx_ACRE_PRC117F
+        {
+            count = 1;
+            name = "ACRE_PRC117F";
+        };
         class _xx_sps_black_hornet_01_Static_F
         {
             count = 1;
@@ -800,7 +805,7 @@ class CGQC_units_mk1_0_SquadLeader_pack : cgqc_pack_mk1_kitbag
     {
     };
 };
-class CGQC_units_mk1_0_TeamLeader_Carbine_pack : cgqc_pack_mk1_kitbag
+class CGQC_units_mk1_0_TeamLeader_Carbine_pack : cgqc_pack_mk1_radiobag
 {
     scope = 1;
     class TransportMagazines
@@ -899,7 +904,7 @@ class CGQC_units_mk1_0_TeamLeader_Carbine_pack : cgqc_pack_mk1_kitbag
     {
     };
 };
-class CGQC_units_mk1_0_TeamLeader_CQB_pack : cgqc_pack_mk1_kitbag
+class CGQC_units_mk1_0_TeamLeader_CQB_pack : cgqc_pack_mk1_radiobag
 {
     scope = 1;
     class TransportMagazines
@@ -1110,6 +1115,11 @@ class CGQC_units_mk1_0_JTAC_pack : cgqc_pack_mk1_radiobag
         {
             count = 2;
             name = "ACE_UAVBattery";
+        };
+        class _xx_ACRE_PRC117F
+        {
+            count = 1;
+            name = "ACRE_PRC117F";
         };
     };
     class TransportWeapons

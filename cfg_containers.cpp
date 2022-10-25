@@ -391,6 +391,19 @@ class cgqc_box_mk1_supplies : cgqc_box_mk1_rolebox
         };
     };
 };
+// Mk1 Portable Mortar
+class Box_NATO_WpsSpecial_F;
+class cgqc_box_mk1_mortar : Box_NATO_WpsSpecial_F
+{
+    author = "silent1";
+    _generalMacro = "cgqc_box_mk1_mortar";
+    displayName = "CGQC Mortier 60mm";
+    hiddenSelectionsTextures[] = {
+        "\CGQC_2022\containers\cgqc_box_mortar_label.paa",
+        "a3\weapons_f\Ammoboxes\data\AmmoBox_CO.paa"
+    };
+    #include "loadouts\cgqc_box_mortar.sqf"
+};
 // Basic Backpacks --------------------------------------------------------------------------------------
 class cgqc_pack_mk1_kitbag : B_Kitbag_rgr // Base
 {

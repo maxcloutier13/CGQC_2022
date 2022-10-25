@@ -14,12 +14,15 @@ do
 		hintSilent format ["Item: %1", _item];
 		sleep 3;
 	};
-	case "Earplugs": {
+	case "earplugs": {
 		player addItemToUniform "ACE_EarPlugs";
 		hintSilent format ["Item: %1", _item];
 		sleep 3;
 	};
-	default	{};
+	default	{
+		hintSilent "woops";
+		sleep 3;
+	};
 };
 
 

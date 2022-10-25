@@ -202,6 +202,8 @@ class cfgWeapons
 	#include "cfg_guns.cpp"
 	// Custom accessories ---------------------------------------
 	#include "cfg_acc.cpp"
+	// Mortar stuff
+	#include "cfg_mortar.cpp"
 };
 // Custom Editor category for units ------------------------------------------------
 class CfgEditorSubcategories

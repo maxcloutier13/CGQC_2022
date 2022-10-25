@@ -37,6 +37,7 @@ class CfgPatches
 			"cgqc_box_mk1_supplies",
 			"cgqc_box_mk1_mortar",
 			"cgqc_box_mk1_mortar_mk6",
+			"cgqc_box_mk1_arsenal",
 			"CGQC_units_mk1_0_HQ_pack",
 			"CGQC_units_mk1_0_TeamLeader_Carbine_pack",
 			"CGQC_units_mk1_0_TeamLeader_CQB_pack",

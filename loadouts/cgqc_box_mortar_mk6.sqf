@@ -5,9 +5,9 @@ class TransportWeapons
 		weapon = "ace_csw_staticMortarCarry";
 		count = 1;
 	};
-	class _xx_ace_csw_staticMortarBaseplate
+	class _xx_ace_csw_carryMortarBaseplate
 	{
-		weapon = "ace_csw_staticMortarBaseplate";
+		weapon = "ace_csw_carryMortarBaseplate";
 		count = 1;
 	};
 };
@@ -15,18 +15,8 @@ class TransportWeapons
 class TransportMagazines{
 	class _xx_ACE_1Rnd_82mm_Mo_HE
 	{
-		count = 20;
+		count = 50;
 		magazine = "ACE_1Rnd_82mm_Mo_HE";
-	};
-	class _xx_ACE_1Rnd_82mm_Mo_HE_LaserGuided
-	{
-		count = 20;
-		magazine = "ACE_1Rnd_82mm_Mo_HE_LaserGuided";
-	};
-	class _xx_ACE_1Rnd_82mm_Mo_HE_Guided
-	{
-		count = 20;
-		magazine = "ACE_1Rnd_82mm_Mo_HE_Guided";
 	};
 	class _xx_ACE_1Rnd_82mm_Mo_Illum
 	{

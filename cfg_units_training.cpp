@@ -20,7 +20,6 @@ class cgqc_soldat_moderne : B_Soldier_f
 	backpack = "cgqc_pack_mk1_magic";
 	editorPreview = "\CGQC_2022\pics\cgqc_soldat_moderne.jpg";
 };
-
 class cgqc_officer_moderne : B_Soldier_f
 {
 	author = "silent1";
@@ -43,4 +42,12 @@ class cgqc_officer_moderne : B_Soldier_f
 	respawnLinkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "cgqc_item_rangefinder", "cgqc_cap_green", "cgqc_vest_mk1_belt", "None"};
 	backpack = "cgqc_pack_mk1_magic";
 	editorPreview = "\CGQC_2022\pics\cgqc_officer_moderne.jpg";
+};
+class cgqc_officer_base
+{
+	scope = 0;
+};
+class cgqc_soldat_base
+{
+	scope = 0;
 };

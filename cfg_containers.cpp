@@ -398,6 +398,8 @@ class cgqc_box_mk1_mortar : Box_NATO_WpsSpecial_F
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_mortar";
     displayName = "CGQC Mortier 60mm";
+    ace_cargo_size = 1;  // Cargo space the object takes
+    ace_cargo_canLoad = 1;
     hiddenSelectionsTextures[] = {
         "\CGQC_2022\containers\cgqc_box_mortar_label.paa",
         "a3\weapons_f\Ammoboxes\data\AmmoBox_CO.paa"

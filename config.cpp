@@ -54,6 +54,7 @@ class CfgPatches
 			"CGQC_units_mk1_4_crew_heli_pack",
 			"cgqc_soldat_moderne",
 			"CGQC_officer_moderne",
+			"cgqc_officer_1_moderne",
 			"cgqc_pack_mk1_kitbag",
 			"CGQC_units_mk1_0_HQ",
 			"CGQC_units_mk1_0_Drone_operator",

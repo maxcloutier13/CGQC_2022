@@ -15,24 +15,23 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add weapons";
-player addWeapon "cgqc_gun_mk1_m4a1blkII_gl";
-player addPrimaryWeaponItem "Tier1_KAC_556_QDC_CQB_Black";
-player addPrimaryWeaponItem "Tier1_M4BII_NGAL_M600V_Black";
-player addPrimaryWeaponItem "Tier1_Razor_Gen2_16_Geissele_Docter";
-player addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
-player addPrimaryWeaponItem "1Rnd_HE_Grenade_shell";
+player addWeapon "cgqc_gun_mk1_hk417";
+player addPrimaryWeaponItem "Tier1_SandmanS_Black";
+player addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk_light";
+player addPrimaryWeaponItem "Tier1_Razor_Gen3_110_Geissele_Docter";
+player addPrimaryWeaponItem "ACE_20Rnd_762x51_Mk319_Mod_0_Mag";
+player addPrimaryWeaponItem "bipod_01_F_blk";
 player addWeapon "cgqc_gun_glock19_wood";
 player addHandgunItem "Tier1_15Rnd_9x19_JHP";
 player addHandgunItem "tier1_dbalpl";
 
 comment "Add containers";
 player forceAddUniform "cgqc_uniform_mk1";
-player addVest "cgqc_vest_mk1_tan";
+player addVest "cgqc_vest_mk1_tan_lr";
 player addBackpack "cgqc_pack_mk1_kitbag";
 
 comment "Add binoculars";
-player addMagazine "Laserbatteries";
-player addWeapon "Laserdesignator_01_khk_F";
+player addWeapon "ACE_Vector";
 
 comment "Add items to containers";
 for "_i" from 1 to 5 do {
@@ -40,6 +39,7 @@ for "_i" from 1 to 5 do {
 };
 player addItemToUniform "ACRE_PRC343";
 player addItemToUniform "ACRE_PRC152";
+player addItemToUniform "ItemAndroid";
 player addItemToUniform "ACE_microDAGR";
 player addItemToUniform "cgqc_item_transponder";
  
@@ -68,8 +68,11 @@ for "_i" from 1 to 2 do {
 for "_i" from 1 to 2 do {
 	player addItemToVest "ACE_M84";
 };
-for "_i" from 1 to 12 do {
-	player addItemToVest "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
+for "_i" from 1 to 6 do {
+	player addItemToVest "ACE_20Rnd_762x51_Mk319_Mod_0_Mag";
+};
+for "_i" from 1 to 2 do {
+	player addItemToVest "HandGrenade";
 };
 for "_i" from 1 to 10 do {
 	player addItemToBackpack "ACE_fieldDressing";
@@ -84,6 +87,9 @@ player addItemToBackpack "ACE_EntrenchingTool";
  
 player addItemToBackpack "WBK_HeadLampItem";
 player addItemToBackpack "G_mas_can_gasmask";
+player addItemToBackpack "ACE_ATragMX";
+player addItemToBackpack "ACE_Kestrel4500";
+player addItemToBackpack "sps_black_hornet_01_Static_F";
 player addItemToBackpack "ACE_Chemlight_HiRed";
 player addItemToBackpack "ACE_Chemlight_IR";
 for "_i" from 1 to 3 do {
@@ -96,26 +102,15 @@ for "_i" from 1 to 3 do {
 	player addItemToBackpack "SmokeShellRed";
 };
 player addItemToBackpack "B_IR_Grenade";
-for "_i" from 1 to 5 do {
-	player addItemToBackpack "1Rnd_HE_Grenade_shell";
+ 
+for "_i" from 1 to 13 do {
+	player addItemToBackpack "ACE_20Rnd_762x51_Mk319_Mod_0_Mag";
 };
-for "_i" from 1 to 3 do {
-	player addItemToBackpack "UGL_FlareRed_F";
+for "_i" from 1 to 2 do {
+	player addItemToBackpack "HandGrenade";
 };
-for "_i" from 1 to 3 do {
-	player addItemToBackpack "1Rnd_SmokeBlue_Grenade_shell";
-};
-for "_i" from 1 to 3 do {
-	player addItemToBackpack "1Rnd_Smoke_Grenade_shell";
-};
-player addItemToBackpack "sps_black_hornet_01_Static_F";
-player addItemToBackpack "rev_darter_item";
-player addItemToBackpack "itemcTab";
-player addItemToBackpack "ACRE_PRC117F";
-
 player addHeadgear "cgqc_helmet_mk1";
-player addGoggles "G_mas_can_wrap_gog_B";
-
+player addGoggles "G_mas_can_balaM_T";
 
 comment "Add items";
 player linkItem "ItemMap";

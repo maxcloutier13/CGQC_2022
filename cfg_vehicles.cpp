@@ -399,6 +399,15 @@ class cgqc_vic_quad : B_W_Quadbike_01_F
     crew = "CGQC_units_mk1_1_Rifleman_Carbine";
     #include "vehicles\cgqc_vic_loadout_small.cpp"
 };
+class NDS_6x6_ATV_MIL_LR;
+class cgqc_vic_quad_ext : NDS_6x6_ATV_MIL_LR
+{
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_offroad";
+    displayName = "CGQC - 6x6 ATV - Mk6 mortar (1)";
+    maximumLoad = 3000;
+    #include "vehicles\cgqc_vic_loadout_quadExt.cpp"
+};
 class UK3CB_B_M1030_USMC_WDL;
 class cgqc_vic_motocross : UK3CB_B_M1030_USMC_WDL
 {

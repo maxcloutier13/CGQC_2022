@@ -33,6 +33,9 @@ _adding = [ _crate, 0, ["ACE_MainActions", "menu_cgqc" , "menu_mk1", "menu_mk1_i
 // Rifleman CQB 
 _action = [ "menu_mk1_inf_RFCQB", "Rifleman CQB", "", {execVM "\CGQC_2022\loadouts\mk1_rifleman_cqb.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions", "menu_cgqc" , "menu_mk1", "menu_mk1_inf"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+// Grenadier 
+_action = [ "menu_mk1_inf_Grenadier", "Grenadier", "", {execVM "\CGQC_2022\loadouts\mk1_role_grenadier.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+_adding = [ _crate, 0, ["ACE_MainActions", "menu_cgqc" , "menu_mk1", "menu_mk1_inf"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Medic 
 _action = [ "menu_mk1_inf_medic", "Medic", "", {execVM "\CGQC_2022\loadouts\mk1_Medic.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions", "menu_cgqc" , "menu_mk1", "menu_mk1_inf"], _action ] call  ace_interact_menu_fnc_addActionToObject;

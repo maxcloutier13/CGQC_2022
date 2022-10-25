@@ -311,7 +311,7 @@ class cgqc_box_mk1_supplies : cgqc_box_mk1_rolebox
         class _xx_rhs_weap_m72a7
         {
             count = 4;
-            magazine = "rhs_weap_m72a7";
+            weapon = "rhs_weap_m72a7";
         };
     };
     class TransportItems

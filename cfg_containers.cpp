@@ -158,6 +158,21 @@ class cgqc_box_original_green : B_supplyCrate_F
     displayName = "CGQC SupplyBox Originale (green)";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_originale_green.paa"};
 };
+// Mk1 Big Arsenal
+class cgqc_box_mk1_arsenal : B_supplyCrate_F
+{
+    author = "silent1";
+    _generalMacro = "cgqc_box_mk1_arsenal";
+    displayName = "CGQC MK1 Arsenal (green)";
+    hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_arsenal.paa"};
+    editorPreview = "\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_supplyCrate_F.jpg";
+    class EventHandlers
+    {
+        init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1_plus_plus.sqf'";
+    };
+};
+
+
 // Mk1 Ressuply box
 class cgqc_box_mk1_supplies : cgqc_box_mk1_rolebox
 {
@@ -397,7 +412,7 @@ class cgqc_box_mk1_mortar : Box_NATO_WpsSpecial_F
 {
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_mortar";
-    displayName = "CGQC Mortier 60mm";
+    displayName = "CGQC Mortier 60mm (1.3KM)";
     ace_cargo_size = 1;  // Cargo space the object takes
     ace_cargo_canLoad = 1;
     hiddenSelectionsTextures[] = {
@@ -410,7 +425,7 @@ class cgqc_box_mk1_mortar_mk6 : Box_NATO_WpsSpecial_F
 {
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_mortar_auto";
-    displayName = "CGQC Mortier Mk6";
+    displayName = "CGQC Mortier Mk6 (4KM)";
     ace_cargo_size = 1;  // Cargo space the object takes
     ace_cargo_canLoad = 1;
     hiddenSelectionsTextures[] = {

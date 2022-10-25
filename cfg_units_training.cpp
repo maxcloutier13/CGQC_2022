@@ -43,11 +43,3 @@ class cgqc_officer_moderne : B_Soldier_f
 	backpack = "cgqc_pack_mk1_magic";
 	editorPreview = "\CGQC_2022\pics\cgqc_officer_moderne.jpg";
 };
-class cgqc_officer_base
-{
-	scope = 0;
-};
-class cgqc_soldat_base
-{
-	scope = 0;
-};

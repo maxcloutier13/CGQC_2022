@@ -374,6 +374,7 @@ class cgqc_vic_wiezel : I_LT_01_scout_F
     displayName = "CGQC - Command Wiezel (2)";
     crew = "CGQC_units_mk1_4_Tank_Driver";
     // Boosted speed and space
+    enginePower = 190;
     maxSpeed = 110;
     maximumLoad = 2000;
     hiddenSelectionsTextures[] = {

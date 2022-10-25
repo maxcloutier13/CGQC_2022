@@ -6,3 +6,4 @@ class ace_medical_treatment_actions
         allowedSelections[] = {"Head","LeftArm", "RightArm", "LeftLeg", "RightLeg", "Body"};
     };
 };
+

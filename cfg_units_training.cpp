@@ -20,7 +20,6 @@ class cgqc_soldat_moderne : B_Soldier_f
 	backpack = "cgqc_pack_mk1_magic";
 	editorPreview = "\CGQC_2022\pics\cgqc_soldat_moderne.jpg";
 };
-
 class cgqc_officer_moderne : B_Soldier_f
 {
 	author = "silent1";

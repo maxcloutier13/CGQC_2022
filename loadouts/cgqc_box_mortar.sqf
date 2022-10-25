@@ -40,11 +40,6 @@ class TransportItems{
 		count = 2;
 		name = "ACE_artilleryTable";
 	};
-	class _xx_ACE_entrenchingTool
-	{
-		count = 1;
-		name = "ACE_entrenchingTool";
-	};
 };
 
 

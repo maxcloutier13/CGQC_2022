@@ -113,6 +113,7 @@ for "_i" from 1 to 3 do {
 	player addItemToBackpack "1Rnd_Smoke_Grenade_shell";
 };
 player addItemToBackpack "sps_black_hornet_01_Static_F";
+player addItemToBackpack "ACRE_PRC117F";
 player addHeadgear "cgqc_helmet_mk1";
 player addGoggles "G_mas_can_wrap_gog_B";
 

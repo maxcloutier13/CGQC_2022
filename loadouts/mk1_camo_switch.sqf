@@ -1,7 +1,7 @@
 _camo = _this select 0;
 // Fade to black transition
 execVM "\CGQC_2022\scripts\transition.sqf";
-disableUserInput true;
+//disableUserInput true;
 sleep 1;
 
 // Init new variables
@@ -108,4 +108,4 @@ player addBackpack _backpack_new;
 	player addItemToBackpack _x
 } forEach _items_pack;
 // Return control to player
-disableUserInput false;
+//disableUserInput false;

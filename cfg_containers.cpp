@@ -943,6 +943,11 @@ class CGQC_units_mk1_0_TeamLeader_Carbine_pack : cgqc_pack_mk1_radiobag
             count = 1;
             name = "sps_black_hornet_01_Static_F";
         };
+        class _xx_ACRE_PRC117F
+        {
+            count = 1;
+            name = "ACRE_PRC117F";
+        };
     };
     class TransportWeapons
     {
@@ -1041,6 +1046,11 @@ class CGQC_units_mk1_0_TeamLeader_CQB_pack : cgqc_pack_mk1_radiobag
         {
             count = 1;
             name = "sps_black_hornet_01_Static_F";
+        };
+        class _xx_ACRE_PRC117F
+        {
+            count = 1;
+            name = "ACRE_PRC117F";
         };
     };
     class TransportWeapons

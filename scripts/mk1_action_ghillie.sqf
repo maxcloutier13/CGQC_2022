@@ -3,7 +3,7 @@ if (hasInterface) then {
 	_ghillie = "";
 	_to_ghillie = 0;
 
-	disableUserInput true;
+	//disableUserInput true;
 
 	switch (_choice)
 	do
@@ -89,5 +89,5 @@ if (hasInterface) then {
 	};
 
 	sleep 1;
-	disableUserInput false;
+	//disableUserInput false;
 };

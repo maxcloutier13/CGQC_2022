@@ -48,16 +48,16 @@ class cgqc_heli_melb_base : Helicopter_Base_H
     irTargetSize = 0.5;
     visualTarget = 1;
     visualTargetSize = 0.5;
-    radarTarget = 1;
-    radarTargetSize = 0.3;
+    radarTarget = 1; 
+    radarTargetSize = 0.3; // Stealth
     receiveRemoteTargets = 1;
     reportRemoteTargets = 1;
     reportOwnPosition = 1;
-    LockDetectionSystem = 12;
-    incomingMissileDetectionSystem = 26;
-    weapons[] = {"rhsusf_weap_LWIRCM"};
-    magazines[] = {"rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM", "rhsusf_mag_LWIRCM"};
-    hiddenSelections[] = {"camo1", "d_SN"};
+    LockDetectionSystem = "2 +4 + 8 + 16";
+    incomingMissileDetectionSystem = 16;
+    weapons[] = {"rhs_weap_laserDesignator_AI","rhsusf_weap_LWIRCM"};
+	magazines[] = {"rhs_laserfcsmag","rhsusf_mag_LWIRCM","rhsusf_mag_LWIRCM","rhsusf_mag_LWIRCM","rhsusf_mag_LWIRCM","rhsusf_mag_LWIRCM","rhsusf_mag_LWIRCM","rhsusf_mag_LWIRCM","rhsusf_mag_LWIRCM","rhsusf_mag_LWIRCM","rhsusf_mag_LWIRCM"};
+	hiddenSelections[] = {"camo1", "d_SN"};
     hiddenSelectionsTextures[] = {
         "cgqc_2022\vehicles\cgqc_heli_airforce.paa",
         "rhsusf\addons\rhsusf_melb\data\decals\SN\blank_ca.paa"};
@@ -597,7 +597,58 @@ class cgqc_heli_melb_base : Helicopter_Base_H
     };
     class pilotCamera
     {
+        class OpticsIn
+        {
+            class Wide
+            {
+                opticsDisplayName = "W";
+                initAngleX = 0;
+                minAngleX = 0;
+                maxAngleX = 0;
+                initAngleY = 0;
+                minAngleY = 0;
+                maxAngleY = 0;
+                initFov = 0.7;
+                minFov = 0.03;
+                maxFov = 1.2;
+                visionMode[] = {"Normal","NVG","Ti"};
+                thermalMode[] = {0,1};
+                gunnerOpticsModel = "rhsusf\addons\rhsusf_melb\data\optics\melb_flir_wf.p3d";
+            };
+            showMiniMapInOptics = 0;
+            showUAVViewpInOptics = 0;
+            showSlingLoadManagerInOptics = 1;
+        };
+        gunBeg = "commanderview";
+        gunEnd = "laserstart";
+        memoryPointGun = "commanderview";
+        discretedistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400,2500,2600,2700,2800,2900,3000};
+        discretedistanceinitindex = 3;
+        weapons[] = {"rhs_weap_laserDesignator_AI","rhs_weap_fcs_ah64"};
+        magazines[] = {"rhs_laserfcsmag","rhs_LaserMag_ai"};
+        minTurn = -1080;
+        maxTurn = 1080;
+        initTurn = 0;
+        minElev = -35;
+        maxElev = 90;
+        initElev = 0;
+        maxXRotSpeed = 0.5;
+        maxYRotSpeed = 0.5;
+        pilotOpticsShowCursor = 1;
+        controllable = 1;
     };
+    memoryPointGunnerOptics = "commanderview";
+    memoryPointDriverOptics = "commanderview";
+    gunBeg = "commanderview";
+    gunEnd = "laserstart";
+    memoryPointGun = "commanderview";
+    body = "obsTurret";
+    gun = "obsGun";
+    animationSourceBody = "obsTurret";
+    animationSourceGun = "obsGun";
+    turretInfoType = "Rsc_MELB_Turret_UnitInfo";
+    usepip = 1;
+    canUseScanners = 1;
     class Exhausts
     {
         class Exhaust01
@@ -609,7 +660,7 @@ class cgqc_heli_melb_base : Helicopter_Base_H
     };
     class Library
     {
-        libTextDesc = "Syko's Little Birds";
+        libTextDesc = "Cloutiers's Little Birds";
     };
     armor = 40;
     armorStructural = 20.0;
@@ -1361,8 +1412,8 @@ class cgqc_heli_melb_base : Helicopter_Base_H
                     initFov = 0.3;
                     minFov = 0.3;
                     maxFov = 0.3;
-                    visionMode[] = {"Normal", "NVG", "Ti"};
-                    thermalMode[] = {0};
+                    visionMode[] = {"Normal","NVG","Ti"};
+                    thermalMode[] = {0,1};
                     directionStabilized = 1;
                     horizontallyStabilized = 1;
                     gunnerOpticsModel = "rhsusf\addons\rhsusf_melb\data\optics\melb_flir_wf.p3d";
@@ -1653,6 +1704,7 @@ class cgqc_heli_ah6 : cgqc_heli_melb_base
         };
     };
 };
+
 class cgqc_heli_cloutier : cgqc_heli_ah6
 {
     scope = 1;

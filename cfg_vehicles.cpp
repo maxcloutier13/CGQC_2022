@@ -233,53 +233,41 @@ class MRAP_01_base_F : Car_F {
             mountedRadio = "ACRE_PRC117F";
             intercom[] = {};
         };
-        class Rack_2 {
+        class Rack_2: Rack_1 {
             displayName = "Dash Lower"; // If you have multiple racks a text label helps identify the particular rack.
             shortName = "Rack2";
-            componentName = "ACRE_VRC103";
-            allowedPositions[] = {"driver", {"cargo", 0}};
-            mountedRadio = "ACRE_PRC117F";
-            intercom[] = {};
         };
     };
 };
 class MRAP_02_base_F: Car_F {
-    class AcreRacks {
+     class AcreRacks {
         class Rack_1 {
             displayName = "Dash Upper"; // Name is displayed in the interaction menu.
             shortName = "Rack1";
             componentName = "ACRE_VRC103";
-            allowedPositions[] = {"driver", {"cargo", 0}};
+            allowedPositions[] = {"driver", {"cargo", 0}, "external"};
             mountedRadio = "ACRE_PRC117F";
             intercom[] = {};
         };
-        class Rack_2 {
+        class Rack_2: Rack_1 {
             displayName = "Dash Lower"; // If you have multiple racks a text label helps identify the particular rack.
             shortName = "Rack2";
-            componentName = "ACRE_VRC103";
-            allowedPositions[] = {"driver", {"cargo", 0}};
-            mountedRadio = "ACRE_PRC117F";
-            intercom[] = {};
         };
     };
 };
 class MRAP_03_base_F: Car_F {
-    class AcreRacks {
+     class AcreRacks {
         class Rack_1 {
             displayName = "Dash Upper"; // Name is displayed in the interaction menu.
             shortName = "Rack1";
             componentName = "ACRE_VRC103";
-            allowedPositions[] = {"driver", {"cargo", 0}};
+            allowedPositions[] = {"driver", {"cargo", 0}, "external"};
             mountedRadio = "ACRE_PRC117F";
             intercom[] = {};
         };
-        class Rack_2 {
+        class Rack_2: Rack_1 {
             displayName = "Dash Lower"; // If you have multiple racks a text label helps identify the particular rack.
             shortName = "Rack2";
-            componentName = "ACRE_VRC103";
-            allowedPositions[] = {"driver", {"cargo", 0}};
-            mountedRadio = "ACRE_PRC117F";
-            intercom[] = {};
         };
     };
 };
@@ -397,6 +385,16 @@ class cgqc_vic_quad : B_W_Quadbike_01_F
     editorSubcategory = "EdSubcat_cgqc_offroad";
     displayName = "CGQC - Quad (1+1)";
     crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+    class AcreRacks {
+        class Rack_1 {
+            displayName = "Dash Upper"; // Name is displayed in the interaction menu.
+            shortName = "Rack1";
+            componentName = "ACRE_VRC103";
+            allowedPositions[] = {"driver", "external"};
+            mountedRadio = "ACRE_PRC117F";
+            intercom[] = {};
+        };
+    };
     #include "vehicles\cgqc_vic_loadout_small.cpp"
 };
 class NDS_6x6_ATV_MIL_LR;
@@ -406,7 +404,17 @@ class cgqc_vic_quad_ext : NDS_6x6_ATV_MIL_LR
     editorSubcategory = "EdSubcat_cgqc_offroad";
     displayName = "CGQC - 6x6 ATV - Mk6 mortar (1)";
     crew = "CGQC_units_mk1_1_Rifleman_Carbine";
-     maximumLoad = 3500;
+    maximumLoad = 3500;
+    class AcreRacks {
+        class Rack_1 {
+            displayName = "Dash Upper"; // Name is displayed in the interaction menu.
+            shortName = "Rack1";
+            componentName = "ACRE_VRC103";
+            allowedPositions[] = {"driver", "external"};
+            mountedRadio = "ACRE_PRC117F";
+            intercom[] = {};
+        };
+    };
     #include "vehicles\cgqc_vic_loadout_quadExt.cpp"
 };
 class UK3CB_B_M1030_USMC_WDL;
@@ -429,8 +437,22 @@ class cgqc_vic_suv : UK3CB_AAF_B_SUV_Armoured
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_offroad";
-    displayName = "CGQC - SUV (1+5)";
+    displayName = "CGQC - SUV (1+5).";
     crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+    class AcreRacks {
+        class Rack_1 {
+            displayName = "Dash Upper"; // Name is displayed in the interaction menu.
+            shortName = "Rack1";
+            componentName = "ACRE_VRC103";
+            allowedPositions[] = {"driver", {"cargo", 0}, "external"};
+            mountedRadio = "ACRE_PRC117F";
+            intercom[] = {};
+        };
+        class Rack_2: Rack_1 {
+            displayName = "Dash Lower"; // If you have multiple racks a text label helps identify the particular rack.
+            shortName = "Rack2";
+        };
+    };
     #include "vehicles\cgqc_vic_loadout_ifv.cpp"
 };
 // Modifications to existing vehicles

@@ -161,7 +161,7 @@ class Heli_Attack_01_base_F : Helicopter_Base_F
     class Sounds;
 };
 // Helicopters definitions
-#include "vehicles\cfg_littlebird.cpp"
+//#include "vehicles\cfg_littlebird.cpp"
 #include "vehicles\cfg_huey.cpp"
 #include "vehicles\cfg_blackhawk.cpp"
 #include "vehicles\cfg_chinook.cpp"

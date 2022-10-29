@@ -1,3 +1,4 @@
+/*
 class cgqc_heli_melb_base : Helicopter_Base_H
 {
     scope = 0;
@@ -1889,3 +1890,4 @@ class cgqc_heli_dickforce_ah6 : cgqc_heli_ah6
         "cgqc_2022\vehicles\cgqc_heli_dickforce.paa",
         "rhsusf\addons\rhsusf_melb\data\decals\SN\blank_ca.paa"};
 };
+*/

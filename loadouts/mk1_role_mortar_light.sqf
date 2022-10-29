@@ -63,6 +63,8 @@ for "_i" from 1 to 2 do {
 };
 player addItemToUniform "ACE_IR_Strobe_Item";
 player addItemToUniform "ACE_RangeCard";
+player addItemToUniform "ACE_artilleryTable";
+
 for "_i" from 1 to 2 do {
 	player addItemToVest "Tier1_15Rnd_9x19_JHP";
 };

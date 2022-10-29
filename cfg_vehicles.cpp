@@ -402,7 +402,7 @@ class cgqc_vic_quad_ext : NDS_6x6_ATV_MIL_LR
 {
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_offroad";
-    displayName = "CGQC - 6x6 ATV - Mk6 mortar (1)";
+    displayName = "CGQC - 6x6 ATV (1)";
     crew = "CGQC_units_mk1_1_Rifleman_Carbine";
     maximumLoad = 3500;
     class AcreRacks {
@@ -416,6 +416,11 @@ class cgqc_vic_quad_ext : NDS_6x6_ATV_MIL_LR
         };
     };
     #include "vehicles\cgqc_vic_loadout_quadExt.cpp"
+};
+class cgqc_vic_quad_ext_mortarmk6 : cgqc_vic_quad_ext
+{
+    displayName = "CGQC - 6x6 ATV - Mk6 mortar (1)";
+    #include "vehicles\cgqc_vic_loadout_quadExt_mk6.cpp"
 };
 class UK3CB_B_M1030_USMC_WDL;
 class cgqc_vic_motocross : UK3CB_B_M1030_USMC_WDL

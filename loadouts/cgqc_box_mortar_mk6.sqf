@@ -15,17 +15,17 @@ class TransportWeapons
 class TransportMagazines{
 	class _xx_ACE_1Rnd_82mm_Mo_HE
 	{
-		count = 50;
+		count = 30;
 		magazine = "ACE_1Rnd_82mm_Mo_HE";
 	};
 	class _xx_ACE_1Rnd_82mm_Mo_Illum
 	{
-		count = 20;
+		count = 5;
 		magazine = "ACE_1Rnd_82mm_Mo_Illum";
 	};
 	class _xx_ACE_1Rnd_82mm_Mo_Smoke
 	{
-		count = 20;
+		count = 10;
 		magazine = "ACE_1Rnd_82mm_Mo_Smoke";
 	};
 };

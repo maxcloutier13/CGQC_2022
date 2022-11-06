@@ -57,7 +57,7 @@ class cgqc_heli_uh1_base : Helicopter_Base_H
     washDownStrength = "0.9f";
     maxSpeed = 217;
     slingLoadMemoryPoint = "slingLoad0";
-    slingLoadMaxCargoMass = 1900;
+    slingLoadMaxCargoMass = 4000;
     radarType = 0;
     liftForceCoef = 1.3;
     cyclicAsideForceCoef = 0.55;

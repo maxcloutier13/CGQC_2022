@@ -86,7 +86,7 @@ class cgqc_box_mk1_plus_green : cgqc_box_mk1_plus
 // Mk1++ box
 class cgqc_box_mk1_plus_plus : cgqc_box_mk1_rolebox
 {
-    scope = 2;
+    scope = 0;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_plus_plus";
     displayName = "CGQC MK1++ Full";
@@ -103,14 +103,14 @@ class cgqc_box_mk1_plus_plus_green : cgqc_box_mk1_plus_plus
     scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_plus_plus_green";
-    displayName = "CGQC MK1++ Full (Green)";
+    displayName = "CGQC MK1++ Crate";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_rolebox_green.paa",
                                   "\CGQC_2022\containers\cgqc_box_mk1_plus_plus_label.paa"};
 };
 // Mk1 Loadout only box
 class cgqc_box_mk1_loadouts : cgqc_box_mk1_rolebox
 {
-    scope = 2;
+    scope = 0;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_plus_plus";
     displayName = "CGQC MK1 Loadouts Only";
@@ -127,7 +127,7 @@ class cgqc_box_mk1_loadouts_green : cgqc_box_mk1_loadouts
     scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_plus_plus_green";
-    displayName = "CGQC MK1 Loadouts Only (Green)";
+    displayName = "CGQC MK1 Loadouts Only";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_rolebox_green.paa",
                                   "\CGQC_2022\containers\cgqc_box_mk1_loadouts.paa"};
 };
@@ -136,7 +136,7 @@ class cgqc_box_original : B_supplyCrate_F
 {
     author = "silent1";
     _generalMacro = "cgqc_box_original";
-    displayName = "CGQC SupplyBox Originale";
+    displayName = "CGQC Originale";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_originale.paa"};
     editorPreview = "\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_supplyCrate_F.jpg";
     class EventHandlers
@@ -164,9 +164,10 @@ class cgqc_box_original : B_supplyCrate_F
 };
 class cgqc_box_original_green : B_supplyCrate_F
 {
+    scope = 0;
     author = "silent1";
     _generalMacro = "cgqc_box_original_green";
-    displayName = "CGQC SupplyBox Originale (green)";
+    displayName = "CGQC Originale (green)";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_originale_green.paa"};
 };
 // Mk1 Big Arsenal
@@ -174,7 +175,7 @@ class cgqc_box_mk1_arsenal : B_supplyCrate_F
 {
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_arsenal";
-    displayName = "CGQC MK1 Arsenal (green)";
+    displayName = "CGQC MK1++ Arsenal";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_arsenal.paa"};
     editorPreview = "\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_supplyCrate_F.jpg";
     class EventHandlers
@@ -187,7 +188,7 @@ class cgqc_box_mk1_fuelcan : NATO_Box_Base
 {
     scope = 2;
     vehicleClass = "Ammo";
-    displayName = "CGQC FuelCan";
+    displayName = "CGQC Vehicle FuelCan";
     model = "\CGQC_2022\containers\cgqc_box_vic_fuel";
     maximumLoad = 0; //Can't store inventory items
 
@@ -241,7 +242,7 @@ class cgqc_box_mk1_supplies : Box_NATO_Wps_F
     scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_supplies";
-    displayName = "CGQC MK1 AmmoBox";
+    displayName = "CGQC AmmoBox - Infantry";
     maximumLoad = 3000; 
     hiddenSelectionsTextures[] = {
         "\CGQC_2022\containers\cgqc_box_mk1_supplies.paa", 

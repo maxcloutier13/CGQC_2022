@@ -103,7 +103,7 @@ class cgqc_box_mk1_plus_plus_green : cgqc_box_mk1_plus_plus
     scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_plus_plus_green";
-    displayName = "CGQC MK1++ Crate)";
+    displayName = "CGQC MK1++ Crate";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_rolebox_green.paa",
                                   "\CGQC_2022\containers\cgqc_box_mk1_plus_plus_label.paa"};
 };
@@ -164,6 +164,7 @@ class cgqc_box_original : B_supplyCrate_F
 };
 class cgqc_box_original_green : B_supplyCrate_F
 {
+    scope = 0;
     author = "silent1";
     _generalMacro = "cgqc_box_original_green";
     displayName = "CGQC Originale (green)";

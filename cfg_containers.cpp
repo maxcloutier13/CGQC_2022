@@ -188,7 +188,7 @@ class cgqc_box_mk1_fuelcan : NATO_Box_Base
     scope = 2;
     vehicleClass = "Ammo";
     displayName = "CGQC FuelCan";
-    model = "\A3\structures_f\Items\Vessels\CanisterFuel_F";
+    model = "\CGQC_2022\containers\cgqc_box_vic_fuel";
     maximumLoad = 0; //Can't store inventory items
 
     ace_cargo_space = 0;  // Cargo space your vehicle has
@@ -215,7 +215,7 @@ class cgqc_box_mk1_ammocan :  NATO_Box_Base
 		scope = 2;
 		vehicleClass = "Ammo";
 		displayName = "CGQC Vehicle Ammo Can";
-		model = "\A3\structures_f_epb\Items\Military\Ammobox_rounds_F";
+		model = "\CGQC_2022\containers\cgqc_box_vic_ammo";
 		icon = "iconCrateAmmo";
 		maximumLoad = 0; //Can't store inventory items
 

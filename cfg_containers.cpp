@@ -10,13 +10,17 @@ class B_RadioBag_01_eaf_F;
 class B_RadioBag_01_wdl_F;
 class B_RadioBag_01_oucamo_F;
 class B_Parachute;
+class NATO_Box_Base;
 class Box_NATO_Equip_F;
 class B_supplyCrate_F;
 class cgqc_pack_mk1_magic;
+class Land_Cargo10_military_green_F;
+class Box_NATO_Wps_F;
 
 // Mk1 box
 class cgqc_box_mk1_rolebox : Box_NATO_Equip_F
 {
+    scope = 0;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_rolebox";
     displayName = "CGQC MK1 Basic";
@@ -48,6 +52,7 @@ class cgqc_box_mk1_rolebox : Box_NATO_Equip_F
 };
 class cgqc_box_mk1_rolebox_green : cgqc_box_mk1_rolebox
 {
+    scope = 0;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_rolebox_green";
     displayName = "CGQC MK1 Basic (Green)";
@@ -57,6 +62,7 @@ class cgqc_box_mk1_rolebox_green : cgqc_box_mk1_rolebox
 // Mk1+ box
 class cgqc_box_mk1_plus : cgqc_box_mk1_rolebox
 {
+    scope = 0;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_plus";
     displayName = "CGQC MK1+ Variantes";
@@ -70,6 +76,7 @@ class cgqc_box_mk1_plus : cgqc_box_mk1_rolebox
 };
 class cgqc_box_mk1_plus_green : cgqc_box_mk1_plus
 {
+    scope = 0;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_plus_green";
     displayName = "CGQC MK1+ Variantes (Green)";
@@ -79,6 +86,7 @@ class cgqc_box_mk1_plus_green : cgqc_box_mk1_plus
 // Mk1++ box
 class cgqc_box_mk1_plus_plus : cgqc_box_mk1_rolebox
 {
+    scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_plus_plus";
     displayName = "CGQC MK1++ Full";
@@ -92,6 +100,7 @@ class cgqc_box_mk1_plus_plus : cgqc_box_mk1_rolebox
 };
 class cgqc_box_mk1_plus_plus_green : cgqc_box_mk1_plus_plus
 {
+    scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_plus_plus_green";
     displayName = "CGQC MK1++ Full (Green)";
@@ -101,6 +110,7 @@ class cgqc_box_mk1_plus_plus_green : cgqc_box_mk1_plus_plus
 // Mk1 Loadout only box
 class cgqc_box_mk1_loadouts : cgqc_box_mk1_rolebox
 {
+    scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_plus_plus";
     displayName = "CGQC MK1 Loadouts Only";
@@ -114,6 +124,7 @@ class cgqc_box_mk1_loadouts : cgqc_box_mk1_rolebox
 };
 class cgqc_box_mk1_loadouts_green : cgqc_box_mk1_loadouts
 {
+    scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_plus_plus_green";
     displayName = "CGQC MK1 Loadouts Only (Green)";
@@ -171,245 +182,101 @@ class cgqc_box_mk1_arsenal : B_supplyCrate_F
         init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1_plus_plus.sqf'";
     };
 };
-
-
-// Mk1 Ressuply box
-class cgqc_box_mk1_supplies : cgqc_box_mk1_rolebox
+// Mk1 Fuel can
+class cgqc_box_mk1_fuelcan : NATO_Box_Base
 {
+    scope = 2;
+    vehicleClass = "Ammo";
+    displayName = "CGQC FuelCan";
+    model = "\A3\structures_f\Items\Vessels\CanisterFuel_F";
+    maximumLoad = 0; //Can't store inventory items
+
+    ace_cargo_space = 0;  // Cargo space your vehicle has
+    ace_cargo_hasCargo = 0;  // Enables cargo to be loaded inside the vehicle (1-yes, 0-no)
+    
+    ace_cargo_size = 1;  // Cargo space the object takes
+    ace_cargo_canLoad = 1;  // Enables the object to be loaded (1-yes, 0-no)
+    ace_cargo_noRename = 0;  // Blocks renaming object (1-blocked, 0-allowed)
+    ace_refuel_fuelCargo = 100; // Fuel cargo
+    ace_refuel_hooks[] = {{0.38,-3.17,-.7},{-0.41,-3.17,-.7}}; // Nozzle hooks positions
+    
+    ace_refuel_canReceive = 1;
+
+    ace_dragging_canDrag = 1;  // Can be dragged (0-no, 1-yes)
+    ace_dragging_dragPosition[] = {0, 1.5, 0};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1.5, 0])
+    ace_dragging_dragDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
+    ace_dragging_canCarry = 1;  // Can be carried (0-no, 1-yes)
+    ace_dragging_carryPosition[] = {0, 1, 1};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1, 1])
+    ace_dragging_carryDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
+};
+// Mk1 Vehicle ammo can 
+class cgqc_box_mk1_ammocan :  NATO_Box_Base
+	{
+		scope = 2;
+		vehicleClass = "Ammo";
+		displayName = "CGQC Vehicle Ammo Can";
+		model = "\A3\structures_f_epb\Items\Military\Ammobox_rounds_F";
+		icon = "iconCrateAmmo";
+		maximumLoad = 0; //Can't store inventory items
+
+		ace_cargo_space = 0;  // Cargo space your vehicle has
+        ace_cargo_hasCargo = 0;  // Enables cargo to be loaded inside the vehicle (1-yes, 0-no)
+
+
+		ace_rearm_defaultSupply = 50;
+		ace_cargo_size = 1;  // Cargo space the object takes
+        ace_cargo_canLoad = 1;  // Enables the object to be loaded (1-yes, 0-no)
+        ace_cargo_noRename = 0;  // Blocks renaming object (1-blocked, 0-allowed)
+		
+		ace_dragging_canDrag = 1;  // Can be dragged (0-no, 1-yes)
+        ace_dragging_dragPosition[] = {0, 1.5, 0};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1.5, 0])
+        ace_dragging_dragDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
+		ace_dragging_canCarry = 1;  // Can be carried (0-no, 1-yes)
+        ace_dragging_carryPosition[] = {0, 1, 1};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1, 1])
+        ace_dragging_carryDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
+	};
+// Mk1 Ressuply box
+class cgqc_box_mk1_supplies : Box_NATO_Wps_F
+{
+    scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_supplies";
-    displayName = "CGQC MK1 Ravitaillement";
-    hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_rolebox_green.paa",
-                                  "\CGQC_2022\containers\cgqc_box_mk1_supplies.paa"};
-    class TransportMagazines
-    {
-        class _xx_ACE_M84
-        {
-            count = 20;
-            magazine = "ACE_M84";
-        };
-        class _xx_HandGrenade
-        {
-            count = 20;
-            magazine = "HandGrenade";
-        };
-        class _xx_ACE_Chemlight_HiRed
-        {
-            count = 20;
-            magazine = "ACE_Chemlight_HiRed";
-        };
-        class _xx_ACE_Chemlight_IR
-        {
-            count = 20;
-            magazine = "ACE_Chemlight_IR";
-        };
-        class _xx_SmokeShell
-        {
-            count = 20;
-            magazine = "SmokeShell";
-        };
-        class _xx_SmokeShellBlue
-        {
-            count = 20;
-            magazine = "SmokeShellBlue";
-        };
-        class _xx_SmokeShellRed
-        {
-            count = 20;
-            magazine = "SmokeShellRed";
-        };
-        class _xx_B_IR_Grenade
-        {
-            count = 20;
-            magazine = "B_IR_Grenade";
-        };
-        class _xx_1Rnd_HE_Grenade_shell
-        {
-            count = 20;
-            magazine = "1Rnd_HE_Grenade_shell";
-        };
-        class _xx_UGL_FlareRed_F
-        {
-            count = 20;
-            magazine = "UGL_FlareRed_F";
-        };
-        class _xx_1Rnd_SmokeBlue_Grenade_shell
-        {
-            count = 20;
-            magazine = "1Rnd_SmokeBlue_Grenade_shell";
-        };
-        class _xx_1Rnd_Smoke_Grenade_shell
-        {
-            count = 20;
-            magazine = "1Rnd_Smoke_Grenade_shell";
-        };
-        class _xx_Laserbatteries
-        {
-            count = 4;
-            magazine = "Laserbatteries";
-        };
-        class _xx_rhsusf_m112_mag
-        {
-            count = 10;
-            magazine = "rhsusf_m112_mag";
-        };
-        class _xx_rhsusf_m112x4_mag
-        {
-            count = 10;
-            magazine = "rhsusf_m112x4_mag";
-        };
-
-        class _xx_rhsusf_mine_m14_mag
-        {
-            count = 20;
-            magazine = "rhsusf_mine_m14_mag";
-        };
-        // Pistol
-        
-        class _xx_Tier1_15Rnd_9x19_JHP
-        {
-            count = 16;
-            magazine = "Tier1_15Rnd_9x19_JHP";
-        };
-        // 556
-        class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
-        {
-            count = 50;
-            magazine = "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
-        };
-        // 762
-        class _xx_ACE_20Rnd_762x51_Mk319_Mod_0_Mag
-        {
-            count = 40;
-            magazine = "ACE_20Rnd_762x51_Mk319_Mod_0_Mag";
-        };
-        // Sniper
-        class _xx_7Rnd_408_Mag
-        {
-            count = 25;
-            magazine = "7Rnd_408_Mag";
-        };
-        // Driver/Pilot
-        class _xx_50Rnd_570x28_SMG_03
-        {
-            count = 12;
-            magazine = "50Rnd_570x28_SMG_03";
-        };
-        // Javelin
-        class _xx_jav_AT_mas_can
-        {
-            count = 10;
-            magazine = "jav_AT_mas_can";
-        };
-        // Maaws
-        class _xx_MRAWS_HEAT_F
-        {
-            count = 10;
-            magazine = "MRAWS_HEAT_F";
-        };
-        // lmg
-        class _xx_rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote
-        {
-            count = 20;
-            magazine = "rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote";
-        };
-        // hmg
-        class _xx_Tier1_250Rnd_762x51_Belt_M993_AP
-        {
-            count = 20;
-            magazine = "Tier1_250Rnd_762x51_Belt_M993_AP";
-        };
-
+    displayName = "CGQC MK1 AmmoBox";
+    maximumLoad = 3000; 
+    hiddenSelectionsTextures[] = {
+        "\CGQC_2022\containers\cgqc_box_mk1_supplies.paa", 
+        "\CGQC_2022\containers\cgqc_box_mk1_ammobox.paa"
     };
-    class TransportWeapons
+    #include "\cgqc_2022\loadouts\cgqc_box_mk1_supplies.sqf"
+    ace_cargo_size = 1;  // Cargo space the object takes
+    ace_cargo_canLoad = 1;  // Enables the object to be loaded (1-yes, 0-no)
+    ace_cargo_noRename = 0;  // Blocks renaming object (1-blocked, 0-allowed)
+    
+    ace_dragging_canDrag = 1;  // Can be dragged (0-no, 1-yes)
+    ace_dragging_dragPosition[] = {0, 1.5, 0};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1.5, 0])
+    ace_dragging_dragDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
+    ace_dragging_canCarry = 1;  // Can be carried (0-no, 1-yes)
+    ace_dragging_carryPosition[] = {0, 1, 1};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1, 1])
+    ace_dragging_carryDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
+};
+// Mk1 Cargo container
+class cgqc_box_mk1_cargo : Land_Cargo10_military_green_F
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_box_mk1_cargo";
+    displayName = "CGQC MK1 Cargo Container";
+    model = "\cgqc_2022\containers\cgqc_box_cargo.p3d";
+    class EventHandlers
     {
-        class _xx_rhs_weap_m72a7
-        {
-            count = 4;
-            weapon = "rhs_weap_m72a7";
-        };
-    };
-    class TransportItems
-    {
-        // Radios  ----------------------------------
-        class _xx_ACRE_PRC343
-        {
-            count = 2;
-            name = "ACRE_PRC343";
-        };
-        class _xx_ACRE_PRC152
-        {
-            count = 2;
-            name = "ACRE_PRC152";
-        };
-        // Medical  ----------------------------------
-        class _xx_ACE_fieldDressing
-        {
-            count = 50;
-            name = "ACE_fieldDressing";
-        };
-        class _xx_ACE_salineIV
-        {
-            count = 10;
-            name = "ACE_salineIV";
-        };
-        class _xx_ACE_salineIV_500
-        {
-            count = 10;
-            name = "ACE_salineIV_500";
-        };
-        class _xx_FF_Painkiller
-        {
-            count = 30;
-            name = "FF_Painkiller";
-        };
-        class _xx_ACE_morphine
-        {
-            count = 20;
-            name = "ACE_morphine";
-        };
-        class _xx_ACE_epinephrine
-        {
-            count = 20;
-            name = "ACE_epinephrine";
-        };
-        class _xx_ACE_splint
-        {
-            count = 5;
-            name = "ACE_splint";
-        };
-        class _xx_ACE_tourniquet
-        {
-            count = 5;
-            name = "ACE_tourniquet";
-        };
-        // Items ------------------------
-        class _xx_ACE_EarPlugs
-        {
-            count = 5;
-            name = "ACE_EarPlugs";
-        };
-        class _xx_ACE_UAVBattery
-        {
-            count = 5;
-            name = "ACE_UAVBattery";
-        };
-        class _xx_ACE_DefusalKit
-        {
-            count = 2;
-            name = "ACE_DefusalKit";
-        };
-        class _xx_ACE_M26_Clacker
-        {
-            count = 2;
-            name = "ACE_M26_Clacker";
-        };
+        init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1_cargo.sqf'";
     };
 };
 // Mk1 Portable Mortar
 class Box_NATO_WpsSpecial_F;
 class cgqc_box_mk1_mortar : Box_NATO_WpsSpecial_F
 {
+    scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_mortar";
     displayName = "CGQC Mortier 60mm (1.3KM)";
@@ -417,12 +284,13 @@ class cgqc_box_mk1_mortar : Box_NATO_WpsSpecial_F
     ace_cargo_canLoad = 1;
     hiddenSelectionsTextures[] = {
         "\CGQC_2022\containers\cgqc_box_mortar_label.paa",
-        "a3\weapons_f\Ammoboxes\data\AmmoBox_CO.paa"
+        "\CGQC_2022\containers\cgqc_box_mk1_ammobox.paa"
     };
     #include "loadouts\cgqc_box_mortar.sqf"
 };
 class cgqc_box_mk1_mortar_mk6 : Box_NATO_WpsSpecial_F
 {
+    scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_mortar_auto";
     displayName = "CGQC Mortier Mk6 (4KM)";
@@ -430,7 +298,7 @@ class cgqc_box_mk1_mortar_mk6 : Box_NATO_WpsSpecial_F
     ace_cargo_canLoad = 1;
     hiddenSelectionsTextures[] = {
         "\CGQC_2022\containers\cgqc_box_mortar_label.paa",
-        "a3\weapons_f\Ammoboxes\data\AmmoBox_CO.paa"
+        "\CGQC_2022\containers\cgqc_box_mk1_ammobox.paa"
     };
     #include "loadouts\cgqc_box_mortar_mk6.sqf"
 };

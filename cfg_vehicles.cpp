@@ -324,6 +324,7 @@ class cgqc_vic_badger : B_W_APC_Wheeled_01_cannon_F
     displayName = "CGQC - Badger (3+8)";
     crew = "CGQC_units_mk1_4_Tank_Driver";
     maximumLoad = 6000;
+    ace_cargo_space = 5;
     hiddenSelectionsTextures[] = {
         "cgqc_2022\vehicles\cgqc_vic_badger_main.paa",
         "A3\Armor_F_Exp\APC_Wheeled_01\data\APC_Wheeled_01_adds_olive_co.paa",
@@ -343,6 +344,7 @@ class cgqc_vic_bradley : RHS_M2A3_BUSKIII_wd
     editorSubcategory = "EdSubcat_cgqc_vic";
     displayName = "CGQC - Bradley (3+6)";
     crew = "CGQC_units_mk1_4_Tank_Driver";
+    ace_cargo_space = 5;
     hiddenSelectionsTextures[] = {
         "cgqc_2022\vehicles\cgqc_vic_bradley_1.paa",
         "cgqc_2022\vehicles\cgqc_vic_bradley_2.paa",
@@ -365,6 +367,7 @@ class cgqc_vic_wiezel : I_LT_01_scout_F
     enginePower = 190;
     maxSpeed = 110;
     maximumLoad = 2000;
+    ace_cargo_space = 3;  // Cargo space your vehicle has
     hiddenSelectionsTextures[] = {
         "cgqc_2022\vehicles\cgqc_vic_command_main.paa",
         "cgqc_2022\vehicles\cgqc_vic_command_radar.paa",

@@ -38,6 +38,7 @@ for "_i" from 1 to 5 do {
 	player addItemToUniform "FF_Painkiller";
 };
 player addItemToUniform "ItemAndroid";
+player addItemToUniform "ACE_MapTools";
 player addItemToUniform "ACE_microDAGR";
 player addItemToUniform "cgqc_item_transponder";
  

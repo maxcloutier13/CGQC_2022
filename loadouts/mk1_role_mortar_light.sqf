@@ -15,7 +15,7 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add weapons";
-player addWeapon "cgqc_gun_mk1_m4a1blkII_gl";
+player addWeapon "cgqc_gun_mk1_m4a1blkII";
 player addPrimaryWeaponItem "Tier1_KAC_556_QDC_CQB_Black";
 player addPrimaryWeaponItem "Tier1_M4BII_NGAL_M600V_Black";
 player addPrimaryWeaponItem "Tier1_Razor_Gen2_16_Geissele_Docter";
@@ -88,15 +88,16 @@ player addItemToBackpack "ACE_EntrenchingTool";
  
 player addItemToBackpack "WBK_HeadLampItem";
 player addItemToBackpack "G_mas_can_gasmask";
+player addItemToBackpack "ACE_Kestrel4500";
 player addItemToBackpack "ACE_Chemlight_HiRed";
 player addItemToBackpack "ACE_Chemlight_IR";
-for "_i" from 1 to 3 do {
+for "_i" from 1 to 2 do {
 	player addItemToBackpack "SmokeShell";
 };
-for "_i" from 1 to 3 do {
+for "_i" from 1 to 2 do {
 	player addItemToBackpack "SmokeShellBlue";
 };
-for "_i" from 1 to 3 do {
+for "_i" from 1 to 2 do {
 	player addItemToBackpack "SmokeShellRed";
 };
 for "_i" from 1 to 20 do {

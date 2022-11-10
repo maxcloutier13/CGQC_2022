@@ -40,7 +40,7 @@ for "_i" from 1 to 5 do {
 player addItemToUniform "ItemAndroid";
 player addItemToUniform "ACE_MapTools";
 player addItemToUniform "ACE_microDAGR";
-player addItemToUniform "cgqc_item_transponder";
+ 
  
 for "_i" from 1 to 10 do {
 	player addItemToUniform "ACE_fieldDressing";
@@ -89,8 +89,6 @@ for "_i" from 1 to 5 do {
 player addItemToBackpack "WBK_HeadLampItem";
 player addItemToBackpack "G_mas_can_gasmask";
 player addItemToBackpack "ItemcTab";
-//player addItemToBackpack "MRH_FoldedSatcomAntenna";
-//player addItemToBackpack "MRH_TacticalDisplay";
 player addItemToBackpack "ACE_Chemlight_HiRed";
 player addItemToBackpack "sps_black_hornet_01_Static_F";
 player addItemToBackpack "ACE_Chemlight_IR";

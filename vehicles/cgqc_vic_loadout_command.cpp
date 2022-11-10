@@ -1,12 +1,3 @@
-class TransportBackpacks
-{
-	class _xx_B_Carryall_satellite
-	{
-		backpack = "B_Carryall_satellite";
-		count = 1;
-	};
-};
-
 class TransportMagazines{
 	class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
 	{

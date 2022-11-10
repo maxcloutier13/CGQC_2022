@@ -58,8 +58,8 @@ _adding = [ _crate, 0, ["ACE_MainActions", "menu_cgqc" , "menu_mk1", "menu_mk1_s
 // Lead ---------------------------------------------------------------------------------------------------------
 _action = [ "menu_mk1_lead", "Commandement", "", {""}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions", "menu_cgqc" , "menu_mk1"], _action ] call  ace_interact_menu_fnc_addActionToObject;
-// HQ/MobileSat 
-_action = [ "menu_mk1_inf_medic", "HQ/MobileSat", "", {execVM "\CGQC_2022\loadouts\mk1_role_hq.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+// HQ 
+_action = [ "menu_mk1_inf_medic", "HQ", "", {execVM "\CGQC_2022\loadouts\mk1_role_hq.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions", "menu_cgqc" , "menu_mk1", "menu_mk1_lead"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Squad Leader
 _action = [ "menu_mk1_inf_eng", "Squad Leader", "", {execVM "\CGQC_2022\loadouts\mk1_role_squad_leader.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;

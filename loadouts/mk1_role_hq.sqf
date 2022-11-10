@@ -120,3 +120,6 @@ player linkItem "ItemWatch";
 player linkItem "B_UavTerminal";
 player linkItem "JAS_GPNVG18_blk";
 //disableUserInput false;
+
+// Sets default radios
+["hq"] execVM "\cgqc\factions\stuff_player.sqf"

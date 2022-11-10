@@ -61,6 +61,21 @@ class CfgPatches
 			"cgqc_soldat_moderne",
 			"CGQC_officer_moderne",
 			"cgqc_officer_1_moderne",
+			"cgqc_spawn_hq",
+			"cgqc_spawn_sl",
+			"cgqc_spawn_tl",
+			"cgqc_spawn_rifleman",
+			"cgqc_spawn_grenadier",
+			"cgqc_spawn_medic",
+			"cgqc_spawn_engineer",
+			"cgqc_spawn_machinegun",
+			"cgqc_spawn_at",
+			"cgqc_spawn_sniper",
+			"cgqc_spawn_drone",
+			"cgqc_spawn_jtac",
+			"cgqc_spawn_pilot_heli",
+			"cgqc_spawn_pilot_jet",
+			"cgqc_spawn_tank_driver",
 			"cgqc_pack_mk1_kitbag",
 			"CGQC_units_mk1_0_HQ",
 			"CGQC_units_mk1_0_Drone_operator",
@@ -220,7 +235,11 @@ class CfgEditorSubcategories
 {
 	class EdSubcat_cgqc_mk1
 	{
-		displayName = "Men (mk1)";
+		displayName = "Men (Legacy Mk1)";
+	};
+	class EdSubcat_cgqc_spawn
+	{
+		displayName = "Men (Spawn Roles)";
 	};
 	class EdSubcat_cgqc_funstuff
 	{

@@ -74,3 +74,85 @@ class CGQC_officer_Base : B_Soldier_f
 {
 	scope = 0;
 };
+// Mission variants -----------------------------------------------------------------------------------------
+// Command
+class cgqc_spawn_hq: cgqc_officer_1_moderne
+{
+	displayName = "HQ";
+	editorSubcategory = "EdSubcat_cgqc_spawn";	
+};
+class cgqc_spawn_sl: cgqc_officer_1_moderne
+{
+	displayName = "Squad Leader";
+	editorSubcategory = "EdSubcat_cgqc_spawn";	
+};
+class cgqc_spawn_tl: cgqc_officer_1_moderne
+{
+	displayName = "Team Leader";
+	editorSubcategory = "EdSubcat_cgqc_spawn";	
+};
+// Infantry
+class cgqc_spawn_rifleman: cgqc_soldat_moderne
+{
+	displayName = "Rifleman";
+	editorSubcategory = "EdSubcat_cgqc_spawn";	
+};
+class cgqc_spawn_grenadier: cgqc_soldat_moderne
+{
+	displayName = "Grenadier";
+	editorSubcategory = "EdSubcat_cgqc_spawn";	
+};
+class cgqc_spawn_medic: cgqc_soldat_moderne
+{
+	displayName = "Medic";
+	editorSubcategory = "EdSubcat_cgqc_spawn";	
+};
+class cgqc_spawn_engineer: cgqc_soldat_moderne
+{
+	displayName = "Engineer";
+	editorSubcategory = "EdSubcat_cgqc_spawn";	
+};
+// Specialists
+class cgqc_spawn_machinegun: cgqc_soldat_moderne
+{
+	displayName = "Machine-Gunner";
+	editorSubcategory = "EdSubcat_cgqc_spawn";	
+};
+class cgqc_spawn_at: cgqc_soldat_moderne
+{
+	displayName = "Anti-Tank";
+	editorSubcategory = "EdSubcat_cgqc_spawn";	
+};
+class cgqc_spawn_sniper: cgqc_soldat_moderne
+{
+	displayName = "Sniper/Spotter";
+	editorSubcategory = "EdSubcat_cgqc_spawn";	
+};
+class cgqc_spawn_drone: cgqc_soldat_moderne
+{
+	displayName = "Drone Operator";
+	editorSubcategory = "EdSubcat_cgqc_spawn";	
+};
+class cgqc_spawn_jtac: cgqc_soldat_moderne
+{
+	displayName = "JTAC";
+	editorSubcategory = "EdSubcat_cgqc_spawn";	
+};
+// Driver/pilots
+class cgqc_spawn_pilot_heli: cgqc_soldat_moderne
+{
+	displayName = "Helicopter Pilot/Crew";
+	editorSubcategory = "EdSubcat_cgqc_spawn";	
+};
+class cgqc_spawn_pilot_jet: cgqc_soldat_moderne
+{
+	displayName = "Jet Pilot";
+	editorSubcategory = "EdSubcat_cgqc_spawn";	
+};
+class cgqc_spawn_tank_driver: cgqc_soldat_moderne
+{
+	displayName = "Tank Driver/Crew";
+	editorSubcategory = "EdSubcat_cgqc_spawn";	
+};
+
+

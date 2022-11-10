@@ -21,7 +21,7 @@ comment "Add weapons";
 player addWeapon "cgqc_gun_mk1_m200";
 player addPrimaryWeaponItem "optic_lrps";
 player addPrimaryWeaponItem "ace_acc_pointer_green";
-player addPrimaryWeaponItem "7Rnd_408_Mag";
+player addPrimaryWeaponItem "7Rnd_mas_can_408_Mag";
 player addWeapon "cgqc_gun_glock19_wood";
 player addHandgunItem "Tier1_15Rnd_9x19_JHP";
 player addHandgunItem "tier1_dbalpl";
@@ -43,7 +43,7 @@ player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "ItemAndroid";
 player addItemToUniform "ACE_MapTools";
 player addItemToUniform "ACE_microDAGR";
-player addItemToUniform "cgqc_item_transponder";
+ 
  
 for "_i" from 1 to 10 do {
 	player addItemToUniform "ACE_fieldDressing";
@@ -70,8 +70,8 @@ for "_i" from 1 to 2 do {
 for "_i" from 1 to 2 do {
 	player addItemToVest "ACE_M84";
 };
-for "_i" from 1 to 6 do {
-	player addItemToVest "7Rnd_408_Mag";
+for "_i" from 1 to 10 do {
+	player addItemToVest "7Rnd_mas_can_408_Mag";
 };
 for "_i" from 1 to 2 do {
 	player addItemToVest "HandGrenade";
@@ -105,8 +105,8 @@ for "_i" from 1 to 3 do {
 };
 player addItemToBackpack "B_IR_Grenade";
  
-for "_i" from 1 to 14 do {
-	player addItemToBackpack "7Rnd_408_Mag";
+for "_i" from 1 to 20 do {
+	player addItemToBackpack "7Rnd_mas_can_408_Mag";
 };
 for "_i" from 1 to 2 do {
 	player addItemToBackpack "HandGrenade";

@@ -58,16 +58,12 @@ private _electronics = [
 	"ACE_IR_Strobe_Item",
 	"ACE_HuntIR_monitor",
 	"ACE_Flashlight_MX991",
-	"MRH_Blufortransponder",
-	"cgqc_item_transponder",
 	"REV_pelican_item",
 	"REV_darter_item",
 	"REV_demine_item",
 	"ItemAndroid",
 	"ItemcTabHCam",
 	"ItemcTab",
-	"MRH_FoldedSatcomAntenna",
-	"MRH_TacticalDisplay",
 	"sps_black_hornet_01_Static_F",
 	"WBK_HeadLampItem"
 ];

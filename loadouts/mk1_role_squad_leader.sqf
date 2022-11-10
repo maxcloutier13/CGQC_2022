@@ -41,7 +41,7 @@ for "_i" from 1 to 5 do {
 player addItemToUniform "ACRE_PRC343";
 player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "ACE_microDAGR";
-player addItemToUniform "cgqc_item_transponder";
+ 
  
 for "_i" from 1 to 10 do {
 	player addItemToUniform "ACE_fieldDressing";

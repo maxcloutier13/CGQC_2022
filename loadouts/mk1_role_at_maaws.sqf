@@ -43,7 +43,7 @@ player addItemToUniform "ACRE_PRC343";
 player addItemToUniform "ItemAndroid";
 player addItemToUniform "ACE_MapTools";
 player addItemToUniform "ACE_microDAGR";
-player addItemToUniform "cgqc_item_transponder";
+ 
  
 for "_i" from 1 to 10 do {
 	player addItemToUniform "ACE_fieldDressing";

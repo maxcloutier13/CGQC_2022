@@ -14,12 +14,13 @@ class arifle_SPAR_03_blk_F;
 class Rangefinder;
 class Laserdesignator_03;
 class CBA_MiscItem_ItemInfo;
-class MRH_BluForTransponder;
 class CBA_MiscItem;
 class rhs_weap_m16a4_imod;
 class gtr_weap_Mk12_Base;
 class SMG_03C_TR_khaki;
 class SMG_03C_TR_black;
+class BaseSoundModeType;
+class srifle_mas_can_LRR_F;
 
 // Pistol.
 class cgqc_gun_glock19_wood : Tier1_Glock19_WAR_TB
@@ -59,24 +60,6 @@ class cgqc_item_helmetCam : CBA_MiscItem
 		mass = 1;
 	};
 };
-class cgqc_item_transponder : MRH_BluForTransponder
-{
-	scope = 2;
-	scopeArsenal = 2;
-	scopeCurator = 2;
-	author = "silent1";
-	displayName = "CGQC BluFor Transponder";
-	editorCategory = "EdCat_Equipment";
-	editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Default\Prop.jpg";
-	editorSubcategory = "EdSubcat_InventoryItems";
-	// picture = "\MRHSatellite\paa\transponder.paa";
-	descriptionShort = "Transponder (plus léger)";
-	ace_arsenal_hide = 0;
-	class ItemInfo : CBA_MiscItem_ItemInfo
-	{
-		mass = 1;
-	};
-};
 class cgqc_item_rangefinder : Rangefinder
 {
 	scope = 2;
@@ -93,7 +76,6 @@ class cgqc_item_laserdesignator : Laserdesignator_03
 	baseWeapon = "cgqc_item_laserdesignator";
 	displayName = "CGQC Laser Designator";
 };
-
 // Basic guns -----------------------------------------------------------------------------------
 class cgqc_gun_mk1_m4a1blkII : rhs_weap_m4a1_blockII
 {
@@ -295,7 +277,7 @@ class cgqc_gun_mk1_Javelin : launch_B_Titan_short_F
 	hiddenSelectionsTextures[] = {};
 	ace_javelin_enabled = 1;
 };
-class cgqc_gun_mk1_m200 : srifle_LRR_F
+class cgqc_gun_mk1_m200 : srifle_mas_can_LRR_F
 {
 	scope = 2;
 	author = "silent1";
@@ -314,7 +296,14 @@ class cgqc_gun_mk1_m200 : srifle_LRR_F
 			slot = "PointerSlot";
 			item = "ace_acc_pointer_green";
 		};
+		class LinkedItemsMuzzle
+		{
+			slot = "MuzzleSlot";
+			item = "muzzle_snds_408";
+		};
 	};
+	hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\CGQC_2022\guns\cgqc_gun_m200_black.paa"};
 };
 class cgqc_gun_mk1_m16a4 : rhs_weap_m16a4_imod
 {
@@ -510,6 +499,99 @@ class cgqc_gun_mk1_mk12_woodland : gtr_weap_Mk12_Base
 	};
 	hiddenSelections[] = {"camo"};
 	hiddenSelectionsTextures[] = {"\cgqc_2022\guns\cgqc_gun_mk12_woodland.paa"};
+};
+
+class cgqc_gun_mk1_m200_arid : srifle_mas_can_LRR_F
+{
+	scope = 2;
+	author = "silent1";
+	_generalMacro = "cgqc_gun_mk1_m200_arid";
+	baseWeapon = "cgqc_gun_mk1_m200_arid";
+	displayName = "CGQC M200 Intervention - Arid";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = "CowsSlot";
+			item = "optic_lrps";
+		};
+		class LinkedItemsAcc
+		{
+			slot = "PointerSlot";
+			item = "ace_acc_pointer_green";
+		};
+	};
+	hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\CGQC_2022\guns\cgqc_gun_m200_arid.paa"};
+};
+class cgqc_gun_mk1_m200_sand : srifle_mas_can_LRR_F
+{
+	scope = 2;
+	author = "silent1";
+	_generalMacro = "cgqc_gun_mk1_m200_sand";
+	baseWeapon = "cgqc_gun_mk1_m200_sand";
+	displayName = "CGQC M200 Intervention - Sand";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = "CowsSlot";
+			item = "optic_lrps";
+		};
+		class LinkedItemsAcc
+		{
+			slot = "PointerSlot";
+			item = "ace_acc_pointer_green";
+		};
+	};
+	hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\CGQC_2022\guns\cgqc_gun_m200_sand.paa"};
+};
+class cgqc_gun_mk1_m200_semiarid : srifle_mas_can_LRR_F
+{
+	scope = 2;
+	author = "silent1";
+	_generalMacro = "cgqc_gun_mk1_m200_semiarid";
+	baseWeapon = "cgqc_gun_mk1_m200_semiarid";
+	displayName = "CGQC M200 Intervention - Semi-Arid";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = "CowsSlot";
+			item = "optic_lrps";
+		};
+		class LinkedItemsAcc
+		{
+			slot = "PointerSlot";
+			item = "ace_acc_pointer_green";
+		};
+	};
+	hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\CGQC_2022\guns\cgqc_gun_m200_semiarid.paa"};
+};
+class cgqc_gun_mk1_m200_tropical : srifle_mas_can_LRR_F
+{
+	scope = 2;
+	author = "silent1";
+	_generalMacro = "cgqc_gun_mk1_m200_tropical";
+	baseWeapon = "cgqc_gun_mk1_m200_tropical";
+	displayName = "CGQC M200 Intervention - Tropical";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = "CowsSlot";
+			item = "optic_lrps";
+		};
+		class LinkedItemsAcc
+		{
+			slot = "PointerSlot";
+			item = "ace_acc_pointer_green";
+		};
+	};
+	hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\CGQC_2022\guns\cgqc_gun_m200_tropical.paa"};
 };
 
 // mk1 setup ----------------------------------------------------------------------------------

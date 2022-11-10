@@ -433,17 +433,17 @@ class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_radiobag
         };
         class _xx_SmokeShell
         {
-            count = 1;
+            count = 3;
             magazine = "SmokeShell";
         };
         class _xx_SmokeShellBlue
         {
-            count = 1;
+            count = 3;
             magazine = "SmokeShellBlue";
         };
         class _xx_SmokeShellRed
         {
-            count = 1;
+            count = 3;
             magazine = "SmokeShellRed";
         };
         class _xx_B_IR_Grenade
@@ -495,25 +495,20 @@ class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_radiobag
             count = 1;
             name = "ItemcTab";
         };
-        class _xx_MRH_FoldedSatcomAntenna
-        {
-            count = 1;
-            name = "MRH_FoldedSatcomAntenna";
-        };
-        class _xx_MRH_TacticalDisplay
-        {
-            count = 1;
-            name = "MRH_TacticalDisplay";
-        };
         class _xx_ACRE_PRC117F
         {
-            count = 1;
+            count = 3;
             name = "ACRE_PRC117F";
         };
         class _xx_Rev_darter_item
         {
             count = 1;
             name = "Rev_darter_item";
+        };
+        class _xx_sps_black_hornet_01_Static_F
+        {
+            count = 2;
+            name = "sps_black_hornet_01_Static_F";
         };
     };
     class TransportWeapons
@@ -965,6 +960,11 @@ class CGQC_units_mk1_0_JTAC_pack : cgqc_pack_mk1_radiobag
         {
             count = 1;
             magazine = "Laserbatteries";
+        };
+        class _xx_rhsusf_m112_mag
+        {
+            count = 2;
+            magazine = "rhsusf_m112_mag";
         };
     };
     class TransportItems
@@ -1700,10 +1700,10 @@ class CGQC_units_mk1_2_Sniper_pack : cgqc_pack_mk1_kitbag
             magazine = "B_IR_Grenade";
         };
 
-        class _xx_7Rnd_408_Mag
+        class _xx_7Rnd_mas_can_408_Mag
         {
-            count = 14;
-            magazine = "7Rnd_408_Mag";
+            count = 20;
+            magazine = "7Rnd_mas_can_408_Mag";
         };
     };
     class TransportItems

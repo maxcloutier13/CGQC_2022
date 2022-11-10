@@ -433,17 +433,17 @@ class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_radiobag
         };
         class _xx_SmokeShell
         {
-            count = 1;
+            count = 3;
             magazine = "SmokeShell";
         };
         class _xx_SmokeShellBlue
         {
-            count = 1;
+            count = 3;
             magazine = "SmokeShellBlue";
         };
         class _xx_SmokeShellRed
         {
-            count = 1;
+            count = 3;
             magazine = "SmokeShellRed";
         };
         class _xx_B_IR_Grenade
@@ -960,6 +960,11 @@ class CGQC_units_mk1_0_JTAC_pack : cgqc_pack_mk1_radiobag
         {
             count = 1;
             magazine = "Laserbatteries";
+        };
+        class _xx_rhsusf_m112_mag
+        {
+            count = 2;
+            magazine = "rhsusf_m112_mag";
         };
     };
     class TransportItems

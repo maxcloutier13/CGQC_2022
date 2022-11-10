@@ -90,6 +90,8 @@ player addItemToBackpack "WBK_HeadLampItem";
 player addItemToBackpack "G_mas_can_gasmask";
 player addItemToBackpack "ItemcTab";
 player addItemToBackpack "ACE_Chemlight_HiRed";
+player addItemToBackpack "Rev_darter_item";
+player addItemToBackpack "sps_black_hornet_01_Static_F";
 player addItemToBackpack "sps_black_hornet_01_Static_F";
 player addItemToBackpack "ACE_Chemlight_IR";
 for "_i" from 1 to 3 do {

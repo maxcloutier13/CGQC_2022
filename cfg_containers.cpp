@@ -505,6 +505,11 @@ class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_radiobag
             count = 1;
             name = "Rev_darter_item";
         };
+        class _xx_sps_black_hornet_01_Static_F
+        {
+            count = 2;
+            name = "sps_black_hornet_01_Static_F";
+        };
     };
     class TransportWeapons
     {

@@ -27,7 +27,3 @@ class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class RHS_Effects_Helicopter_Hull_Destruction;
-class cfgAmmo
-{
-    class Bulletbase;
-};

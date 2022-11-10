@@ -495,6 +495,7 @@ class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_radiobag
             count = 1;
             name = "ItemcTab";
         };
+        /*
         class _xx_MRH_FoldedSatcomAntenna
         {
             count = 1;
@@ -505,9 +506,10 @@ class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_radiobag
             count = 1;
             name = "MRH_TacticalDisplay";
         };
+        */
         class _xx_ACRE_PRC117F
         {
-            count = 1;
+            count = 3;
             name = "ACRE_PRC117F";
         };
         class _xx_Rev_darter_item
@@ -1700,10 +1702,10 @@ class CGQC_units_mk1_2_Sniper_pack : cgqc_pack_mk1_kitbag
             magazine = "B_IR_Grenade";
         };
 
-        class _xx_7Rnd_408_Mag
+        class _xx_7Rnd_mas_can_408_Mag
         {
-            count = 14;
-            magazine = "7Rnd_408_Mag";
+            count = 20;
+            magazine = "7Rnd_mas_can_408_Mag";
         };
     };
     class TransportItems

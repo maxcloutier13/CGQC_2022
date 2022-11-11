@@ -485,3 +485,31 @@ class UAV_05_Base_F : UAV // Sentinel
 {
     fuelCapacity = 2000;
 };
+// Helipad
+class Land_HelipadSquare_F;
+class cgqc_refuel_h : Land_HelipadSquare_F
+{
+    author = "silent1";
+    //faction = "cgqc";
+    //editorSubcategory = "EdSubcat_cgqc_offroad";
+    _generalMacro = "cgqc_refuel_h";
+    displayName = "CGQC - Helipad - Standard";
+    
+    class EventHandlers
+    {
+        init = "[_this] execVM '\cgqc_2022\scripts\cgqc_refuel_setup.sqf'"; 
+    };
+};
+class cgqc_refuel_h_short : Land_HelipadSquare_F
+{
+    author = "silent1";
+    //faction = "cgqc";
+    //editorSubcategory = "EdSubcat_cgqc_offroad";
+    _generalMacro = "cgqc_refuel_h";
+    displayName = "CGQC - Helipad - Rapide";
+    
+    class EventHandlers
+    {
+        init = "[_this] execVM '\cgqc_2022\scripts\cgqc_refuel_setup_short.sqf'"; 
+    };
+};

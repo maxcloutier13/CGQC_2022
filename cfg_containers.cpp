@@ -182,6 +182,10 @@ class cgqc_box_mk1_arsenal : B_supplyCrate_F
     {
         init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1_plus_plus.sqf'";
     };
+    class TransportMagazines{};
+    class TransportWeapons{};
+    class TransportItems{};
+    class TransportBackpacks{};
 };
 // Mk1 Fuel can
 class cgqc_box_mk1_fuelcan : NATO_Box_Base

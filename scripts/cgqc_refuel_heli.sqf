@@ -1,6 +1,6 @@
 _type = _this select 0;
 _timeleft = 0;
-_skip = 0
+_skip = 0;
 
 switch (_type)
 do
@@ -13,7 +13,7 @@ do
     case "short":
 	{
 		_timeleft = 5;
-		_skip 1;
+		_skip = 1;
 	};
 	default
 	{
@@ -24,7 +24,7 @@ do
 // Rearming 
 private _playerVic = vehicle player;
 if (_playerVic isKindOf "Helicopter" or _playerVic isKindOf "Plane") then {
-	if(skip ==0) then {_playerVic engineOn false;};
+	if(_skip ==0) then {_playerVic engineOn false;};
 	_playerVic setFuel 0;
 	titleText ["<t size='5' shadow='1' shadowOffset='0.05' color='#ff0000'>Maintenance</t>", "PLAIN", 0, true, true];
 	while {_timeleft > 0} do {
@@ -35,7 +35,7 @@ if (_playerVic isKindOf "Helicopter" or _playerVic isKindOf "Plane") then {
 	_playerVic setVehicleAmmo 1;
 	_playerVic setDamage 0;
 	_playerVic setFuel 1;
-	if(skip ==0) then {_playerVic engineOn true;};
+	if(_skip ==0) then {_playerVic engineOn true;};
 	hint "Maintenance terminée";
 	sleep 2;
 	titleText ["<t size='5' shadow='1' shadowOffset='0.05' color='#ff0000'>Go!</t>", "PLAIN", 0, true, true];

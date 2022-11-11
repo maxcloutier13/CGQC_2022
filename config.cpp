@@ -110,6 +110,8 @@ class CfgPatches
 			"cgqc_vic_motocross",
 			"cgqc_vic_quad",
 			"cgqc_vic_quad_ext",
+			"cgqc_refuel_h",
+			"cgqc_refuel_h_short",
 			"cgqc_vic_quad_ext_mortarmk6"};
 		weapons[] = {
 			"cgqc_helmet_mk1",

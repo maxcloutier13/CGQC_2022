@@ -4,14 +4,14 @@ class cfgAmmo
 	class B_408_Ball;
 	class B_mas_can_408_Ball : B_408_Ball
 	{
-		hit = 48;
+		hit = 36;
         ACE_bulletMass=27.3451; // 422 gr
         typicalSpeed=910;
         ACE_muzzleVelocities[]={910};
 	};
 	class B_mas_can_408_APDS : B_408_Ball
 	{
-		hit = 60;
+		hit = 48;
 		indirectHit = 5;
 		indirectHitRange = 0.3;
         ACE_bulletMass=27.5395; // 425 gr

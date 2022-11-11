@@ -29,6 +29,7 @@ class Helicopter : Air
         class HitAvionics;
     };
 };
+class RHS_C130J;
 // Helicopter acre settings
 class Helicopter_Base_F : Helicopter
 {
@@ -176,8 +177,40 @@ class cgqc_plane_a10 : B_Plane_CAS_01_dynamicLoadout_F
     crew = "CGQC_units_mk1_4_Pilot_jet";
     typicalCargo[] = {"CGQC_units_mk1_4_Pilot_jet"};
 };
+class cgqc_plane_c130 : RHS_C130J
+{
+    scope = 2;
+    faction = "cgqc";
+    author = "silent1";
+    displayName = "C-130";
+    crew = "CGQC_units_mk1_4_Pilot_jet";
+    typicalCargo[] = {"CGQC_units_mk1_4_Pilot_jet","CGQC_units_mk1_4_Pilot_jet"};
+    model = "\rhsusf\addons\rhsusf_a2port_air\C130J\c130j.p3d";
+    #include "\cgqc_2022\vehicles\cgqc_heli_heavy.sqf"
+    hiddenSelections[] = {"camo1","camo2"};
+    hiddenSelectionsTextures[] = {
+        "\cgqc_2022\vehicles\cgqc_plane_c130_body.paa",
+        "\cgqc_2022\vehicles\cgqc_plane_c130_wings.paa"
+    };
+    /*
+    class textureSources
+    {
+        class standard
+        {
+            displayName = "Standard";
+            author = "$STR_RHSUSF_AUTHOR_FULL";
+            textures[] = {"rhsusf\addons\rhsusf_a2port_air\c130j\data\c130j_body_co.paa","rhsusf\addons\rhsusf_a2port_air\c130j\data\c130j_wings_co.paa"};
+            factions[] = {"rhs_faction_usaf"};
+        };
+    };
+    textureList[] = {"standard",1};
+    */
+};
 // Drones CGQC versions
-class B_UAV_01_F;
+class B_UAV_01_F
+{
+    class Components;
+};
 class cgqc_drone_darter : B_UAV_01_F
 {
     scope = 2;
@@ -185,12 +218,16 @@ class cgqc_drone_darter : B_UAV_01_F
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_drones";
-    displayName = "CGQC - Darter";
-    camouflage = 0.2;
+    displayName = "CGQC - HQ Darter";
+    camouflage = 0.01;
 	audible = 0.05;
-    maxSpeed = 125;
+    maxSpeed = 250;
+    fuelCapacity = 1000;
+    liftForceCoef = 2.0;
     radarTargetSize = 0.05;
 	visualTargetSize = 0.05;
+	LockDetectionSystem = 12;
+    incomingMissileDetectionSystem = 26;
     class SimpleObject
     {
         eden = 1;
@@ -215,6 +252,46 @@ class cgqc_drone_darter : B_UAV_01_F
     };
     hiddenSelectionsTextures[] = {"\CGQC_2022\vehicles\cgqc_drone_darter_dark.paa"};
     textureList[] = {"Blufor", 1};
+    class Components: Components
+    {
+        class SensorsManagerComponent
+        {
+            class Components
+            {
+                class ManSensorComponent: SensorTemplateMan
+                {
+                    maxTrackableSpeed = 20;
+                    angleRangeHorizontal = 60;
+                    angleRangeVertical = 50;
+                    animDirection = "mainGun";
+                    aimDown = -0.5;
+                };
+                class IRSensorComponent: SensorTemplateIR
+                {
+                    class AirTarget
+                    {
+                        minRange = 100;
+                        maxRange = 4000;
+                        objectDistanceLimitCoef = -1;
+                        viewDistanceLimitCoef = 1;
+                    };
+                    class GroundTarget
+                    {
+                        minRange = 100;
+                        maxRange = 2500;
+                        objectDistanceLimitCoef = 1;
+                        viewDistanceLimitCoef = 1;
+                    };
+                    maxTrackableSpeed = 60;
+                    angleRangeHorizontal = 60;
+                    angleRangeVertical = 50;
+                    animDirection = "mainGun";
+                    aimDown = -0.5;
+                };
+            };
+        };
+    };
+		
 };
 // Land vehicles
 class B_W_APC_Wheeled_01_cannon_F;
@@ -467,7 +544,7 @@ class cgqc_vic_suv : UK3CB_AAF_B_SUV_Armoured
 // Drones - Attempt to override fuel capacity
 class UAV_01_base_F : Helicopter_Base_F // Darter
 {
-    fuelCapacity = 300;
+    fuelCapacity = 400;
 };
 class UAV_06_base_F : Helicopter_Base_F // Pelican
 {
@@ -475,7 +552,7 @@ class UAV_06_base_F : Helicopter_Base_F // Pelican
 };
 class UAV_03_base_F : Helicopter_Base_F // Falcon
 {
-    fuelCapacity = 300;
+    fuelCapacity = 400;
 };
 class UAV_02_base_F : UAV // Yabhon
 {

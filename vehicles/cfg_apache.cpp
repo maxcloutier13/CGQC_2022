@@ -20003,7 +20003,7 @@ class cgqc_heli_AH64D : cgqc_heli_AH64_base
                 {
                     hardpoints[] = {"RHS_HP_AIM9_HELI_ARMY", "RHS_HP_ATAS_AH64"};
                     priority = 3;
-                    attachment = "";
+                    attachment = "rhs_mag_ATAS_AH64_2";
                     maxweight = 1200;
                     UIposition[] = {0.625, 0.28};
                     bay = -1;
@@ -20013,7 +20013,7 @@ class cgqc_heli_AH64D : cgqc_heli_AH64_base
                 {
                     hardpoints[] = {"RHS_HP_LONGBOW_RACK", "RHS_HP_FFAR_ARMY"};
                     priority = 2;
-                    attachment = "rhs_mag_M151_19";
+                    attachment = "rhs_mag_M229_19";
                     maxweight = 1200;
                     UIposition[] = {0.625, 0.4};
                     bay = -1;
@@ -20024,7 +20024,7 @@ class cgqc_heli_AH64D : cgqc_heli_AH64_base
                 {
                     UIposition[] = {0.562, 0.45};
                     priority = 1;
-                    attachment = "rhs_mag_AGM114L_4";
+                    attachment = "rhs_mag_AGM114K_4";
                     turret[] = {0};
                     hitpoint = "HitPylon3";
                 };
@@ -20060,6 +20060,11 @@ class cgqc_heli_AH64D : cgqc_heli_AH64_base
             };
             class Presets
             {
+                class AUDI
+                {
+                    attachment[] = {"rhs_mag_ATAS_AH64_2", "rhs_mag_M229_19", "rhs_mag_AGM114K_4", "rhs_mag_AGM114K_4", "rhs_mag_M229_19", "rhs_mag_ATAS_AH64_2", "rhsusf_M130_CMFlare_Chaff_Magazine_x2"};
+                     displayname = "Spécial Audi";
+                };  
                 class MR
                 {
                     attachment[] = {"", "rhs_mag_M151_19", "rhs_mag_AGM114K_4", "rhs_mag_AGM114N_4", "rhs_mag_M151_19", "", "rhsusf_M130_CMFlare_Chaff_Magazine_x2"};
@@ -20094,7 +20099,7 @@ class cgqc_heli_AH64D : cgqc_heli_AH64_base
                 {
                     attachment[] = {"rhs_mag_Sidewinder_heli", "rhs_mag_M151_19", "rhs_mag_AGM114L_4", "rhs_mag_AGM114K_4", "rhs_mag_M151_19", "rhs_mag_Sidewinder_heli", "rhsusf_M130_CMFlare_Chaff_Magazine_x2"};
                     displayname = "AA (Longbow)";
-                };
+                };             
             };
         };
         class SensorsManagerComponent

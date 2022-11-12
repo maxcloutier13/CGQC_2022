@@ -1,7 +1,7 @@
 execVM "\CGQC_2022\scripts\transition.sqf";
 //disableUserInput true;
 sleep 2;
-player setUnitTrait ["Medic", false];
+//player setUnitTrait ["Medic", false];
 player setUnitTrait ["engineer", true];
 player setUnitTrait ["explosiveSpecialist", true];
 comment "Remove existing items";

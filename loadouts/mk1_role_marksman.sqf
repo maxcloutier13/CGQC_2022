@@ -38,7 +38,6 @@ for "_i" from 1 to 5 do {
 	player addItemToUniform "FF_Painkiller";
 };
 player addItemToUniform "ACRE_PRC343";
-player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "ItemAndroid";
 player addItemToUniform "ACE_MapTools";
 player addItemToUniform "ACE_microDAGR";
@@ -120,3 +119,8 @@ player linkItem "ItemWatch";
 player linkItem "B_UavTerminal";
 player linkItem "JAS_GPNVG18_blk";
 //disableUserInput false;
+sleep 2;
+//Set  radios
+hint "Rôle: Marksman";
+sleep 3;
+hintSilent "";

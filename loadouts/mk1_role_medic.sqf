@@ -2,8 +2,8 @@ execVM "\CGQC_2022\scripts\transition.sqf";
 //disableUserInput true;
 sleep 2;
 player setUnitTrait ["Medic", true];
-//player setUnitTrait ["engineer", false];
-//player setUnitTrait ["explosiveSpecialist", false];
+player setUnitTrait ["engineer", false];
+player setUnitTrait ["explosiveSpecialist", false];
 comment "Remove existing items";
 removeAllWeapons player;
 removeAllItems player;
@@ -130,3 +130,10 @@ player linkItem "ItemWatch";
 player linkItem "ItemGPS";
 player linkItem "JAS_GPNVG18_blk";
 //disableUserInput false;
+
+sleep 2;
+//Set  radios
+["spartan1_2"] execVM "\cgqc\factions\stuff_player.sqf";
+hint "Rôle: Medic";
+sleep 3;
+hintSilent "";

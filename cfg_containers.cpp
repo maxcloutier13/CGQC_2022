@@ -307,7 +307,6 @@ class cgqc_box_mk1_mortar_mk6 : Box_NATO_WpsSpecial_F
     };
     #include "loadouts\cgqc_box_mortar_mk6.sqf"
 };
-
 // Basic Backpacks --------------------------------------------------------------------------------------
 class cgqc_pack_mk1_kitbag : B_Kitbag_rgr // Base
 {

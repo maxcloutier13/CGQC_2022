@@ -122,6 +122,7 @@ player linkItem "ItemWatch";
 player linkItem "B_UavTerminal";
 player linkItem "JAS_GPNVG18_blk";
 //disableUserInput false;
+
 //Load the sniper skill
 execVM "\cgqc_2022\scripts\mk1_action_ghillie_menu.sqf";
 sleep 2;

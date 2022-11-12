@@ -103,10 +103,10 @@ for "_i" from 1 to 15 do {
 for "_i" from 1 to 3 do {
 	player addItemToBackpack "UGL_FlareRed_F";
 };
-for "_i" from 1 to 2 do {
+for "_i" from 1 to 4 do {
 	player addItemToBackpack "1Rnd_SmokeBlue_Grenade_shell";
 };
-for "_i" from 1 to 2 do {
+for "_i" from 1 to 4 do {
 	player addItemToBackpack "1Rnd_Smoke_Grenade_shell";
 };
 player addHeadgear "cgqc_helmet_mk1";

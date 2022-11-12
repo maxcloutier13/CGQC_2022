@@ -108,9 +108,9 @@ player addItemToBackpack "B_IR_Grenade";
 for "_i" from 1 to 20 do {
 	player addItemToBackpack "7Rnd_mas_can_408_Mag";
 };
-for "_i" from 1 to 2 do {
-	player addItemToBackpack "HandGrenade";
-};
+player addItemToBackpack "HandGrenade";
+player addItemToBackpack "HandGrenade";
+player addItemToBackpack "rhsusf_m112_mag";
 player addHeadgear "cgqc_helmet_mk1";
 player addGoggles "G_mas_can_balaM_T";
 

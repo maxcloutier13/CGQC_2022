@@ -123,7 +123,7 @@ player linkItem "JAS_GPNVG18_blk";
 
 sleep 2;
 //Set  radios
-["hq"] execVM "\cgqc\factions\stuff_player.sqf"
+["hq"] execVM "\cgqc\factions\stuff_player.sqf";
 hint "Rôle: HQ";
 sleep 3;
 hintSilent "";

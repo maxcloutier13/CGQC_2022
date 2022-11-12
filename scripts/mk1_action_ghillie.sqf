@@ -2,9 +2,7 @@ if (hasInterface) then {
 	_choice = _this select 0;
 	_ghillie = "";
 	_to_ghillie = 0;
-
 	//disableUserInput true;
-
 	switch (_choice)
 	do
 	{
@@ -63,7 +61,8 @@ if (hasInterface) then {
 			{
 				player addItemToUniform _x
 			} forEach _uniform_items;
-
+			//Lower the camouflage level of unit in ghillie
+			player setUnitTrait ["camouflageCoef", 0.4];
 			ghillie_isOn = 1;
 		};
 		case 2:// Change back to uniform
@@ -79,7 +78,8 @@ if (hasInterface) then {
 			{
 				player addItemToUniform _x
 			} forEach _uniform_items;
-			
+			//Lower the camouflage level of unit in ghillie
+			player setUnitTrait ["camouflageCoef", 1.4];
 			ghillie_isOn = 0;
 		};
 		default

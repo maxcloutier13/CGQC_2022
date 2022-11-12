@@ -62,13 +62,13 @@ _adding = [ _crate, 0, ["ACE_MainActions", "menu_cgqc" , "menu_mk1"], _action ] 
 _action = [ "menu_mk1_inf_medic", "HQ", "", {execVM "\CGQC_2022\loadouts\mk1_role_hq.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions", "menu_cgqc" , "menu_mk1", "menu_mk1_lead"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Squad Leader
-_action = [ "menu_mk1_inf_eng", "Squad Leader", "", {execVM "\CGQC_2022\loadouts\mk1_role_squad_leader.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
-_adding = [ _crate, 0, ["ACE_MainActions", "menu_cgqc" , "menu_mk1", "menu_mk1_lead"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+//_action = [ "menu_mk1_inf_eng", "Squad Leader", "", {execVM "\CGQC_2022\loadouts\mk1_role_squad_leader.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+//_adding = [ _crate, 0, ["ACE_MainActions", "menu_cgqc" , "menu_mk1", "menu_mk1_lead"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Team Leader 
 _action = [ "menu_mk1_inf_medic", "Team Leader", "", {execVM "\CGQC_2022\loadouts\mk1_role_tl.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions", "menu_cgqc" , "menu_mk1", "menu_mk1_lead"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Team Leader CQB
-_action = [ "menu_mk1_inf_eng", "Team Leader CQB", "", {execVM "\CGQC_2022\loadouts\mk1_role_tl_cqb.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+_action = [ "menu_mk1_tlqcqb", "Team Leader CQB", "", {execVM "\CGQC_2022\loadouts\mk1_role_tl_cqb.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions", "menu_cgqc" , "menu_mk1", "menu_mk1_lead"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Pilots ---------------------------------------------------------------------------------------------------------
 _action = [ "menu_mk1_pilots", "Pilotes", "", {""}, {true} ] call ace_interact_menu_fnc_createAction;
@@ -77,13 +77,13 @@ _adding = [ _crate, 0, ["ACE_MainActions", "menu_cgqc" , "menu_mk1"], _action ] 
 _action = [ "menu_mk1_inf_medic", "Helicopter pilot ", "", {execVM "\CGQC_2022\loadouts\mk1_role_heli_pilot.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions", "menu_cgqc" , "menu_mk1", "menu_mk1_pilots"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Helicopter crew
-_action = [ "menu_mk1_inf_eng", "Helicopter crew", "", {execVM "\CGQC_2022\loadouts\mk1_role_heli_crew.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+_action = [ "menu_mk1_helicrew", "Helicopter crew", "", {execVM "\CGQC_2022\loadouts\mk1_role_heli_crew.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions", "menu_cgqc" , "menu_mk1", "menu_mk1_pilots"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Jet pilot 
 _action = [ "menu_mk1_inf_medic", "Jet pilot ", "", {execVM "\CGQC_2022\loadouts\mk1_role_jet_pilot.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions", "menu_cgqc" , "menu_mk1", "menu_mk1_pilots"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Tank driver
-_action = [ "menu_mk1_inf_eng", "Tank driver", "", {execVM "\CGQC_2022\loadouts\mk1_role_driver_tank.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+_action = [ "menu_mk1_driver", "Tank driver", "", {execVM "\CGQC_2022\loadouts\mk1_role_driver_tank.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions", "menu_cgqc" , "menu_mk1", "menu_mk1_pilots"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 
 // Mk1 Camo Switcher ---------------------------------------------------------------------------------------------------------

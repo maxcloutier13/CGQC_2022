@@ -129,3 +129,8 @@ player linkItem "ItemWatch";
 player linkItem "B_UavTerminal";
 player linkItem "JAS_GPNVG18_blk";
 //disableUserInput false;
+//Set radios
+["spartan1_1"] execVM "\cgqc\factions\stuff_player.sqf"
+hint "Rôle: TL";
+sleep 3;
+hintSilent "";

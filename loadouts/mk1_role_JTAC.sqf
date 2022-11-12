@@ -122,5 +122,9 @@ player linkItem "ItemWatch";
 player linkItem "B_UavTerminal";
 player linkItem "JAS_GPNVG18_blk";
 //disableUserInput false;
-
+sleep 2;
+//Set radios
 ["jtac"] execVM "\cgqc\factions\stuff_player.sqf"
+hint "Rôle: JTAC";
+sleep 3;
+hintSilent "";

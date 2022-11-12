@@ -121,5 +121,9 @@ player linkItem "B_UavTerminal";
 player linkItem "JAS_GPNVG18_blk";
 //disableUserInput false;
 
-// Sets default radios
+sleep 2;
+//Set  radios
 ["hq"] execVM "\cgqc\factions\stuff_player.sqf"
+hint "Rôle: HQ";
+sleep 3;
+hintSilent "";

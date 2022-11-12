@@ -64,7 +64,6 @@ player addItemToUniform "ACE_IR_Strobe_Item";
 player addItemToUniform "ACE_RangeCard";
  
 player addItemToUniform "ACRE_PRC152";
-player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "Tier1_15Rnd_9x19_JHP";
 for "_i" from 1 to 2 do {
 	player addItemToVest "ACE_M84";
@@ -110,6 +109,7 @@ player addItemToBackpack "B_IR_Grenade";
 player addItemToBackpack "ACE_UAVBattery";
 player addItemToBackpack "ACE_UAVBattery";
 player addItemToBackpack "rhsusf_m112_mag";
+player addItemToBackpack "ACRE_PRC117F";
 player addItemToBackpack "ACRE_PRC117F";
 
 player addHeadgear "cgqc_helmet_mk1";

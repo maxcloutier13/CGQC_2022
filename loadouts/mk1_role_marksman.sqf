@@ -123,4 +123,6 @@ sleep 2;
 //Set  radios
 hint "Rôle: Marksman";
 sleep 3;
+hint "Check ta 343!";
+sleep 10;
 hintSilent "";

@@ -207,10 +207,7 @@ class cgqc_plane_c130 : RHS_C130J
     */
 };
 // Drones CGQC versions
-class B_UAV_01_F
-{
-    class Components;
-};
+class B_UAV_01_F;
 class cgqc_drone_darter : B_UAV_01_F
 {
     scope = 2;
@@ -224,6 +221,8 @@ class cgqc_drone_darter : B_UAV_01_F
     maxSpeed = 250;
     fuelCapacity = 1000;
     liftForceCoef = 2.0;
+	cyclicAsideForceCoef = 2.0;
+	cyclicForwardForceCoef = 1.2;
     radarTargetSize = 0.05;
 	visualTargetSize = 0.05;
 	LockDetectionSystem = 12;
@@ -251,47 +250,6 @@ class cgqc_drone_darter : B_UAV_01_F
         dissasembleTo[] = {"B_UAV_01_backpack_F"};
     };
     hiddenSelectionsTextures[] = {"\CGQC_2022\vehicles\cgqc_drone_darter_dark.paa"};
-    textureList[] = {"Blufor", 1};
-    class Components: Components
-    {
-        class SensorsManagerComponent
-        {
-            class Components
-            {
-                class ManSensorComponent: SensorTemplateMan
-                {
-                    maxTrackableSpeed = 20;
-                    angleRangeHorizontal = 60;
-                    angleRangeVertical = 50;
-                    animDirection = "mainGun";
-                    aimDown = -0.5;
-                };
-                class IRSensorComponent: SensorTemplateIR
-                {
-                    class AirTarget
-                    {
-                        minRange = 100;
-                        maxRange = 4000;
-                        objectDistanceLimitCoef = -1;
-                        viewDistanceLimitCoef = 1;
-                    };
-                    class GroundTarget
-                    {
-                        minRange = 100;
-                        maxRange = 2500;
-                        objectDistanceLimitCoef = 1;
-                        viewDistanceLimitCoef = 1;
-                    };
-                    maxTrackableSpeed = 60;
-                    angleRangeHorizontal = 60;
-                    angleRangeVertical = 50;
-                    animDirection = "mainGun";
-                    aimDown = -0.5;
-                };
-            };
-        };
-    };
-		
 };
 // Land vehicles
 class B_W_APC_Wheeled_01_cannon_F;

@@ -234,7 +234,7 @@ class CfgEditorSubcategories
 {
 	class EdSubcat_cgqc_mk1
 	{
-		displayName = "Men (Legacy Mk1)";
+		displayName = "zz Men (Legacy Mk1)";
 	};
 	class EdSubcat_cgqc_spawn
 	{
@@ -262,7 +262,7 @@ class CfgEditorSubcategories
 	};
 	class EdSubcat_cgqc_logistics
 	{
-		displayName = "Logistique";
+		displayName = "CGQC";
 	};
 };
 // Custom units ----------------------------------------------------------------------------

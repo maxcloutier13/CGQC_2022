@@ -103,7 +103,7 @@ for "_i" from 1 to 2 do {
 	player addItemToBackpack "SmokeShellRed";
 };
 player addItemToBackpack "B_IR_Grenade";
-for "_i" from 1 to 2 do {
+for "_i" from 1 to 6 do {
 	player addItemToBackpack "rhsusf_m112_mag";
 };
 player addItemToBackpack "rhsusf_m112x4_mag";

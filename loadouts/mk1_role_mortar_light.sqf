@@ -101,7 +101,7 @@ for "_i" from 1 to 2 do {
 for "_i" from 1 to 2 do {
 	player addItemToBackpack "SmokeShellRed";
 };
-for "_i" from 1 to 20 do {
+for "_i" from 1 to 15 do {
 	player addItemToBackpack "avm224_M_6Rnd_60mm_HE_csw";
 };
 for "_i" from 1 to 3 do {
@@ -129,4 +129,6 @@ sleep 2;
 ["spartan1_2"] execVM "\cgqc\factions\stuff_player.sqf";
 hint "Rôle: Mortier Léger";
 sleep 3;
+hint "Check ta 343!";
+sleep 10;
 hintSilent "";

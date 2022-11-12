@@ -120,4 +120,6 @@ sleep 2;
 //["spartan1_2"] execVM "\cgqc\factions\stuff_player.sqf";
 hint "Rôle: Rifleman";
 sleep 3;
+hint "Check ta 343!";
+sleep 10;
 hintSilent "";

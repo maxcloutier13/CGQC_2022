@@ -112,6 +112,7 @@ class CfgPatches
 			"cgqc_vic_quad_ext",
 			"cgqc_refuel_h",
 			"cgqc_refuel_h_short",
+			"cgqc_whiteboard_radios",
 			"cgqc_vic_quad_ext_mortarmk6"};
 		weapons[] = {
 			"cgqc_helmet_mk1",
@@ -258,6 +259,10 @@ class CfgEditorSubcategories
 	class EdSubcat_cgqc_offroad
 	{
 		displayName = "Vehicles (Unarmed)";
+	};
+	class EdSubcat_cgqc_logistics
+	{
+		displayName = "Logistique";
 	};
 };
 // Custom units ----------------------------------------------------------------------------

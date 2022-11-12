@@ -548,3 +548,14 @@ class cgqc_refuel_h_short : Land_HelipadSquare_F
         init = "[_this] execVM '\cgqc_2022\scripts\cgqc_refuel_setup_short.sqf'"; 
     };
 };
+// Whiteboards
+class Land_MapBoard_F;
+class cgqc_whiteboard_radios : Land_MapBoard_F
+{
+    _generalMacro = "MapBoard_altis_F";
+    scope = 2;
+    scopeCurator = 2;
+    editorSubcategory = "EdSubcat_cgqc_logistics";
+    displayName = "Whiteboard - Radios";
+    hiddenSelectionsTextures[] = {"\CGQC_2022\textures\whiteboard_radio.paa"};
+};

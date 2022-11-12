@@ -81,5 +81,12 @@ player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemGPS";
-player linkItem "JAS_GPNVG18_blk";
+player linkItem "JAS_GPNVG18_Full_blk_TI";
 //disableUserInput false;
+
+sleep 2;
+//Set  radios
+["griffon_pieton"] execVM "\cgqc\factions\stuff_player.sqf";
+hint "Rôle: Griffon";
+sleep 3;
+hintSilent "";

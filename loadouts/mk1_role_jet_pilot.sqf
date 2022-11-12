@@ -78,3 +78,10 @@ player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemGPS";
 //disableUserInput false;
+
+sleep 2;
+//Set  radios
+["griffon_pieton"] execVM "\cgqc\factions\stuff_player.sqf";
+hint "Rôle: Jet Pilot";
+sleep 3;
+hintSilent "";

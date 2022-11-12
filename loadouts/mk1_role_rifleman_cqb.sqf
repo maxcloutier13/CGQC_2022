@@ -114,3 +114,10 @@ player linkItem "ItemWatch";
 player linkItem "ItemGPS";
 player linkItem "JAS_GPNVG18_blk";
 //disableUserInput false;
+
+sleep 2;
+//Set  radios
+//["spartan1_2"] execVM "\cgqc\factions\stuff_player.sqf";
+hint "Rôle: Rifleman";
+sleep 3;
+hintSilent "";

@@ -108,9 +108,9 @@ player addItemToBackpack "B_IR_Grenade";
 for "_i" from 1 to 20 do {
 	player addItemToBackpack "7Rnd_mas_can_408_Mag";
 };
-for "_i" from 1 to 2 do {
-	player addItemToBackpack "HandGrenade";
-};
+player addItemToBackpack "HandGrenade";
+player addItemToBackpack "HandGrenade";
+player addItemToBackpack "rhsusf_m112_mag";
 player addHeadgear "cgqc_helmet_mk1";
 player addGoggles "G_mas_can_balaM_T";
 
@@ -124,3 +124,10 @@ player linkItem "JAS_GPNVG18_blk";
 
 //Load the sniper skill
 execVM "\cgqc_2022\scripts\mk1_action_ghillie_menu.sqf";
+
+sleep 2;
+//Set  radios
+["recon"] execVM "\cgqc\factions\stuff_player.sqf";
+hint "Rôle: Sniper";
+sleep 3;
+hintSilent "";

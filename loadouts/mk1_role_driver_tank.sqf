@@ -117,3 +117,9 @@ player linkItem "ItemWatch";
 player linkItem "B_UavTerminal";
 
 //disableUserInput false;
+sleep 2;
+//Set  radios
+["centaure_pieton"] execVM "\cgqc\factions\stuff_player.sqf";
+hint "Rôle: Centaure";
+sleep 3;
+hintSilent "";

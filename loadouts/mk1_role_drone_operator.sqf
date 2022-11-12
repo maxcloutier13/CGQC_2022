@@ -37,7 +37,7 @@ comment "Add items to containers";
 for "_i" from 1 to 5 do {
 	player addItemToUniform "FF_Painkiller";
 };
-player addItemToUniform "ACRE_PRC343";
+player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "ItemAndroid";
 player addItemToUniform "ACE_MapTools";
@@ -103,6 +103,7 @@ for "_i" from 1 to 2 do {
 	player addItemToBackpack "rev_darter_item";
 };
 player addItemToBackpack "sps_black_hornet_01_Static_F";
+player addItemToBackpack "rhsusf_m112_mag";
 player addHeadgear "cgqc_helmet_mk1";
 player addGoggles "G_mas_can_wrap_gog_B";
 
@@ -113,3 +114,12 @@ player linkItem "ItemWatch";
 player linkItem "B_UavTerminal";
 player linkItem "JAS_GPNVG18_blk";
 //disableUserInput false;
+
+//Load the sniper skill
+execVM "\cgqc_2022\scripts\mk1_action_ghillie_menu.sqf";
+sleep 2;
+//Set  radios
+["recon"] execVM "\cgqc\factions\stuff_player.sqf";
+hint "Rôle: Drone Operator";
+sleep 3;
+hintSilent "";

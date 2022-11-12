@@ -105,7 +105,7 @@ for "_i" from 1 to 3 do {
 };
 player addItemToBackpack "B_IR_Grenade";
  
-for "_i" from 1 to 20 do {
+for "_i" from 1 to 10 do {
 	player addItemToBackpack "7Rnd_mas_can_408_Mag";
 };
 player addItemToBackpack "HandGrenade";
@@ -125,7 +125,7 @@ player linkItem "JAS_GPNVG18_blk";
 //Load the sniper skill
 execVM "\cgqc_2022\scripts\mk1_action_ghillie_menu.sqf";
 
-sleep 2;
+sleep 3;
 //Set  radios
 ["recon"] execVM "\cgqc\factions\stuff_player.sqf";
 hint "Rôle: Sniper";

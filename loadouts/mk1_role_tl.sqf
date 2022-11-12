@@ -130,4 +130,6 @@ sleep 2;
 ["spartan1_1"] execVM "\cgqc\factions\stuff_player.sqf";
 hint "Rôle: TL";
 sleep 3;
+hint "Check ta 343!";
+sleep 10;
 hintSilent "";

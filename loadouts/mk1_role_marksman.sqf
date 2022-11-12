@@ -68,7 +68,7 @@ for "_i" from 1 to 2 do {
 for "_i" from 1 to 2 do {
 	player addItemToVest "ACE_M84";
 };
-for "_i" from 1 to 6 do {
+for "_i" from 1 to 10 do {
 	player addItemToVest "ACE_20Rnd_762x51_Mk319_Mod_0_Mag";
 };
 for "_i" from 1 to 2 do {
@@ -103,7 +103,7 @@ for "_i" from 1 to 3 do {
 };
 player addItemToBackpack "B_IR_Grenade";
  
-for "_i" from 1 to 13 do {
+for "_i" from 1 to 5 do {
 	player addItemToBackpack "ACE_20Rnd_762x51_Mk319_Mod_0_Mag";
 };
 for "_i" from 1 to 2 do {
@@ -123,4 +123,6 @@ sleep 2;
 //Set  radios
 hint "Rôle: Marksman";
 sleep 3;
+hint "Check ta 343!";
+sleep 10;
 hintSilent "";

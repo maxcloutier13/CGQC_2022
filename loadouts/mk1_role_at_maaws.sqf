@@ -18,7 +18,7 @@ comment "Add weapons";
 player addWeapon "cgqc_gun_mk1_mk18";
 player addPrimaryWeaponItem "Tier1_KAC_556_QDC_CQB_Black";
 player addPrimaryWeaponItem "Tier1_Mk18_NGAL_M300C_Black";
-player addPrimaryWeaponItem "Tier1_EXPS3_0_3xMag_Black_Up";
+player addPrimaryWeaponItem "tier1_atacr18_geissele_docker_black";
 player addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
 player addPrimaryWeaponItem "rhsusf_acc_grip2";
 player addWeapon "cgqc_gun_mk1_MAAWS";
@@ -70,7 +70,7 @@ for "_i" from 1 to 2 do {
 for "_i" from 1 to 2 do {
 	player addItemToVest "ACE_M84";
 };
-for "_i" from 1 to 9 do {
+for "_i" from 1 to 10 do {
 	player addItemToVest "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
 };
 for "_i" from 1 to 2 do {
@@ -123,4 +123,6 @@ sleep 2;
 //["spartan1_2"] execVM "\cgqc\factions\stuff_player.sqf";
 hint "Rôle: AT-MAAWS";
 sleep 3;
+hint "Check ta 343!";
+sleep 10;
 hintSilent "";

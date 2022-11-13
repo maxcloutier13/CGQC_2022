@@ -21,9 +21,7 @@ player addPrimaryWeaponItem "Tier1_M4BII_NGAL_M300C_Black";
 player addPrimaryWeaponItem "Tier1_EXPS3_0_3xMag_Black_Up";
 player addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
 player addPrimaryWeaponItem "rhsusf_acc_grip2";
-player addWeapon "cgqc_gun_glock19_wood";
-player addHandgunItem "Tier1_15Rnd_9x19_JHP";
-player addHandgunItem "tier1_dbalpl";
+player addWeapon "ACE_VMM3";
 
 comment "Add containers";
 player forceAddUniform "cgqc_uniform_mk1";
@@ -63,9 +61,6 @@ for "_i" from 1 to 2 do {
 player addItemToUniform "ACE_IR_Strobe_Item";
 player addItemToUniform "ACE_RangeCard";
 for "_i" from 1 to 2 do {
-	player addItemToVest "Tier1_15Rnd_9x19_JHP";
-};
-for "_i" from 1 to 2 do {
 	player addItemToVest "ACE_M84";
 };
 for "_i" from 1 to 10 do {
@@ -90,7 +85,6 @@ player addItemToBackpack "G_mas_can_gasmask";
 player addItemToBackpack "ToolKit";
 player addItemToBackpack "ACE_DefusalKit";
 player addItemToBackpack "ACE_M26_Clacker";
-player addItemToBackpack "MineDetector";
 player addItemToBackpack "ACE_Chemlight_HiRed";
 player addItemToBackpack "ACE_Chemlight_IR";
 for "_i" from 1 to 2 do {
@@ -126,7 +120,7 @@ player linkItem "JAS_GPNVG18_blk";
 
 sleep 2;
 //Set  radios
-//["spartan1_2"] execVM "\cgqc\factions\stuff_player.sqf";
+[""] execVM "\cgqc\factions\stuff_player.sqf";
 hint "Rôle: Ingénieur";
 sleep 3;
 hint "Check ta 343!";

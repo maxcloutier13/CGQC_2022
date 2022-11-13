@@ -7,6 +7,9 @@ do
 	{
 		_action = [ "menu_self_rrr", "Maintenance Véhicule", "CGQC_2022\textures\icon_maintenance", {['normal'] execVM "\cgqc_2022\scripts\cgqc_refuel_heli.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
         _adding = [ player, 1, ["ACE_SelfActions"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+		hint "Mainenance dispo dans votre Self-Action";
+		sleep 10;
+		hintSilent "";
 	};
     case "off":
 	{
@@ -17,6 +20,9 @@ do
 	{
 		_action = [ "menu_self_rrr_short", "Maintenance Rapide - Véhicule", "CGQC_2022\textures\icon_maintenance", {['short'] execVM "\cgqc_2022\scripts\cgqc_refuel_heli.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
         _adding = [ player, 1, ["ACE_SelfActions"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+		hint "Mainenance rapide dans votre Self-Action";
+		sleep 10;
+		hintSilent "";
 	};
     case "off_short":
 	{

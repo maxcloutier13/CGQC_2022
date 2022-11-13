@@ -61,14 +61,18 @@ player addItemToUniform "ACE_RangeCard";
 for "_i" from 1 to 2 do {
 	player addItemToVest "Tier1_15Rnd_9x19_JHP";
 };
-player addItemToUniform "ACE_M84";
-player addItemToVest "ACE_M84";
+player addItemToVest "WBK_HeadLampItem";
+player addItemToVest "ACE_Chemlight_HiRed";
+player addItemToVest "ACE_Chemlight_IR";
+player addItemToVest "SmokeShell";
+player addItemToVest "SmokeShellBlue";
+player addItemToVest "SmokeShellRed";
+player addItemToVest "B_IR_Grenade";
+
 for "_i" from 1 to 3 do {
 	player addItemToVest "40Rnd_46x30SD_mas_can_mag";
 };
-for "_i" from 1 to 2 do {
-	player addItemToVest "HandGrenade";
-};
+
 player addHeadgear "cgqc_helmet_mk1_jetpilot";
 player addGoggles "G_Combat";
 

@@ -167,11 +167,6 @@ class TransportItems
 		count = 1;
 		name = "ACE_M26_Clacker";
 	};
-	class _xx_MineDetector
-	{
-		count = 1;
-		name = "MineDetector";
-	};
 };
 class TransportWeapons
 {};

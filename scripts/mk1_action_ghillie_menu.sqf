@@ -19,7 +19,7 @@ if (ghillie_menu == 0) then {
 		_action = [ "menu_self_ghillie_uniform", "Ghillie-> Uniforme", "", {["uniform"]  execVM "\cgqc_2022\scripts\mk1_action_ghillie.sqf"}, {ghillie_isOn == 1} ] call ace_interact_menu_fnc_createAction;
 		_adding = [ player, 1, ["ACE_SelfActions","menu_self_cgqc"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 
-		hintC "Ghillie menu added";
+		hint "Ghillie menu added";
 		// Ghillie menu done booting 
 		ghillie_menu = 1;
 	};

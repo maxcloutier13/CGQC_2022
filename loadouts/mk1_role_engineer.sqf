@@ -122,7 +122,6 @@ sleep 2;
 //Set  radios
 [""] execVM "\cgqc\factions\stuff_player.sqf";
 hint "Rôle: Ingénieur";
-sleep 3;
-hint "Check ta 343!";
+ 
 sleep 10;
 hintSilent "";

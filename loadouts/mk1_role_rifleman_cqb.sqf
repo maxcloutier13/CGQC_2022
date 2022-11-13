@@ -117,9 +117,8 @@ player linkItem "JAS_GPNVG18_blk";
 
 sleep 2;
 //Set  radios
-//["spartan1_2"] execVM "\cgqc\factions\stuff_player.sqf";
+[""] execVM "\cgqc\factions\stuff_player.sqf";
 hint "Rôle: Rifleman";
-sleep 3;
-hint "Check ta 343!";
+ 
 sleep 10;
 hintSilent "";

@@ -72,6 +72,12 @@ for "_i" from 1 to 5 do {
 	player addItemToVest "50Rnd_570x28_SMG_03";
 };
 player addItemToVest "WBK_HeadLampItem";
+player addItemToVest "ACE_Chemlight_HiRed";
+player addItemToVest "ACE_Chemlight_IR";
+player addItemToVest "SmokeShell";
+player addItemToVest "SmokeShellBlue";
+player addItemToVest "SmokeShellRed";
+player addItemToVest "B_IR_Grenade";
 
 player addHeadgear "cgqc_helmet_heli_black";
 player addGoggles "G_mas_can_wrap_B";

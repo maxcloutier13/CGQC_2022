@@ -1405,11 +1405,6 @@ class CGQC_units_mk1_1_Engineer_pack : cgqc_pack_mk1_kitbag
             count = 1;
             name = "ACE_M26_Clacker";
         };
-        class _xx_MineDetector
-        {
-            count = 1;
-            name = "MineDetector";
-        };
     };
     class TransportWeapons
     {

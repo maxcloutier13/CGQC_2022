@@ -128,7 +128,6 @@ sleep 2;
 //Set  radios
 ["spartan1_2"] execVM "\cgqc\factions\stuff_player.sqf";
 hint "Rôle: Mortier Léger";
-sleep 3;
-hint "Check ta 343!";
+ 
 sleep 10;
 hintSilent "";

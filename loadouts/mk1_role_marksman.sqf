@@ -121,8 +121,8 @@ player linkItem "JAS_GPNVG18_blk";
 //disableUserInput false;
 sleep 2;
 //Set  radios
+[""] execVM "\cgqc\factions\stuff_player.sqf";
 hint "Rôle: Marksman";
-sleep 3;
-hint "Check ta 343!";
+ 
 sleep 10;
 hintSilent "";

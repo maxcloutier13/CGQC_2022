@@ -529,7 +529,6 @@ class cgqc_refuel_h : Land_HelipadSquare_F
     //editorSubcategory = "EdSubcat_cgqc_offroad";
     _generalMacro = "cgqc_refuel_h";
     displayName = "CGQC - Helipad - Standard";
-    
     class EventHandlers
     {
         init = "[_this] execVM '\cgqc_2022\scripts\cgqc_refuel_setup.sqf'"; 
@@ -542,7 +541,6 @@ class cgqc_refuel_h_short : Land_HelipadSquare_F
     //editorSubcategory = "EdSubcat_cgqc_offroad";
     _generalMacro = "cgqc_refuel_h";
     displayName = "CGQC - Helipad - Rapide";
-    
     class EventHandlers
     {
         init = "[_this] execVM '\cgqc_2022\scripts\cgqc_refuel_setup_short.sqf'"; 

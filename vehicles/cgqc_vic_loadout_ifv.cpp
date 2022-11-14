@@ -46,10 +46,10 @@ class TransportMagazines{
 		count = 4;
 		magazine = "jav_AT_mas_can";
 	};
-    class _xx_HandGrenade
+    class _xx_rhs_mag_m67
 	{
 		count = 6;
-		magazine = "HandGrenade";
+		magazine = "rhs_mag_m67";
 	};
     class _xx_ACE_M84
 	{

@@ -3,10 +3,10 @@
 class TransportMagazines
 {
 	// Grenades ------------------------------------------------
-	class _xx_HandGrenade
+	class _xx_rhs_mag_m67
 	{
 		count = 5;
-		magazine = "HandGrenade";
+		magazine = "rhs_mag_m67";
 	};
 	class _xx_ACE_Chemlight_HiRed
 	{

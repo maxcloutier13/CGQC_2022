@@ -5,10 +5,10 @@ class TransportMagazines
         count = 6;
         magazine = "ACE_M84";
     };
-    class _xx_HandGrenade
+    class _xx_rhs_mag_m67
     {
         count = 6;
-        magazine = "HandGrenade";
+        magazine = "rhs_mag_m67";
     };
     class _xx_ACE_Chemlight_HiRed
     {

@@ -72,7 +72,6 @@ player addItemToVest "rhsusf_100Rnd_762x51_m61_ap";
 for "_i" from 1 to 2 do {
 	player addItemToVest "rhs_mag_m67";
 };
-player addItemToVest "HandGrenade";
 for "_i" from 1 to 10 do {
 	player addItemToBackpack "ACE_fieldDressing";
 };
@@ -103,7 +102,7 @@ for "_i" from 1 to 2 do {
 	player addItemToBackpack "rhsusf_100Rnd_762x51_m61_ap";
 };
 for "_i" from 1 to 2 do {
-	player addItemToBackpack "HandGrenade";
+	player addItemToBackpack "rhs_mag_m67";
 };
 player addHeadgear "cgqc_helmet_mk1";
 player addGoggles "G_mas_can_balaM_T";

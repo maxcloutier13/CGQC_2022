@@ -67,7 +67,7 @@ for "_i" from 1 to 10 do {
 	player addItemToVest "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
 };
 for "_i" from 1 to 2 do {
-	player addItemToVest "HandGrenade";
+	player addItemToVest "rhs_mag_m67";
 };
 for "_i" from 1 to 10 do {
 	player addItemToBackpack "ACE_fieldDressing";
@@ -102,11 +102,13 @@ for "_i" from 1 to 6 do {
 };
 player addItemToBackpack "rhsusf_m112x4_mag";
 for "_i" from 1 to 2 do {
-	player addItemToBackpack "HandGrenade";
+	player addItemToBackpack "rhs_mag_m67";
 };
 for "_i" from 1 to 4 do {
 	player addItemToBackpack "rhsusf_mine_m14_mag";
 };
+player addItemToBackpack "ACE_SpraypaintGreen";
+player addItemToBackpack "ACE_SpraypaintRed";
 player addHeadgear "cgqc_helmet_mk1";
 player addGoggles "G_mas_can_balaM_T";
 

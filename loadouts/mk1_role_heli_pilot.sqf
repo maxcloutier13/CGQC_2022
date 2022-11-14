@@ -63,7 +63,7 @@ for "_i" from 1 to 2 do {
 	player addItemToVest "Tier1_15Rnd_9x19_JHP";
 };
 for "_i" from 1 to 3 do {
-	player addItemToVest "HandGrenade";
+	player addItemToVest "rhs_mag_m67";
 };
 for "_i" from 1 to 2 do {
 	player addItemToVest "ACE_M84";

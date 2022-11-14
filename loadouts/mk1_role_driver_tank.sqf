@@ -66,7 +66,7 @@ for "_i" from 1 to 2 do {
 	player addItemToVest "Tier1_15Rnd_9x19_JHP";
 };
 for "_i" from 1 to 3 do {
-	player addItemToVest "HandGrenade";
+	player addItemToVest "rhs_mag_m67";
 };
 for "_i" from 1 to 2 do {
 	player addItemToVest "ACE_M84";
@@ -76,7 +76,7 @@ for "_i" from 1 to 10 do {
 };
 player addItemToBackpack "ToolKit";
 for "_i" from 1 to 2 do {
-	player addItemToBackpack "HandGrenade";
+	player addItemToBackpack "rhs_mag_m67";
 };
 player addItemToBackpack "sps_black_hornet_01_Static_F";
 for "_i" from 1 to 10 do {

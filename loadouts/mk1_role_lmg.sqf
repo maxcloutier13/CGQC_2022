@@ -70,7 +70,7 @@ for "_i" from 1 to 2 do {
 };
 player addItemToVest "rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote";
 for "_i" from 1 to 2 do {
-	player addItemToVest "HandGrenade";
+	player addItemToVest "rhs_mag_m67";
 };
 for "_i" from 1 to 10 do {
 	player addItemToBackpack "ACE_fieldDressing";

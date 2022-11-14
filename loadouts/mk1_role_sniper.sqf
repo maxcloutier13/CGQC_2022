@@ -102,12 +102,18 @@ for "_i" from 1 to 3 do {
 	player addItemToBackpack "SmokeShellRed";
 };
 player addItemToBackpack "B_IR_Grenade";
- 
-player addItemToBackpack "HandGrenade";
-player addItemToBackpack "HandGrenade";
-player addItemToBackpack "HandGrenade";
-player addItemToBackpack "HandGrenade";
+ for "_i" from 1 to 4 do {
+	player addItemToBackpack "rhs_mag_m67";
+};
+player addItemToBackpack "ACE_DefusalKit";
+player addItemToBackpack "ACE_M26_Clacker";
 player addItemToBackpack "rhsusf_m112_mag";
+player addItemToBackpack "rhsusf_m112_mag";
+player addItemToBackpack "SLAMDirectionalMine_Wire_Mag";
+player addItemToBackpack "SLAMDirectionalMine_Wire_Mag";
+for "_i" from 1 to 5 do {
+	player addItemToBackpack "rhsusf_mine_m14_mag";
+};
 player addHeadgear "cgqc_helmet_mk1";
 player addGoggles "G_mas_can_balaM_T";
 

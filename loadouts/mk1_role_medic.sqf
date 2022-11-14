@@ -73,7 +73,7 @@ for "_i" from 1 to 10 do {
 	player addItemToVest "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
 };
 for "_i" from 1 to 2 do {
-	player addItemToVest "HandGrenade";
+	player addItemToVest "rhs_mag_m67";
 };
 for "_i" from 1 to 50 do {
 	player addItemToBackpack "ACE_fieldDressing";
@@ -118,7 +118,7 @@ for "_i" from 1 to 20 do {
 	player addItemToBackpack "FF_Painkiller";
 };
 player addItemToBackpack "B_IR_Grenade";
-player addItemToBackpack "HandGrenade";
+player addItemToBackpack "rhs_mag_m67";
 player addItemToBackpack "FSGm_ItemMedicBag";
 player addHeadgear "cgqc_helmet_mk1_medic";
 player addGoggles "G_mas_can_balaM_T";

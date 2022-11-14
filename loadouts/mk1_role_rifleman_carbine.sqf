@@ -69,11 +69,8 @@ for "_i" from 1 to 2 do {
 for "_i" from 1 to 2 do {
 	player addItemToVest "ACE_M84";
 };
-for "_i" from 1 to 10 do {
+for "_i" from 1 to 12 do {
 	player addItemToVest "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
-};
-for "_i" from 1 to 2 do {
-	player addItemToVest "HandGrenade";
 };
 for "_i" from 1 to 10 do {
 	player addItemToBackpack "ACE_fieldDressing";
@@ -99,10 +96,10 @@ for "_i" from 1 to 3 do {
 for "_i" from 1 to 3 do {
 	player addItemToBackpack "SmokeShellRed";
 };
-player addItemToBackpack "B_IR_Grenade";
-for "_i" from 1 to 2 do {
+for "_i" from 1 to 4 do {
 	player addItemToBackpack "HandGrenade";
 };
+player addItemToBackpack "B_IR_Grenade";
 player addHeadgear "cgqc_helmet_mk1";
 player addGoggles "G_mas_can_balaM_T";
 

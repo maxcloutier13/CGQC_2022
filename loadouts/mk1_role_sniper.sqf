@@ -70,11 +70,8 @@ for "_i" from 1 to 2 do {
 for "_i" from 1 to 2 do {
 	player addItemToVest "ACE_M84";
 };
-for "_i" from 1 to 10 do {
+for "_i" from 1 to 12 do {
 	player addItemToVest "7Rnd_mas_can_408_Mag";
-};
-for "_i" from 1 to 2 do {
-	player addItemToVest "HandGrenade";
 };
 for "_i" from 1 to 10 do {
 	player addItemToBackpack "ACE_fieldDressing";
@@ -89,6 +86,7 @@ player addItemToBackpack "ACE_EntrenchingTool";
  
 player addItemToBackpack "WBK_HeadLampItem";
 player addItemToBackpack "G_mas_can_gasmask";
+player addItemToBackpack "ACE_Tripod";
 player addItemToBackpack "ACE_ATragMX";
 player addItemToBackpack "ACE_Kestrel4500";
 player addItemToBackpack "sps_black_hornet_01_Static_F";
@@ -105,9 +103,8 @@ for "_i" from 1 to 3 do {
 };
 player addItemToBackpack "B_IR_Grenade";
  
-for "_i" from 1 to 10 do {
-	player addItemToBackpack "7Rnd_mas_can_408_Mag";
-};
+player addItemToBackpack "HandGrenade";
+player addItemToBackpack "HandGrenade";
 player addItemToBackpack "HandGrenade";
 player addItemToBackpack "HandGrenade";
 player addItemToBackpack "rhsusf_m112_mag";

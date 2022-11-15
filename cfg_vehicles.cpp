@@ -28,6 +28,10 @@ class Helicopter : Air
         class HitEngine;
         class HitAvionics;
     };
+    class EventHandlers
+    {
+        init = "[_this select 0, 'air'] execVM '\cgqc_2022\scripts\add_spares.sqf'";
+    };
 };
 class RHS_C130J;
 // Helicopter acre settings
@@ -257,7 +261,14 @@ class UK3CB_MDF_B_Warrior_Cage;
 class RHS_M2A3_BUSKIII_wd;
 class I_LT_01_scout_F;
 // Mraps Acre settings--------------------------------------------------------------------------
-class Car_F;
+class Car;
+class Car_F : Car{
+    
+    class EventHandlers
+    {
+         init = "[_this select 0, 'car'] execVM '\cgqc_2022\scripts\add_spares.sqf'";
+    };
+};
 class MRAP_01_base_F : Car_F {
     class AcreRacks {
         class Rack_1 {
@@ -347,7 +358,11 @@ class Tank_F: Tank {
             mountedRadio = "ACRE_PRC117F";
             intercom[] = {};
         };
-     };
+    };
+    class EventHandlers
+    {
+         init = "[_this select 0, 'tank'] execVM '\cgqc_2022\scripts\add_spares.sqf'";
+    };
 };
 class cgqc_vic_badger : B_W_APC_Wheeled_01_cannon_F
 {
@@ -379,7 +394,7 @@ class cgqc_vic_bradley : RHS_M2A3_BUSKIII_wd
     editorSubcategory = "EdSubcat_cgqc_vic";
     displayName = "CGQC - Bradley (3+6)";
     crew = "CGQC_units_mk1_4_Tank_Driver";
-    ace_cargo_space = 5;
+    ace_cargo_space = 4;
     hiddenSelectionsTextures[] = {
         "cgqc_2022\vehicles\cgqc_vic_bradley_1.paa",
         "cgqc_2022\vehicles\cgqc_vic_bradley_2.paa",
@@ -402,7 +417,7 @@ class cgqc_vic_wiezel : I_LT_01_scout_F
     enginePower = 190;
     maxSpeed = 110;
     maximumLoad = 2000;
-    ace_cargo_space = 3;  // Cargo space your vehicle has
+    ace_cargo_space = 4;  // Cargo space your vehicle has
     hiddenSelectionsTextures[] = {
         "cgqc_2022\vehicles\cgqc_vic_command_main.paa",
         "cgqc_2022\vehicles\cgqc_vic_command_radar.paa",

@@ -56,27 +56,6 @@ class CGQC_units_mk1_0_JTAC : cgqc_soldat_moderne
     backpack = "CGQC_units_mk1_0_JTAC_pack";
     editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_1_Engineer.jpg";
 };
-class CGQC_units_mk1_0_SquadLeader : cgqc_soldat_moderne
-{
-    faction = "CGQC";
-    editorSubcategory = "EdSubcat_cgqc_mk1";
-    side = 1;
-    scope = 2;
-    displayName = "Squad Leader";
-    uniformClass = "cgqc_uniform_mk1";
-    weapons[] = {"cgqc_gun_mk1_TL_m4a1", "cgqc_gun_glock19_wood", "Laserdesignator_01_khk_F", "Put", "Throw"};
-    respawnWeapons[] = {"cgqc_gun_mk1_TL_m4a1", "cgqc_gun_glock19_wood", "Laserdesignator_01_khk_F", "Put", "Throw"};
-    items[] = {"FF_Painkiller", "FF_Painkiller", "FF_Painkiller", "FF_Painkiller", "FF_Painkiller", "ACRE_PRC343", "ACRE_PRC152", "ACE_microDAGR", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_IR_Strobe_Item", "ACE_RangeCard", "ACE_MapTools" };
-    respawnItems[] = {"FF_Painkiller", "FF_Painkiller", "FF_Painkiller", "FF_Painkiller", "FF_Painkiller", "ACRE_PRC343", "ACRE_PRC152", "ACE_microDAGR", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_IR_Strobe_Item", "ACE_RangeCard", "ACE_MapTools" };
-    magazines[] = {"Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "ACE_M84", "ACE_M84", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull",
-                   "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull"};
-    respawnMagazines[] = {"Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "ACE_M84", "ACE_M84", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull",
-                          "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull"};
-    linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "Laserdesignator_01_khk_F", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan", "G_mas_can_wrap_gog_B"};
-    respawnLinkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "Laserdesignator_01_khk_F", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan", "G_mas_can_wrap_gog_B"};
-    backpack = "CGQC_units_mk1_0_SquadLeader_pack";
-    editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_0_TeamLeader_Carbine.jpg";
-};
 class CGQC_units_mk1_0_TeamLeader_Carbine : cgqc_soldat_moderne
 {
     faction = "CGQC";

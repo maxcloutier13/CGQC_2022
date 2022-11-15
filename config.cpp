@@ -80,7 +80,6 @@ class CfgPatches
 			"CGQC_units_mk1_0_HQ",
 			"CGQC_units_mk1_0_Drone_operator",
 			"CGQC_units_mk1_0_JTAC",
-			"CGQC_units_mk1_0_SquadLeader",
 			"CGQC_units_mk1_0_TeamLeader_Carbine",
 			"CGQC_units_mk1_0_TeamLeader_CQB",
 			"CGQC_units_mk1_1_Rifleman_Carbine",

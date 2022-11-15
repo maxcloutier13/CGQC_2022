@@ -192,7 +192,7 @@ class cgqc_box_mk1_fuelcan : NATO_Box_Base
 {
     scope = 2;
     vehicleClass = "Ammo";
-    displayName = "CGQC Vehicle FuelCan";
+    displayName = "CGQC Vehicle FuelCan (20L)";
     model = "\CGQC_2022\containers\cgqc_box_vic_fuel";
     maximumLoad = 0; //Can't store inventory items
 
@@ -202,7 +202,7 @@ class cgqc_box_mk1_fuelcan : NATO_Box_Base
     ace_cargo_size = 1;  // Cargo space the object takes
     ace_cargo_canLoad = 1;  // Enables the object to be loaded (1-yes, 0-no)
     ace_cargo_noRename = 0;  // Blocks renaming object (1-blocked, 0-allowed)
-    ace_refuel_fuelCargo = 100; // Fuel cargo
+    ace_refuel_fuelCargo = 20; // Fuel cargo
     ace_refuel_hooks[] = {{0.38,-3.17,-.7},{-0.41,-3.17,-.7}}; // Nozzle hooks positions
     
     ace_refuel_canReceive = 1;
@@ -228,7 +228,7 @@ class cgqc_box_mk1_ammocan :  NATO_Box_Base
         ace_cargo_hasCargo = 0;  // Enables cargo to be loaded inside the vehicle (1-yes, 0-no)
 
 
-		ace_rearm_defaultSupply = 50;
+		ace_rearm_defaultSupply = 10;
 		ace_cargo_size = 1;  // Cargo space the object takes
         ace_cargo_canLoad = 1;  // Enables the object to be loaded (1-yes, 0-no)
         ace_cargo_noRename = 0;  // Blocks renaming object (1-blocked, 0-allowed)

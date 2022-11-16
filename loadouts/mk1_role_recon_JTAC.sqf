@@ -65,6 +65,7 @@ player addItemToUniform "ACE_RangeCard";
  
 player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "Tier1_15Rnd_9x19_JHP";
+player addItemToUniform "ACE_M26_Clacker";
 for "_i" from 1 to 2 do {
 	player addItemToVest "ACE_M84";
 };
@@ -84,15 +85,11 @@ for "_i" from 1 to 2 do {
 	player addItemToBackpack "ACE_salineIV_500";
 };
 player addItemToBackpack "ACE_EntrenchingTool";
- 
 player addItemToBackpack "WBK_HeadLampItem";
 player addItemToBackpack "G_mas_can_gasmask";
 player addItemToBackpack "Rev_darter_item";
-player addItemToBackpack "ACE_SpottingScope";
 player addItemToBackpack "ACE_Tripod";
-for "_i" from 1 to 2 do {
-	player addItemToBackpack "sps_black_hornet_01_Static_F";
-};
+player addItemToBackpack "sps_black_hornet_01_Static_F";
 player addItemToBackpack "ItemcTab";
 player addItemToBackpack "ACE_Chemlight_HiRed";
 player addItemToBackpack "ACE_Chemlight_IR";
@@ -107,8 +104,12 @@ for "_i" from 1 to 3 do {
 };
 player addItemToBackpack "B_IR_Grenade";
 player addItemToBackpack "ACE_UAVBattery";
-player addItemToBackpack "ACE_UAVBattery";
+player addItemToBackpack "ACE_DefusalKit";
 player addItemToBackpack "rhsusf_m112_mag";
+player addItemToBackpack "rhsusf_m112_mag";
+for "_i" from 1 to 4 do {
+	player addItemToBackpack "rhsusf_mine_m14_mag";
+};
 player addItemToBackpack "ACRE_PRC117F";
 player addItemToBackpack "ACRE_PRC117F";
 

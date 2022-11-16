@@ -12,6 +12,8 @@ if (!isNil "_crate") then {
 
     #include "\cgqc_2022\loadouts\cgqc_loadouts_mk1_spartan_1.sqf";
     #include "\cgqc_2022\loadouts\cgqc_loadouts_mk1_spartan_2.sqf";
+    #include "\cgqc_2022\loadouts\cgqc_loadouts_mk1_spartan_3.sqf";
+    #include "\cgqc_2022\loadouts\cgqc_loadouts_mk1_spartan_4.sqf";
 
     // Recon ---------------------------------------------------------------------------------------------------------
     _action = [ "menu_mk1_recon", "Recon", "", {""}, {true} ] call ace_interact_menu_fnc_createAction;

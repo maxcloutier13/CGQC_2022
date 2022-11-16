@@ -27,6 +27,8 @@ class cgqc_box_mk1_rolebox : Box_NATO_Equip_F
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_rolebox_texture.paa",
                                   "\CGQC_2022\containers\cgqc_box_mk1_rolebox_label.paa"};
     editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\Box_NATO_Equip_F.jpg";
+    ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
+    ace_cargo_noRename = 1;
     class EventHandlers
     {
         init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1.sqf'";
@@ -139,6 +141,8 @@ class cgqc_box_original : B_supplyCrate_F
     displayName = "CGQC Originale";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_originale.paa"};
     editorPreview = "\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_supplyCrate_F.jpg";
+    ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
+    ace_cargo_noRename = 1;
     class EventHandlers
     {
         init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_original.sqf'";
@@ -169,6 +173,8 @@ class cgqc_box_original_green : B_supplyCrate_F
     _generalMacro = "cgqc_box_original_green";
     displayName = "CGQC Originale (green)";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_originale_green.paa"};
+    ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
+    ace_cargo_noRename = 1;
 };
 // Mk1 Big Arsenal
 class cgqc_box_mk1_arsenal : B_supplyCrate_F
@@ -178,6 +184,8 @@ class cgqc_box_mk1_arsenal : B_supplyCrate_F
     displayName = "CGQC MK1++ Arsenal";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_arsenal.paa"};
     editorPreview = "\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_supplyCrate_F.jpg";
+    ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
+    ace_cargo_noRename = 1;
     class EventHandlers
     {
         init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1_plus_plus.sqf'";
@@ -272,6 +280,8 @@ class cgqc_box_mk1_cargo : Land_Cargo10_military_green_F
     _generalMacro = "cgqc_box_mk1_cargo";
     displayName = "CGQC MK1 Cargo Container";
     model = "\cgqc_2022\containers\cgqc_box_cargo.p3d";
+    ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
+    ace_cargo_noRename = 1;
     class EventHandlers
     {
         init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1_cargo.sqf'";

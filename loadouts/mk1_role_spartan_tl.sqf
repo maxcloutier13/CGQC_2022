@@ -1,3 +1,4 @@
+_section = _this select 0; 
 execVM "\CGQC_2022\scripts\transition.sqf";
 //disableUserInput true;
 sleep 2;
@@ -127,8 +128,7 @@ player linkItem "JAS_GPNVG18_blk";
 //disableUserInput false;
 sleep 2;
 //Set radios
-["spartan1_1"] execVM "\cgqc\factions\stuff_player.sqf";
+["spartan_1", _section] execVM "\cgqc\factions\stuff_player.sqf"; 
 hint "Rôle: TL";
- 
 sleep 10;
 hintSilent "";

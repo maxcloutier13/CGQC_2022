@@ -1,10 +1,10 @@
+_section = _this select 0;
 execVM "\CGQC_2022\scripts\transition.sqf";
 //disableUserInput true;
 sleep 2;
-player setUnitTrait ["Medic", false];
+player setUnitTrait ["Medic", true];
 player setUnitTrait ["engineer", false];
 player setUnitTrait ["explosiveSpecialist", false];
-
 comment "Remove existing items";
 removeAllWeapons player;
 removeAllItems player;
@@ -16,24 +16,23 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add weapons";
-player addWeapon "cgqc_gun_mk1_mk18_gl";
+player addWeapon "cgqc_gun_mk1_m4a1blkII";
 player addPrimaryWeaponItem "Tier1_KAC_556_QDC_CQB_Black";
-player addPrimaryWeaponItem "Tier1_M4BII_NGAL_M600V_Black";
-player addPrimaryWeaponItem "Tier1_Eotech551_L3_Black_Up";
+player addPrimaryWeaponItem "Tier1_M4BII_NGAL_M300C_Black";
+player addPrimaryWeaponItem "Tier1_Razor_Gen2_16_Geissele_Docter";
 player addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
-player addPrimaryWeaponItem "1Rnd_HE_Grenade_shell";
+player addPrimaryWeaponItem "rhsusf_acc_grip2";
 player addWeapon "cgqc_gun_glock19_wood";
 player addHandgunItem "Tier1_15Rnd_9x19_JHP";
 player addHandgunItem "tier1_dbalpl";
 
 comment "Add containers";
 player forceAddUniform "cgqc_uniform_mk1";
-player addVest "cgqc_vest_mk1_tan";
-player addBackpack "cgqc_pack_mk1_radiobag";
+player addVest "cgqc_vest_mk1_tan_rf";
+player addBackpack "cgqc_pack_mk1_kitbag";
 
 comment "Add binoculars";
-player addMagazine "Laserbatteries";
-player addWeapon "Laserdesignator_01_khk_F";
+player addWeapon "cgqc_item_rangefinder";
 
 comment "Add items to containers";
 for "_i" from 1 to 5 do {
@@ -69,70 +68,73 @@ for "_i" from 1 to 2 do {
 	player addItemToVest "Tier1_15Rnd_9x19_JHP";
 };
 for "_i" from 1 to 2 do {
-	player addItemToVest "rhs_mag_m67";
-};
-for "_i" from 1 to 2 do {
 	player addItemToVest "ACE_M84";
 };
 for "_i" from 1 to 10 do {
 	player addItemToVest "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
 };
-for "_i" from 1 to 5 do {
-	player addItemToVest "1Rnd_HE_Grenade_shell";
+for "_i" from 1 to 2 do {
+	player addItemToVest "rhs_mag_m67";
 };
-for "_i" from 1 to 10 do {
+for "_i" from 1 to 50 do {
 	player addItemToBackpack "ACE_fieldDressing";
 };
-for "_i" from 1 to 5 do {
-	player addItemToBackpack "FF_Painkiller";
-};
-for "_i" from 1 to 2 do {
+for "_i" from 1 to 7 do {
 	player addItemToBackpack "ACE_salineIV_500";
 };
 player addItemToBackpack "ACE_EntrenchingTool";
  
 player addItemToBackpack "WBK_HeadLampItem";
 player addItemToBackpack "G_mas_can_gasmask";
+for "_i" from 1 to 4 do {
+	player addItemToBackpack "ACE_salineIV";
+};
+for "_i" from 1 to 20 do {
+	player addItemToBackpack "ACE_morphine";
+};
+for "_i" from 1 to 20 do {
+	player addItemToBackpack "ACE_epinephrine";
+};
+for "_i" from 1 to 4 do {
+	player addItemToBackpack "ACE_splint";
+};
+for "_i" from 1 to 4 do {
+	player addItemToBackpack "ACE_tourniquet";
+};
 player addItemToBackpack "ACE_Chemlight_HiRed";
 player addItemToBackpack "ACE_Chemlight_IR";
 for "_i" from 1 to 3 do {
 	player addItemToBackpack "SmokeShell";
 };
-for "_i" from 1 to 3 do {
+for "_i" from 1 to 2 do {
 	player addItemToBackpack "SmokeShellBlue";
 };
-for "_i" from 1 to 3 do {
+for "_i" from 1 to 2 do {
 	player addItemToBackpack "SmokeShellRed";
 };
+for "_i" from 1 to 3 do {
+	player addItemToBackpack "SmokeShellPurple";
+};
+for "_i" from 1 to 20 do {
+	player addItemToBackpack "FF_Painkiller";
+};
 player addItemToBackpack "B_IR_Grenade";
-for "_i" from 1 to 10 do {
-	player addItemToBackpack "1Rnd_HE_Grenade_shell";
-};
-for "_i" from 1 to 3 do {
-	player addItemToBackpack "UGL_FlareRed_F";
-};
-for "_i" from 1 to 3 do {
-	player addItemToBackpack "1Rnd_SmokeBlue_Grenade_shell";
-};
-for "_i" from 1 to 3 do {
-	player addItemToBackpack "1Rnd_Smoke_Grenade_shell";
-};
-player addItemToBackpack "sps_black_hornet_01_Static_F";
-player addItemToBackpack "ACRE_PRC117F";
-player addHeadgear "cgqc_helmet_mk1";
-player addGoggles "G_mas_can_balaM_b";
+player addItemToBackpack "rhs_mag_m67";
+player addItemToBackpack "FSGm_ItemMedicBag";
+player addHeadgear "cgqc_helmet_mk1_medic";
+player addGoggles "G_mas_can_balaM_T";
 
 comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-player linkItem "B_UavTerminal";
+player linkItem "ItemGPS";
 player linkItem "JAS_GPNVG18_blk";
 //disableUserInput false;
+
 sleep 2;
-//Set radios
-["spartan1_1"] execVM "\cgqc\factions\stuff_player.sqf";
-hint "Rôle: TL";
- 
+//Set  radios
+["spartan_2", _section] execVM "\cgqc\factions\stuff_player.sqf";
+hint "Rôle: Medic";
 sleep 10;
 hintSilent "";

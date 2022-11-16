@@ -27,6 +27,8 @@ class cgqc_box_mk1_rolebox : Box_NATO_Equip_F
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_rolebox_texture.paa",
                                   "\CGQC_2022\containers\cgqc_box_mk1_rolebox_label.paa"};
     editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\Box_NATO_Equip_F.jpg";
+    ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
+    ace_cargo_noRename = 1;
     class EventHandlers
     {
         init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1.sqf'";
@@ -139,6 +141,8 @@ class cgqc_box_original : B_supplyCrate_F
     displayName = "CGQC Originale";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_originale.paa"};
     editorPreview = "\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_supplyCrate_F.jpg";
+    ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
+    ace_cargo_noRename = 1;
     class EventHandlers
     {
         init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_original.sqf'";
@@ -169,6 +173,8 @@ class cgqc_box_original_green : B_supplyCrate_F
     _generalMacro = "cgqc_box_original_green";
     displayName = "CGQC Originale (green)";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_originale_green.paa"};
+    ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
+    ace_cargo_noRename = 1;
 };
 // Mk1 Big Arsenal
 class cgqc_box_mk1_arsenal : B_supplyCrate_F
@@ -178,6 +184,8 @@ class cgqc_box_mk1_arsenal : B_supplyCrate_F
     displayName = "CGQC MK1++ Arsenal";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_arsenal.paa"};
     editorPreview = "\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_supplyCrate_F.jpg";
+    ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
+    ace_cargo_noRename = 1;
     class EventHandlers
     {
         init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1_plus_plus.sqf'";
@@ -272,6 +280,8 @@ class cgqc_box_mk1_cargo : Land_Cargo10_military_green_F
     _generalMacro = "cgqc_box_mk1_cargo";
     displayName = "CGQC MK1 Cargo Container";
     model = "\cgqc_2022\containers\cgqc_box_cargo.p3d";
+    ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
+    ace_cargo_noRename = 1;
     class EventHandlers
     {
         init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1_cargo.sqf'";
@@ -596,120 +606,6 @@ class CGQC_units_mk1_0_Drone_operator_pack : cgqc_pack_mk1_kitbag
         {
             count = 2;
             name = "ACE_UAVBattery";
-        };
-    };
-    class TransportWeapons
-    {
-    };
-};
-class CGQC_units_mk1_0_SquadLeader_pack : cgqc_pack_mk1_radiobag
-{
-    scope = 1;
-    class TransportMagazines
-    {
-        class _xx_ACE_Chemlight_HiRed
-        {
-            count = 1;
-            magazine = "ACE_Chemlight_HiRed";
-        };
-        class _xx_ACE_Chemlight_IR
-        {
-            count = 1;
-            magazine = "ACE_Chemlight_IR";
-        };
-        class _xx_SmokeShell
-        {
-            count = 3;
-            magazine = "SmokeShell";
-        };
-        class _xx_SmokeShellBlue
-        {
-            count = 3;
-            magazine = "SmokeShellBlue";
-        };
-        class _xx_SmokeShellRed
-        {
-            count = 3;
-            magazine = "SmokeShellRed";
-        };
-        class _xx_B_IR_Grenade
-        {
-            count = 1;
-            magazine = "B_IR_Grenade";
-        };
-        class _xx_1Rnd_HE_Grenade_shell
-        {
-            count = 5;
-            magazine = "1Rnd_HE_Grenade_shell";
-        };
-        class _xx_UGL_FlareRed_F
-        {
-            count = 4;
-            magazine = "UGL_FlareRed_F";
-        };
-        class _xx_1Rnd_SmokeBlue_Grenade_shell
-        {
-            count = 4;
-            magazine = "1Rnd_SmokeBlue_Grenade_shell";
-        };
-        class _xx_1Rnd_Smoke_Grenade_shell
-        {
-            count = 4;
-            magazine = "1Rnd_Smoke_Grenade_shell";
-        };
-    };
-    class TransportItems
-    {
-
-        class _xx_WBK_HeadLampItem
-        {
-            count = 1;
-            name = "WBK_HeadLampItem";
-        };
-        class _xx_ACE_fieldDressing
-        {
-            count = 10;
-            name = "ACE_fieldDressing";
-        };
-        class _xx_FF_Painkiller
-        {
-            count = 5;
-            name = "FF_Painkiller";
-        };
-        class _xx_ACE_salineIV_500
-        {
-            count = 2;
-            name = "ACE_salineIV_500";
-        };
-        class _xx_ACE_EntrenchingTool
-        {
-            count = 1;
-            name = "ACE_EntrenchingTool";
-        };
-        class _xx_G_mas_can_gasmask
-        {
-            count = 1;
-            name = "G_mas_can_gasmask";
-        };
-        class _xx_Rev_darter_item
-        {
-            count = 1;
-            name = "Rev_darter_item";
-        };
-        class _xx_ItemcTab
-        {
-            count = 1;
-            name = "ItemcTab";
-        };
-        class _xx_ACRE_PRC117F
-        {
-            count = 1;
-            name = "ACRE_PRC117F";
-        };
-        class _xx_sps_black_hornet_01_Static_F
-        {
-            count = 1;
-            name = "sps_black_hornet_01_Static_F";
         };
     };
     class TransportWeapons

@@ -1,3 +1,4 @@
+_section = _this select 0;
 execVM "\CGQC_2022\scripts\transition.sqf";
 //disableUserInput true;
 sleep 2;
@@ -15,19 +16,20 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add weapons";
-player addWeapon "cgqc_gun_mk1_mk46";
+player addWeapon "cgqc_gun_mk1_mk18";
 player addPrimaryWeaponItem "Tier1_KAC_556_QDC_CQB_Black";
-player addPrimaryWeaponItem "Tier1_Mk46Mod1_LA5_M600V_Black";
+player addPrimaryWeaponItem "Tier1_Mk18_NGAL_M300C_Black";
 player addPrimaryWeaponItem "Tier1_EXPS3_0_3xMag_Black_Up";
-player addPrimaryWeaponItem "rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote";
-player addPrimaryWeaponItem "Tier1_SAW_Bipod_DD";
+player addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
+player addPrimaryWeaponItem "rhsusf_acc_grip2";
+player addWeapon "rhs_weap_m72a7";
 player addWeapon "cgqc_gun_glock19_wood";
 player addHandgunItem "Tier1_15Rnd_9x19_JHP";
 player addHandgunItem "tier1_dbalpl";
 
 comment "Add containers";
 player forceAddUniform "cgqc_uniform_mk1";
-player addVest "cgqc_vest_mk1_tan_ar";
+player addVest "cgqc_vest_mk1_tan_rf";
 player addBackpack "cgqc_pack_mk1_kitbag";
 
 comment "Add binoculars";
@@ -38,6 +40,7 @@ for "_i" from 1 to 5 do {
 	player addItemToUniform "FF_Painkiller";
 };
 player addItemToUniform "ACRE_PRC343";
+player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "ItemAndroid";
 player addItemToUniform "ACE_MapTools";
 player addItemToUniform "ACE_microDAGR";
@@ -68,9 +71,8 @@ for "_i" from 1 to 2 do {
 for "_i" from 1 to 2 do {
 	player addItemToVest "ACE_M84";
 };
-player addItemToVest "rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote";
-for "_i" from 1 to 2 do {
-	player addItemToVest "rhs_mag_m67";
+for "_i" from 1 to 12 do {
+	player addItemToVest "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
 };
 for "_i" from 1 to 10 do {
 	player addItemToBackpack "ACE_fieldDressing";
@@ -96,11 +98,10 @@ for "_i" from 1 to 3 do {
 for "_i" from 1 to 3 do {
 	player addItemToBackpack "SmokeShellRed";
 };
-player addItemToBackpack "B_IR_Grenade";
- 
 for "_i" from 1 to 4 do {
-	player addItemToBackpack "rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote";
+	player addItemToBackpack "rhs_mag_m67";
 };
+player addItemToBackpack "B_IR_Grenade";
 player addHeadgear "cgqc_helmet_mk1";
 player addGoggles "G_mas_can_balaM_T";
 
@@ -114,8 +115,7 @@ player linkItem "JAS_GPNVG18_blk";
 
 sleep 2;
 //Set  radios
-[""] execVM "\cgqc\factions\stuff_player.sqf";
-hint "Rôle: LMG";
- 
+["spartan", _section] execVM "\cgqc\factions\stuff_player.sqf";
+hint "Rôle: Rifleman";
 sleep 10;
 hintSilent "";

@@ -458,6 +458,23 @@ class cgqc_vic_quad_ext : NDS_6x6_ATV_MIL_LR
     displayName = "CGQC - 6x6 ATV (1)";
     crew = "CGQC_units_mk1_1_Rifleman_Carbine";
     maximumLoad = 3500;
+    terrainCoef = 1.2;
+    brakeDistance = 3.0;
+	acceleration = 15;
+    enableGPS = 1;
+	hasTerminal = 1;
+	camouflage = 3;
+    maxSpeed = 90;
+    wheelCircumference = 2.073;
+    antiRollbarForceCoef = 0.2;
+    antiRollbarForceLimit = 0.3;
+    antiRollbarSpeedMin = 10;
+    antiRollbarSpeedMax = 60;
+    idleRpm = 500;
+    redRpm = 8900;
+    enginePower = 70;
+    maxOmega = 360;
+    peakTorque = 175;
     class AcreRacks {
         class Rack_1 {
             displayName = "Dash Upper"; // Name is displayed in the interaction menu.

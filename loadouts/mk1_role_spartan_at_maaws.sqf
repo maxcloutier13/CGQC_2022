@@ -19,7 +19,7 @@ comment "Add weapons";
 player addWeapon "cgqc_gun_mk1_mk18";
 player addPrimaryWeaponItem "Tier1_KAC_556_QDC_CQB_Black";
 player addPrimaryWeaponItem "Tier1_Mk18_NGAL_M300C_Black";
-player addPrimaryWeaponItem "tier1_atacr18_geissele_docker_black";
+player addPrimaryWeaponItem "tier1_atacr18_geissele_docter_black";
 player addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
 player addPrimaryWeaponItem "rhsusf_acc_grip2";
 player addWeapon "cgqc_gun_mk1_MAAWS";

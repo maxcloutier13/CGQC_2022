@@ -165,6 +165,33 @@ class Heli_Attack_01_base_F : Helicopter_Base_F
     };
     class Sounds;
 };
+// Modifications to existing vehicles
+// Drones - Attempt to override fuel capacity
+class UAV_01_base_F : Helicopter_Base_F // Darter
+{
+    fuelCapacity = 400;
+    class Turrets{
+        class MainTurret;
+    };
+};
+class UAV_06_base_F : Helicopter_Base_F // Pelican
+{
+    fuelCapacity = 1000;
+};
+class UAV_03_base_F : Helicopter_Base_F // Falcon
+{
+    fuelCapacity = 400;
+};
+class UAV_02_base_F : UAV // Yabhon
+{
+    fuelCapacity = 2000;
+};
+class UAV_05_Base_F : UAV // Sentinel
+{
+    fuelCapacity = 2000;
+};
+
+
 // Helicopters definitions
 //#include "vehicles\cfg_littlebird.cpp"
 #include "vehicles\cfg_huey.cpp"
@@ -211,7 +238,16 @@ class cgqc_plane_c130 : RHS_C130J
     */
 };
 // Drones CGQC versions
-class B_UAV_01_F;
+class B_UAV_01_F : UAV_01_base_F{
+    class Turrets : Turrets
+    {
+        class MainTurret : MainTurret
+        {
+            class OpticsIn;
+        };
+    };
+    class sounds;
+};
 class cgqc_drone_darter : B_UAV_01_F
 {
     scope = 2;
@@ -254,6 +290,86 @@ class cgqc_drone_darter : B_UAV_01_F
         dissasembleTo[] = {"B_UAV_01_backpack_F"};
     };
     hiddenSelectionsTextures[] = {"\CGQC_2022\vehicles\cgqc_drone_darter_dark.paa"};
+    class Turrets: Turrets {
+        class MainTurret: MainTurret {
+            class OpticsIn {
+                class Wide {
+                    opticsDisplayName = "W";
+                    initAngleX = 0;
+                    minAngleX = -30;
+                    maxAngleX = 30;
+                    initAngleY = 0;
+                    minAngleY = -100;
+                    maxAngleY = 100;
+                    initFov = 0.456;
+                    minFov = 0.021875;
+                    maxFov = 2.0;
+                    directionStabilized = 1;
+                    visionMode[] = {"Normal","NVG","Ti"};
+                    thermalMode[] = {0,1};
+                    gunnerOpticsModel = "A3\drones_f\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+                };
+            };
+            /*
+            class OpticsOut{
+                class Monocular{
+                    initAngleX = 0;
+                    minAngleX = -30;
+                    maxAngleX = 30;
+                    initAngleY = 0;
+                    minAngleY = -100;
+                    maxAngleY = 100;
+                    initFov = 1.1;
+                    minFov = 0.05;
+                    maxFov = 1.1;
+                    visionMode[] = {"Normal","NVG","Ti"};
+                    thermalMode[] = {0,1};
+                    gunnerOpticsEffect[] = {};
+                };
+            };*/
+        };
+    };
+    class Sounds
+    {
+        class Engine
+        {
+            sound[] = {"A3\Sounds_F\air\Uav_01\quad_engine_full_01",0.4466836,1.0,200};
+            frequency = "rotorSpeed";
+            volume = "(camPos*((rotorSpeed-0.72)*4))";
+        };
+        class RotorLowOut
+        {
+            sound[] = {"A3\Sounds_F\air\Uav_01\blade",0.31622776,1.0,200};
+            frequency = "rotorSpeed";
+            volume = "(camPos*(0 max (rotorSpeed-0.1)))";
+            cone[] = {1.6,3.14,1.6,0.95};
+        };
+        class RotorHighOut
+        {
+            sound[] = {"A3\Sounds_F\air\Uav_01\blade_high",0.31622776,1.0,250};
+            frequency = "rotorSpeed";
+            volume = "(camPos*10*(0 max (rotorThrust-0.9)))";
+            cone[] = {1.6,3.14,1.6,0.95};
+        };
+        class EngineIn
+        {
+            sound[] = {"A3\Sounds_F\air\Uav_01\quad_engine_full_int",0.56234133,1.0};
+            frequency = "rotorSpeed";
+            volume = "((1-camPos)*((rotorSpeed-0.75)*4))/100";
+        };
+        class RotorLowIn
+        {
+            sound[] = {"A3\Sounds_F\air\Uav_01\blade_int",0.56234133,1.0};
+            frequency = "rotorSpeed";
+            volume = "((1-camPos)*(0 max (rotorSpeed-0.1)))/100";
+        };
+        class RotorHighIn
+        {
+            sound[] = {"A3\Sounds_F\air\Uav_01\blade_high_int",0.56234133,1.0};
+            frequency = "rotorSpeed";
+            volume = "((1-camPos)*3*(rotorThrust-0.9))/100";
+        };
+    };
 };
 // Land vehicles
 class B_W_APC_Wheeled_01_cannon_F;
@@ -529,28 +645,6 @@ class cgqc_vic_suv : UK3CB_AAF_B_SUV_Armoured
         };
     };
     #include "vehicles\cgqc_vic_loadout_ifv.cpp"
-};
-// Modifications to existing vehicles
-// Drones - Attempt to override fuel capacity
-class UAV_01_base_F : Helicopter_Base_F // Darter
-{
-    fuelCapacity = 400;
-};
-class UAV_06_base_F : Helicopter_Base_F // Pelican
-{
-    fuelCapacity = 1000;
-};
-class UAV_03_base_F : Helicopter_Base_F // Falcon
-{
-    fuelCapacity = 400;
-};
-class UAV_02_base_F : UAV // Yabhon
-{
-    fuelCapacity = 2000;
-};
-class UAV_05_Base_F : UAV // Sentinel
-{
-    fuelCapacity = 2000;
 };
 // Helipad
 class Land_HelipadSquare_F;

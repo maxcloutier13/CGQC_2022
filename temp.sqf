@@ -530,5 +530,37 @@ _this addAction ["Oldies", "cgqc_2022\scripts\change_music.sqf", [2]];
 "H_mas_can_opscorn_gog",
 
 
+cgqc_event_CAS = this addEventHandler ["GetInMan", {  
+	params ["_unit", "_role", "_vehicle", "_turret"]; 
+	execVM "scripts\set_unlimited.sqf";  
+}];
 
 
+
+
+this addEventHandler [
+	"GetIn", {
+	params ["_vehicle", "_role", "_unit", "_turret"];
+	[_vehicle] execVM "scripts\set_unlimited.sqf";
+}
+];
+
+this addEventHandler [
+	"GetIn", 
+	{params ["_vehicle", "_role", "_unit", "_turret"];
+	}
+];
+
+_this  addEventHandler [ 
+ "GetIn", {  
+  [] spawn { 
+   while {true} do { 
+    _this  setVehicleAmmo 1; 
+    _this  setFuel 1;
+	hint format ["Re:%1", _this]; 
+	sleep 5;
+	hintSilent "";
+   }; 
+  }; 
+ } 
+]; 

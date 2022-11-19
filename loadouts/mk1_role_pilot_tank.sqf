@@ -1,5 +1,5 @@
 execVM "\CGQC_2022\scripts\transition.sqf";
-//disableUserInput true;
+disableUserInput true;
 sleep 2;
 player setUnitTrait ["Medic", false];
 player setUnitTrait ["engineer", true];
@@ -116,7 +116,7 @@ player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "B_UavTerminal";
 
-//disableUserInput false;
+disableUserInput false;
 sleep 2;
 // Set  radios
 ["centaure_pieton"] execVM "\cgqc\factions\stuff_player.sqf";

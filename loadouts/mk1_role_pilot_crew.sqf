@@ -1,5 +1,5 @@
 execVM "\CGQC_2022\scripts\transition.sqf";
-//disableUserInput true;
+disableUserInput true;
 sleep 2;
 player setUnitTrait ["Medic", false];
 player setUnitTrait ["engineer", true];
@@ -89,7 +89,7 @@ player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemGPS";
 player linkItem "JAS_GPNVG18_Full_blk_TI";
-//disableUserInput false;
+disableUserInput false;
 
 sleep 2;
 //Set  radios

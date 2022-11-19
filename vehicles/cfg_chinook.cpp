@@ -154,7 +154,7 @@ class cgqc_heli_ch47_base : Heli_Transport_02_base_F
     visualTarget = 1;
     visualTargetSize = 1.3;
     radarTarget = 1;
-    radarTargetSize = 1.12;
+    radarTargetSize = 1;
     radarType = 4;
     LockDetectionSystem = "8";
     incomingMissileDetectionSystem = "2 + 8 + 16";

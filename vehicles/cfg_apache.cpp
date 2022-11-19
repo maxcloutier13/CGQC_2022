@@ -41,7 +41,7 @@ class cgqc_heli_AH64_base : Heli_Attack_01_base_F
     visualTarget = 1;
     visualTargetSize = 0.9;
     radarTarget = 1;
-    radarTargetSize = 1;
+    radarTargetSize = 0.7;
     radarType = 4;
     LockDetectionSystem = 12;
     incomingMissileDetectionSystem = 26;

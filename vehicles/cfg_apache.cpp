@@ -112,18 +112,19 @@ class cgqc_heli_AH64_base : Heli_Attack_01_base_F
                 minAngleY = -100;
                 maxAngleY = 100;
                 initFov = 0.456;
-                minFov = 0.456;
-                maxFov = 0.456;
+                minFov = 0.021875;
+                maxFov = 1.2;
                 visionMode[] = {"Ti"};
                 thermalMode[] = {0, 1};
                 gunnerOpticsModel = "\rhsusf\addons\rhsusf_a2port_air\ah64\gunnerOptics_ah64";
             };
+            /*
             class Medium : Wide
             {
                 opticsDisplayName = "M - Stabilized";
-                initFov = 0.093;
-                minFov = 0.093;
-                maxFov = 0.093;
+                initFov = 0.456;
+                minFov = 0.021875;
+                maxFov = 1.2;
                 gunnerOpticsModel = "\rhsusf\addons\rhsusf_a2port_air\ah64\gunnerOptics_ah64_2";
             };
             class Narrow : Medium
@@ -134,6 +135,7 @@ class cgqc_heli_AH64_base : Heli_Attack_01_base_F
                 minFov = 0.029;
                 maxFov = 0.029;
             };
+            */
         };
         minTurn = -90;
         maxTurn = 90;
@@ -19650,8 +19652,8 @@ class cgqc_heli_AH64D : cgqc_heli_AH64_base
     laserScanner = 1;
     MainRotorSpeed = -1;
     backRotorSpeed = 3;
-    weapons[] = {"rhs_weap_mastersafe", "rhsusf_weap_ANALQ144"};
-    magazines[] = {"rhsusf_mag_DIRCM", "rhsusf_mag_DIRCM", "rhsusf_mag_DIRCM", "rhsusf_mag_DIRCM", "rhsusf_mag_DIRCM", "rhsusf_mag_DIRCM", "rhsusf_mag_DIRCM", "rhsusf_mag_DIRCM", "rhsusf_mag_DIRCM", "rhsusf_mag_DIRCM"};
+    weapons[] = {"rhs_weap_mastersafe", "rhs_weap_laserDesignator_AI", "rhsusf_weap_ANALQ144"};
+    magazines[] = {"rhsusf_mag_DIRCM", "rhsusf_mag_DIRCM", "rhsusf_mag_DIRCM", "rhsusf_mag_DIRCM", "rhsusf_mag_DIRCM", "rhsusf_mag_DIRCM", "rhsusf_mag_DIRCM", "rhsusf_mag_DIRCM", "rhsusf_mag_DIRCM", "rhsusf_mag_DIRCM", "rhs_laserfcsmag","rhs_LaserMag_ai"};
     availableForSupportTypes[] = {"CAS_Heli"};
     picture = "\rhsusf\addons\rhsusf_a2port_air\data\ico\rhs_ah64d_pic_ca.paa";
     icon = "\rhsusf\addons\rhsusf_a2port_air\data\mapico\Icon_ah64d_CA.paa";
@@ -20026,7 +20028,7 @@ class cgqc_heli_AH64D : cgqc_heli_AH64_base
                 {
                     UIposition[] = {0.562, 0.45};
                     priority = 1;
-                    attachment = "rhs_mag_AGM114K_4";
+                    attachment = "rhs_mag_AGM114L_4";
                     turret[] = {0};
                     hitpoint = "HitPylon3";
                 };
@@ -20034,7 +20036,7 @@ class cgqc_heli_AH64D : cgqc_heli_AH64_base
                 {
                     UIposition[] = {0.103, 0.45};
                     mirroredMissilePos = 3;
-                    attachment = "rhs_mag_AGM114K_4";
+                    attachment = "rhs_mag_AGM114L_4";
                     turret[] = {0};
                     hitpoint = "HitPylon4";
                 };
@@ -20064,7 +20066,7 @@ class cgqc_heli_AH64D : cgqc_heli_AH64_base
             {
                 class AUDI
                 {
-                    attachment[] = {"rhs_mag_ATAS_AH64_2", "rhs_mag_M229_19", "rhs_mag_AGM114K_4", "rhs_mag_AGM114K_4", "rhs_mag_M229_19", "rhs_mag_ATAS_AH64_2", "rhsusf_M130_CMFlare_Chaff_Magazine_x2"};
+                    attachment[] = {"rhs_mag_ATAS_AH64_2", "rhs_mag_M229_19", "rhs_mag_AGM114L_4", "rhs_mag_AGM114L_4", "rhs_mag_M229_19", "rhs_mag_ATAS_AH64_2", "rhsusf_M130_CMFlare_Chaff_Magazine_x2"};
                      displayname = "Spécial Audi";
                 };  
                 class MR
@@ -39059,11 +39061,12 @@ class cgqc_heli_AH64D : cgqc_heli_AH64_base
                 {
                     directionStabilized = 1;
                     opticsDisplayName = "M - Stabilized";
-                    initFov = 0.0583333;
-                    minFov = 0.0583333;
-                    maxFov = 0.0583333;
+                    initFov = 0.456;
+                    minFov = 0.021875;
+                    maxFov = 1.2;
                     gunnerOpticsModel = "\rhsusf\addons\rhsusf_a2port_air\ah64\gunnerOptics_ah64_2";
                 };
+                /*
                 class Narrow : Medium
                 {
                     opticsDisplayName = "N - Stabilized";
@@ -39071,7 +39074,7 @@ class cgqc_heli_AH64D : cgqc_heli_AH64_base
                     initFov = 0.021875;
                     minFov = 0.021875;
                     maxFov = 0.021875;
-                };
+                };*/
             };
             class OpticsOut
             {

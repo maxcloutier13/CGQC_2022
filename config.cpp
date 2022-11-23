@@ -111,6 +111,7 @@ class CfgPatches
 			"cgqc_vic_quad_ext",
 			"cgqc_refuel_h",
 			"cgqc_refuel_h_short",
+			"cgqc_projector",
 			"cgqc_whiteboard_radios",
 			"cgqc_vic_quad_ext_mortarmk6"};
 		weapons[] = {

@@ -23,7 +23,9 @@ do
 
 // Rearming 
 private _playerVic = vehicle player;
+
 if (_playerVic isKindOf "Helicopter" or _playerVic isKindOf "Plane") then {
+	waitUntil{isTouchingGround _playerVic};
 	if(_skip ==0) then {_playerVic engineOn false;};
 	_playerVic setFuel 0;
 	titleText ["<t size='5' shadow='1' shadowOffset='0.05' color='#ff0000'>Maintenance</t>", "PLAIN", 0, true, true];

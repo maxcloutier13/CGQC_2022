@@ -666,3 +666,55 @@ class cgqc_whiteboard_radios : Land_MapBoard_F
     displayName = "Whiteboard - Radios";
     hiddenSelectionsTextures[] = {"\CGQC_2022\textures\whiteboard_radio.paa"};
 };
+// Projector
+class Misc_Videoprojektor;
+class cgqc_projector : Misc_Videoprojektor
+{
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "CGQC - Projecteur";
+    class AnimationSources
+    {
+        class Light_1_pitch_source
+        {
+            source = "user";
+            initPhase = 0;
+            animPeriod = "1/45";
+        };
+        class Light_1_jaw_source
+        {
+            source = "user";
+            initPhase = 0.13;
+            animPeriod = 2;
+        };
+    };
+    class Reflectors
+    {
+        class Light_1
+        {
+            color[] = {1000,1000,1200};
+            ambient[] = {10,10,12};
+            intensity = 5;
+            size = 1;
+            innerAngle = 30;
+            outerAngle = 60;
+            coneFadeCoef = 6;
+            position = "Light_1_pos";
+            direction = "Light_1_dir";
+            hitpoint = "Light_1_hitpoint";
+            selection = "Light_1_hide";
+            useFlare = 1;
+            flareSize = 0.9;
+            flareMaxDistance = 250;
+            class Attenuation
+            {
+                start = 0;
+                constant = 0;
+                linear = 2;
+                quadratic = 0.5;
+                hardLimitStart = 50;
+                hardLimitEnd = 70;
+            };
+        };
+    };
+};

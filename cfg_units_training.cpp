@@ -1,5 +1,4 @@
 class B_Soldier_f;
-class B_AssaultPack_rgr;
 // 0 - Default soldier and instructor -------------------------------------------------------------------------------------------------------------
 class cgqc_soldat_moderne : B_Soldier_f
 {

@@ -27,39 +27,13 @@ removeUniform player;
 removeVest player;
 removeBackpack player;
 
-/*
-hintSilent format ["Pack:%1", _backpack_old];
-sleep 5;
-
-//Catch initial custom backpacks and switch for generic 
-if ((_backpack_old find["CGQC_units_", 0]) > 0) then {
-	hintSilent "Custom backpack found";
-	sleep 5;
-	if ((_backpack_old find["_JTAC_", 0]) > 0) then {
-		_backpack_old = "cgqc_pack_mk1_radiobag";
-		hintSilent "JTAC BAG found! Fixing";
-		sleep 5;
-	} else 
-	{
-		_backpack_old = "cgqc_pack_mk1_kitbag";
-		hintSilent "Kitbag found! Fixing";
-		sleep 5;
-	};
-}
-else{
-	hintSilent "Normal backpack found";
-	sleep 5;
-};
-*/
 // Backpack type first
 _backpack_new = "cgqc_pack_mk1";
 // Check backpack variant 
-if ((_backpack_old find["radiobag", 0]) > 0) then {
-	_backpack_new = _backpack_new + "_" + "radiobag";
-} else 
-{
-	_backpack_new = _backpack_new + "_"  + "kitbag";
-};
+if ((_backpack_old find["radiobag", 0]) > 0) then {_backpack_new = _backpack_new + "_radiobag";};
+if ((_backpack_old find["assault", 0]) > 0) then {_backpack_new = _backpack_new + "_assault";};
+if ((_backpack_old find["carryall", 0]) > 0) then {	_backpack_new = _backpack_new + "_carryall";};
+if ((_backpack_old find["kitbag", 0]) > 0) then {	_backpack_new = _backpack_new + "_kitbag";};
 
 // Sets base names 
 if (_camo == "tan") then {
@@ -87,8 +61,6 @@ if ((_vest_old find["_lr", 0]) > 0) then {
 if ((_vest_old find["_rf", 0]) > 0) then {
 	_vest_new = _vest_new + "_rf";
 };
-//hintSilent format ["Helm:%1/Unif:%2/Vest:%3/Pack:%4", _helmet_new, _uniform_new, _vest_new, _backpack_new];
-//sleep 5;
 
 // ------- Add stuff ----------------------------------------------------------------------------
 // Add selected uniform

@@ -1,4 +1,4 @@
-// Spartan-1 ---------------------------------------------------------------------------------------------------------
+// Spartan-4 ---------------------------------------------------------------------------------------------------------
 _action = [ "menu_mk1_s4", "Spartan-4", "", {""}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk1"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 

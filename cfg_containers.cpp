@@ -553,8 +553,6 @@ class cgqc_pack_mk1_carryall_white : B_Carryall_oucamo // White
     mass = 60;
     displayName = "CGQC Carryall White";
 };
-
-
 // mk1 Backpacks --------------------------------------------------------------------------------------
 class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_radiobag
 {
@@ -2030,4 +2028,25 @@ class CGQC_units_mk1_4_crew_heli_pack : B_Parachute
     class TransportWeapons
     {
     };
+};
+
+// ------ MK II -----------------------------------------------------------------------------------------
+// Mk2 Arsenal
+class cgqc_box_mk2_arsenal : B_supplyCrate_F
+{
+    author = "silent1";
+    _generalMacro = "cgqc_box_mk2_arsenal";
+    displayName = "CGQC MK2 Arsenal";
+    hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk1_arsenal.paa"};
+    editorPreview = "\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_supplyCrate_F.jpg";
+    ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
+    ace_cargo_noRename = 1;
+    class EventHandlers
+    {
+        init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk2.sqf'";
+    };
+    class TransportMagazines{};
+    class TransportWeapons{};
+    class TransportItems{};
+    class TransportBackpacks{};
 };

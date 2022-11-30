@@ -41,9 +41,8 @@ if (!isNil "_crate") then {
     _action = [ "menu_mk1_inf_medic", "Jet pilot ", "", {execVM "\CGQC_2022\loadouts\mk1_role_pilot_jet.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk1", "menu_mk1_pilots"], _action ] call  ace_interact_menu_fnc_addActionToObject;
     // Tank driver
-    _action = [ "menu_mk1_driver", "Tank driver", "", {execVM "\CGQC_2022\loadouts\mk1_role_pilot_tank.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk1_driver", "Tank driver", "", {[1] execVM "\CGQC_2022\loadouts\mk1_role_pilot_tank.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk1", "menu_mk1_pilots"], _action ] call  ace_interact_menu_fnc_addActionToObject;
-
     // HQ 
     _action = [ "menu_mk1_inf_hq", "HQ", "", {execVM "\CGQC_2022\loadouts\mk1_role_hq.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk1"], _action ] call  ace_interact_menu_fnc_addActionToObject;

@@ -38,6 +38,7 @@ class CfgPatches
 			"cgqc_box_mk1_mortar",
 			"cgqc_box_mk1_mortar_mk6",
 			"cgqc_box_mk1_arsenal",
+			"cgqc_box_mk2_arsenal",
 			"cgqc_box_mk1_fuelcan",
 			"cgqc_box_mk1_ammocan",
 			"cgqc_box_mk1_cargo",

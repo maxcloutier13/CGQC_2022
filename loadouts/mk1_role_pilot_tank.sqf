@@ -1,8 +1,20 @@
+_type = _this select 0;
+
+switch (_type)
+do
+{
+	case 0:	{ // Crew
+		player setUnitTrait ["engineer", false];
+	};
+	case 1:	{ // Commander
+		player setUnitTrait ["engineer", true];
+	};
+};
 execVM "\CGQC_2022\scripts\transition.sqf";
 disableUserInput true;
 sleep 2;
+// Remove traits
 player setUnitTrait ["Medic", false];
-player setUnitTrait ["engineer", true];
 player setUnitTrait ["explosiveSpecialist", false];
 comment "Remove existing items";
 removeAllWeapons player;

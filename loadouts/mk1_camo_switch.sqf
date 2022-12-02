@@ -30,8 +30,9 @@ removeBackpack player;
 // Backpack type first
 _backpack_new = "cgqc_pack_mk1";
 // Check backpack variant 
+_backpack_old = toLower _backpack_old;
 if ((_backpack_old find["radiobag", 0]) > 0) then {_backpack_new = _backpack_new + "_radiobag";};
-if ((_backpack_old find["assault", 0]) > 0) then {_backpack_new = _backpack_new + "_assault";};
+if ((_backpack_old find["assault", 0]) > 0) then {_backpack_new = _backpack_new + "_assault";}; 
 if ((_backpack_old find["carryall", 0]) > 0) then {	_backpack_new = _backpack_new + "_carryall";};
 if ((_backpack_old find["kitbag", 0]) > 0) then {	_backpack_new = _backpack_new + "_kitbag";};
 

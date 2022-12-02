@@ -1,4 +1,4 @@
-if (cgqc_setting_skip_transition) then {
+if (cgqc_setting_show_transition) then {
     // Fade to black  
     cutText ["", "BLACK FADED", 999];
     titleText ["", "PLAIN"];

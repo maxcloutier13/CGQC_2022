@@ -10,6 +10,7 @@ do
 		player setUnitTrait ["engineer", true];
 	};
 };
+waitUntil {!isNull (findDisplay 46)};
 execVM "\CGQC_2022\scripts\transition.sqf";
 disableUserInput true;
 sleep 2;

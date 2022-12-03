@@ -56,6 +56,7 @@ class CfgPatches
 			"CGQC_units_mk1_3_AT_MAAWS_pack",
 			"CGQC_units_mk1_3_AT_Javelin_pack",
 			"CGQC_units_mk1_4_Tank_Driver_pack",
+			"CGQC_units_mk1_4_Tank_Crew",
 			"CGQC_units_mk1_4_Pilot_heli_pack",
 			"CGQC_units_mk1_4_Pilot_Jet_pack",
 			"CGQC_units_mk1_4_crew_heli_pack",

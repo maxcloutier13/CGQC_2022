@@ -1,4 +1,5 @@
 _section = _this select 0;
+waitUntil {!isNull (findDisplay 46)};
 execVM "\CGQC_2022\scripts\transition.sqf";
 disableUserInput true;
 sleep 2;

@@ -1,4 +1,5 @@
 _section = _this select 0;
+waitUntil {!isNull (findDisplay 46)};
 execVM "\CGQC_2022\scripts\transition.sqf";
 disableUserInput true;
 sleep 2;
@@ -27,7 +28,7 @@ player addWeapon "ACE_VMM3";
 comment "Add containers";
 player forceAddUniform "cgqc_uniform_mk1";
 player addVest "cgqc_vest_mk1_tan_ar";
-player addBackpack "cgqc_pack_mk1_kitbag";
+player addBackpack "cgqc_pack_mk1_carryall";
 
 comment "Add binoculars";
 player addWeapon "cgqc_item_rangefinder";

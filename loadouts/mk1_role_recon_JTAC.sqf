@@ -1,4 +1,4 @@
-waitUntil {!isNull (findDisplay 46)};
+waitUntil {!isNull (findDisplay 46)}; 
 execVM "\CGQC_2022\scripts\transition.sqf";
 disableUserInput true;
 sleep 2;
@@ -8,7 +8,7 @@ player setUnitTrait ["explosiveSpecialist", false];
 execVM "\cgqc_2022\scripts\mk1_action_ghillie_menu.sqf";
 comment "Remove existing items";
 removeAllWeapons player;
-removeAllItems player;
+removeAllIaddVesttems player;
 removeAllAssignedItems player;
 removeUniform player;
 removeVest player;
@@ -17,7 +17,7 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add weapons";
-player addWeapon "cgqc_gun_mk1_jtac_mk12";
+player addWeapon "cgqc_gun_mk1_jtac_mk12"; 
 player addPrimaryWeaponItem "Tier1_KAC_556_QDC_CQB_Black";
 player addPrimaryWeaponItem "Tier1_M4BII_NGAL_M600V_Black";
 player addPrimaryWeaponItem "NForce_Atcr_RMR_Top_SKeetIR_Down";

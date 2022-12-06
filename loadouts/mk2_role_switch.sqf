@@ -14,12 +14,13 @@ sleep 2;
 
 // ===== Remove items ======================================================
 #include "\cgqc_2022\loadouts\mk2\remove_all.sqf"
+sleep 1;
 
 switch (_type)
 do
 {
     // Command ========================================================================
-	case "hq":{
+	case "hq":{ 
         _perks = "hq";
         _uniform = "command";
         _loadout = "hq";
@@ -62,19 +63,19 @@ do
         _radios = "pilot";
         cgqc_mk2_role = "Jet Pilot";
     };
-    case "tank_pilot":{
-        _perks = "tank_pilot";
-        _uniform = "tank_pilot";
+    case "tank_driver":{
+        _perks = "tank_driver";
+        _uniform = "tank_driver";
         _loadout = "tank";
         _radios = "pilot";
-        cgqc_mk2_role = "Helicopter Pilot";
+        cgqc_mk2_role = "Tank Driver";
     };
     case "tank_crew":{
         _perks = "tank_crew";
-        _uniform = "tank_pilot";
+        _uniform = "tank_driver";
         _loadout = "tank";
         _radios = "pilot";
-        cgqc_mk2_role = "Helicopter Pilot";
+        cgqc_mk2_role = "Tank Crew";
     };
     // Recon ==========================================================================
     case "drone":{
@@ -116,14 +117,14 @@ do
     // AT ==========================================================================
     case "at_jav":{
         _perks = "at";
-        _uniform = "inf_medium";
+        _uniform = "inf_heavy";
         _loadout = "at_jav";
         _radios = "inf";
         cgqc_mk2_role = "Anti-Tank (Javelin)";
     };
     case "at_maaws":{
         _perks = "at";
-        _uniform = "inf_medium";
+        _uniform = "inf_heavy";
         _loadout = "at_maaws";
         _radios = "inf";
         cgqc_mk2_role = "Anti-Tank (MAAWS)";
@@ -186,16 +187,23 @@ do
         hintSilent "";
 	};
 };
+
 // Perks and traits setup 
+sleep 0.5;
 [_perks] execVM "\CGQC_2022\loadouts\mk2_role_switch_perks.sqf";
 // Add Uniform
+sleep 0.5;
 [_uniform] execVM "\CGQC_2022\loadouts\mk2_role_switch_uniform.sqf";
 // Add Uniform
+sleep 0.5;
 [_loadout] execVM "\CGQC_2022\loadouts\mk2_role_switch_loadout.sqf";
 hint format["Rôle:%1", cgqc_mk2_role];
 sleep 3;
 hintSilent "";
 // Set radios 
 [_radios, _section] execVM "\cgqc_2022\loadouts\mk2_role_switch_radios.sqf";
+
+// Lower gun 
+player action ['SwitchWeapon', player, player, 100];
 // Give control back
 disableUserInput false;

@@ -6,7 +6,7 @@ for "_i" from 1 to 50 do {
 for "_i" from 1 to 5 do {
 	player addItemToBackpack "ACE_salineIV";
 };
-for "_i" from 1 to 5 do {
+for "_i" from 1 to 3 do {
 	player addItemToBackpack "ACE_salineIV_500";
 };
 for "_i" from 1 to 10 do {

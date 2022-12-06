@@ -65,13 +65,13 @@ do
         // === Radios 
         #include "\cgqc_2022\loadouts\mk2\radios_pilot.sqf"
         // === Items 
-        #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
+        #include "\cgqc_2022\loadouts\mk2\items_minimal.sqf"
 	};
     case "tank":{ //=============================================================================================
         // === Weapons
         #include "\cgqc_2022\loadouts\mk2\gun_p90.sqf"
         // === Vest
-        #include "\cgqc_2022\loadouts\mk2\vest_pilot.sqf"
+        #include "\cgqc_2022\loadouts\mk2\vest_driver.sqf"
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_driver.sqf"
         // === Radios 
@@ -225,9 +225,9 @@ do
         // === Weapons
         #include "\cgqc_2022\loadouts\mk2\gun_m4_dotplus.sqf"
         // === Vest
-        #include "\cgqc_2022\loadouts\mk2\vest_infantry.sqf"
+        #include "\cgqc_2022\loadouts\mk2\vest_rifleman.sqf"
         // === Backpack 
-        #include "\cgqc_2022\loadouts\mk2\backpack_mortar.sqf"
+        #include "\cgqc_2022\loadouts\mk2\backpack_rifleman.sqf"
         // === Radios 
         #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
@@ -237,9 +237,9 @@ do
         // === Weapons
         #include "\cgqc_2022\loadouts\mk2\gun_m4_dotplus.sqf"
         // === Vest
-        #include "\cgqc_2022\loadouts\mk2\vest_infantry.sqf"
+        #include "\cgqc_2022\loadouts\mk2\vest_rifleman.sqf"
         // === Backpack 
-        #include "\cgqc_2022\loadouts\mk2\backpack_mortar.sqf"
+        #include "\cgqc_2022\loadouts\mk2\backpack_rifleman.sqf"
         // === Radios 
         #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 

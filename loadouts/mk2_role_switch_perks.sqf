@@ -22,7 +22,7 @@ do
 	};
 	case "jet_pilot":{
 	};
-	case "tank_pilot":{
+	case "tank_driver":{
 	};
 	case "tank_crew":{
 	};

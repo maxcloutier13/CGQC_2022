@@ -553,6 +553,22 @@ class cgqc_pack_mk1_carryall_white : B_Carryall_oucamo // White
     mass = 60;
     displayName = "CGQC Carryall White";
 };
+// Invisible backpack ---------------------------------------------------------------------------------
+class cgqc_pack_mk1_tank_driver : cgqc_pack_mk1_magic
+{
+    scope = 1;
+    class TransportMagazines
+    {
+    };
+    class TransportItems
+    {
+  
+    };
+    class TransportWeapons
+    {
+    };
+};
+
 // mk1 Backpacks --------------------------------------------------------------------------------------
 class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_radiobag
 {

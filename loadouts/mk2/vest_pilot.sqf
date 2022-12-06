@@ -2,7 +2,7 @@
 if (cgqc_setting_limitMags) then {
     _maxmags = cgqc_setting_limitMags_max / 2;
 } else{
-    _maxmags = 4; //If the maximum is not imposed, use 8 as default
+    _maxmags = 4; //If the maximum is not imposed, use 4 as default
 };
 for "_i" from 1 to _maxmags do {
 	player addItemToVest "50Rnd_570x28_SMG_03";

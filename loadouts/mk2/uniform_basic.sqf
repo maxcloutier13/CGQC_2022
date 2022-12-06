@@ -1,5 +1,4 @@
 // Basic uniform loadout
-
 // === Essentials ================================
 player addItemToUniform "ACE_EarPlugs";
 player addItemToUniform "ItemAndroid";

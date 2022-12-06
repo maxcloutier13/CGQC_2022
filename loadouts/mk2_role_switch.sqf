@@ -1,4 +1,5 @@
 _type = _this select 0;
+_section = _this select 1;
 _perks = "";
 _uniform = "";
 _loadout = "";
@@ -16,6 +17,7 @@ sleep 2;
 switch (_type)
 do
 {
+    // Command ========================================================================
 	case "hq":{
         _perks = "hq";
         _uniform = "command";
@@ -23,7 +25,6 @@ do
         _radios = "hq";
         _role = "HQ";
 	};
-    // Team leaders ===================================================================
     case "tl_carb":{
         _perks = "tl";
         _uniform = "command";
@@ -67,7 +68,7 @@ do
         _radios = "";
         _role = "Helicopter Pilot";
     };
-    
+    // Recon ==========================================================================
     case "recon_drone":{
         _perks = "recon";
         _uniform = "recon";
@@ -89,49 +90,104 @@ do
         _radios = "jtac";
         _role = "JTAC";
     };
-    case "at_jav":{
-    };
-    case "at_maaws":{
-    };
-    
+    // Specialists ==========================================================================
     case "eng":{
+        _perks = "eng";
+        _uniform = "eng";
+        _loadout = "eng";
+        _radios = "inf";
+        _role = "Engineer";
     };
     case "med":{
+        _perks = "med";
+        _uniform = "med";
+        _loadout = "med";
+        _radios = "2iC";
+        _role = "2ic";
     };
-
+    // AT ==========================================================================
+    case "at_jav":{
+        _perks = "at";
+        _uniform = "inf_medium";
+        _loadout = "at_jav";
+        _radios = "inf";
+        _role = "Anti-Tank (Javelin)";
+    };
+    case "at_maaws":{
+        _perks = "at";
+        _uniform = "inf_medium";
+        _loadout = "at_maaws";
+        _radios = "inf";
+        _role = "Anti-Tank (MAAWS)";
+    };
+    // MG ==========================================================================
     case "hmg":{
+        _perks = "mg";
+        _uniform = "inf_medium";
+        _loadout = "hmg";
+        _radios = "inf";
+        _role = "Machinegunner (Heavy)";
     };
     case "lmg":{
+        _perks = "mg";
+        _uniform = "inf_medium";
+        _loadout = "lmg";
+        _radios = "inf";
+        _role = "Machinegunner (Light)";
     };
-
+    // Others ==========================================================================
     case "mrksm":{
+        _perks = "inf";
+        _uniform = "inf_light";
+        _loadout = "mrksm";
+        _radios = "inf";
+        _role = "Designated Marksman";
     };
     case "mortar":{
+        _perks = "mortar";
+        _uniform = "inf_heavy";
+        _loadout = "mortar";
+        _radios = "2iC";
+        _role = "Mortier Léger";
     };
-
+    // Infantry  ==========================================================================
     case "rifle_carb":{
+        _perks = "inf";
+        _uniform = "inf_light";
+        _loadout = "rifle_carb";
+        _radios = "inf";
+        _role = "Rifleman (Carbine)";
     };
     case "rifle_cqb":{
+        _perks = "inf";
+        _uniform = "inf_light";
+        _loadout = "rifle_cqb";
+        _radios = "inf";
+        _role = "Rifleman (CQB)";
     };
     case "rifle_grenade":{
+        _perks = "inf";
+        _uniform = "inf_medium";
+        _loadout = "rifle_gren";
+        _radios = "inf";
+        _role = "Grenadier";
     };
-    
     default	{
-		hint "mk1_role_switch.sqf fail";
+		hint "mk2_role_switch.sqf fail";
         sleep 10;
         hintSilent "";
 	};
 };
 // Perks and traits setup 
-[_perks] execVM "\CGQC_2022\scripts\mk1_role_switch_perks.sqf";
+[_perks] execVM "\CGQC_2022\loadouts\mk2_role_switch_perks.sqf";
 // Add Uniform
-[_uniform] execVM "\CGQC_2022\scripts\mk1_role_switch_uniform.sqf";
+[_uniform] execVM "\CGQC_2022\loadouts\mk2_role_switch_uniform.sqf";
 // Add Uniform
-[_loadout] execVM "\CGQC_2022\scripts\mk1_role_switch_loadout.sqf";
+[_loadout] execVM "\CGQC_2022\loadouts\mk2_role_switch_loadout.sqf";
 hint format["Rôle:%1", _role];
 sleep 3;
 hintSilent "";
 // Set radios 
-[_radios] execVM "\cgqc\factions\stuff_player.sqf";
+[_radios, _section] execVM "\cgqc_2022\loadouts\mk2_role_switch_radios.sqf";
 // Give control back
 disableUserInput false;

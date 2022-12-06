@@ -8,6 +8,7 @@ for "_i" from 1 to 10 do {
 };
 player addItemToBackpack "ACE_salineIV_500";
 player addItemToBackpack "ACE_salineIV_500";
+player addItemToBackpack "ACE_personalAidKit";
 // === Items ================================
 player addItemToBackpack "ACE_EntrenchingTool";
 player addItemToBackpack "WBK_HeadLampItem";

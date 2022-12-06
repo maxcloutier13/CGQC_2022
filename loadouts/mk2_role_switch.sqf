@@ -4,6 +4,7 @@ _perks = "";
 _uniform = "";
 _loadout = "";
 _radios = "";
+cgqc_mk2_role = "";
 
 // ===== Prep and transition ======================================================
 waitUntil {!isNull (findDisplay 46)};
@@ -23,21 +24,21 @@ do
         _uniform = "command";
         _loadout = "hq";
         _radios = "hq";
-        _role = "HQ";
+        cgqc_mk2_role = "HQ";
 	};
     case "tl_carb":{
         _perks = "tl";
         _uniform = "command";
         _loadout = "tl_carb";
         _radios = "tl";
-        _role = "Team Leader";
+        cgqc_mk2_role = "Team Leader";
     };
     case "tl_cqb":{
         _perks = "tl";
         _uniform = "command";
         _loadout = "tl_cqb";
         _radios = "tl";
-        _role = "Team Leader";
+        cgqc_mk2_role = "Team Leader";
     };
     // Pilots and crews ===============================================================
     case "heli_pilot":{ 
@@ -45,35 +46,35 @@ do
         _uniform = "heli_pilot";
         _loadout = "heli";
         _radios = "pilot";
-        _role = "Helicopter Pilot";
+        cgqc_mk2_role = "Helicopter Pilot";
     };
     case "heli_crew":{
         _perks = "heli_crew";
         _uniform = "heli_crew";
         _loadout = "heli";
         _radios = "pilot";
-        _role = "Helicopter Crew";
+        cgqc_mk2_role = "Helicopter Crew";
     };
     case "jet_pilot":{ 
         _perks = "jet_pilot";
         _uniform = "jet_pilot";
         _loadout = "jet_pilot";
         _radios = "pilot";
-        _role = "Jet Pilot";
+        cgqc_mk2_role = "Jet Pilot";
     };
     case "tank_pilot":{
         _perks = "tank_pilot";
         _uniform = "tank_pilot";
         _loadout = "tank";
         _radios = "pilot";
-        _role = "Helicopter Pilot";
+        cgqc_mk2_role = "Helicopter Pilot";
     };
     case "tank_crew":{
         _perks = "tank_crew";
         _uniform = "tank_pilot";
         _loadout = "tank";
         _radios = "pilot";
-        _role = "Helicopter Pilot";
+        cgqc_mk2_role = "Helicopter Pilot";
     };
     // Recon ==========================================================================
     case "drone":{
@@ -81,21 +82,21 @@ do
         _uniform = "recon";
         _loadout = "drone";
         _radios = "recon";
-        _role = "Drone Operator";
+        cgqc_mk2_role = "Drone Operator";
     };
     case "sniper":{
         _perks = "recon";
         _uniform = "recon";
         _loadout = "sniper";
         _radios = "recon";
-        _role = "Sniper";
+        cgqc_mk2_role = "Sniper";
     };
     case "jtac":{
         _perks = "recon";
         _uniform = "jtac";
         _loadout = "jtac";
         _radios = "jtac";
-        _role = "JTAC";
+        cgqc_mk2_role = "JTAC";
     };
     // Specialists ==========================================================================
     case "eng":{
@@ -103,14 +104,14 @@ do
         _uniform = "eng";
         _loadout = "eng";
         _radios = "inf";
-        _role = "Engineer";
+        cgqc_mk2_role = "Engineer";
     };
     case "med":{
         _perks = "med";
         _uniform = "med";
         _loadout = "med";
         _radios = "2iC";
-        _role = "2ic";
+        cgqc_mk2_role = "2ic";
     };
     // AT ==========================================================================
     case "at_jav":{
@@ -118,14 +119,14 @@ do
         _uniform = "inf_medium";
         _loadout = "at_jav";
         _radios = "inf";
-        _role = "Anti-Tank (Javelin)";
+        cgqc_mk2_role = "Anti-Tank (Javelin)";
     };
     case "at_maaws":{
         _perks = "at";
         _uniform = "inf_medium";
         _loadout = "at_maaws";
         _radios = "inf";
-        _role = "Anti-Tank (MAAWS)";
+        cgqc_mk2_role = "Anti-Tank (MAAWS)";
     };
     // MG ==========================================================================
     case "hmg":{
@@ -133,14 +134,14 @@ do
         _uniform = "inf_medium";
         _loadout = "hmg";
         _radios = "inf";
-        _role = "Machinegunner (Heavy)";
+        cgqc_mk2_role = "Machinegunner (Heavy)";
     };
     case "lmg":{
         _perks = "mg";
         _uniform = "inf_medium";
         _loadout = "lmg";
         _radios = "inf";
-        _role = "Machinegunner (Light)";
+        cgqc_mk2_role = "Machinegunner (Light)";
     };
     // Others ==========================================================================
     case "mrksm":{
@@ -148,14 +149,14 @@ do
         _uniform = "inf_light";
         _loadout = "mrksm";
         _radios = "inf";
-        _role = "Designated Marksman";
+        cgqc_mk2_role = "Designated Marksman";
     };
     case "mortar":{
         _perks = "mortar";
         _uniform = "inf_heavy";
         _loadout = "mortar";
         _radios = "2iC";
-        _role = "Mortier Léger";
+        cgqc_mk2_role = "Mortier Léger";
     };
     // Infantry  ==========================================================================
     case "rifle_carb":{
@@ -163,21 +164,21 @@ do
         _uniform = "inf_light";
         _loadout = "rifle_carb";
         _radios = "inf";
-        _role = "Rifleman (Carbine)";
+        cgqc_mk2_role = "Rifleman (Carbine)";
     };
     case "rifle_cqb":{
         _perks = "inf";
         _uniform = "inf_light";
         _loadout = "rifle_cqb";
         _radios = "inf";
-        _role = "Rifleman (CQB)";
+        cgqc_mk2_role = "Rifleman (CQB)";
     };
     case "rifle_grenade":{
         _perks = "inf";
         _uniform = "inf_medium";
         _loadout = "rifle_gren";
         _radios = "inf";
-        _role = "Grenadier";
+        cgqc_mk2_role = "Grenadier";
     };
     default	{
 		hint "mk2_role_switch.sqf fail";
@@ -191,7 +192,7 @@ do
 [_uniform] execVM "\CGQC_2022\loadouts\mk2_role_switch_uniform.sqf";
 // Add Uniform
 [_loadout] execVM "\CGQC_2022\loadouts\mk2_role_switch_loadout.sqf";
-hint format["Rôle:%1", _role];
+hint format["Rôle:%1", cgqc_mk2_role];
 sleep 3;
 hintSilent "";
 // Set radios 

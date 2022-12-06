@@ -6,5 +6,5 @@ if (!isNil "_source") then {
 
     [_source, _items] call ace_arsenal_fnc_initBox;
     // Add ace interactions
-    #include "cgqc_loadouts_mk2_actions.sqf"
+    #include "mk2_loadouts_actions.sqf"
 };

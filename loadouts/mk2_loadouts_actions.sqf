@@ -10,7 +10,7 @@ if (!isNil "_crate") then {
     _action = [ "menu_mk2", "Loadouts/Rôles", "CGQC_2022\textures\icon_loadouts", {""}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 
-    #include "\cgqc_2022\loadouts\cgqc_loadouts_mk2_spartan.sqf";
+    #include "\cgqc_2022\loadouts\mk2_loadouts_spartan.sqf";
 
     // Recon ---------------------------------------------------------------------------------------------------------
     _action = [ "menu_mk2_recon", "Recon", "", {""}, {cgqc_player_rank > 2} ] call ace_interact_menu_fnc_createAction;

@@ -82,7 +82,7 @@ class cgqc_heli_ch47_base : Heli_Transport_02_base_F
     driveOnComponent[] = {"wheels"};
     fuelCapacity = 3200;
     fuelConsumptionRate = 0.398;
-    slingLoadMaxCargoMass = 12700;
+    slingLoadMaxCargoMass = 20000;
     canFloat = 1;
     waterLeakiness = 0.02;
     maxFordingDepth = 1.5;

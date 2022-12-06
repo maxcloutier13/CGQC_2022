@@ -41,7 +41,7 @@ class cgqc_heli_U60_base : Heli_Transport_01_base_F
     selectionVRotorMove = "mala vrtule blur";
     selectionDamage = "trup";
     selectionShowDamage = "poskozeni";
-    slingLoadMaxCargoMass = 6000;
+    slingLoadMaxCargoMass = 12000;
     memoryPointLRocket = "l raketa";
     memoryPointRRocket = "p raketa";
     memoryPointLMissile = "l strela";

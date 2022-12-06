@@ -44,46 +44,53 @@ do
         _perks = "heli_pilot";
         _uniform = "heli_pilot";
         _loadout = "heli";
-        _radios = "heli";
+        _radios = "pilot";
         _role = "Helicopter Pilot";
     };
     case "heli_crew":{
         _perks = "heli_crew";
         _uniform = "heli_crew";
         _loadout = "heli";
-        _radios = "heli";
+        _radios = "pilot";
         _role = "Helicopter Crew";
+    };
+    case "jet_pilot":{
+        _perks = "jet_pilot";
+        _uniform = "jet_pilot";
+        _loadout = "jet_pilot";
+        _radios = "pilot";
+        _role = "Jet Pilot";
     };
     case "tank_pilot":{
         _perks = "tank_pilot";
         _uniform = "tank_pilot";
         _loadout = "tank";
-        _radios = "";
+        _radios = "pilot";
         _role = "Helicopter Pilot";
     };
     case "tank_crew":{
         _perks = "tank_crew";
         _uniform = "tank_pilot";
         _loadout = "tank";
-        _radios = "";
+        _radios = "pilot";
         _role = "Helicopter Pilot";
     };
     // Recon ==========================================================================
-    case "recon_drone":{
+    case "drone":{
         _perks = "recon";
         _uniform = "recon";
         _loadout = "drone";
         _radios = "recon";
         _role = "Drone Operator";
     };
-    case "recon_sniper":{
+    case "sniper":{
         _perks = "recon";
         _uniform = "recon";
         _loadout = "sniper";
         _radios = "recon";
         _role = "Sniper";
     };
-    case "recon_jtac":{
+    case "jtac":{
         _perks = "recon";
         _uniform = "jtac";
         _loadout = "jtac";

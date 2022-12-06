@@ -7,22 +7,23 @@ if (!isNil "_crate") then {
     //_adding = [ _crate, 0, ["ACE_MainActions"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 
     // Mk1 Loadout switcher ---------------------------------------------------------------------------------------------------------
-    _action = [ "menu_mk2", "Loadouts/Rôles", "CGQC_2022\textures\icon_loadouts", {""}, {true} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2", "Loadouts/Rôles MK2", "CGQC_2022\textures\icon_loadouts", {""}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 
+    // Spartan 1-2-3-4
     #include "\cgqc_2022\loadouts\mk2_loadouts_spartan.sqf";
 
     // Recon ---------------------------------------------------------------------------------------------------------
     _action = [ "menu_mk2_recon", "Recon", "", {""}, {cgqc_player_rank > 2} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2"], _action ] call  ace_interact_menu_fnc_addActionToObject;
     // Sniper
-    _action = [ "menu_mk2_inf_snipe", "Sniper", "", {execVM "\CGQC_2022\loadouts\mk1_role_recon_sniper.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_inf_snipe", "Sniper", "", {["sniper", 0] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2", "menu_mk2_recon"], _action ] call  ace_interact_menu_fnc_addActionToObject;
     // Drone Operator 
-    _action = [ "menu_mk2_inf_drone", "Drone Operator", "", {execVM "\CGQC_2022\loadouts\mk1_role_recon_drone_operator.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_inf_drone", "Drone Operator", "", {["drone", 0] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2", "menu_mk2_recon"], _action ] call  ace_interact_menu_fnc_addActionToObject;
     // JTAC
-    _action = [ "menu_mk2_inf_jtac", "FAC/JTAC", "", {execVM "\CGQC_2022\loadouts\mk1_role_recon_JTAC.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_inf_jtac", "FAC/JTAC", "", {["jtac", 0] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2", "menu_mk2_recon"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 
 
@@ -31,26 +32,27 @@ if (!isNil "_crate") then {
     _action = [ "menu_mk2_pilots", "Griffon", "", {""}, {cgqc_player_rank > 2} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2"], _action ] call  ace_interact_menu_fnc_addActionToObject;
     // Helicopter pilot 
-    _action = [ "menu_mk2_inf_medic", "Helicopter pilot ", "", {execVM "\CGQC_2022\loadouts\mk1_role_pilot_heli.sqf"}, {cgqc_player_rank > 3} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_inf_medic", "Helicopter pilot ", "", {["heli_pilot", 0] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf"}, {cgqc_player_rank > 3} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2", "menu_mk2_pilots"], _action ] call  ace_interact_menu_fnc_addActionToObject;
     // Helicopter crew
-    _action = [ "menu_mk2_helicrew", "Helicopter crew", "", {execVM "\CGQC_2022\loadouts\mk1_role_pilot_crew.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_helicrew", "Helicopter crew", "", {["heli_crew", 0] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2", "menu_mk2_pilots"], _action ] call  ace_interact_menu_fnc_addActionToObject;
     // Jet pilot 
-    _action = [ "menu_mk2_inf_medic", "Jet pilot ", "", {execVM "\CGQC_2022\loadouts\mk1_role_pilot_jet.sqf"}, {cgqc_player_rank > 3} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_inf_medic", "Jet pilot ", "", {["jet_pilot", 0] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf"}, {cgqc_player_rank > 3} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2", "menu_mk2_pilots"], _action ] call  ace_interact_menu_fnc_addActionToObject;
     
     // Drivers ---------------------------------------------------------------------------------------------------------
-    // Tank driver
     _action = [ "menu_mk2_driver", "Centaure", "", {}, {cgqc_player_rank > 1} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2"], _action ] call  ace_interact_menu_fnc_addActionToObject;
-    _action = [ "menu_mk2_tank", "Tank driver", "", {[1] execVM "\CGQC_2022\loadouts\mk1_role_pilot_tank.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    // Tank Driver
+    _action = [ "menu_mk2_tank", "Tank driver", "", {["tank_driver", 0] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions", "menu_mk2", "menu_mk2_driver"], _action ] call  ace_interact_menu_fnc_addActionToObject;
-    _action = [ "menu_mk2_crew", "Tank Crew", "", {[0] execVM "\CGQC_2022\loadouts\mk1_role_pilot_tank.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    // Tank Crew
+    _action = [ "menu_mk2_crew", "Tank Crew", "", {["tank_crew", 0] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions", "menu_mk2", "menu_mk2_driver"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 
     // HQ 
-    _action = [ "menu_mk2_inf_hq", "HQ", "", {execVM "\CGQC_2022\loadouts\mk1_role_hq.sqf"}, {cgqc_player_rank > 4} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_inf_hq", "HQ", "", {["hq", 0] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf"}, {cgqc_player_rank > 4} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 
     // Mk1 Camo Switcher ---------------------------------------------------------------------------------------------------------

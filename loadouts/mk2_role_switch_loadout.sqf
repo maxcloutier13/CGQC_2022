@@ -57,6 +57,16 @@ do
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
 	};
+    case "jet_pilot":{ //=============================================================================================
+        // === Weapons
+        #include "\cgqc_2022\loadouts\mk2\gun_p90.sqf"
+        // === Vest
+        #include "\cgqc_2022\loadouts\mk2\vest_pilot.sqf"
+        // === Radios 
+        #include "\cgqc_2022\loadouts\mk2\radios_pilot.sqf"
+        // === Items 
+        #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
+	};
     case "tank":{ //=============================================================================================
         // === Weapons
         #include "\cgqc_2022\loadouts\mk2\gun_p90.sqf"

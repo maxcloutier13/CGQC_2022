@@ -54,7 +54,7 @@ do
         _radios = "pilot";
         _role = "Helicopter Crew";
     };
-    case "jet_pilot":{
+    case "jet_pilot":{ 
         _perks = "jet_pilot";
         _uniform = "jet_pilot";
         _loadout = "jet_pilot";

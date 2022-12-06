@@ -23,6 +23,13 @@ switch (_type) do {
         player addHeadgear "cgqc_helmet_heli_black";
         player addGoggles "G_mas_can_wrap_B";
 	};
+    case "jet_pilot":{ //=============================================================================================
+        player forceAddUniform "cgqc_uniform_mk1_jetpilot";
+        player addVest "cgqc_vest_mk1_pilot";
+        player addBackpack "CGQCplayers_mk1_4_Pilot_Jet_pack";
+        player addHeadgear "cgqc_helmet_mk1_jetpilot";
+        player addGoggles "G_Combat";
+	};
     case "heli_crew":{ //=============================================================================================
         player forceAddUniform "cgqc_uniform_mk1_helipilot";
         player addVest "cgqc_vest_mk1_pilot_black";

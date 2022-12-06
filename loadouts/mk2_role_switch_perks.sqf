@@ -20,6 +20,8 @@ do
 	};
 	case "heli_crew":{
 	};
+	case "jet_pilot":{
+	};
 	case "tank_pilot":{
 	};
 	case "tank_crew":{

@@ -102,6 +102,7 @@ class CfgPatches
 			"cgqc_pack_mk1_carryall_cadpat",
 			"cgqc_pack_mk1_carryall_black",
 			"cgqc_pack_mk1_carryall_white",
+			"cgqc_pack_mk1_tank_driver",
 			"CGQC_units_mk1_0_HQ",
 			"CGQC_units_mk1_0_Drone_operator",
 			"CGQC_units_mk1_0_JTAC",

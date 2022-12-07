@@ -71,6 +71,7 @@ private _electronics = [
 [_medical, "Medical", "cgqc_2022\textures\medical.paa", 0] call ace_arsenal_fnc_addRightPanelButton;
 [_electronics, "Electronics", "cgqc_2022\textures\electronics.paa", 1] call ace_arsenal_fnc_addRightPanelButton;
 
+// ==== Perks ==================================================================================================
 // Add basic traits
 cgqc_perks_basic = true;
 cgqc_perks_recon = false;
@@ -104,3 +105,13 @@ _adding = [ player, 1, ["ACE_SelfActions","menu_self_cgqc"], _action ] call  ace
 // ------ Cut Grass --------------------------------------------------------------------------------------
 _action = [ "cgqc_perk_cutgrass", "Cut grass", "", {["cut_grass"]  execVM "\cgqc_2022\loadouts\mk2\perks_recon.sqf"}, {cgqc_perks_recon} ] call ace_interact_menu_fnc_createAction;
 _adding = [ player, 1, ["ACE_SelfActions","menu_self_cgqc"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+// ------ Fortify --------------------------------------------------------------------------------------
+[west, 500, [
+	["Land_BagFence_Short_F", 5],
+	["Land_BagFence_Long_F", 5], 
+	["Land_BagFence_Round_F", 5], 
+	["Land_Plank_01_4m_F", 5], 
+	["Land_Plank_01_8m_F", 5], 
+	["Land_CamoNetVar_NATO", 5], 
+	["Land_fortified_nest_small_EP1", 50]
+]] call ace_fortify_fnc_registerObjects;

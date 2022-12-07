@@ -5,6 +5,7 @@ player addItemToBackpack "ACE_DefusalKit";
 player addItemToBackpack "ACE_M26_Clacker";
 player addItemToBackpack "ACE_SpraypaintGreen";
 player addItemToBackpack "ACE_SpraypaintRed";
+player addItemToBackpack "ACE_Fortify";
 // === Explosives ================================
 for "_i" from 1 to 4 do {
     player addItemToBackpack "rhsusf_m112_mag";

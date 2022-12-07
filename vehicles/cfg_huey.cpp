@@ -159,14 +159,14 @@ class cgqc_heli_uh1_base : Helicopter_Base_H
         {
             sound[] = {"rhsgref\addons\rhsgref_air\uh1h\sounds\uh1h_rotor_ext_1", 1.2589254, 1, 1500};
             frequency = "rotorSpeed";
-            volume = "camPos*(0 max (rotorSpeed-0.1))";
+            volume = "(camPos*(0 max (rotorSpeed-0.1)))/2";
             cone[] = {1.6, 3.14, 2.0, 0.5};
         };
         class RotorHighOut
         {
             sound[] = {"rhsgref\addons\rhsgref_air\uh1h\sounds\uh1h_rotor_high_ext_1", 1.2589254, 1, 1500};
             frequency = "rotorSpeed";
-            volume = "camPos*10*(0 max (rotorThrust-0.9))";
+            volume = "(camPos*10*(0 max (rotorThrust-0.9)))/2";
             cone[] = {1.6, 3.14, 2.0, 0.5};
         };
         class EngineIn
@@ -337,20 +337,20 @@ class cgqc_heli_uh1_base : Helicopter_Base_H
             {
                 sound[] = {"rhsgref\addons\rhsgref_air\uh1h\sounds\uh1h_engine_ext_2", 1.2889254, 1.0, 1200};
                 frequency = "rotorSpeed";
-                volume = "camPos*((rotorSpeed-0.72)*4)";
+                volume = "(camPos*((rotorSpeed-0.72)*4))/2";
             };
             class RotorLowOut
             {
                 sound[] = {"rhsgref\addons\rhsgref_air\uh1h\sounds\uh1h_rotor_ext_1", 1.2589254, 1, 1500};
                 frequency = "rotorSpeed";
-                volume = "camPos*(0 max (rotorSpeed-0.1))";
+                volume = "(camPos*(0 max (rotorSpeed-0.1)))/2";
                 cone[] = {1.6, 3.14, 2.0, 0.5};
             };
             class RotorHighOut
             {
                 sound[] = {"rhsgref\addons\rhsgref_air\uh1h\sounds\uh1h_rotor_high_ext_1", 1.2589254, 1, 1500};
                 frequency = "rotorSpeed";
-                volume = "camPos*10*(0 max (rotorThrust-0.9))";
+                volume = "(camPos*10*(0 max (rotorThrust-0.9)))/2";
                 cone[] = {1.6, 3.14, 2.0, 0.5};
             };
             class EngineIn

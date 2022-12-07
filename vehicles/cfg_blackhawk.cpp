@@ -3662,7 +3662,7 @@ class cgqc_heli_UH60M_base : cgqc_heli_U60_base
         {
             sound[] = {"rhsusf\addons\rhsusf_sounds\0_vehicles\uh60\BlackHawk_ext_engine", 1.71254, 1, 800};
             frequency = "rotorSpeed*(1+rotorThrust/6)*0.8";
-            volume = "camPos*((rotorSpeed-0.72)*4)";
+            volume = "(camPos*((rotorSpeed-0.72)*4))/2";
         };
         class EngineInt
         {
@@ -3694,7 +3694,7 @@ class cgqc_heli_UH60M_base : cgqc_heli_U60_base
             {
                 sound[] = {"rhsusf\addons\rhsusf_sounds\0_vehicles\uh60\BlackHawk_ext_engine", 1.71254, 1, 800};
                 frequency = "rotorSpeed*(1+rotorThrust/6)*0.8";
-                volume = "camPos*((rotorSpeed-0.72)*4)";
+                volume = "(camPos*((rotorSpeed-0.72)*4))/2";
             };
             class EngineInt
             {
@@ -3712,7 +3712,7 @@ class cgqc_heli_UH60M_base : cgqc_heli_U60_base
             {
                 sound[] = {"rhsusf\addons\rhsusf_sounds\0_vehicles\uh60\BlackHawk_distant", 1.41, 1, 3200};
                 frequency = "rotorSpeed";
-                volume = "2 * camPos * (0 max (rotorSpeed-0.4))";
+                volume = "(2 * camPos * (0 max (rotorSpeed-0.4)))/2";
             };
         };
     };

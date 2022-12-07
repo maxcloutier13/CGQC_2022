@@ -2,7 +2,7 @@ if (cgqc_setting_show_transition) then {
     // Fade to black  
     cutText ["", "BLACK FADED", 999];
     titleText ["", "PLAIN"];
-    sleep 3;
+    //sleep 3;
     titleFadeOut 2;
     // Wake up with blur
     "dynamicBlur" ppEffectEnable true;

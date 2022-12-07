@@ -10,7 +10,7 @@ cgqc_mk2_role = "";
 waitUntil {!isNull (findDisplay 46)};
 execVM "\CGQC_2022\scripts\transition.sqf";
 disableUserInput true;
-sleep 2;
+//sleep 2;
 
 // ===== Remove items ======================================================
 #include "\cgqc_2022\loadouts\mk2\remove_all.sqf"
@@ -198,7 +198,7 @@ sleep 0.5;
 sleep 0.5;
 [_loadout] execVM "\CGQC_2022\loadouts\mk2_role_switch_loadout.sqf";
 hint format["Rôle:%1", cgqc_mk2_role];
-sleep 3;
+sleep 0.5;
 hintSilent "";
 // Set radios 
 [_radios, _section] execVM "\cgqc_2022\loadouts\mk2_role_switch_radios.sqf";

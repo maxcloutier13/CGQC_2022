@@ -42,6 +42,7 @@ class CfgPatches
 			"cgqc_box_mk1_fuelcan",
 			"cgqc_box_mk1_ammocan",
 			"cgqc_box_mk1_cargo",
+			"cgqc_box_mk2_stash",
 			"CGQC_units_mk1_0_HQ_pack",
 			"CGQC_units_mk1_0_TeamLeader_Carbine_pack",
 			"CGQC_units_mk1_0_TeamLeader_CQB_pack",

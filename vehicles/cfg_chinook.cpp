@@ -2454,20 +2454,20 @@ class cgqc_heli_ch47_base : Heli_Transport_02_base_F
         {
             sound[] = {"rhsusf\addons\rhsusf_a2port_air\data\sounds\CH47_engine_high_ext", 1, 1, 800};
             frequency = "rotorSpeed";
-            volume = "camPos*((rotorSpeed-0.72)*4)";
+            volume = "(camPos*((rotorSpeed-0.72)*4))/2";
         };
         class RotorLowOut
         {
             sound[] = {"rhsusf\addons\rhsusf_a2port_air\data\sounds\CH47_rotor_ext.ogg", 8.162278, 1, 3500};
             frequency = "rotorSpeed";
-            volume = "camPos*(0 max (rotorSpeed-0.1))";
+            volume = "(camPos*(0 max (rotorSpeed-0.1)))/2";
             cone[] = {1.8, 3.14, 2, 0.09};
         };
         class RotorHighOut
         {
             sound[] = {"rhsusf\addons\rhsusf_a2port_air\data\sounds\CH47_rotor_forsage_ext", 6.1622777, 1, 2200};
             frequency = "rotorSpeed";
-            volume = "camPos*10*(0 max (rotorThrust-0.95))";
+            volume = "(camPos*10*(0 max (rotorThrust-0.95)))/2";
             cone[] = {1.8, 3.14, 2, 0.09};
         };
         class EngineIn

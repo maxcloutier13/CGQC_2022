@@ -193,7 +193,7 @@ do
 // Add Uniform
 [_loadout] execVM "\CGQC_2022\loadouts\mk2_role_switch_loadout.sqf";
 // Set radios 
-[_radios, _section] execVM "\cgqc\factions\stuff_player.sqf";
+[_radios, _section] spawn CGQC_fnc_setRadios;
 //[_radios, _section] execVM "\cgqc_2022\loadouts\mk2_role_switch_radios.sqf";
 
 // Lower gun 

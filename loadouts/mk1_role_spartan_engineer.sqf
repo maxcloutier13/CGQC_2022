@@ -124,7 +124,7 @@ disableUserInput false;
 
 sleep 2;
 //Set  radios
-["spartan", _section] execVM "\cgqc\factions\stuff_player.sqf";
+["spartan", _section] spawn CGQC_fnc_setRadios;
 hint "Rôle: Ingénieur";
 sleep 10;
 hintSilent "";

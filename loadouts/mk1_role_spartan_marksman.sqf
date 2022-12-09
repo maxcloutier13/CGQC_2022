@@ -123,7 +123,7 @@ player linkItem "JAS_GPNVG18_blk";
 disableUserInput false;
 sleep 2;
 //Set  radios
-["spartan", _section] execVM "\cgqc\factions\stuff_player.sqf";
+["spartan", _section] spawn CGQC_fnc_setRadios;
 hint "Rôle: Marksman";
 sleep 10;
 hintSilent "";

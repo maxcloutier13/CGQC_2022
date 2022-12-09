@@ -13,9 +13,9 @@ disableUserInput true;
 //sleep 2;
 
 // ===== Remove items ======================================================
-#include "\cgqc_2022\loadouts\mk2\remove_all.sqf"
-sleep 1;
-
+call {
+    #include "\cgqc_2022\loadouts\mk2\remove_all.sqf"
+};
 switch (_type)
 do
 {
@@ -31,14 +31,14 @@ do
         _perks = "tl";
         _uniform = "command";
         _loadout = "tl_carb";
-        _radios = "tl";
+        _radios = "spartan_1";
         cgqc_mk2_role = "Team Leader";
     };
     case "tl_cqb":{
         _perks = "tl";
         _uniform = "command";
         _loadout = "tl_cqb";
-        _radios = "tl";
+        _radios = "spartan_1";
         cgqc_mk2_role = "Team Leader";
     };
     // Pilots and crews ===============================================================
@@ -46,35 +46,35 @@ do
         _perks = "heli_pilot";
         _uniform = "heli_pilot";
         _loadout = "heli";
-        _radios = "pilot";
+        _radios = "griffon_pieton";
         cgqc_mk2_role = "Helicopter Pilot";
     };
     case "heli_crew":{
         _perks = "heli_crew";
         _uniform = "heli_crew";
         _loadout = "heli";
-        _radios = "pilot";
+        _radios = "griffon_pieton";
         cgqc_mk2_role = "Helicopter Crew";
     };
     case "jet_pilot":{ 
         _perks = "jet_pilot";
         _uniform = "jet_pilot";
         _loadout = "jet_pilot";
-        _radios = "pilot";
+        _radios = "griffon_pieton";
         cgqc_mk2_role = "Jet Pilot";
     };
     case "tank_driver":{
         _perks = "tank_driver";
         _uniform = "tank_driver";
         _loadout = "tank";
-        _radios = "pilot";
+        _radios = "centaure_pieton";
         cgqc_mk2_role = "Tank Driver";
     };
     case "tank_crew":{
         _perks = "tank_crew";
         _uniform = "tank_driver";
         _loadout = "tank";
-        _radios = "pilot";
+        _radios = "centaure_pieton";
         cgqc_mk2_role = "Tank Crew";
     };
     // Recon ==========================================================================
@@ -104,29 +104,29 @@ do
         _perks = "eng";
         _uniform = "eng";
         _loadout = "eng";
-        _radios = "inf";
+        _radios = "spartan";
         cgqc_mk2_role = "Engineer";
     };
     case "med":{
         _perks = "med";
         _uniform = "med";
         _loadout = "med";
-        _radios = "2iC";
-        cgqc_mk2_role = "2ic";
+        _radios = "spartan_2";
+        cgqc_mk2_role = "Medic";
     };
     // AT ==========================================================================
     case "at_jav":{
         _perks = "at";
         _uniform = "inf_heavy";
         _loadout = "at_jav";
-        _radios = "inf";
+        _radios = "spartan";
         cgqc_mk2_role = "Anti-Tank (Javelin)";
     };
     case "at_maaws":{
         _perks = "at";
         _uniform = "inf_heavy";
         _loadout = "at_maaws";
-        _radios = "inf";
+        _radios = "spartan";
         cgqc_mk2_role = "Anti-Tank (MAAWS)";
     };
     // MG ==========================================================================
@@ -134,14 +134,14 @@ do
         _perks = "mg";
         _uniform = "inf_medium";
         _loadout = "hmg";
-        _radios = "inf";
+        _radios = "spartan";
         cgqc_mk2_role = "Machinegunner (Heavy)";
     };
     case "lmg":{
         _perks = "mg";
         _uniform = "inf_medium";
         _loadout = "lmg";
-        _radios = "inf";
+        _radios = "spartan";
         cgqc_mk2_role = "Machinegunner (Light)";
     };
     // Others ==========================================================================
@@ -149,14 +149,14 @@ do
         _perks = "inf";
         _uniform = "inf_light";
         _loadout = "mrksm";
-        _radios = "inf";
+        _radios = "spartan";
         cgqc_mk2_role = "Designated Marksman";
     };
     case "mortar":{
         _perks = "mortar";
         _uniform = "inf_heavy";
         _loadout = "mortar";
-        _radios = "2iC";
+        _radios = "spartan_2";
         cgqc_mk2_role = "Mortier Léger";
     };
     // Infantry  ==========================================================================
@@ -164,46 +164,43 @@ do
         _perks = "inf";
         _uniform = "inf_light";
         _loadout = "rifle_carb";
-        _radios = "inf";
+        _radios = "spartan";
         cgqc_mk2_role = "Rifleman (Carbine)";
     };
     case "rifle_cqb":{
         _perks = "inf";
         _uniform = "inf_light";
         _loadout = "rifle_cqb";
-        _radios = "inf";
+        _radios = "spartan";
         cgqc_mk2_role = "Rifleman (CQB)";
     };
     case "rifle_grenade":{
         _perks = "inf";
         _uniform = "inf_medium";
         _loadout = "rifle_gren";
-        _radios = "inf";
+        _radios = "spartan";
         cgqc_mk2_role = "Grenadier";
     };
     default	{
-		hint "mk2_role_switch.sqf fail";
-        sleep 10;
-        hintSilent "";
+		hintc "mk2_role_switch.sqf fail";
 	};
 };
 
 // Perks and traits setup 
-sleep 0.5;
 [_perks] execVM "\CGQC_2022\loadouts\mk2_role_switch_perks.sqf";
 // Add Uniform
-sleep 0.5;
 [_uniform] execVM "\CGQC_2022\loadouts\mk2_role_switch_uniform.sqf";
 // Add Uniform
-sleep 0.5;
 [_loadout] execVM "\CGQC_2022\loadouts\mk2_role_switch_loadout.sqf";
-hint format["Rôle:%1", cgqc_mk2_role];
-sleep 0.5;
-hintSilent "";
 // Set radios 
-[_radios, _section] execVM "\cgqc_2022\loadouts\mk2_role_switch_radios.sqf";
+[_radios, _section] execVM "\cgqc\factions\stuff_player.sqf";
+//[_radios, _section] execVM "\cgqc_2022\loadouts\mk2_role_switch_radios.sqf";
 
 // Lower gun 
-player action ['SwitchWeapon', player, player, 100];
+//player action ['SwitchWeapon', player, player, 100];
 // Give control back
 disableUserInput false;
+
+hint format["Rôle:%1", cgqc_mk2_role];
+sleep 5;
+hintSilent "";

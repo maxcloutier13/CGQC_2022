@@ -52,8 +52,6 @@ switch (_type) do {
 	case "inf":{
 	};
     default	{
-		hint "mk2_role_switch_perks.sqf fail";
-        sleep 10;
-        hintSilent "";
+		hintc "mk2_role_switch_perks.sqf fail";
 	};
 };

@@ -9,6 +9,3 @@ _source = _this select 0;
 //_adding = [ _source, 0, ["ACE_MainActions"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Add ace interactions
 #include "mk2_loadouts_actions.sqf"
-};
-
-

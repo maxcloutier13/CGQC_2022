@@ -1,9 +1,9 @@
 _crate = _this select 0; 
 
 // If ranks are disabled, upgrade the player current rank so he sees all
-if (!cgqc_setting_limit_ranks) then {
-    cgqc_player_rank = 10;
-};
+//if (!cgqc_setting_limit_ranks) then {
+//    cgqc_player_rank = 10;
+//};
 
 if (!isNil "_crate") then {
     // --- Ace actions ---------------------------------------------------------------------------------------------------------

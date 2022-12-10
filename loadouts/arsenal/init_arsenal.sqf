@@ -4,24 +4,24 @@
 
     // === Rang 1 - Std - Rifleman/Grenadier ================================================================
     // Uniformes et clothing ---------------------------------------
-    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_uniforms.sqf";
-    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_helmets.sqf";
-    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_face.sqf";
+    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_uniforms.hpp";
+    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_helmets.hpp";
+    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_face.hpp";
     // Items -------------------------------------------------------
-    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_items.sqf";
+    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_items.hpp";
     // Explosives --------------------------------------------------
-    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_explosives.sqf";
+    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_explosives.hpp";
     // Guns --------------------------------------------------------
-    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_guns.sqf";
+    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_guns.hpp";
     // Gun accs ----------------------------------------------------
-    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_scopes.sqf";
-    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_lasers.sqf";
-    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_silencers.sqf";
-    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_bipods.sqf";
+    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_scopes.hpp";
+    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_lasers.hpp";
+    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_silencers.hpp";
+    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_bipods.hpp";
 
     // === Rang 2 - Cpl - AT/MG ================================================================
     // Guns --------------------------------------------------------
-    #include "\cgqc_2022\loadouts\arsenal\2\arsenal_guns.sqf";
+    #include "\cgqc_2022\loadouts\arsenal\2\arsenal_guns.hpp";
 
     // - Basic arsenal ----------------------------------------------------
     // Contiens tout les items pour les soldats de base
@@ -38,8 +38,7 @@
         cgqc_mk2_arsenal_1_bipods
     );
     // Rang 2 - Cpl - AT/MG
-    waitUntil {cgqc_player_rank_found};
-    if (cgqc_player_rank > 1 || !cgqc_setting_limit_ranks) then {
+    if (cgqc_player_rank > 1 ) then {
         //hint "Rank > 1: Cpl";
         cgqc_mk2_arsenal_list = (
             cgqc_mk2_arsenal_list +

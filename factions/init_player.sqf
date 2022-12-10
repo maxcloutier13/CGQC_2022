@@ -1,3 +1,6 @@
+// Wait until Core is finished initializing.
+waitUntil {cgqc_player_rank_found};
+
 // Variables pour le ghillie up kit
 ghillie_menu = 0;
 ghillie_isOn = 0;

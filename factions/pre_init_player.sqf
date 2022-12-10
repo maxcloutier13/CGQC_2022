@@ -1,7 +1,3 @@
-// Variables pour le ghillie up kit
-ghillie_menu = 0;
-ghillie_isOn = 0;
-ghillie_uniform = "";
 
 // Custom arsenal categories
 private _medical = [
@@ -70,25 +66,3 @@ private _electronics = [
 
 [_medical, "Medical", "cgqc_2022\textures\medical.paa", 0] call ace_arsenal_fnc_addRightPanelButton;
 [_electronics, "Electronics", "cgqc_2022\textures\electronics.paa", 1] call ace_arsenal_fnc_addRightPanelButton;
-
-// ==== Arsenal mk2 ==================================================================================================
-cgqc_mk2_arsenal_list = [];
-// Prep les variables de l'arsenal dynamique
-#include "\cgqc_2022\loadouts\arsenal\init_arsenal.sqf";
-cgqc_mk2_arsenal_init = true;
-
-/*
-//Dynamic arsenal opened evenhandler
-["ace_arsenal_displayOpened", {
-	if (!isnil "cgqc_arsenal_mk2_boxes") then {
-		if (_this in cgqc_arsenal_mk2_boxes) then {
-			[_this, cgqc_mk2_arsenal_list] call ace_arsenal_fnc_initBox;
-		};
-	};
-}] call CBA_fnc_addEventHandler;
-*/
-
-
-
-
-

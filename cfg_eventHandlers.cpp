@@ -17,6 +17,7 @@ class Extended_PostInit_EventHandlers
         // init = QUOTE(call COMPILE_FILE(XEH_postInit));
         // Custom init
         //init = "execVM '\cgqc_2022\factions\init_player.sqf';";
+        init = "execVM '\cgqc_2022\factions\init_player.sqf'";
     };
 };
 

@@ -4,24 +4,24 @@
 
     // === Rang 1 - Std - Rifleman/Grenadier ================================================================
     // Uniformes et clothing ---------------------------------------
-    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_uniforms.hpp";
-    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_helmets.hpp";
-    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_face.hpp";
+    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_uniforms.sqf";
+    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_helmets.sqf";
+    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_face.sqf";
     // Items -------------------------------------------------------
-    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_items.hpp";
+    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_items.sqf";
     // Explosives --------------------------------------------------
-    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_explosives.hpp";
+    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_explosives.sqf";
     // Guns --------------------------------------------------------
-    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_guns.hpp";
+    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_guns.sqf";
     // Gun accs ----------------------------------------------------
-    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_scopes.hpp";
-    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_lasers.hpp";
-    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_silencers.hpp";
-    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_bipods.hpp";
+    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_scopes.sqf";
+    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_lasers.sqf";
+    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_silencers.sqf";
+    #include "\cgqc_2022\loadouts\arsenal\1\arsenal_bipods.sqf";
 
     // === Rang 2 - Cpl - AT/MG ================================================================
     // Guns --------------------------------------------------------
-    #include "\cgqc_2022\loadouts\arsenal\2\arsenal_guns.hpp";
+    #include "\cgqc_2022\loadouts\arsenal\2\arsenal_guns.sqf";
 
     // - Basic arsenal ----------------------------------------------------
     // Contiens tout les items pour les soldats de base

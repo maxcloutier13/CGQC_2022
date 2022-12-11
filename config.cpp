@@ -252,7 +252,7 @@ class cfgWeapons
 	// Custom guns ---------------------------------------
 	#include "cfg_guns.cpp"
 	// Custom accessories ---------------------------------------
-	#include "cfg_acc.cpp"
+	#include "cfg_acc.hpp"
 	// Mortar stuff
 	#include "cfg_mortar.cpp"
 };

@@ -306,21 +306,6 @@ class cgqc_box_mk1_supplies : Box_NATO_Wps_F
     ace_dragging_carryPosition[] = {0, 1, 1};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1, 1])
     ace_dragging_carryDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
 };
-// Mk1 Cargo container
-class cgqc_box_mk1_cargo : Land_Cargo10_military_green_F
-{
-    scope = 2;
-    author = "silent1";
-    _generalMacro = "cgqc_box_mk1_cargo";
-    displayName = "CGQC MK1 Cargo Container";
-    model = "\cgqc_2022\containers\cgqc_box_cargo.p3d";
-    ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
-    ace_cargo_noRename = 1;
-    class EventHandlers
-    {
-        init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1_cargo.sqf'";
-    };
-};
 // Mk1 Portable Mortar
 class Box_NATO_WpsSpecial_F;
 class cgqc_box_mk1_mortar : Box_NATO_WpsSpecial_F
@@ -2088,4 +2073,20 @@ class cgqc_box_mk2_arsenal : B_supplyCrate_F
     class TransportWeapons{};
     class TransportItems{};
     class TransportBackpacks{};
+};
+
+// Mk1 Cargo container
+class cgqc_box_mk1_cargo : Land_Cargo10_military_green_F
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_box_mk1_cargo";
+    displayName = "CGQC MK2 Cargo Container";
+    model = "\cgqc_2022\containers\cgqc_box_cargo.p3d";
+    ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
+    ace_cargo_noRename = 1;
+    class EventHandlers
+    {
+        init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk2_cargo.sqf'";
+    };
 };

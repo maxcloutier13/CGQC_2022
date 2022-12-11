@@ -25,21 +25,4 @@ cgqc_mk2_arsenal_1_explosives = [
     "ACE_HandFlare_Green", 
     "ACE_HandFlare_Red", 
     "ACE_HandFlare_White", 
-    // Explosives -----------------------------------
-    "rhsusf_m112_mag",
-    "rhsusf_m112x4_mag", 
-    "rhsusf_mine_m14_mag",
-    "ATMine_Range_Mag",
-    "ClaymoreDirectionalMine_Remote_Mag",
-    "rhs_mine_M19_mag", 
-    "APERSBoundingMine_Range_Mag", 
-    "rhs_mine_m2a3b_trip_mag", 
-    "rhs_mine_M3_tripwire_mag", 
-    "rhs_mine_m3_pressure_mag", 
-    "SLAMDirectionalMine_Wire_Mag", 
-    "rhs_mine_Mk2_tripwire_mag", 
-    "rhs_ec75_mag", 
-    "rhs_ec200_mag", 
-    "rhs_ec400_mag", 
-    "ACE_FlareTripMine_Mag"
 ]; 

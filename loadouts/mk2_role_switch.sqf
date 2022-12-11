@@ -193,11 +193,11 @@ do
 // Add Uniform
 [_loadout] execVM "\CGQC_2022\loadouts\mk2_role_switch_loadout.sqf";
 // Set radios 
-[_radios, _section] spawn CGQC_fnc_setRadios;
+[_radios, _section] execVM "\cgqc\functions\fnc_setRadios.sqf";
 //[_radios, _section] execVM "\cgqc_2022\loadouts\mk2_role_switch_radios.sqf";
 
 // Lower gun 
-//player action ['SwitchWeapon', player, player, 100];
+player action ['SwitchWeapon', player, player, 100];
 // Give control back
 disableUserInput false;
 

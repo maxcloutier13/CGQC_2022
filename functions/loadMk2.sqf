@@ -10,26 +10,32 @@ _type = _this select 0;
 	//hintc format ["Type:%1", _type];
 	_zeus = false;
 	_items = cgqc_mk2_arsenal_1;
+	_found = false;
 	switch (_type) do {
 		case 0: { 
 			hint "Arsenal: Unlocked";
 			_items = cgqc_mk2_arsenal_5;
+			_found = true;
 		};
 		case 1: { 
 			hint "Arsenal: Soldat";
 			_items = cgqc_mk2_arsenal_1;
+			_found = true;
 		};
 		case 2: { 
 			hint "Arsenal: Caporal";
 			_items = cgqc_mk2_arsenal_2;
+			_found = true;
 		};
 		case 3: { 
 			hint "Arsenal: Caporal-Chef";
 			_items = cgqc_mk2_arsenal_3;
+			_found = true;
 		};
 		case 4: { 
 			hint "Arsenal: Sergent";
 			_items = cgqc_mk2_arsenal_4;
+			_found = true;
 		};
 		case 5: { 
 			hint "Arsenal: Zeus";
@@ -41,9 +47,13 @@ _type = _this select 0;
 		};
 	};
 	if (!_zeus) then {
-		hintc "Not Zeus: Pop box";
+		//hintc "Not Zeus: Pop box";
+		waitUntil {sleep 1; _found}; 
+		// Clear items
+		[player, true, false] call ace_arsenal_fnc_removeVirtualItems;
 		// Init crate
 		[player, _items] call ace_arsenal_fnc_initBox;
+		sleep 1;
 		// Open arsenal
 		[player, player, false] call ace_arsenal_fnc_openBox;
 		// Remove option

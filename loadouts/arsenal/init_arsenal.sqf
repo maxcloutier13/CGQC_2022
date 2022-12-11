@@ -31,25 +31,25 @@
     );
     // === Rang 2 - Cpl - AT/MG ================================================================
     // Guns --------------------------------------------------------
-    #include "\cgqc_2022\loadouts\arsenal\arsenal_rank_2.sqf";
+    #include "\cgqc_2022\loadouts\arsenal\arsenal_rank2.sqf";
     cgqc_mk2_arsenal_2 = (
-        cgqc_mk2_arsenal_list +
+        cgqc_mk2_arsenal_1 +
         cgqc_mk2_arsenal_rank2
     );
     // Rang 3 - CplC - Spécialiste
-    #include "\cgqc_2022\loadouts\arsenal\arsenal_rank_3.sqf";
+    #include "\cgqc_2022\loadouts\arsenal\arsenal_rank3.sqf";
     cgqc_mk2_arsenal_3 = (
         cgqc_mk2_arsenal_2 +
         cgqc_mk2_arsenal_rank3
     );
     // Rang 4 - Sgt - Recon/Centaure
-    #include "\cgqc_2022\loadouts\arsenal\arsenal_rank_4.sqf";
+    #include "\cgqc_2022\loadouts\arsenal\arsenal_rank4.sqf";
     cgqc_mk2_arsenal_4 = (
         cgqc_mk2_arsenal_3 +
         cgqc_mk2_arsenal_rank4
     );
     // Rang 5 - Adju - TL/Griffon
-    #include "\cgqc_2022\loadouts\arsenal\arsenal_rank_5.sqf";
+    #include "\cgqc_2022\loadouts\arsenal\arsenal_rank5.sqf";
     cgqc_mk2_arsenal_5 = (
         cgqc_mk2_arsenal_4 +
         cgqc_mk2_arsenal_rank5

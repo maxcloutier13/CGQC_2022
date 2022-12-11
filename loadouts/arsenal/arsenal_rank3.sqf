@@ -71,5 +71,5 @@ cgqc_mk2_arsenal_rank3 = [
     "rhs_ec75_mag", 
     "rhs_ec200_mag", 
     "rhs_ec400_mag", 
-    "ACE_FlareTripMine_Mag",
+    "ACE_FlareTripMine_Mag"
 ]; 

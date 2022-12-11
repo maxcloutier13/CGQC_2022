@@ -24,5 +24,5 @@ cgqc_mk2_arsenal_1_explosives = [
     "ACE_Chemlight_UltraHiOrange", 
     "ACE_HandFlare_Green", 
     "ACE_HandFlare_Red", 
-    "ACE_HandFlare_White", 
+    "ACE_HandFlare_White" 
 ]; 

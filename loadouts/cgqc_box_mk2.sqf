@@ -98,27 +98,28 @@ if (!isNil "_crate") then {
     // Sniper
     _action = [ "skill_sniper", "Sniper", "", {execVM "\cgqc_2022\scripts\mk1_action_ghillie_menu.sqf"}, {cgqc_player_rank > 3 || !cgqc_mk2_arsenal_locked} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ,"menu_skill"], _action ] call  ace_interact_menu_fnc_addActionToObject; 
+    
     // Mk2 arsenal ---------------------------------------------------------------------------------------------------
     // Unlocked version 
     _action = [ "menu_mk2_unlocked", "Arsenal: Unlocked", "", {[0, _this] call CGQC_2022_fnc_loadMk2}, {!cgqc_mk2_arsenal_locked} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
     // Locked versions
     // Soldier - 1 
-    _action = [ "menu_mk2_1", "Arsenal: Soldat", "", {[1, _this] call CGQC_2022_fnc_loadMk2}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 1} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_1", "Arsenal: Soldat", "", {[1, _crate] call CGQC_2022_fnc_loadMk2}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 1} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
     // Caporal - 2 
-    _action = [ "menu_mk2_2", "Arsenal: Caporal", "", {[2, _this] call CGQC_2022_fnc_loadMk2}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 2} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_2", "Arsenal: Caporal", "", {[2, _crate] call CGQC_2022_fnc_loadMk2}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 2} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
     // CaporalC - 3 
-    _action = [ "menu_mk2_3", "Arsenal: Caporal-Chef", "", {[3, _this] call CGQC_2022_fnc_loadMk2}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 3} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_3", "Arsenal: Caporal-Chef", "", {[3, _crate] call CGQC_2022_fnc_loadMk2}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 3} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
     // Sergent - 4 
-    _action = [ "menu_mk2_4", "Arsenal: Sergent", "", {[4, _this] call CGQC_2022_fnc_loadMk2}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 4} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_4", "Arsenal: Sergent", "", {[4, _crate] call CGQC_2022_fnc_loadMk2}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 4} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
     // Adju++ - 5 
-    _action = [ "menu_mk2_5", "Arsenal: Complet", "", {[0, _this] call CGQC_2022_fnc_loadMk2}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 5} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_5", "Arsenal: Complet", "", {[0, _crate] call CGQC_2022_fnc_loadMk2}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 5} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
     // Zeus
-    _action = [ "menu_mk2_zeus", "Arsenal: Zeus", "", {[5, _this] call CGQC_2022_fnc_loadMk2}, {[player] call CGQC_fnc_checkZeus} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_zeus", "Arsenal: Zeus", "", {[5, _crate] call CGQC_2022_fnc_loadMk2}, {[player] call CGQC_fnc_checkZeus} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
 };

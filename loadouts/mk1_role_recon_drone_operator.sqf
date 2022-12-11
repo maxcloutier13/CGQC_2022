@@ -120,7 +120,7 @@ disableUserInput false;
 execVM "\cgqc_2022\scripts\mk1_action_ghillie_menu.sqf";
 sleep 2;
 //Set  radios
-["recon"] execVM "\cgqc\factions\stuff_player.sqf";
+["recon"] spawn CGQC_fnc_setRadios;
 hint "Rôle: Drone Operator";
 sleep 3;
 hintSilent "";

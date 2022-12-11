@@ -135,7 +135,7 @@ disableUserInput false;
 
 sleep 2;
 //Set  radios
-["spartan_2", _section] execVM "\cgqc\factions\stuff_player.sqf";
+["spartan_2", _section] spawn CGQC_fnc_setRadios;
 hint "Rôle: Medic";
 sleep 10;
 hintSilent "";

@@ -132,9 +132,9 @@ player linkItem "B_UavTerminal";
 disableUserInput false;
 sleep 2;
 // Set  radios
-["centaure_pieton"] execVM "\cgqc\factions\stuff_player.sqf";
+["centaure_pieton"] spawn CGQC_fnc_setRadios;
 // Ajoute auto-connect 
-//_action = [ "menu_self_vicradio", "Connecte les radios", "", {['set_centaure'] execVM "\cgqc\factions\stuff_player.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+//_action = [ "menu_self_vicradio", "Connecte les radios", "", {['set_centaure'] spawn CGQC_fnc_setRadios}, {true} ] call ace_interact_menu_fnc_createAction;
 // _adding = [ player, 1, ["ACE_SelfActions"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 		
 hint "Rôle: Centaure";

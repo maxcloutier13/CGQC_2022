@@ -124,7 +124,7 @@ disableUserInput false;
 
 sleep 2;
 //Set  radios
-["hq"] execVM "\cgqc\factions\stuff_player.sqf";
+["hq"] spawn CGQC_fnc_setRadios;
 hint "Rôle: HQ";
 sleep 3;
 hintSilent "";

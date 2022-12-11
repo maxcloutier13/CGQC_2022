@@ -6,12 +6,15 @@ do
 {
 	case "on":
 	{
-		_action = [ "menu_self_rrr", "Maintenance Véhicule", "CGQC_2022\textures\icon_maintenance", {['normal'] execVM "\cgqc_2022\scripts\cgqc_refuel_heli.sqf"}, {isTouchingGround _playerVic} ] call ace_interact_menu_fnc_createAction;
-		_adding = [ player, 1, ["ACE_SelfActions"], _action ] call  ace_interact_menu_fnc_addActionToObject;
-		sleep 3;
-		hint "Maintenance dispo dans votre Self-Action";
-		sleep 10;
-		hintSilent "";
+		if(isNil "menu_self_rrr") then {
+			_action = [ "menu_self_rrr", "Maintenance Véhicule", "CGQC_2022\textures\icon_maintenance", {['normal'] execVM "\cgqc_2022\scripts\cgqc_refuel_heli.sqf"}, {isTouchingGround _playerVic} ] call ace_interact_menu_fnc_createAction;
+			_adding = [ player, 1, ["ACE_SelfActions"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+			sleep 3;
+			hint "Maintenance dispo dans votre Self-Action";
+			sleep 10;
+			hintSilent "";
+		};
+		
 	};
 	case "off":
 	{

@@ -86,7 +86,7 @@ disableUserInput false;
 
 sleep 2;
 //Set  radios
-["griffon_pieton"] execVM "\cgqc\factions\stuff_player.sqf";
+["griffon_pieton"] spawn CGQC_fnc_setRadios;
 hint "Rôle: Jet Pilot";
 sleep 3;
 hintSilent "";

@@ -1,7 +1,5 @@
 // Load tout les arrays pour populer l'arsenal
-
 [] spawn {
-
     // === Rang 1 - Std - Rifleman/Grenadier ================================================================
     // Uniformes et clothing ---------------------------------------
     #include "\cgqc_2022\loadouts\arsenal\1\arsenal_uniforms.sqf";
@@ -19,13 +17,7 @@
     #include "\cgqc_2022\loadouts\arsenal\1\arsenal_silencers.sqf";
     #include "\cgqc_2022\loadouts\arsenal\1\arsenal_bipods.sqf";
 
-    // === Rang 2 - Cpl - AT/MG ================================================================
-    // Guns --------------------------------------------------------
-    #include "\cgqc_2022\loadouts\arsenal\2\arsenal_guns.sqf";
-
-    // - Basic arsenal ----------------------------------------------------
-    // Contiens tout les items pour les soldats de base
-    cgqc_mk2_arsenal_list = (
+    cgqc_mk2_arsenal_1 = (
         cgqc_mk2_arsenal_1_uniforms + 
         cgqc_mk2_arsenal_1_helmets +
         cgqc_mk2_arsenal_1_face +
@@ -37,18 +29,32 @@
         cgqc_mk2_arsenal_1_silencers +
         cgqc_mk2_arsenal_1_bipods
     );
-    // Rang 2 - Cpl - AT/MG
-    if (cgqc_player_rank > 1 ) then {
-        //hint "Rank > 1: Cpl";
-        cgqc_mk2_arsenal_list = (
-            cgqc_mk2_arsenal_list +
-            cgqc_mk2_arsenal_2_guns
-        );
-    };
+    // === Rang 2 - Cpl - AT/MG ================================================================
+    // Guns --------------------------------------------------------
+    #include "\cgqc_2022\loadouts\arsenal\arsenal_rank2.sqf";
+    cgqc_mk2_arsenal_2 = (
+        cgqc_mk2_arsenal_1 +
+        cgqc_mk2_arsenal_rank2
+    );
     // Rang 3 - CplC - Spécialiste
+    #include "\cgqc_2022\loadouts\arsenal\arsenal_rank3.sqf";
+    cgqc_mk2_arsenal_3 = (
+        cgqc_mk2_arsenal_2 +
+        cgqc_mk2_arsenal_rank3
+    );
     // Rang 4 - Sgt - Recon/Centaure
+    #include "\cgqc_2022\loadouts\arsenal\arsenal_rank4.sqf";
+    cgqc_mk2_arsenal_4 = (
+        cgqc_mk2_arsenal_3 +
+        cgqc_mk2_arsenal_rank4
+    );
     // Rang 5 - Adju - TL/Griffon
-    // Rang 6 - AdjuM - HQ
-
+    #include "\cgqc_2022\loadouts\arsenal\arsenal_rank5.sqf";
+    cgqc_mk2_arsenal_5 = (
+        cgqc_mk2_arsenal_4 +
+        cgqc_mk2_arsenal_rank5
+    );
+    
+    // Arsenal init done
     cgqc_mk2_arsenal_init_done = true;
 };

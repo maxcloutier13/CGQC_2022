@@ -7,14 +7,12 @@ cgqc_mk2_arsenal_1_uniforms = [
     "cgqc_uniform_mk1_cadpat", 
     "cgqc_uniform_mk1_black", 
     "cgqc_uniform_mk1_white",
-    "cgqc_uniform_mk1_helipilot",
-    "cgqc_uniform_mk1_jetpilot",
     "U_C_CBRN_Suit_01_Blue_F", 
     "U_B_CBRN_Suit_01_Wdl_F", 
     "U_B_CBRN_Suit_01_Tropic_F", 
     "U_B_CBRN_Suit_01_MTP_F",
-    "U_mas_can_B_Wetsuit",
     // Vests -----------------------------------
+    
     "cgqc_vest_mk1_belt", 
     "cgqc_vest_mk1_tan",
     "cgqc_vest_mk1_tan_lr",
@@ -36,9 +34,6 @@ cgqc_mk2_arsenal_1_uniforms = [
     "cgqc_vest_mk1_white_lr", 
     "cgqc_vest_mk1_white_rf", 
     "cgqc_vest_mk1_white_ar",
-    "cgqc_vest_mk1_pilot",
-    "cgqc_vest_mk1_pilot_black",
-    "V_mas_can_RebreatherB",
     // Backpacks -----------------------------------
     "cgqc_pack_mk1_magic",
     "cgqc_pack_mk1_kitbag",
@@ -54,18 +49,5 @@ cgqc_mk2_arsenal_1_uniforms = [
     "cgqc_pack_mk1_assault_mcam", 
     "cgqc_pack_mk1_assault_cadpat",
     "cgqc_pack_mk1_assault_black", 
-    "cgqc_pack_mk1_assault_white", 
-    "cgqc_pack_mk1_Radiobag", 
-    "cgqc_pack_mk1_Radiobag_desert", 
-    "cgqc_pack_mk1_Radiobag_mcam", 
-    "cgqc_pack_mk1_Radiobag_cadpat", 
-    "cgqc_pack_mk1_Radiobag_black", 
-    "cgqc_pack_mk1_Radiobag_white", 
-    "cgqc_pack_mk1_carryall",
-    "cgqc_pack_mk1_carryall_desert", 
-    "cgqc_pack_mk1_carryall_mcam", 
-    "cgqc_pack_mk1_carryall_cadpat",
-    "cgqc_pack_mk1_carryall_black", 
-    "cgqc_pack_mk1_carryall_white",
-    "B_SCBA_01_F"
+    "cgqc_pack_mk1_assault_white"
 ];

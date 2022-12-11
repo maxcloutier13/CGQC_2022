@@ -315,12 +315,18 @@ class CfgMagazines {
 };
 // Groups ---------------------------------------------------------------------------------
 #include "cfg_groups.cpp"
-// Eventhandlers
-#include "cfg_eventHandlers.cpp"
 // Audio -----------------------------------------------------------------------------------
 #include "cfg_audio.cpp"
 // Mods Modifications ----------------------------------------------------------------------
 #include "cfg_mods_mods.cpp"
+
+// Custom functions
+#include "cfg_functions.hpp"
+
+
+// Eventhandlers
+#include "cfg_eventHandlers.cpp"
+
 // Ace ATragMX custom settings
 /*
 class ACE_ATragMX_Presets {

@@ -16,8 +16,7 @@ class Helicopter : Air
 {
     class ViewPilot;
     class Turrets;
-    class HitPoints
-    {
+    class HitPoints {
         class HitGlass1;
         class HitGlass2;
         class HitGlass3;
@@ -28,9 +27,8 @@ class Helicopter : Air
         class HitEngine;
         class HitAvionics;
     };
-    class EventHandlers
-    {
-        init = "[_this select 0, 'air'] execVM '\cgqc_2022\scripts\add_spares.sqf'";
+    class EventHandlers {
+        init = "[_this select 0, 'air'] execVM '\cgqc_2022\scripts\add_spares.sqf';";
     };
 };
 class RHS_C130J;
@@ -640,7 +638,7 @@ class cgqc_refuel_h : Land_HelipadSquare_F
     displayName = "CGQC - Helipad - Standard";
     class EventHandlers
     {
-        init = "[_this] execVM '\cgqc_2022\scripts\cgqc_refuel_setup.sqf'"; 
+        init = "[_this, 0] execVM '\cgqc_2022\scripts\cgqc_refuel_setup.sqf'"; 
     };
 };
 class cgqc_refuel_h_short : Land_HelipadSquare_F
@@ -652,7 +650,7 @@ class cgqc_refuel_h_short : Land_HelipadSquare_F
     displayName = "CGQC - Helipad - Rapide";
     class EventHandlers
     {
-        init = "[_this] execVM '\cgqc_2022\scripts\cgqc_refuel_setup_short.sqf'"; 
+        init = "[_this, 1] execVM '\cgqc_2022\scripts\cgqc_refuel_setup.sqf'"; 
     };
 };
 // Whiteboards

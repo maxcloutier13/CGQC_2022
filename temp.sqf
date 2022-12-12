@@ -246,9 +246,7 @@ class Meteo_EH
 // set rank by prefix ----------------------------------------------------------------------------------
 _name = name player;
 _prefix = _name select[0, 4];
-switch (_prefix)
-do
-{
+switch (_prefix) do {
 	case "Sdt.":
 	{
 		player setRank "PRIVATE";

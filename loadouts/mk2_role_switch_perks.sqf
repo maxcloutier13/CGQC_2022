@@ -55,3 +55,4 @@ switch (_type) do {
 		hintc "mk2_role_switch_perks.sqf fail";
 	};
 };
+mk2_role_switch_perks_done = true;

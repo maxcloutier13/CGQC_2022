@@ -129,7 +129,7 @@ disableUserInput false;
 execVM "\cgqc_2022\scripts\mk1_action_ghillie_menu.sqf";
 sleep 2;
 //Set radios
-["jtac"] spawn CGQC_fnc_setRadios;
+["jtac"] execVM "\cgqc\functions\fnc_setRadios.sqf";
 hint "Rôle: JTAC";
 sleep 3;
 hintSilent "";

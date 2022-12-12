@@ -7,12 +7,7 @@ _player_group = group player;
 if (isNil "cgqc_crew_heli") then {
 	cgqc_crew_heli = [];
 } else {
-	{
-		// Check if in vehicle
-		if (_x in _vic) then {
-			deleteVehicle _x;
-		};
-	} forEach cgqc_crew_heli;
+	{deleteVehicle _x;} forEach cgqc_crew_heli;
 };
 // spawn copilot  
 _copilot = _player_group createUnit [_pilot_class, [0, 0, 100], [], 0, "CAN_COLLIDE"];

@@ -35,6 +35,7 @@ if ((_backpack_old find["radiobag", 0]) > 0) then {_backpack_new = _backpack_new
 if ((_backpack_old find["assault", 0]) > 0) then {_backpack_new = _backpack_new + "_assault";}; 
 if ((_backpack_old find["carryall", 0]) > 0) then {	_backpack_new = _backpack_new + "_carryall";};
 if ((_backpack_old find["kitbag", 0]) > 0) then {	_backpack_new = _backpack_new + "_kitbag";};
+if ((_backpack_old find["magic", 0]) > 0) then {	_backpack_new = _backpack_new + "_magic";};
 
 // Sets base names 
 if (_camo == "tan") then {

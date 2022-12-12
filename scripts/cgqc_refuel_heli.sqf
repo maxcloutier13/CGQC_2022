@@ -2,21 +2,16 @@ _type = _this select 0;
 _timeleft = 0;
 _skip = 0;
 
-switch (_type)
-do
-{
-	case "normal":
-	{
+switch (_type) do {
+	case "normal": {
 		_timeleft = 240;
 		_skip = 0;
 	};
-    case "short":
-	{
+    case "short": {
 		_timeleft = 5;
 		_skip = 1;
 	};
-	default
-	{
+	default {
 		hint "woops";
 	};
 };

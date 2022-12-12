@@ -1,4 +1,5 @@
 _source = _this select 0;
+waitUntil {sleep 1;cgqc_postInitClient_done};
 
 if (!isNil "_source") then {
     // load default mk1 arsenal 

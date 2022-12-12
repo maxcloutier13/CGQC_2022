@@ -93,7 +93,7 @@ disableUserInput false;
 
 sleep 2;
 //Set  radios
-["griffon_pieton"] spawn CGQC_fnc_setRadios;
+["griffon_pieton"] execVM "\cgqc\functions\fnc_setRadios.sqf";
 hint "Rôle: Griffon";
 sleep 3;
 hintSilent "";

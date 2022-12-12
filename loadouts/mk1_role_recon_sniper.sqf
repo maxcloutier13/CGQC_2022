@@ -130,7 +130,7 @@ disableUserInput false;
 execVM "\cgqc_2022\scripts\mk1_action_ghillie_menu.sqf";
 sleep 3;
 //Set  radios
-["recon"] spawn CGQC_fnc_setRadios;
+["recon"] execVM "\cgqc\functions\fnc_setRadios.sqf";
 hint "Rôle: Sniper";
 sleep 3;
 hintSilent "";

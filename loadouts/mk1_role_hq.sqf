@@ -124,7 +124,7 @@ disableUserInput false;
 
 sleep 2;
 //Set  radios
-["hq"] spawn CGQC_fnc_setRadios;
+["hq"] execVM "\cgqc\functions\fnc_setRadios.sqf";
 hint "Rôle: HQ";
 sleep 3;
 hintSilent "";

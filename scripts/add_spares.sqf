@@ -1,6 +1,8 @@
 _vic = _this select 0;
 _type = _this select 1;
 
+waitUntil {sleep 1; cgqc_postInitClient_done};
+
 if (!isNil "_vic") then {
 	// Add spare fuelcan + ammo
     ["cgqc_box_mk1_fuelcan", _vic, true] call ace_cargo_fnc_loadItem;

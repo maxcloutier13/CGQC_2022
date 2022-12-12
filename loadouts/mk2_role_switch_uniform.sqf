@@ -89,3 +89,5 @@ switch (_type) do {
         hintSilent "";
 	};
 };
+
+mk2_role_switch_uniform = true;

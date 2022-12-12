@@ -1,6 +1,7 @@
 _type = _this select 0;
 
 // Universal stuff on every units 
+sleep 0.5;
 // === Uniform basic
 #include "\cgqc_2022\loadouts\mk2\uniform_basic.sqf"
 // === Vest basic
@@ -263,3 +264,5 @@ do
         hintSilent "";
 	};
 };
+
+mk2_role_switch_loadout = true;

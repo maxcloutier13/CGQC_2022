@@ -16,9 +16,7 @@ disableUserInput true;
 call {
     #include "\cgqc_2022\loadouts\mk2\remove_all.sqf"
 };
-switch (_type)
-do
-{
+switch (_type) do {
     // Command ========================================================================
 	case "hq":{ 
         _perks = "hq";
@@ -186,13 +184,24 @@ do
 	};
 };
 
+mk2_role_switch_perks_done = false;
+mk2_role_switch_uniform = false;
+mk2_role_switch_loadout = false;
+
 // Perks and traits setup 
+waitUntil {sleep 0.5;!isNil "_perks"};
 [_perks] execVM "\CGQC_2022\loadouts\mk2_role_switch_perks.sqf";
+waitUntil {sleep 0.5;mk2_role_switch_perks_done};
 // Add Uniform
+waitUntil {sleep 0.5;!isNil "_uniform"};
 [_uniform] execVM "\CGQC_2022\loadouts\mk2_role_switch_uniform.sqf";
-// Add Uniform
+waitUntil {sleep 0.5;mk2_role_switch_uniform};
+// Add loadout
+waitUntil {sleep 0.5;!isNil "_loadout"};
 [_loadout] execVM "\CGQC_2022\loadouts\mk2_role_switch_loadout.sqf";
+waitUntil {sleep 0.5;mk2_role_switch_loadout};
 // Set radios 
+waitUntil {sleep 0.5;!isNil "_radios"};
 [_radios, _section] execVM "\cgqc\functions\fnc_setRadios.sqf";
 //[_radios, _section] execVM "\cgqc_2022\loadouts\mk2_role_switch_radios.sqf";
 

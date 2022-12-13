@@ -14,7 +14,7 @@ if (!isNil "_crate") then {
     // Spartan 1-2-3-4 ------------------------------------
     #include "\cgqc_2022\loadouts\mk2_loadouts_spartan.sqf";
     // Recon ------------------------------------
-    _action = [ "menu_mk2_recon", "Recon", "", {""}, {cgqc_player_rank > 3} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_recon", "Recon", "", {""}, {cgqc_player_rank > 3 || !cgqc_mk2_arsenal_locked} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2"], _action ] call ace_interact_menu_fnc_addActionToObject;
     // Sniper
     _action = [ "menu_mk2_inf_snipe", "Sniper", "", {["sniper", 0] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
@@ -71,10 +71,11 @@ if (!isNil "_crate") then {
     // Winter uniform 
     _action = [ "menu_mk2_camo_winter", "Winter", "", {["white"] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2_camo"], _action ] call ace_interact_menu_fnc_addActionToObject;
+    
     // Items --------------------------------------------------------------------------------------------------------------
     _action = [ "menu_items", "Items Rapides", "CGQC_2022\textures\icon_items", {""}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call ace_interact_menu_fnc_addActionToObject;
-    //  Radio1 
+    //Radio1 
     _action = [ "menu_items1", "343", "", {["343"] execVM "\CGQC_2022\loadouts\mk1_box_get_items.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_items"], _action ] call ace_interact_menu_fnc_addActionToObject;
     //Radio2
@@ -83,6 +84,19 @@ if (!isNil "_crate") then {
     //Earplugs
     _action = [ "menu_items3", "Earplugs", "", {["earplugs"] execVM "\CGQC_2022\loadouts\mk1_box_get_items.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_items"], _action ] call ace_interact_menu_fnc_addActionToObject;
+    //Bandages
+    _action = [ "menu_items4", "Bandages x10", "", {["bandages"] execVM "\CGQC_2022\loadouts\mk1_box_get_items.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _adding = [ _crate, 0, ["ACE_MainActions" , "menu_items"], _action ] call ace_interact_menu_fnc_addActionToObject;
+    //Painkillers
+    _action = [ "menu_items5", "Painkillers x5", "", {["painkillers"] execVM "\CGQC_2022\loadouts\mk1_box_get_items.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _adding = [ _crate, 0, ["ACE_MainActions" , "menu_items"], _action ] call ace_interact_menu_fnc_addActionToObject;
+    //m72a7
+    _action = [ "menu_items6", "Jetable: m72a7 LAW", "", {["law"] execVM "\CGQC_2022\loadouts\mk1_box_get_items.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _adding = [ _crate, 0, ["ACE_MainActions" , "menu_items"], _action ] call ace_interact_menu_fnc_addActionToObject;
+    //m136
+    _action = [ "menu_items7", "Jetable: m136", "", {["m136"] execVM "\CGQC_2022\loadouts\mk1_box_get_items.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _adding = [ _crate, 0, ["ACE_MainActions" , "menu_items"], _action ] call ace_interact_menu_fnc_addActionToObject;
+
     // Skill switcher ---------------------------------------------------------------------------------------------------------
     _action = [ "menu_skill", "Skills", "CGQC_2022\textures\icon_skills", {""}, {cgqc_player_rank > 2 || !cgqc_mk2_arsenal_locked} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;

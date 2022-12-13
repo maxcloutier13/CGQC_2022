@@ -53,7 +53,7 @@ _type = _this select 0;
 		[player, true, false] call ace_arsenal_fnc_removeVirtualItems;
 		// Init crate
 		[player, _items] call ace_arsenal_fnc_initBox;
-		sleep 1;
+		sleep 0.5;
 		// Open arsenal
 		[player, player, false] call ace_arsenal_fnc_openBox;
 		// Remove option

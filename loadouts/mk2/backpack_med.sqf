@@ -30,4 +30,6 @@ for "_i" from 1 to 4 do {
 for "_i" from 1 to 3 do {
 	player addItemToBackpack "SmokeShellPurple";
 };
+player addItemToBackpack "ACE_personalAidKit";
+player addItemToBackpack "ACE_personalAidKit";
 player addItemToBackpack "FSGm_ItemMedicBag";

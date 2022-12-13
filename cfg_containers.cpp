@@ -2076,12 +2076,27 @@ class cgqc_box_mk2_arsenal : B_supplyCrate_F
     class TransportItems{};
     class TransportBackpacks{};
 };
-// Mk1 Cargo container
+// Mk2 Cargo container
 class cgqc_box_mk2_cargo : Land_Cargo10_military_green_F
 {
     scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_box_mk2_cargo";
+    displayName = "CGQC MK2 Cargo Container";
+    model = "\cgqc_2022\containers\cgqc_box_cargo.p3d";
+    ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
+    ace_cargo_noRename = 1;
+    class EventHandlers
+    {
+        init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk2_cargo.sqf'";
+    };
+};
+// Legacy mk1 cargo
+class cgqc_box_mk1_cargo : Land_Cargo10_military_green_F
+{
+    scope = 1;
+    author = "silent1";
+    _generalMacro = "cgqc_box_mk1_cargo";
     displayName = "CGQC MK2 Cargo Container";
     model = "\cgqc_2022\containers\cgqc_box_cargo.p3d";
     ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)

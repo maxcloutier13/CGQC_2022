@@ -15,6 +15,26 @@ do
 		player addItemToUniform "ACE_EarPlugs";
 		hintSilent "earplugs ajoutés";
 	};
+	case "bandages": {
+		for "_i" from 1 to 10 do {
+			player addItemToBackpack "ACE_fieldDressing";
+		};
+		hintSilent "bandages ajoutés";
+	};
+	case "painkillers": {
+		for "_i" from 1 to 5 do {
+			player addItemToBackpack "FF_Painkiller";
+		};
+		hintSilent "painkillers ajoutés";
+	};
+	case "law": {
+		player addWeapon "rhs_weap_m72a7";
+		hintSilent "m72a7 law ajouté";
+	};
+	case "m136": {
+		player addWeapon "rhs_weap_M136";
+		hintSilent "m136 ajouté";
+	};
 	case "fuel": {
 		supplies_fuelcan = "cgqc_box_mk1_fuelcan" createVehicle (position player);
 		hintSilent "Fuelcan!";

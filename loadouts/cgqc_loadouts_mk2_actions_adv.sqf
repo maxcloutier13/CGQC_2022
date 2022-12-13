@@ -13,10 +13,10 @@ if (!isNil "_crate") then {
     _action = [ "menu_supplies_ammo", "Infantry Ammo Box", "", {["ammo"] execVM "\CGQC_2022\loadouts\mk1_box_get_items.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_supplies"], _action ] call  ace_interact_menu_fnc_addActionToObject;
     //  60mm mortar crate 
-    _action = [ "menu_supplies_60", "60mm mortar box", "", {["mort60"] execVM "\CGQC_2022\loadouts\mk1_box_get_items.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_supplies_60", "60mm mortar box", "", {["mort60"] execVM "\CGQC_2022\loadouts\mk1_box_get_items.sqf"}, {cgqc_player_rank > 3} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_supplies"], _action ] call  ace_interact_menu_fnc_addActionToObject;
     //  82mm mortar crate
-    _action = [ "menu_supplies_82", "82mm mk6 mortar box", "", {["mort82"] execVM "\CGQC_2022\loadouts\mk1_box_get_items.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_supplies_82", "82mm mk6 mortar box", "", {["mort82"] execVM "\CGQC_2022\loadouts\mk1_box_get_items.sqf"}, {cgqc_player_rank > 3} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_supplies"], _action ] call  ace_interact_menu_fnc_addActionToObject;
     //  Spare wheel
     _action = [ "menu_supplies_wheel", "Spare wheel", "", {["wheel"] execVM "\CGQC_2022\loadouts\mk1_box_get_items.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;

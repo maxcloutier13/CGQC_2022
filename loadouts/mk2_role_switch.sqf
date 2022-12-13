@@ -5,6 +5,7 @@ _uniform = "";
 _loadout = "";
 _radios = "";
 cgqc_mk2_role = "";
+cgqc_mk2_role_infantry = true;
 
 // ===== Prep and transition ======================================================
 waitUntil {!isNull (findDisplay 46)};
@@ -46,6 +47,7 @@ switch (_type) do {
         _loadout = "heli";
         _radios = "griffon_pieton";
         cgqc_mk2_role = "Helicopter Pilot";
+        cgqc_mk2_role_infantry = false;
     };
     case "heli_crew":{
         _perks = "heli_crew";
@@ -53,6 +55,7 @@ switch (_type) do {
         _loadout = "heli";
         _radios = "griffon_pieton";
         cgqc_mk2_role = "Helicopter Crew";
+        cgqc_mk2_role_infantry = false;
     };
     case "jet_pilot":{ 
         _perks = "jet_pilot";
@@ -60,6 +63,7 @@ switch (_type) do {
         _loadout = "jet_pilot";
         _radios = "griffon_pieton";
         cgqc_mk2_role = "Jet Pilot";
+        cgqc_mk2_role_infantry = false;
     };
     case "tank_driver":{
         _perks = "tank_driver";
@@ -67,6 +71,7 @@ switch (_type) do {
         _loadout = "tank";
         _radios = "centaure_pieton";
         cgqc_mk2_role = "Tank Driver";
+        cgqc_mk2_role_infantry = false;
     };
     case "tank_crew":{
         _perks = "tank_crew";
@@ -74,6 +79,7 @@ switch (_type) do {
         _loadout = "tank";
         _radios = "centaure_pieton";
         cgqc_mk2_role = "Tank Crew";
+        cgqc_mk2_role_infantry = false;
     };
     // Recon ==========================================================================
     case "drone":{

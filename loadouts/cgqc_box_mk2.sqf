@@ -53,7 +53,7 @@ if (!isNil "_crate") then {
     
     
     // Mk1 Camo Switcher ---------------------------------------------------------------------------------------------------------
-    _action = [ "menu_mk2_camo", "Camo", "CGQC_2022\textures\icon_camo", {""}, {true} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_camo", "Camo", "CGQC_2022\textures\icon_camo", {""}, {!cgqc_perks_ghillie_isOn} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call ace_interact_menu_fnc_addActionToObject;
     // Base/Training uniform 
     _action = [ "menu_mk2_camo_base", "Training - Vert", "", {["tan"] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {cgqc_mk2_role_infantry} ] call ace_interact_menu_fnc_createAction;

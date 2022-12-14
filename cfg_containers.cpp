@@ -113,7 +113,7 @@ class cgqc_box_mk1_plus_plus : cgqc_box_mk1_rolebox
 };
 class cgqc_box_mk1_plus_plus_green : cgqc_box_mk1_plus_plus
 {
-    scope = 1;
+    scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_plus_plus_green";
     displayName = "CGQC MK1++ Crate";
@@ -190,7 +190,7 @@ class cgqc_box_original_green : B_supplyCrate_F
 // Mk1 Big Arsenal
 class cgqc_box_mk1_arsenal : B_supplyCrate_F
 {
-    scope = 1;
+    scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_arsenal";
     displayName = "CGQC MK1++ Arsenal";

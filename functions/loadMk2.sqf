@@ -6,8 +6,14 @@ _type = _this select 0;
 [_type] spawn { 
 
 	params ["_type"];
-	waitUntil {sleep 1; cgqc_mk2_arsenal_init_done}; 
+	//if(isNil "loadMk2_firstRun") then {
+	//	waitUntil {sleep 0.5; cgqc_mk2_arsenal_init_done}; 
+	//};
 	//hintc format ["Type:%1", _type];
+	if (isNil "loadMk2_lastRun") then {
+		loadMk2_lastRun = 25;
+	};
+	loadMk2_firstRun = true;
 	_zeus = false;
 	_items = cgqc_mk2_arsenal_1;
 	_found = false;
@@ -48,16 +54,16 @@ _type = _this select 0;
 	};
 	if (!_zeus) then {
 		//hintc "Not Zeus: Pop box";
-		waitUntil {sleep 1; _found}; 
-		// Clear items
-		[player, true, false] call ace_arsenal_fnc_removeVirtualItems;
-		// Init crate
-		[player, _items] call ace_arsenal_fnc_initBox;
-		sleep 0.5;
+		waitUntil {_found}; 
+		if (loadMk2_lastRun != _type) then {
+			// Clear items
+			[player, true, false] call ace_arsenal_fnc_removeVirtualItems;
+			// Init crate
+			[player, _items] call ace_arsenal_fnc_initBox;
+		};
 		// Open arsenal
 		[player, player, false] call ace_arsenal_fnc_openBox;
-		// Remove option
-		//[player, true] call ace_arsenal_fnc_removeBox;
+		loadMk2_lastRun = _type;
 	};
 };
 

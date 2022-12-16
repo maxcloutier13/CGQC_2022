@@ -26,7 +26,7 @@ do
 	};
     case "tl_carb":{ //=============================================================================================
         // === Weapons
-        #include "\cgqc_2022\loadouts\mk2\gun_m4_gren_lpvo.sqf"
+        #include "\cgqc_2022\loadouts\mk2\gun_acre_gren_lpvo.sqf"
         // === Vest
         #include "\cgqc_2022\loadouts\mk2\vest_grenadier.sqf"
         // === Backpack 
@@ -248,7 +248,7 @@ do
 	};
     case "rifle_gren":{ //=============================================================================================
         // === Weapons
-        #include "\cgqc_2022\loadouts\mk2\gun_m4_gren_lpvo.sqf"
+        #include "\cgqc_2022\loadouts\mk2\gun_acre_gren_lpvo.sqf"
         // === Vest
         #include "\cgqc_2022\loadouts\mk2\vest_grenadier.sqf"
         // === Backpack 

@@ -55,15 +55,12 @@ _type = _this select 0;
 	if (!_zeus) then {
 		//hintc "Not Zeus: Pop box";
 		waitUntil {_found}; 
-		if (loadMk2_lastRun != _type) then {
-			// Clear items
-			[player, true, false] call ace_arsenal_fnc_removeVirtualItems;
-			// Init crate
-			[player, _items] call ace_arsenal_fnc_initBox;
-		};
+		// Clear items
+		//[player, true, false] call ace_arsenal_fnc_removeVirtualItems;
+		// Init crate
+		[player, _items] call ace_arsenal_fnc_initBox;
 		// Open arsenal
 		[player, player, false] call ace_arsenal_fnc_openBox;
-		loadMk2_lastRun = _type;
 	};
 };
 

@@ -20,6 +20,11 @@ class TransportItems
         count = 1;
         name = "ACRE_PRC152";
     };
+    class _xx_ACRE_PRC343
+    {
+        count = 1;
+        name = "ACRE_PRC343";
+    };
     class _xx_ACE_artilleryTable
 	{
 		count = 2;

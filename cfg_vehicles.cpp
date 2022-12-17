@@ -554,8 +554,9 @@ class cgqc_vic_quad_ext : NDS_6x6_ATV_MIL_LR
     editorSubcategory = "EdSubcat_cgqc_offroad";
     displayName = "CGQC - 6x6 ATV (1)";
     crew = "CGQC_units_mk1_1_Rifleman_Carbine";
-    maximumLoad = 3500;
-    terrainCoef = 1.2;
+    maximumLoad = 3000;
+    fuelCapacity = 20;
+    terrainCoef = 0.5;
     brakeDistance = 3.0;
 	acceleration = 15;
     enableGPS = 1;
@@ -582,10 +583,15 @@ class cgqc_vic_quad_ext : NDS_6x6_ATV_MIL_LR
             intercom[] = {};
         };
     };
+    class EventHandlers
+    {
+         init = "[_this select 0, 'car'] execVM '\cgqc_2022\scripts\add_spares.sqf'";
+    };
     #include "vehicles\cgqc_vic_loadout_quadExt.cpp"
 };
 class cgqc_vic_quad_ext_mortarmk6 : cgqc_vic_quad_ext
 {
+    scope = 1;
     displayName = "CGQC - 6x6 ATV - Mk6 mortar (1)";
     #include "vehicles\cgqc_vic_loadout_quadExt_mk6.cpp"
 };

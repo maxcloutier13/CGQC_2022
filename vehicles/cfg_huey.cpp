@@ -1239,6 +1239,7 @@ class cgqc_heli_uh1 : cgqc_heli_uh1_base
     };
     class UserActions
     {
+        /*
         class GetGunners
         {
             displayName = "Spawn Crew";
@@ -1263,6 +1264,7 @@ class cgqc_heli_uh1 : cgqc_heli_uh1_base
             showWindow = 0;
             hideOnUse = 1;
         };
+        */
     };
     textureList[] = {};
     class Attributes

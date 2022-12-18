@@ -116,8 +116,8 @@ if (!isNil "_crate") then {
         "skill_sniper", 
         "Sniper", 
         "", 
-        {execVM "\cgqc_2022\scripts\mk1_action_ghillie_menu.sqf"},
-        {cgqc_player_rank > 3 || !cgqc_mk2_arsenal_locked || cgqc_flag_isTraining} 
+        {cgqc_perks_recon = true},
+        {(cgqc_player_rank > 3 || !cgqc_mk2_arsenal_locked || cgqc_flag_isTraining) && (isNil "cgqc_perk_ghillie")} 
     ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ,"menu_skill"], _action ] call ace_interact_menu_fnc_addActionToObject; 
 

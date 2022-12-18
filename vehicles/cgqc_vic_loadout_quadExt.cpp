@@ -34,6 +34,16 @@ class TransportMagazines
 		count = 20;
 		magazine = "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
 	};
+    class _xx_rhsusf_m112_mag
+	{
+		count = 2;
+		magazine = "rhsusf_m112_mag";
+	};
+	class _xx_rhsusf_m112x4_mag
+	{
+		count = 2;
+		magazine = "rhsusf_m112x4_mag";
+	};
 };
 class TransportWeapons
 {

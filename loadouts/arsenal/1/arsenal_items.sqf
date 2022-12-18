@@ -1,6 +1,7 @@
 cgqc_mk2_arsenal_1_items = [
     // Radios -----------------------------------
     "ACRE_PRC343", 
+    "ACRE_PRC148",
     // Meds -----------------------------------
     "ACE_fieldDressing", 
     "ACE_splint", 

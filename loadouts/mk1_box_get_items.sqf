@@ -11,6 +11,10 @@ do
 		player addItem "ACRE_PRC152";
 		hintSilent "152 ajoutée";
 	};
+	case "148":	{
+		player addItem "ACRE_PRC148";
+		hintSilent "148 ajoutée";
+	};
 	case "earplugs": {
 		player addItemToUniform "ACE_EarPlugs";
 		hintSilent "earplugs ajoutés";

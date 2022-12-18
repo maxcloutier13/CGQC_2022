@@ -4786,6 +4786,7 @@ class cgqc_heli_uh60m : cgqc_heli_UH60M_base
     };
     class UserActions
     {
+        /*
         class GetGunners
         {
             displayName = "Spawn Crew";
@@ -4810,6 +4811,7 @@ class cgqc_heli_uh60m : cgqc_heli_UH60M_base
             showWindow = 0;
             hideOnUse = 0;
         };
+        */
         class HMDs_Kimi_UserAction_0_ON
 		{
 			displayName = "<t color='#26ff00'>HMD ON</t>";

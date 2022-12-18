@@ -2335,6 +2335,7 @@ class cgqc_heli_ch47_base : Heli_Transport_02_base_F
     };
     class UserActions
     {
+        /*
         class GetGunners
         {
             displayName = "Spawn Crew";
@@ -2359,6 +2360,7 @@ class cgqc_heli_ch47_base : Heli_Transport_02_base_F
             showWindow = 0;
             hideOnUse = 0;
         };
+        */
         class OpenCargoDoor
         {
             displayName = "Open Ramp";

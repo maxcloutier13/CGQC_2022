@@ -8,6 +8,8 @@ player setUnitTrait ["explosiveSpecialist", false];
 // Remove ghillie up and other perks
 cgqc_perks_basic = true;
 cgqc_perks_recon = false;
+cgqc_perks_pilot = false;
+cgqc_perks_driver = false;
 cgqc_perks_eng = false;
 cgqc_perks_medic = false;
 
@@ -18,6 +20,7 @@ switch (_type) do {
 	};
 	case "heli_pilot":{
 		player setUnitTrait ["engineer", true];
+		cgqc_perks_pilot = true;
 	};
 	case "heli_crew":{
 		player setUnitTrait ["engineer", true];
@@ -27,6 +30,7 @@ switch (_type) do {
 	};
 	case "tank_driver":{
 		player setUnitTrait ["engineer", true];
+		cgqc_perks_driver = true;
 	};
 	case "tank_crew":{
 		player setUnitTrait ["engineer", true];

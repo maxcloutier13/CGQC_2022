@@ -1,16 +1,19 @@
 // **********************************************************************************************************************
 // --- Spartan-1 --------------------------------------------------------------------------------------------------------
 // **********************************************************************************************************************
-_action = [ "menu_mk2_s1", "Spartan-1", "", {""}, {true} ] call ace_interact_menu_fnc_createAction;
+_action = [ "menu_mk2_s1", "Spartan", "", {""}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Infanterie ---------------------------------------------------------------------------------------------------------
 _action = [ "menu_mk2_inf", "Infanterie", "", {""}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2", "menu_mk2_s1"], _action ] call  ace_interact_menu_fnc_addActionToObject;
-// Rifleman 
-_action = [ "menu_mk2_inf_RF", "Rifleman", "", {["rifle_carb", 1] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+// Rifleman mk18 
+_action = [ "menu_mk2_inf_RFCQB", "Rifleman - 10in mk18", "", {["rifle_cqb", 1] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2", "menu_mk2_s1", "menu_mk2_inf"], _action ] call  ace_interact_menu_fnc_addActionToObject;
-// Rifleman CQB 
-_action = [ "menu_mk2_inf_RFCQB", "Rifleman CQB", "", {["rifle_cqb", 1] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+// Rifleman M4
+_action = [ "menu_mk2_inf_RF", "Rifleman - 14in M4blk2", "", {["rifle_carb", 1] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+_adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2", "menu_mk2_s1", "menu_mk2_inf"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+// Rifleman M16
+_action = [ "menu_mk2_inf_RF_m16", "Rifleman - 20in M16a4", "", {["rifle_m16", 1] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2", "menu_mk2_s1", "menu_mk2_inf"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Grenadier 
 _action = [ "menu_mk2_inf_Grenadier", "Grenadier", "", {["rifle_grenade", 1] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
@@ -51,6 +54,24 @@ _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2", "menu_mk2_s1", "menu_mk2
 // Team Leader CQB
 _action = [ "menu_mk2_inf_TLcqb", "Team Leader CQB", "", {["tl_cqb",1] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2", "menu_mk2_s1", "menu_mk2_lead"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
 
 // **********************************************************************************************************************
 // --- Spartan-2 -------------------------------------------------------------------------------------------------------
@@ -216,3 +237,5 @@ _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2", "menu_mk2_s4", "menu_mk2
 // Team Leader CQB
 _action = [ "menu_mk2_inf_TLcqb", "Team Leader CQB", "", {["tl_cqb", 4] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2", "menu_mk2_s4", "menu_mk2_lead"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+
+*/

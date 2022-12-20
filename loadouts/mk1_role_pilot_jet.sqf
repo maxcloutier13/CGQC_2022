@@ -1,6 +1,6 @@
 waitUntil {!isNull (findDisplay 46)};
 execVM "\CGQC_2022\scripts\transition.sqf";
-disableUserInput true;
+//disableUserInput true;
 sleep 2;
 player setUnitTrait ["Medic", false];
 player setUnitTrait ["engineer", false];
@@ -82,7 +82,7 @@ player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemGPS";
-disableUserInput false;
+//disableUserInput false;
 
 sleep 2;
 //Set  radios

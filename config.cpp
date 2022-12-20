@@ -30,7 +30,19 @@ class CfgEditorSubcategories
 	};
 	class EdSubcat_cgqc_spawn
 	{
-		displayName = "Men (Spawn Roles)";
+		displayName = "Men (Spartan)";
+	};
+	class EdSubcat_cgqc_spawn_cmd
+	{
+		displayName = "Men (Command)";
+	};
+	class EdSubcat_cgqc_spawn_rec
+	{
+		displayName = "Men (Recon)";
+	};
+	class EdSubcat_cgqc_spawn_pilot
+	{
+		displayName = "Men (Pilots)";
 	};
 	class EdSubcat_cgqc_funstuff
 	{

@@ -1,7 +1,7 @@
 // **********************************************************************************************************************
 // --- Spartan-1 --------------------------------------------------------------------------------------------------------
 // **********************************************************************************************************************
-_action = [ "menu_mk2_s1", "Spartan-1", "", {""}, {true} ] call ace_interact_menu_fnc_createAction;
+_action = [ "menu_mk2_s1", "Spartan", "", {""}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 // Infanterie ---------------------------------------------------------------------------------------------------------
 _action = [ "menu_mk2_inf", "Infanterie", "", {""}, {true} ] call ace_interact_menu_fnc_createAction;
@@ -54,6 +54,24 @@ _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2", "menu_mk2_s1", "menu_mk2
 // Team Leader CQB
 _action = [ "menu_mk2_inf_TLcqb", "Team Leader CQB", "", {["tl_cqb",1] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2", "menu_mk2_s1", "menu_mk2_lead"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
 
 // **********************************************************************************************************************
 // --- Spartan-2 -------------------------------------------------------------------------------------------------------
@@ -219,3 +237,5 @@ _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2", "menu_mk2_s4", "menu_mk2
 // Team Leader CQB
 _action = [ "menu_mk2_inf_TLcqb", "Team Leader CQB", "", {["tl_cqb", 4] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
 _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2", "menu_mk2_s4", "menu_mk2_lead"], _action ] call  ace_interact_menu_fnc_addActionToObject;
+
+*/

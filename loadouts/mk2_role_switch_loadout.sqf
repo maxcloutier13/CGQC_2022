@@ -24,6 +24,18 @@ do
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
 	};
+    case "sl":{ //=============================================================================================
+        // === Weapons
+        #include "\cgqc_2022\loadouts\mk2\gun_m16_shortdot.sqf"
+        // === Vest
+        #include "\cgqc_2022\loadouts\mk2\vest_infantry.sqf"
+        // === Backpack 
+        #include "\cgqc_2022\loadouts\mk2\backpack_hq.sqf"
+        // === Radios 
+        #include "\cgqc_2022\loadouts\mk2\radios_hq.sqf"
+        // === Items 
+        #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
+	};
     case "tl_carb":{ //=============================================================================================
         // === Weapons
         #include "\cgqc_2022\loadouts\mk2\gun_m4_grenM320.sqf"

@@ -19,7 +19,6 @@ execVM "\CGQC_2022\scripts\transition.sqf";
 // ===== Remove items ======================================================
 #include "\cgqc_2022\loadouts\mk2\remove_all.sqf"
 waitUntil {cgqc_mk2_role_removed};
-sleep 1;
 switch (_type) do {
     // Command ========================================================================
 	case "hq":{ 
@@ -28,6 +27,13 @@ switch (_type) do {
         _loadout = "hq";
         _radios = "hq";
         cgqc_mk2_role = "HQ";
+	};
+    case "sl":{ 
+        _perks = "hq";
+        _uniform = "command";
+        _loadout = "sl";
+        _radios = "hq";
+        cgqc_mk2_role = "Squad Leader";
 	};
     case "tl_carb":{
         _perks = "tl";

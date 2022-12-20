@@ -18,9 +18,9 @@
     #include "\cgqc_2022\loadouts\arsenal\init_arsenal.sqf";
 
 	// Refuel actions ---------------------------------------------------------------------------------
-	_action = [ "menu_self_rrr", "Maintenance Véhicule", "CGQC_2022\textures\icon_maintenance", {['normal'] execVM "\cgqc_2022\scripts\cgqc_refuel_heli.sqf"}, {cgqc_flag_supply && (driver vehicle player isEqualTo player)} ] call ace_interact_menu_fnc_createAction;
+	_action = [ "menu_self_rrr", "Maintenance Véhicule", "CGQC_2022\textures\icon_maintenance", {['normal'] execVM "\cgqc_2022\scripts\cgqc_refuel_heli.sqf"}, {cgqc_flag_supply && (vehicle player isKindOf "Air") && (driver vehicle player isEqualTo player)} ] call ace_interact_menu_fnc_createAction;
 	_adding = [ player, 1, ["ACE_SelfActions"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 	// Fast refuel
-	_action = [ "menu_self_rrr_short", "Maintenance Rapide", "CGQC_2022\textures\icon_maintenance", {['short'] execVM "\cgqc_2022\scripts\cgqc_refuel_heli.sqf"}, {cgqc_flag_supply_rapide && (driver vehicle player isEqualTo player)} ] call ace_interact_menu_fnc_createAction;
+	_action = [ "menu_self_rrr_short", "Maintenance Rapide", "CGQC_2022\textures\icon_maintenance", {['short'] execVM "\cgqc_2022\scripts\cgqc_refuel_heli.sqf"}, {cgqc_flag_supply_rapide && (vehicle player isKindOf "Air") && (driver vehicle player isEqualTo player)} ] call ace_interact_menu_fnc_createAction;
 	_adding = [ player, 1, ["ACE_SelfActions"], _action ] call  ace_interact_menu_fnc_addActionToObject;
 };

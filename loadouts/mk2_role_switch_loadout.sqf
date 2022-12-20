@@ -222,6 +222,18 @@ do
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
 	};
+    case "rifle_cqb":{ //=============================================================================================
+        // === Weapons
+        #include "\cgqc_2022\loadouts\mk2\gun_m4_dotplus.sqf"
+        // === Vest
+        #include "\cgqc_2022\loadouts\mk2\vest_rifleman.sqf"
+        // === Backpack 
+        #include "\cgqc_2022\loadouts\mk2\backpack_rifleman.sqf"
+        // === Radios 
+        #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
+        // === Items 
+        #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
+	};
     case "rifle_carb":{ //=============================================================================================
         // === Weapons
         #include "\cgqc_2022\loadouts\mk2\gun_m4_dotplus.sqf"
@@ -234,9 +246,9 @@ do
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
 	};
-    case "rifle_cqb":{ //=============================================================================================
+    case "rifle_m16":{ //=============================================================================================
         // === Weapons
-        #include "\cgqc_2022\loadouts\mk2\gun_m4_dotplus.sqf"
+        #include "\cgqc_2022\loadouts\mk2\gun_m16_shortdot.sqf"
         // === Vest
         #include "\cgqc_2022\loadouts\mk2\vest_rifleman.sqf"
         // === Backpack 

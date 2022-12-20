@@ -562,3 +562,13 @@ _this  addEventHandler [
   }; 
  } 
 ]; 
+
+
+
+
+[] spawn {
+	waitUntil {cgqc_postInitClient_done};
+	sleep 1;
+	["rifle_m16", 1] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf";
+};
+

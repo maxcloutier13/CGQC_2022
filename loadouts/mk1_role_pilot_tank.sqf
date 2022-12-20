@@ -12,7 +12,7 @@ do
 };
 waitUntil {!isNull (findDisplay 46)};
 execVM "\CGQC_2022\scripts\transition.sqf";
-disableUserInput true;
+//disableUserInput true;
 sleep 2;
 // Remove traits
 player setUnitTrait ["Medic", false];
@@ -129,7 +129,7 @@ player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "B_UavTerminal";
 
-disableUserInput false;
+//disableUserInput false;
 sleep 2;
 // Set  radios
 ["centaure_pieton"] execVM "\cgqc\functions\fnc_setRadios.sqf";

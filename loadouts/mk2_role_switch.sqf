@@ -1,3 +1,7 @@
+waitUntil {sleep 0.5; cgqc_postInitClient_done};
+waitUntil {sleep 0.5; !isNull (findDisplay 46)};
+
+// ===== Prep and transition ======================================================
 _type = _this select 0;
 _section = _this select 1;
 _perks = "";
@@ -6,17 +10,16 @@ _loadout = "";
 _radios = "";
 cgqc_mk2_role = "";
 cgqc_mk2_role_infantry = true;
+cgqc_mk2_role_removed = false;
 
-// ===== Prep and transition ======================================================
-waitUntil {!isNull (findDisplay 46)};
 execVM "\CGQC_2022\scripts\transition.sqf";
-disableUserInput true;
+//disableUserInput true;
 //sleep 2;
 
 // ===== Remove items ======================================================
-call {
-    #include "\cgqc_2022\loadouts\mk2\remove_all.sqf"
-};
+#include "\cgqc_2022\loadouts\mk2\remove_all.sqf"
+waitUntil {cgqc_mk2_role_removed};
+sleep 1;
 switch (_type) do {
     // Command ========================================================================
 	case "hq":{ 
@@ -39,6 +42,116 @@ switch (_type) do {
         _loadout = "tl_cqb";
         _radios = "spartan_1";
         cgqc_mk2_role = "Team Leader";
+    };
+    // Infantry  ==========================================================================
+     case "rifle_cqb":{
+        _perks = "inf";
+        _uniform = "inf_light";
+        _loadout = "rifle_cqb";
+        _radios = "spartan";
+        cgqc_mk2_role = "Rifleman (Mk18)";
+    };
+    case "rifle_carb":{
+        _perks = "inf";
+        _uniform = "inf_light";
+        _loadout = "rifle_carb";
+        _radios = "spartan";
+        cgqc_mk2_role = "Rifleman (m4)";
+    };
+    case "rifle_m16":{
+        _perks = "inf";
+        _uniform = "inf_light";
+        _loadout = "rifle_m16";
+        _radios = "spartan";
+        cgqc_mk2_role = "Rifleman (m16)";
+    };
+    case "rifle_grenade":{
+        _perks = "inf";
+        _uniform = "inf_medium";
+        _loadout = "rifle_gren";
+        _radios = "spartan";
+        cgqc_mk2_role = "Grenadier";
+    };
+    // AT ==========================================================================
+    case "at_jav":{
+        _perks = "at";
+        _uniform = "inf_heavy";
+        _loadout = "at_jav";
+        _radios = "spartan";
+        cgqc_mk2_role = "Anti-Tank (Javelin)";
+    };
+    case "at_maaws":{
+        _perks = "at";
+        _uniform = "inf_heavy";
+        _loadout = "at_maaws";
+        _radios = "spartan";
+        cgqc_mk2_role = "Anti-Tank (MAAWS)";
+    };
+    // MG ==========================================================================
+    case "hmg":{
+        _perks = "mg";
+        _uniform = "inf_medium";
+        _loadout = "hmg";
+        _radios = "spartan";
+        cgqc_mk2_role = "Machinegunner (Heavy)";
+    };
+    case "lmg":{
+        _perks = "mg";
+        _uniform = "inf_medium";
+        _loadout = "lmg";
+        _radios = "spartan";
+        cgqc_mk2_role = "Machinegunner (Light)";
+    };
+    // Specialists ==========================================================================
+    case "eng":{
+        _perks = "eng";
+        _uniform = "eng";
+        _loadout = "eng";
+        _radios = "spartan";
+        cgqc_mk2_role = "Engineer";
+    };
+    case "med":{
+        _perks = "med";
+        _uniform = "med";
+        _loadout = "med";
+        _radios = "spartan_2";
+        cgqc_mk2_role = "Medic";
+    };
+    case "mrksm":{
+        _perks = "inf";
+        _uniform = "inf_light";
+        _loadout = "mrksm";
+        _radios = "spartan";
+        cgqc_mk2_role = "Designated Marksman";
+    };
+    case "mortar":{
+        _perks = "mortar";
+        _uniform = "inf_heavy";
+        _loadout = "mortar";
+        _radios = "spartan_2";
+        cgqc_mk2_role = "Mortier Léger";
+    };
+    // Recon ==========================================================================
+    case "drone":{
+        _perks = "recon";
+        _uniform = "recon";
+        _loadout = "drone";
+        _radios = "recon";
+        cgqc_mk2_role = "Drone Operator";
+    };
+    case "sniper":{
+        _perks = "recon";
+        _uniform = "recon";
+        _loadout = "sniper";
+        _radios = "recon";
+        cgqc_mk2_role = "Sniper";
+    };
+    case "jtac":{
+        _perks = "recon";
+        _uniform = "jtac";
+        _loadout = "jtac";
+        _radios = "jtac";
+        cgqc_mk2_role = "JTAC";
     };
     // Pilots and crews ===============================================================
     case "heli_pilot":{ 
@@ -81,110 +194,6 @@ switch (_type) do {
         cgqc_mk2_role = "Tank Crew";
         cgqc_mk2_role_infantry = false;
     };
-    // Recon ==========================================================================
-    case "drone":{
-        _perks = "recon";
-        _uniform = "recon";
-        _loadout = "drone";
-        _radios = "recon";
-        cgqc_mk2_role = "Drone Operator";
-    };
-    case "sniper":{
-        _perks = "recon";
-        _uniform = "recon";
-        _loadout = "sniper";
-        _radios = "recon";
-        cgqc_mk2_role = "Sniper";
-    };
-    case "jtac":{
-        _perks = "recon";
-        _uniform = "jtac";
-        _loadout = "jtac";
-        _radios = "jtac";
-        cgqc_mk2_role = "JTAC";
-    };
-    // Specialists ==========================================================================
-    case "eng":{
-        _perks = "eng";
-        _uniform = "eng";
-        _loadout = "eng";
-        _radios = "spartan";
-        cgqc_mk2_role = "Engineer";
-    };
-    case "med":{
-        _perks = "med";
-        _uniform = "med";
-        _loadout = "med";
-        _radios = "spartan_2";
-        cgqc_mk2_role = "Medic";
-    };
-    // AT ==========================================================================
-    case "at_jav":{
-        _perks = "at";
-        _uniform = "inf_heavy";
-        _loadout = "at_jav";
-        _radios = "spartan";
-        cgqc_mk2_role = "Anti-Tank (Javelin)";
-    };
-    case "at_maaws":{
-        _perks = "at";
-        _uniform = "inf_heavy";
-        _loadout = "at_maaws";
-        _radios = "spartan";
-        cgqc_mk2_role = "Anti-Tank (MAAWS)";
-    };
-    // MG ==========================================================================
-    case "hmg":{
-        _perks = "mg";
-        _uniform = "inf_medium";
-        _loadout = "hmg";
-        _radios = "spartan";
-        cgqc_mk2_role = "Machinegunner (Heavy)";
-    };
-    case "lmg":{
-        _perks = "mg";
-        _uniform = "inf_medium";
-        _loadout = "lmg";
-        _radios = "spartan";
-        cgqc_mk2_role = "Machinegunner (Light)";
-    };
-    // Others ==========================================================================
-    case "mrksm":{
-        _perks = "inf";
-        _uniform = "inf_light";
-        _loadout = "mrksm";
-        _radios = "spartan";
-        cgqc_mk2_role = "Designated Marksman";
-    };
-    case "mortar":{
-        _perks = "mortar";
-        _uniform = "inf_heavy";
-        _loadout = "mortar";
-        _radios = "spartan_2";
-        cgqc_mk2_role = "Mortier Léger";
-    };
-    // Infantry  ==========================================================================
-    case "rifle_carb":{
-        _perks = "inf";
-        _uniform = "inf_light";
-        _loadout = "rifle_carb";
-        _radios = "spartan";
-        cgqc_mk2_role = "Rifleman (Carbine)";
-    };
-    case "rifle_cqb":{
-        _perks = "inf";
-        _uniform = "inf_light";
-        _loadout = "rifle_cqb";
-        _radios = "spartan";
-        cgqc_mk2_role = "Rifleman (CQB)";
-    };
-    case "rifle_grenade":{
-        _perks = "inf";
-        _uniform = "inf_medium";
-        _loadout = "rifle_gren";
-        _radios = "spartan";
-        cgqc_mk2_role = "Grenadier";
-    };
     default	{
 		hintc "mk2_role_switch.sqf fail";
 	};
@@ -214,7 +223,7 @@ waitUntil {sleep 0.5;!isNil "_radios"};
 // Lower gun 
 player action ['SwitchWeapon', player, player, 100];
 // Give control back
-disableUserInput false;
+//disableUserInput false;
 
 hint format["Rôle:%1", cgqc_mk2_role];
 sleep 5;

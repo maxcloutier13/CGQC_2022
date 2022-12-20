@@ -468,7 +468,7 @@ class cgqc_vic_badger : B_W_APC_Wheeled_01_cannon_F
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic";
-    displayName = "CGQC - Badger (3+8)";
+    displayName = "Badger (3+8)";
     crew = "CGQC_units_mk1_4_Tank_Driver";
     maximumLoad = 6000;
     ace_cargo_space = 5;
@@ -489,7 +489,7 @@ class cgqc_vic_bradley : RHS_M2A3_BUSKIII_wd
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic";
-    displayName = "CGQC - Bradley (3+6)";
+    displayName = "Bradley (3+6)";
     crew = "CGQC_units_mk1_4_Tank_Driver";
     ace_cargo_space = 4;
     hiddenSelectionsTextures[] = {
@@ -508,7 +508,7 @@ class cgqc_vic_wiezel : I_LT_01_scout_F
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_cmd";
-    displayName = "CGQC - Command Wiezel (2)";
+    displayName = "Command Wiezel (2)";
     crew = "CGQC_units_mk1_4_Tank_Driver";
     // Boosted speed and space
     enginePower = 190;
@@ -533,7 +533,7 @@ class cgqc_vic_quad : B_W_Quadbike_01_F
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_offroad";
-    displayName = "CGQC - Quad (1+1)";
+    displayName = "Quad (1+1)";
     crew = "CGQC_units_mk1_1_Rifleman_Carbine";
     class AcreRacks {
         class Rack_1 {
@@ -552,7 +552,7 @@ class cgqc_vic_quad_ext : NDS_6x6_ATV_MIL_LR
 {
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_offroad";
-    displayName = "CGQC - 6x6 ATV (1)";
+    displayName = "6x6 ATV (1)";
     crew = "CGQC_units_mk1_1_Rifleman_Carbine";
     canFloat = 1;
     waterResistanceCoef = 0.03;
@@ -595,7 +595,7 @@ class cgqc_vic_quad_ext_mortarmk6 : cgqc_vic_quad_ext
 {
     scope = 1;
     maximumLoad = 3000;
-    displayName = "CGQC - 6x6 ATV - Mk6 mortar (1)";
+    displayName = "6x6 ATV - Mk6 mortar (1)";
     #include "vehicles\cgqc_vic_loadout_quadExt_mk6.cpp"
 };
 class UK3CB_B_M1030_USMC_WDL;
@@ -606,7 +606,7 @@ class cgqc_vic_motocross : UK3CB_B_M1030_USMC_WDL
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_offroad";
-    displayName = "CGQC - Motocross (1+1)";
+    displayName = "Motocross (1+1)";
     crew = "CGQC_units_mk1_1_Rifleman_Carbine";
     #include "vehicles\cgqc_vic_loadout_small.cpp"
 };
@@ -618,7 +618,7 @@ class cgqc_vic_suv : UK3CB_AAF_B_SUV_Armoured
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_offroad";
-    displayName = "CGQC - SUV (1+5).";
+    displayName = "SUV (1+5).";
     crew = "CGQC_units_mk1_1_Rifleman_Carbine";
     class AcreRacks {
         class Rack_1 {
@@ -644,7 +644,7 @@ class cgqc_refuel_h : Land_HelipadSquare_F
     //faction = "cgqc";
     //editorSubcategory = "EdSubcat_cgqc_offroad";
     _generalMacro = "cgqc_refuel_h";
-    displayName = "CGQC - Helipad - Standard";
+    displayName = "CGQC Helipad - Standard";
     class EventHandlers
     {
         init = "[_this, 0] execVM '\cgqc_2022\scripts\cgqc_refuel_setup.sqf'"; 
@@ -656,7 +656,7 @@ class cgqc_refuel_h_short : Land_HelipadSquare_F
     //faction = "cgqc";
     //editorSubcategory = "EdSubcat_cgqc_offroad";
     _generalMacro = "cgqc_refuel_h";
-    displayName = "CGQC - Helipad - Rapide";
+    displayName = "CGQC Helipad - Rapide";
     class EventHandlers
     {
         init = "[_this, 1] execVM '\cgqc_2022\scripts\cgqc_refuel_setup.sqf'"; 

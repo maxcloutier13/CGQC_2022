@@ -1,6 +1,6 @@
 waitUntil {!isNull (findDisplay 46)}; 
 execVM "\CGQC_2022\scripts\transition.sqf";
-disableUserInput true;
+//disableUserInput true;
 sleep 2;
 player setUnitTrait ["Medic", false];
 player setUnitTrait ["engineer", false];
@@ -124,7 +124,7 @@ player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "B_UavTerminal";
 player linkItem "JAS_GPNVG18_blk";
-disableUserInput false;
+//disableUserInput false;
 
 //Load the sniper skill
 execVM "\cgqc_2022\scripts\mk1_action_ghillie_menu.sqf";

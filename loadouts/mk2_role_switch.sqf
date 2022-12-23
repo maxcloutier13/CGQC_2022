@@ -1,5 +1,8 @@
-waitUntil {sleep 0.5; cgqc_postInitClient_done};
-waitUntil {sleep 0.5; !isNull (findDisplay 46)};
+waitUntil {cgqc_postInitClient_done};
+waitUntil {!isNull (findDisplay 46)};
+// Fade to black  
+cutText ["", "BLACK FADED", 999];
+titleText ["", "PLAIN"];
 
 // ===== Prep and transition ======================================================
 _type = _this select 0;
@@ -12,7 +15,7 @@ cgqc_mk2_role = "";
 cgqc_mk2_role_infantry = true;
 cgqc_mk2_role_removed = false;
 
-execVM "\CGQC_2022\scripts\transition.sqf";
+
 //disableUserInput true;
 //sleep 2;
 
@@ -205,6 +208,9 @@ switch (_type) do {
 	};
 };
 
+// Start transition
+[] execVM "\CGQC_2022\scripts\transition.sqf";
+
 mk2_role_switch_perks_done = false;
 mk2_role_switch_uniform = false;
 mk2_role_switch_loadout = false;
@@ -227,10 +233,8 @@ waitUntil {sleep 0.5;!isNil "_radios"};
 //[_radios, _section] execVM "\cgqc_2022\loadouts\mk2_role_switch_radios.sqf";
 
 // Lower gun 
-player action ['SwitchWeapon', player, player, 100];
+player action ['WeaponOnBack', player];
+//player action ['SwitchWeapon', player, player, 100];
+//player action ['SwitchWeapon', player, player, 100];
 // Give control back
 //disableUserInput false;
-
-hint format["Rôle:%1", cgqc_mk2_role];
-sleep 5;
-hintSilent "";

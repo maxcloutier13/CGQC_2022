@@ -5,6 +5,8 @@ player addItemToBackpack "ACE_Tripod";
 player addItemToBackpack "sps_black_hornet_01_Static_F";
 player addItemToBackpack "ItemcTab";
 player addItemToBackpack "ACE_UAVBattery";
+player addItemToBackpack "ACE_ATragMX";
+player addItemToBackpack "ACE_Kestrel4500";
 
 // === Explosives ================================
 player addItemToBackpack "ACE_DefusalKit";

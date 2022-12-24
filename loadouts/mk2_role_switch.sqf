@@ -232,6 +232,10 @@ waitUntil {sleep 0.5;!isNil "_radios"};
 [_radios, _section] execVM "\cgqc\functions\fnc_setRadios.sqf";
 //[_radios, _section] execVM "\cgqc_2022\loadouts\mk2_role_switch_radios.sqf";
 
+//Set patch back
+player setVariable ["BIS_fnc_setUnitInsignia_class", nil]; //Remove patch
+[ player, cgqc_player_patch ] call BIS_fnc_setUnitInsignia;
+
 // Lower gun 
 player action ['WeaponOnBack', player];
 //player action ['SwitchWeapon', player, player, 100];

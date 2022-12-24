@@ -1,4 +1,7 @@
 _camo = _this select 0;
+// Fade to black  
+cutText ["", "BLACK FADED", 999];
+titleText ["", "PLAIN"];
 // Fade to black transition
 execVM "\CGQC_2022\scripts\transition.sqf";
 //disableUserInput true;
@@ -83,3 +86,7 @@ player addBackpack _backpack_new;
 } forEach _items_pack;
 // Return control to player
 //disableUserInput false;
+
+// Set back patch
+player setVariable ["BIS_fnc_setUnitInsignia_class", nil]; //Remove patch
+[ player, cgqc_player_patch ] call BIS_fnc_setUnitInsignia;

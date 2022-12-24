@@ -1,4 +1,7 @@
 _camo = _this select 0;
+// Fade to black  
+cutText ["", "BLACK FADED", 999];
+titleText ["", "PLAIN"];
 // Fade to black transition
 execVM "\CGQC_2022\scripts\transition.sqf";
 //disableUserInput true;

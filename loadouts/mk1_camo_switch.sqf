@@ -83,3 +83,7 @@ player addBackpack _backpack_new;
 } forEach _items_pack;
 // Return control to player
 //disableUserInput false;
+
+// Set back patch
+player setVariable ["BIS_fnc_setUnitInsignia_class", nil]; //Remove patch
+[ player, cgqc_player_patch ] call BIS_fnc_setUnitInsignia;

@@ -62,7 +62,7 @@ if (hasInterface) then {
 				player addItemToUniform _x
 			} forEach _uniform_items;
 			//Lower the camouflage level of unit in ghillie
-			player setUnitTrait ["camouflageCoef", 0.4];
+			player setUnitTrait ["camouflageCoef", 0.2];
 			ghillie_isOn = 1;
 		};
 		case 2:// Change back to uniform
@@ -79,7 +79,10 @@ if (hasInterface) then {
 				player addItemToUniform _x
 			} forEach _uniform_items;
 			//Lower the camouflage level of unit in ghillie
-			player setUnitTrait ["camouflageCoef", 1.4];
+			player setUnitTrait ["camouflageCoef", 1.3];
+			// Set patch back
+			player setVariable ["BIS_fnc_setUnitInsignia_class", nil]; //Remove patch
+			[ player, cgqc_player_patch ] call BIS_fnc_setUnitInsignia;
 			ghillie_isOn = 0;
 		};
 		default

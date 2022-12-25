@@ -50,12 +50,15 @@ switch (_type) do {
         _helmet =  "cgqc_helmet_mk1";
         _face =  "G_mas_can_wrap_gog_B";
         player addHandgunItem "Tier1_TiRant9S"; //Silencer on pistol
+        player addHandgunItem "tier1_sig_romeo1"; //Dot on pistol
 	};
     case "jtac":{ //=============================================================================================
         _vest = "cgqc_vest_mk1_tan_lr";
         _backpack =  "cgqc_pack_mk1_radiobag";
         _helmet =  "cgqc_helmet_mk1";
         _face =  "G_mas_can_wrap_gog_B";
+        player addHandgunItem "Tier1_TiRant9S"; //Silencer on pistol
+        player addHandgunItem "tier1_sig_romeo1"; //Dot on pistol
 	};
     case "eng":{ //=============================================================================================
         _vest = "cgqc_vest_mk1_tan_ar";

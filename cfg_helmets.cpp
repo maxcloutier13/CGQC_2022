@@ -2,6 +2,8 @@ class H_mas_can_opscorn;
 class H_mas_can_opscore;
 class rhsusf_cvc_green_ess;
 class H_PilotHelmetFighter_B;
+class H_PilotHelmetHeli_B;
+class H_CrewHelmetHeli_B;
 
 // Mk1 "Net" helmets
 // Green
@@ -137,33 +139,6 @@ class cgqc_helmet_mk1_mcam_medic : cgqc_helmet_mk1
         "\cgqc_2022\helmets\cgqc_helmet_mk1_velcro_medic.paa",
         "\cgqc_2022\helmets\inside.paa"};
 };
-// Other helmets
-class cgqc_helmet_mk1_tank : rhsusf_cvc_green_ess
-{
-    author = "silent1";
-    _generalMacro = "cgqc_helmet_mk1_tank";
-    displayName = "CGQC Casque Tank mk1";
-    grad_slingHelmet_allow = true;
-};
-// Custom helmets
-class cgqc_helmet_mk1_turcotte : cgqc_helmet_mk1_tank
-{
-    author = "silent1";
-    _generalMacro = "cgqc_helmet_mk1_turcotte";
-    displayName = "CGQC Casque Tank Turcotte";
-    grad_slingHelmet_allow = true;
-    hiddenSelectionsTextures[] = {
-        "\cgqc_2022\helmets\cgqc_helmet_tank_turcotte.paa",
-        "\rhsusf\addons\rhsusf_infantry\gear\head\data\crew_equip_co.paa"};
-};
-class cgqc_helmet_mk1_jetpilot : H_PilotHelmetFighter_B
-{
-    author = "silent1";
-    _generalMacro = "cgqc_helmet_mk1_jetpilot";
-    displayName = "CGQC Casque Pilote de jet mk1";
-    grad_slingHelmet_allow = true;
-};
-
 // Flat color
 // Gray
 class cgqc_helmet_mk1_f_gray : H_mas_can_opscore
@@ -254,4 +229,164 @@ class cgqc_helmet_mk1_f_green_medic : cgqc_helmet_mk1_f_gray
         "\cgqc_2022\helmets\flat_green.paa",
         "\cgqc_2022\helmets\cgqc_helmet_mk1_velcro_medic.paa",
         "\cgqc_2022\helmets\inside.paa"};
+};
+
+// Jet helmets -----------------------------------------------------------------------------------------------
+class cgqc_helmet_mk1_jetpilot : H_PilotHelmetFighter_B
+{
+    author = "silent1";
+    _generalMacro = "cgqc_helmet_mk1_jetpilot";
+    displayName = "CGQC Casque Pilote de jet mk1";
+    grad_slingHelmet_allow = true;
+};
+
+// Tank/Crew helmets -----------------------------------------------------------------------------------------------
+class cgqc_helmet_mk1_tank : rhsusf_cvc_green_ess
+{
+    author = "silent1";
+    _generalMacro = "cgqc_helmet_mk1_tank";
+    displayName = "CGQC Casque Tank mk1";
+    grad_slingHelmet_allow = true;
+};
+
+// Helicopter/Crew helmets -----------------------------------------------------------------------------------------------
+// CGQC Airforce black -----------------------------------------------------
+class cgqc_helmet_heli_black : H_PilotHelmetHeli_B
+{
+	scope = 2;
+	author = "silent1";
+	displayName = "CGQC Heli Noir";
+	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_heli_black.paa"};
+	grad_slingHelmet_allow = true;
+};
+class cgqc_helmet_crew_black : H_CrewHelmetHeli_B
+{
+	scope = 2;
+	author = "silent1";
+	displayName = "CGQC Heli Noir full";
+	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_heli_black.paa"};
+	grad_slingHelmet_allow = true;
+};
+
+// CGQC Airforce Green -----------------------------------------------------
+class cgqc_helmet_heli_green : H_PilotHelmetHeli_B
+{
+	scope = 2;
+	author = "silent1";
+	displayName = "CGQC Heli Vert";
+	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_heli_green.paa"};
+	grad_slingHelmet_allow = true;
+};
+class cgqc_helmet_crew_green : H_CrewHelmetHeli_B
+{
+	scope = 2;
+	author = "silent1";
+	displayName = "CGQC Heli Vert full";
+	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_heli_green.paa"};
+	grad_slingHelmet_allow = true;
+};
+
+// CGQC Airforce woodland -----------------------------------------------------
+class cgqc_helmet_heli_wood : H_PilotHelmetHeli_B
+{
+	scope = 2;
+	author = "silent1";
+	displayName = "CGQC Heli Woodland";
+	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_heli_wood.paa"};
+	grad_slingHelmet_allow = true;
+};
+class cgqc_helmet_crew_wood : H_CrewHelmetHeli_B
+{
+	scope = 2;
+	author = "silent1";
+	displayName = "CGQC Heli Woodland full";
+	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_heli_wood.paa"};
+	grad_slingHelmet_allow = true;
+};
+
+
+
+
+// Custom helmets -----------------------------------------------------------------------------------------------
+// Turcotte tank helmet
+class cgqc_helmet_mk1_tank_turcotte : cgqc_helmet_mk1_tank
+{
+    author = "silent1";
+    _generalMacro = "cgqc_helmet_mk1_tank_turcotte";
+    displayName = "CGQC Casque Tank Turcotte";
+    grad_slingHelmet_allow = true;
+    hiddenSelectionsTextures[] = {
+        "\cgqc_2022\helmets\cgqc_helmet_tank_turcotte.paa",
+        "\rhsusf\addons\rhsusf_infantry\gear\head\data\crew_equip_co.paa"};
+};
+
+// Cloutier / Samurai -----------------------------------------------------
+
+class cgqc_helmet_heli_black_cloutier : H_PilotHelmetHeli_B
+{
+	scope = 2;
+	author = "silent1";
+	displayName = "CGQC Heli Cloutier";
+	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_cloutier.paa"};
+	grad_slingHelmet_allow = true;
+};
+class cgqc_helmet_crew_black_cloutier : H_CrewHelmetHeli_B
+{
+	scope = 2;
+	author = "silent1";
+	displayName = "CGQC Heli Cloutier Full";
+	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_cloutier.paa"};
+	grad_slingHelmet_allow = true;
+};
+
+// Villeneuve - stock -----------------------------------------------------
+class cgqc_helmet_heli_black_villeneuve : H_PilotHelmetHeli_B
+{
+	scope = 2;
+	author = "silent1";
+	displayName = "CGQC Heli Villeneuve";
+	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_villeneuve.paa"};
+	grad_slingHelmet_allow = true;
+};
+class cgqc_helmet_crew_black_villeneuve : H_CrewHelmetHeli_B
+{
+	scope = 2;
+	author = "silent1";
+	displayName = "CGQC Heli Villeneuve Full";
+	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_villeneuve.paa"};
+	grad_slingHelmet_allow = true;
+};
+class cgqc_helmet_heli_black_villeneuve_dick : H_PilotHelmetHeli_B
+{
+	scope = 2;
+	author = "silent1";
+	displayName = "CGQC Heli Villeneuve DickForce";
+	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_villeneuve_dick.paa"};
+	grad_slingHelmet_allow = true;
+};
+class cgqc_helmet_crew_black_villeneuve_dick : H_CrewHelmetHeli_B
+{
+	scope = 2;
+	author = "silent1";
+	displayName = "CGQC Heli Villeneuve Full DickForce";
+	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_villeneuve_dick.paa"};
+	grad_slingHelmet_allow = true;
+};
+
+// Audi - stock -----------------------------------------------------
+class cgqc_helmet_heli_black_audi : H_PilotHelmetHeli_B
+{
+	scope = 2;
+	author = "silent1";
+	displayName = "CGQC Heli Audi";
+	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_audi.paa"};
+	grad_slingHelmet_allow = true;
+};
+class cgqc_helmet_crew_black_audi : H_CrewHelmetHeli_B
+{
+	scope = 2;
+	author = "silent1";
+	displayName = "CGQC Heli Audi Full";
+	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_audi.paa"};
+	grad_slingHelmet_allow = true;
 };

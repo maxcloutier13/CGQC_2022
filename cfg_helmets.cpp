@@ -308,20 +308,8 @@ class cgqc_helmet_crew_wood : H_CrewHelmetHeli_B
 
 
 // Custom helmets -----------------------------------------------------------------------------------------------
-// Turcotte tank helmet
-class cgqc_helmet_mk1_tank_turcotte : cgqc_helmet_mk1_tank
-{
-    author = "silent1";
-    _generalMacro = "cgqc_helmet_mk1_tank_turcotte";
-    displayName = "CGQC Casque Tank Turcotte";
-    grad_slingHelmet_allow = true;
-    hiddenSelectionsTextures[] = {
-        "\cgqc_2022\helmets\cgqc_helmet_tank_turcotte.paa",
-        "\rhsusf\addons\rhsusf_infantry\gear\head\data\crew_equip_co.paa"};
-};
 
-// Cloutier / Samurai -----------------------------------------------------
-
+// Cloutier -----------------------------------------------------
 class cgqc_helmet_heli_black_cloutier : H_PilotHelmetHeli_B
 {
 	scope = 2;
@@ -338,8 +326,7 @@ class cgqc_helmet_crew_black_cloutier : H_CrewHelmetHeli_B
 	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_cloutier.paa"};
 	grad_slingHelmet_allow = true;
 };
-
-// Villeneuve - stock -----------------------------------------------------
+// Villeneuve -----------------------------------------------------
 class cgqc_helmet_heli_black_villeneuve : H_PilotHelmetHeli_B
 {
 	scope = 2;
@@ -372,8 +359,7 @@ class cgqc_helmet_crew_black_villeneuve_dick : H_CrewHelmetHeli_B
 	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_villeneuve_dick.paa"};
 	grad_slingHelmet_allow = true;
 };
-
-// Audi - stock -----------------------------------------------------
+// Audi -----------------------------------------------------
 class cgqc_helmet_heli_black_audi : H_PilotHelmetHeli_B
 {
 	scope = 2;
@@ -389,4 +375,153 @@ class cgqc_helmet_crew_black_audi : H_CrewHelmetHeli_B
 	displayName = "CGQC Heli Audi Full";
 	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_audi.paa"};
 	grad_slingHelmet_allow = true;
+};
+// Turcotte 
+class cgqc_helmet_heli_black_turcotte : H_PilotHelmetHeli_B
+{
+	scope = 2;
+	author = "silent1";
+	displayName = "CGQC Heli Turcotte";
+	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_turcotte.paa"};
+	grad_slingHelmet_allow = true;
+};
+class cgqc_helmet_crew_black_turcotte : H_CrewHelmetHeli_B
+{
+	scope = 2;
+	author = "silent1";
+	displayName = "CGQC Heli Turcotte Full";
+	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_turcotte.paa"};
+	grad_slingHelmet_allow = true;
+};
+// Comeau 
+class cgqc_helmet_heli_black_comeau : H_PilotHelmetHeli_B
+{
+	scope = 2;
+	author = "silent1";
+	displayName = "CGQC Heli Comeau";
+	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_comeau.paa"};
+	grad_slingHelmet_allow = true;
+};
+class cgqc_helmet_crew_black_comeau : H_CrewHelmetHeli_B
+{
+	scope = 2;
+	author = "silent1";
+	displayName = "CGQC Heli Comeau Full";
+	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_comeau.paa"};
+	grad_slingHelmet_allow = true;
+};
+
+
+// Tank helmets ---------------------------------------------------------------------------------------
+// Turcotte tank helmet
+class cgqc_helmet_mk1_tank_turcotte : cgqc_helmet_mk1_tank
+{
+    author = "silent1";
+    _generalMacro = "cgqc_helmet_mk1_tank_turcotte";
+    displayName = "CGQC Casque Tank Turcotte";
+    grad_slingHelmet_allow = true;
+    hiddenSelectionsTextures[] = {
+        "\cgqc_2022\helmets\cgqc_helmet_tank_turcotte.paa",
+        "\rhsusf\addons\rhsusf_infantry\gear\head\data\crew_equip_co.paa"};
+};
+
+class cgqc_helmet_mk1_tank_audi : cgqc_helmet_mk1_tank
+{
+    author = "silent1";
+    _generalMacro = "cgqc_helmet_mk1_tank_audi";
+    displayName = "CGQC Casque Tank Audi";
+    grad_slingHelmet_allow = true;
+    hiddenSelectionsTextures[] = {
+        "\cgqc_2022\helmets\cgqc_helmet_tank_audi.paa",
+        "\rhsusf\addons\rhsusf_infantry\gear\head\data\crew_equip_co.paa"};
+};
+class cgqc_helmet_mk1_tank_tremblay : cgqc_helmet_mk1_tank
+{
+    author = "silent1";
+    _generalMacro = "cgqc_helmet_mk1_tank_tremblay";
+    displayName = "CGQC Casque Tank Tremblay";
+    grad_slingHelmet_allow = true;
+    hiddenSelectionsTextures[] = {
+        "\cgqc_2022\helmets\cgqc_helmet_tank_tremblay.paa",
+        "\rhsusf\addons\rhsusf_infantry\gear\head\data\crew_equip_co.paa"};
+};
+class cgqc_helmet_mk1_tank_comeau : cgqc_helmet_mk1_tank
+{
+    author = "silent1";
+    _generalMacro = "cgqc_helmet_mk1_tank_comeau";
+    displayName = "CGQC Casque Tank Comeau";
+    grad_slingHelmet_allow = true;
+    hiddenSelectionsTextures[] = {
+        "\cgqc_2022\helmets\cgqc_helmet_tank_comeau.paa",
+        "\rhsusf\addons\rhsusf_infantry\gear\head\data\crew_equip_co.paa"};
+};
+class cgqc_helmet_mk1_tank_genest : cgqc_helmet_mk1_tank
+{
+    author = "silent1";
+    _generalMacro = "cgqc_helmet_mk1_tank_genest";
+    displayName = "CGQC Casque Tank Genest";
+    grad_slingHelmet_allow = true;
+    hiddenSelectionsTextures[] = {
+        "\cgqc_2022\helmets\cgqc_helmet_tank_genest.paa",
+        "\rhsusf\addons\rhsusf_infantry\gear\head\data\crew_equip_co.paa"};
+};
+class cgqc_helmet_mk1_tank_frechette : cgqc_helmet_mk1_tank
+{
+    author = "silent1";
+    _generalMacro = "cgqc_helmet_mk1_tank_frechette";
+    displayName = "CGQC Casque Tank Frechette";
+    grad_slingHelmet_allow = true;
+    hiddenSelectionsTextures[] = {
+        "\cgqc_2022\helmets\cgqc_helmet_tank_frechette.paa",
+        "\rhsusf\addons\rhsusf_infantry\gear\head\data\crew_equip_co.paa"};
+};
+class cgqc_helmet_mk1_tank_laforest : cgqc_helmet_mk1_tank
+{
+    author = "silent1";
+    _generalMacro = "cgqc_helmet_mk1_tank_laforest";
+    displayName = "CGQC Casque Tank Laforest";
+    grad_slingHelmet_allow = true;
+    hiddenSelectionsTextures[] = {
+        "\cgqc_2022\helmets\cgqc_helmet_tank_laforest.paa",
+        "\rhsusf\addons\rhsusf_infantry\gear\head\data\crew_equip_co.paa"};
+};
+class cgqc_helmet_mk1_tank_fortin : cgqc_helmet_mk1_tank
+{
+    author = "silent1";
+    _generalMacro = "cgqc_helmet_mk1_tank_fortin";
+    displayName = "CGQC Casque Tank Fortin";
+    grad_slingHelmet_allow = true;
+    hiddenSelectionsTextures[] = {
+        "\cgqc_2022\helmets\cgqc_helmet_tank_fortin.paa",
+        "\rhsusf\addons\rhsusf_infantry\gear\head\data\crew_equip_co.paa"};
+};
+class cgqc_helmet_mk1_tank_pinard : cgqc_helmet_mk1_tank
+{
+    author = "silent1";
+    _generalMacro = "cgqc_helmet_mk1_tank_pinard";
+    displayName = "CGQC Casque Tank Pinard";
+    grad_slingHelmet_allow = true;
+    hiddenSelectionsTextures[] = {
+        "\cgqc_2022\helmets\cgqc_helmet_tank_pinard.paa",
+        "\rhsusf\addons\rhsusf_infantry\gear\head\data\crew_equip_co.paa"};
+};
+class cgqc_helmet_mk1_tank_gaudreault : cgqc_helmet_mk1_tank
+{
+    author = "silent1";
+    _generalMacro = "cgqc_helmet_mk1_tank_gaudreault";
+    displayName = "CGQC Casque Tank Gaudreault";
+    grad_slingHelmet_allow = true;
+    hiddenSelectionsTextures[] = {
+        "\cgqc_2022\helmets\cgqc_helmet_tank_gaudreault.paa",
+        "\rhsusf\addons\rhsusf_infantry\gear\head\data\crew_equip_co.paa"};
+};
+class cgqc_helmet_mk1_tank_cloutier : cgqc_helmet_mk1_tank
+{
+    author = "silent1";
+    _generalMacro = "cgqc_helmet_mk1_tank_cloutier";
+    displayName = "CGQC Casque Tank Cloutier";
+    grad_slingHelmet_allow = true;
+    hiddenSelectionsTextures[] = {
+        "\cgqc_2022\helmets\cgqc_helmet_tank_cloutier.paa",
+        "\rhsusf\addons\rhsusf_infantry\gear\head\data\crew_equip_co.paa"};
 };

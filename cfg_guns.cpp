@@ -21,6 +21,7 @@ class SMG_03C_TR_khaki;
 class SMG_03C_TR_black;
 class BaseSoundModeType;
 class srifle_mas_can_LRR_F;
+class arifle_SPAR_03_base_F;
 
 // Pistol.
 class cgqc_gun_glock19_wood : Tier1_Glock19_WAR_TB
@@ -44,7 +45,6 @@ class cgqc_gun_glock19_wood : Tier1_Glock19_WAR_TB
 		};
 	};
 };
-
 // Items -----------------------------------------------------------------------
 class cgqc_item_helmetCam : CBA_MiscItem
 {
@@ -408,36 +408,8 @@ class cgqc_gun_mk1_p90_khaki : cgqc_gun_mk1_p90
 	hiddenSelections[] = {"camo"};
 	hiddenSelectionsTextures[] = {"\A3\Weapons_F_Mod\SMGs\SMG_03\data\body_khaki_co.paa"};
 };
-// Custom skins
-class cgqc_gun_mk1_mk18_fortin : cgqc_gun_mk1_mk18 
-{
-	scope = 2;
-	author = "silent1";
-	_generalMacro = "cgqc_gun_mk1_mk18_fortin";
-	baseWeapon = "cgqc_gun_mk1_mk18_fortin";
-	displayName = "CGQC mk18 - Fortin";
-	// model = "\cgqc_2022\guns\MK18.p3d";
-	hiddenSelectionsTextures[] = {"cgqc_2022\guns\m4\m4_fortin.paa",
-								  "\rhsusf\addons\rhsusf_weapons3\M4BII\Data\rhs_mk18rail_t_co.paa",
-								  "rhsusf\addons\rhsusf_weapons\acc\grips\grippod\data\acc_co.paa",
-								  "rhsusf\addons\rhsusf_weapons\m4\data\m4acc_co.paa",
-								  "rhsusf\addons\rhsusf_weapons\m4\data\magpulstock_co.paa",
-								  "\rhsusf\addons\rhsusf_weapons\m320\data\m320_co.paa"};
-};
-class cgqc_gun_mk1_MAAWS_laforest : launch_MRAWS_green_F 
-{
-	scope = 2;
-	author = "silent1";
-	_generalMacro = "cgqc_gun_mk1_MAAWS_laforest";
-	baseWeapon = "cgqc_gun_mk1_MAAWS_laforest";
-	displayName = "CGQC - Le Scalpel de Laforest";
-	hiddenSelectionsTextures[] = {
-	"\CGQC_2022\guns\cgqc_gun_maaws_laforest",
-	"\A3\Weapons_F_Tank\Launchers\MRAWS\Data\launch_MRAWS_02_F_co"};
-	class LinkedItems
-	{
-	};
-};
+
+// Custom skins ----------------------------------------------------------
 class cgqc_gun_mk1_MAAWS_cadpat : launch_MRAWS_green_F 
 {
 	scope = 2;
@@ -500,7 +472,6 @@ class cgqc_gun_mk1_mk12_woodland : gtr_weap_Mk12_Base
 	hiddenSelections[] = {"camo"};
 	hiddenSelectionsTextures[] = {"\cgqc_2022\guns\cgqc_gun_mk12_woodland.paa"};
 };
-
 class cgqc_gun_mk1_m200_arid : srifle_mas_can_LRR_F
 {
 	scope = 2;
@@ -593,6 +564,31 @@ class cgqc_gun_mk1_m200_tropical : srifle_mas_can_LRR_F
 	hiddenSelections[] = {"camo"};
 	hiddenSelectionsTextures[] = {"\CGQC_2022\guns\cgqc_gun_m200_tropical.paa"};
 };
+class cgqc_gun_mk1_hk417_canpat : arifle_SPAR_03_base_F
+{
+	scope = 2;
+	author = "silent1";
+	displayName = "CGQC HK417 Canpat";
+	picture = "\A3\Weapons_F_Exp\Rifles\SPAR_03\Data\UI\arifle_SPAR_03_blk_F_X_CA.paa";
+	hiddenSelectionsTextures[] = {
+		"\CGQC\guns\cgqc_gun_spar17_canpat_1.paa",		  // spar3_01 - Guard+barrel
+		"\CGQC\guns\cgqc_gun_spar17_canpat_2.paa",		  // spar3_02 - Receiver?
+		"\CGQC\guns\cgqc_gun_spar17_canpat_buttstock.paa" // spar1_01 - Buttstock
+	};
+};
+class cgqc_gun_mk1_hk417_wood : arifle_SPAR_03_base_F
+{
+	scope = 2;
+	author = "silent1";
+	displayName = "CGQC HK417 Woodland";
+	picture = "\A3\Weapons_F_Exp\Rifles\SPAR_03\Data\UI\arifle_SPAR_03_blk_F_X_CA.paa";
+	hiddenSelectionsTextures[] = {
+		"\CGQC\guns\cgqc_gun_spar17_wood_1.paa",		// spar3_01 - Guard+barrel
+		"\CGQC\guns\cgqc_gun_spar17_wood_2.paa",		// spar3_02 - Receiver?
+		"\CGQC\guns\cgqc_gun_spar17_wood_buttstock.paa" // spar1_01 - Buttstock
+	};
+};
+
 
 // mk1 setup ----------------------------------------------------------------------------------
 class cgqc_gun_mk1_hq_m4a1 : cgqc_gun_mk1_m4a1blkII
@@ -826,5 +822,49 @@ class cgqc_gun_mk1_jtac_mk12 : cgqc_gun_mk1_mk12
 			slot = "UnderBarrelSlot";
 			item = "Tier1_Harris_Bipod_Black";
 		};
+	};
+};
+
+
+// Player skins
+class cgqc_gun_mk1_hk417_tremblay : arifle_SPAR_03_base_F
+{
+	scope = 2;
+	author = "silent1";
+	displayName = "CGQC HK417 Le Tremblay";
+	picture = "\A3\Weapons_F_Exp\Rifles\SPAR_03\Data\UI\arifle_SPAR_03_blk_F_X_CA.paa";
+	hiddenSelectionsTextures[] = {
+		"\CGQC\guns\cgqc_gun_spar17_tremblay_1.paa",	// spar3_01 - Guard+barrel
+		"\CGQC\guns\cgqc_gun_spar17_tremblay_2.paa",	// spar3_02 - Receiver?
+		"\CGQC\guns\cgqc_gun_spar17_wood_buttstock.paa" // spar1_01 - Buttstock
+	};
+};
+class cgqc_gun_mk1_mk18_fortin : cgqc_gun_mk1_mk18 
+{
+	scope = 2;
+	author = "silent1";
+	_generalMacro = "cgqc_gun_mk1_mk18_fortin";
+	baseWeapon = "cgqc_gun_mk1_mk18_fortin";
+	displayName = "CGQC mk18 - Fortin";
+	// model = "\cgqc_2022\guns\MK18.p3d";
+	hiddenSelectionsTextures[] = {"cgqc_2022\guns\m4\m4_fortin.paa",
+								  "\rhsusf\addons\rhsusf_weapons3\M4BII\Data\rhs_mk18rail_t_co.paa",
+								  "rhsusf\addons\rhsusf_weapons\acc\grips\grippod\data\acc_co.paa",
+								  "rhsusf\addons\rhsusf_weapons\m4\data\m4acc_co.paa",
+								  "rhsusf\addons\rhsusf_weapons\m4\data\magpulstock_co.paa",
+								  "\rhsusf\addons\rhsusf_weapons\m320\data\m320_co.paa"};
+};
+class cgqc_gun_mk1_MAAWS_laforest : launch_MRAWS_green_F 
+{
+	scope = 2;
+	author = "silent1";
+	_generalMacro = "cgqc_gun_mk1_MAAWS_laforest";
+	baseWeapon = "cgqc_gun_mk1_MAAWS_laforest";
+	displayName = "CGQC - Le Scalpel de Laforest";
+	hiddenSelectionsTextures[] = {
+	"\CGQC_2022\guns\cgqc_gun_maaws_laforest",
+	"\A3\Weapons_F_Tank\Launchers\MRAWS\Data\launch_MRAWS_02_F_co"};
+	class LinkedItems
+	{
 	};
 };

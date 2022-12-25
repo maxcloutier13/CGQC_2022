@@ -38,9 +38,9 @@ cgqc_mk2_arsenal_rank3 = [
     "ACE_VectorDay",
     // 7.62 -----------------------------------
     "cgqc_gun_mk1_hk417",
-    "cgqc_gun_spar17_canpat", 
-    "cgqc_gun_spar17_tremblay", 
-    "cgqc_gun_spar17_wood", 
+    "cgqc_gun_mk1_hk417_canpat", 
+    "cgqc_gun_mk1_hk417_tremblay", 
+    "cgqc_gun_mk1_hk417_wood", 
     "srifle_EBR_F",
     "srifle_DMR_03_F",
     "srifle_DMR_03_multicam_F", 

@@ -118,7 +118,7 @@ do
 	};
     case "jtac":{ //=============================================================================================
         // === Weapons
-        #include "\cgqc_2022\loadouts\mk2\gun_jtac.sqf"
+        #include "\cgqc_2022\loadouts\mk2\gun_mk12_skeetIR.sqf"
         // === Vest
         #include "\cgqc_2022\loadouts\mk2\vest_infantry.sqf"
         // === Backpack 
@@ -156,7 +156,7 @@ do
 	};
     case "at_jav":{ //=============================================================================================
         // === Javelin
-        player addWeapon "cgqc_gun_mk1_Javelin";
+        ["cgqc_gun_mk1_Javelin"] execVM "\CGQC_2022\functions\getCustomGun.sqf";sleep 0.5;
         player addSecondaryWeaponItem "jav_AT_mas_can";
         // === Weapons
         #include "\cgqc_2022\loadouts\mk2\gun_m4_lpvo.sqf"
@@ -171,7 +171,7 @@ do
 	};
     case "at_maaws":{ //=============================================================================================
         // === MAAWS
-        player addWeapon "cgqc_gun_mk1_MAAWS";
+        ["cgqc_gun_mk1_MAAWS"] execVM "\CGQC_2022\functions\getCustomGun.sqf";sleep 0.5;
         player addSecondaryWeaponItem "MRAWS_HEAT_F";
         // === Weapons
         #include "\cgqc_2022\loadouts\mk2\gun_m4_dotplus.sqf"

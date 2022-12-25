@@ -331,27 +331,11 @@ class cgqc_helmet_heli_black_villeneuve : H_PilotHelmetHeli_B
 {
 	scope = 2;
 	author = "silent1";
-	displayName = "CGQC Heli Villeneuve";
-	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_villeneuve.paa"};
-	grad_slingHelmet_allow = true;
-};
-class cgqc_helmet_crew_black_villeneuve : H_CrewHelmetHeli_B
-{
-	scope = 2;
-	author = "silent1";
-	displayName = "CGQC Heli Villeneuve Full";
-	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_villeneuve.paa"};
-	grad_slingHelmet_allow = true;
-};
-class cgqc_helmet_heli_black_villeneuve_dick : H_PilotHelmetHeli_B
-{
-	scope = 2;
-	author = "silent1";
 	displayName = "CGQC Heli Villeneuve DickForce";
 	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_villeneuve_dick.paa"};
 	grad_slingHelmet_allow = true;
 };
-class cgqc_helmet_crew_black_villeneuve_dick : H_CrewHelmetHeli_B
+class cgqc_helmet_crew_black_villeneuve : H_CrewHelmetHeli_B
 {
 	scope = 2;
 	author = "silent1";
@@ -424,7 +408,6 @@ class cgqc_helmet_mk1_tank_turcotte : cgqc_helmet_mk1_tank
         "\cgqc_2022\helmets\cgqc_helmet_tank_turcotte.paa",
         "\rhsusf\addons\rhsusf_infantry\gear\head\data\crew_equip_co.paa"};
 };
-
 class cgqc_helmet_mk1_tank_audi : cgqc_helmet_mk1_tank
 {
     author = "silent1";

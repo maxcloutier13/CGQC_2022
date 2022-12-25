@@ -1,4 +1,4 @@
-player addWeapon "cgqc_gun_mk1_mk48";
+["cgqc_gun_mk1_mk48"] execVM "\CGQC_2022\functions\getCustomGun.sqf";sleep 0.5;
 player addPrimaryWeaponItem "Tier1_SOCOM762MG_Black";
 player addPrimaryWeaponItem "Tier1_Mk48Mod0_LA5_M600V_Black";
 player addPrimaryWeaponItem "Tier1_EXPS3_0_3xMag_Black_Up";

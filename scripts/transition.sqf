@@ -8,7 +8,7 @@ if (cgqc_setting_show_transition) then {
 		//Pop le logo et le texte
 		_text = format [_text, _role_name];
 		[_text, 0, 0, 3, 2] spawn BIS_fnc_dynamicText;
-        sleep 3;
+        sleep 6;
         titleFadeOut 2;
         // Wake up with blur
         "dynamicBlur" ppEffectEnable true;

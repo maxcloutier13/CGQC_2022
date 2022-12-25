@@ -6,4 +6,4 @@ player linkItem "ItemWatch";
 player addWeapon "cgqc_item_rangefinder";
 // === Items GPS/UAV/NVG
 player linkItem "ItemGPS";
-player linkItem "JAS_GPNVG18_Full_blk_TI";
+player linkItem "JAS_GPNVG18_blk";

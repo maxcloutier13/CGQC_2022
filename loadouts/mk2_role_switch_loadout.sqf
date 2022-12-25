@@ -236,7 +236,7 @@ do
 	};
     case "rifle_cqb":{ //=============================================================================================
         // === Weapons
-        #include "\cgqc_2022\loadouts\mk2\gun_m4_dotplus.sqf"
+        #include "\cgqc_2022\loadouts\mk2\gun_mk18_dot.sqf"
         // === Vest
         #include "\cgqc_2022\loadouts\mk2\vest_rifleman.sqf"
         // === Backpack 

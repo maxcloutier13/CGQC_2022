@@ -15,7 +15,7 @@ cgqc_mk2_arsenal_rank3 = [
      "ACE_personalAidKit",
     // Helmets Medic + Crew----------------------------
     "cgqc_helmet_mk1_tank", 
-    "cgqc_helmet_mk1_turcotte",
+    "cgqc_helmet_mk1_tank_turcotte",
     "cgqc_helmet_crew_black",
     "cgqc_helmet_crew_green", 
     "cgqc_helmet_mk1_medic",

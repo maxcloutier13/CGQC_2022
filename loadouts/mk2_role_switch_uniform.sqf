@@ -100,7 +100,7 @@ switch (_type) do {
 // Add stuff to player
 player addVest _vest;
 player addBackpack _backpack;
- [_helmet] execVM "\CGQC_2022\functions\getCustomGun.sqf";
+ [_helmet] execVM "\CGQC_2022\functions\getCustomHelmet.sqf";
 player addGoggles _face;
 sleep 0.5;
 mk2_role_switch_uniform = true;

@@ -66,7 +66,7 @@ switch (_type) do {
         // === Radios 
         #include "\cgqc_2022\loadouts\mk2\radios_pilot.sqf"
         // === Items 
-        #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
+        #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
 	};
     case "jet_pilot":{ //=============================================================================================
         // === Weapons
@@ -76,7 +76,7 @@ switch (_type) do {
         // === Radios 
         #include "\cgqc_2022\loadouts\mk2\radios_pilot.sqf"
         // === Items 
-        #include "\cgqc_2022\loadouts\mk2\items_minimal.sqf"
+        #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
 	};
     case "tank":{ //=============================================================================================
         // === Weapons

@@ -9,9 +9,7 @@ sleep 0.5;
 // === Backpack basic
 #include "\cgqc_2022\loadouts\mk2\backpack_basic.sqf"
 
-switch (_type)
-do
-{
+switch (_type) do {
 	case "hq":{ //=============================================================================================
         // === Weapons
         #include "\cgqc_2022\loadouts\mk2\gun_m4_lpvo.sqf"

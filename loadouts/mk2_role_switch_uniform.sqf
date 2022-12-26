@@ -9,7 +9,19 @@ player addHandgunItem "tier1_dbalpl";
 _vest = "";
 _backpack = "";
 _helmet = "";
-_face = "";
+_face = selectRandom [
+    "G_mas_can_mask",
+    "G_mas_can_mask_b",
+    "rhsusf_oakley_goggles_clr",
+    "G_mas_can_balaM_T",
+    "G_mas_can_balaM_b",
+    "G_mas_can_gog",
+    "G_mas_can_wrap_gog_T",
+    "G_mas_can_wrap_gog_B",
+    "G_mas_can_shemag_gog",
+    "G_mas_can_shemag_gog_l",
+    "G_mas_can_shemag_mask"
+];
 
 switch (_type) do {
 	case "command":{ //=============================================================================================
@@ -48,7 +60,6 @@ switch (_type) do {
         _vest = "cgqc_vest_mk1_tan_lr";
         _backpack =  "cgqc_pack_mk1_kitbag";
         _helmet =  "cgqc_helmet_mk1";
-        _face =  "G_mas_can_wrap_gog_B";
         player addHandgunItem "Tier1_TiRant9S"; //Silencer on pistol
         player addHandgunItem "tier1_sig_romeo1"; //Dot on pistol
 	};
@@ -56,7 +67,6 @@ switch (_type) do {
         _vest = "cgqc_vest_mk1_tan_lr";
         _backpack =  "cgqc_pack_mk1_radiobag";
         _helmet =  "cgqc_helmet_mk1";
-        _face =  "G_mas_can_wrap_gog_B";
         player addHandgunItem "Tier1_TiRant9S"; //Silencer on pistol
         player addHandgunItem "tier1_sig_romeo1"; //Dot on pistol
 	};
@@ -64,31 +74,26 @@ switch (_type) do {
         _vest = "cgqc_vest_mk1_tan_ar";
         _backpack =  "cgqc_pack_mk1_carryall";
         _helmet =  "cgqc_helmet_mk1";
-        _face =  "G_mas_can_balaM_T";
     };  
     case "med":{ //=============================================================================================
         _vest = "cgqc_vest_mk1_tan_rf";
         _backpack =  "cgqc_pack_mk1_carryall";
         _helmet =  "cgqc_helmet_mk1_medic";
-        _face =  "G_mas_can_balaM_T";
     };
     case "inf_light":{ //=============================================================================================
         _vest = "cgqc_vest_mk1_tan";
         _backpack =  "cgqc_pack_mk1_assault";
         _helmet =  "cgqc_helmet_mk1";
-        _face =  "G_mas_can_wrap_gog_B";
     };
     case "inf_medium":{ //=============================================================================================
         _vest = "cgqc_vest_mk1_tan_lr";
         _backpack =  "cgqc_pack_mk1_kitbag";
         _helmet =  "cgqc_helmet_mk1";
-        _face =  "G_mas_can_balaM_T";
     };
     case "inf_heavy":{ //=============================================================================================
         _vest = "cgqc_vest_mk1_tan_lr";
         _backpack =  "cgqc_pack_mk1_carryall";
         _helmet =  "cgqc_helmet_mk1";
-        _face =  "G_mas_can_balaM_T";
     };
     default {
 	    hint "mk2_role_switch_uniform.sqf fail";
@@ -100,7 +105,7 @@ switch (_type) do {
 // Add stuff to player
 player addVest _vest;
 player addBackpack _backpack;
- [_helmet] execVM "\CGQC_2022\functions\getCustomHelmet.sqf";
+[_helmet] execVM "\CGQC_2022\functions\getCustomHelmet.sqf";
 player addGoggles _face;
 sleep 0.5;
 mk2_role_switch_uniform = true;

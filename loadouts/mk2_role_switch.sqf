@@ -237,8 +237,8 @@ player setVariable ["BIS_fnc_setUnitInsignia_class", nil]; //Remove patch
 [ player, cgqc_player_patch ] call BIS_fnc_setUnitInsignia;
 
 // Lower gun 
-player action ['WeaponOnBack', player];
-//player action ['SwitchWeapon', player, player, 100];
+//player action ['WeaponOnBack', player];
+player action ['SwitchWeapon', player, player, 250];
 //player action ['SwitchWeapon', player, player, 100];
 // Give control back
 //disableUserInput false;

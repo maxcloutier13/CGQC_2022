@@ -52,7 +52,7 @@ class CfgEditorSubcategories
 	{
 		displayName = "Drones";
 	};
-	class EdSubcat_cgqc_vic
+	class EdSubcat_cgqc_vic_ifv
 	{
 		displayName = "Vehicles (IFV)";
 	};
@@ -60,9 +60,13 @@ class CfgEditorSubcategories
 	{
 		displayName = "Vehicles (Command)";
 	};
-	class EdSubcat_cgqc_offroad
+	class EdSubcat_cgqc_vic_unarmed
 	{
 		displayName = "Vehicles (Unarmed)";
+	};
+	class EdSubcat_cgqc_vic_armed
+	{
+		displayName = "Vehicles (Armed)";
 	};
 	class EdSubcat_cgqc_logistics
 	{

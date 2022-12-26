@@ -572,6 +572,43 @@ _this  addEventHandler [
 	["rifle_m16", 1] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf";
 };
 
+// Ballistic mask
+G_mas_can_mask
+G_mas_can_mask_b
+rhsusf_oakley_goggles_clr
 
+// Glasses
+G_mas_can_gog
 
+//Shemagh
+G_mas_can_shemag_gog
+G_mas_can_shemag_gog_l
+G_mas_can_shemag_mask
 
+//No goggles
+G_mas_can_shemag_low
+
+//Balaclava /ballistic mask
+G_mas_can_balaM_T //tan
+G_mas_can_balaM_b
+
+//Wrap/shooting glasses
+G_mas_can_wrap_gog_T //Tan
+G_mas_can_wrap_gog_B //black
+
+lvl 1 // mask
+G_mas_can_mask
+G_mas_can_mask_b
+rhsusf_oakley_goggles_clr
+G_mas_can_balaM_T
+G_mas_can_balaM_b
+
+lvl 2 // goggles
+G_mas_can_gog
+G_mas_can_wrap_gog_T
+G_mas_can_wrap_gog_B
+
+lvl 3 // Shemag
+G_mas_can_shemag_gog
+G_mas_can_shemag_gog_l
+G_mas_can_shemag_mask

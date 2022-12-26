@@ -14,7 +14,7 @@ _radios = "";
 cgqc_mk2_role = "";
 cgqc_mk2_role_infantry = true;
 cgqc_mk2_role_removed = false;
-
+cgqc_player_chill = false;
 
 //disableUserInput true;
 //sleep 2;

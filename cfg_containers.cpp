@@ -212,7 +212,7 @@ class cgqc_box_mk1_fuelcan : NATO_Box_Base
 {
     scope = 2;
     vehicleClass = "Ammo";
-    displayName = "CGQC Vehicle FuelCan (20L)";
+    displayName = "CGQC Vehicle FuelCan (50L)";
     model = "\CGQC_2022\containers\cgqc_box_vic_fuel";
     maximumLoad = 0; //Can't store inventory items
 

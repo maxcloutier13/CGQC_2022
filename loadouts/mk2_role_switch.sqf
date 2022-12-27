@@ -1,12 +1,13 @@
-waitUntil {cgqc_postInitClient_done};
 waitUntil {!isNull (findDisplay 46)};
+waitUntil {cgqc_postInitClient_done};
+_type = _this select 0;
+_section = _this select 1;
+
 // Fade to black  
 cutText ["", "BLACK FADED", 999];
 titleText ["", "PLAIN"];
 
 // ===== Prep and transition ======================================================
-_type = _this select 0;
-_section = _this select 1;
 _perks = "";
 _uniform = "";
 _loadout = "";
@@ -15,9 +16,6 @@ cgqc_mk2_role = "";
 cgqc_mk2_role_infantry = true;
 cgqc_mk2_role_removed = false;
 cgqc_player_chill = false;
-
-//disableUserInput true;
-//sleep 2;
 
 // ===== Remove items ======================================================
 #include "\cgqc_2022\loadouts\mk2\remove_all.sqf"
@@ -155,6 +153,13 @@ switch (_type) do {
         _radios = "recon";
         cgqc_mk2_role = "Sniper";
     };
+    case "spotter":{
+        _perks = "recon";
+        _uniform = "recon";
+        _loadout = "spotter";
+        _radios = "recon";
+        cgqc_mk2_role = "Spotter";
+    };
     case "jtac":{
         _perks = "recon";
         _uniform = "jtac";
@@ -208,9 +213,11 @@ switch (_type) do {
 	};
 };
 
-// Start transition
-[] execVM "\CGQC_2022\scripts\transition.sqf";
 
+// Start transition
+if (!cgqc_intro_running) then {
+    [] execVM "\CGQC_2022\scripts\transition.sqf";
+};
 mk2_role_switch_perks_done = false;
 mk2_role_switch_uniform = false;
 mk2_role_switch_loadout = false;
@@ -237,8 +244,4 @@ player setVariable ["BIS_fnc_setUnitInsignia_class", nil]; //Remove patch
 [ player, cgqc_player_patch ] call BIS_fnc_setUnitInsignia;
 
 // Lower gun 
-//player action ['WeaponOnBack', player];
 player action ['SwitchWeapon', player, player, 250];
-//player action ['SwitchWeapon', player, player, 100];
-// Give control back
-//disableUserInput false;

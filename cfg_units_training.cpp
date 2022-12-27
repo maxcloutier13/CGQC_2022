@@ -78,100 +78,119 @@ class CGQC_officer_Base : B_Soldier_f
 // Command
 class cgqc_spawn_hq: cgqc_officer_1_moderne
 {
+	scope = 1;
 	displayName = "HQ";
 	editorSubcategory = "EdSubcat_cgqc_spawn_cmd";	
 };
 class cgqc_spawn_sl: cgqc_officer_1_moderne
 {
+	scope = 1;
 	displayName = "Squad Leader";
 	editorSubcategory = "EdSubcat_cgqc_spawn_cmd";	
 };
 class cgqc_spawn_tl: cgqc_officer_1_moderne
 {
+	scope = 1;
 	displayName = "Team Leader";
 	editorSubcategory = "EdSubcat_cgqc_spawn_cmd";	
 };
 // Infantry -----------------------------------------------------------------------------------------
 class cgqc_spawn_rifleman: cgqc_soldat_moderne
 {
+	scope = 1;
 	displayName = "Rifleman";
 	editorSubcategory = "EdSubcat_cgqc_spawn";	
 };
 class cgqc_spawn_grenadier: cgqc_soldat_moderne
 {
+	scope = 1;
 	displayName = "Grenadier";
 	editorSubcategory = "EdSubcat_cgqc_spawn";	
 };
 // Specialists -----------------------------------------------------------------------------------------
 class cgqc_spawn_machinegun: cgqc_soldat_moderne
 {
+	scope = 1;
 	displayName = "Machine-Gunner";
 	editorSubcategory = "EdSubcat_cgqc_spawn";	
 };
 class cgqc_spawn_at: cgqc_soldat_moderne
 {
+	scope = 1;
 	displayName = "Anti-Tank";
 	editorSubcategory = "EdSubcat_cgqc_spawn";	
 };
 class cgqc_spawn_medic: cgqc_soldat_moderne
 {
+	scope = 1;
 	displayName = "Medic";
 	editorSubcategory = "EdSubcat_cgqc_spawn";	
 };
 class cgqc_spawn_engineer: cgqc_soldat_moderne
 {
+	scope = 1;
 	displayName = "Engineer";
 	editorSubcategory = "EdSubcat_cgqc_spawn";	
 };
 class cgqc_spawn_marksman: cgqc_soldat_moderne
 {
+	scope = 1;
 	displayName = "Marksman";
 	editorSubcategory = "EdSubcat_cgqc_spawn";	
 };
 // Recon -----------------------------------------------------------------------------------------
 class cgqc_spawn_sniper: cgqc_soldat_moderne
 {
+	scope = 1;
 	displayName = "Sniper";
 	editorSubcategory = "EdSubcat_cgqc_spawn_rec";	
 };
 class cgqc_spawn_spotter: cgqc_soldat_moderne
 {
+	scope = 1;
 	displayName = "Spotter";
 	editorSubcategory = "EdSubcat_cgqc_spawn_rec";	
 };
 class cgqc_spawn_drone: cgqc_soldat_moderne
 {
+	scope = 1;
 	displayName = "Drone Operator";
 	editorSubcategory = "EdSubcat_cgqc_spawn_rec";	
 };
 class cgqc_spawn_jtac: cgqc_soldat_moderne
 {
+	scope = 1;
 	displayName = "JTAC";
 	editorSubcategory = "EdSubcat_cgqc_spawn_rec";	
 };
 // Driver/pilots -----------------------------------------------------------------------------------------
 class cgqc_spawn_pilot_heli: cgqc_soldat_moderne
 {
+	scope = 1;
 	displayName = "Helicopter Pilot";
 	editorSubcategory = "EdSubcat_cgqc_spawn_pilot";	
 };
 class cgqc_spawn_pilot_heliCrew: cgqc_soldat_moderne
 {
+	scope = 1;
 	displayName = "Helicopter Crew";
 	editorSubcategory = "EdSubcat_cgqc_spawn_pilot";	
 };
 class cgqc_spawn_pilot_jet: cgqc_soldat_moderne
 {
+	scope = 1;
 	displayName = "Jet Pilot";
 	editorSubcategory = "EdSubcat_cgqc_spawn_pilot";	
 };
 class cgqc_spawn_tank_driver: cgqc_soldat_moderne
 {
+	scope = 1;
 	displayName = "Tank Driver";
 	editorSubcategory = "EdSubcat_cgqc_spawn_pilot";	
 };
 class cgqc_spawn_tank_crew: cgqc_soldat_moderne
 {
+	scope = 1;
 	displayName = "Tank Crew";
 	editorSubcategory = "EdSubcat_cgqc_spawn_pilot";	
 };

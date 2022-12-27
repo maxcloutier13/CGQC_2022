@@ -236,6 +236,7 @@ waitUntil {sleep 0.5;!isNil "_loadout"};
 waitUntil {sleep 0.5;mk2_role_switch_loadout};
 // Set radios 
 waitUntil {sleep 0.5;!isNil "_radios"};
+sleep 0.5;
 [_radios, _section] execVM "\cgqc\functions\fnc_setRadios.sqf";
 //[_radios, _section] execVM "\cgqc_2022\loadouts\mk2_role_switch_radios.sqf";
 

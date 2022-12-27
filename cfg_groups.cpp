@@ -524,29 +524,22 @@ class cfgGroups
                     class Unit1
                     {
                         side = 1;
-                        vehicle = "cgqc_spawn_sniper";
+                        vehicle = "CGQC_units_mk1_2_Spotter";
                         rank = "PRIVATE";
                         position[] = {0, -2, 0};
                     };
                 };
                 class CGQC_B_Hermes_recon
                 {
-                    name = "Hermes Recon team";
+                    name = "Hermes Recon";
                     faction = "CGQC";
                     side = 1;
                     class Unit0
                     {
                         side = 1;
-                        vehicle = "cgqc_spawn_jtac";
+                        vehicle = "CGQC_units_mk1_0_JTAC";
                         rank = "PRIVATE";
                         position[] = {0, -0, 0};
-                    };
-                    class Unit1
-                    {
-                        side = 1;
-                        vehicle = "cgqc_spawn_drone";
-                        rank = "PRIVATE";
-                        position[] = {0, -2, 0};
                     };
                 };
             };

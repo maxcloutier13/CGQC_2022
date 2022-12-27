@@ -62,7 +62,7 @@ switch (_type) do {
         // === Weapons
         #include "\cgqc_2022\loadouts\mk2\gun_p90.sqf"
         // === Vest
-        #include "\cgqc_2022\loadouts\mk2\vest_pilot.sqf"
+        #include "\cgqc_2022\loadouts\mk2\vest_p90_pilot.sqf"
         // === Radios 
         #include "\cgqc_2022\loadouts\mk2\radios_pilot.sqf"
         // === Items 
@@ -72,7 +72,7 @@ switch (_type) do {
         // === Weapons
         #include "\cgqc_2022\loadouts\mk2\gun_p90.sqf"
         // === Vest
-        #include "\cgqc_2022\loadouts\mk2\vest_pilot.sqf"
+        #include "\cgqc_2022\loadouts\mk2\vest_p90_pilot.sqf"
         // === Radios 
         #include "\cgqc_2022\loadouts\mk2\radios_pilot.sqf"
         // === Items 
@@ -82,7 +82,7 @@ switch (_type) do {
         // === Weapons
         #include "\cgqc_2022\loadouts\mk2\gun_p90.sqf"
         // === Vest
-        #include "\cgqc_2022\loadouts\mk2\vest_driver.sqf"
+        #include "\cgqc_2022\loadouts\mk2\vest_p90.sqf"
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_driver.sqf"
         // === Radios 
@@ -106,7 +106,7 @@ switch (_type) do {
         // === Weapons
         #include "\cgqc_2022\loadouts\mk2\gun_m200.sqf"
         // === Vest
-        #include "\cgqc_2022\loadouts\mk2\vest_sniper.sqf"
+        #include "\cgqc_2022\loadouts\mk2\vest_m200.sqf"
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_sniper.sqf"
         // === Radios 
@@ -118,7 +118,7 @@ switch (_type) do {
         // === Weapons
         #include "\cgqc_2022\loadouts\mk2\gun_mk12_razor.sqf"
         // === Vest
-        #include "\cgqc_2022\loadouts\mk2\vest_spotter.sqf"
+        #include "\cgqc_2022\loadouts\mk2\vest_mk12.sqf"
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_sniper.sqf"
         // === Radios 

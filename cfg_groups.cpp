@@ -120,61 +120,203 @@ class cfgGroups
                         position[] = {0, -0, 0};
                     };
                 };
-                class CGQC_B_Spartan
+                class CGQC_B_Spartan_1
                 {
-                    name = "Spartan - Section";
+                    name = "Spartan 1 - Lead Section";
                     faction = "CGQC";
                     side = 1;
                     class Unit0
                     {
                         side = 1;
-                        vehicle = "cgqc_spawn_tl";
+                        vehicle = "CGQC_units_mk1_0_TeamLeader_Carbine";
                         rank = "PRIVATE";
                         position[] = {0, -0, 0};
                     };
                     class Unit1
                     {
                         side = 1;
-                        vehicle = "cgqc_spawn_medic";
+                        vehicle = "CGQC_units_mk1_1_Medic";
                         rank = "PRIVATE";
                         position[] = {0, -2, 0};
                     };
                     class Unit2
                     {
                         side = 1;
-                        vehicle = "cgqc_spawn_machinegun";
+                        vehicle = "CGQC_units_mk1_2_LMG";
                         rank = "PRIVATE";
                         position[] = {0, -4, 0};
                     };
                     class Unit3
                     {
                         side = 1;
-                        vehicle = "cgqc_spawn_engineer";
+                        vehicle = "CGQC_units_mk1_1_Rifleman_Carbine";
                         rank = "PRIVATE";
                         position[] = {0, -6, 0};
                     };
                     class Unit4
                     {
                         side = 1;
-                        vehicle = "cgqc_spawn_at";
+                        vehicle = "CGQC_units_mk1_1_Rifleman_Carbine";
                         rank = "PRIVATE";
                         position[] = {0, -8, 0};
                     };
                     class Unit5
                     {
                         side = 1;
-                        vehicle = "cgqc_spawn_grenadier";
+                        vehicle = "CGQC_units_mk1_1_Rifleman_full";
                         rank = "PRIVATE";
                         position[] = {0, -10, 0};
                     };
-                    class Unit6
+                };
+                
+                class CGQC_B_Spartan_2
+                {
+                    name = "Spartan 2 - Support Section";
+                    faction = "CGQC";
+                    side = 1;
+                    class Unit0
                     {
                         side = 1;
-                        vehicle = "cgqc_spawn_rifleman";
+                        vehicle = "CGQC_units_mk1_0_TeamLeader_Carbine";
                         rank = "PRIVATE";
-                        position[] = {0, -12, 0};
+                        position[] = {0, -0, 0};
+                    };
+                    class Unit1
+                    {
+                        side = 1;
+                        vehicle = "CGQC_units_mk1_1_Medic";
+                        rank = "PRIVATE";
+                        position[] = {0, -2, 0};
+                    };
+                    class Unit2
+                    {
+                        side = 1;
+                        vehicle = "CGQC_units_mk1_3_AT_MAAWS";
+                        rank = "PRIVATE";
+                        position[] = {0, -4, 0};
+                    };
+                    class Unit3
+                    {
+                        side = 1;
+                        vehicle = "CGQC_units_mk1_1_Engineer";
+                        rank = "PRIVATE";
+                        position[] = {0, -6, 0};
+                    };
+                    class Unit4
+                    {
+                        side = 1;
+                        vehicle = "CGQC_units_mk1_1_Rifleman_Carbine";
+                        rank = "PRIVATE";
+                        position[] = {0, -8, 0};
+                    };
+                    class Unit5
+                    {
+                        side = 1;
+                        vehicle = "CGQC_units_mk1_1_Rifleman_full";
+                        rank = "PRIVATE";
+                        position[] = {0, -10, 0};
                     };
                 };
+                
+                class CGQC_B_Spartan_3
+                {
+                    name = "Spartan 3 - Assault Section";
+                    faction = "CGQC";
+                    side = 1;
+                    class Unit0
+                    {
+                        side = 1;
+                        vehicle = "CGQC_units_mk1_0_TeamLeader_Carbine";
+                        rank = "PRIVATE";
+                        position[] = {0, -0, 0};
+                    };
+                    class Unit1
+                    {
+                        side = 1;
+                        vehicle = "CGQC_units_mk1_1_Medic";
+                        rank = "PRIVATE";
+                        position[] = {0, -2, 0};
+                    };
+                    class Unit2
+                    {
+                        side = 1;
+                        vehicle = "CGQC_units_mk1_2_Marksman";
+                        rank = "PRIVATE";
+                        position[] = {0, -4, 0};
+                    };
+                    class Unit3
+                    {
+                        side = 1;
+                        vehicle = "CGQC_units_mk1_1_Rifleman_grenadier";
+                        rank = "PRIVATE";
+                        position[] = {0, -6, 0};
+                    };
+                    class Unit4
+                    {
+                        side = 1;
+                        vehicle = "CGQC_units_mk1_1_Rifleman_Carbine";
+                        rank = "PRIVATE";
+                        position[] = {0, -8, 0};
+                    };
+                    class Unit5
+                    {
+                        side = 1;
+                        vehicle = "CGQC_units_mk1_1_Rifleman_full";
+                        rank = "PRIVATE";
+                        position[] = {0, -10, 0};
+                    };
+                };
+                
+                class CGQC_B_Spartan_4
+                {
+                    name = "Spartan 4 - Assault Section";
+                    faction = "CGQC";
+                    side = 1;
+                    class Unit0
+                    {
+                        side = 1;
+                        vehicle = "CGQC_units_mk1_0_TeamLeader_Carbine";
+                        rank = "PRIVATE";
+                        position[] = {0, -0, 0};
+                    };
+                    class Unit1
+                    {
+                        side = 1;
+                        vehicle = "CGQC_units_mk1_1_Medic";
+                        rank = "PRIVATE";
+                        position[] = {0, -2, 0};
+                    };
+                    class Unit2
+                    {
+                        side = 1;
+                        vehicle = "CGQC_units_mk1_2_Marksman";
+                        rank = "PRIVATE";
+                        position[] = {0, -4, 0};
+                    };
+                    class Unit3
+                    {
+                        side = 1;
+                        vehicle = "CGQC_units_mk1_1_Rifleman_grenadier";
+                        rank = "PRIVATE";
+                        position[] = {0, -6, 0};
+                    };
+                    class Unit4
+                    {
+                        side = 1;
+                        vehicle = "CGQC_units_mk1_1_Rifleman_Carbine";
+                        rank = "PRIVATE";
+                        position[] = {0, -8, 0};
+                    };
+                    class Unit5
+                    {
+                        side = 1;
+                        vehicle = "CGQC_units_mk1_1_Rifleman_full";
+                        rank = "PRIVATE";
+                        position[] = {0, -10, 0};
+                    };
+                };
+                
+
                 class CGQC_B_Centaure_crew
                 {
                     name = "Centaure Full Crew";
@@ -183,21 +325,21 @@ class cfgGroups
                     class Unit0
                     {
                         side = 1;
-                        vehicle = "cgqc_spawn_tank_driver";
+                        vehicle = "CGQC_units_mk1_4_Tank_Driver";
                         rank = "PRIVATE";
                         position[] = {0, -0, 0};
                     };
                     class Unit1
                     {
                         side = 1;
-                        vehicle = "cgqc_spawn_tank_driver";
+                        vehicle = "CGQC_units_mk1_4_Tank_Crew";
                         rank = "PRIVATE";
                         position[] = {0, -2, 0};
                     };
                     class Unit2
                     {
                         side = 1;
-                        vehicle = "cgqc_spawn_tank_driver";
+                        vehicle = "CGQC_units_mk1_4_Tank_Crew";
                         rank = "PRIVATE";
                         position[] = {0, -4, 0};
                     };
@@ -210,7 +352,7 @@ class cfgGroups
                     class Unit0
                     {
                         side = 1;
-                        vehicle = "cgqc_spawn_tank_driver";
+                        vehicle = "CGQC_units_mk1_4_Tank_Driver";
                         rank = "PRIVATE";
                         position[] = {0, -0, 0};
                     };
@@ -223,21 +365,21 @@ class cfgGroups
                     class Unit0
                     {
                         side = 1;
-                        vehicle = "cgqc_spawn_pilot_heli";
+                        vehicle = "CGQC_units_mk1_4_Pilot_heli";
                         rank = "PRIVATE";
                         position[] = {0, -0, 0};
                     };
                     class Unit1
                     {
                         side = 1;
-                        vehicle = "cgqc_spawn_pilot_heli";
+                        vehicle = "CGQC_units_mk1_4_crew_heli";
                         rank = "PRIVATE";
                         position[] = {0, -2, 0};
                     };
                     class Unit2
                     {
                         side = 1;
-                        vehicle = "cgqc_spawn_pilot_heli";
+                        vehicle = "CGQC_units_mk1_4_crew_heli";
                         rank = "PRIVATE";
                         position[] = {0, -4, 0};
                     };
@@ -250,7 +392,7 @@ class cfgGroups
                     class Unit0
                     {
                         side = 1;
-                        vehicle = "cgqc_spawn_pilot_heli";
+                        vehicle = "CGQC_units_mk1_4_Pilot_heli";
                         rank = "PRIVATE";
                         position[] = {0, -0, 0};
                     };
@@ -263,7 +405,7 @@ class cfgGroups
                     class Unit0
                     {
                         side = 1;
-                        vehicle = "cgqc_spawn_pilot_heli";
+                        vehicle = "CGQC_units_mk1_4_Pilot_heli";
                         rank = "PRIVATE";
                         position[] = {0, -0, 0};
                     };
@@ -276,14 +418,14 @@ class cfgGroups
                     class Unit0
                     {
                         side = 1;
-                        vehicle = "cgqc_spawn_pilot_heli";
+                        vehicle = "CGQC_units_mk1_4_Pilot_heli";
                         rank = "PRIVATE";
                         position[] = {0, -0, 0};
                     };
                     class Unit1
                     {
                         side = 1;
-                        vehicle = "cgqc_spawn_pilot_heli";
+                        vehicle = "CGQC_units_mk1_4_crew_heli";
                         rank = "PRIVATE";
                         position[] = {0, -2, 0};
                     };
@@ -375,7 +517,7 @@ class cfgGroups
                     class Unit0
                     {
                         side = 1;
-                        vehicle = "cgqc_spawn_sniper";
+                        vehicle = "CGQC_units_mk1_2_Sniper";
                         rank = "PRIVATE";
                         position[] = {0, -0, 0};
                     };

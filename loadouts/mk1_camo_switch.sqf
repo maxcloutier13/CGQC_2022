@@ -5,6 +5,13 @@ titleText ["", "PLAIN"];
 // Fade to black transition
 execVM "\CGQC_2022\scripts\transition.sqf";
 //disableUserInput true;
+
+// Check if player in chill mode
+if (cgqc_player_chill) then {
+    ["ready"] call CGQC_fnc_perksBasic;
+    waitUntil {!cgqc_player_chill};
+};
+
 sleep 1;
 
 // Init new variables

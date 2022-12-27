@@ -13,7 +13,7 @@
     cgqc_mk2_arsenal_3 = [];
     cgqc_mk2_arsenal_4 = [];
     cgqc_mk2_arsenal_5 = [];
-    cgqc_mk2_arsenal_6 = [];
+    cgqc_mk2_arsenal_8 = [];
     
     // Prep les variables de l'arsenal dynamique
     #include "\cgqc_2022\loadouts\arsenal\init_arsenal.sqf";

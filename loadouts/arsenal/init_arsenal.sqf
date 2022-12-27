@@ -54,6 +54,12 @@
         cgqc_mk2_arsenal_4 +
         cgqc_mk2_arsenal_rank5
     );
+    // Rang 8 - État major
+     #include "\cgqc_2022\loadouts\arsenal\arsenal_rank8.sqf";
+    cgqc_mk2_arsenal_8 = (
+        cgqc_mk2_arsenal_5 + 
+        cgqc_mk2_arsenal_rank8
+    );
     
     // Arsenal init done
     cgqc_mk2_arsenal_init_done = true;

@@ -153,6 +153,13 @@ switch (_type) do {
         _radios = "recon";
         cgqc_mk2_role = "Sniper";
     };
+    case "spotter":{
+        _perks = "recon";
+        _uniform = "recon";
+        _loadout = "spotter";
+        _radios = "recon";
+        cgqc_mk2_role = "Spotter";
+    };
     case "jtac":{
         _perks = "recon";
         _uniform = "jtac";

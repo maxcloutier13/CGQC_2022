@@ -391,6 +391,28 @@ class CGQC_units_mk1_2_Sniper : cgqc_soldat_moderne
         init = "['sniper', 1] execVM '\CGQC_2022\loadouts\mk2_role_switch.sqf'";
     };
 };
+class CGQC_units_mk1_2_Spotter : cgqc_soldat_moderne
+{
+    faction = "CGQC";
+    editorSubcategory = "EdSubcat_cgqc_mk1";
+    side = 1;
+    scope = 2;
+    displayName = "Spotter";
+    uniformClass = "cgqc_uniform_mk1";
+    weapons[] = {"cgqc_gun_mk1_mk12", "cgqc_gun_glock19_wood", "ACE_Vector", "Put", "Throw"};
+    respawnWeapons[] = {"cgqc_gun_mk1_m200", "cgqc_gun_glock19_wood", "ACE_Vector", "Put", "Throw"};
+    items[] = {};
+    respawnItems[] = {};
+    magazines[] = {};
+    respawnMagazines[] = {};
+    linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "ACE_Vector", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_lr", "G_mas_can_balaM_T"};
+    respawnLinkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "ACE_Vector", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_lr", "G_mas_can_balaM_T"};
+    backpack = "CGQC_units_mk1_2_Sniper_pack";
+    editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_2_Sniper.jpg";
+    class EventHandlers {
+        init = "['spotter', 1] execVM '\CGQC_2022\loadouts\mk2_role_switch.sqf'";
+    };
+};
 
 // == Pilots ================================================================
 class CGQC_units_mk1_4_Pilot_heli : cgqc_soldat_moderne

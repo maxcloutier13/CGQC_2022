@@ -69,7 +69,6 @@ class CGQC_units_mk1_0_TeamLeader_CQB : cgqc_soldat_moderne
         init = "['tl_cqb', 1] execVM '\CGQC_2022\loadouts\mk2_role_switch.sqf'";
     };
 };
-
 // == Infantry ================================================================
 class CGQC_units_mk1_1_Rifleman_CQB : cgqc_soldat_moderne
 {
@@ -251,7 +250,6 @@ class CGQC_units_mk1_2_HMG : cgqc_soldat_moderne
         init = "['hmg', 1] execVM '\CGQC_2022\loadouts\mk2_role_switch.sqf'";
     };
 };
-
 // == Specialists ================================================================
 class CGQC_units_mk1_1_Engineer : cgqc_soldat_moderne
 {
@@ -323,7 +321,6 @@ class CGQC_units_mk1_2_Marksman : cgqc_soldat_moderne
         init = "['mrksm', 1] execVM '\CGQC_2022\loadouts\mk2_role_switch.sqf'";
     };
 };
-
 // == Recon ================================================================
 class CGQC_units_mk1_0_Drone_operator : cgqc_soldat_moderne
 {
@@ -391,6 +388,28 @@ class CGQC_units_mk1_2_Sniper : cgqc_soldat_moderne
         init = "['sniper', 1] execVM '\CGQC_2022\loadouts\mk2_role_switch.sqf'";
     };
 };
+class CGQC_units_mk1_2_Sniper_ebr : cgqc_soldat_moderne
+{
+    faction = "CGQC";
+    editorSubcategory = "EdSubcat_cgqc_mk1";
+    side = 1;
+    scope = 2;
+    displayName = "Sniper (m14EBR)";
+    uniformClass = "cgqc_uniform_mk1";
+    weapons[] = {"rhs_weap_m14ebrri", "cgqc_gun_glock19_wood", "ACE_Vector", "Put", "Throw"};
+    respawnWeapons[] = {"rhs_weap_m14ebrri", "cgqc_gun_glock19_wood", "ACE_Vector", "Put", "Throw"};
+    items[] = {};
+    respawnItems[] = {};
+    magazines[] = {};
+    respawnMagazines[] = {};
+    linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "ACE_Vector", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_lr", "G_mas_can_balaM_T"};
+    respawnLinkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "ACE_Vector", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_lr", "G_mas_can_balaM_T"};
+    backpack = "CGQC_units_mk1_2_Sniper_pack";
+    editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_2_Sniper.jpg";
+    class EventHandlers {
+        init = "['sniper', 1] execVM '\CGQC_2022\loadouts\mk2_role_switch.sqf'";
+    };
+};
 class CGQC_units_mk1_2_Spotter : cgqc_soldat_moderne
 {
     faction = "CGQC";
@@ -413,7 +432,6 @@ class CGQC_units_mk1_2_Spotter : cgqc_soldat_moderne
         init = "['spotter', 1] execVM '\CGQC_2022\loadouts\mk2_role_switch.sqf'";
     };
 };
-
 // == Pilots ================================================================
 class CGQC_units_mk1_4_Pilot_heli : cgqc_soldat_moderne
 {
@@ -484,7 +502,6 @@ class CGQC_units_mk1_4_Pilot_Jet : cgqc_soldat_moderne
         init = "['jet_pilot', 1] execVM '\CGQC_2022\loadouts\mk2_role_switch.sqf'";
     };
 };
-
 // == Drivers ================================================================
 class CGQC_units_mk1_4_Tank_Driver : cgqc_soldat_moderne
 {

@@ -151,7 +151,14 @@ switch (_type) do {
         _uniform = "recon";
         _loadout = "sniper";
         _radios = "recon";
-        cgqc_mk2_role = "Sniper";
+        cgqc_mk2_role = "Sniper m200";
+    };
+    case "sniper_ebr":{
+        _perks = "recon";
+        _uniform = "recon";
+        _loadout = "sniper_ebr";
+        _radios = "recon";
+        cgqc_mk2_role = "Sniper m14EBR";
     };
     case "spotter":{
         _perks = "recon";
@@ -236,6 +243,7 @@ waitUntil {sleep 0.5;!isNil "_loadout"};
 waitUntil {sleep 0.5;mk2_role_switch_loadout};
 // Set radios 
 waitUntil {sleep 0.5;!isNil "_radios"};
+sleep 0.5;
 [_radios, _section] execVM "\cgqc\functions\fnc_setRadios.sqf";
 //[_radios, _section] execVM "\cgqc_2022\loadouts\mk2_role_switch_radios.sqf";
 

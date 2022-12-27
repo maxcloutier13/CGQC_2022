@@ -123,6 +123,7 @@ class CfgPatches
 			"CGQC_units_mk1_2_HMG",
 			"CGQC_units_mk1_2_Marksman",
 			"CGQC_units_mk1_2_Sniper",
+			"CGQC_units_mk1_2_Sniper_ebr",
 			"CGQC_units_mk1_2_Spotter",
 			"CGQC_units_mk1_3_AT_MAAWS",
 			"CGQC_units_mk1_3_AT_Javelin",

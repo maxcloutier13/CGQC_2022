@@ -19,8 +19,8 @@ _type = _this select 0;
 	_found = false;
 	switch (_type) do {
 		case 0: { 
-			hint "Arsenal: Unlocked";
-			_items = cgqc_mk2_arsenal_5;
+			hint "Arsenal: Complet";
+			_items = cgqc_mk2_arsenal_8;
 			_found = true;
 		};
 		case 1: { 

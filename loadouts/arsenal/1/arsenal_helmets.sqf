@@ -1,7 +1,6 @@
 cgqc_mk2_arsenal_1_helmets = [
     // Helmets -----------------------------------
-    "cgqc_cap_green",
-    "cgqc_beret_blue",  
+    "cgqc_cap_green", 
     "cgqc_beret_vanilla",
     "cgqc_helmet_mk1",
     "cgqc_helmet_mk1_black", 

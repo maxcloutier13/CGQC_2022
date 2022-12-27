@@ -3,6 +3,7 @@ cgqc_mk2_arsenal_rank5 = [
      // Radios ----------------------------------
     "ACRE_PRC117F",
     // Pilot Helmets ----------------------------
+    "cgqc_beret_blue",
     "cgqc_helmet_mk1_jetpilot",
     "cgqc_helmet_heli_black",
     "cgqc_helmet_crew_black",
@@ -11,7 +12,7 @@ cgqc_mk2_arsenal_rank5 = [
     "cgqc_helmet_crew_wood", 
     "cgqc_helmet_heli_black_villeneuve", 
     "cgqc_helmet_crew_black_villeneuve", 
-     "cgqc_helmet_heli_black_cloutier",
+    "cgqc_helmet_heli_black_cloutier",
     "cgqc_helmet_crew_black_cloutier",  
     "cgqc_helmet_heli_black_audi",
     "cgqc_helmet_crew_black_audi", 

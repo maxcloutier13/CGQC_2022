@@ -2,6 +2,7 @@ waitUntil {!isNull (findDisplay 46)};
 waitUntil {cgqc_postInitClient_done};
 _type = _this select 0;
 _section = _this select 1;
+_auRepos = _this select 2;
 
 // Fade to black  
 cutText ["", "BLACK FADED", 999];
@@ -15,7 +16,12 @@ _radios = "";
 cgqc_mk2_role = "";
 cgqc_mk2_role_infantry = true;
 cgqc_mk2_role_removed = false;
-cgqc_player_chill = false;
+
+// Check if player in chill mode
+if (cgqc_player_chill) then {
+    ["ready"] call CGQC_fnc_perksBasic;
+    waitUntil {!cgqc_player_chill};
+};
 
 // ===== Remove items ======================================================
 #include "\cgqc_2022\loadouts\mk2\remove_all.sqf"
@@ -251,5 +257,9 @@ sleep 0.5;
 player setVariable ["BIS_fnc_setUnitInsignia_class", nil]; //Remove patch
 [ player, cgqc_player_patch ] call BIS_fnc_setUnitInsignia;
 
+// Chill mode
+if !(isNil "_auRepos") then {
+    ["chill"] call CGQC_fnc_perksBasic;
+};
 // Lower gun 
 player action ['SwitchWeapon', player, player, 250];

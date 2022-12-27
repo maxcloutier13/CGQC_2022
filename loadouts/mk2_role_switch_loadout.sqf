@@ -114,6 +114,18 @@ switch (_type) do {
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
 	};
+    case "sniper_ebr":{ //=============================================================================================
+        // === Weapons
+        #include "\cgqc_2022\loadouts\mk2\gun_m14EBR.sqf"
+        // === Vest
+        #include "\cgqc_2022\loadouts\mk2\vest_m14EBR.sqf"
+        // === Backpack 
+        #include "\cgqc_2022\loadouts\mk2\backpack_sniper.sqf"
+        // === Radios 
+        #include "\cgqc_2022\loadouts\mk2\radios_recon.sqf"
+        // === Items 
+        #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
+	};
     case "spotter":{ //=============================================================================================
         // === Weapons
         #include "\cgqc_2022\loadouts\mk2\gun_mk12_razor.sqf"

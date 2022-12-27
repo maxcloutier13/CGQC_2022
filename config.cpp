@@ -26,7 +26,7 @@ class CfgEditorSubcategories
 {
 	class EdSubcat_cgqc_mk1
 	{
-		displayName = "zz Men (Legacy Mk1)";
+		displayName = "Men (Mk2)";
 	};
 	class EdSubcat_cgqc_spawn
 	{

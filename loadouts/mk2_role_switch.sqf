@@ -262,7 +262,7 @@ player setVariable ["BIS_fnc_setUnitInsignia_class", nil]; //Remove patch
 [ player, cgqc_player_patch ] call BIS_fnc_setUnitInsignia;
 
 // Chill mode
-if !(_auRepos) then {
+if (_auRepos) then {
     ["chill"] call CGQC_fnc_perksBasic;
 };
 // Lower gun 

@@ -4,9 +4,13 @@ _type = _this select 0;
 _section = _this select 1;
 _auRepos = _this select 2;
 
-// Fade to black  
-cutText ["", "BLACK FADED", 999];
-titleText ["", "PLAIN"];
+hintc "mk2_role_switch wtf";sleep 0.5;
+
+if (cgqc_setting_show_transition) then {
+   // Fade to black  
+    cutText ["", "BLACK FADED", 999];
+    titleText ["", "PLAIN"];
+};
 
 // ===== Prep and transition ======================================================
 _perks = "";

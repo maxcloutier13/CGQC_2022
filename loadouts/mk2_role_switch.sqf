@@ -4,7 +4,7 @@ _type = _this select 0;
 _section = _this select 1;
 _auRepos = _this select 2;
 
-hintc "mk2_role_switch wtf";sleep 0.5;
+//hintc "mk2_role_switch wtf";sleep 0.5;
 
 if (cgqc_setting_show_transition) then {
    // Fade to black  

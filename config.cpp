@@ -98,8 +98,7 @@ class CfgMagazines {
 #include "cfg_groups.cpp"
 // Audio -----------------------------------------------------------------------------------
 #include "cfg_audio.cpp"
-// Mods Modifications ----------------------------------------------------------------------
-#include "cfg_mods_mods.cpp"
+
 
 // Custom functions
 #include "cfg_functions.hpp"

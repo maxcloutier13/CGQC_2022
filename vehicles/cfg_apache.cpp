@@ -152,7 +152,7 @@ class cgqc_heli_AH64_base : Heli_Attack_01_base_F
     };
     faction = "cgqcc";
     vehicleClass = "rhs_vehclass_helicopter";
-    crew = "CGQC_units_mk1_4_crew_heli";
+    crew = "CGQC_units_mk2_crew_heli_ai";
     author = "silent1";
     defaultUserMFDvalues[] = {0.1, 1, 0.1, 0, 0, 1, 1, 5, 0, 1, 0, 0, 0, 0, 0, 3000, 0, 0, 0, 0};
     class MFD
@@ -19661,7 +19661,7 @@ class cgqc_heli_AH64D : cgqc_heli_AH64_base
     displayName = "AH-64D Apache (2)";
     faction = "cgqc";
     vehicleClass = "rhs_vehclass_helicopter";
-    crew = "CGQC_units_mk1_4_Pilot_heli";
+    crew = "CGQC_units_mk2_Pilot_heli_ai";
     author = "silent1";
     destrType = "DestructWreck";
     selectionFireAnim = "zasleh";

@@ -3541,8 +3541,8 @@ class cgqc_heli_UH60M_base : cgqc_heli_U60_base
     {
         libTextDesc = "UH60M";
     };
-    crew = "CGQC_units_mk1_4_Pilot_heli";
-    typicalCargo[] = {"CGQC_units_mk1_4_crew_heli"};
+    crew = "CGQC_units_mk2_Pilot_heli_ai";
+    typicalCargo[] = {"CGQC_units_mk2_crew_heli_ai"};
     transportSoldier = 12;
     driverDoor = "doorR";
     memoryPointsGetInDriver = "pos Driver";
@@ -4465,8 +4465,8 @@ class cgqc_heli_uh60m : cgqc_heli_UH60M_base
     editorPreview = "rhsusf\addons\rhsusf_editorPreviews\data\RHS_UH60M.paa";
     faction = "cgqc";
     vehicleClass = "rhs_vehclass_helicopter";
-    crew = "CGQC_units_mk1_4_Pilot_heli";
-    typicalCargo[] = {"CGQC_units_mk1_4_crew_heli"};
+    crew = "CGQC_units_mk2_Pilot_heli_ai";
+    typicalCargo[] = {"CGQC_units_mk2_crew_heli_ai"};
     selectionFireAnim = "";
     transportSoldier = 8;
     cargoProxyIndexes[] = {2, 3, 6, 7, 9, 10, 11, 12};
@@ -4553,7 +4553,7 @@ class cgqc_heli_uh60m : cgqc_heli_UH60M_base
         };
         class MainTurret : MainTurret
         {
-            gunnerType = "CGQC_units_mk1_4_crew_heli";
+            gunnerType = "CGQC_units_mk2_crew_heli_ai";
             isCopilot = 0;
             showAsCargo = 1;
             body = "mainTurret";
@@ -4653,7 +4653,7 @@ class cgqc_heli_uh60m : cgqc_heli_UH60M_base
         };
         class RightDoorGun : MainTurret
         {
-            gunnerType = "CGQC_units_mk1_4_crew_heli";
+            gunnerType = "CGQC_units_mk2_crew_heli_ai";
             body = "Turret_2";
             gun = "Gun_2";
             animationSourceBody = "Turret_2";

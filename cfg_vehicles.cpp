@@ -221,7 +221,7 @@ class cgqc_plane_a10 : B_Plane_CAS_01_dynamicLoadout_F
     faction = "cgqc";
     author = "silent1";
     displayName = "A10";
-    crew = "CGQC_units_mk1_4_Pilot_jet";
+    crew = "CGQC_units_mk2_Pilot_Jet_ai";
     typicalCargo[] = {"CGQC_units_mk1_4_Pilot_jet"};
 };
 class cgqc_plane_c130 : RHS_C130J
@@ -230,7 +230,7 @@ class cgqc_plane_c130 : RHS_C130J
     faction = "cgqc";
     author = "silent1";
     displayName = "C-130";
-    crew = "CGQC_units_mk1_4_Pilot_jet";
+    crew = "CGQC_units_mk2_Pilot_Jet_ai";
     typicalCargo[] = {"CGQC_units_mk1_4_Pilot_jet","CGQC_units_mk1_4_Pilot_jet"};
     model = "\rhsusf\addons\rhsusf_a2port_air\C130J\c130j.p3d";
     #include "\cgqc_2022\vehicles\cgqc_heli_heavy.sqf"
@@ -487,7 +487,7 @@ class cgqc_vic_badger : B_W_APC_Wheeled_01_cannon_F
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_ifv";
     displayName = "Badger (3+8)";
-    crew = "CGQC_units_mk1_4_Tank_Driver";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
     maximumLoad = 6000;
     ace_cargo_space = 5;
     hiddenSelectionsTextures[] = {
@@ -508,7 +508,7 @@ class cgqc_vic_bradley : RHS_M2A3_BUSKIII_wd
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_ifv";
     displayName = "Bradley (3+6)";
-    crew = "CGQC_units_mk1_4_Tank_Driver";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
     ace_cargo_space = 4;
     hiddenSelectionsTextures[] = {
         "cgqc_2022\vehicles\cgqc_vic_bradley_1.paa",
@@ -527,7 +527,7 @@ class cgqc_vic_wiezel : I_LT_01_scout_F
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_cmd";
     displayName = "Command Wiezel (2)";
-    crew = "CGQC_units_mk1_4_Tank_Driver";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
     // Boosted speed and space
     enginePower = 190;
     maxSpeed = 110;
@@ -550,7 +550,7 @@ class cgqc_vic_quad : B_W_Quadbike_01_F {
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
     displayName = "Quad (1+1)";
-    crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+    crew = "CGQC_units_mk2_Rifleman_ai";
     class AcreRacks {
         class Rack_1 {
             displayName = "Dash Upper"; // Name is displayed in the interaction menu.
@@ -568,7 +568,7 @@ class cgqc_vic_quad_ext : NDS_6x6_ATV_MIL_LR
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
     displayName = "6x6 ATV (1)";
-    crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+    crew = "CGQC_units_mk2_Rifleman_ai";
     canFloat = 1;
     waterResistanceCoef = 0.03;
     maximumLoad = 2000;
@@ -621,7 +621,7 @@ class cgqc_vic_motocross : UK3CB_B_M1030_USMC_WDL
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
     displayName = "Motocross (1+1)";
-    crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+    crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_small.cpp"
 };
 class cgqc_vic_suv : UK3CB_AAF_B_SUV_Armoured
@@ -632,7 +632,7 @@ class cgqc_vic_suv : UK3CB_AAF_B_SUV_Armoured
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
     displayName = "SUV (1+5)";
-    crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+    crew = "CGQC_units_mk2_Rifleman_ai";
     class AcreRacks {
         class Rack_1 {
             displayName = "Dash Upper"; // Name is displayed in the interaction menu.
@@ -656,7 +656,7 @@ class cgqc_vic_jeep : UK3CB_B_M151_Jeep_Open_HIDF {
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
     displayName = "Jeep (1+3)";
-    crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+    crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };
 class cgqc_vic_jeep_cov : UK3CB_B_M151_Jeep_Closed_HIDF {
@@ -666,7 +666,7 @@ class cgqc_vic_jeep_cov : UK3CB_B_M151_Jeep_Closed_HIDF {
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
     displayName = "Jeep Covered (1+3)";
-    crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+    crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };
 class cgqc_vic_dagor : B_W_LSV_01_unarmed_F {
@@ -676,7 +676,7 @@ class cgqc_vic_dagor : B_W_LSV_01_unarmed_F {
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
     displayName = "Dagor (1+5)";
-    crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+    crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };
 class cgqc_vic_hmmw : rhsusf_m998_d_s_4dr {
@@ -686,7 +686,7 @@ class cgqc_vic_hmmw : rhsusf_m998_d_s_4dr {
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
     displayName = "Humvee (1+5)";
-    crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+    crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };
 class cgqc_vic_mrap : B_W_MRAP_01_F {
@@ -696,7 +696,7 @@ class cgqc_vic_mrap : B_W_MRAP_01_F {
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
     displayName = "MRAP (1+3)";
-    crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+    crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };
 // Armed -----------------------------------------------------------------------------------
@@ -707,7 +707,7 @@ class cgqc_vic_jeep_hmg : UK3CB_B_M151_Jeep_HMG_HIDF {
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_armed";
     displayName = "Jeep HMG (2+1)";
-    crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+    crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };
 class cgqc_vic_polaris : rhsusf_mrzr4_d {
@@ -717,7 +717,7 @@ class cgqc_vic_polaris : rhsusf_mrzr4_d {
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_armed";
     displayName = "Polaris Offroad (1+5)";
-    crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+    crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_small.cpp"
 };
 class cgqc_vic_dagor_hmg : B_W_LSV_01_armed_F {
@@ -727,7 +727,7 @@ class cgqc_vic_dagor_hmg : B_W_LSV_01_armed_F {
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_armed";
     displayName = "Dagor HMG (2+3)";
-    crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+    crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };
 class cgqc_vic_dagor_at : B_W_LSV_01_AT_F {
@@ -737,7 +737,7 @@ class cgqc_vic_dagor_at : B_W_LSV_01_AT_F {
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_armed";
     displayName = "Dagor AT (2+3)";
-    crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+    crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };
 class cgqc_vic_hmmw_hmg : rhsusf_m1025_d_s_m2 {
@@ -747,7 +747,7 @@ class cgqc_vic_hmmw_hmg : rhsusf_m1025_d_s_m2 {
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_armed";
     displayName = "Humvee HMG (2+3)";
-    crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+    crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };
 class cgqc_vic_hmmw_armored : rhsusf_m1165a1_gmv_m2_m240_socom_d {
@@ -757,7 +757,7 @@ class cgqc_vic_hmmw_armored : rhsusf_m1165a1_gmv_m2_m240_socom_d {
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_armed";
     displayName = "Humvee Armored (3+7)";
-    crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+    crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };
 class cgqc_vic_mrap_hmg : B_W_MRAP_01_hmg_F {
@@ -767,7 +767,7 @@ class cgqc_vic_mrap_hmg : B_W_MRAP_01_hmg_F {
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_armed";
     displayName = "MRAP HMG (2+2)";
-    crew = "CGQC_units_mk1_1_Rifleman_Carbine";
+    crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };
 

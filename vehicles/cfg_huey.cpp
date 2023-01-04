@@ -1183,8 +1183,8 @@ class cgqc_heli_uh1 : cgqc_heli_uh1_base
     scopeCurator = 2;
     side = 1;
     faction = "cgqc";
-    crew = "CGQC_units_mk1_4_Pilot_heli";
-    typicalCargo[] = {"CGQC_units_mk1_4_crew_heli"};
+    crew = "CGQC_units_mk2_Pilot_heli_ai";
+    typicalCargo[] = {"CGQC_units_mk2_crew_heli_ai"};
 #include "cgqc_heli_medium.sqf"
     enableSweep = 0;
     hiddenSelections[] = {"Camo1", "Camo2", "Camo_mlod", "decals"};

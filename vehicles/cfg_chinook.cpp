@@ -2687,8 +2687,8 @@ class cgqc_heli_ch47f : cgqc_heli_ch47_base
     author = "silent1";
     displayName = "CH47f Chinook (24+3)";
     vehicleClass = "rhs_vehclass_helicopter";
-    crew = "CGQC_units_mk1_4_Pilot_heli";
-    typicalCargo[] = {"CGQC_units_mk1_4_crew_heli"};
+    crew = "CGQC_units_mk2_Pilot_heli_ai";
+    typicalCargo[] = {"CGQC_units_mk2_crew_heli_ai"};
     accuracy = 1000;
     editorPreview = "rhsusf\addons\rhsusf_editorPreviews\data\RHS_CH_47F.paa";
 };
@@ -2698,7 +2698,7 @@ class cgqc_heli_ch47_10 : cgqc_heli_ch47f
     faction = "cgqc";
     author = "silent1";
     vehicleClass = "rhs_vehclass_helicopter";
-    crew = "CGQC_units_mk1_4_Pilot_heli";
-    typicalCargo[] = {"CGQC_units_mk1_4_crew_heli"};
+    crew = "CGQC_units_mk2_Pilot_heli_ai";
+    typicalCargo[] = {"CGQC_units_mk2_crew_heli_ai"};
     editorPreview = "rhsusf\addons\rhsusf_editorPreviews\data\RHS_CH_47F_10.paa";
 };

@@ -5,6 +5,7 @@ _gun = _this select 0;
 _customGun = _gun + "_" + cgqc_custom_playername;
 player addWeapon _customGun;
 if !(player hasWeapon _customGun) then {
-    hint format ["Custom Gun :%1", _customGun];
     player addWeapon _gun;
+}else{
+    hint format ["Custom Gun :%1", _customGun];
 };

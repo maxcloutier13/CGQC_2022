@@ -41,7 +41,7 @@ switch (_type) do {
         _vest = "cgqc_vest_mk1_pilot";
         _backpack =  "CGQC_units_mk1_4_Pilot_heli_pack";
         _helmet =  "cgqc_helmet_mk1_jetpilot";
-        _face =  "G_Combat";
+        _face =  "G_mas_can_balaM_T";
 	};
     case "heli_crew":{ //=============================================================================================
         player forceAddUniform "cgqc_uniform_mk1_helipilot";
@@ -101,7 +101,7 @@ switch (_type) do {
         hintSilent "";
 	};
 };
-
+sleep 0.5;
 // Add stuff to player
 player addVest _vest;
 player addBackpack _backpack;

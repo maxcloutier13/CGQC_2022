@@ -42,7 +42,7 @@ class cgqc_box_mk1_rolebox : Box_NATO_Equip_F
     ace_cargo_noRename = 1;
     class EventHandlers
     {
-        init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1.sqf'";
+       // init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1.sqf'";
     };
     class SimpleObject
     {
@@ -84,7 +84,7 @@ class cgqc_box_mk1_plus : cgqc_box_mk1_rolebox
     editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\Box_NATO_Equip_F.jpg";
     class EventHandlers
     {
-        init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1_plus.sqf'";
+        //init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1_plus.sqf'";
     };
 };
 class cgqc_box_mk1_plus_green : cgqc_box_mk1_plus
@@ -108,12 +108,12 @@ class cgqc_box_mk1_plus_plus : cgqc_box_mk1_rolebox
     editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\Box_NATO_Equip_F.jpg";
     class EventHandlers
     {
-        init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1_plus_plus.sqf'";
+        //init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1_plus_plus.sqf'";
     };
 };
 class cgqc_box_mk1_plus_plus_green : cgqc_box_mk1_plus_plus
 {
-    scope = 2;
+    scope = 1;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_plus_plus_green";
     displayName = "CGQC MK1++ Crate";
@@ -123,7 +123,7 @@ class cgqc_box_mk1_plus_plus_green : cgqc_box_mk1_plus_plus
 // Mk1 Loadout only box
 class cgqc_box_mk1_loadouts : cgqc_box_mk1_rolebox
 {
-    scope = 0;
+    scope = 1;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_plus_plus";
     displayName = "CGQC MK1 Loadouts Only";
@@ -132,7 +132,7 @@ class cgqc_box_mk1_loadouts : cgqc_box_mk1_rolebox
     editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\Box_NATO_Equip_F.jpg";
     class EventHandlers
     {
-        init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1_loadouts.sqf'";
+        //init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1_loadouts.sqf'";
     };
 };
 class cgqc_box_mk1_loadouts_green : cgqc_box_mk1_loadouts
@@ -190,7 +190,7 @@ class cgqc_box_original_green : B_supplyCrate_F
 // Mk1 Big Arsenal
 class cgqc_box_mk1_arsenal : B_supplyCrate_F
 {
-    scope = 2;
+    scope = 1;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_arsenal";
     displayName = "CGQC MK1++ Arsenal";
@@ -200,7 +200,7 @@ class cgqc_box_mk1_arsenal : B_supplyCrate_F
     ace_cargo_noRename = 1;
     class EventHandlers
     {
-        init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1_plus_plus.sqf'";
+       // init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk1_plus_plus.sqf'";
     };
     class TransportMagazines{};
     class TransportWeapons{};
@@ -2094,7 +2094,7 @@ class cgqc_box_mk2_cargo : Land_Cargo10_military_green_F
 // Legacy mk1 cargo
 class cgqc_box_mk1_cargo : Land_Cargo10_military_green_F
 {
-    scope = 1;
+    scope = 0;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_cargo";
     displayName = "CGQC MK2 Cargo Container";
@@ -2103,6 +2103,6 @@ class cgqc_box_mk1_cargo : Land_Cargo10_military_green_F
     ace_cargo_noRename = 1;
     class EventHandlers
     {
-        init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk2_cargo.sqf'";
+        //init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk2_cargo.sqf'";
     };
 };

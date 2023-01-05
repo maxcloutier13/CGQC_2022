@@ -6,6 +6,9 @@ if (hasInterface) then {
     _section = _this select 1;
     _auRepos = _this select 2;
 
+    // FIX Remove the start "au repos". Players don't expect it and they mess up their kit.
+    _auRepos = false;
+
     //hintc "mk2_role_switch wtf";sleep 0.5;
 
     if (cgqc_setting_show_transition) then {

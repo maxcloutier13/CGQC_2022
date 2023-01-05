@@ -2,6 +2,7 @@
 player addItemToBackpack "ACE_Tripod";
 player addItemToBackpack "ACE_ATragMX";
 player addItemToBackpack "ACE_Kestrel4500";
+player addItemToBackpack "ACE_Vector";
 player addItemToBackpack "sps_black_hornet_01_Static_F";
 player addItemToBackpack "ACE_DefusalKit";
 player addItemToBackpack "ACE_M26_Clacker";

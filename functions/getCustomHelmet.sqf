@@ -7,6 +7,7 @@ player addHeadgear _customHelmet;
 _checkHelmet = headgear player;
 //hint format ["Check Helmet:%1", _checkHelmet];sleep 5;
 if (_checkHelmet == "") then {
-    hint format ["Custom Helmet :%1", _customHelmet];
     player addHeadgear _helmet;
+} else {
+    hint format ["Custom Helmet :%1", _customHelmet];
 };

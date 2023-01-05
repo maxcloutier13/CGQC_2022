@@ -9,6 +9,15 @@ sleep 0.5;
 // === Backpack basic
 #include "\cgqc_2022\loadouts\mk2\backpack_basic.sqf"
 
+// Cloutier thangs
+if (cgqc_player_max then) {
+    player addItemToVest "immersion_cigs_cigar0_nv";
+    player addItemToVest "murshun_cigs_lighter";
+    player addItemToVest "murshun_cigs_cigpack";
+    player addItemToVest "grad_paceCountBeads_functions_paceCountBeads";
+};
+
+
 switch (_type) do {
 	case "hq":{ //=============================================================================================
         // === Weapons

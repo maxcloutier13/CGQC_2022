@@ -505,7 +505,7 @@ class CGQC_units_mk1_4_Pilot_Jet : cgqc_soldat_moderne
     faction = "CGQC";
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
-    scope = 2;
+    scope = 1;
     scopeCurator = 1;
     displayName = "Jet Pilot";
     engineer = 1;

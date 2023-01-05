@@ -7,4 +7,4 @@ _items = ["Tier1_SR25", "Tier1_SR25_tan", "Tier1_SR25_EC", "Tier1_SR25_EC_tan", 
 
 [_source, _items] call ace_arsenal_fnc_initBox;
 
-#include "cgqc_loadouts_mk1_actions.sqf"
+//#include "cgqc_loadouts_mk1_actions.sqf"

@@ -77,6 +77,8 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_pilot.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
+        // Remove superfluous nvgs
+        player unlinkItem "JAS_GPNVG18_Full_blk_TI";
 	};
     case "tank":{ //=============================================================================================
         // === Weapons
@@ -267,6 +269,8 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
+        // Jetable
+        player addWeapon "rhs_weap_m72a7";
 	};
     case "rifle_carb":{ //=============================================================================================
         // === Weapons
@@ -279,6 +283,8 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
+        // Jetable
+        player addWeapon "rhs_weap_m72a7";
 	};
     case "rifle_m16":{ //=============================================================================================
         // === Weapons
@@ -291,6 +297,8 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
+        // Jetable
+        player addWeapon "rhs_weap_m72a7";
 	};
     case "rifle_gren":{ //=============================================================================================
         // === Weapons

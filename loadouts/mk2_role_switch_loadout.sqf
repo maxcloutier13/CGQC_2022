@@ -102,6 +102,8 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_pilot.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
+        player unlinkItem "ItemGPS";
+        player linkItem "B_UavTerminal";
 	};
     case "drone":{ //=============================================================================================
         // === Weapons
@@ -254,6 +256,8 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
+        player unlinkItem "ItemGPS";
+        player linkItem "B_UavTerminal";
 	};
     case "mortar":{ //=============================================================================================
         // === Portable mortar

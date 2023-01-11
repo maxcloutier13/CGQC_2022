@@ -1,14 +1,12 @@
 
 waitUntil {!isNull (findDisplay 46)};
 waitUntil {cgqc_postInitClient_done};
+sleep 0.5;
+
 if (hasInterface) then {
     _type = _this select 0;
     _section = _this select 1;
     _auRepos = _this select 2;
-
-    // FIX Remove the start "au repos". Players don't expect it and they mess up their kit.
-    _auRepos = false;
-
     //hintc "mk2_role_switch wtf";sleep 0.5;
 
     if (cgqc_setting_show_transition) then {
@@ -28,7 +26,7 @@ if (hasInterface) then {
 
     // Check if player in chill mode
     if (cgqc_player_chill) then {
-        ["ready"] call CGQC_fnc_perksBasic;
+        ["ready", true] call CGQC_fnc_perksBasic;
         waitUntil {!cgqc_player_chill};
     };
 
@@ -235,10 +233,9 @@ if (hasInterface) then {
         };
     };
 
-
     // Start transition
     if (!cgqc_intro_running) then {
-        [] execVM "\CGQC_2022\scripts\transition.sqf";
+        ["role"] execVM "\CGQC_2022\scripts\transition.sqf";
     };
     mk2_role_switch_perks_done = false;
     mk2_role_switch_uniform = false;
@@ -267,9 +264,10 @@ if (hasInterface) then {
     [ player, cgqc_player_patch ] call BIS_fnc_setUnitInsignia;
 
     // Chill mode
-    if (_auRepos) then {
-        ["chill"] call CGQC_fnc_perksBasic;
-    };
+    //if (_auRepos) then {
+    //     ["chill", true] call CGQC_fnc_perksBasic;
+    //};
     // Lower gun 
     player action ['SwitchWeapon', player, player, 250];
 };
+

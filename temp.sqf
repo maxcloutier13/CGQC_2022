@@ -615,4 +615,16 @@ G_mas_can_shemag_mask
 
 
 
-
+class CGQC_vic_t34: NORTH_FIN_41_T34_76_1941
+	{
+		faction = "cgqc";
+		editorCategory = "EdCat_NORTH_FIN_ArmyW_41";
+		crew = "I_NORTH_FIN_T_W_41_Crewman";
+		NORTH_vehicleTimePeriod = 1;
+		hiddenSelectionsTextures[] = {
+			"\CGQC\vehicles\T34_twitch_friendly.paa",
+			"NORTH\NF_vehicles\fin\t26\data\Tracks_CA.paa",
+			"NORTH\NF_vehicles\fin\t26\data\Tracks_CA.paa",
+			"\north\NF_vehicles\fin\t26\data\Finnishtankmarkings.paa"
+			,"\north\NF_vehicles\fin\t26\data\Finnishtankmarkings.paa"};
+	};

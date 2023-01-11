@@ -20,7 +20,7 @@ class cgqc_soldat_moderne : B_Soldier_f
 	backpack = "cgqc_pack_mk1_magic";
 	editorPreview = "\CGQC_2022\pics\cgqc_soldat_moderne.jpg";
 	class EventHandlers {
-        init = "[] execVM '\CGQC\functions\fnc_loadTraining.sqf'";
+        //init = "[] spawn CGQC_fnc_initTraining";
     };
 };
 class cgqc_officer_1_moderne : B_Soldier_f
@@ -46,7 +46,7 @@ class cgqc_officer_1_moderne : B_Soldier_f
 	backpack = "cgqc_pack_mk1_magic";
 	editorPreview = "\CGQC_2022\pics\cgqc_officer_moderne.jpg";
 	class EventHandlers {
-        init = "[] execVM '\CGQC\functions\fnc_loadTraining.sqf'";
+        //init = "[] spawn CGQC_fnc_initTraining";
     };
 };
 class cgqc_officer_moderne : B_Soldier_f
@@ -72,7 +72,7 @@ class cgqc_officer_moderne : B_Soldier_f
 	backpack = "cgqc_pack_mk1_magic";
 	editorPreview = "\CGQC_2022\pics\cgqc_officer_moderne.jpg";
 	class EventHandlers {
-        init = "[] execVM '\CGQC\functions\fnc_loadTraining.sqf'";
+        //init = "[] spawn CGQC_fnc_initTraining";
     };
 };
 class CGQC_Soldat_Base : B_Soldier_f

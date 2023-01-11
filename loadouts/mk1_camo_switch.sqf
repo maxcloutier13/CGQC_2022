@@ -3,12 +3,12 @@ _camo = _this select 0;
 cutText ["", "BLACK FADED", 999];
 titleText ["", "PLAIN"];
 // Fade to black transition
-execVM "\CGQC_2022\scripts\transition.sqf";
+["camo"] execVM "\CGQC_2022\scripts\transition.sqf";
 //disableUserInput true;
 
 // Check if player in chill mode
 if (cgqc_player_chill) then {
-    ["ready"] call CGQC_fnc_perksBasic;
+    ["ready", true] call CGQC_fnc_perksBasic;
     waitUntil {!cgqc_player_chill};
 };
 

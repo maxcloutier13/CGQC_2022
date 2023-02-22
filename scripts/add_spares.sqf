@@ -1,6 +1,7 @@
 _vic = _this select 0;
 _type = _this select 1;
 
+waitUntil {!isNil "cgqc_postInitClient_done"};
 waitUntil {sleep 1; cgqc_postInitClient_done};
 
 if (!isNil "_vic") then {

@@ -26,7 +26,11 @@ _face = selectRandom [
 switch (_type) do {
 	case "command":{ //=============================================================================================
         _vest = "cgqc_vest_mk1_tan";
-        _backpack =  "cgqc_pack_mk1_radiobag";
+        if (cgqc_player_hasContact) then {
+            _backpack =  "cgqc_pack_mk1_radiobag";
+        }else{
+            _backpack =  "cgqc_pack_mk1_carryall";
+        };
         _helmet =  "cgqc_helmet_mk1";
 	};
     case "heli_pilot":{ //=============================================================================================
@@ -65,7 +69,11 @@ switch (_type) do {
 	};
     case "jtac":{ //=============================================================================================
         _vest = "cgqc_vest_mk1_tan_lr";
-        _backpack =  "cgqc_pack_mk1_radiobag";
+        if (cgqc_player_hasContact) then {
+            _backpack =  "cgqc_pack_mk1_radiobag";
+        }else{
+            _backpack =  "cgqc_pack_mk1_carryall";
+        };
         _helmet =  "cgqc_helmet_mk1";
         player addHandgunItem "Tier1_TiRant9S"; //Silencer on pistol
         player addHandgunItem "tier1_sig_romeo1"; //Dot on pistol

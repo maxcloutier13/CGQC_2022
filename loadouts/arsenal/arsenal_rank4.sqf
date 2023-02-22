@@ -35,6 +35,7 @@ cgqc_mk2_arsenal_rank4 = [
     "cgqc_beret_green",
     // Scopes -----------------------------------
     "optic_Nightstalker",
+    "sn_ns",
     "optic_tws",
     "optic_tws_mg",
     "NForce_Atcr_RMR_Top_SkeetIR_Down",

@@ -119,7 +119,6 @@ cgqc_mk2_arsenal_1_scopes = [
     "optic_ERCO_khk_F",
     "optic_ERCO_snd_F",
     "optic_Yorris",
-    "SN_NS",
     "Tier1_Eotech551_Black",
     "Tier1_Eotech551_3xMag_Black_Up",
     "Tier1_Eotech551_L3_Black_Up",

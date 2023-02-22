@@ -29,6 +29,7 @@ switch (_type) do {
         if (cgqc_player_hasContact) then {
             _backpack =  "cgqc_pack_mk1_radiobag";
         }else{
+            hintc "Kin, vla ton carryall Fortin!";
             _backpack =  "cgqc_pack_mk1_carryall";
         };
         _helmet =  "cgqc_helmet_mk1";

@@ -378,7 +378,7 @@ class I_LT_01_scout_F;
 // Mraps Acre settings--------------------------------------------------------------------------
 
 class Car_F : Car{
-    
+    ace_cargo_space = 7;
     class EventHandlers
     {
          init = "[_this select 0, 'car'] execVM '\cgqc_2022\scripts\add_spares.sqf'";
@@ -454,8 +454,8 @@ class Wheeled_APC_F: Car_F {
      };
 };
 // Tank   Acre settings -----------------------------------------------------------------------
-
 class Tank_F: Tank {
+    ace_cargo_space = 7;
     class AcreRacks {
         class Rack_1 {
             displayName = "Dash Upper"; // Name is displayed in the interaction menu.
@@ -489,7 +489,6 @@ class cgqc_vic_badger : B_W_APC_Wheeled_01_cannon_F
     displayName = "Badger (3+8)";
     crew = "CGQC_units_mk2_Tank_Driver_ai";
     maximumLoad = 6000;
-    ace_cargo_space = 5;
     hiddenSelectionsTextures[] = {
         "cgqc_2022\vehicles\cgqc_vic_badger_main.paa",
         "A3\Armor_F_Exp\APC_Wheeled_01\data\APC_Wheeled_01_adds_olive_co.paa",
@@ -509,7 +508,6 @@ class cgqc_vic_bradley : RHS_M2A3_BUSKIII_wd
     editorSubcategory = "EdSubcat_cgqc_vic_ifv";
     displayName = "Bradley (3+6)";
     crew = "CGQC_units_mk2_Tank_Driver_ai";
-    ace_cargo_space = 4;
     hiddenSelectionsTextures[] = {
         "cgqc_2022\vehicles\cgqc_vic_bradley_1.paa",
         "cgqc_2022\vehicles\cgqc_vic_bradley_2.paa",
@@ -532,7 +530,6 @@ class cgqc_vic_wiezel : I_LT_01_scout_F
     enginePower = 190;
     maxSpeed = 110;
     maximumLoad = 2000;
-    ace_cargo_space = 4;  // Cargo space your vehicle has
     hiddenSelectionsTextures[] = {
         "cgqc_2022\vehicles\cgqc_vic_command_main.paa",
         "cgqc_2022\vehicles\cgqc_vic_command_radar.paa",

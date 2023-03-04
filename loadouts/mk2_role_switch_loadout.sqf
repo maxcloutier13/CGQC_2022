@@ -178,6 +178,8 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
+        player unlinkItem "ItemGPS";
+        player linkItem "B_UavTerminal";
 	};
     case "med":{ //=============================================================================================
         // === Weapons

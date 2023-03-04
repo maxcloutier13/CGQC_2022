@@ -275,7 +275,7 @@ class cgqc_drone_darter : B_UAV_01_F
     camouflage = 0.01;
 	audible = 0.05;
     maxSpeed = 250;
-    fuelCapacity = 1000;
+    fuelCapacity = 2000;
     liftForceCoef = 2.0;
 	cyclicAsideForceCoef = 2.0;
 	cyclicForwardForceCoef = 1.2;
@@ -369,6 +369,98 @@ class cgqc_drone_darter : B_UAV_01_F
             volume = "((1-camPos)*3*(rotorThrust-0.9))/20";
         };
     };
+};
+// Override du deployable darter
+class Rev_darter_b: B_UAV_01_F
+{
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_drones";
+    displayName = "CGQC - HQ Darter";
+    camouflage = 0.01;
+	audible = 0.05;
+    maxSpeed = 250;
+    fuelCapacity = 2000;
+    liftForceCoef = 2.0;
+	cyclicAsideForceCoef = 2.0;
+	cyclicForwardForceCoef = 1.2;
+    radarTargetSize = 0.05;
+	visualTargetSize = 0.05;
+	LockDetectionSystem = 12;
+    incomingMissileDetectionSystem = 26;
+    accuracy = 0.5;
+    hiddenSelectionsTextures[] = {"\CGQC_2022\vehicles\cgqc_drone_darter_dark.paa"};
+    class Turrets: Turrets {
+        class MainTurret: MainTurret {
+            class OpticsIn {
+                class Wide {
+                    opticsDisplayName = "W";
+                    initAngleX = 0;
+                    minAngleX = -30;
+                    maxAngleX = 30;
+                    initAngleY = 0;
+                    minAngleY = -100;
+                    maxAngleY = 100;
+                    initFov = 0.456;
+                    minFov = 0.021875;
+                    maxFov = 2.0;
+                    directionStabilized = 1;
+                    visionMode[] = {"Normal","NVG","Ti"};
+                    thermalMode[] = {0,1};
+                    gunnerOpticsModel = "A3\drones_f\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+                };
+            };
+        };
+    };
+    class Sounds
+    {
+        class Engine
+        {
+            sound[] = {"A3\Sounds_F\air\Uav_01\quad_engine_full_01",0.4466836,1.0,200};
+            frequency = "rotorSpeed";
+            volume = "(camPos*((rotorSpeed-0.72)*4))/3";
+        };
+        class RotorLowOut
+        {
+            sound[] = {"A3\Sounds_F\air\Uav_01\blade",0.31622776,1.0,200};
+            frequency = "rotorSpeed";
+            volume = "(camPos*(0 max (rotorSpeed-0.1)))/3";
+            cone[] = {1.6,3.14,1.6,0.95};
+        };
+        class RotorHighOut
+        {
+            sound[] = {"A3\Sounds_F\air\Uav_01\blade_high",0.31622776,1.0,250};
+            frequency = "rotorSpeed";
+            volume = "(camPos*10*(0 max (rotorThrust-0.9)))/3";
+            cone[] = {1.6,3.14,1.6,0.95};
+        };
+        class EngineIn
+        {
+            sound[] = {"A3\Sounds_F\air\Uav_01\quad_engine_full_int",0.56234133,1.0};
+            frequency = "rotorSpeed";
+            volume = "((1-camPos)*((rotorSpeed-0.75)*4))/20";
+        };
+        class RotorLowIn
+        {
+            sound[] = {"A3\Sounds_F\air\Uav_01\blade_int",0.56234133,1.0};
+            frequency = "rotorSpeed";
+            volume = "((1-camPos)*(0 max (rotorSpeed-0.1)))/20";
+        };
+        class RotorHighIn
+        {
+            sound[] = {"A3\Sounds_F\air\Uav_01\blade_high_int",0.56234133,1.0};
+            frequency = "rotorSpeed";
+            volume = "((1-camPos)*3*(rotorThrust-0.9))/20";
+        };
+    };
+};
+
+class cgqc_drone_darter_light : cgqc_drone_darter 
+{
+    displayName = "CGQC - Darter Léger";
+    maxSpeed = 100;
+    fuelCapacity = 100;
+    liftForceCoef = 1.0;
 };
 // Land vehicles
 class B_W_APC_Wheeled_01_cannon_F;

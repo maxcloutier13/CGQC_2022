@@ -60,6 +60,9 @@
         cgqc_mk2_arsenal_5 + 
         cgqc_mk2_arsenal_rank8
     );
+    // 23rd stuff
+    #include "\cgqc_2022\loadouts\arsenal\arsenal_23rd.sqf";
+    cgqc_mk2_arsenal_23 = cgqc_mk2_arsenal_rank23;
     
     // Arsenal init done
     cgqc_mk2_arsenal_init_done = true;

@@ -192,4 +192,11 @@ if (!isNil "_crate") then {
     // Zeus
     _action = [ "menu_mk2_zeus", "Arsenal: Zeus", "CGQC_2022\textures\icon_arsenal", {[5] execVM "\CGQC_2022\functions\loadMk2.sqf"}, {cgqc_flag_isTraining || [player] call CGQC_fnc_checkZeus;} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
+
+
+//----------------------------------------
+    // 23rd toggle
+     _action = [ "menu_mk2_23", "23rd CTF Member?", "", {execVM "\CGQC_2022\functions\23rd.sqf"}, {!cgqc_player_23rd} ] call ace_interact_menu_fnc_createAction;
+    _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
+
 };

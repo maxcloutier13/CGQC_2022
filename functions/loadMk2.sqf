@@ -55,8 +55,10 @@ _type = _this select 0;
 	if (!_zeus) then {
 		//hintc "Not Zeus: Pop box";
 		waitUntil {_found}; 
-		// Clear items
-		//[player, true, false] call ace_arsenal_fnc_removeVirtualItems;
+		//Check if 23rd 
+		if (cgqc_player_23rd) then {
+			_items = _items + cgqc_mk2_arsenal_23;
+		};
 		// Init crate
 		[player, _items] call ace_arsenal_fnc_initBox;
 		// Open arsenal

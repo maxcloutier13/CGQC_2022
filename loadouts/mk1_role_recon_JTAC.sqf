@@ -90,7 +90,6 @@ player addItemToBackpack "WBK_HeadLampItem";
 player addItemToBackpack "G_mas_can_gasmask";
 player addItemToBackpack "Rev_darter_item";
 player addItemToBackpack "ACE_Tripod";
-player addItemToBackpack "sps_black_hornet_01_Static_F";
 player addItemToBackpack "ItemcTab";
 player addItemToBackpack "ACE_Chemlight_HiRed";
 player addItemToBackpack "ACE_Chemlight_IR";

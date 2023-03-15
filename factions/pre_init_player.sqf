@@ -60,7 +60,6 @@ private _electronics = [
 	"ItemAndroid",
 	"ItemcTabHCam",
 	"ItemcTab",
-	"sps_black_hornet_01_Static_F",
 	"WBK_HeadLampItem"
 ];
 

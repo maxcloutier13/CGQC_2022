@@ -90,7 +90,6 @@ player addItemToBackpack "G_mas_can_gasmask";
 player addItemToBackpack "ACE_Tripod";
 player addItemToBackpack "ACE_ATragMX";
 player addItemToBackpack "ACE_Kestrel4500";
-player addItemToBackpack "sps_black_hornet_01_Static_F";
 player addItemToBackpack "ACE_Chemlight_HiRed";
 player addItemToBackpack "ACE_Chemlight_IR";
 for "_i" from 1 to 3 do {

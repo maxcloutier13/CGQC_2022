@@ -95,11 +95,6 @@ class TransportItems{
 		count = 2;
 		name = "Rev_darter_item";
 	};
-	class _xx_sps_black_hornet_01_Static_F
-	{
-		count = 2;
-		name = "sps_black_hornet_01_Static_F";
-	};
 	class _xx_ACE_Fortify
 	{
 		count = 2;

@@ -668,11 +668,6 @@ class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_radiobag
             count = 1;
             name = "Rev_darter_item";
         };
-        class _xx_sps_black_hornet_01_Static_F
-        {
-            count = 2;
-            name = "sps_black_hornet_01_Static_F";
-        };
     };
     class TransportWeapons
     {
@@ -851,11 +846,7 @@ class CGQC_units_mk1_0_TeamLeader_Carbine_pack : cgqc_pack_mk1_radiobag
             count = 1;
             name = "G_mas_can_gasmask";
         };
-        class _xx_sps_black_hornet_01_Static_F
-        {
-            count = 1;
-            name = "sps_black_hornet_01_Static_F";
-        };
+        
         class _xx_ACRE_PRC117F
         {
             count = 1;
@@ -955,11 +946,7 @@ class CGQC_units_mk1_0_TeamLeader_CQB_pack : cgqc_pack_mk1_radiobag
             count = 1;
             name = "G_mas_can_gasmask";
         };
-        class _xx_sps_black_hornet_01_Static_F
-        {
-            count = 1;
-            name = "sps_black_hornet_01_Static_F";
-        };
+        
         class _xx_ACRE_PRC117F
         {
             count = 1;
@@ -1062,11 +1049,6 @@ class CGQC_units_mk1_0_JTAC_pack : cgqc_pack_mk1_radiobag
         {
             count = 1;
             name = "ACE_Tripod";
-        };
-        class _xx_sps_black_hornet_01_Static_F
-        {
-            count = 2;
-            name = "sps_black_hornet_01_Static_F";
         };
         class _xx_ItemcTab
         {
@@ -1698,11 +1680,7 @@ class CGQC_units_mk1_2_Marksman_pack : cgqc_pack_mk1_kitbag
             count = 1;
             name = "ACE_Kestrel4500";
         };
-        class _xx_sps_black_hornet_01_Static_F
-        {
-            count = 1;
-            name = "sps_black_hornet_01_Static_F";
-        };
+        
     };
     class TransportWeapons
     {
@@ -1793,11 +1771,7 @@ class CGQC_units_mk1_2_Sniper_pack : cgqc_pack_mk1_kitbag
             count = 1;
             name = "ACE_Kestrel4500";
         };
-        class _xx_sps_black_hornet_01_Static_F
-        {
-            count = 1;
-            name = "sps_black_hornet_01_Static_F";
-        };
+        
     };
     class TransportWeapons
     {
@@ -1980,11 +1954,7 @@ class CGQC_units_mk1_4_Tank_Driver_pack : cgqc_pack_mk1_magic
             count = 1;
             name = "ToolKit";
         };
-        class _xx_sps_black_hornet_01_Static_F
-        {
-            count = 1;
-            name = "sps_black_hornet_01_Static_F";
-        };
+        
         class _xx_ACE_fieldDressing
         {
             count = 10;

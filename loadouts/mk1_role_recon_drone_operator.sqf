@@ -103,7 +103,6 @@ player addItemToBackpack "ACE_UAVBattery";
 for "_i" from 1 to 2 do {
 	player addItemToBackpack "rev_darter_item";
 };
-player addItemToBackpack "sps_black_hornet_01_Static_F";
 player addItemToBackpack "rhsusf_m112_mag";
 player addHeadgear "cgqc_helmet_mk1";
 player addGoggles "G_mas_can_wrap_gog_B";

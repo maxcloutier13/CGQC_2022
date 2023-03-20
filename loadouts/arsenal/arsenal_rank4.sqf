@@ -18,7 +18,6 @@ cgqc_mk2_arsenal_rank4 = [
     // Electronics ------------------------------
     "ItemcTab",
     // Drones ------------------------------
-    "sps_black_hornet_01_Static_F",
     "Rev_darter_item",
     "Rev_pelican_item",
     // Linked items ------------------------------------

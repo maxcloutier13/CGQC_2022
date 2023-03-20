@@ -13,4 +13,4 @@ for "_i" from 1 to 3 do {
 };
 player addItemToBackpack "SmokeShellRed";
 player addItemToBackpack "SmokeShellBlue";
-player addItemToBackpack "sps_black_hornet_01_Static_F";
+player addItemToBackpack "rev_darter_item";

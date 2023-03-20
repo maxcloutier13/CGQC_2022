@@ -81,6 +81,27 @@ player forceAddUniform _uniform_new;
 player addVest _vest_new;
 player addBackpack _backpack_new;
 
+// Check that equiment switch worked
+check_helmet = headgear player;
+check_uniform = uniform player;
+check_vest = vest player;
+check_backpack = backpack player;
+if (check_helmet == "") then {
+	player addHeadgear cgqc_helmet_old;
+};
+if (check_uniform == "") then {
+	player forceAddUniform cgqc_uniform_old;
+};
+if (check_vest == "") then {
+	player addVest cgqc_vest_old;
+};
+if (check_backpack == "") then {
+	player addBackpack _backpack_old;
+};
+
+// Flush potential leftovers 
+clearAllItemsFromBackpack player;
+
 // load items in new uniform
 {
 	player addItemToUniform _x

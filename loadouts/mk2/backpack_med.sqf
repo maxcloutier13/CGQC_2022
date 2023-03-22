@@ -32,5 +32,4 @@ for "_i" from 1 to 3 do {
 };
 player addItemToBackpack "ACE_SpraypaintRed";
 player addItemToBackpack "ACE_personalAidKit";
-player addItemToBackpack "ACE_personalAidKit";
 player addItemToBackpack "FSGm_ItemMedicBag";

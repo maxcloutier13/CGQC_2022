@@ -21,58 +21,7 @@ class cfgWeapons
 	// Mortar stuff
 	#include "cfg_mortar.cpp"
 };
-// Custom Editor category for units ------------------------------------------------
-class CfgEditorSubcategories
-{
-	class EdSubcat_cgqc_mk1
-	{
-		displayName = "Men (Mk2)";
-	};
-	class EdSubcat_cgqc_spawn
-	{
-		displayName = "Men (Spartan)";
-	};
-	class EdSubcat_cgqc_spawn_cmd
-	{
-		displayName = "Men (Command)";
-	};
-	class EdSubcat_cgqc_spawn_rec
-	{
-		displayName = "Men (Recon)";
-	};
-	class EdSubcat_cgqc_spawn_pilot
-	{
-		displayName = "Men (Pilots)";
-	};
-	class EdSubcat_cgqc_funstuff
-	{
-		displayName = "Funstuff";
-	};
-	class EdSubcat_cgqc_drones
-	{
-		displayName = "Drones";
-	};
-	class EdSubcat_cgqc_vic_ifv
-	{
-		displayName = "Vehicles (IFV)";
-	};
-	class EdSubcat_cgqc_cmd
-	{
-		displayName = "Vehicles (Command)";
-	};
-	class EdSubcat_cgqc_vic_unarmed
-	{
-		displayName = "Vehicles (Unarmed)";
-	};
-	class EdSubcat_cgqc_vic_armed
-	{
-		displayName = "Vehicles (Armed)";
-	};
-	class EdSubcat_cgqc_logistics
-	{
-		displayName = "CGQC";
-	};
-};
+
 // Custom units ----------------------------------------------------------------------------
 #include "cfg_pre_vehicles.cpp"
 class cfgVehicles

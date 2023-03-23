@@ -12,7 +12,8 @@ cgqc_mk2_arsenal_rank3 = [
     "ACE_salineIV",
     "ACE_salineIV_250",
     "ACE_salineIV_500",
-     "ACE_personalAidKit",
+    "ACE_personalAidKit",
+    "FSGm_ItemMedicBag",
     // Helmets Medic + Crew----------------------------
     "cgqc_beret_green",
     "cgqc_helmet_mk1_tank", 

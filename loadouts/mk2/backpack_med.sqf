@@ -6,10 +6,10 @@ for "_i" from 1 to 50 do {
 for "_i" from 1 to 5 do {
 	player addItemToBackpack "ACE_salineIV";
 };
-for "_i" from 1 to 3 do {
+for "_i" from 1 to 5 do {
 	player addItemToBackpack "ACE_salineIV_500";
 };
-for "_i" from 1 to 10 do {
+for "_i" from 1 to 5 do {
 	player addItemToBackpack "ACE_salineIV_250";
 };
 for "_i" from 1 to 20 do {
@@ -30,6 +30,6 @@ for "_i" from 1 to 4 do {
 for "_i" from 1 to 3 do {
 	player addItemToBackpack "SmokeShellPurple";
 };
+player addItemToBackpack "FSGm_ItemMedicBag";
 player addItemToBackpack "ACE_SpraypaintRed";
 player addItemToBackpack "ACE_personalAidKit";
-player addItemToBackpack "FSGm_ItemMedicBag";

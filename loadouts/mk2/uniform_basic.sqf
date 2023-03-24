@@ -7,6 +7,7 @@ player addItemToUniform "ACE_microDAGR";
 player addItemToUniform "ACE_CableTie";
 player addItemToUniform "ACE_CableTie";
 player addItemToUniform "ACE_IR_Strobe_Item";
+player addItemToUniform "acex_intelitems_notepad";
 player addItemToUniform "ACE_RangeCard";
 // === Meds =====================================
 player addItemToUniform "FF_Painkiller";

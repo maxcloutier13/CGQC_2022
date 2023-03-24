@@ -21,7 +21,10 @@ class cfgWeapons
 	// Mortar stuff
 	#include "cfg_mortar.cpp"
 };
-
+class cfgGlasses
+{
+	#include "cfg_goggles.cpp"
+};
 // Custom units ----------------------------------------------------------------------------
 #include "cfg_pre_vehicles.cpp"
 class cfgVehicles

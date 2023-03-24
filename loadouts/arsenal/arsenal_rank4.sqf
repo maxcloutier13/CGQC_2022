@@ -1,9 +1,11 @@
 // Rang 4 - Sgt - Recon/Centaure
 cgqc_mk2_arsenal_rank4 = [
     // Uniforms -----------------------------------
-    "U_mas_can_B_Wetsuit",
+    "cgqc_uniform_mk1_diver",
     // Vests -----------------------------------
-    "V_mas_can_RebreatherB",
+    "cgqc_vest_mk1_diver",
+    // Facestuff -----------------------------------
+    "cgqc_facestuff_mk1_diver",
     // Backpacks -----------------------------------
     "B_SCBA_01_F",
     "cgqc_pack_mk1_Radiobag", 

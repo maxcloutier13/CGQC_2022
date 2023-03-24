@@ -5,6 +5,7 @@ class H_PilotHelmetFighter_B;
 class H_PilotHelmetHeli_B;
 class H_CrewHelmetHeli_B;
 
+
 // Mk1 "Net" helmets
 // Green
 class cgqc_helmet_mk1 : H_mas_can_opscorn
@@ -504,3 +505,6 @@ class cgqc_helmet_mk1_tank_cloutier : cgqc_helmet_mk1_tank
         "\cgqc_2022\helmets\cgqc_helmet_tank_cloutier.paa",
         "\rhsusf\addons\rhsusf_infantry\gear\head\data\crew_equip_co.paa"};
 };
+
+
+

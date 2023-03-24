@@ -169,8 +169,7 @@ class UK3CB_V_Pilot_Vest_Black;
 class rhsgref_otv_khaki;
 class UK3CB_TKA_B_V_GA_LITE_TAN;
 class V_Rangemaster_belt;
-
-
+class V_mas_can_RebreatherB;
 
 // Training belt
 class cgqc_vest_mk1_belt : V_Rangemaster_belt
@@ -369,4 +368,12 @@ class cgqc_vest_mk1_driver : rhsgref_otv_khaki
     _generalMacro = "cgqc_vest_mk1_driver";
     displayName = "CGQC Veste Driver (Green)";
     hiddenSelectionsTextures[] = {"\cgqc_2022\vests\cgqc_vest_tank_green.paa"};
+};
+//Diver Rebreather
+class cgqc_vest_mk1_diver : V_mas_can_RebreatherB
+{
+    author = "silent1";
+    _generalMacro = "cgqc_vest_mk1_diver";
+    displayName = "CGQC Rebreather";
+    //hiddenSelectionsTextures[] = {"\cgqc_2022\vests\cgqc_vest_tank_green.paa"};
 };

@@ -24,6 +24,9 @@ cgqc_mk2_arsenal_1_items = [
     "ACE_UAVBattery", 
     "ACE_wirecutter", 
     "acex_intelitems_notepad",
+    "KNB_PanelGreen",
+	"KNB_PanelRed",
+    "KNB_PanelYellow",
     // Electronics ------------------------------
     "ItemAndroid", 
     "ACE_microDAGR",

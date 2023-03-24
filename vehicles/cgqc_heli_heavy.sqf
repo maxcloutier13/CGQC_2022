@@ -38,6 +38,21 @@ class TransportMagazines
 		count = 5;
 		magazine = "B_IR_Grenade";
 	};
+	class _xx_ACE_40mm_Flare_white
+	{
+		count = 5;
+		magazine = "ACE_40mm_Flare_white";
+	};
+	class _xx_UGL_FlareRed_F
+	{
+		count = 5;
+		magazine = "UGL_FlareRed_F";
+	};
+	class _xx_ACE_40mm_Flare_ir
+	{
+		count = 5;
+		magazine = "ACE_40mm_Flare_ir";
+	};
 	// ammo ------------------------------------------------
 	class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
 	{

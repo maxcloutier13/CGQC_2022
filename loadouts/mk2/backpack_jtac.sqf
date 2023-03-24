@@ -14,3 +14,4 @@ player addItemToBackpack "rhsusf_m112_mag";
 for "_i" from 1 to 4 do {
 	player addItemToBackpack "rhsusf_mine_m14_mag";
 };
+player addItemToBackpack "KNB_PanelGreen";

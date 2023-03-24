@@ -44,6 +44,21 @@ class TransportItems{
         count = 1;
         name = "ACRE_PRC343";
     };
+	class _xx_ACE_40mm_Flare_white
+	{
+		count = 5;
+		magazine = "ACE_40mm_Flare_white";
+	};
+	class _xx_UGL_FlareRed_F
+	{
+		count = 5;
+		magazine = "UGL_FlareRed_F";
+	};
+	class _xx_ACE_40mm_Flare_ir
+	{
+		count = 5;
+		magazine = "ACE_40mm_Flare_ir";
+	};
     
 };
 class TransportWeapons{

@@ -33,3 +33,4 @@ for "_i" from 1 to 3 do {
 player addItemToBackpack "FSGm_ItemMedicBag";
 player addItemToBackpack "ACE_SpraypaintRed";
 player addItemToBackpack "ACE_personalAidKit";
+player addItemToBackpack "KNB_PanelRed";

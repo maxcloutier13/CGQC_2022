@@ -4,5 +4,7 @@ player addItemToVest "rhs_mag_m67";
 player addItemToVest "rhs_mag_m67";
 player addItemToVest "ACE_M84";
 player addItemToVest "ACE_M84";
-player addItemToVest "Tier1_20Rnd_9x19_JHP";
-player addItemToVest "Tier1_20Rnd_9x19_JHP";
+
+for "_i" from 1 to cgqc_config_sidearm_mag_nbr do {
+	player addItemToVest cgqc_config_sidearm_mag;
+};

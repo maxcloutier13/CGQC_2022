@@ -5,7 +5,7 @@ class CGQC_units_mk1_0_HQ : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     displayName = "HQ";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_hq_m4a1", "cgqc_gun_glock19_wood", "Laserdesignator_01_khk_F", "Put", "Throw"};
@@ -29,7 +29,7 @@ class CGQC_units_mk1_0_TeamLeader_Carbine : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     displayName = "TeamLeader (M4Blk2)";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_TL_m4a1", "cgqc_gun_glock19_wood", "Laserdesignator_01_khk_F", "Put", "Throw"};
@@ -53,7 +53,7 @@ class CGQC_units_mk1_0_TeamLeader_CQB : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     displayName = "TeamLeader (mk18)";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_mk18_gl", "cgqc_gun_glock19_wood", "Laserdesignator_01_khk_F", "Put", "Throw"};
@@ -78,7 +78,7 @@ class CGQC_units_mk1_1_Rifleman_CQB : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     displayName = "Rifleman (CQB - MK18)";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_rifleman_mk18", "rhs_weap_m72a7", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
@@ -102,7 +102,7 @@ class CGQC_units_mk1_1_Rifleman_Carbine : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     displayName = "Rifleman (Carbine - M4Blk2)";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_rifleman_m4a1", "rhs_weap_m72a7", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
@@ -126,7 +126,7 @@ class CGQC_units_mk1_1_Rifleman_full : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     displayName = "Rifleman (Rifle - M16a4)";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"rhs_weap_m16a4_imod_grip2", "rhs_weap_m72a7", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
@@ -150,7 +150,7 @@ class CGQC_units_mk1_1_Rifleman_grenadier : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     displayName = "Grenadier";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_rifleman_m4a1", "rhs_weap_m72a7", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
@@ -174,7 +174,7 @@ class CGQC_units_mk1_3_AT_MAAWS : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     displayName = "AT (MAAWS)";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_rifleman_mk18", "cgqc_gun_mk1_MAAWS", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
@@ -197,7 +197,7 @@ class CGQC_units_mk1_3_AT_Javelin : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     displayName = "AT (Javelin)";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_AT_m4a1", "cgqc_gun_mk1_Javelin", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
@@ -220,7 +220,7 @@ class CGQC_units_mk1_2_LMG : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     displayName = "MG (Light)";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_mk46", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
@@ -243,7 +243,7 @@ class CGQC_units_mk1_2_HMG : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     displayName = "MG (Heavy)";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_mk48", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
@@ -267,7 +267,7 @@ class CGQC_units_mk1_1_Engineer : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     displayName = "Engineer";
     canDeactivateMines = 1;
     engineer = 1;
@@ -293,7 +293,7 @@ class CGQC_units_mk1_1_Medic : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     displayName = "Medic";
     attendant = 1;
     uniformClass = "cgqc_uniform_mk1";
@@ -317,7 +317,7 @@ class CGQC_units_mk1_2_Marksman : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     displayName = "Marksman (417)";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_hk417", "cgqc_gun_glock19_wood", "ACE_Vector", "Put", "Throw"};
@@ -341,7 +341,7 @@ class CGQC_units_mk1_0_Drone_operator : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     displayName = "Drone Operator";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_hq_m4a1", "cgqc_gun_glock19_wood", "Laserdesignator_01_khk_F", "Put", "Throw"};
@@ -364,7 +364,7 @@ class CGQC_units_mk1_0_JTAC : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     displayName = "FAC/JTAC";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_jtac_mk12", "cgqc_gun_glock19_wood", "Laserdesignator_01_khk_F", "Put", "Throw"};
@@ -387,7 +387,7 @@ class CGQC_units_mk1_2_Sniper : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     displayName = "Sniper (.50)";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_m200", "cgqc_gun_glock19_wood", "ACE_Vector", "Put", "Throw"};
@@ -410,7 +410,7 @@ class CGQC_units_mk1_2_Sniper_ebr : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     displayName = "Sniper (m14EBR)";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"rhs_weap_m14ebrri", "cgqc_gun_glock19_wood", "ACE_Vector", "Put", "Throw"};
@@ -433,7 +433,7 @@ class CGQC_units_mk1_2_Spotter : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     displayName = "Spotter";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_mk12", "cgqc_gun_glock19_wood", "ACE_Vector", "Put", "Throw"};
@@ -457,7 +457,7 @@ class CGQC_units_mk1_4_Pilot_heli : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     displayName = "Helicopter Pilot";
     engineer = 1;
     uniformClass = "cgqc_uniform_mk1_helipilot";
@@ -481,7 +481,7 @@ class CGQC_units_mk1_4_crew_heli : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     displayName = "Helicopter Crew";
     engineer = 1;
     uniformClass = "cgqc_uniform_mk1_helipilot";
@@ -505,7 +505,7 @@ class CGQC_units_mk1_4_Pilot_Jet : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 1;
-    scopeCurator = 1;
+    scopeCurator = 2;
     displayName = "Jet Pilot";
     engineer = 1;
     uniformClass = "cgqc_uniform_mk1_jetpilot";
@@ -530,7 +530,7 @@ class CGQC_units_mk1_4_Tank_Driver : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     canDeactivateMines = 1;
     engineer = 1;
     detectSkill = 31;
@@ -556,7 +556,7 @@ class CGQC_units_mk1_4_Tank_Crew : cgqc_soldat_moderne
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
     scope = 2;
-    scopeCurator = 1;
+    scopeCurator = 2;
     canDeactivateMines = 1;
     engineer = 1;
     detectSkill = 31;
@@ -576,8 +576,6 @@ class CGQC_units_mk1_4_Tank_Crew : cgqc_soldat_moderne
         //init = "['tank_crew', 1, true] execVM '\CGQC_2022\functions\fnc_initRoleSwitch.sqf'";
     };
 };
-
-
 // == AI units ================================================================
 class CGQC_units_mk2_Rifleman_ai : cgqc_soldat_moderne
 {
@@ -703,3 +701,30 @@ class CGQC_units_mk2_Tank_Crew_ai : cgqc_soldat_moderne
     backpack = "CGQC_units_mk1_4_Tank_Driver_pack";
     editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_4_Tank_Driver.jpg";
 };
+
+// == Divers ================================================================
+class CGQC_units_mk1_5_Diver_TL : CGQC_units_mk1_0_TeamLeader_Carbine
+{
+    editorSubcategory = "EdSubcat_cgqc_mk1_divers";
+    displayName = "Plongeur (TL)";
+    uniformClass = "cgqc_uniform_mk1";
+};
+class CGQC_units_mk1_5_Diver_sniper : CGQC_units_mk1_2_Sniper_ebr
+{
+    editorSubcategory = "EdSubcat_cgqc_mk1_divers";
+    displayName = "Plongeur (Sniper)";
+    uniformClass = "cgqc_uniform_mk1";
+};
+class CGQC_units_mk1_5_Diver_Spotter : CGQC_units_mk1_2_Spotter
+{
+    editorSubcategory = "EdSubcat_cgqc_mk1_divers";
+    displayName = "Plongeur (Spotter)";
+    uniformClass = "cgqc_uniform_mk1";
+};
+class CGQC_units_mk1_5_Diver_Engineer : CGQC_units_mk1_1_Engineer
+{
+    editorSubcategory = "EdSubcat_cgqc_mk1_divers";
+    displayName = "Plongeur (Saboteur)";
+    uniformClass = "cgqc_uniform_mk1";
+};
+

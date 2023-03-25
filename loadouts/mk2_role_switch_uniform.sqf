@@ -2,12 +2,30 @@ _type = _this select 0;t =
 
 // Basic uniform for everyone
 player forceAddUniform "cgqc_uniform_mk1";
-// === Standard secondary weapon
-player addWeapon "cgqc_gun_glock19_wood";
-player addHandgunItem "Tier1_20Rnd_9x19_JHP";
-player addHandgunItem "tier1_dbalpl";
-player addHandgunItem "Tier1_TiRant9S"; //Silencer on pistol
-player addHandgunItem "tier1_sig_romeo1"; //Dot on pistol
+
+
+if (cgqc_config_sidearm) then {
+    // === Custom Sidearm
+    player addWeapon cgqc_config_sidearm_pistol;
+    player addHandgunItem cgqc_config_sidearm_mag;
+    if (cgqc_config_sidearm_acc != "") then {
+        player addHandgunItem cgqc_config_sidearm_acc;
+    };
+    if (cgqc_config_sidearm_suppress != "") then {
+        player addHandgunItem cgqc_config_sidearm_suppress;
+    };
+    if (cgqc_config_sidearm_optic != "") then {
+        player addHandgunItem cgqc_config_sidearm_optic;
+    };
+}else{
+    // === Standard secondary weapon
+    player addWeapon "cgqc_gun_glock19_wood";
+    player addHandgunItem "Tier1_20Rnd_9x19_JHP";
+    player addHandgunItem "tier1_dbalpl";
+    player addHandgunItem "Tier1_TiRant9S"; //Silencer on pistol
+    player addHandgunItem "tier1_sig_romeo1"; //Dot on pistol
+};
+
 _vest = "";
 _backpack = "";
 _helmet = "";

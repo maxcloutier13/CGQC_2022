@@ -212,7 +212,7 @@ class cgqc_box_mk1_fuelcan : NATO_Box_Base
 {
     scope = 2;
     vehicleClass = "Ammo";
-    displayName = "CGQC Vehicle FuelCan (50L)";
+    displayName = "CGQC Logistics FuelCan (50L)";
     model = "\CGQC_2022\containers\cgqc_box_vic_fuel";
     maximumLoad = 0; //Can't store inventory items
 
@@ -239,7 +239,7 @@ class cgqc_box_mk1_ammocan :  NATO_Box_Base
 {
     scope = 2;
     vehicleClass = "Ammo";
-    displayName = "CGQC Vehicle Ammo Can";
+    displayName = "CGQC Logistics Ammo Vehicle";
     model = "\CGQC_2022\containers\cgqc_box_vic_ammo";
     icon = "iconCrateAmmo";
     maximumLoad = 0; //Can't store inventory items
@@ -265,7 +265,7 @@ class cgqc_box_mk2_stash :  NATO_Box_Base
 {
     scope = 2;
     vehicleClass = "Ammo";
-    displayName = "CGQC Personal Stash";
+    displayName = "CGQC Logistics Stash";
     model = "\CGQC_2022\containers\cgqc_box_vic_ammo";
     icon = "iconCrateAmmo";
     maximumLoad = 400; //Can't store inventory items
@@ -289,7 +289,7 @@ class cgqc_box_mk1_supplies : Box_NATO_Wps_F
     scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_supplies";
-    displayName = "CGQC AmmoBox - Infantry";
+    displayName = "CGQC Logistics Ammo Infantry";
     maximumLoad = 3000; 
     hiddenSelectionsTextures[] = {
         "\CGQC_2022\containers\cgqc_box_mk1_supplies.paa", 
@@ -314,7 +314,7 @@ class cgqc_box_mk1_mortar : Box_NATO_WpsSpecial_F
     scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_mortar";
-    displayName = "CGQC Mortier 60mm (1.3KM)";
+    displayName = "CGQC Mk2 Mortier 60mm (1.3KM)";
     ace_cargo_size = 1;  // Cargo space the object takes
     ace_cargo_canLoad = 1;
     hiddenSelectionsTextures[] = {
@@ -328,7 +328,7 @@ class cgqc_box_mk1_mortar_mk6 : Box_NATO_WpsSpecial_F
     scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_mortar_auto";
-    displayName = "CGQC Mortier Mk6 (4KM)";
+    displayName = "CGQC Mk2 Mortier Mk6 (4KM)";
     ace_cargo_size = 1;  // Cargo space the object takes
     ace_cargo_canLoad = 1;
     hiddenSelectionsTextures[] = {
@@ -2045,6 +2045,109 @@ class cgqc_box_mk2_arsenal : B_supplyCrate_F
     class TransportWeapons{};
     class TransportItems{};
     class TransportBackpacks{};
+};
+// Parachute stuff
+class cgqc_box_mk2_parachute : Box_NATO_Equip_F
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_box_mk2_parachute";
+    displayName = "CGQC MK2 Parachute Box";
+    hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk2_red.paa",
+                                  "\CGQC_2022\containers\cgqc_box_mk2_parachutes.paa"};
+    editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\Box_NATO_Equip_F.jpg";
+    ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
+    ace_cargo_noRename = 1;
+    class SimpleObject
+    {
+        eden = 1;
+        animate[] = {};
+        hide[] = {};
+        verticalOffset = 0.382;
+        verticalOffsetWorld = 0;
+        init = "''";
+    };
+    class TransportMagazines
+    {
+    };
+    class TransportWeapons
+    {
+    };
+    class TransportItems
+    {
+        class _xx_cgqc_goggles_mk1_para
+        {
+            count = 30;
+            name = "cgqc_goggles_mk1_para";
+        };
+        class _xx_ACE_Altimeter
+        {
+            count = 30;
+            name = "ACE_Altimeter";
+        };
+    };
+    class TransportBackpacks
+    {
+        class _xx_B_Parachute
+        {
+            backpack = "B_Parachute";
+            count = 30;
+        };
+    };
+    class EventHandlers
+    {
+        init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk2_parachutes.sqf'";
+    };
+};
+// Diving stuff
+class cgqc_box_mk2_diving : Box_NATO_Equip_F
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_box_mk2_diving";
+    displayName = "CGQC MK2 Équipement de Plongée";
+    hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk2_blue.paa",
+                                  "\CGQC_2022\containers\cgqc_box_mk2_plongee.paa"};
+    editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\Box_NATO_Equip_F.jpg";
+    ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
+    ace_cargo_noRename = 1;
+    class SimpleObject
+    {
+        eden = 1;
+        animate[] = {};
+        hide[] = {};
+        verticalOffset = 0.382;
+        verticalOffsetWorld = 0;
+        init = "''";
+    };
+    class TransportMagazines
+    {
+    };
+    class TransportWeapons
+    {
+    };
+    class TransportItems
+    {
+        class _xx_cgqc_uniform_mk1_diver
+        {
+            count = 30;
+            name = "cgqc_uniform_mk1_diver";
+        };
+        class _xx_cgqc_vest_mk1_diver
+        {
+            count = 30;
+            name = "cgqc_vest_mk1_diver";
+        };
+        class _xx_cgqc_facestuff_mk1_diver
+        {
+            count = 30;
+            name = "cgqc_facestuff_mk1_diver";
+        };
+    };
+    class EventHandlers
+    {
+        init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk2_diving.sqf'";
+    };
 };
 // Mk2 Cargo container
 class cgqc_box_mk2_cargo : Land_Cargo10_military_green_F

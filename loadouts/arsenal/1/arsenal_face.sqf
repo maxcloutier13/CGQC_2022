@@ -1,5 +1,7 @@
 // Face stuff -----------------------------------
 cgqc_mk2_arsenal_1_face = [
+    "cgqc_goggles_mk1_diver",
+    "cgqc_goggles_mk1_para",
     "G_mas_can_gasmask",
     "G_mas_can_shemag_gog_l",
     "G_mas_can_wrap_gog_B",
@@ -8,7 +10,6 @@ cgqc_mk2_arsenal_1_face = [
     "G_mas_can_wrap_B",
     "G_mas_can_bala_T", 
     "G_mas_can_gog",
-    "G_mas_can_jumpmask", 
     "G_mas_can_mask_b", 
     "G_mas_can_mask", 
     "G_mas_can_wrap_T", 

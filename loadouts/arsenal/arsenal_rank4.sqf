@@ -17,6 +17,7 @@ cgqc_mk2_arsenal_rank4 = [
     // Items -----------------------------------
     "murshun_cigs_cigpack",
     "murshun_cigs_lighter",
+    "immersion_cigs_cigar0_nv",
     // Electronics ------------------------------
     "ItemcTab",
     // Drones ------------------------------

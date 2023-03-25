@@ -69,28 +69,31 @@ if (!isNil "_crate") then {
     
     
     // Mk1 Camo Switcher ---------------------------------------------------------------------------------------------------------
-    _action = [ "menu_mk2_camo", "Camo", "CGQC_2022\textures\icon_camo", {""}, {!cgqc_perks_ghillie_isOn} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_camo", "Camo/Uniformes", "CGQC_2022\textures\icon_camo", {""}, {!cgqc_perks_ghillie_isOn} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call ace_interact_menu_fnc_addActionToObject;
     // Base/Training uniform 
-    _action = [ "menu_mk2_camo_base", "Training - Vert", "", {["tan"] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_camo_base", "Training - Vert", "", {["tan", false] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2_camo"], _action ] call ace_interact_menu_fnc_addActionToObject;
     // Desert uniform 
-    _action = [ "menu_mk2_camo_desert", "Desert", "", {["desert"] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_camo_desert", "Desert", "", {["desert", false] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2_camo"], _action ] call ace_interact_menu_fnc_addActionToObject;
     // Multicam uniform 
-    _action = [ "menu_mk2_camo_multicam", "Multicam", "", {["mcam"] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_camo_multicam", "Multicam", "", {["mcam", false] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2_camo"], _action ] call ace_interact_menu_fnc_addActionToObject;
     // Woodland uniform 
-    _action = [ "menu_mk2_camo_woodland", "Cadpat", "", {["cadpat"] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_camo_woodland", "Cadpat", "", {["cadpat", false] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2_camo"], _action ] call ace_interact_menu_fnc_addActionToObject;
     // Black uniform 
-    _action = [ "menu_mk2_camo_black", "Black", "", {["black"] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_camo_black", "Black", "", {["black", false] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2_camo"], _action ] call ace_interact_menu_fnc_addActionToObject;
     // Winter uniform 
-    _action = [ "menu_mk2_camo_winter", "Winter", "", {["white"] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_camo_winter", "Winter", "", {["white", false] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2_camo"], _action ] call ace_interact_menu_fnc_addActionToObject;
     // Diving uniform 
-    _action = [ "menu_mk2_camo_diver", "Plongeur", "", {["diver"] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_camo_diver", "Plongeur", "\CGQC\textures\cgqc_ace_dive", {["diver", false] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2_camo"], _action ] call ace_interact_menu_fnc_addActionToObject;
+     // Jumping uniform 
+    _action = [ "menu_mk2_camo_para", "Parachutiste", "\CGQC\textures\cgqc_ace_para", {["para", false] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2_camo"], _action ] call ace_interact_menu_fnc_addActionToObject;
     
 

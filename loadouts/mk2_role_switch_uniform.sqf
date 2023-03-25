@@ -6,6 +6,8 @@ player forceAddUniform "cgqc_uniform_mk1";
 player addWeapon "cgqc_gun_glock19_wood";
 player addHandgunItem "Tier1_20Rnd_9x19_JHP";
 player addHandgunItem "tier1_dbalpl";
+player addHandgunItem "Tier1_TiRant9S"; //Silencer on pistol
+player addHandgunItem "tier1_sig_romeo1"; //Dot on pistol
 _vest = "";
 _backpack = "";
 _helmet = "";
@@ -65,8 +67,6 @@ switch (_type) do {
         _vest = "cgqc_vest_mk1_tan_lr";
         _backpack =  "cgqc_pack_mk1_kitbag";
         _helmet =  "cgqc_helmet_mk1";
-        player addHandgunItem "Tier1_TiRant9S"; //Silencer on pistol
-        player addHandgunItem "tier1_sig_romeo1"; //Dot on pistol
 	};
     case "jtac":{ //=============================================================================================
         _vest = "cgqc_vest_mk1_tan_lr";
@@ -76,8 +76,6 @@ switch (_type) do {
             _backpack =  "cgqc_pack_mk1_carryall";
         };
         _helmet =  "cgqc_helmet_mk1";
-        player addHandgunItem "Tier1_TiRant9S"; //Silencer on pistol
-        player addHandgunItem "tier1_sig_romeo1"; //Dot on pistol
 	};
     case "eng":{ //=============================================================================================
         _vest = "cgqc_vest_mk1_tan_ar";

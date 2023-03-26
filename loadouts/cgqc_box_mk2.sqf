@@ -201,9 +201,23 @@ if (!isNil "_crate") then {
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
 
 
-//----------------------------------------
-    // 23rd toggle
-     _action = [ "menu_mk2_23", "23rd CTF Member?", "", {execVM "\CGQC_2022\functions\23rd.sqf"}, {!cgqc_player_23rd} ] call ace_interact_menu_fnc_createAction;
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------
+    // 23rd toggle ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+     _action = [ "menu_mk2_23", "23rd CTF Member?", "", {execVM "\CGQC_2022\functions\23rd.sqf"}, {cgqc_player_has23rd && !cgqc_player_23rd} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
-
+    // 23rd Camos ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+     _action = [ "menu_mk2_23_camo", "23rd Uniforms", "", {}, {cgqc_player_has23rd && cgqc_player_23rd && !cgqc_perks_ghillie_isOn} ] call ace_interact_menu_fnc_createAction;
+    _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
+    // Mosschip
+    _action = [ "menu_mk2_23_camo_moss", "Mosschip", "", {["23_moss", false] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2_23_camo"], _action ] call ace_interact_menu_fnc_addActionToObject;
+    // Multidicc
+    _action = [ "menu_mk2_23_camo_multi", "Multidicc", "", {["23_multi", false] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2_23_camo"], _action ] call ace_interact_menu_fnc_addActionToObject;
+    // Frostmoss
+    _action = [ "menu_mk2_23_camo_frost", "Frostmoss", "", {["23_frost", false] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2_23_camo"], _action ] call ace_interact_menu_fnc_addActionToObject;
+    // Tardpat
+    _action = [ "menu_mk2_23_camo_tard", "Tardpat", "", {["23_tard", false] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"}, {true} ] call ace_interact_menu_fnc_createAction;
+    _adding = [ _crate, 0, ["ACE_MainActions" , "menu_mk2_23_camo"], _action ] call ace_interact_menu_fnc_addActionToObject;
 };

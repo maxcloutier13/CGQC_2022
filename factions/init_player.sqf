@@ -111,6 +111,23 @@
         case "CGQC_units_mk1_4_Tank_Crew":{
             ["tank_crew", 1, true] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf";
         };
+        // == Divers ================================================================
+        case "CGQC_units_mk1_5_Diver_TL":{
+            ["tl_carb", 1, true] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf";
+            ["diver", true] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"
+        };
+        case "CGQC_units_mk1_5_Diver_sniper":{
+            ["sniper_ebr", 1, true] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf";            
+            ["diver", true] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"
+        };
+        case "CGQC_units_mk1_5_Diver_Spotter":{
+            ["spotter", 1, true] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf";
+            ["diver", true] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"
+        };
+        case "CGQC_units_mk1_5_Diver_Engineer":{
+            ["eng", 1, true] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf";
+            ["diver", true] execVM "\CGQC_2022\loadouts\mk1_camo_switch.sqf"
+        };
     };
 };
 

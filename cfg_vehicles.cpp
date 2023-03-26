@@ -208,6 +208,10 @@ class rhsusf_m1165a1_gmv_m2_m240_socom_d;
 class B_W_MRAP_01_F;
 class B_W_MRAP_01_hmg_F;
 
+// Boats
+class B_SDV_01_F;
+class B_T_Boat_Transport_01_F;
+
 // Helicopters definitions
 //#include "vehicles\cfg_littlebird.cpp"
 #include "vehicles\cfg_huey.cpp"
@@ -858,6 +862,26 @@ class cgqc_vic_mrap_hmg : B_W_MRAP_01_hmg_F {
     displayName = "MRAP HMG (2+2)";
     crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+
+// Boats -----------------------------------------------------------------------------------
+class cgqc_vic_sub : B_SDV_01_F {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_boats";
+    displayName = "Sous-Marin (2+2)";
+    crew = "";
+};
+class cgqc_vic_boat : B_T_Boat_Transport_01_F {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_boats";
+    displayName = "Bateau Pneumatique (1+5)";
+    crew = "";
 };
 
 // Objects ===================================================================================

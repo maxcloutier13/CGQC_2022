@@ -3,16 +3,25 @@ _type = _this select 0;
 _text = "";
 _text_insert = "";
 if (cgqc_setting_show_transition) then {
-
+    // Fade to black  
+    cutText ["", "BLACK FADED", 999];
+    titleText ["", "PLAIN"];
     switch (_type) do {
         case "role":{ 
             _text_insert = cgqc_mk2_role;
-            _text = ("<br/>" + "<br/>" + "<br/>" +"<t size='2' >Role: %1</t><br/>");
-            
+            _text = ("<br/>" + "<br/>" + "<br/>" +"<t size='2' >Role: %1</t><br/>"); 
         };
         case "camo":{ 
-            _text_insert = "camo";
+            _text_insert = format ["camo %1", _type];
             _text = ("<br/>" + "<br/>" + "<br/>" +"<t size='2' >Changement de %1</t><br/>");
+        };
+        case "diver":{
+            _text_insert = "Plongeur";
+            _text = ("<br/>" + "<br/>" + "<br/>" +"<t size='2' >Kit: %1</t><br/>");
+        };
+        case "para":{
+            _text_insert = "Parachutiste";
+            _text = ("<br/>" + "<br/>" + "<br/>" +"<t size='2' >Kit: %1</t><br/>");
         };
     };
     //Pop le texte

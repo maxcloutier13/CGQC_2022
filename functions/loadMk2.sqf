@@ -56,7 +56,7 @@ _type = _this select 0;
 		//hintc "Not Zeus: Pop box";
 		waitUntil {_found}; 
 		//Check if 23rd 
-		if (cgqc_player_23rd) then {
+		if (cgqc_player_has23rd && cgqc_player_23rd) then {
 			_items = _items + cgqc_mk2_arsenal_23;
 		};
 		// Init crate

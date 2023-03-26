@@ -99,6 +99,38 @@ try {
 			[player] call bocr_main_fnc_actionOnChest;
 			hint "Prêt à sauter. Ton backpack est sur ton chest.";
 		};
+		case "23_moss": 
+		{
+			_helmet_new = "23rd_logo_helmet_moss";
+			_uniform_new = "23rd_logo_U_combatshirt_moss";
+			_vest_new = "23rd_logo_carrier_light_moss";
+			_backpack_new = "23rd_logo_civbag_moss";   
+			_goggles_new = player_goggles_old;  
+		};
+		case "23_multi":
+		{
+			_helmet_new = "23rd_logo_helmet_multi";
+			_uniform_new = "23rd_logo_U_combatshirt_multi";
+			_vest_new = "23rd_logo_carrier_light_multi";
+			_backpack_new = "23rd_logo_civbag_multi";   
+			_goggles_new = player_goggles_old;  
+		};
+		case "23_frost":
+		{
+			_helmet_new = "23rd_logo_helmet_win";
+			_uniform_new = "23rd_logo_U_combatshirt_win";
+			_vest_new = "23rd_logo_carrier_light_win";
+			_backpack_new = "23rd_logo_civbag_win";  
+			_goggles_new = player_goggles_old; 
+		};
+		case "23_tard": 
+		{
+			_helmet_new = "23rd_logo_helmet";
+			_uniform_new = "23rd_logo_U_shirt2";
+			_vest_new = "23rd_logo_carrier_light_tard";
+			_backpack_new = "23rd_logo_civbag_tard";  
+			_goggles_new = player_goggles_old; 
+		};
 		default // Normal camo switch
 		{
 			// Backpack type first

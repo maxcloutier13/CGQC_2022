@@ -2,6 +2,7 @@ _camo = _this select 0;
 _fromLoadout = _this select 1;
 cgqc_camoSwitch_done = false;
 waitUntil {sleep 0.5;cgqc_roleSwitch_done};
+_text = "";
 
 try {
 	disableUserInput true;

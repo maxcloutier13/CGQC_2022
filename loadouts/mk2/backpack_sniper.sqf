@@ -14,8 +14,11 @@ player addItemToBackpack "rhsusf_mine_m14_mag";
 player addItemToBackpack "rhsusf_mine_m14_mag";
 player addItemToBackpack "rhsusf_mine_m14_mag";
 player addItemToBackpack "rhsusf_mine_m14_mag";
-player addItemToBackpack "Tier1_20Rnd_9x19_JHP";
-player addItemToBackpack "Tier1_20Rnd_9x19_JHP";
-player addItemToBackpack "Tier1_20Rnd_9x19_JHP";
 player addItemToBackpack "KNB_PanelGreen";
+if (!cgqc_config_sidearm) then {
+    player addItemToBackpack cgqc_config_sidearm_mag;
+    player addItemToBackpack cgqc_config_sidearm_mag;
+    player addItemToBackpack cgqc_config_sidearm_mag;
+};
+
 

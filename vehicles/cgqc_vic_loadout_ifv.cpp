@@ -137,6 +137,11 @@ class TransportItems{
 		count = 2;
 		name = "ACE_tourniquet";
 	};
+	class _xx_ACE_bodyBag
+	{
+		count = 5;
+		name = "ACE_bodyBag";
+	};
 	class _xx_FSGm_ItemMedicBag
 	{
 		count = 1;

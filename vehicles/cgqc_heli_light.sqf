@@ -129,6 +129,11 @@ class TransportItems
 		count = 5;
 		name = "ACE_tourniquet";
 	};
+	class _xx_ACE_bodyBag
+	{
+		count = 2;
+		name = "ACE_bodyBag";
+	};
 
 	// items ------------------------------------------------
 	class _xx_ACE_EarPlugs

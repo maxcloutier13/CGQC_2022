@@ -15,6 +15,11 @@ class TransportItems
         count = 5;
         name = "FF_Painkiller";
     };
+    class _xx_ACE_bodyBag
+	{
+		count = 1;
+		name = "ACE_bodyBag";
+	};
     class _xx_ACRE_PRC152
     {
         count = 1;

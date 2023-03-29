@@ -7,6 +7,7 @@ cgqc_mk2_arsenal_1_items = [
     "ACE_splint", 
     "ACE_tourniquet",
     "FF_Painkiller",
+    "ACE_bodyBag",
     // Items -----------------------------------
     "ACE_EarPlugs",
     "ACE_CableTie",

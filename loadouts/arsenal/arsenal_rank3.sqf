@@ -9,6 +9,7 @@ cgqc_mk2_arsenal_rank3 = [
     // Meds -----------------------------------
     "ACE_epinephrine", 
     "ACE_morphine", 
+    "ACE_adenosine",
     "ACE_salineIV",
     "ACE_salineIV_250",
     "ACE_salineIV_500",

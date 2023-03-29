@@ -18,8 +18,10 @@ class cfgWeapons
 	#include "cfg_guns.cpp"
 	// Custom accessories ---------------------------------------
 	#include "cfg_acc.hpp"
-	// Mortar stuff
+	// Mortar stuff -------------------------------------------
 	#include "cfg_mortar.cpp"
+	// Items -------------------------------------------------
+	#include "cfg_misc.cpp"
 };
 class cfgGlasses
 {

@@ -4,18 +4,18 @@ _type = _this select 0;t =
 player forceAddUniform "cgqc_uniform_mk1";
 
 
-if (cgqc_config_sidearm) then {
+if (cgqc_config_sidearm_2023) then {
     // === Custom Sidearm
-    player addWeapon cgqc_config_sidearm_pistol;
-    player addHandgunItem cgqc_config_sidearm_mag;
-    if (cgqc_config_sidearm_acc != "") then {
-        player addHandgunItem cgqc_config_sidearm_acc;
+    player addWeapon cgqc_config_sidearm_pistol_2023;
+    player addHandgunItem cgqc_config_sidearm_mag_2023;
+    if (cgqc_config_sidearm_acc_2023 != "") then {
+        player addHandgunItem cgqc_config_sidearm_acc_2023;
     };
-    if (cgqc_config_sidearm_suppress != "") then {
-        player addHandgunItem cgqc_config_sidearm_suppress;
+    if (cgqc_config_sidearm_suppress_2023 != "") then {
+        player addHandgunItem cgqc_config_sidearm_suppress_2023;
     };
-    if (cgqc_config_sidearm_optic != "") then {
-        player addHandgunItem cgqc_config_sidearm_optic;
+    if (cgqc_config_sidearm_optic_2023 != "") then {
+        player addHandgunItem cgqc_config_sidearm_optic_2023;
     };
 }else{
     // === Standard secondary weapon

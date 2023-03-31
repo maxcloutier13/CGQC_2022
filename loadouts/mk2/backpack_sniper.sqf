@@ -15,10 +15,10 @@ player addItemToBackpack "rhsusf_mine_m14_mag";
 player addItemToBackpack "rhsusf_mine_m14_mag";
 player addItemToBackpack "rhsusf_mine_m14_mag";
 player addItemToBackpack "KNB_PanelGreen";
-if (!cgqc_config_sidearm) then {
-    player addItemToBackpack cgqc_config_sidearm_mag;
-    player addItemToBackpack cgqc_config_sidearm_mag;
-    player addItemToBackpack cgqc_config_sidearm_mag;
+if (!cgqc_config_sidearm_2023) then {
+    player addItemToBackpack cgqc_config_sidearm_mag_2023;
+    player addItemToBackpack cgqc_config_sidearm_mag_2023;
+    player addItemToBackpack cgqc_config_sidearm_mag_2023;
 };
 
 

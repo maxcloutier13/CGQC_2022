@@ -40,8 +40,6 @@ class CfgPatches
 			"cgqc_box_mk2_arsenal",
 			"cgqc_box_mk2_parachute",
 			"cgqc_box_mk2_diving",
-			"cgqc_box_mk1_fuelcan",
-			"cgqc_box_mk1_ammocan",
 			"cgqc_box_mk2_cargo",
 			"cgqc_box_mk1_cargo",
 			"cgqc_box_mk2_stash",

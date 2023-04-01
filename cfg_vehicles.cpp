@@ -27,9 +27,6 @@ class Helicopter : Air
         class HitEngine;
         class HitAvionics;
     };
-    class EventHandlers {
-        init = "[_this select 0, 'air'] execVM '\cgqc_2022\scripts\add_spares.sqf';";
-    };
 };
 class RHS_C130J;
 // Helicopter acre settings
@@ -63,21 +60,6 @@ class Helicopter_Base_F : Helicopter
     class Reflectors
     {
         class Right;
-    };
-    class AcreRacks {
-        class Rack_1 {
-            displayName = "Dash Upper"; // Name is displayed in the interaction menu.
-            shortName = "Rack1";
-            componentName = "ACRE_VRC103";
-            allowedPositions[] = {"driver", "gunner", "copilot", "external"}; // Attack helicopters have "gunner" copilots usually
-            mountedRadio = "ACRE_PRC117F";
-            intercom[] = {};
-        };
-
-        class Rack_2: Rack_1 {
-            displayName = "Dash Lower"; // If you have multiple racks a text label helps identify the particular rack.
-            shortName = "Rack2";
-        };
     };
 };
 class Helicopter_Base_H : Helicopter_Base_F
@@ -191,6 +173,9 @@ class UAV_05_Base_F : UAV // Sentinel
 
 class Car;
 class Tank;
+class Car_F;
+class Wheeled_APC_F;
+class Tank_F;
 class B_W_Quadbike_01_F;
 class UK3CB_AAF_B_SUV_Armoured;
 class NDS_6x6_ATV_MIL_LR;
@@ -471,110 +456,6 @@ class B_W_APC_Wheeled_01_cannon_F;
 class UK3CB_MDF_B_Warrior_Cage;
 class RHS_M2A3_BUSKIII_wd;
 class I_LT_01_scout_F;
-// Mraps Acre settings--------------------------------------------------------------------------
-
-class Car_F : Car{
-    ace_cargo_space = 7;
-    class EventHandlers
-    {
-         init = "[_this select 0, 'car'] execVM '\cgqc_2022\scripts\add_spares.sqf'";
-    };
-};
-class MRAP_01_base_F : Car_F {
-    class AcreRacks {
-        class Rack_1 {
-            displayName = "Dash Upper"; // Name is displayed in the interaction menu.
-            shortName = "Rack1";
-            componentName = "ACRE_VRC103";
-            allowedPositions[] = {"driver", {"cargo", 0}, "external"};
-            mountedRadio = "ACRE_PRC117F";
-            intercom[] = {};
-        };
-        class Rack_2: Rack_1 {
-            displayName = "Dash Lower"; // If you have multiple racks a text label helps identify the particular rack.
-            shortName = "Rack2";
-        };
-    };
-};
-class MRAP_02_base_F: Car_F {
-     class AcreRacks {
-        class Rack_1 {
-            displayName = "Dash Upper"; // Name is displayed in the interaction menu.
-            shortName = "Rack1";
-            componentName = "ACRE_VRC103";
-            allowedPositions[] = {"driver", {"cargo", 0}, "external"};
-            mountedRadio = "ACRE_PRC117F";
-            intercom[] = {};
-        };
-        class Rack_2: Rack_1 {
-            displayName = "Dash Lower"; // If you have multiple racks a text label helps identify the particular rack.
-            shortName = "Rack2";
-        };
-    };
-};
-class MRAP_03_base_F: Car_F {
-     class AcreRacks {
-        class Rack_1 {
-            displayName = "Dash Upper"; // Name is displayed in the interaction menu.
-            shortName = "Rack1";
-            componentName = "ACRE_VRC103";
-            allowedPositions[] = {"driver", {"cargo", 0}, "external"};
-            mountedRadio = "ACRE_PRC117F";
-            intercom[] = {};
-        };
-        class Rack_2: Rack_1 {
-            displayName = "Dash Lower"; // If you have multiple racks a text label helps identify the particular rack.
-            shortName = "Rack2";
-        };
-    };
-};
-// APC Acre settings--------------------------------------------------------------------------
-class Wheeled_APC_F: Car_F {
-    class AcreRacks {
-        class Rack_1 {
-            displayName = "Dash Upper"; // Name is displayed in the interaction menu.
-            shortName = "Rack1";
-            componentName = "ACRE_VRC103";
-            allowedPositions[] = {"driver", "commander", "gunner", "external"}; // Who has access "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
-            mountedRadio = "ACRE_PRC117F";
-            intercom[] = {};
-        };
-        class Rack_2 {
-            displayName = "Dash Lower"; // If you have multiple racks a text label helps identify the particular rack.
-            shortName = "Rack2";
-            componentName = "ACRE_VRC103";
-            allowedPositions[] = {"driver", "commander", "gunner", "external"}; // Who has access "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
-            mountedRadio = "ACRE_PRC117F";
-            intercom[] = {};
-        };
-     };
-};
-// Tank   Acre settings -----------------------------------------------------------------------
-class Tank_F: Tank {
-    ace_cargo_space = 7;
-    class AcreRacks {
-        class Rack_1 {
-            displayName = "Dash Upper"; // Name is displayed in the interaction menu.
-            shortName = "Rack1";
-            componentName = "ACRE_VRC103";
-            allowedPositions[] = {"driver", "commander", "gunner", "external"}; // Who has access "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
-            mountedRadio = "ACRE_PRC117F";
-            intercom[] = {};
-        };
-        class Rack_2 {
-            displayName = "Dash Lower"; // If you have multiple racks a text label helps identify the particular rack.
-            shortName = "Rack2";
-            componentName = "ACRE_VRC103";
-            allowedPositions[] = {"driver", "commander", "gunner", "external"}; // Who has access "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
-            mountedRadio = "ACRE_PRC117F";
-            intercom[] = {};
-        };
-    };
-    class EventHandlers
-    {
-         init = "[_this select 0, 'tank'] execVM '\cgqc_2022\scripts\add_spares.sqf'";
-    };
-};
 class cgqc_vic_badger : B_W_APC_Wheeled_01_cannon_F
 {
     scope = 2;
@@ -695,7 +576,7 @@ class cgqc_vic_quad_ext : NDS_6x6_ATV_MIL_LR
     };
     class EventHandlers
     {
-         init = "[_this select 0, 'car'] execVM '\cgqc_2022\scripts\add_spares.sqf'";
+         init = "[_this select 0, 'car'] execVM '\cgqc\functions\fnc_addSpares.sqf'";
     };
     #include "vehicles\cgqc_vic_loadout_quadExt.cpp"
 };
@@ -751,6 +632,10 @@ class cgqc_vic_jeep : UK3CB_B_M151_Jeep_Open_HIDF {
     displayName = "Jeep (1+3)";
     crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
+    class EventHandlers
+    {
+         init = "[_this select 0, 'car'] execVM '\cgqc\functions\fnc_addSpares.sqf'";
+    };
 };
 class cgqc_vic_jeep_cov : UK3CB_B_M151_Jeep_Closed_HIDF {
     scope = 2;

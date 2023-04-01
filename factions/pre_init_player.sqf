@@ -1,4 +1,3 @@
-waitUntil {cgqc_preInit_done};
 // Addon Options ===================================================================================================
 _menu_name = "CGQC Player settings";
 ["cgqc_config_sidearm_2023", "CHECKBOX", ["Custom Sidearm", "À vos risques et périls. Assurez vous d'avoir une classe valide"], 

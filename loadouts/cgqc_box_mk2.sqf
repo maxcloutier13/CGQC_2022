@@ -175,29 +175,35 @@ if (!isNil "_crate") then {
     // Adjudent - 5 
     _action = [ "menu_mk2_5", "Arsenal: Adjudent", "CGQC_2022\textures\icon_arsenal", {[0] execVM "\CGQC_2022\functions\loadMk2.sqf"}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 5} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
-    // Sous-Lieutenant - 6
-    _action = [ "menu_mk2_6", "Arsenal: Sous-Lieutenant", "CGQC_2022\textures\icon_arsenal", {[0] execVM "\CGQC_2022\functions\loadMk2.sqf"}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 6} ] call ace_interact_menu_fnc_createAction;
+    // AdjudentM - 6 
+    _action = [ "menu_mk2_6", "Arsenal: Adjudent-Maître", "CGQC_2022\textures\icon_arsenal", {[0] execVM "\CGQC_2022\functions\loadMk2.sqf"}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 6} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
-    // Lieutenant - 7
-    _action = [ "menu_mk2_7", "Arsenal: Lieutenant", "CGQC_2022\textures\icon_arsenal", {[0] execVM "\CGQC_2022\functions\loadMk2.sqf"}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 7} ] call ace_interact_menu_fnc_createAction;
+    // AdjudentC - 7 
+    _action = [ "menu_mk2_7", "Arsenal: Adjudent-Chef", "CGQC_2022\textures\icon_arsenal", {[0] execVM "\CGQC_2022\functions\loadMk2.sqf"}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 7} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
-    // Capitaine - 8 
-    _action = [ "menu_mk2_8", "Arsenal: Capitaine", "CGQC_2022\textures\icon_arsenal", {[0] execVM "\CGQC_2022\functions\loadMk2.sqf"}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 8} ] call ace_interact_menu_fnc_createAction;
+    // Sous-Lieutenant - 8
+    _action = [ "menu_mk2_8", "Arsenal: Sous-Lieutenant", "CGQC_2022\textures\icon_arsenal", {[0] execVM "\CGQC_2022\functions\loadMk2.sqf"}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 8} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
-    // Major - 9 
-    _action = [ "menu_mk2_9", "Arsenal: Major", "CGQC_2022\textures\icon_arsenal", {[0] execVM "\CGQC_2022\functions\loadMk2.sqf"}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 9} ] call ace_interact_menu_fnc_createAction;
+    // Lieutenant - 9
+    _action = [ "menu_mk2_9", "Arsenal: Lieutenant", "CGQC_2022\textures\icon_arsenal", {[0] execVM "\CGQC_2022\functions\loadMk2.sqf"}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 9} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
-    //  Lieutenant-Colonel- 10 
-    _action = [ "menu_mk2_10", "Arsenal: Lieutenant-Colonel", "CGQC_2022\textures\icon_arsenal", {[0] execVM "\CGQC_2022\functions\loadMk2.sqf"}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 10} ] call ace_interact_menu_fnc_createAction;
+    // Capitaine - 10 
+    _action = [ "menu_mk2_10", "Arsenal: Capitaine", "CGQC_2022\textures\icon_arsenal", {[0] execVM "\CGQC_2022\functions\loadMk2.sqf"}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 10} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
-    // Colonel - 11
-    _action = [ "menu_mk2_11", "Arsenal: Colonel", "CGQC_2022\textures\icon_arsenal", {[0] execVM "\CGQC_2022\functions\loadMk2.sqf"}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 11} ] call ace_interact_menu_fnc_createAction;
+    // Major - 11
+    _action = [ "menu_mk2_11", "Arsenal: Major", "CGQC_2022\textures\icon_arsenal", {[0] execVM "\CGQC_2022\functions\loadMk2.sqf"}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 11} ] call ace_interact_menu_fnc_createAction;
+    _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
+    //  Lieutenant-Colonel- 12 
+    _action = [ "menu_mk2_12", "Arsenal: Lieutenant-Colonel", "CGQC_2022\textures\icon_arsenal", {[0] execVM "\CGQC_2022\functions\loadMk2.sqf"}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 12} ] call ace_interact_menu_fnc_createAction;
+    _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
+    // Colonel - 13
+    _action = [ "menu_mk2_13", "Arsenal: Colonel", "CGQC_2022\textures\icon_arsenal", {[0] execVM "\CGQC_2022\functions\loadMk2.sqf"}, {cgqc_mk2_arsenal_locked && cgqc_player_rank == 13} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
     // Complet -  
-    _action = [ "menu_mk2_5", "Arsenal: Complet", "CGQC_2022\textures\icon_arsenal", {[0] execVM "\CGQC_2022\functions\loadMk2.sqf"}, {cgqc_flag_isTraining} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_5", "Arsenal: CGQC Complet", "CGQC_2022\textures\icon_arsenal", {[0] execVM "\CGQC_2022\functions\loadMk2.sqf"}, {cgqc_flag_isTraining} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
     // Zeus
-    _action = [ "menu_mk2_zeus", "Arsenal: Zeus", "CGQC_2022\textures\icon_arsenal", {[5] execVM "\CGQC_2022\functions\loadMk2.sqf"}, {cgqc_flag_isTraining || [player] call CGQC_fnc_checkZeus;} ] call ace_interact_menu_fnc_createAction;
+    _action = [ "menu_mk2_zeus", "Arsenal: Zeus (Tout)", "CGQC_2022\textures\icon_arsenal", {[5] execVM "\CGQC_2022\functions\loadMk2.sqf"}, {cgqc_flag_isTraining || [player] call CGQC_fnc_checkZeus;} ] call ace_interact_menu_fnc_createAction;
     _adding = [ _crate, 0, ["ACE_MainActions" ], _action ] call  ace_interact_menu_fnc_addActionToObject;
 
 

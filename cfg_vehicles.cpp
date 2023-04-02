@@ -365,7 +365,7 @@ class Rev_darter_b: B_UAV_01_F
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_drones";
-    displayName = "CGQC - HQ Darter";
+    displayName = "CGQC - HQ Darter Deployed";
     camouflage = 0.01;
 	audible = 0.05;
     maxSpeed = 250;

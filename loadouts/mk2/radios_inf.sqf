@@ -8,7 +8,7 @@ cgqc_event_148 = ["acre_startedSpeaking", {
   if(_radioId find "148" > -1) then { 
  y_channel = [] call acre_api_fnc_getCurrentRadioChannelNumber; 
  if(y_channel == 1) then { 
-  _channel_txt = parseText( "148:Ch1 = Listen Only" + "<br/>" + "Change channel to communicate!"); 
+  _channel_txt = parseText( "148:Ch1 = Listen Only!!!" + "<br/>" + "En cas d'urgence: Ch2 pour HQ"); 
   [ _channel_txt, 0, 1, 3, 1 ] spawn BIS_fnc_dynamicText; 
  };  
   };   

@@ -11,12 +11,13 @@ sleep 0.5;
 
 // Cloutier thangs
 if (cgqc_player_max) then {
-    if !([player, "murshun_cigs_lighter"] call BIS_fnc_hasItem) then {
-        player addItemToVest "immersion_cigs_cigar0_nv";
-        player addItemToVest "murshun_cigs_lighter";
-        player addItemToVest "murshun_cigs_cigpack";
-        player addItemToVest "grad_paceCountBeads_functions_paceCountBeads";
-    };
+    _items = (items player);
+    if !("murshun_cigs_lighter" in _items) then {player addItem "murshun_cigs_lighter";};
+	if !("murshun_cigs_cigpack" in _items) then {player addItem "murshun_cigs_cigpack";};
+	if !("immersion_cigs_cigar0_nv" in _items) then {player addItem "immersion_cigs_cigar0_nv";};
+	if !("grad_paceCountBeads_functions_paceCountBeads" in _items) then {player addItem "grad_paceCountBeads_functions_paceCountBeads";};
+	if !("ACE_MapTools" in _items) then {player addItem "ACE_MapTools";};
+	if !("acex_intelitems_notepad" in _items) then {player addItem "acex_intelitems_notepad";};
 };
 
 

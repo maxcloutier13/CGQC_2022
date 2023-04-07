@@ -67,9 +67,11 @@ do
 		supplies_fuelcan = "ACE_Wheel" createVehicle (position player);
 		hintSilent "Spare wheel!!";
 	};
-
-	
-
+	case "kidnap":{
+		player addItemToBackpack "G_Blindfold_01_black_F";
+		player addItemToBackpack "cgqc_helmet_kidnapping";
+		player addItemToBackpack "cgqc_vest_kidnapping";
+	};
 	default	{
 		hintSilent "woops";
 		sleep 3;

@@ -4,6 +4,11 @@ class rhsusf_cvc_green_ess;
 class H_PilotHelmetFighter_B;
 class H_PilotHelmetHeli_B;
 class H_CrewHelmetHeli_B;
+class H_PASGT_neckprot_base_F;
+class H_PASGT_neckprot_blue_press_F: H_PASGT_neckprot_base_F
+{
+    class ItemInfo;
+};
 
 
 // Mk1 "Net" helmets
@@ -226,8 +231,6 @@ class cgqc_helmet_mk1_f_green_medic : cgqc_helmet_mk1_f_gray
 };
 
 
-
-
 // Jet helmets -----------------------------------------------------------------------------------------------
 class cgqc_helmet_mk1_jetpilot : H_PilotHelmetFighter_B
 {
@@ -236,7 +239,6 @@ class cgqc_helmet_mk1_jetpilot : H_PilotHelmetFighter_B
     displayName = "CGQC Casque Pilote de jet mk1";
     grad_slingHelmet_allow = true;
 };
-
 // Tank/Crew helmets -----------------------------------------------------------------------------------------------
 class cgqc_helmet_mk1_tank : rhsusf_cvc_green_ess
 {
@@ -245,7 +247,6 @@ class cgqc_helmet_mk1_tank : rhsusf_cvc_green_ess
     displayName = "CGQC Casque Tank mk1";
     grad_slingHelmet_allow = true;
 };
-
 // Helicopter/Crew helmets -----------------------------------------------------------------------------------------------
 // CGQC Airforce black -----------------------------------------------------
 class cgqc_helmet_heli_black : H_PilotHelmetHeli_B
@@ -264,7 +265,6 @@ class cgqc_helmet_crew_black : H_CrewHelmetHeli_B
 	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_heli_black.paa"};
 	grad_slingHelmet_allow = true;
 };
-
 // CGQC Airforce Green -----------------------------------------------------
 class cgqc_helmet_heli_green : H_PilotHelmetHeli_B
 {
@@ -282,7 +282,6 @@ class cgqc_helmet_crew_green : H_CrewHelmetHeli_B
 	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_heli_green.paa"};
 	grad_slingHelmet_allow = true;
 };
-
 // CGQC Airforce woodland -----------------------------------------------------
 class cgqc_helmet_heli_wood : H_PilotHelmetHeli_B
 {
@@ -301,11 +300,7 @@ class cgqc_helmet_crew_wood : H_CrewHelmetHeli_B
 	grad_slingHelmet_allow = true;
 };
 
-
-
-
 // Custom helmets -----------------------------------------------------------------------------------------------
-
 // Cloutier -----------------------------------------------------
 class cgqc_helmet_heli_black_cloutier : H_PilotHelmetHeli_B
 {
@@ -391,7 +386,6 @@ class cgqc_helmet_crew_black_comeau : H_CrewHelmetHeli_B
 	hiddenSelectionsTextures[] = {"\cgqc_2022\helmets\cgqc_helmet_comeau.paa"};
 	grad_slingHelmet_allow = true;
 };
-
 
 // Tank helmets ---------------------------------------------------------------------------------------
 // Turcotte tank helmet
@@ -506,5 +500,26 @@ class cgqc_helmet_mk1_tank_cloutier : cgqc_helmet_mk1_tank
         "\rhsusf\addons\rhsusf_infantry\gear\head\data\crew_equip_co.paa"};
 };
 
-
+class cgqc_helmet_kidnapping : H_PASGT_neckprot_blue_press_F
+{
+     author = "silent1";
+    _generalMacro = "cgqc_helmet_kidnapping";
+    displayName = "CGQC Casque HVT/VIP";
+    class ItemInfo: ItemInfo
+		{
+			uniformModel = "\A3\Characters_F_Orange\Headgear\H_PASGT_neckprot_F.p3d";
+			modelSides[] = {3};
+			hiddenSelections[] = {"Camo"};
+			mass = 5;
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 80;
+					passThrough = 0.5;
+				};
+			};
+		};
+};
 

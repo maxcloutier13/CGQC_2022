@@ -1,4 +1,9 @@
 class Vest_NoCamo_Base;
+class V_EOD_base_F;
+class V_EOD_blue_F: V_EOD_base_F
+{
+    class ItemInfo;
+};
 class V_PlateCarrier1_rgr: Vest_NoCamo_Base
 {
     class ItemInfo;
@@ -376,4 +381,63 @@ class cgqc_vest_mk1_diver : V_mas_can_RebreatherB
     _generalMacro = "cgqc_vest_mk1_diver";
     displayName = "CGQC Rebreather";
     //hiddenSelectionsTextures[] = {"\cgqc_2022\vests\cgqc_vest_tank_green.paa"};
+};
+
+// Kidnapping vest
+class cgqc_vest_kidnapping: V_EOD_blue_F
+{
+    author = "silent1";
+    _generalMacro = "cgqc_vest_kidnapping";
+    displayName = "CGQC HVT/VIP Vest";
+    class ItemInfo: ItemInfo
+    {
+        uniformModel = "\A3\Characters_F_Orange\Vests\V_EOD_vest_F.p3d";
+        hiddenSelections[] = {"Camo","Camo2"};
+        containerClass = "Supply30";
+        mass = 5;
+        class HitpointsProtectionInfo
+        {
+            class Neck
+            {
+                hitpointName = "HitNeck";
+                armor = 20;
+                passThrough = 0.5;
+            };
+            class Arms
+            {
+                hitpointName = "HitArms";
+                armor = 20;
+                passThrough = 0.5;
+            };
+            class Chest
+            {
+                hitpointName = "HitChest";
+                armor = 80;
+                passThrough = 0.6;
+            };
+            class Diaphragm
+            {
+                hitpointName = "HitDiaphragm";
+                armor = 80;
+                passThrough = 0.6;
+            };
+            class Abdomen
+            {
+                hitpointName = "HitAbdomen";
+                armor = 80;
+                passThrough = 0.3;
+            };
+            class Pelvis
+            {
+                hitpointName = "HitPelvis";
+                armor = 20;
+                passThrough = 0.3;
+            };
+            class Body
+            {
+                hitpointName = "HitBody";
+                passThrough = 0.6;
+            };
+        };
+    };
 };

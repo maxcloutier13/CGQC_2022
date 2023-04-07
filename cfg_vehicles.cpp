@@ -758,6 +758,7 @@ class cgqc_vic_sub : B_SDV_01_F {
     editorSubcategory = "EdSubcat_cgqc_boats";
     displayName = "Sous-Marin (2+2)";
     crew = "";
+     #include "vehicles\cgqc_vic_loadout_sub.cpp"
 };
 class cgqc_vic_boat : B_T_Boat_Transport_01_F {
     scope = 2;

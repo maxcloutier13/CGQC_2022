@@ -782,6 +782,7 @@ class cgqc_vic_sub : B_SDV_01_F {
     waterAngularDampingCoef = 1.0;
     rudderForceCoef = 0.2;
     rudderForceCoefAtMaxSpeed = 0.05;
+    #include "vehicles\cgqc_vic_loadout_sub.cpp"
 };
 class cgqc_vic_boat : B_T_Boat_Transport_01_F {
     scope = 2;

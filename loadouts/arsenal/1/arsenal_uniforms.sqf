@@ -12,7 +12,6 @@ cgqc_mk2_arsenal_1_uniforms = [
     "U_B_CBRN_Suit_01_Tropic_F", 
     "U_B_CBRN_Suit_01_MTP_F",
     // Vests -----------------------------------
-    
     "cgqc_vest_mk1_belt", 
     "cgqc_vest_mk1_tan",
     "cgqc_vest_mk1_tan_lr",

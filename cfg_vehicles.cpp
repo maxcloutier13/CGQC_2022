@@ -677,6 +677,16 @@ class cgqc_vic_mrap : B_W_MRAP_01_F {
     crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };
+class cgqc_vic_polaris : rhsusf_mrzr4_d {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
+    displayName = "Polaris Offroad (1+5)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_small.cpp"
+};
 // Armed -----------------------------------------------------------------------------------
 class cgqc_vic_jeep_hmg : UK3CB_B_M151_Jeep_HMG_HIDF {
     scope = 2;
@@ -687,16 +697,6 @@ class cgqc_vic_jeep_hmg : UK3CB_B_M151_Jeep_HMG_HIDF {
     displayName = "Jeep HMG (2+1)";
     crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
-};
-class cgqc_vic_polaris : rhsusf_mrzr4_d {
-    scope = 2;
-    side = 1;
-    author = "silent1";
-    faction = "cgqc";
-    editorSubcategory = "EdSubcat_cgqc_vic_armed";
-    displayName = "Polaris Offroad (1+5)";
-    crew = "CGQC_units_mk2_Rifleman_ai";
-    #include "vehicles\cgqc_vic_loadout_small.cpp"
 };
 class cgqc_vic_dagor_hmg : B_W_LSV_01_armed_F {
     scope = 2;

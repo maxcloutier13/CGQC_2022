@@ -6,7 +6,7 @@ class cgqc_soldat_moderne : B_Soldier_f
 	faction = "CGQC";
 	editorSubcategory = "EdSubcat_cgqc_Training";
 	side = 1;
-	displayName = "Soldat";
+	displayName = "Soldat (2023)";
 	uniformClass = "cgqc_uniform_mk1";
 	camouflage = 1.4;
 	weapons[] = {"cgqc_item_rangefinder", "cgqc_gun_glock19_wood", "Put", "Throw"};
@@ -29,7 +29,7 @@ class cgqc_officer_1_moderne : B_Soldier_f
 	faction = "CGQC";
 	editorSubcategory = "EdSubcat_cgqc_Training";
 	side = 1;
-	displayName = "Officier";
+	displayName = "Officier (2023)";
 	attendant = 1;
 	canDeactivateMines = 1;
 	engineer = 1;
@@ -55,7 +55,7 @@ class cgqc_officer_moderne : B_Soldier_f
 	faction = "CGQC";
 	editorSubcategory = "EdSubcat_cgqc_Training";
 	side = 1;
-	displayName = "Instructeur";
+	displayName = "Instructeur (2023)";
 	attendant = 1;
 	canDeactivateMines = 1;
 	engineer = 1;
@@ -74,14 +74,6 @@ class cgqc_officer_moderne : B_Soldier_f
 	class EventHandlers {
         //init = "[] spawn CGQC_fnc_initTraining";
     };
-};
-class CGQC_Soldat_Base : B_Soldier_f
-{
-	scope = 0;
-};
-class CGQC_officer_Base : B_Soldier_f
-{
-	scope = 0;
 };
 // High Command -----------------------------------------------------------------------------------------
 // Command

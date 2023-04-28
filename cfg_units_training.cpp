@@ -75,14 +75,6 @@ class cgqc_officer_moderne : B_Soldier_f
         //init = "[] spawn CGQC_fnc_initTraining";
     };
 };
-class CGQC_Soldat_Base : B_Soldier_f
-{
-	scope = 0;
-};
-class CGQC_officer_Base : B_Soldier_f
-{
-	scope = 0;
-};
 // High Command -----------------------------------------------------------------------------------------
 // Command
 class cgqc_spawn_hq: cgqc_officer_1_moderne

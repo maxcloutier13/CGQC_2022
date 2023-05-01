@@ -1951,12 +1951,12 @@ class CGQC_units_mk1_4_crew_heli_pack : B_Parachute
 
 // ------ MK II -----------------------------------------------------------------------------------------
 // Mk2 Arsenal
-class cgqc_box_mk2_arsenal : B_supplyCrate_F
+class cgqc_box_mk2_arsenal_old : B_supplyCrate_F
 {
     scope = 2;
     author = "silent1";
-    _generalMacro = "cgqc_box_mk2_arsenal";
-    displayName = "CGQC MK2 Arsenal";
+    _generalMacro = "cgqc_box_mk2_arsenal_old";
+    displayName = "CGQC MK2 Arsenal (Old)";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk2.paa"};
     editorPreview = "\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_supplyCrate_F.jpg";
     ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)

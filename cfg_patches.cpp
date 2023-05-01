@@ -37,7 +37,7 @@ class CfgPatches
 			"cgqc_box_mk1_mortar",
 			"cgqc_box_mk1_mortar_mk6",
 			"cgqc_box_mk1_arsenal",
-			"cgqc_box_mk2_arsenal",
+			"cgqc_box_mk2_arsenal_old",
 			"cgqc_box_mk2_parachute",
 			"cgqc_box_mk2_diving",
 			"cgqc_box_mk2_cargo",

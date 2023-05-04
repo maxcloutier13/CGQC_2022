@@ -3,6 +3,8 @@ _fromLoadout = _this select 1;
 cgqc_camoSwitch_done = false;
 waitUntil {sleep 0.5;cgqc_roleSwitch_done};
 _text = "";
+_skip = true;
+_skip_msg = "";
 
 try {
 	disableUserInput true;
@@ -16,7 +18,6 @@ try {
 			case "diver":{_text = ("<br/>" + "<br/>" + "<br/>" +"<t size='2' >Kit de plongeur</t><br/>");};
 			case "para":{_text = ("<br/>" + "<br/>" + "<br/>" +"<t size='2' >Kit de parachutiste</t><br/>");};
 		};
-        [_text, 0, 0, 2, 2] spawn BIS_fnc_dynamicText;
 	};
 	// Check if player in chill mode
 	if (cgqc_player_chill) then {
@@ -54,50 +55,87 @@ try {
 	switch (_camo) do {
 		case "diver": //Diver time
 		{
-			// Diving suit
-			_uniform_new = "cgqc_uniform_mk1_diver";
-			// Rebreather
-			_vest_new = "cgqc_vest_mk1_diver";
-			// goggles
-			_goggles_new = "cgqc_goggles_mk1_diver";
-			// Keep old mask in backpack
-			player addItemToBackpack player_goggles_old;
-			// Black backpack
-			player_backpack_old = toLower player_backpack_old;
-			if ((player_backpack_old find["radiobag", 0]) > 0) then {_backpack_new = "cgqc_pack_mk1_radiobag_black";};
-			if ((player_backpack_old find["assault", 0]) > 0) then {_backpack_new = "cgqc_pack_mk1_assault_black";}; 
-			if ((player_backpack_old find["carryall", 0]) > 0) then {_backpack_new = "cgqc_pack_mk1_carryall_black";};
-			if ((player_backpack_old find["kitbag", 0]) > 0) then {_backpack_new = "cgqc_pack_mk1_kitbag_black";};
-			if ((player_backpack_old find["magic", 0]) > 0) then {_backpack_new = "cgqc_pack_mk1_magic";};
-			// Add diver perks
-			cgqc_perks_diver = true;
+			
+			if ((player_uniform_old find["diver", 0]) > 0) then {
+				_skip = true;
+				_skip_msg = "T'as déja un suit de diver, dummy! Skipping.";
+			};
+			if (_skip) then {
+				// Reset everything as it was... 
+				_helmet_new = player_helmet_old;
+				_uniform_new = player_uniform_old;
+				_vest_new = player_vest_old;
+				_backpack_new = player_backpack_old;
+				_goggles_new = player_goggles_old;
+				sleep 0.5;
+				[_skip_msg, 0, 0, 2, 2] spawn BIS_fnc_dynamicText;
+			}else{//Keep proceeding
+				[_text, 0, 0, 2, 2] spawn BIS_fnc_dynamicText;
+				// Diving suit
+				_uniform_new = "cgqc_uniform_mk1_diver";
+				// Rebreather
+				_vest_new = "cgqc_vest_mk1_diver";
+				// goggles
+				_goggles_new = "cgqc_goggles_mk1_diver";
+				// Keep old mask in backpack
+				player addItemToBackpack player_goggles_old;
+				// Black backpack
+				player_backpack_old = toLower player_backpack_old;
+				if ((player_backpack_old find["radiobag", 0]) > 0) then {_backpack_new = "cgqc_pack_mk1_radiobag_black";};
+				if ((player_backpack_old find["assault", 0]) > 0) then {_backpack_new = "cgqc_pack_mk1_assault_black";}; 
+				if ((player_backpack_old find["carryall", 0]) > 0) then {_backpack_new = "cgqc_pack_mk1_carryall_black";};
+				if ((player_backpack_old find["kitbag", 0]) > 0) then {_backpack_new = "cgqc_pack_mk1_kitbag_black";};
+				if ((player_backpack_old find["magic", 0]) > 0) then {_backpack_new = "cgqc_pack_mk1_magic";};
+				// Add diver perks
+				cgqc_perks_diver = true;
+			};
 		};
 		case "para": //Paradrop time
 		{
-			// Keep uniform
-			_uniform_new = player_uniform_old;
-			// Keep Vest
-			_vest_new = player_vest_old;
-			// Switch to mask
-			_goggles_new = "cgqc_goggles_mk1_para";
-			// Parachute
-			_backpack_new  = "B_Parachute";
-			// Add Paradrop perks
-			cgqc_perks_para = true;
-			// Add old backpack on chest
-			player addBackpack player_backpack_old;
-			{player addItemToBackpack _x} forEach _items_pack;
-			// Keep old mask in backpack
-			player addItemToBackpack player_goggles_old;
-			// Watch / Altimeter
-			_items = assignedItems player;
-			_current_watch = _items select 2;
-			if (_current_watch == "ItemWatch") then {
-				player linkItem "ACE_Altimeter";
+			// Check if backpack is parachute. Skip if it is.
+			_chest_check = [player] call bocr_main_fnc_chestpack;
+			if (_chest_check == "") then {
+				_skip = true;
+				_skip_msg = "T'as déja un backpack sur ton chest! Skipping.";
 			};
-			sleep 0.5;
-			[player] call bocr_main_fnc_actionOnChest;
-			hint "Prêt à sauter. Ton backpack est sur ton chest.";
+			if ((player_backpack_old find["chute", 0]) > 0) then {
+				_skip = true;
+				_skip_msg = "T'as déja un parachute, dummy! Skipping.";
+			};
+			if(_skip) then { 
+				// Reset everything as it was... 
+				_helmet_new = player_helmet_old;
+				_uniform_new = player_uniform_old;
+				_vest_new = player_vest_old;
+				_backpack_new = player_backpack_old;
+				_goggles_new = player_goggles_old;
+				sleep 0.5;
+				[_skip_msg, 0, 0, 2, 2] spawn BIS_fnc_dynamicText;
+			}else{//Keep proceeding
+				[_text, 0, 0, 2, 2] spawn BIS_fnc_dynamicText;
+				// Keep uniform
+				_uniform_new = player_uniform_old;
+				// Keep Vest
+				_vest_new = player_vest_old;
+				// Switch to mask
+				_goggles_new = "cgqc_goggles_mk1_para";
+				// Parachute
+				_backpack_new  = "B_Parachute";
+				// Add Paradrop perks
+				cgqc_perks_para = true;
+				// Add old backpack on chest
+				player addBackpack player_backpack_old;
+				{player addItemToBackpack _x} forEach _items_pack;
+				// Keep old mask in backpack
+				player addItemToBackpack player_goggles_old;
+				// Watch / Altimeter
+				_items = assignedItems player;
+				_current_watch = _items select 2;
+				if (_current_watch == "ItemWatch") then {player linkItem "ACE_Altimeter";};
+				sleep 0.5;
+				[player] call bocr_main_fnc_actionOnChest;
+				hint "Prêt à sauter. Ton backpack est sur ton chest.";
+			};
 		};
 		case "23_moss": 
 		{

@@ -28,12 +28,12 @@ if (cgqc_setting_show_transition) then {
     _text = format [_text, _text_insert];
     [_text, 0, 0, 3, 2] spawn BIS_fnc_dynamicText;
     sleep 5;
-    titleFadeOut 3;
+    titleFadeOut 4;
     // Wake up with blur
     "dynamicBlur" ppEffectEnable true;
     "dynamicBlur" ppEffectAdjust [6];
     "dynamicBlur" ppEffectCommit 0;
-    titleCut ["", "BLACK IN", 3];
+    titleCut ["", "BLACK IN", 4];
     "dynamicBlur" ppEffectAdjust [0.0];
     "dynamicBlur" ppEffectCommit 2;
 };

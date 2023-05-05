@@ -3,7 +3,7 @@ _fromLoadout = _this select 1;
 cgqc_camoSwitch_done = false;
 waitUntil {sleep 0.5;cgqc_roleSwitch_done};
 _text = "";
-_skip = true;
+_skip = false;
 _skip_msg = "";
 
 try {
@@ -12,50 +12,25 @@ try {
 	if !(_fromLoadout) then {
 		// Fade to black transition with text
 		[_camo] execVM "\CGQC_2022\scripts\transition.sqf";
-	} else {
-		// Spawning in, so simple text
-		switch (_camo) do {
-			case "diver":{_text = ("<br/>" + "<br/>" + "<br/>" +"<t size='2' >Kit de plongeur</t><br/>");};
-			case "para":{_text = ("<br/>" + "<br/>" + "<br/>" +"<t size='2' >Kit de parachutiste</t><br/>");};
-		};
 	};
 	// Check if player in chill mode
 	if (cgqc_player_chill) then {
 		["ready", true] call CGQC_fnc_perksBasic;
 		waitUntil {!cgqc_player_chill};
 	};
-	sleep 1;
+	sleep 0.5;
 	// Init new variables
 	_helmet_new = "";
 	_uniform_new = "";
 	_vest_new = "";
 	_backpack_new = "";
 	_goggles_new = "";
-
-	// Current soldier equipment
-	player_helmet_old = headgear player;
-	player_uniform_old = uniform player;
-	player_vest_old = vest player;
-	player_backpack_old = backpack player;
-	player_goggles_old = goggles player;
-
-	// Save inventory 
-	_items_uniform = uniformItems player;
-	_items_vest = vestItems player;
-	_items_pack = backpackItems player;
-
-	// Delete old stuff 
-	removeHeadgear player;
-	removeUniform player;
-	removeVest player;
-	removeBackpack player;
-	removeGoggles player;
-
+	
 	// Find what to switch to
 	switch (_camo) do {
 		case "diver": //Diver time
 		{
-			
+			_text = ("<br/>" + "<br/>" + "<br/>" +"<t size='2' >Kit de plongeur</t><br/>");
 			if ((player_uniform_old find["diver", 0]) > 0) then {
 				_skip = true;
 				_skip_msg = "T'as déja un suit de diver, dummy! Skipping.";
@@ -92,27 +67,22 @@ try {
 		};
 		case "para": //Paradrop time
 		{
+			//_text = ("<br/>" + "<br/>" + "<br/>" +"<t size='2' >Kit de parachutiste</t><br/>");
 			// Check if backpack is parachute. Skip if it is.
-			_chest_check = [player] call bocr_main_fnc_chestpack;
-			if (_chest_check == "") then {
+			if ([player] call bocr_main_fnc_chestpack != "") then {
 				_skip = true;
-				_skip_msg = "T'as déja un backpack sur ton chest! Skipping.";
+				_skip_msg = parseText ("<br/>" + "<br/>" + "<br/>" + "<br/>" + "T'as déja un backpack sur ton chest!"+ "<br/>" + "Skipping.");
 			};
-			if ((player_backpack_old find["chute", 0]) > 0) then {
+			if ((backpack player find["chute", 0]) > 0) then {
 				_skip = true;
-				_skip_msg = "T'as déja un parachute, dummy! Skipping.";
+				_skip_msg = parseText ("<br/>" + "<br/>" + "<br/>" + "<br/>" + "T'as déja un parachute, dummy!" + "<br/>" + "Arrange toi tout seul.");
 			};
 			if(_skip) then { 
-				// Reset everything as it was... 
-				_helmet_new = player_helmet_old;
-				_uniform_new = player_uniform_old;
-				_vest_new = player_vest_old;
-				_backpack_new = player_backpack_old;
-				_goggles_new = player_goggles_old;
-				sleep 0.5;
 				[_skip_msg, 0, 0, 2, 2] spawn BIS_fnc_dynamicText;
 			}else{//Keep proceeding
-				[_text, 0, 0, 2, 2] spawn BIS_fnc_dynamicText;
+				[] execVM "\cgqc_2022\functions\prepLoadout.sqf";
+				sleep 1;
+				//[_text, 0, 0, 5, 2] spawn BIS_fnc_dynamicText;
 				// Keep uniform
 				_uniform_new = player_uniform_old;
 				// Keep Vest
@@ -125,7 +95,7 @@ try {
 				cgqc_perks_para = true;
 				// Add old backpack on chest
 				player addBackpack player_backpack_old;
-				{player addItemToBackpack _x} forEach _items_pack;
+				{player addItemToBackpack _x} forEach player_items_pack;
 				// Keep old mask in backpack
 				player addItemToBackpack player_goggles_old;
 				// Watch / Altimeter
@@ -134,7 +104,8 @@ try {
 				if (_current_watch == "ItemWatch") then {player linkItem "ACE_Altimeter";};
 				sleep 0.5;
 				[player] call bocr_main_fnc_actionOnChest;
-				hint "Prêt à sauter. Ton backpack est sur ton chest.";
+				sleep 2;
+				hint parseText ("Prêt à sauter" + "<br/>" + "Ace Self-Action->Drop Parachute" + "<br/>" + "une fois au sol...");
 			};
 		};
 		case "23_moss": 
@@ -212,71 +183,74 @@ try {
 		};
 	};
 
-	// ------- Add stuff ----------------------------------------------------------------------------
-	// Add selected uniform
-	player addHeadgear _helmet_new;
-	player forceAddUniform _uniform_new;
-	player addVest _vest_new;
-	player addBackpack _backpack_new;
-	player addGoggles _goggles_new;
+	if !(_skip) then {
+		// ------- Add stuff ----------------------------------------------------------------------------
+		// Add selected uniform
+		player addHeadgear _helmet_new;
+		player forceAddUniform _uniform_new;
+		player addVest _vest_new;
+		player addBackpack _backpack_new;
+		player addGoggles _goggles_new;
 
-	// Check that equiment switch worked
-	check_helmet = headgear player;
-	check_uniform = uniform player;
-	check_vest = vest player;
-	check_backpack = backpack player;
-	check_goggles = goggles player;
-	if (check_helmet == "") then {
-		player addHeadgear player_helmet_old;
-	};
-	if (check_uniform == "") then {
-		player forceAddUniform player_uniform_old;
-	};
-	if (check_vest == "") then {
-		player addVest player_vest_old;
-	};
-	if (check_backpack == "") then {
-		player addBackpack player_backpack_old;
-	};
-	if (check_goggles == "") then {
-		player addGoggles player_goggles_old;
-	};
+		// Check that equiment switch worked
+		check_helmet = headgear player;
+		check_uniform = uniform player;
+		check_vest = vest player;
+		check_backpack = backpack player;
+		check_goggles = goggles player;
+		if (check_helmet == "") then {
+			player addHeadgear player_helmet_old;
+		};
+		if (check_uniform == "") then {
+			player forceAddUniform player_uniform_old;
+		};
+		if (check_vest == "") then {
+			player addVest player_vest_old;
+		};
+		if (check_backpack == "") then {
+			player addBackpack player_backpack_old;
+		};
+		if (check_goggles == "") then {
+			player addGoggles player_goggles_old;
+		};
 
-	// Flush potential leftovers 
-	clearAllItemsFromBackpack player;
+		// Flush potential leftovers 
+		clearAllItemsFromBackpack player;
 
-	// load items in new uniform
-	{
-		player addItemToUniform _x
-	} forEach _items_uniform;
-	{
-		player addItemToVest _x
-	} forEach _items_vest;
-	if (_camo != "para") then {
-		{player addItemToBackpack _x} forEach _items_pack;
+		// load items in new uniform
+		{player addItemToUniform _x} forEach player_items_uniform;
+		{player addItemToVest _x} forEach player_items_vest;
+		if ((_backpack_new find["chute", 0]) > 0) then {
+			{player addItemToBackpack _x} forEach player_items_pack;
+		};
 	};
-
-	// Return control to player
-	//disableUserInput false;
-
+	
 	// Set back patch
 	player setVariable ["BIS_fnc_setUnitInsignia_class", nil]; //Remove patch
 	[ player, cgqc_player_patch ] call BIS_fnc_setUnitInsignia;
 
+	// Lower gun 
+    player action ['SwitchWeapon', player, player, 250];
+	// Return control
 	disableUserInput false;
-	if (userInputDisabled) then {
-        disableUserInput false;
-    };
+	sleep 0.5;
+	if (userInputDisabled) then {disableUserInput false;};
 	// Done
 	cgqc_camoSwitch_done = true;
+	sleep 3;
+	// Icon Indicators 
+	// Paradrop 
+	while {cgqc_perks_para} do { 
+		[format["<img size= '1' style='vertical-align:bottom' shadow='false' image='\cgqc\textures\cgqc_ace_para.paa'/>"]
+		, 1.05, 0.2, 3, 2] spawn BIS_fnc_dynamicText; 
+		sleep 3;
+	};
 
 } catch{ // In case of error: Return control to player
 	disableUserInput false;
-	if (userInputDisabled) then {
-        disableUserInput false;
-    };
+	sleep 0.5;
+	if (userInputDisabled) then {disableUserInput false;};
 	// Done
 	cgqc_camoSwitch_done = true;
 	hintc "Erreur: mk2_camo_switch";
 };
-disableUserInput false;

@@ -2029,7 +2029,7 @@ class cgqc_box_mk2_diving : Box_NATO_Equip_F
     scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_box_mk2_diving";
-    displayName = "CGQC MK2 Équipement de Plongée";
+    displayName = "CGQC MK2 Diving Box";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk2_blue.paa",
                                   "\CGQC_2022\containers\cgqc_box_mk2_plongee.paa"};
     editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\Box_NATO_Equip_F.jpg";

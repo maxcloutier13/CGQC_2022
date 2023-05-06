@@ -1977,8 +1977,8 @@ class cgqc_box_mk2_parachute : Box_NATO_Equip_F
     author = "silent1";
     _generalMacro = "cgqc_box_mk2_parachute";
     displayName = "CGQC MK2 Parachute Box";
-    hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk2_red.paa",
-                                  "\CGQC_2022\containers\cgqc_box_mk2_parachutes.paa"};
+    hiddenSelectionsTextures[] = {"\CGQC\containers\cgqc_box_mk2_red.paa",
+                                  "\CGQC\containers\cgqc_box_mk2_parachutes.paa"};
     editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\Box_NATO_Equip_F.jpg";
     ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
     ace_cargo_noRename = 1;
@@ -2020,7 +2020,7 @@ class cgqc_box_mk2_parachute : Box_NATO_Equip_F
     };
     class EventHandlers
     {
-        init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk2_parachutes.sqf'";
+        init = "[_this, 'para'] execVM '\CGQC\loadouts\mk3_menu.sqf'";
     };
 };
 // Diving stuff
@@ -2030,8 +2030,8 @@ class cgqc_box_mk2_diving : Box_NATO_Equip_F
     author = "silent1";
     _generalMacro = "cgqc_box_mk2_diving";
     displayName = "CGQC MK2 Diving Box";
-    hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk2_blue.paa",
-                                  "\CGQC_2022\containers\cgqc_box_mk2_plongee.paa"};
+    hiddenSelectionsTextures[] = {"\CGQC\containers\cgqc_box_mk2_blue.paa",
+                                  "\CGQC\containers\cgqc_box_mk2_plongee.paa"};
     editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\Box_NATO_Equip_F.jpg";
     ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
     ace_cargo_noRename = 1;
@@ -2062,15 +2062,15 @@ class cgqc_box_mk2_diving : Box_NATO_Equip_F
             count = 30;
             name = "cgqc_vest_mk1_diver";
         };
-        class _xx_cgqc_facestuff_mk1_diver
+        class _xx_cgqc_goggles_mk1_diver
         {
             count = 30;
-            name = "cgqc_facestuff_mk1_diver";
+            name = "cgqc_goggles_mk1_diver";
         };
     };
     class EventHandlers
     {
-        init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk2_diving.sqf'";
+        init = "[_this, 'dive'] execVM '\CGQC\loadouts\mk3_menu.sqf'";
     };
 };
 // Mk2 Cargo container

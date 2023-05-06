@@ -4,8 +4,8 @@ cgqc_mk2_arsenal_rank4 = [
     "cgqc_uniform_mk1_diver",
     // Vests -----------------------------------
     "cgqc_vest_mk1_diver",
-    // Facestuff -----------------------------------
-    "cgqc_facestuff_mk1_diver",
+    // goggles -----------------------------------
+    "cgqc_goggles_mk1_diver",
     // Backpacks -----------------------------------
     "B_SCBA_01_F",
     "cgqc_pack_mk1_Radiobag", 

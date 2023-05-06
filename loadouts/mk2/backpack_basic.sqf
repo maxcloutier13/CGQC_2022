@@ -14,10 +14,6 @@ player addItemToBackpack "ACE_EntrenchingTool";
 player addItemToBackpack "WBK_HeadLampItem";
 player addItemToBackpack "G_mas_can_gasmask";
 // === Throwables ================================
-player addItemToBackpack "ACE_Chemlight_HiRed";
-player addItemToBackpack "ACE_Chemlight_HiRed";
-player addItemToBackpack "ACE_Chemlight_IR";
-player addItemToBackpack "ACE_Chemlight_IR";
 player addItemToBackpack "SmokeShell";
 player addItemToBackpack "SmokeShell";
 player addItemToBackpack "SmokeShell";

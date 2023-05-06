@@ -102,8 +102,6 @@ for "_i" from 1 to 4 do {
 for "_i" from 1 to 4 do {
 	player addItemToBackpack "ACE_tourniquet";
 };
-player addItemToBackpack "ACE_Chemlight_HiRed";
-player addItemToBackpack "ACE_Chemlight_IR";
 for "_i" from 1 to 3 do {
 	player addItemToBackpack "SmokeShell";
 };

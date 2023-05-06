@@ -91,8 +91,6 @@ player addItemToBackpack "G_mas_can_gasmask";
 player addItemToBackpack "Rev_darter_item";
 player addItemToBackpack "ACE_Tripod";
 player addItemToBackpack "ItemcTab";
-player addItemToBackpack "ACE_Chemlight_HiRed";
-player addItemToBackpack "ACE_Chemlight_IR";
 for "_i" from 1 to 3 do {
 	player addItemToBackpack "SmokeShell";
 };

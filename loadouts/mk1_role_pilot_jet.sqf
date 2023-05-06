@@ -63,8 +63,6 @@ for "_i" from 1 to 2 do {
 	player addItemToVest "Tier1_15Rnd_9x19_JHP";
 };
 player addItemToVest "WBK_HeadLampItem";
-player addItemToVest "ACE_Chemlight_HiRed";
-player addItemToVest "ACE_Chemlight_IR";
 player addItemToVest "SmokeShell";
 player addItemToVest "SmokeShellBlue";
 player addItemToVest "SmokeShellRed";

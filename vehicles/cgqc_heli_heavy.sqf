@@ -8,16 +8,6 @@ class TransportMagazines
 		count = 5;
 		magazine = "rhs_mag_m67";
 	};
-	class _xx_ACE_Chemlight_HiRed
-	{
-		count = 5;
-		magazine = "ACE_Chemlight_HiRed";
-	};
-	class _xx_ACE_Chemlight_IR
-	{
-		count = 5;
-		magazine = "ACE_Chemlight_IR";
-	};
 	class _xx_SmokeShell
 	{
 		count = 5;

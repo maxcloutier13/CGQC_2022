@@ -87,8 +87,6 @@ player addItemToBackpack "ACE_EntrenchingTool";
  
 player addItemToBackpack "WBK_HeadLampItem";
 player addItemToBackpack "G_mas_can_gasmask";
-player addItemToBackpack "ACE_Chemlight_HiRed";
-player addItemToBackpack "ACE_Chemlight_IR";
 for "_i" from 1 to 3 do {
 	player addItemToBackpack "SmokeShell";
 };

@@ -87,8 +87,6 @@ player addItemToBackpack "G_mas_can_gasmask";
 player addItemToBackpack "ToolKit";
 player addItemToBackpack "ACE_DefusalKit";
 player addItemToBackpack "ACE_M26_Clacker";
-player addItemToBackpack "ACE_Chemlight_HiRed";
-player addItemToBackpack "ACE_Chemlight_IR";
 for "_i" from 1 to 2 do {
 	player addItemToBackpack "SmokeShell";
 };

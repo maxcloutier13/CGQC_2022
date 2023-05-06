@@ -90,8 +90,6 @@ player addItemToBackpack "G_mas_can_gasmask";
 player addItemToBackpack "ACE_Tripod";
 player addItemToBackpack "ACE_ATragMX";
 player addItemToBackpack "ACE_Kestrel4500";
-player addItemToBackpack "ACE_Chemlight_HiRed";
-player addItemToBackpack "ACE_Chemlight_IR";
 for "_i" from 1 to 3 do {
 	player addItemToBackpack "SmokeShell";
 };

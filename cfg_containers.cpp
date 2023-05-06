@@ -1976,7 +1976,7 @@ class cgqc_box_mk2_parachute : Box_NATO_Equip_F
     scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_box_mk2_parachute";
-    displayName = "CGQC MK2 Parachute Box";
+    displayName = "CGQC MK3 Parachute Box";
     hiddenSelectionsTextures[] = {"\CGQC\containers\cgqc_box_mk2_red.paa",
                                   "\CGQC\containers\cgqc_box_mk2_parachutes.paa"};
     editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\Box_NATO_Equip_F.jpg";
@@ -2029,7 +2029,7 @@ class cgqc_box_mk2_diving : Box_NATO_Equip_F
     scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_box_mk2_diving";
-    displayName = "CGQC MK2 Diving Box";
+    displayName = "CGQC MK3 Diving Box";
     hiddenSelectionsTextures[] = {"\CGQC\containers\cgqc_box_mk2_blue.paa",
                                   "\CGQC\containers\cgqc_box_mk2_plongee.paa"};
     editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\Box_NATO_Equip_F.jpg";

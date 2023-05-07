@@ -166,10 +166,7 @@ class CfgPatches
 			"cgqc_vic_hmmw_hmg",
 			"cgqc_vic_hmmw_armored",
 			"cgqc_vic_mrap_hmg",
-			"cgqc_refuel_h",
-			"cgqc_refuel_h_short",
 			"cgqc_projector",
-			"cgqc_whiteboard_radios",
 			"cgqc_vic_quad_ext_mortarmk6"};
 		weapons[] = {
 			"cgqc_helmet_mk1",

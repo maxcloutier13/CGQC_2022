@@ -23,7 +23,7 @@ player addPrimaryWeaponItem "Tier1_M4BII_NGAL_M300C_Black";
 player addPrimaryWeaponItem "Tier1_EXPS3_0_3xMag_Black_Up";
 player addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
 player addPrimaryWeaponItem "rhsusf_acc_grip2";
-player addWeapon "ACE_VMM3";
+player addWeapon "ACE_VMH3";
 
 comment "Add containers";
 player forceAddUniform "cgqc_uniform_mk1";

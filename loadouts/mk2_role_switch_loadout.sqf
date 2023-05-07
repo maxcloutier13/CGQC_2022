@@ -168,7 +168,7 @@ switch (_type) do {
 	};
     case "eng":{ //=============================================================================================
         // === Remove pistol and use mine detector instead
-        player addWeapon "ACE_VMM3";
+        player addWeapon "ACE_VMH3";
         // === Weapons
         #include "\cgqc_2022\loadouts\mk2\gun_m4_dotplus.sqf"
         // === Vest

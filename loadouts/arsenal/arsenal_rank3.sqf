@@ -84,5 +84,12 @@ cgqc_mk2_arsenal_rank3 = [
     "rhs_ec75_mag", 
     "rhs_ec200_mag", 
     "rhs_ec400_mag", 
-    "ACE_FlareTripMine_Mag"
+    "ACE_FlareTripMine_Mag",
+    // Breaching -----------------------------------
+    "tsp_lockpick",
+    "tsp_frameCharge_mag",
+    "tsp_popperCharge_mag",
+    "tsp_popperCharge_auto_mag",
+    "tsp_stickCharge_mag",
+    "tsp_stickCharge_auto_mag"
 ]; 

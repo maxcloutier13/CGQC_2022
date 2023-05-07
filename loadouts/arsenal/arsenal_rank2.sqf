@@ -25,6 +25,8 @@ cgqc_mk2_arsenal_rank2 = [
     "launch_MRAWS_sand_F", 
     "cgqc_gun_mk1_Javelin",
     "launch_mas_can_Stinger_F",
+    // Breaching --------------------------------------------------------------------------
+    "tsp_paperclip",
     // Other hats ------------------------------------------------------------------------------
     "cgqc_beanie_black",
     "cgqc_beanie_sage",

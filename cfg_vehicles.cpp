@@ -794,44 +794,6 @@ class cgqc_vic_boat : B_T_Boat_Transport_01_F {
     crew = "";
 };
 
-// Objects ===================================================================================
-// Helipad
-class Land_HelipadSquare_F;
-class cgqc_refuel_h : Land_HelipadSquare_F
-{
-    author = "silent1";
-    //faction = "cgqc";
-    //editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
-    _generalMacro = "cgqc_refuel_h";
-    displayName = "CGQC Helipad - Standard";
-    class EventHandlers
-    {
-        init = "[_this, 0] execVM '\cgqc_2022\scripts\cgqc_refuel_setup.sqf'"; 
-    };
-};
-class cgqc_refuel_h_short : Land_HelipadSquare_F
-{
-    author = "silent1";
-    //faction = "cgqc";
-    //editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
-    _generalMacro = "cgqc_refuel_h";
-    displayName = "CGQC Helipad - Rapide";
-    class EventHandlers
-    {
-        init = "[_this, 1] execVM '\cgqc_2022\scripts\cgqc_refuel_setup.sqf'"; 
-    };
-};
-// Whiteboards
-class Land_MapBoard_F;
-class cgqc_whiteboard_radios : Land_MapBoard_F
-{
-    _generalMacro = "MapBoard_altis_F";
-    scope = 2;
-    scopeCurator = 2;
-    editorSubcategory = "EdSubcat_cgqc_logistics";
-    displayName = "Whiteboard - Radios";
-    hiddenSelectionsTextures[] = {"\CGQC_2022\textures\whiteboard_radio.paa"};
-};
 // Projector
 class Misc_Videoprojektor;
 class cgqc_projector : Misc_Videoprojektor

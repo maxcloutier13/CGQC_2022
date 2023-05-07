@@ -25,3 +25,7 @@ player addItemToBackpack "SmokeShellRed";
 player addItemToBackpack "SmokeShellBlue";
 player addItemToBackpack "rev_darter_item";
 player addItemToBackpack "KNB_PanelYellow";
+player addItemToBackpack "tsp_stickCharge_auto_mag";
+player addItemToBackpack "tsp_stickCharge_auto_mag";
+player addItemToBackpack "tsp_popperCharge_auto_mag";
+player addItemToBackpack "tsp_popperCharge_auto_mag";

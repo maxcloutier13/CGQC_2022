@@ -8,7 +8,7 @@ if (cgqc_setting_show_transition) then {
     titleText ["", "PLAIN"];
     switch (_type) do {
         case "role":{ 
-            _text_insert = cgqc_mk2_role;
+            _text_insert = cgqc_player_role;
             _text = ("<br/>" + "<br/>" + "<br/>" +"<t size='2' >Role: %1</t><br/>"); 
         };
         case "camo":{ 

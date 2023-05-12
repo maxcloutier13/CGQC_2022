@@ -7,4 +7,4 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
 sleep 0.5;
-cgqc_mk2_role_removed = true;
+cgqc_player_role_removed = true;

@@ -628,3 +628,13 @@ class CGQC_vic_t34: NORTH_FIN_41_T34_76_1941
 			"\north\NF_vehicles\fin\t26\data\Finnishtankmarkings.paa"
 			,"\north\NF_vehicles\fin\t26\data\Finnishtankmarkings.paa"};
 	};
+
+
+["Gatling_30mm_Plane_CAS_01_F","Rocket_04_HE_Plane_CAS_01_F","Bomb_04_Plane_CAS_01_F"]
+["Uns_NapalmLauncher_750_dl","uns_MK82SnakeLauncher_dl","Uns_CBU32BLauncher_dl","uns_ffar_launcher_dl","Uns_Mk84Launcher_dl"]
+
+judge
+["uns_suu11a_gunpod_dl","uns_ffar_launcher_dl"]
+["uns_M39E","CMFlareLauncher","Uns_ZuniLauncher_dl","uns_AGM12_Launcher_dl","Uns_CBU75Launcher_dl","uns_FuelTank_Launcher_dl"]
+
+["Uns_M2_4x20mm","Uns_CBU14ALauncher_dl","Uns_NapalmLauncher_750_dl","Uns_NapalmLauncher_500_dl","Uns_FFAR_FL_Launcher_dl","uns_suu11a_gunpod_dl","Uns_CBUM1ALauncher_dl"]

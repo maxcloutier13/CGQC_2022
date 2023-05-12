@@ -23,9 +23,9 @@ if (hasInterface) then {
         _uniform = "";
         _loadout = "";
         _radios = "";
-        cgqc_mk2_role = "";
-        cgqc_mk2_role_infantry = true;
-        cgqc_mk2_role_removed = false;
+        cgqc_player_role = "";
+        cgqc_player_role_infantry = true;
+        cgqc_player_role_removed = false;
 
         // Check if player in chill mode
         if (cgqc_player_chill) then {
@@ -35,7 +35,7 @@ if (hasInterface) then {
 
         // ===== Remove items ======================================================
         #include "\cgqc_2022\loadouts\mk2\remove_all.sqf"
-        waitUntil {cgqc_mk2_role_removed};
+        waitUntil {cgqc_player_role_removed};
         switch (_type) do {
             // Command ========================================================================
             case "hq":{ 
@@ -43,28 +43,28 @@ if (hasInterface) then {
                 _uniform = "command";
                 _loadout = "hq";
                 _radios = "hq";
-                cgqc_mk2_role = "HQ";
+                cgqc_player_role = "HQ";
             };
             case "sl":{ 
                 _perks = "hq";
                 _uniform = "command";
                 _loadout = "sl";
                 _radios = "hq";
-                cgqc_mk2_role = "Squad Leader";
+                cgqc_player_role = "Squad Leader";
             };
             case "tl_carb":{
                 _perks = "tl";
                 _uniform = "command";
                 _loadout = "tl_carb";
                 _radios = "spartan_1";
-                cgqc_mk2_role = "Team Leader";
+                cgqc_player_role = "Team Leader";
             };
             case "tl_cqb":{
                 _perks = "tl";
                 _uniform = "command";
                 _loadout = "tl_cqb";
                 _radios = "spartan_1";
-                cgqc_mk2_role = "Team Leader";
+                cgqc_player_role = "Team Leader";
             };
             // Infantry  ==========================================================================
             case "rifle_cqb":{
@@ -72,28 +72,28 @@ if (hasInterface) then {
                 _uniform = "inf_light";
                 _loadout = "rifle_cqb";
                 _radios = "spartan";
-                cgqc_mk2_role = "Rifleman (Mk18)";
+                cgqc_player_role = "Rifleman (Mk18)";
             };
             case "rifle_carb":{
                 _perks = "inf";
                 _uniform = "inf_light";
                 _loadout = "rifle_carb";
                 _radios = "spartan";
-                cgqc_mk2_role = "Rifleman (m4)";
+                cgqc_player_role = "Rifleman (m4)";
             };
             case "rifle_m16":{
                 _perks = "inf";
                 _uniform = "inf_light";
                 _loadout = "rifle_m16";
                 _radios = "spartan";
-                cgqc_mk2_role = "Rifleman (m16)";
+                cgqc_player_role = "Rifleman (m16)";
             };
             case "rifle_grenade":{
                 _perks = "inf";
                 _uniform = "inf_medium";
                 _loadout = "rifle_gren";
                 _radios = "spartan";
-                cgqc_mk2_role = "Grenadier";
+                cgqc_player_role = "Grenadier";
             };
             // AT ==========================================================================
             case "at_jav":{
@@ -101,14 +101,14 @@ if (hasInterface) then {
                 _uniform = "inf_heavy";
                 _loadout = "at_jav";
                 _radios = "spartan";
-                cgqc_mk2_role = "Anti-Tank (Javelin)";
+                cgqc_player_role = "Anti-Tank (Javelin)";
             };
             case "at_maaws":{
                 _perks = "at";
                 _uniform = "inf_heavy";
                 _loadout = "at_maaws";
                 _radios = "spartan";
-                cgqc_mk2_role = "Anti-Tank (MAAWS)";
+                cgqc_player_role = "Anti-Tank (MAAWS)";
             };
             // MG ==========================================================================
             case "hmg":{
@@ -116,14 +116,14 @@ if (hasInterface) then {
                 _uniform = "inf_medium";
                 _loadout = "hmg";
                 _radios = "spartan";
-                cgqc_mk2_role = "Machinegunner (Heavy)";
+                cgqc_player_role = "Machinegunner (Heavy)";
             };
             case "lmg":{
                 _perks = "mg";
                 _uniform = "inf_medium";
                 _loadout = "lmg";
                 _radios = "spartan";
-                cgqc_mk2_role = "Machinegunner (Light)";
+                cgqc_player_role = "Machinegunner (Light)";
             };
             // Specialists ==========================================================================
             case "eng":{
@@ -131,28 +131,28 @@ if (hasInterface) then {
                 _uniform = "eng";
                 _loadout = "eng";
                 _radios = "spartan";
-                cgqc_mk2_role = "Engineer";
+                cgqc_player_role = "Engineer";
             };
             case "med":{
                 _perks = "med";
                 _uniform = "med";
                 _loadout = "med";
                 _radios = "spartan_2";
-                cgqc_mk2_role = "Medic";
+                cgqc_player_role = "Medic";
             };
             case "mrksm":{
                 _perks = "inf";
                 _uniform = "inf_light";
                 _loadout = "mrksm";
                 _radios = "spartan";
-                cgqc_mk2_role = "Designated Marksman";
+                cgqc_player_role = "Designated Marksman";
             };
             case "mortar":{
                 _perks = "mortar";
                 _uniform = "inf_heavy";
                 _loadout = "mortar";
                 _radios = "spartan_2";
-                cgqc_mk2_role = "Mortier Léger";
+                cgqc_player_role = "Mortier Léger";
             };
             // Recon ==========================================================================
             case "drone":{
@@ -160,35 +160,35 @@ if (hasInterface) then {
                 _uniform = "recon";
                 _loadout = "drone";
                 _radios = "recon";
-                cgqc_mk2_role = "Drone Operator";
+                cgqc_player_role = "Drone Operator";
             };
             case "sniper":{
                 _perks = "recon";
                 _uniform = "recon";
                 _loadout = "sniper";
                 _radios = "recon";
-                cgqc_mk2_role = "Sniper m200";
+                cgqc_player_role = "Sniper m200";
             };
             case "sniper_ebr":{
                 _perks = "recon";
                 _uniform = "recon";
                 _loadout = "sniper_ebr";
                 _radios = "recon";
-                cgqc_mk2_role = "Sniper m14EBR";
+                cgqc_player_role = "Sniper m14EBR";
             };
             case "spotter":{
                 _perks = "recon";
                 _uniform = "recon";
                 _loadout = "spotter";
                 _radios = "recon";
-                cgqc_mk2_role = "Spotter";
+                cgqc_player_role = "Spotter";
             };
             case "jtac":{
                 _perks = "recon";
                 _uniform = "jtac";
                 _loadout = "jtac";
                 _radios = "jtac";
-                cgqc_mk2_role = "JTAC";
+                cgqc_player_role = "JTAC";
             };
             // Pilots and crews ===============================================================
             case "heli_pilot":{ 
@@ -196,40 +196,40 @@ if (hasInterface) then {
                 _uniform = "heli_pilot";
                 _loadout = "heli";
                 _radios = "griffon_pieton";
-                cgqc_mk2_role = "Helicopter Pilot";
-                cgqc_mk2_role_infantry = false;
+                cgqc_player_role = "Helicopter Pilot";
+                cgqc_player_role_infantry = false;
             };
             case "heli_crew":{
                 _perks = "heli_crew";
                 _uniform = "heli_crew";
                 _loadout = "heli";
                 _radios = "griffon_pieton";
-                cgqc_mk2_role = "Helicopter Crew";
-                cgqc_mk2_role_infantry = false;
+                cgqc_player_role = "Helicopter Crew";
+                cgqc_player_role_infantry = false;
             };
             case "jet_pilot":{ 
                 _perks = "jet_pilot";
                 _uniform = "jet_pilot";
                 _loadout = "jet_pilot";
                 _radios = "griffon_pieton";
-                cgqc_mk2_role = "Jet Pilot";
-                cgqc_mk2_role_infantry = false;
+                cgqc_player_role = "Jet Pilot";
+                cgqc_player_role_infantry = false;
             };
             case "tank_driver":{
                 _perks = "tank_driver";
                 _uniform = "tank_driver";
                 _loadout = "tank";
                 _radios = "centaure_pieton";
-                cgqc_mk2_role = "Tank Driver";
-                cgqc_mk2_role_infantry = false;
+                cgqc_player_role = "Tank Driver";
+                cgqc_player_role_infantry = false;
             };
             case "tank_crew":{
                 _perks = "tank_crew";
                 _uniform = "tank_driver";
                 _loadout = "tank";
                 _radios = "centaure_pieton";
-                cgqc_mk2_role = "Tank Crew";
-                cgqc_mk2_role_infantry = false;
+                cgqc_player_role = "Tank Crew";
+                cgqc_player_role_infantry = false;
             };
             default	{
                 hintc "mk2_role_switch.sqf fail";

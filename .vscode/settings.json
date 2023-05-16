@@ -3,5 +3,6 @@
     "files.associations": {
         "*.script": "javascript",
         "*.sqf": "cpp"
-    }
+    },
+    "C_Cpp.default.compilerPath": ""
 }

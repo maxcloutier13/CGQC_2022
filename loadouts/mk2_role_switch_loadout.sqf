@@ -33,6 +33,9 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_hq.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
+        //Switch strobe for double-flash
+        player removeItems "MS_Strobe_Mag_1" 
+        player addItemToUniform "MS_Strobe_Mag_2";
 	};
     case "sl":{ //=============================================================================================
         // === Weapons
@@ -45,6 +48,9 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_hq.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
+        //Switch strobe for double-flash
+        player removeItems "MS_Strobe_Mag_1" 
+        player addItemToUniform "MS_Strobe_Mag_2";
 	};
     case "tl_carb":{ //=============================================================================================
         // === Weapons
@@ -57,6 +63,9 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_tl.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
+        //Switch strobe for double-flash
+        player removeItems "MS_Strobe_Mag_1" 
+        player addItemToUniform "MS_Strobe_Mag_2";
 	};
     case "tl_cqb":{ //=============================================================================================
         // === Weapons
@@ -69,6 +78,9 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_tl.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
+        //Switch strobe for double-flash
+        player removeItems "MS_Strobe_Mag_1" 
+        player addItemToUniform "MS_Strobe_Mag_2";
 	};
     case "heli":{ //=============================================================================================
         // === Weapons

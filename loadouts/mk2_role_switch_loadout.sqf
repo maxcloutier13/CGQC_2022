@@ -34,8 +34,9 @@ switch (_type) do {
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
         //Switch strobe for double-flash
-        player removeItems "MS_Strobe_Mag_1" 
+        player removeItems "MS_Strobe_Mag_1"; 
         player addItemToUniform "MS_Strobe_Mag_2";
+        break;
 	};
     case "sl":{ //=============================================================================================
         // === Weapons
@@ -49,8 +50,9 @@ switch (_type) do {
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
         //Switch strobe for double-flash
-        player removeItems "MS_Strobe_Mag_1" 
+        player removeItems "MS_Strobe_Mag_1"; 
         player addItemToUniform "MS_Strobe_Mag_2";
+	    break;
 	};
     case "tl_carb":{ //=============================================================================================
         // === Weapons
@@ -64,8 +66,9 @@ switch (_type) do {
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
         //Switch strobe for double-flash
-        player removeItems "MS_Strobe_Mag_1" 
+        player removeItems "MS_Strobe_Mag_1"; 
         player addItemToUniform "MS_Strobe_Mag_2";
+	    break;
 	};
     case "tl_cqb":{ //=============================================================================================
         // === Weapons
@@ -79,8 +82,9 @@ switch (_type) do {
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
         //Switch strobe for double-flash
-        player removeItems "MS_Strobe_Mag_1" 
+        player removeItems "MS_Strobe_Mag_1"; 
         player addItemToUniform "MS_Strobe_Mag_2";
+	    break;
 	};
     case "heli":{ //=============================================================================================
         // === Weapons
@@ -91,6 +95,7 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_pilot.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
+	    break;
 	};
     case "jet_pilot":{ //=============================================================================================
         // === Weapons
@@ -103,6 +108,7 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
         // Remove superfluous nvgs
         player unlinkItem "JAS_GPNVG18_Full_blk_TI";
+	    break;
 	};
     case "tank":{ //=============================================================================================
         // === Weapons
@@ -117,6 +123,7 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
         player unlinkItem "ItemGPS";
         player linkItem "B_UavTerminal";
+        break;
 	};
     case "drone":{ //=============================================================================================
         // === Weapons
@@ -129,6 +136,7 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_recon.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
+        break;
 	};
     case "sniper":{ //=============================================================================================
         // === Weapons
@@ -141,6 +149,7 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_recon.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
+        break;
 	};
     case "sniper_ebr":{ //=============================================================================================
         // === Weapons
@@ -153,6 +162,7 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_recon.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
+        break;
 	};
     case "spotter":{ //=============================================================================================
         // === Weapons
@@ -165,6 +175,7 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_recon.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
+        break;
 	};
     case "jtac":{ //=============================================================================================
         // === Weapons
@@ -177,6 +188,7 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_jtac.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
+        break;
 	};
     case "eng":{ //=============================================================================================
         // === Remove pistol and use mine detector instead
@@ -193,6 +205,7 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
         player unlinkItem "ItemGPS";
         player linkItem "B_UavTerminal";
+        break;
 	};
     case "med":{ //=============================================================================================
         // === Weapons
@@ -205,6 +218,7 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_2ic.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
+        break;
 	};
     case "at_jav":{ //=============================================================================================
         // === Javelin
@@ -220,6 +234,7 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
+        break;
 	};
     case "at_maaws":{ //=============================================================================================
         // === MAAWS
@@ -235,6 +250,7 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
+        break;
 	};
     case "hmg":{ //=============================================================================================
         // === Weapons
@@ -247,6 +263,7 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
+        break;
 	};
     case "lmg":{ //=============================================================================================
         // === Weapons
@@ -259,6 +276,7 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
+        break;
 	};
     case "mrksm":{ //=============================================================================================
         // === Weapons
@@ -273,6 +291,7 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
         player unlinkItem "ItemGPS";
         player linkItem "B_UavTerminal";
+        break;
 	};
     case "mortar":{ //=============================================================================================
         // === Portable mortar
@@ -287,6 +306,7 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_2ic.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
+        break;
 	};
     case "rifle_cqb":{ //=============================================================================================
         // === Weapons
@@ -301,6 +321,7 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
         // Jetable
         player addWeapon "rhs_weap_m72a7";
+        break;
 	};
     case "rifle_carb":{ //=============================================================================================
         // === Weapons
@@ -315,6 +336,7 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
         // Jetable
         player addWeapon "rhs_weap_m72a7";
+        break;
 	};
     case "rifle_m16":{ //=============================================================================================
         // === Weapons
@@ -329,6 +351,7 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
         // Jetable
         player addWeapon "rhs_weap_m72a7";
+        break;
 	};
     case "rifle_gren":{ //=============================================================================================
         // === Weapons
@@ -341,6 +364,7 @@ switch (_type) do {
         #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
+        break;
 	};
     default	{
 		hint "mk2_role_switch_loadout.sqf fail";

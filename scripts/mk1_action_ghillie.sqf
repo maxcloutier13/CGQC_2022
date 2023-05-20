@@ -11,29 +11,34 @@ if (hasInterface) then {
 			_ghillie = "U_B_FullGhillie_ard";
 			hintSilent "Ghillie: Arid";
 			_to_ghillie = 1;
+            break;
 		};
 		case "sarid":
 		{
 			_ghillie = "U_B_FullGhillie_sard";
 			hintSilent "Ghillie: Semi-Arid";
 			_to_ghillie = 1;
+            break;
 		};
 		case "lush":
 		{
 			_ghillie = "U_B_FullGhillie_lsh";
 			hintSilent "Ghillie: Lush";
 			_to_ghillie = 1;
+            break;
 		};
 		case "jungle":
 		{
 			_ghillie = "U_B_T_FullGhillie_tna_F";
 			hintSilent "Ghillie: Jungle";
 			_to_ghillie = 1;
+            break;
 		};
 		case "uniform":
 		{
 			hintSilent "Ghillie: Back to Uniform";
 			_to_ghillie = 2;
+            break;
 		};
 		default
 		{
@@ -64,6 +69,7 @@ if (hasInterface) then {
 			//Lower the camouflage level of unit in ghillie
 			player setUnitTrait ["camouflageCoef", 0.2];
 			ghillie_isOn = 1;
+            break;
 		};
 		case 2:// Change back to uniform
 		{
@@ -84,6 +90,7 @@ if (hasInterface) then {
 			player setVariable ["BIS_fnc_setUnitInsignia_class", nil]; //Remove patch
 			[ player, cgqc_player_patch ] call BIS_fnc_setUnitInsignia;
 			ghillie_isOn = 0;
+            break;
 		};
 		default
 		{

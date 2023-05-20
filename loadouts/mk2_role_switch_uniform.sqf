@@ -53,6 +53,7 @@ switch (_type) do {
             _backpack =  "cgqc_pack_mk1_carryall";
         };
         _helmet =  "cgqc_helmet_mk1";
+        break;
 	};
     case "heli_pilot":{ //=============================================================================================
         player forceAddUniform "cgqc_uniform_mk1_helipilot";
@@ -60,6 +61,7 @@ switch (_type) do {
         _backpack =  "CGQC_units_mk1_4_Pilot_heli_pack";
         _helmet =  "cgqc_helmet_heli_black";
         _face =  "G_mas_can_wrap_B";
+        break;
 	};
     case "jet_pilot":{ //=============================================================================================
         player forceAddUniform "cgqc_uniform_mk1_jetpilot";
@@ -67,6 +69,7 @@ switch (_type) do {
         _backpack =  "CGQC_units_mk1_4_Pilot_heli_pack";
         _helmet =  "cgqc_helmet_mk1_jetpilot";
         _face =  "G_mas_can_balaM_T";
+        break;
 	};
     case "heli_crew":{ //=============================================================================================
         player forceAddUniform "cgqc_uniform_mk1_helipilot";
@@ -74,17 +77,20 @@ switch (_type) do {
         _backpack =  "CGQC_units_mk1_4_Pilot_heli_pack";
         _helmet =  "cgqc_helmet_crew_black";
         _face =  "G_mas_can_wrap_B";
+        break;
 	};
     case "tank_driver":{ //=============================================================================================
         _vest = "cgqc_vest_mk1_driver";
         _backpack =  "cgqc_pack_mk1_tank_driver";
         _helmet =  "cgqc_helmet_mk1_tank";
         _face =  "G_mas_can_wrap_gog_B";
+        break;
 	};
     case "recon":{ //=============================================================================================
         _vest = "cgqc_vest_mk1_tan_lr";
         _backpack =  "cgqc_pack_mk1_kitbag";
         _helmet =  "cgqc_helmet_mk1";
+        break;
 	};
     case "jtac":{ //=============================================================================================
         _vest = "cgqc_vest_mk1_tan_lr";
@@ -94,31 +100,37 @@ switch (_type) do {
             _backpack =  "cgqc_pack_mk1_carryall";
         };
         _helmet =  "cgqc_helmet_mk1";
+        break;
 	};
     case "eng":{ //=============================================================================================
         _vest = "cgqc_vest_mk1_tan_ar";
         _backpack =  "cgqc_pack_mk1_carryall";
         _helmet =  "cgqc_helmet_mk1";
+        break;
     };  
     case "med":{ //=============================================================================================
         _vest = "cgqc_vest_mk1_tan_rf";
         _backpack =  "cgqc_pack_mk1_carryall";
         _helmet =  "cgqc_helmet_mk1_medic";
+        break;
     };
     case "inf_light":{ //=============================================================================================
         _vest = "cgqc_vest_mk1_tan";
         _backpack =  "cgqc_pack_mk1_assault";
         _helmet =  "cgqc_helmet_mk1";
+        break;
     };
     case "inf_medium":{ //=============================================================================================
         _vest = "cgqc_vest_mk1_tan_lr";
         _backpack =  "cgqc_pack_mk1_kitbag";
         _helmet =  "cgqc_helmet_mk1";
+        break;
     };
     case "inf_heavy":{ //=============================================================================================
         _vest = "cgqc_vest_mk1_tan_lr";
         _backpack =  "cgqc_pack_mk1_carryall";
         _helmet =  "cgqc_helmet_mk1";
+        break;
     };
     default {
 	    hint "mk2_role_switch_uniform.sqf fail";

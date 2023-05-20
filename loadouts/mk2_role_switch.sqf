@@ -44,6 +44,7 @@ if (hasInterface) then {
                 _loadout = "hq";
                 _radios = "hq";
                 cgqc_player_role = "HQ";
+                break;
             };
             case "sl":{ 
                 _perks = "hq";
@@ -51,6 +52,7 @@ if (hasInterface) then {
                 _loadout = "sl";
                 _radios = "hq";
                 cgqc_player_role = "Squad Leader";
+                break;
             };
             case "tl_carb":{
                 _perks = "tl";
@@ -58,6 +60,7 @@ if (hasInterface) then {
                 _loadout = "tl_carb";
                 _radios = "spartan_1";
                 cgqc_player_role = "Team Leader";
+                break;
             };
             case "tl_cqb":{
                 _perks = "tl";
@@ -65,6 +68,7 @@ if (hasInterface) then {
                 _loadout = "tl_cqb";
                 _radios = "spartan_1";
                 cgqc_player_role = "Team Leader";
+                break;
             };
             // Infantry  ==========================================================================
             case "rifle_cqb":{
@@ -73,6 +77,7 @@ if (hasInterface) then {
                 _loadout = "rifle_cqb";
                 _radios = "spartan";
                 cgqc_player_role = "Rifleman (Mk18)";
+                break;
             };
             case "rifle_carb":{
                 _perks = "inf";
@@ -80,6 +85,7 @@ if (hasInterface) then {
                 _loadout = "rifle_carb";
                 _radios = "spartan";
                 cgqc_player_role = "Rifleman (m4)";
+                break;
             };
             case "rifle_m16":{
                 _perks = "inf";
@@ -87,6 +93,7 @@ if (hasInterface) then {
                 _loadout = "rifle_m16";
                 _radios = "spartan";
                 cgqc_player_role = "Rifleman (m16)";
+                break;
             };
             case "rifle_grenade":{
                 _perks = "inf";
@@ -94,6 +101,7 @@ if (hasInterface) then {
                 _loadout = "rifle_gren";
                 _radios = "spartan";
                 cgqc_player_role = "Grenadier";
+                break;
             };
             // AT ==========================================================================
             case "at_jav":{
@@ -102,6 +110,7 @@ if (hasInterface) then {
                 _loadout = "at_jav";
                 _radios = "spartan";
                 cgqc_player_role = "Anti-Tank (Javelin)";
+                break;
             };
             case "at_maaws":{
                 _perks = "at";
@@ -109,6 +118,7 @@ if (hasInterface) then {
                 _loadout = "at_maaws";
                 _radios = "spartan";
                 cgqc_player_role = "Anti-Tank (MAAWS)";
+                break;
             };
             // MG ==========================================================================
             case "hmg":{
@@ -117,6 +127,7 @@ if (hasInterface) then {
                 _loadout = "hmg";
                 _radios = "spartan";
                 cgqc_player_role = "Machinegunner (Heavy)";
+                break;
             };
             case "lmg":{
                 _perks = "mg";
@@ -124,6 +135,7 @@ if (hasInterface) then {
                 _loadout = "lmg";
                 _radios = "spartan";
                 cgqc_player_role = "Machinegunner (Light)";
+                break;
             };
             // Specialists ==========================================================================
             case "eng":{
@@ -132,6 +144,7 @@ if (hasInterface) then {
                 _loadout = "eng";
                 _radios = "spartan";
                 cgqc_player_role = "Engineer";
+                break;
             };
             case "med":{
                 _perks = "med";
@@ -139,6 +152,7 @@ if (hasInterface) then {
                 _loadout = "med";
                 _radios = "spartan_2";
                 cgqc_player_role = "Medic";
+                break;
             };
             case "mrksm":{
                 _perks = "inf";
@@ -146,6 +160,7 @@ if (hasInterface) then {
                 _loadout = "mrksm";
                 _radios = "spartan";
                 cgqc_player_role = "Designated Marksman";
+                break;
             };
             case "mortar":{
                 _perks = "mortar";
@@ -153,6 +168,7 @@ if (hasInterface) then {
                 _loadout = "mortar";
                 _radios = "spartan_2";
                 cgqc_player_role = "Mortier Léger";
+                break;
             };
             // Recon ==========================================================================
             case "drone":{
@@ -161,6 +177,7 @@ if (hasInterface) then {
                 _loadout = "drone";
                 _radios = "recon";
                 cgqc_player_role = "Drone Operator";
+                break;
             };
             case "sniper":{
                 _perks = "recon";
@@ -168,6 +185,7 @@ if (hasInterface) then {
                 _loadout = "sniper";
                 _radios = "recon";
                 cgqc_player_role = "Sniper m200";
+                break;
             };
             case "sniper_ebr":{
                 _perks = "recon";
@@ -175,6 +193,7 @@ if (hasInterface) then {
                 _loadout = "sniper_ebr";
                 _radios = "recon";
                 cgqc_player_role = "Sniper m14EBR";
+                break;
             };
             case "spotter":{
                 _perks = "recon";
@@ -182,6 +201,7 @@ if (hasInterface) then {
                 _loadout = "spotter";
                 _radios = "recon";
                 cgqc_player_role = "Spotter";
+                break;
             };
             case "jtac":{
                 _perks = "recon";
@@ -189,6 +209,7 @@ if (hasInterface) then {
                 _loadout = "jtac";
                 _radios = "jtac";
                 cgqc_player_role = "JTAC";
+                break;
             };
             // Pilots and crews ===============================================================
             case "heli_pilot":{ 
@@ -198,6 +219,7 @@ if (hasInterface) then {
                 _radios = "griffon_pieton";
                 cgqc_player_role = "Helicopter Pilot";
                 cgqc_player_role_infantry = false;
+                break;
             };
             case "heli_crew":{
                 _perks = "heli_crew";
@@ -206,6 +228,7 @@ if (hasInterface) then {
                 _radios = "griffon_pieton";
                 cgqc_player_role = "Helicopter Crew";
                 cgqc_player_role_infantry = false;
+                break;
             };
             case "jet_pilot":{ 
                 _perks = "jet_pilot";
@@ -214,6 +237,7 @@ if (hasInterface) then {
                 _radios = "griffon_pieton";
                 cgqc_player_role = "Jet Pilot";
                 cgqc_player_role_infantry = false;
+                break;
             };
             case "tank_driver":{
                 _perks = "tank_driver";
@@ -222,6 +246,7 @@ if (hasInterface) then {
                 _radios = "centaure_pieton";
                 cgqc_player_role = "Tank Driver";
                 cgqc_player_role_infantry = false;
+                break;
             };
             case "tank_crew":{
                 _perks = "tank_crew";
@@ -230,6 +255,7 @@ if (hasInterface) then {
                 _radios = "centaure_pieton";
                 cgqc_player_role = "Tank Crew";
                 cgqc_player_role_infantry = false;
+                break;
             };
             default	{
                 hintc "mk2_role_switch.sqf fail";

@@ -2,7 +2,7 @@
     "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
         "*.script": "javascript",
-        "*.sqf": "cpp"
+        "*.sqf": "sqf"
     },
     "C_Cpp.default.compilerPath": ""
 }

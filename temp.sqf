@@ -251,56 +251,67 @@ switch (_prefix) do {
 	{
 		player setRank "PRIVATE";
 		hint "Soldat";
+		break;
 	};
 	case "Cpl.":
 	{
 		player setRank "CORPORAL";
 		hint "Caporal";
+		break;
 	};
 	case "CplC":
 	{
 		player setRank "CORPORAL";
 		hint "Caporal-Chef";
+		break;
 	};
 	case "Sgt.":
 	{
 		player setRank "SERGEANT";
 		hint "Sergeant";
+		break;
 	};
 	case "Adju":
 	{
 		player setRank "SERGEANT";
 		hint "Adjudent";
+		break;
 	};
 	case "SLt.":
 	{
 		player setRank "LIEUTENANT";
 		hint "Sous-Lieutenant";
+		break;
 	};
 	case "Lt. ":
 	{
 		player setRank "LIEUTENANT";
 		hint "Lieutenant";
+		break;
 	};
 	case "Capt":
 	{
 		player setRank "CAPTAIN";
 		hint "Capitaine";
+		break;
 	};
 	case "Maj.":
 	{
 		player setRank "MAJOR";
 		hint "Major";
+		break;
 	};
 	case "LCol":
 	{
 		player setRank "COLONEL";
 		hint "Lieutenant-Colonel";
+		break;
 	};
 	case "Col.":
 	{
 		player setRank "COLONEL";
 		hint "Colonel";
+		break;
 	};
 	default
 	{
@@ -638,3 +649,11 @@ judge
 ["uns_M39E","CMFlareLauncher","Uns_ZuniLauncher_dl","uns_AGM12_Launcher_dl","Uns_CBU75Launcher_dl","uns_FuelTank_Launcher_dl"]
 
 ["Uns_M2_4x20mm","Uns_CBU14ALauncher_dl","Uns_NapalmLauncher_750_dl","Uns_NapalmLauncher_500_dl","Uns_FFAR_FL_Launcher_dl","uns_suu11a_gunpod_dl","Uns_CBUM1ALauncher_dl"]
+
+
+
+cd /E "E:\SteamLibrary\steamapps\common\Arma 3" "E:\SteamLibrary\steamapps\common\Arma 3\arma3server.exe" -client -connect=70.51.191.157 -port=2302 -password=147 -mod=
+@CBA_A3;@RHSAFRF;@RHSGREF;@RHSSAF;@RHSUSAF;@JSRS SOUNDMOD;@3CB Factions;
+@CUP Terrains - Core;@ACRE2;@Gruppe Adler Trenches;@Antistasi Plus;
+@Virolahti - Valtatie 7;
+@CGQC - Core - mk3;@CGQC - Addons;@CGQC - Addons -AntiPlus;

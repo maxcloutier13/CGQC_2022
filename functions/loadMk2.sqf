@@ -22,31 +22,37 @@ _type = _this select 0;
 			hint "Arsenal: Complet";
 			_items = cgqc_mk2_arsenal_8;
 			_found = true;
+			break;
 		};
 		case 1: { 
 			hint "Arsenal: Soldat";
 			_items = cgqc_mk2_arsenal_1;
 			_found = true;
+			break;
 		};
 		case 2: { 
 			hint "Arsenal: Caporal";
 			_items = cgqc_mk2_arsenal_2;
 			_found = true;
+			break;
 		};
 		case 3: { 
 			hint "Arsenal: Caporal-Chef";
 			_items = cgqc_mk2_arsenal_3;
 			_found = true;
+			break;
 		};
 		case 4: { 
 			hint "Arsenal: Sergent";
 			_items = cgqc_mk2_arsenal_4;
 			_found = true;
+			break;
 		};
 		case 5: { 
 			hint "Arsenal: Zeus";
 			_zeus = true;
 			[player, player, true] call ace_arsenal_fnc_openBox;
+			break;
 		};
 		default	{
 			hintc "fnc_loadMk2 fucked up. ";

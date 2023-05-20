@@ -34,7 +34,8 @@ try {
 			_uniform_new = "23rd_logo_U_combatshirt_moss";
 			_vest_new = "23rd_logo_carrier_light_moss";
 			_backpack_new = "23rd_logo_civbag_moss";   
-			_goggles_new = player_goggles_old;  
+			_goggles_new = player_goggles_old; 
+			break; 
 		};
 		case "23_multi":
 		{
@@ -43,6 +44,7 @@ try {
 			_vest_new = "23rd_logo_carrier_light_multi";
 			_backpack_new = "23rd_logo_civbag_multi";   
 			_goggles_new = player_goggles_old;  
+			break; 
 		};
 		case "23_frost":
 		{
@@ -50,7 +52,8 @@ try {
 			_uniform_new = "23rd_logo_U_combatshirt_win";
 			_vest_new = "23rd_logo_carrier_light_win";
 			_backpack_new = "23rd_logo_civbag_win";  
-			_goggles_new = player_goggles_old; 
+			_goggles_new = player_goggles_old;  
+			break;
 		};
 		case "23_tard": 
 		{
@@ -58,7 +61,8 @@ try {
 			_uniform_new = "23rd_logo_U_shirt2";
 			_vest_new = "23rd_logo_carrier_light_tard";
 			_backpack_new = "23rd_logo_civbag_tard";  
-			_goggles_new = player_goggles_old; 
+			_goggles_new = player_goggles_old;  
+			break;
 		};
 		default // Normal camo switch
 		{

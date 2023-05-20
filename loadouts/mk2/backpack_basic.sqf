@@ -21,4 +21,4 @@ player addItemToBackpack "SmokeShellBlue";
 player addItemToBackpack "SmokeShellBlue";
 player addItemToBackpack "SmokeShellRed";
 player addItemToBackpack "SmokeShellRed";
-player addItemToBackpack "B_IR_Grenade";
+player addItemToUniform "MS_Strobe_Mag_1";

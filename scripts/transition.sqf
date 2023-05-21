@@ -9,23 +9,19 @@ if (cgqc_setting_show_transition) then {
     switch (_type) do {
         case "role":{ 
             _text_insert = cgqc_player_role;
-            _text = ("<br/>" + "<br/>" + "<br/>" +"<t size='2' >Role: %1</t><br/>");
-            break; 
+            _text = ("<br/>" + "<br/>" + "<br/>" +"<t size='2' >Role: %1</t><br/>"); 
         };
         case "camo":{ 
             _text_insert = format ["camo %1", _type];
             _text = ("<br/>" + "<br/>" + "<br/>" +"<t size='2' >Changement de %1</t><br/>");
-            break;
         };
         case "diver":{
             _text_insert = "Plongeur";
             _text = ("<br/>" + "<br/>" + "<br/>" +"<t size='2' >Kit: %1</t><br/>");
-            break;
         };
         case "para":{
             _text_insert = "Parachutiste";
             _text = ("<br/>" + "<br/>" + "<br/>" +"<t size='2' >Kit: %1</t><br/>");
-            break;
         };
     };
     //Pop le texte

@@ -12,7 +12,7 @@ for "_i" from 1 to 4 do {
     player addItemToBackpack "rhsusf_m112_mag";
 };
 player addItemToBackpack "rhsusf_m112x4_mag";
-
+player addItemToBackpack "tsp_lockpick";
 player addItemToBackpack "tsp_frameCharge_mag";
 player addItemToBackpack "tsp_stickCharge_mag";
 player addItemToBackpack "tsp_stickCharge_mag";

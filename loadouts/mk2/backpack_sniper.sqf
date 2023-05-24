@@ -14,6 +14,7 @@ player addItemToBackpack "rhsusf_mine_m14_mag";
 player addItemToBackpack "rhsusf_mine_m14_mag";
 player addItemToBackpack "rhsusf_mine_m14_mag";
 player addItemToBackpack "rhsusf_mine_m14_mag";
+player addItemToBackpack "tsp_lockpick";
 player addItemToBackpack "KNB_PanelGreen";
 if (!cgqc_config_sidearm_2023) then {
     player addItemToBackpack cgqc_config_sidearm_mag_2023;

@@ -18,6 +18,7 @@ player addItemToBackpack "KNB_PanelGreen";
 // === Comms =======================================
 player removeItem "ItemAndroid"; //Remove default cell
 player addItemToBackpack "ItemcTab";
+player addItemToBackpack "tsp_lockpick";
 player addItemToBackpack "tsp_stickCharge_auto_mag";
 player addItemToBackpack "tsp_stickCharge_auto_mag";
 player addItemToBackpack "tsp_popperCharge_auto_mag";

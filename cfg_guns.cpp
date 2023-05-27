@@ -5,14 +5,11 @@ class rhs_weap_mk18;
 class Tier1_MK46_Mod1_Savit;
 class Tier1_MK48_Mod0;
 class cgqc_gun_hk417_wood;
-class launch_MRAWS_green_F;
 class arifle_mas_can_mp7_F;
 class rhs_weap_mk18_m320;
 class launch_B_Titan_short_F;
 class srifle_LRR_F;
 class arifle_SPAR_03_blk_F;
-class Rangefinder;
-class Laserdesignator_03;
 class CBA_MiscItem_ItemInfo;
 class CBA_MiscItem;
 class rhs_weap_m16a4_imod;
@@ -60,22 +57,7 @@ class cgqc_item_helmetCam : CBA_MiscItem
 		mass = 1;
 	};
 };
-class cgqc_item_rangefinder : Rangefinder
-{
-	scope = 2;
-	author = "silent1";
-	_generalMacro = "cgqc_item_rangefinder";
-	baseWeapon = "cgqc_item_rangefinder";
-	displayName = "CGQC Rangefinder ";
-};
-class cgqc_item_laserdesignator : Laserdesignator_03
-{
-	scope = 2;
-	author = "silent1";
-	_generalMacro = "cgqc_item_laserdesignator";
-	baseWeapon = "cgqc_item_laserdesignator";
-	displayName = "CGQC Laser Designator";
-};
+
 // Basic guns -----------------------------------------------------------------------------------
 class cgqc_gun_mk1_m4a1blkII : rhs_weap_m4a1_blockII
 {
@@ -202,20 +184,6 @@ class cgqc_gun_mk1_mk48 : Tier1_MK48_Mod0
 			slot = "UnderBarrelSlot";
 			item = "Tier1_SAW_Bipod_2_KAC";
 		};
-	};
-};
-class cgqc_gun_mk1_MAAWS : launch_MRAWS_green_F
-{
-	scope = 2;
-	author = "silent1";
-	_generalMacro = "cgqc_gun_mk1_MAAWS";
-	baseWeapon = "cgqc_gun_mk1_MAAWS";
-	displayName = "CGQC MAAWS";
-	hiddenSelectionsTextures[] = {
-		"\CGQC_2022\guns\cgqc_gun_maaws_darkgreen",
-		"\A3\Weapons_F_Tank\Launchers\MRAWS\Data\launch_MRAWS_02_F_co"};
-	class LinkedItems
-	{
 	};
 };
 class cgqc_gun_mk1_mp7 : arifle_mas_can_mp7_F
@@ -409,35 +377,6 @@ class cgqc_gun_mk1_p90_khaki : cgqc_gun_mk1_p90
 	hiddenSelectionsTextures[] = {"\A3\Weapons_F_Mod\SMGs\SMG_03\data\body_khaki_co.paa"};
 };
 
-// Custom skins ----------------------------------------------------------
-class cgqc_gun_mk1_MAAWS_cadpat : launch_MRAWS_green_F 
-{
-	scope = 2;
-	author = "silent1";
-	_generalMacro = "cgqc_gun_mk1_MAAWS_cadpat";
-	baseWeapon = "cgqc_gun_mk1_MAAWS_cadpat";
-	displayName = "CGQC MAAWS - Cadpat";
-	hiddenSelectionsTextures[] = {
-	"\CGQC_2022\guns\cgqc_gun_MAAWS_cadpat",
-	"\A3\Weapons_F_Tank\Launchers\MRAWS\Data\launch_MRAWS_02_F_co"};
-	class LinkedItems
-	{
-	};
-};
-class cgqc_gun_mk1_MAAWS_woodland : launch_MRAWS_green_F 
-{
-	scope = 2;
-	author = "silent1";
-	_generalMacro = "cgqc_gun_mk1_MAAWS_woodland";
-	baseWeapon = "cgqc_gun_mk1_MAAWS_woodland";
-	displayName = "CGQC MAAWS - Woodland";
-	hiddenSelectionsTextures[] = {
-	"\CGQC_2022\guns\cgqc_gun_maaws_woodland",
-	"\A3\Weapons_F_Tank\Launchers\MRAWS\Data\launch_MRAWS_02_F_co"};
-	class LinkedItems
-	{
-	};
-};
 class cgqc_gun_mk1_mk12_woodland : gtr_weap_Mk12_Base
 {
 	scope = 2;
@@ -853,18 +792,4 @@ class cgqc_gun_mk1_mk18_fortin : cgqc_gun_mk1_mk18
 								  "rhsusf\addons\rhsusf_weapons\m4\data\m4acc_co.paa",
 								  "rhsusf\addons\rhsusf_weapons\m4\data\magpulstock_co.paa",
 								  "\rhsusf\addons\rhsusf_weapons\m320\data\m320_co.paa"};
-};
-class cgqc_gun_mk1_MAAWS_laforest : launch_MRAWS_green_F 
-{
-	scope = 2;
-	author = "silent1";
-	_generalMacro = "cgqc_gun_mk1_MAAWS_laforest";
-	baseWeapon = "cgqc_gun_mk1_MAAWS_laforest";
-	displayName = "CGQC - Le Scalpel de Laforest";
-	hiddenSelectionsTextures[] = {
-	"\CGQC_2022\guns\cgqc_gun_maaws_laforest",
-	"\A3\Weapons_F_Tank\Launchers\MRAWS\Data\launch_MRAWS_02_F_co"};
-	class LinkedItems
-	{
-	};
 };

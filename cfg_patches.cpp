@@ -276,7 +276,6 @@ class CfgPatches
 			"cgqc_gun_mk1_Javelin",
 			"cgqc_gun_mk1_p90",
 			"cgqc_gun_mk1_p90_khaki",
-			"cgqc_item_rangefinder",
 			"cgqc_gun_mk1_hk417_tremblay",
 			"cgqc_gun_mk1_hk417_canpat",
 			"cgqc_gun_mk1_hk417_wood"};

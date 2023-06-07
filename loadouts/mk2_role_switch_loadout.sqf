@@ -116,7 +116,7 @@ switch (_type) do {
         // === Radios 
         #include "\cgqc_2022\loadouts\mk2\radios_recon.sqf"
         // === Items 
-        #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
+        #include "\cgqc_2022\loadouts\mk2\items_recon.sqf"
 	};
     case "sniper":{ //=============================================================================================
         // === Weapons
@@ -128,7 +128,7 @@ switch (_type) do {
         // === Radios 
         #include "\cgqc_2022\loadouts\mk2\radios_recon.sqf"
         // === Items 
-        #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
+        #include "\cgqc_2022\loadouts\mk2\items_recon.sqf"
 	};
     case "sniper_ebr":{ //=============================================================================================
         // === Weapons
@@ -140,7 +140,7 @@ switch (_type) do {
         // === Radios 
         #include "\cgqc_2022\loadouts\mk2\radios_recon.sqf"
         // === Items 
-        #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
+        #include "\cgqc_2022\loadouts\mk2\items_recon.sqf"
 	};
     case "spotter":{ //=============================================================================================
         // === Weapons
@@ -152,7 +152,7 @@ switch (_type) do {
         // === Radios 
         #include "\cgqc_2022\loadouts\mk2\radios_recon.sqf"
         // === Items 
-        #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
+        #include "\cgqc_2022\loadouts\mk2\items_recon.sqf"
 	};
     case "jtac":{ //=============================================================================================
         // === Weapons
@@ -164,7 +164,7 @@ switch (_type) do {
         // === Radios 
         #include "\cgqc_2022\loadouts\mk2\radios_jtac.sqf"
         // === Items 
-        #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
+        #include "\cgqc_2022\loadouts\mk2\items_recon.sqf"
 	};
     case "eng":{ //=============================================================================================
         // === Remove pistol and use mine detector instead
@@ -258,9 +258,7 @@ switch (_type) do {
         // === Radios 
         #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
-        #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
-        player unlinkItem "ItemGPS";
-        player linkItem "B_UavTerminal";
+        #include "\cgqc_2022\loadouts\mk2\items_recon.sqf"
 	};
     case "mortar":{ //=============================================================================================
         // === Portable mortar
@@ -274,7 +272,7 @@ switch (_type) do {
         // === Radios 
         #include "\cgqc_2022\loadouts\mk2\radios_2ic.sqf"
         // === Items 
-        #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
+        #include "\cgqc_2022\loadouts\mk2\items_recon.sqf"
 	};
     case "rifle_cqb":{ //=============================================================================================
         // === Weapons

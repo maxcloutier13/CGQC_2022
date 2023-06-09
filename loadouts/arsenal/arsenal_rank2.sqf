@@ -188,7 +188,7 @@ cgqc_mk2_arsenal_rank2 = [
     "rhs_weap_rsp30_white",
     "rhs_weap_rsp30_green",
     "rhs_weap_rsp30_red",
-    "hgun_esd_01_F"
+    "hgun_esd_01_F",
     // --- Ammo 
     "UK3CB_BHP_9_13Rnd",
     "6Rnd_45ACP_Cylinder",

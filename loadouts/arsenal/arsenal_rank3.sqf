@@ -6,6 +6,9 @@ cgqc_mk2_arsenal_rank3 = [
     "ToolKit", 
     "ACE_DefusalKit",
     "ACE_M26_Clacker",
+    "Rev_demine_item",
+    "ACE_VMH3",
+    "ACE_VMM3",
     // Meds -----------------------------------
     "ACE_epinephrine", 
     "ACE_morphine", 
@@ -68,6 +71,12 @@ cgqc_mk2_arsenal_rank3 = [
     "ACE_20Rnd_762x51_M993_AP_Mag",
     "ACE_20Rnd_762x51_Mag_Tracer",  
     "ACE_20Rnd_762x51_Mag_SD",
+    // Shotguns ------------------------------------
+    "sgun_mas_can_benelli_F",
+    "rhs_weap_M590_8RD",
+    "rhs_weap_M590_5RD",
+    // --- Ammo
+
     // Explosives -----------------------------------
     "rhsusf_m112_mag",
     "rhsusf_m112x4_mag", 

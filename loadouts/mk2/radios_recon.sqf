@@ -1,4 +1,5 @@
 // === Recon Radios ================================
+player addItemToUniform "ACRE_PRC343";
 player addItemToUniform "ACRE_PRC152";
 player addItemToUniform "ACRE_PRC152";
 // Delete event in case it exists

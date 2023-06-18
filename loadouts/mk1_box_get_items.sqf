@@ -16,7 +16,7 @@ do
 		hintSilent "148 ajoutée";
 	};
 	case "earplugs": {
-		player addItemToUniform "ACE_EarPlugs";
+		player addItem "ACE_EarPlugs";
 		hintSilent "earplugs ajoutés";
 	};
 	case "bandages": {

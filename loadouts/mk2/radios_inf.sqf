@@ -1,6 +1,6 @@
 // === Infantry Radios ================================
-player addItemToUniform "ACRE_PRC343";
-player addItemToUniform "ACRE_PRC148";
+player addItem "ACRE_PRC343";
+player addItem "ACRE_PRC148";
 // Event with notifications if they try to communicate on ch:1
 cgqc_event_148 = ["acre_startedSpeaking", {	
  params ["_unit", "_onRadio", "_radioId", "_speakingType"];	

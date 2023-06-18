@@ -1,6 +1,6 @@
 // === Pilot Radios ================================
-player addItemToUniform "ACRE_PRC152";
-player addItemToUniform "ACRE_PRC152";
+player addItem "ACRE_PRC152";
+player addItem "ACRE_PRC152";
 // Delete event in case it exists
 
 if(!isNil "cgqc_event_148") then {

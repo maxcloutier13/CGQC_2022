@@ -3,9 +3,6 @@
 for "_i" from 1 to 10 do {
 	player addItemToBackpack "ACE_fieldDressing";
 };
-for "_i" from 1 to 10 do {
-	player addItemToBackpack "FF_Painkiller";
-};
 player addItemToBackpack "ACE_salineIV_500";
 player addItemToBackpack "ACE_salineIV_500";
 player addItemToBackpack "ACE_bodyBag";

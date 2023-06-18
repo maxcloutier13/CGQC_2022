@@ -76,6 +76,19 @@ cgqc_mk2_arsenal_rank3 = [
     "rhs_weap_M590_8RD",
     "rhs_weap_M590_5RD",
     // --- Ammo
+    "rhsusf_5Rnd_00Buck",
+    "rhsusf_5Rnd_doomsday_Buck",
+    "rhsusf_5Rnd_Slug",
+    "rhsusf_5Rnd_HE",
+    "rhsusf_5Rnd_FRAG",
+    "rhsgref_1Rnd_00Buck",
+    "rhsgref_1Rnd_Slug",
+    "ACE_2Rnd_12Gauge_Pellets_No0_Buck",
+    "ACE_2Rnd_12Gauge_Pellets_No1_Buck",
+    "ACE_2Rnd_12Gauge_Pellets_No2_Buck",
+    "ACE_2Rnd_12Gauge_Pellets_No3_Buck",
+    "ACE_2Rnd_12Gauge_Pellets_No4_Buck",
+    "ACE_2Rnd_12Gauge_Pellets_No4_Bird",
 
     // Explosives -----------------------------------
     "rhsusf_m112_mag",

@@ -51,10 +51,10 @@ class TransportMagazines{
 		count = 6;
 		magazine = "rhs_mag_m67";
 	};
-    class _xx_ACE_M84
+    class _xx_ACE_CTS9
 	{
 		count = 6;
-		magazine = "ACE_M84";
+		magazine = "ACE_CTS9";
 	};
 	class _xx_ACE_40mm_Flare_white
 	{

@@ -6,6 +6,8 @@ cgqc_mk2_arsenal_1_explosives = [
     "rhs_mag_m67",
     "B_IR_Grenade",
     "ACE_IR_Strobe_Item",
+    "MS_Strobe_Mag_1",
+    "MS_Strobe_Mag_2",
     "SmokeShell", 
     "SmokeShellBlue", 
     "SmokeShellRed", 

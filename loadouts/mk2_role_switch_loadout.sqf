@@ -2,10 +2,10 @@ _type = _this select 0;
 
 // Universal stuff on every units 
 sleep 0.5;
-// === Uniform basic
-#include "\cgqc_2022\loadouts\mk2\uniform_basic.sqf"
 // === Vest basic
 #include "\cgqc_2022\loadouts\mk2\vest_basic.sqf"
+// === Uniform basic
+#include "\cgqc_2022\loadouts\mk2\uniform_basic.sqf"
 // === Backpack basic
 #include "\cgqc_2022\loadouts\mk2\backpack_basic.sqf"
 

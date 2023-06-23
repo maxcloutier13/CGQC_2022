@@ -7,14 +7,10 @@ player addItemToBackpack "ACE_salineIV_500";
 player addItemToBackpack "ACE_salineIV_500";
 // === Items ================================
 player addItemToBackpack "ACE_EntrenchingTool";
-player addItemToBackpack "WBK_HeadLampItem";
+player addItemToUniform "ACE_microDAGR";
 player addItemToBackpack "G_mas_can_gasmask";
 // === Throwables ================================
 player addItemToBackpack "SmokeShell";
-player addItemToBackpack "SmokeShell";
-player addItemToBackpack "SmokeShell";
-player addItemToBackpack "SmokeShellBlue";
-player addItemToBackpack "SmokeShellBlue";
-player addItemToBackpack "SmokeShellRed";
-player addItemToBackpack "SmokeShellRed";
 player addItemToBackpack "MS_Strobe_Mag_2";
+player addItemToBackpack "rhs_mag_m67";
+player addItemToBackpack "rhs_mag_m67";

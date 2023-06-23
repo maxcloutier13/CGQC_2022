@@ -10,11 +10,9 @@ player addItemToBackpack "ACE_adenosine";
 player addItemToBackpack "ACE_adenosine";
 for "_i" from 1 to 4 do {player addItemToBackpack "ACE_splint";};
 for "_i" from 1 to 4 do {player addItemToBackpack "ACE_tourniquet";};
-for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShellPurple";};
+for "_i" from 1 to 2 do {player addItemToBackpack "SmokeShellPurple";};
 player addItemToBackpack "FSGm_ItemMedicBag";
 player addItemToBackpack "ACE_SpraypaintRed";
 player addItemToBackpack "ACE_personalAidKit";
 player addItemToBackpack "KNB_PanelRed";
-for "_i" from 1 to 4 do {
-	player addItemToBackpack "ACE_bodyBag";
-};
+for "_i" from 1 to 2 do {player addItemToBackpack "ACE_bodyBag"};

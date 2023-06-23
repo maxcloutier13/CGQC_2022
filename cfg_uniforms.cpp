@@ -8,6 +8,7 @@ class U_mas_can_B_CombatUniform_S_SWAT;
 class U_I_pilotCoveralls;
 class U_mas_can_B_Wetsuit;
 
+/*
 // Base/training
 class cgqc_uniform_mk1 : U_mas_can_B_CombatUniform_S_NTOG
 {
@@ -15,6 +16,7 @@ class cgqc_uniform_mk1 : U_mas_can_B_CombatUniform_S_NTOG
     _generalMacro = "cgqc_uniform_mk1";
     displayName = "CGQC Uniforme mk1";
 };
+*/
 // Desert
 class cgqc_uniform_mk1_desert : U_mas_can_B_CombatUniform_aor1
 {

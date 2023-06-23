@@ -638,3 +638,37 @@ judge
 ["uns_M39E","CMFlareLauncher","Uns_ZuniLauncher_dl","uns_AGM12_Launcher_dl","Uns_CBU75Launcher_dl","uns_FuelTank_Launcher_dl"]
 
 ["Uns_M2_4x20mm","Uns_CBU14ALauncher_dl","Uns_NapalmLauncher_750_dl","Uns_NapalmLauncher_500_dl","Uns_FFAR_FL_Launcher_dl","uns_suu11a_gunpod_dl","Uns_CBUM1ALauncher_dl"]
+
+
+
+
+
+[] spawn {
+	sleep 2;
+	//Find all valid player exect current
+	_players = allPlayers - entities "HeadlessClient_F";
+	_players = _players - [player];
+	// Initial values
+	_version = "--- Versions des mods --- <br/>";
+	_ref_version_core = player getVariable "cgqc_version_core";
+	_ref_version_addons = player getVariable "cgqc_version_addons";
+	_version = _version + format ["Référence - Core: %1 - Addons: %2 <br/>", _ref_version_core, _ref_version_addons];
+	_version = _version + "--------------------------- <br/>";
+	{
+		_name = name _x;
+		_version_core = _x getVariable "cgqc_version_core";
+		_version_addons = _x getVariable "cgqc_version_addons";
+		if (isNil "_version_core") then {_version_core = 0};
+		if (isNil "_version_addons") then {_version_addons = 0};
+		if !(_version_core isEqualTo _ref_version_core) then { // Bad core version
+			_version_core = format["<t color='#ff0000'>%1</t>", _version_core];
+			_name = format["<t color='#ff0000'>%1</t>",_name];
+		};
+		if !(_version_addons isEqualTo _ref_version_addons) then { // Bad addons version
+			_version_addons = format["<t color='#ff0000'>%1</t>", _version_addons];
+			_name = format["<t color='#ff0000'>%1</t>",_name];
+		};
+		_version = _version + format ["%1 - Core: %2 - Addons: %3 <br/>", _name, _version_core, _version_addons] 
+	}forEach _players;
+	hint parseText format ["%1",_version];
+};

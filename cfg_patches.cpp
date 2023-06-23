@@ -205,7 +205,6 @@ class CfgPatches
 			"cgqc_helmet_kidnapping",
 			"cgqc_goggles_mk1_diver",
 			"cgqc_goggles_mk1_para",
-			"cgqc_uniform_mk1",
 			"cgqc_uniform_mk1_jetpilot",
 			"cgqc_uniform_mk1_helipilot",
 			"cgqc_uniform_mk1_diver",

@@ -705,25 +705,25 @@ class CGQC_units_mk2_Tank_Crew_ai : cgqc_soldat_moderne
 // == Divers ================================================================
 class CGQC_units_mk1_5_Diver_TL : CGQC_units_mk1_0_TeamLeader_Carbine
 {
-    editorSubcategory = "EdSubcat_cgqc_mk1_divers";
+    editorSubcategory = "EdSubcat_cgqc_mk1";
     displayName = "Plongeur (TL)";
     uniformClass = "cgqc_uniform_mk1";
 };
 class CGQC_units_mk1_5_Diver_sniper : CGQC_units_mk1_2_Sniper_ebr
 {
-    editorSubcategory = "EdSubcat_cgqc_mk1_divers";
+    editorSubcategory = "EdSubcat_cgqc_mk1";
     displayName = "Plongeur (Sniper)";
     uniformClass = "cgqc_uniform_mk1";
 };
 class CGQC_units_mk1_5_Diver_Spotter : CGQC_units_mk1_2_Spotter
 {
-    editorSubcategory = "EdSubcat_cgqc_mk1_divers";
+    editorSubcategory = "EdSubcat_cgqc_mk1";
     displayName = "Plongeur (Spotter)";
     uniformClass = "cgqc_uniform_mk1";
 };
 class CGQC_units_mk1_5_Diver_Engineer : CGQC_units_mk1_1_Engineer
 {
-    editorSubcategory = "EdSubcat_cgqc_mk1_divers";
+    editorSubcategory = "EdSubcat_cgqc_mk1";
     displayName = "Plongeur (Saboteur)";
     uniformClass = "cgqc_uniform_mk1";
 };

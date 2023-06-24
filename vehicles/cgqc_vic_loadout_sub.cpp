@@ -1,5 +1,23 @@
 class TransportItems
 {
+    // Ammo -----------------------------------
+    class _xx_cgqc_bandolier_ammo
+    {
+        count = 4;
+        name = "cgqc_bandolier_ammo";
+    };
+    // Medic Kit -----------------------------------
+    class _xx_CGQC_ITEMS_MEDKIT
+    {
+        count = 1;
+        name = "cgqc_items_medkit";
+    };
+    // Individual Kit  ----------------------------------
+    class _xx_CGQC_ITEMS_IFAK
+    {
+        count = 4;
+        name = "cgqc_items_ifak";
+    };
     class _xx_ToolKit
     {
         name = "ToolKit";
@@ -14,16 +32,6 @@ class TransportItems
     {
         name = "ACE_M26_Clacker";
         count = 1;
-    };
-    class _xx_ACE_fieldDressing
-    {
-        count = 10;
-        name = "ACE_fieldDressing";
-    };
-    class _xx_FF_Painkiller
-    {
-        count = 5;
-        name = "FF_Painkiller";
     };
     class _xx_ACE_bodyBag
 	{
@@ -44,11 +52,6 @@ class TransportItems
 class TransportBackpacks{};
 class TransportMagazines
 {
-    class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
-	{
-		count = 20;
-		magazine = "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
-	};
     class _xx_rhsusf_m112_mag
 	{
 		count = 10;

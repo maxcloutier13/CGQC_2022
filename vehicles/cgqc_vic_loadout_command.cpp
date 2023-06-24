@@ -1,34 +1,5 @@
 class TransportMagazines{
-	class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
-	{
-		count = 20;
-		magazine = "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
-	};
-	class _xx_ACE_20Rnd_762x51_Mk319_Mod_0_Mag
-	{
-		count = 10;
-		magazine = "ACE_20Rnd_762x51_Mk319_Mod_0_Mag";
-	};
-	class _xx_rhsusf_m112_mag
-	{
-		count = 4;
-		magazine = "rhsusf_m112_mag";
-	};
-	class _xx_ACE_40mm_Flare_white
-	{
-		count = 5;
-		magazine = "ACE_40mm_Flare_white";
-	};
-	class _xx_UGL_FlareRed_F
-	{
-		count = 5;
-		magazine = "UGL_FlareRed_F";
-	};
-	class _xx_ACE_40mm_Flare_ir
-	{
-		count = 5;
-		magazine = "ACE_40mm_Flare_ir";
-	};
+	
 };
 
 class TransportWeapons{
@@ -40,6 +11,24 @@ class TransportWeapons{
 };
 
 class TransportItems{
+	// Ammo -----------------------------------
+    class _xx_cgqc_bandolier_ammo
+    {
+        count = 5;
+        name = "cgqc_bandolier_ammo";
+    };
+    // Medic Kit -----------------------------------
+    class _xx_CGQC_ITEMS_MEDKIT
+    {
+        count = 1;
+        name = "cgqc_items_medkit";
+    };
+    // Individual Kit  ----------------------------------
+    class _xx_CGQC_ITEMS_IFAK
+    {
+        count = 5;
+        name = "cgqc_items_ifak";
+    };
 	class _xx_ACRE_PRC152
 	{
 		count = 2;
@@ -55,55 +44,11 @@ class TransportItems{
 		count = 2;
 		name = "ACE_UAVBattery";
 	};
-	class _xx_ACE_fieldDressing
-	{
-		count = 30;
-		name = "ACE_fieldDressing";
-	};
-	class _xx_ACE_salineIV_500
-	{
-		count = 5;
-		name = "ACE_salineIV_500";
-	};
-	class _xx_FF_Painkiller
-	{
-		count = 10;
-		name = "FF_Painkiller";
-	};
-	class _xx_ACE_morphine
-	{
-		count = 5;
-		name = "ACE_morphine";
-	};
-	class _xx_ACE_epinephrine
-	{
-		count = 5;
-		name = "ACE_epinephrine";
-	};
-	class _xx_ACE_splint
-	{
-		count = 2;
-		name = "ACE_splint";
-	};
-	class _xx_ACE_tourniquet
-	{
-		count = 2;
-		name = "ACE_tourniquet";
-	};
+	
 	class _xx_ACE_bodyBag
 	{
 		count = 2;
 		name = "ACE_bodyBag";
-	};
-	class _xx_FSGm_ItemMedicBag
-	{
-		count = 1;
-		name = "FSGm_ItemMedicBag";
-	};
-	class _xx_G_mas_can_gasmask
-	{
-		count = 2;
-		name = "G_mas_can_gasmask";
 	};
 	class _xx_ItemcTab
 	{

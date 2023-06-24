@@ -2,69 +2,6 @@
 
 class TransportMagazines
 {
-	// Grenades ------------------------------------------------
-	class _xx_rhs_mag_m67
-	{
-		count = 5;
-		magazine = "rhs_mag_m67";
-	};
-	class _xx_SmokeShell
-	{
-		count = 5;
-		magazine = "SmokeShell";
-	};
-	class _xx_SmokeShellBlue
-	{
-		count = 5;
-		magazine = "SmokeShellBlue";
-	};
-	class _xx_SmokeShellRed
-	{
-		count = 5;
-		magazine = "SmokeShellRed";
-	};
-	class _xx_B_IR_Grenade
-	{
-		count = 5;
-		magazine = "B_IR_Grenade";
-	};
-	class _xx_ACE_40mm_Flare_white
-	{
-		count = 5;
-		magazine = "ACE_40mm_Flare_white";
-	};
-	class _xx_UGL_FlareRed_F
-	{
-		count = 5;
-		magazine = "UGL_FlareRed_F";
-	};
-	class _xx_ACE_40mm_Flare_ir
-	{
-		count = 5;
-		magazine = "ACE_40mm_Flare_ir";
-	};
-	// ammo ------------------------------------------------
-	class _xx_rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull
-	{
-		count = 20;
-		magazine = "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull";
-	};
-	class _xx_ACE_20Rnd_762x51_Mk319_Mod_0_Mag
-	{
-		count = 20;
-		magazine = "ACE_20Rnd_762x51_Mk319_Mod_0_Mag";
-	};
-	class _xx_7Rnd_408_Mag
-	{
-		count = 20;
-		magazine = "7Rnd_408_Mag";
-	};
-	class _xx_Tier1_15Rnd_9x19_JHP
-	{
-		count = 20;
-		magazine = "Tier1_15Rnd_9x19_JHP";
-	};
-
 	// Explosives ------------------------------------------------
 	class _xx_rhsusf_m112_mag
 	{
@@ -79,52 +16,25 @@ class TransportMagazines
 };
 class TransportItems
 {
-	// Meds ------------------------------------------------
-	class _xx_FF_Painkiller
-	{
-		count = 25;
-		name = "FF_Painkiller";
-	};
-	class _xx_ACE_fieldDressing
-	{
-		count = 100;
-		name = "ACE_fieldDressing";
-	};
-	class _xx_ACE_salineIV_500
-	{
-		count = 10;
-		name = "ACE_salineIV_500";
-	};
-	class _xx_ACE_salineIV
-	{
-		count = 10;
-		name = "ACE_salineIV";
-	};
-	class _xx_ACE_epinephrine
-	{
-		count = 20;
-		name = "ACE_epinephrine";
-	};
-	class _xx_ACE_morphine
-	{
-		count = 20;
-		name = "ACE_morphine";
-	};
-	class _xx_ACE_splint
-	{
-		count = 10;
-		name = "ACE_splint";
-	};
-	class _xx_ACE_tourniquet
-	{
-		count = 10;
-		name = "ACE_tourniquet";
-	};
-	class _xx_ACE_bodyBag
-	{
-		count = 5;
-		name = "ACE_bodyBag";
-	};
+	
+	// Ammo -----------------------------------
+    class _xx_cgqc_bandolier_ammo
+    {
+        count = 12;
+        name = "cgqc_bandolier_ammo";
+    };
+    // Medic Kit -----------------------------------
+    class _xx_CGQC_ITEMS_MEDKIT
+    {
+        count = 2;
+        name = "cgqc_items_medkit";
+    };
+    // Individual Kit  ----------------------------------
+    class _xx_CGQC_ITEMS_IFAK
+    {
+        count = 12;
+        name = "cgqc_items_ifak";
+    };
 
 	// items ------------------------------------------------
 	class _xx_ACE_EarPlugs
@@ -156,11 +66,6 @@ class TransportItems
 	{
 		count = 5;
 		name = "ACE_RangeCard";
-	};
-	class _xx_G_mas_can_gasmask
-	{
-		count = 10;
-		name = "G_mas_can_gasmask";
 	};
 	class _xx_ToolKit
 	{

@@ -1,5 +1,77 @@
 class TransportMagazines
 {
+    class _xx_Laserbatteries
+    {
+        count = 1;
+        magazine = "Laserbatteries";
+    };
+    class _xx_rhsusf_m112_mag
+    {
+        count = 4;
+        magazine = "rhsusf_m112_mag";
+    };
+    class _xx_rhsusf_m112x4_mag
+    {
+        count = 2;
+        magazine = "rhsusf_m112x4_mag";
+    };
+
+    class _xx_rhsusf_mine_m14_mag
+    {
+        count = 6;
+        magazine = "rhsusf_mine_m14_mag";
+    };
+};
+class TransportWeapons
+{
+    class _xx_rhs_weap_m72a7
+    {
+        count = 2;
+        weapon = "rhs_weap_m72a7";
+    };
+};
+class TransportItems
+{
+    // Ammo -----------------------------------
+    class _xx_cgqc_bandolier_ammo
+    {
+        count = 12;
+        name = "cgqc_bandolier_ammo";
+    };
+    // Medic Kit -----------------------------------
+    class _xx_CGQC_ITEMS_MEDKIT
+    {
+        count = 2;
+        name = "cgqc_items_medkit";
+    };
+    // Individual Kit  ----------------------------------
+    class _xx_CGQC_ITEMS_IFAK
+    {
+        count = 12;
+        name = "cgqc_items_ifak";
+    };
+    // Radios  ----------------------------------
+    class _xx_ACRE_PRC152
+    {
+        count = 1;
+        name = "ACRE_PRC152";
+    };
+     // Items ------------------------
+    class _xx_ACE_EarPlugs
+    {
+        count = 1;
+        name = "ACE_EarPlugs";
+    };
+    class _xx_ACE_UAVBattery
+    {
+        count = 1;
+        name = "ACE_UAVBattery";
+    };
+};
+
+/* Old version
+class TransportMagazines
+{
     class _xx_ACE_M84
     {
         count = 6;
@@ -147,8 +219,8 @@ class TransportWeapons
 };
 class TransportItems
 {
-    // Radios  ----------------------------------
-       class _xx_ACRE_PRC152
+   // Radios  ----------------------------------
+    class _xx_ACRE_PRC152
     {
         count = 1;
         name = "ACRE_PRC152";
@@ -206,3 +278,4 @@ class TransportItems
         name = "ACE_UAVBattery";
     };
 };
+*/

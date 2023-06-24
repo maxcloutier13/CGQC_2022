@@ -3,7 +3,6 @@ _type = _this select 0;t =
 // Basic uniform for everyone
 player forceAddUniform "cgqc_uniform_mk1";
 
-
 if (cgqc_config_sidearm_2023) then {
     // === Custom Sidearm
     player addWeapon cgqc_config_sidearm_pistol_2023;
@@ -29,19 +28,7 @@ if (cgqc_config_sidearm_2023) then {
 _vest = "";
 _backpack = "";
 _helmet = "";
-_face = selectRandom [
-    "G_mas_can_mask",
-    "G_mas_can_mask_b",
-    "rhsusf_oakley_goggles_clr",
-    "G_mas_can_balaM_T",
-    "G_mas_can_balaM_b",
-    "G_mas_can_gog",
-    "G_mas_can_wrap_gog_T",
-    "G_mas_can_wrap_gog_B",
-    "G_mas_can_shemag_gog",
-    "G_mas_can_shemag_gog_l",
-    "G_mas_can_shemag_mask"
-];
+_face = "G_mas_can_shemag_gog_l";
 
 switch (_type) do {
 	case "command":{ //=============================================================================================

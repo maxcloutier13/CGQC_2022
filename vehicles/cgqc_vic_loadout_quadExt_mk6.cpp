@@ -5,15 +5,23 @@ class TransportItems
         name = "ToolKit";
         count = 1;
     };
-    class _xx_ACE_fieldDressing
+   // Ammo -----------------------------------
+    class _xx_cgqc_bandolier_ammo
     {
-        count = 10;
-        name = "ACE_fieldDressing";
+        count = 3;
+        name = "cgqc_bandolier_ammo";
     };
-    class _xx_FF_Painkiller
+    // Medic Kit -----------------------------------
+    class _xx_CGQC_ITEMS_MEDKIT
     {
-        count = 5;
-        name = "FF_Painkiller";
+        count = 1;
+        name = "cgqc_items_medkit";
+    };
+    // Individual Kit  ----------------------------------
+    class _xx_CGQC_ITEMS_IFAK
+    {
+        count = 2;
+        name = "cgqc_items_ifak";
     };
     class _xx_ACE_bodyBag
 	{

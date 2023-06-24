@@ -5,6 +5,15 @@ player linkItem "ItemWatch";
 // === Binos
 player addWeapon "Laserdesignator_01_khk_F";
 player addMagazine "Laserbatteries";
-// === Items GPS/UAV/NVG
+// === Items GPS/UAV
 player linkItem "B_UavTerminal";
-player linkItem "JAS_GPNVG18_Full_blk_TI";
+// === NVG's - In backpack if daytime
+[] call CGQC_fnc_isDaytime;
+if (cgqc_mission_daytime) then {
+    player addItemToBackpack "JAS_GPNVG18_Full_blk_TI";
+}else{
+    //Night mission 
+    player linkItem "JAS_GPNVG18_Full_blk_TI";
+};
+
+

@@ -9,7 +9,6 @@ for "_i" from 1 to 2 do {player addItemToBackpack "ACE_40mm_Flare_ir"};
 player addItemToBackpack "SmokeShell";
 player addItemToBackpack "SmokeShellRed";
 player addItemToBackpack "SmokeShellBlue";
-player addItemToBackpack "KNB_PanelYellow";
 player addItemToBackpack "tsp_stickCharge_auto_mag";
 player addItemToBackpack "tsp_stickCharge_auto_mag";
 player addItemToBackpack "tsp_popperCharge_auto_mag";

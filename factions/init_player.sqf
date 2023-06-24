@@ -2,6 +2,10 @@
     // Wait until Core is finished initializing.
     waitUntil {sleep 1;cgqc_player_rank_found};
 
+    _version = "2.6";
+    // Client-side code
+    player setVariable ["cgqc_version_2023", _version, true]; // Set the client's mod version
+
     // Variables pour le ghillie up kit
     ghillie_menu = 0;
     ghillie_isOn = 0;

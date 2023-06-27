@@ -1,7 +1,5 @@
-// === Mags depending on limitMags setting ========
-for "_i" from 1 to cgqc_setting_limitMags_max do {player addItemToVest "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull"};
-if (!cgqc_config_sidearm_2023) then {
-    player addItemToBackpack cgqc_config_sidearm_mag_2023;
-    player addItemToBackpack cgqc_config_sidearm_mag_2023;
-    player addItemToBackpack cgqc_config_sidearm_mag_2023;
-};
+// === Mk12 Spotter Vest ========
+//  
+
+[] execVM "cgqc\functions\fnc_addMags.sqf";
+if (!cgqc_config_sidearm) then {for "_i" from 0 to 2 do {player addItemToVest cgqc_config_sidearm_mag};};

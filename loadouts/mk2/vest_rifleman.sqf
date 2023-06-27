@@ -1,1 +1,5 @@
-for "_i" from 1 to cgqc_setting_limitMags_max do {player addItemToVest "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull"};
+// === Rifleman Vest ========
+//  
+
+for "_i" from 0 to 1 do {player addItemToVest "rhs_mag_m67"};
+[] execVM "cgqc\functions\fnc_addMags.sqf";

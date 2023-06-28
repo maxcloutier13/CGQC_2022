@@ -2,7 +2,7 @@
     // Wait until Core is finished initializing.
     waitUntil {sleep 1;cgqc_player_rank_found};
 
-    _version = "2.6.3";
+    _version = "2.6.3.1";
     // Client-side code
     player setVariable ["cgqc_version_2023", _version, true]; // Set the client's mod version
 
@@ -39,6 +39,9 @@
         };
         case "CGQC_units_mk1_0_TeamLeader_CQB":{
             ["tl_cqb", 1, true] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf";
+        };
+        case "CGQC_units_mk1_0_TeamLeader_noGL":{
+            ["tl_no_gl", 1, true] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf";
         };
         // == Infantry ================================================================
         case "CGQC_units_mk1_1_Rifleman_CQB":{

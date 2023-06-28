@@ -11,6 +11,5 @@ player addItemToBackpack "ACE_EntrenchingTool";
 player addItemToBackpack "ACE_Canteen";
 // === Throwables ================================
 player addItemToBackpack "SmokeShell";
-player addItemToBackpack "MS_Strobe_Mag_2";
 player addItemToBackpack "rhs_mag_m67";
 player addItemToBackpack "rhs_mag_m67";

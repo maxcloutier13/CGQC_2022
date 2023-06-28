@@ -40,6 +40,9 @@
         case "CGQC_units_mk1_0_TeamLeader_CQB":{
             ["tl_cqb", 1, true] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf";
         };
+        case "CGQC_units_mk1_0_TeamLeader_noGL":{
+            ["tl_no_gl", 1, true] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf";
+        };
         // == Infantry ================================================================
         case "CGQC_units_mk1_1_Rifleman_CQB":{
             ["rifle_cqb", 1, true] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf";

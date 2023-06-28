@@ -66,6 +66,13 @@ if (hasInterface) then {
                 _radios = "spartan_1";
                 cgqc_player_role = "Team Leader";
             };
+            case "tl_no_gl":{
+                _perks = "tl";
+                _uniform = "command";
+                _loadout = "tl_no_gl";
+                _radios = "spartan_1";
+                cgqc_player_role = "Team Leader";
+            };
             // Infantry  ==========================================================================
             case "rifle_cqb":{
                 _perks = "inf";

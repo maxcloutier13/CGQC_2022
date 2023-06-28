@@ -5,12 +5,13 @@ player addItemToUniform "ItemAndroid";
 player addItemToUniform "ACE_MapTools";
 player addItemToUniform "ACE_CableTie";
 player addItemToUniform "ACE_CableTie";
-player addItemToUniform "MS_Strobe_Mag_1";
 player addItemToUniform "acex_intelitems_notepad";
 player addItemToUniform "ACE_RangeCard";
 player addItemToUniform "WBK_HeadLampItem";
 player addItemToUniform "ACE_microDAGR";
 player addItemToUniform "cgqc_items_ifak";
+// === Handgun mags ===========================
+for "_i" from 1 to 2 do {player addItemToUniform cgqc_config_sidearm_mag;};
 /*
 // === Meds =====================================
 player addItemToUniform "FF_Painkiller";

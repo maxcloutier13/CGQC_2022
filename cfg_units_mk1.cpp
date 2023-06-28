@@ -71,6 +71,30 @@ class CGQC_units_mk1_0_TeamLeader_CQB : cgqc_soldat_moderne
         //init = "['tl_cqb', 1, true] execVM '\CGQC_2022\functions\fnc_initRoleSwitch.sqf'";
     };
 };
+class CGQC_units_mk1_0_TeamLeader_noGL : cgqc_soldat_moderne
+{
+    faction = "CGQC";
+    editorSubcategory = "EdSubcat_cgqc_mk1";
+    side = 1;
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "TeamLeader (mk18 no GL)";
+    uniformClass = "cgqc_uniform_mk1";
+    weapons[] = {"cgqc_gun_mk1_rifleman_mk18", "cgqc_gun_glock19_wood", "Laserdesignator_01_khk_F", "Put", "Throw"};
+    respawnWeapons[] = {"cgqc_gun_mk1_mk18_gl", "cgqc_gun_glock19_wood", "Laserdesignator_01_khk_F", "Put", "Throw"};
+    items[] = {};
+    respawnItems[] = {};
+    magazines[] = {};
+    respawnMagazines[] = {};
+    linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "Laserdesignator_01_khk_F", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan", "G_mas_can_balaM_b"};
+    respawnLinkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "Laserdesignator_01_khk_F", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan", "G_mas_can_balaM_b"};
+    backpack = "CGQC_units_mk1_0_TeamLeader_CQB_pack";
+    editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_0_TeamLeader_CQB.jpg";
+    class EventHandlers
+    {
+        //init = "['tl_cqb', 1, true] execVM '\CGQC_2022\functions\fnc_initRoleSwitch.sqf'";
+    };
+};
 // == Infantry ================================================================
 class CGQC_units_mk1_1_Rifleman_CQB : cgqc_soldat_moderne
 {

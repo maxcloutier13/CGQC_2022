@@ -71,6 +71,19 @@ switch (_type) do {
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
 	};
+    case "tl_no_gl":{
+        // === Weapons
+        #include "\cgqc_2022\loadouts\mk2\gun_mk18_tl.sqf"
+        // === Vest
+        #include "\cgqc_2022\loadouts\mk2\vest_infantry.sqf"
+        // === Backpack 
+        #include "\cgqc_2022\loadouts\mk2\backpack_tlnogl.sqf"
+        // === Radios 
+        #include "\cgqc_2022\loadouts\mk2\radios_tl.sqf"
+        // === Items 
+        #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
+        player addItemToBackpack "Tier1_Razor_Gen3_110_ADM_PIP";
+    };
     case "heli":{ //=============================================================================================
         // === Weapons
         #include "\cgqc_2022\loadouts\mk2\gun_p90.sqf"

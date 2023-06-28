@@ -65,6 +65,11 @@ cgqc_mk2_arsenal_1_guns = [
     "rhs_mag_30Rnd_556x45_Mk262_PMAG", 
     "rhs_mag_30Rnd_556x45_Mk262_PMAG_Tan",
     "Tier1_30Rnd_556x45_Mk262Mod1_EMag",
+    "gtr_mag_20Rnd_556x45_Mk262_Stanag",
+	"grcb_mag_30Rnd_556x45_Mk262_L5",
+	"grcb_mag_30Rnd_556x45_Mk262_L5_mix",
+	"grcb_mag_30Rnd_556x45_Mk262_PMAG_Tan_mix",
+	"grcb_mag_30Rnd_556x45_Mk262_PMAG_mix",
     // Grenades for launcher ---------
     "1Rnd_HE_Grenade_shell",
     "UGL_FlareRed_F", 

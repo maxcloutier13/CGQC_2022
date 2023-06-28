@@ -37,9 +37,9 @@ switch (_type) do {
 	};
     case "sl":{ //=============================================================================================
         // === Weapons
-        #include "\cgqc_2022\loadouts\mk2\gun_m16_shortdot.sqf"
+        #include "\cgqc_2022\loadouts\mk2\gun_m4_grenM320.sqf"
         // === Vest
-        #include "\cgqc_2022\loadouts\mk2\vest_infantry.sqf"
+        #include "\cgqc_2022\loadouts\mk2\vest_grenadier.sqf"
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_hq.sqf"
         // === Radios 

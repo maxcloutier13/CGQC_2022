@@ -8,6 +8,7 @@
 
 // === Items ================================
 player addItemToBackpack "ACE_EntrenchingTool";
+player addItemToBackpack "ACE_Canteen";
 // === Throwables ================================
 player addItemToBackpack "SmokeShell";
 player addItemToBackpack "MS_Strobe_Mag_2";

@@ -9,7 +9,6 @@ for "_i" from 1 to 20 do {player addItemToBackpack "ACE_epinephrine";};
 for "_i" from 1 to 2 do {player addItemToBackpack "ACE_adenosine";};
 for "_i" from 1 to 4 do {player addItemToBackpack "ACE_splint";};
 for "_i" from 1 to 4 do {player addItemToBackpack "ACE_tourniquet";};
-for "_i" from 1 to 2 do {player addItemToBackpack "SmokeShellPurple";};
 player addItemToBackpack "FSGm_ItemMedicBag";
 player addItemToBackpack "ACE_SpraypaintRed";
 player addItemToBackpack "ACE_personalAidKit";

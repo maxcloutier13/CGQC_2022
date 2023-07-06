@@ -323,7 +323,7 @@ class cgqc_pack_mk1_kitbag : B_Kitbag_Base // Base
     author = "silent1";
     _generalMacro = "cgqc_pack_mk1_kitbag";
     maximumLoad = 280;
-    mass = 40;
+    mass = 30;
     displayName = "CGQC Kitbag Vert";
     picture = "\A3\Weapons_F\ammoboxes\bags\data\ui\icon_B_C_Kitbag_rgr";
     model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Fast";
@@ -335,7 +335,7 @@ class cgqc_pack_mk1_kitbag_desert : B_mas_can_Kitbag_d // Desert
     author = "silent1";
     _generalMacro = "cgqc_pack_mk1_kitbag_desert";
     maximumLoad = 280;
-    mass = 40;
+    mass = 30;
     displayName = "CGQC Kitbag Desert";
 };
 class cgqc_pack_mk1_kitbag_mcam : B_mas_can_Kitbag_m // Multicam
@@ -344,7 +344,7 @@ class cgqc_pack_mk1_kitbag_mcam : B_mas_can_Kitbag_m // Multicam
     author = "silent1";
     _generalMacro = "cgqc_pack_mk1_kitbag_mcam";
     maximumLoad = 280;
-    mass = 40;
+    mass = 30;
     displayName = "CGQC Kitbag Multicam";
 };
 class cgqc_pack_mk1_kitbag_cadpat : rhssaf_kitbag_digital // Woodland
@@ -353,7 +353,7 @@ class cgqc_pack_mk1_kitbag_cadpat : rhssaf_kitbag_digital // Woodland
     author = "silent1";
     _generalMacro = "cgqc_pack_mk1_kitbag_cadpat";
     maximumLoad = 280;
-    mass = 40;
+    mass = 30;
     displayName = "CGQC Kitbag Cadpat";
 };
 class cgqc_pack_mk1_kitbag_black : UK3CB_CW_US_B_LATE_B_RIF_04 // Black
@@ -362,7 +362,7 @@ class cgqc_pack_mk1_kitbag_black : UK3CB_CW_US_B_LATE_B_RIF_04 // Black
     author = "silent1";
     _generalMacro = "cgqc_pack_mk1_kitbag_black";
     maximumLoad = 280;
-    mass = 40;
+    mass = 30;
     displayName = "CGQC Kitbag Black";
 };
 class cgqc_pack_mk1_kitbag_white : B_Kitbag_rgr // Winter
@@ -371,7 +371,7 @@ class cgqc_pack_mk1_kitbag_white : B_Kitbag_rgr // Winter
     author = "silent1";
     _generalMacro = "cgqc_pack_mk1_kitbag_white";
     maximumLoad = 280;
-    mass = 40;
+    mass = 30;
     displayName = "CGQC Kitbag White";
     hiddenSelectionsTextures[] = {"\cgqc_2022\containers\cgqc_kitbag_white.paa"};
 };
@@ -436,8 +436,8 @@ class cgqc_pack_mk1_carryall : B_Carryall_khk // Base
     scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_pack_mk1_carryall";
-    maximumLoad = 365;
-    mass = 60;
+    maximumLoad = 380;
+    mass = 50;
     displayName = "CGQC Carryall Vert";
 };
 class cgqc_pack_mk1_carryall_desert :  B_Carryall_cbr // Desert
@@ -445,8 +445,8 @@ class cgqc_pack_mk1_carryall_desert :  B_Carryall_cbr // Desert
     scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_pack_mk1_carryall_desert";
-    maximumLoad = 365;
-    mass = 60;
+    maximumLoad = 380;
+    mass = 50;
     displayName = "CGQC Carryall Desert";
 };
 class cgqc_pack_mk1_carryall_mcam : B_Carryall_mcamo // Multicam
@@ -454,8 +454,8 @@ class cgqc_pack_mk1_carryall_mcam : B_Carryall_mcamo // Multicam
     scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_pack_mk1_carryall_mcam";
-    maximumLoad = 365;
-    mass = 60;
+    maximumLoad = 380;
+    mass = 50;
     displayName = "CGQC Carryall Multicam";
 };
 class cgqc_pack_mk1_carryall_cadpat : UK3CB_LNM_B_B_CARRYALL_FLK_02 // Cadpat
@@ -463,8 +463,8 @@ class cgqc_pack_mk1_carryall_cadpat : UK3CB_LNM_B_B_CARRYALL_FLK_02 // Cadpat
     scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_pack_mk1_carryall_cadpat";
-    maximumLoad = 365;
-    mass = 60;
+    maximumLoad = 380;
+    mass = 50;
     displayName = "CGQC Carryall Cadpat-ish";
 };
 class cgqc_pack_mk1_carryall_black : B_Carryall_khk // Black
@@ -472,8 +472,8 @@ class cgqc_pack_mk1_carryall_black : B_Carryall_khk // Black
     scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_pack_mk1_carryall_black";
-    maximumLoad = 365;
-    mass = 60;
+    maximumLoad = 380;
+    mass = 50;
     displayName = "CGQC Carryall Black";
     hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_carryall_black.paa"};
 };
@@ -482,8 +482,8 @@ class cgqc_pack_mk1_carryall_white : B_Carryall_oucamo // White
     scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_pack_mk1_carryall_white";
-    maximumLoad = 365;
-    mass = 60;
+    maximumLoad = 380;
+    mass = 50;
     displayName = "CGQC Carryall White";
 };
 // Invisible backpack ---------------------------------------------------------------------------------

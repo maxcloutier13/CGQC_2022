@@ -14,7 +14,6 @@ for "_i" from 1 to 4 do {player addItemToBackpack "rhsusf_mine_m14_mag"};
 // === Comms =======================================
 player removeItem "ItemAndroid"; //Remove default cell
 player addItemToBackpack "ItemcTab";
-player addItemToBackpack "tsp_lockpick";
 player addItemToBackpack "tsp_stickCharge_auto_mag";
 player addItemToBackpack "tsp_stickCharge_auto_mag";
 player addItemToBackpack "tsp_popperCharge_auto_mag";

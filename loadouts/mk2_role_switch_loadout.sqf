@@ -255,6 +255,18 @@ switch (_type) do {
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
 	};
+    case "ar":{ //=============================================================================================
+        // === Weapons
+        #include "\cgqc_2022\loadouts\mk2\gun_m27.sqf"
+        // === Vest
+        #include "\cgqc_2022\loadouts\mk2\vest_infantry.sqf"
+        // === Backpack 
+        #include "\cgqc_2022\loadouts\mk2\backpack_m27.sqf"
+        // === Radios 
+        #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
+        // === Items 
+        #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
+	};
     case "hmg":{ //=============================================================================================
         // === Weapons
         #include "\cgqc_2022\loadouts\mk2\gun_mk48.sqf"

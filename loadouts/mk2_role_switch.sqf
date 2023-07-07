@@ -118,6 +118,13 @@ if (hasInterface) then {
                 cgqc_player_role = "Anti-Tank (MAAWS)";
             };
             // MG ==========================================================================
+            case "ar":{
+                _perks = "mg";
+                _uniform = "inf_medium";
+                _loadout = "ar";
+                _radios = "spartan";
+                cgqc_player_role = "Auto-Rifleman";
+            };
             case "hmg":{
                 _perks = "mg";
                 _uniform = "inf_medium";

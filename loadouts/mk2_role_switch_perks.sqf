@@ -1,6 +1,6 @@
 _type = _this select 0;
 
-// Remove all perks/traits
+// Set all traits to default
 player setUnitTrait ["Medic", false];
 player setUnitTrait ["engineer", false];
 player setUnitTrait ["explosiveSpecialist", false];
@@ -12,6 +12,14 @@ cgqc_perks_pilot = false;
 cgqc_perks_driver = false;
 cgqc_perks_eng = false;
 cgqc_perks_medic = false;
+cgqc_perks_doctor = false;
+
+// Every CplC is a medic 
+if (cgqc_player_rank > 2)
+{
+	player setUnitTrait ["Medic", true];
+	cgqc_perks_medic = true;
+};
 
 switch (_type) do {
 	case "hq":{
@@ -44,7 +52,7 @@ switch (_type) do {
 		player setUnitTrait ["explosiveSpecialist", true];
 	};
 	case "med":{
-		cgqc_perks_medic = true;
+		cgqc_perks_doctor = true;
 		player setUnitTrait ["Medic", true];
 	};
 	case "at":{

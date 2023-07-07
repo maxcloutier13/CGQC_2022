@@ -196,6 +196,23 @@ switch (_type) do {
         player unlinkItem "ItemGPS";
         player linkItem "B_UavTerminal";
 	};
+    case "saboteur":{ //=============================================================================================
+        // === Remove pistol and use mine detector instead
+        player addWeapon "ACE_VMH3";
+        // === Weapons
+        #include "\cgqc_2022\loadouts\mk2\gun_m4_dotplus.sqf"
+        // === Vest
+        #include "\cgqc_2022\loadouts\mk2\vest_infantry.sqf"
+        // === Backpack 
+        #include "\cgqc_2022\loadouts\mk2\backpack_eng_saboteur.sqf"
+        // === Radios 
+        #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
+        // === Items 
+        #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
+        player unlinkItem "ItemGPS";
+        player linkItem "B_UavTerminal";
+	};
+
     case "med":{ //=============================================================================================
         // === Weapons
         #include "\cgqc_2022\loadouts\mk2\gun_m4_lpvo.sqf"

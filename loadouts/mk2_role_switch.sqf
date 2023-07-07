@@ -162,6 +162,13 @@ if (hasInterface) then {
                 cgqc_player_role = "Mortier Léger";
             };
             // Recon ==========================================================================
+            case "saboteur": {
+                 _perks = "eng";
+                _uniform = "eng";
+                _loadout = "saboteur";
+                _radios = "spartan";
+                cgqc_player_role = "Saboteur";
+            };
             case "drone":{
                 _perks = "recon";
                 _uniform = "recon";

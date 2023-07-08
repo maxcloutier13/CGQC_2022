@@ -207,6 +207,8 @@ cgqc_mk2_arsenal_rank2 = [
     "rhs_weap_rsp30_red",
     "hgun_esd_01_F",
     // --- Ammo 
+    "rhs_mag_100Rnd_556x45_Mk262_cmag",
+    "rhs_mag_100Rnd_556x45_Mk318_cmag",
     "UK3CB_BHP_9_13Rnd",
     "6Rnd_45ACP_Cylinder",
     "9Rnd_45ACP_Mag",

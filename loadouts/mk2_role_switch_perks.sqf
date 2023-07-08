@@ -15,7 +15,7 @@ cgqc_perks_medic = false;
 cgqc_perks_doctor = false;
 
 // Every CplC is a medic 
-if (cgqc_player_rank > 2)
+if (cgqc_player_rank > 2) then 
 {
 	player setUnitTrait ["Medic", true];
 	cgqc_perks_medic = true;

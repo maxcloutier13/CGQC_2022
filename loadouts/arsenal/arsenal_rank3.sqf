@@ -113,5 +113,8 @@ cgqc_mk2_arsenal_rank3 = [
     "tsp_popperCharge_mag",
     "tsp_popperCharge_auto_mag",
     "tsp_stickCharge_mag",
-    "tsp_stickCharge_auto_mag"
+    "tsp_stickCharge_auto_mag",
+
+    // More ammo variants =-------------------------
+    "grcb_mag_30Rnd_556x45_M995_PMAG"
 ]; 

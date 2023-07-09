@@ -26,7 +26,7 @@ class cgqc_uniform_mk1_desert : U_mas_can_B_CombatUniform_aor1
     class ItemInfo: UniformItem
     {
         uniformModel = "-";
-        uniformClass = "cgqc_soldat_moderne";
+        uniformClass = "B_mas_can_Soldier01_aor1_F";
         containerClass = "Supply60";
         mass = 20;
     };
@@ -40,7 +40,7 @@ class cgqc_uniform_mk1_mcam : U_mas_can_B_CombatUniform_multi
     class ItemInfo: UniformItem
     {
         uniformModel = "-";
-        uniformClass = "cgqc_soldat_moderne";
+        uniformClass = "B_mas_can_Soldier01_F";
         containerClass = "Supply60";
         mass = 20;
     };
@@ -54,7 +54,7 @@ class cgqc_uniform_mk1_cadpat : U_mas_can_B_CombatUniform_aor2
     class ItemInfo: UniformItem
     {
         uniformModel = "-";
-        uniformClass = "cgqc_soldat_moderne";
+        uniformClass = "B_mas_can_Soldier01_aor2_F";
         containerClass = "Supply60";
         mass = 20;
     };
@@ -68,7 +68,7 @@ class cgqc_uniform_mk1_black : U_mas_can_B_suite_CQB
     class ItemInfo: UniformItem
     {
         uniformModel = "-";
-        uniformClass = "cgqc_soldat_moderne";
+        uniformClass = "B_mas_can_SoldierCQB_F";
         containerClass = "Supply60";
         mass = 20;
     };
@@ -82,7 +82,7 @@ class cgqc_uniform_mk1_white : U_mas_can_B_suite_WINT
     class ItemInfo: UniformItem
     {
         uniformModel = "-";
-        uniformClass = "cgqc_soldat_moderne";
+        uniformClass = "B_mas_can_SoldierWINT_F";
         containerClass = "Supply60";
         mass = 20;
     };
@@ -122,11 +122,4 @@ class cgqc_uniform_mk1_diver : U_mas_can_B_Wetsuit
     author = "silent1";
     _generalMacro = "cgqc_uniform_mk1_diver";
     displayName = "CGQC Plongeur mk1";
-    class ItemInfo: UniformItem
-    {
-        uniformModel = "-";
-        uniformClass = "cgqc_soldat_moderne";
-        containerClass = "Supply60";
-        mass = 20;
-    };
 };

@@ -508,36 +508,13 @@ class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_radiobag
     scope = 1;
     class TransportMagazines
     {
-        class _xx_ACE_Chemlight_HiRed
-        {
-            count = 1;
-            magazine = "ACE_Chemlight_HiRed";
-        };
-        class _xx_ACE_Chemlight_IR
-        {
-            count = 1;
-            magazine = "ACE_Chemlight_IR";
-        };
+    
         class _xx_SmokeShell
         {
             count = 3;
             magazine = "SmokeShell";
         };
-        class _xx_SmokeShellBlue
-        {
-            count = 3;
-            magazine = "SmokeShellBlue";
-        };
-        class _xx_SmokeShellRed
-        {
-            count = 3;
-            magazine = "SmokeShellRed";
-        };
-        class _xx_B_IR_Grenade
-        {
-            count = 1;
-            magazine = "B_IR_Grenade";
-        };
+      
     };
     class TransportItems
     {
@@ -549,7 +526,7 @@ class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_radiobag
         };
         class _xx_ACE_UAVBattery
         {
-            count = 2;
+            count = 1;
             name = "ACE_UAVBattery";
         };
         class _xx_ACE_fieldDressing
@@ -571,11 +548,6 @@ class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_radiobag
         {
             count = 1;
             name = "ACE_EntrenchingTool";
-        };
-        class _xx_G_mas_can_gasmask
-        {
-            count = 1;
-            name = "G_mas_can_gasmask";
         };
         class _xx_ItemcTab
         {
@@ -1898,11 +1870,6 @@ class CGQC_units_mk1_4_Tank_Driver_pack : cgqc_pack_mk1_magic
         {
             count = 1;
             name = "ACE_EntrenchingTool";
-        };
-        class _xx_G_mas_can_gasmask
-        {
-            count = 1;
-            name = "G_mas_can_gasmask";
         };
     };
     class TransportWeapons

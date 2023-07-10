@@ -27,7 +27,7 @@ class cgqc_uniform_mk1_desert : U_mas_can_B_CombatUniform_aor1
     {
         uniformModel = "-";
         uniformClass = "B_mas_can_Soldier01_aor1_F";
-        containerClass = "Supply60";
+        containerClass = "Supply80";
         mass = 20;
     };
 };
@@ -41,7 +41,7 @@ class cgqc_uniform_mk1_mcam : U_mas_can_B_CombatUniform_multi
     {
         uniformModel = "-";
         uniformClass = "B_mas_can_Soldier01_F";
-        containerClass = "Supply60";
+        containerClass = "Supply80";
         mass = 20;
     };
 };
@@ -55,7 +55,7 @@ class cgqc_uniform_mk1_cadpat : U_mas_can_B_CombatUniform_aor2
     {
         uniformModel = "-";
         uniformClass = "B_mas_can_Soldier01_aor2_F";
-        containerClass = "Supply60";
+        containerClass = "Supply80";
         mass = 20;
     };
 };
@@ -69,7 +69,7 @@ class cgqc_uniform_mk1_black : U_mas_can_B_suite_CQB
     {
         uniformModel = "-";
         uniformClass = "B_mas_can_SoldierCQB_F";
-        containerClass = "Supply60";
+        containerClass = "Supply80";
         mass = 20;
     };
 };
@@ -83,7 +83,7 @@ class cgqc_uniform_mk1_white : U_mas_can_B_suite_WINT
     {
         uniformModel = "-";
         uniformClass = "B_mas_can_SoldierWINT_F";
-        containerClass = "Supply60";
+        containerClass = "Supply80";
         mass = 20;
     };
 };
@@ -98,7 +98,7 @@ class cgqc_uniform_mk1_jetpilot : U_I_pilotCoveralls
     {
         uniformModel = "-";
         uniformClass = "cgqc_soldat_moderne";
-        containerClass = "Supply60";
+        containerClass = "Supply80";
         mass = 20;
     };
 };
@@ -111,7 +111,7 @@ class cgqc_uniform_mk1_helipilot : U_mas_can_B_CombatUniform_S_SWAT
     {
         uniformModel = "-";
         uniformClass = "cgqc_soldat_moderne";
-        containerClass = "Supply60";
+        containerClass = "Supply80";
         mass = 20;
     };
 };

@@ -12,7 +12,13 @@ player addItemToUniform "ACE_microDAGR";
 player addItemToUniform "cgqc_items_ifak";
 player addItemToUniform "tsp_lockpick";
 // === Handgun mags ===========================
-for "_i" from 1 to 2 do {player addItemToUniform cgqc_config_sidearm_mag;};
+for "_i" from 1 to 2 do {
+    if (player canAdd [cgqc_config_sidearm_mag, 1]) then {
+        player addItemToUniform cgqc_config_sidearm_mag;
+    } else{
+        player addItem cgqc_config_sidearm_mag;
+    };
+};
 /*
 // === Meds =====================================
 player addItemToUniform "FF_Painkiller";

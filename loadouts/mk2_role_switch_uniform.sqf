@@ -72,6 +72,12 @@ switch (_type) do {
         _vest = "cgqc_vest_mk1_tan_lr";
         _backpack =  "cgqc_pack_mk1_kitbag";
         _helmet =  "cgqc_helmet_mk1";
+        // Change secondary weapon for SMG
+        player addWeapon "rhsusf_weap_MP7A2_folded";
+        player addHandgunItem "rhsusf_acc_rotex_mp7";
+        player addHandgunItem "Tier1_MP7_NGAL_M300C_Black";
+        player addHandgunItem "Tier1_MicroT2_Low_Black";
+        player addHandgunItem "rhsusf_mag_40Rnd_46x30_AP";
 	};
     case "jtac":{ //=============================================================================================
         _vest = "cgqc_vest_mk1_tan_lr";

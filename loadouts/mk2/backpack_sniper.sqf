@@ -14,7 +14,7 @@ player addItemToBackpack "tsp_stickCharge_auto_mag";
 player addItemToBackpack "tsp_popperCharge_auto_mag";
 player addItemToBackpack "tsp_popperCharge_auto_mag";
 if (!cgqc_config_sidearm) then {
-    player addItemToBackpack cgqc_config_sidearm_mag;
-    player addItemToBackpack cgqc_config_sidearm_mag;
-    player addItemToBackpack cgqc_config_sidearm_mag;
+    player addItemToBackpack cgqc_config_sidearm_alternate;
+    player addItemToBackpack cgqc_config_sidearm_alternate;
+    player addItemToBackpack cgqc_config_sidearm_alternate;
 };

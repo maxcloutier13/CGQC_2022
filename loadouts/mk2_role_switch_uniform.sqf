@@ -78,6 +78,7 @@ switch (_type) do {
         player addHandgunItem "Tier1_MP7_NGAL_M300C_Black";
         player addHandgunItem "Tier1_MicroT2_Low_Black";
         player addHandgunItem "rhsusf_mag_40Rnd_46x30_AP";
+        cgqc_config_sidearm_alternate = "rhsusf_mag_40Rnd_46x30_AP";
 	};
     case "jtac":{ //=============================================================================================
         _vest = "cgqc_vest_mk1_tan_lr";

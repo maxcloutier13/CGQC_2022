@@ -12,11 +12,15 @@ player addItemToUniform "ACE_microDAGR";
 player addItemToUniform "cgqc_items_ifak";
 player addItemToUniform "tsp_lockpick";
 // === Handgun mags ===========================
+_mags = cgqc_config_sidearm_mag;
+if (cgqc_perks_recon) then {
+    _mags = cgqc_config_sidearm_alternate;
+};
 for "_i" from 1 to 2 do {
-    if (player canAdd [cgqc_config_sidearm_mag, 1]) then {
-        player addItemToUniform cgqc_config_sidearm_mag;
+    if (player canAdd [_mags, 1]) then {
+        player addItemToUniform _mags;
     } else{
-        player addItem cgqc_config_sidearm_mag;
+        player addItem _mags;
     };
 };
 /*

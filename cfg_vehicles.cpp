@@ -516,6 +516,28 @@ class cgqc_vic_wiezel : I_LT_01_scout_F
     //#include "vehicles\cgqc_vic_loadout_command"
     #include "vehicles\cgqc_vic_loadout_command.cpp"
 };
+// Tanks -----------------------------------------------------------------------------------
+class UK3CB_LDF_B_Leopard_Cage;
+class cgqc_vic_tank_leopard : UK3CB_LDF_B_Leopard_Cage {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_mbt";
+    displayName = "Leopard II (3)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+};
+class O_T_MBT_04_cannon_F;
+class cgqc_vic_tank_armata : O_T_MBT_04_cannon_F {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_mbt";
+    displayName = "T-14 Armata (3)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+};
+
 // Unarmed -----------------------------------------------------------------------------------
 class cgqc_vic_quad : B_W_Quadbike_01_F {
     scope = 2;

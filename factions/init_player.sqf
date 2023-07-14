@@ -6,6 +6,9 @@
     // Client-side code
     player setVariable ["cgqc_version_2023", _version, true]; // Set the client's mod version
 
+    if (cgqc_mission_dro) then {
+        waitUntil {sleep 1;cgqc_mission_dro_ready};
+    };
     // Variables pour le ghillie up kit
     ghillie_menu = 0;
     ghillie_isOn = 0;

@@ -63,3 +63,6 @@ class CfgMagazines {
 
 // AtragMX profiles ------------------------------------------
 #include "cfg_atrag.cpp"
+
+// ACEAX Compats ---------------------------------------------
+#include "cfg_aceaxCompats.cpp"

@@ -217,25 +217,25 @@ class cgqc_vest_mk1_desert : cgqc_vest_mk1_tan
 {
     _generalMacro = "cgqc_vest_mk1_desert";
     displayName = "CGQC Veste - Desert";
-     
+    scope = 1;
 };
 class cgqc_vest_mk1_desert_lr : cgqc_vest_mk1_tan_lr
 {
     _generalMacro = "cgqc_vest_mk1_desert_lr";
     displayName = "CGQC Veste LR - Desert";
-     
+    scope = 1;
 };
 class cgqc_vest_mk1_desert_rf : cgqc_vest_mk1_tan_rf
 {
     _generalMacro = "cgqc_vest_mk1_desert_rf";
     displayName = "CGQC Veste RF - Desert";
-     
+    scope = 1;   
 };
 class cgqc_vest_mk1_desert_ar : cgqc_vest_mk1_tan_ar
 {
     _generalMacro = "cgqc_vest_mk1_desert_ar";
     displayName = "CGQC Veste AR - Desert";
-     
+    scope = 1;    
 };
 // Multicam
 class cgqc_vest_mk1_mcam : V_mas_can_PlateCarrier1_rgr

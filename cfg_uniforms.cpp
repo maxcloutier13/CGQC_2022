@@ -123,3 +123,4 @@ class cgqc_uniform_mk1_diver : U_mas_can_B_Wetsuit
     _generalMacro = "cgqc_uniform_mk1_diver";
     displayName = "CGQC Plongeur mk1";
 };
+

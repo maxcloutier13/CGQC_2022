@@ -331,8 +331,10 @@ class cgqc_helmet_mk1_tank_pinard : cgqc_helmet_mk1_tank
         "\cgqc_2022\helmets\cgqc_helmet_tank_pinard.paa",
         "\rhsusf\addons\rhsusf_infantry\gear\head\data\crew_equip_co.paa"};
 };
+
 class cgqc_helmet_mk1_tank_gaudreault : cgqc_helmet_mk1_tank
 {
+    scope = 0;
     author = "silent1";
     _generalMacro = "cgqc_helmet_mk1_tank_gaudreault";
     displayName = "CGQC Casque Tank Gaudreault";
@@ -374,4 +376,3 @@ class cgqc_helmet_kidnapping : H_PASGT_neckprot_blue_press_F
 			};
 		};
 };
-

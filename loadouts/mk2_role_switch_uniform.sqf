@@ -88,6 +88,7 @@ switch (_type) do {
             _backpack =  "cgqc_pack_mk1_carryall";
         };
         _helmet =  "cgqc_helmet_mk1";
+        cgqc_config_sidearm_alternate = cgqc_config_sidearm_mag;
 	};
     case "eng":{ //=============================================================================================
         _vest = "cgqc_vest_mk1_tan_ar";

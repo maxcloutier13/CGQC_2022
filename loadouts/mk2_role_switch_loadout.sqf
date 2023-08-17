@@ -170,7 +170,7 @@ switch (_type) do {
 	};
     case "jtac":{ //=============================================================================================
         // === Weapons
-        #include "\cgqc_2022\loadouts\mk2\gun_mk12_skeetIR.sqf"
+        #include "\cgqc_2022\loadouts\mk2\gun_mk12_razor.sqf"
         // === Vest
         #include "\cgqc_2022\loadouts\mk2\vest_infantry.sqf"
         // === Backpack 

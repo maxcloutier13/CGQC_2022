@@ -257,33 +257,24 @@ if (hasInterface) then {
             };
         };
 
-        // Start transition
-        if (!cgqc_intro_running) then {
-            ["role"] execVM "\CGQC_2022\scripts\transition.sqf";
-        };
         mk2_role_switch_perks_done = false;
         mk2_role_switch_uniform = false;
         mk2_role_switch_loadout = false;
 
         // Perks and traits setup 
-        waitUntil {sleep 0.5;!isNil "_perks"};
         [_perks] execVM "\CGQC_2022\loadouts\mk2_role_switch_perks.sqf";
-        waitUntil {sleep 0.5;mk2_role_switch_perks_done};
         // Add Uniform
-        waitUntil {sleep 0.5;!isNil "_uniform"};
         [_uniform] execVM "\CGQC_2022\loadouts\mk2_role_switch_uniform.sqf";
-        waitUntil {sleep 0.5;mk2_role_switch_uniform};
+        waitUntil {mk2_role_switch_uniform};
         // Add loadout
-        waitUntil {sleep 0.5;!isNil "_loadout"};
         [_loadout] execVM "\CGQC_2022\loadouts\mk2_role_switch_loadout.sqf";
-        waitUntil {sleep 0.5;mk2_role_switch_loadout};
+        waitUntil {mk2_role_switch_loadout};
         // Set radios
         
         if (cgqc_flag_isTraining) then { // Training setup 
-            ["training"] execVM "\cgqc\functions\fnc_getRadios.sqf";
+            ["training"] execVM "\cgqc\loadouts\mk3_getRadios.sqf";
         } else {
             waitUntil {sleep 0.5;!isNil "_radios"};
-            sleep 0.5;
             [_radios, _section] execVM "\cgqc\functions\fnc_setRadios.sqf";
         };
 
@@ -297,6 +288,10 @@ if (hasInterface) then {
         //};
         // Lower gun 
         player action ['SwitchWeapon', player, player, 250];
+        // Start transition
+
+        waitUntil {sleep 0.5;!cgqc_intro_running};
+        ["role", true] execVM "\CGQC\loadouts\mk3_transition.sqf";
         cgqc_roleSwitch_done = true;
         disableUserInput false;
     } catch{ // In case of error: Return control to player

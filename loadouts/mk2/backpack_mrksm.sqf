@@ -1,4 +1,4 @@
 // Marksman Backpack
 player addItemToBackpack "ACE_Tripod";
-player addItemToBackpack "ACE_ATragMX";
-player addItemToBackpack "ACE_Kestrel4500";
+player addItem "ACE_ATragMX";
+player addItem "ACE_Kestrel4500";

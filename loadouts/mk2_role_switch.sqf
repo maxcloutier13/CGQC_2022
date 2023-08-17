@@ -280,7 +280,7 @@ if (hasInterface) then {
         // Set radios
         
         if (cgqc_flag_isTraining) then { // Training setup 
-            ["2ic"] execVM "\cgqc\functions\fnc_getStuff.sqf";
+            ["training"] execVM "\cgqc\functions\fnc_getRadios.sqf";
         } else {
             waitUntil {sleep 0.5;!isNil "_radios"};
             sleep 0.5;

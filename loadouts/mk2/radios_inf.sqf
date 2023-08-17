@@ -1,5 +1,7 @@
 // === Infantry Radios ================================
 player addItem "ACRE_PRC343";
+
+/*
 player addItem "ACRE_PRC148";
 // Event with notifications if they try to communicate on ch:1
 cgqc_event_148 = ["acre_startedSpeaking", {	
@@ -15,3 +17,4 @@ cgqc_event_148 = ["acre_startedSpeaking", {
  };   
 }] call CBA_fnc_addEventHandler;
 hint "Radio 148:Ch1-ListenOnly";
+*/

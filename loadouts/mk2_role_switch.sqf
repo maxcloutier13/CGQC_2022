@@ -262,19 +262,22 @@ if (hasInterface) then {
         mk2_role_switch_loadout = false;
 
         // Perks and traits setup 
+        waitUntil {sleep 0.5;!isNil "_perks"};
         [_perks] execVM "\CGQC_2022\loadouts\mk2_role_switch_perks.sqf";
+        waitUntil {sleep 0.5;mk2_role_switch_perks_done};
         // Add Uniform
         [_uniform] execVM "\CGQC_2022\loadouts\mk2_role_switch_uniform.sqf";
-        waitUntil {mk2_role_switch_uniform};
+        waitUntil {sleep 0.5;mk2_role_switch_uniform};
         // Add loadout
         [_loadout] execVM "\CGQC_2022\loadouts\mk2_role_switch_loadout.sqf";
-        waitUntil {mk2_role_switch_loadout};
+        waitUntil {sleep 0.5;mk2_role_switch_loadout};
         // Set radios
         
         if (cgqc_flag_isTraining) then { // Training setup 
             ["training"] execVM "\cgqc\loadouts\mk3_getRadios.sqf";
         } else {
             waitUntil {sleep 0.5;!isNil "_radios"};
+            sleep 0.5;
             [_radios, _section] execVM "\cgqc\functions\fnc_setRadios.sqf";
         };
 

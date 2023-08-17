@@ -11,7 +11,7 @@ _menu_name = "CGQC Player settings";
 ["cgqc_config_sidearm_acc", "EDITBOX", ["Laser/Flashlight", "Accessoire"], 
 	[_menu_name, "Sidearm Perso (2023)"], "tier1_dbalpl"] call CBA_fnc_addSetting;
 ["cgqc_config_sidearm_suppress", "EDITBOX", ["Silencieux", "Silencieux"], 
-	[_menu_name, "Sidearm Perso (2023)"], "Tier1_TiRant9S"] call CBA_fnc_addSetting;
+	[_menu_name, "Sidearm Perso (2023)"], ""] call CBA_fnc_addSetting;
 ["cgqc_config_sidearm_optic", "EDITBOX", ["Optique", "Optique"], 
 	[_menu_name, "Sidearm Perso (2023)"], "tier1_sig_romeo1"] call CBA_fnc_addSetting;
 cgqc_2023_preInit_done = true;

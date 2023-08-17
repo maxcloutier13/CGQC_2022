@@ -277,11 +277,15 @@ if (hasInterface) then {
         waitUntil {sleep 0.5;!isNil "_loadout"};
         [_loadout] execVM "\CGQC_2022\loadouts\mk2_role_switch_loadout.sqf";
         waitUntil {sleep 0.5;mk2_role_switch_loadout};
-        // Set radios 
-        waitUntil {sleep 0.5;!isNil "_radios"};
-        sleep 0.5;
-        [_radios, _section] execVM "\cgqc\functions\fnc_setRadios.sqf";
-        //[_radios, _section] execVM "\cgqc_2022\loadouts\mk2_role_switch_radios.sqf";
+        // Set radios
+        
+        if (cgqc_flag_isTraining) then { // Training setup 
+            ["training"] execVM "\cgqc\functions\fnc_getRadios.sqf";
+        } else {
+            waitUntil {sleep 0.5;!isNil "_radios"};
+            sleep 0.5;
+            [_radios, _section] execVM "\cgqc\functions\fnc_setRadios.sqf";
+        };
 
         //Set patch back
         player setVariable ["BIS_fnc_setUnitInsignia_class", nil]; //Remove patch

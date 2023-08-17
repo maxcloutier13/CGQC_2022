@@ -21,7 +21,7 @@ if (cgqc_config_sidearm) then {
     player addWeapon "cgqc_gun_glock19_wood";
     player addHandgunItem "Tier1_20Rnd_9x19_JHP";
     player addHandgunItem "tier1_dbalpl";
-    player addHandgunItem "Tier1_TiRant9S"; //Silencer on pistol
+    //player addHandgunItem "Tier1_TiRant9S"; //Silencer on pistol
     player addHandgunItem "tier1_sig_romeo1"; //Dot on pistol
 };
 

@@ -475,6 +475,8 @@ class cgqc_vic_badger : B_W_APC_Wheeled_01_cannon_F
     };
     //Custom inventory
     #include "vehicles\cgqc_vic_loadout_ifv.cpp"
+    // Medium  ADS
+    class EventHandlers {init = "['medium', _this] execVM 'cgqc\vehicles\fnc_addADS.sqf'";};
 };
 class cgqc_vic_bradley : RHS_M2A3_BUSKIII_wd
 {
@@ -493,6 +495,8 @@ class cgqc_vic_bradley : RHS_M2A3_BUSKIII_wd
         "cgqc_2022\vehicles\cgqc_vic_bradley_duke.paa"
     };
     #include "vehicles\cgqc_vic_loadout_ifv.cpp"
+    // Medium  ADS
+    class EventHandlers {init = "['medium', _this] execVM 'cgqc\vehicles\fnc_addADS.sqf'";};
 };
 class cgqc_vic_wiezel : I_LT_01_scout_F
 {
@@ -526,6 +530,8 @@ class cgqc_vic_tank_leopard : UK3CB_LDF_B_Leopard_Cage {
     editorSubcategory = "EdSubcat_cgqc_vic_mbt";
     displayName = "Leopard II (3)";
     crew = "CGQC_units_mk2_Tank_Driver_ai";
+    // Heavy ADS
+    class EventHandlers {init = "['heavy', _this] execVM 'cgqc\vehicles\fnc_addADS.sqf'";};
 };
 class O_T_MBT_04_cannon_F;
 class cgqc_vic_tank_armata : O_T_MBT_04_cannon_F {
@@ -536,6 +542,12 @@ class cgqc_vic_tank_armata : O_T_MBT_04_cannon_F {
     editorSubcategory = "EdSubcat_cgqc_vic_mbt";
     displayName = "T-14 Armata (3)";
     crew = "CGQC_units_mk2_Tank_Driver_ai";
+    hiddenSelectionsTextures[] = {
+        "a3\Armor_F_Tank\MBT_04\Data\MBT_04_exterior_green_hex_1_CO.paa",
+        "a3\Armor_F_Tank\MBT_04\Data\MBT_04_exterior_green_hex_2_CO.paa",
+        "A3\Armor_F\Data\camonet_CSAT_HEX_Green_CO.paa"};
+	// Heavy ADS
+    class EventHandlers {init = "['heavy', _this] execVM 'cgqc\vehicles\fnc_addADS.sqf'";};
 };
 
 // Unarmed -----------------------------------------------------------------------------------
@@ -698,6 +710,8 @@ class cgqc_vic_mrap : B_W_MRAP_01_F {
     displayName = "MRAP (1+3)";
     crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
+    // Light ADS
+    class EventHandlers {init = "_this spawn DAPS_fnc_APSTrophyLV";};
 };
 class cgqc_vic_polaris : rhsusf_mrzr4_d {
     scope = 2;
@@ -769,6 +783,8 @@ class cgqc_vic_mrap_hmg : B_W_MRAP_01_hmg_F {
     displayName = "MRAP HMG (2+2)";
     crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
+    // Light ADS
+    class EventHandlers {init = "['light', _this] execVM 'cgqc\vehicles\fnc_addADS.sqf'";};
 };
 
 // Boats -----------------------------------------------------------------------------------

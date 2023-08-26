@@ -212,9 +212,9 @@ if (hasInterface) then {
                 cgqc_player_role = "JTAC";
             };
             // Pilots and crews ===============================================================
-            case "heli_pilot":{ 
-                _perks = "heli_pilot";
-                _uniform = "heli_pilot";
+            case "heli":{ 
+                _perks = "heli";
+                _uniform = "heli";
                 _loadout = "heli";
                 _radios = "griffon_pieton";
                 cgqc_player_role = "Helicopter Pilot";
@@ -236,9 +236,9 @@ if (hasInterface) then {
                 cgqc_player_role = "Jet Pilot";
                 cgqc_player_role_infantry = false;
             };
-            case "tank_driver":{
-                _perks = "tank_driver";
-                _uniform = "tank_driver";
+            case "driver":{
+                _perks = "driver";
+                _uniform = "driver";
                 _loadout = "tank";
                 _radios = "centaure_pieton";
                 cgqc_player_role = "Tank Driver";
@@ -246,7 +246,7 @@ if (hasInterface) then {
             };
             case "tank_crew":{
                 _perks = "tank_crew";
-                _uniform = "tank_driver";
+                _uniform = "driver";
                 _loadout = "tank";
                 _radios = "centaure_pieton";
                 cgqc_player_role = "Tank Crew";
@@ -263,7 +263,7 @@ if (hasInterface) then {
 
         // Perks and traits setup 
         waitUntil {sleep 0.5;!isNil "_perks"};
-        [_perks] execVM "\CGQC_2022\loadouts\mk2_role_switch_perks.sqf";
+        [_perks] call cgqc_fnc_switchPerks;
         waitUntil {sleep 0.5;mk2_role_switch_perks_done};
         // Add Uniform
         [_uniform] execVM "\CGQC_2022\loadouts\mk2_role_switch_uniform.sqf";

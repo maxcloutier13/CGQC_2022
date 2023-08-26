@@ -99,7 +99,7 @@
         };
         // == Pilots ================================================================
         case "CGQC_units_mk1_4_Pilot_heli":{
-            ["heli_pilot", 1, true] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf";
+            ["heli", 1, true] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf";
         };
         case "CGQC_units_mk1_4_crew_heli":{
             ["heli_crew", 1, true] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf";
@@ -109,7 +109,7 @@
         //};
         // == Drivers ================================================================
         case "CGQC_units_mk1_4_Tank_Driver":{
-            ["tank_driver", 1, true] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf";
+            ["driver", 1, true] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf";
         };
         case "CGQC_units_mk1_4_Tank_Crew":{
             ["tank_crew", 1, true] execVM "\CGQC_2022\loadouts\mk2_role_switch.sqf";

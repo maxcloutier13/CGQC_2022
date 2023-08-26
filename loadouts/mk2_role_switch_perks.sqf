@@ -14,19 +14,20 @@ cgqc_perks_eng = false;
 cgqc_perks_medic = false;
 cgqc_perks_doctor = false;
 
-// Every CplC is a medic 
+// Every CplC is a medic
+/* 
 if (cgqc_player_rank > 2) then 
 {
 	player setUnitTrait ["Medic", true];
 	cgqc_perks_medic = true;
-};
+};*/
 
 switch (_type) do {
 	case "hq":{
 	};
     case "tl":{
 	};
-	case "heli_pilot":{
+	case "heli":{
 		player setUnitTrait ["engineer", true];
 		cgqc_perks_pilot = true;
 	};
@@ -36,7 +37,7 @@ switch (_type) do {
 	case "jet_pilot":{
 		player setUnitTrait ["engineer", true];
 	};
-	case "tank_driver":{
+	case "driver":{
 		player setUnitTrait ["engineer", true];
 		cgqc_perks_driver = true;
 	};
@@ -52,7 +53,8 @@ switch (_type) do {
 		player setUnitTrait ["explosiveSpecialist", true];
 	};
 	case "med":{
-		cgqc_perks_doctor = true;
+		cgqc_perks_medic = true
+		//cgqc_perks_doctor = true;
 		player setUnitTrait ["Medic", true];
 	};
 	case "at":{

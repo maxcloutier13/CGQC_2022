@@ -207,30 +207,7 @@ class cgqc_box_mk1_arsenal : B_supplyCrate_F
     class TransportItems{};
     class TransportBackpacks{};
 };
-// Mk1 Ressuply box
-class cgqc_box_mk1_supplies : Box_NATO_Wps_F
-{
-    scope = 2;
-    author = "silent1";
-    _generalMacro = "cgqc_box_mk1_supplies";
-    displayName = "CGQC Logistics Ammo Infantry";
-    maximumLoad = 3000; 
-    hiddenSelectionsTextures[] = {
-        "\CGQC_2022\containers\cgqc_box_mk1_supplies.paa", 
-        "\CGQC_2022\containers\cgqc_box_mk1_ammobox.paa"
-    };
-    #include "\cgqc_2022\loadouts\cgqc_box_mk1_supplies.sqf"
-    ace_cargo_size = 1;  // Cargo space the object takes
-    ace_cargo_canLoad = 1;  // Enables the object to be loaded (1-yes, 0-no)
-    ace_cargo_noRename = 0;  // Blocks renaming object (1-blocked, 0-allowed)
-    
-    ace_dragging_canDrag = 1;  // Can be dragged (0-no, 1-yes)
-    ace_dragging_dragPosition[] = {0, 1.5, 0};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1.5, 0])
-    ace_dragging_dragDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
-    ace_dragging_canCarry = 1;  // Can be carried (0-no, 1-yes)
-    ace_dragging_carryPosition[] = {0, 1, 1};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1, 1])
-    ace_dragging_carryDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
-};
+
 // Mk1 Portable Mortar
 class Box_NATO_WpsSpecial_F;
 class cgqc_box_mk1_mortar : Box_NATO_WpsSpecial_F
@@ -243,7 +220,7 @@ class cgqc_box_mk1_mortar : Box_NATO_WpsSpecial_F
     ace_cargo_canLoad = 1;
     hiddenSelectionsTextures[] = {
         "\CGQC_2022\containers\cgqc_box_mortar_label.paa",
-        "\CGQC_2022\containers\cgqc_box_mk1_ammobox.paa"
+        "\CGQC\containers\cgqc_box_mk1_ammobox.paa"
     };
     #include "loadouts\cgqc_box_mortar.sqf"
 };
@@ -257,7 +234,7 @@ class cgqc_box_mk1_mortar_mk6 : Box_NATO_WpsSpecial_F
     ace_cargo_canLoad = 1;
     hiddenSelectionsTextures[] = {
         "\CGQC_2022\containers\cgqc_box_mortar_label.paa",
-        "\CGQC_2022\containers\cgqc_box_mk1_ammobox.paa"
+        "\CGQC\containers\cgqc_box_mk1_ammobox.paa"
     };
     #include "loadouts\cgqc_box_mortar_mk6.sqf"
 };

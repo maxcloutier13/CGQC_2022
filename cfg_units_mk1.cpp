@@ -497,7 +497,7 @@ class CGQC_units_mk1_4_Pilot_heli : cgqc_soldat_moderne
     backpack = "CGQC_units_mk1_4_Pilot_heli_pack";
     editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_4_Pilot_heli.jpg";
     class EventHandlers {
-        //init = "['heli_pilot', 1, true] execVM '\CGQC_2022\functions\fnc_initRoleSwitch.sqf'";
+        //init = "['heli', 1, true] execVM '\CGQC_2022\functions\fnc_initRoleSwitch.sqf'";
     };
 };
 class CGQC_units_mk1_4_crew_heli : cgqc_soldat_moderne
@@ -572,7 +572,7 @@ class CGQC_units_mk1_4_Tank_Driver : cgqc_soldat_moderne
     backpack = "CGQC_units_mk1_4_Tank_Driver_pack";
     editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_4_Tank_Driver.jpg";
     class EventHandlers {
-        //init = "['tank_driver', 1, true] execVM '\CGQC_2022\functions\fnc_initRoleSwitch.sqf'";
+        //init = "['driver', 1, true] execVM '\CGQC_2022\functions\fnc_initRoleSwitch.sqf'";
     };
 };
 class CGQC_units_mk1_4_Tank_Crew : cgqc_soldat_moderne

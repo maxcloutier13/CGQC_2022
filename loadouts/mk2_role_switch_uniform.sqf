@@ -41,7 +41,7 @@ switch (_type) do {
         };
         _helmet =  "cgqc_helmet_mk1";
 	};
-    case "heli_pilot":{ //=============================================================================================
+    case "heli":{ //=============================================================================================
         player forceAddUniform "cgqc_uniform_mk1_helipilot";
         _vest = "cgqc_vest_mk1_pilot_black";
         _backpack =  "CGQC_units_mk1_4_Pilot_heli_pack";
@@ -62,7 +62,7 @@ switch (_type) do {
         _helmet =  "cgqc_helmet_crew_black";
         _face =  "G_mas_can_wrap_B";
 	};
-    case "tank_driver":{ //=============================================================================================
+    case "driver":{ //=============================================================================================
         _vest = "cgqc_vest_mk1_driver";
         _backpack =  "cgqc_pack_mk1_tank_driver";
         _helmet =  "cgqc_helmet_mk1_tank";

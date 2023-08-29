@@ -14,4 +14,4 @@ _menu_name = "CGQC Player settings";
 	[_menu_name, "Sidearm Perso (2023)"], ""] call CBA_fnc_addSetting;
 ["cgqc_config_sidearm_optic", "EDITBOX", ["Optique", "Optique"], 
 	[_menu_name, "Sidearm Perso (2023)"], "tier1_sig_romeo1"] call CBA_fnc_addSetting;
-cgqc_2023_preInit_done = true;
+cgqc_start_2023_preInit_done = true;

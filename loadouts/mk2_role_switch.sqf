@@ -1,6 +1,6 @@
 
 waitUntil {!isNull (findDisplay 46)};
-waitUntil {cgqc_postInitClient_done};
+waitUntil {cgqc_start_postInitClient_done};
 cgqc_roleSwitch_done = false;
 sleep 0.5;
 

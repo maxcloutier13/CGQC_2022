@@ -91,7 +91,7 @@ player linkItem "JAS_GPNVG18_Full_blk_TI";
 
 sleep 2;
 //Set  radios
-["griffon_pieton"] execVM "\cgqc\functions\fnc_setRadios.sqf";
+["griffon_pieton"] call CGQC_fnc_setRadios;
 hint "Rôle: Griffon";
 sleep 3;
 hintSilent "";

@@ -1,4 +1,4 @@
 // === mk48 HMG Vest ========
 //  
 
-[] execVM "cgqc\functions\fnc_addMags.sqf";
+[] call CGQC_fnc_addMags;

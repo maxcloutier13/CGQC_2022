@@ -120,7 +120,7 @@ player linkItem "JAS_GPNVG18_blk";
 
 sleep 2;
 //Set  radios
-["hq"] execVM "\cgqc\functions\fnc_setRadios.sqf";
+["hq"] call CGQC_fnc_setRadios;
 hint "Rôle: HQ";
 sleep 3;
 hintSilent "";

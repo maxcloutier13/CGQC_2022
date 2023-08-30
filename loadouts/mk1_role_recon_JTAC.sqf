@@ -126,7 +126,7 @@ player linkItem "JAS_GPNVG18_blk";
 execVM "\cgqc_2022\scripts\mk1_action_ghillie_menu.sqf";
 sleep 2;
 //Set radios
-["jtac"] execVM "\cgqc\functions\fnc_setRadios.sqf";
+["jtac"] call CGQC_fnc_setRadios;
 hint "Rôle: JTAC";
 sleep 3;
 hintSilent "";

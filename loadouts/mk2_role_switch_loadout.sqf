@@ -31,7 +31,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_hq.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_hq.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_hq.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
 	};
@@ -43,7 +43,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_hq.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_hq.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_hq.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
 	};
@@ -55,7 +55,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_tl.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_tl.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_tl.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
 	};
@@ -67,7 +67,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_tl.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_tl.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_tl.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
 	};
@@ -79,7 +79,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_tlnogl.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_tl.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_tl.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
         player addItemToBackpack "Tier1_Razor_Gen3_110_ADM_PIP";
@@ -90,7 +90,7 @@ switch (_type) do {
         // === Vest
         #include "\cgqc_2022\loadouts\mk2\vest_p90_pilot.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_pilot.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_pilot.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
 	};
@@ -100,7 +100,7 @@ switch (_type) do {
         // === Vest
         #include "\cgqc_2022\loadouts\mk2\vest_p90_pilot.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_pilot.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_pilot.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_advanced.sqf"
         // Remove superfluous nvgs
@@ -114,7 +114,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_driver.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_pilot.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_pilot.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
         player unlinkItem "ItemGPS";
@@ -128,7 +128,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_drone.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_recon.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_recon.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_recon.sqf"
 	};
@@ -140,7 +140,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_sniper.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_recon.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_recon.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_recon.sqf"
 	};
@@ -152,7 +152,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_sniper.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_recon.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_recon.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_recon.sqf"
 	};
@@ -164,7 +164,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_sniper.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_recon.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_recon.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_recon.sqf"
 	};
@@ -176,7 +176,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_jtac.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_jtac.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_jtac.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_recon.sqf"
 	};
@@ -190,7 +190,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_eng.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
         player unlinkItem "ItemGPS";
@@ -206,7 +206,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_eng_saboteur.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
         player unlinkItem "ItemGPS";
@@ -221,7 +221,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_med.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_2ic.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_2ic.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
 	};
@@ -236,7 +236,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_jav.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
 	};
@@ -251,7 +251,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_maaws.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
 	};
@@ -263,7 +263,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_m27.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
 	};
@@ -275,7 +275,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_mk48.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
 	};
@@ -287,7 +287,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_mk46.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
 	};
@@ -299,7 +299,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_mrksm.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_recon.sqf"
 	};
@@ -313,7 +313,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_mortar.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_2ic.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_2ic.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_recon.sqf"
 	};
@@ -325,7 +325,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_rifleman.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
         // Jetable
@@ -339,7 +339,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_rifleman.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
         // Jetable
@@ -353,7 +353,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_rifleman.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
         // Jetable
@@ -367,7 +367,7 @@ switch (_type) do {
         // === Backpack 
         #include "\cgqc_2022\loadouts\mk2\backpack_grenadier.sqf"
         // === Radios 
-        #include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
+        //#include "\cgqc_2022\loadouts\mk2\radios_inf.sqf"
         // === Items 
         #include "\cgqc_2022\loadouts\mk2\items_basic.sqf"
 	};

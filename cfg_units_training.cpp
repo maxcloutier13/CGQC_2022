@@ -1,6 +1,7 @@
 class B_Soldier_f;
+class CGQC_Soldat_Base;
 // 0 - Training - soldier and instructor -------------------------------------------------------------------------------------------------------------
-class cgqc_soldat_moderne : B_Soldier_f
+class cgqc_soldat_moderne : CGQC_Soldat_Base
 {
 	author = "silent1";
 	faction = "CGQC";
@@ -22,8 +23,9 @@ class cgqc_soldat_moderne : B_Soldier_f
 	class EventHandlers {
         //init = "[] spawn CGQC_fnc_initTraining";
     };
+
 };
-class cgqc_officer_1_moderne : B_Soldier_f
+class cgqc_officer_1_moderne : cgqc_soldat_moderne
 {
 	author = "silent1";
 	faction = "CGQC";
@@ -49,7 +51,7 @@ class cgqc_officer_1_moderne : B_Soldier_f
         //init = "[] spawn CGQC_fnc_initTraining";
     };
 };
-class cgqc_officer_moderne : B_Soldier_f
+class cgqc_officer_moderne : cgqc_soldat_moderne
 {
 	author = "silent1";
 	faction = "CGQC";

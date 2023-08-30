@@ -1964,7 +1964,7 @@ class cgqc_box_mk2_parachute : Box_NATO_Equip_F
     };
     class EventHandlers
     {
-        init = "[_this, 'para'] execVM '\CGQC\loadouts\mk3_menu.sqf'";
+        init = "[_this, 'para'] call CGQC_fnc_loadMk3Menu";
     };
 };
 // Diving stuff
@@ -2014,7 +2014,7 @@ class cgqc_box_mk2_diving : Box_NATO_Equip_F
     };
     class EventHandlers
     {
-        init = "[_this, 'dive'] execVM '\CGQC\loadouts\mk3_menu.sqf'";
+        init = "[_this, 'dive'] call CGQC_fnc_loadMk3Menu";
     };
 };
 // Mk2 Cargo container

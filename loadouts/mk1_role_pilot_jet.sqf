@@ -84,7 +84,7 @@ player linkItem "ItemGPS";
 
 sleep 2;
 //Set  radios
-["griffon_pieton"] execVM "\cgqc\functions\fnc_setRadios.sqf";
+["griffon_pieton"] call CGQC_fnc_setRadios;
 hint "Rôle: Jet Pilot";
 sleep 3;
 hintSilent "";

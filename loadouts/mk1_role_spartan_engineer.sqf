@@ -122,7 +122,7 @@ player linkItem "JAS_GPNVG18_blk";
 
 sleep 2;
 //Set  radios
-["spartan", _section] execVM "\cgqc\functions\fnc_setRadios.sqf";
+["spartan", _section] call CGQC_fnc_setRadios;
 hint "Rôle: Ingénieur";
 sleep 10;
 hintSilent "";

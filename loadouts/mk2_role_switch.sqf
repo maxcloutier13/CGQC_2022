@@ -29,12 +29,19 @@ if (hasInterface) then {
     // Check if player in chill mode
     if (cgqc_player_chill) then {
         ["ready", true] call CGQC_fnc_perksBasic;
-        waitUntil {!cgqc_player_chill};
     };
 
     // ===== Remove items ======================================================
-    #include "\cgqc_2022\loadouts\mk2\remove_all.sqf"
-    waitUntil {cgqc_player_role_removed};
+    removeAllWeapons player;
+    removeAllItems player;
+    removeAllAssignedItems player;
+    removeUniform player;
+    removeVest player;
+    removeBackpack player;
+    removeHeadgear player;
+    removeGoggles player;
+    cgqc_player_role_removed = true;
+
     switch (_type) do {
         // Command ========================================================================
         case "hq":{ 
@@ -269,7 +276,7 @@ if (hasInterface) then {
     [_loadout] execVM "\CGQC_2022\loadouts\mk2_role_switch_loadout.sqf";
 
     // Get and set radios
-    [_radios, _section] call CGQC_getRadiosPresets;
+    [_radios, _section] call CGQC_fnc_getRadioPresets;
 
     //Set patch back
     player setVariable ["BIS_fnc_setUnitInsignia_class", nil]; //Remove patch
@@ -283,7 +290,6 @@ if (hasInterface) then {
     player action ['SwitchWeapon', player, player, 250];
     // Start transition
 
-    waitUntil {sleep 0.5;!cgqc_intro_running};
     ["role", true] call CGQC_fnc_showTransition;
     cgqc_roleSwitch_done = true;
     disableUserInput false;

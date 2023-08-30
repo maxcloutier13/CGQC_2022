@@ -1,4 +1,4 @@
-["cgqc_gun_mk1_mk46"] execVM "\CGQC_2022\functions\getCustomGun.sqf";sleep 0.5;
+["cgqc_gun_mk1_mk46"] call CGQC_fnc_getCustomGun;
 player addPrimaryWeaponItem "Tier1_KAC_556_QDC_CQB_Black";
 player addPrimaryWeaponItem "Tier1_Mk46Mod1_LA5_M600V_Black";
 player addPrimaryWeaponItem "optic_arco_blk_f";

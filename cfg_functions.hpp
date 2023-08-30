@@ -9,11 +9,3 @@ class cfgFunctions {
         };
     };
 };
-
-   // Initialisation ----------------------------------------------------------------------------
-        /*
-        class preInit {
-            file = "\cgqc\functions\fnc_preInit.sqf";
-            description = "Set everything that needs to be there before editor/menu/briefing";
-        };
-        */

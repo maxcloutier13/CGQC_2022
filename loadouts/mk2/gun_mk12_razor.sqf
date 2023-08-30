@@ -1,4 +1,4 @@
-["cgqc_gun_mk1_mk12"] execVM "\CGQC_2022\functions\getCustomGun.sqf";sleep 0.5;
+["cgqc_gun_mk1_mk12"] call CGQC_fnc_getCustomGun;
 
 player addPrimaryWeaponItem "gtr_acc_AEM";
 player addPrimaryWeaponItem "Tier1_M4BII_NGAL_M603V_FL";

@@ -227,7 +227,7 @@ switch (_type) do {
 	};
     case "at_jav":{ //=============================================================================================
         // === Javelin
-        ["cgqc_gun_mk1_Javelin"] execVM "\CGQC_2022\functions\getCustomGun.sqf";sleep 0.5;
+        ["cgqc_gun_mk1_Javelin"] call CGQC_fnc_getCustomGun;
         player addSecondaryWeaponItem "jav_AT_mas_can";
         // === Weapons
         #include "\cgqc_2022\loadouts\mk2\gun_m4_lpvo.sqf"
@@ -242,7 +242,7 @@ switch (_type) do {
 	};
     case "at_maaws":{ //=============================================================================================
         // === MAAWS
-        ["cgqc_gun_mk1_MAAWS"] execVM "\CGQC_2022\functions\getCustomGun.sqf";sleep 0.5;
+        ["cgqc_gun_mk1_MAAWS"] call CGQC_fnc_getCustomGun;
         player addSecondaryWeaponItem "MRAWS_HEAT_F";
         // === Weapons
         #include "\cgqc_2022\loadouts\mk2\gun_m4_dotplus.sqf"

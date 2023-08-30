@@ -125,7 +125,7 @@ sleep 0.5;
 // Add stuff to player
 player addVest _vest;
 player addBackpack _backpack;
-[_helmet] execVM "\CGQC_2022\functions\getCustomHelmet.sqf";
+[_helmet] call CGQC_fnc_getCustomHelmet;
 player addGoggles _face;
 sleep 0.5;
 mk2_role_switch_uniform = true;

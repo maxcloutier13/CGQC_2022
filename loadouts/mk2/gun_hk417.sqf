@@ -1,4 +1,4 @@
-["cgqc_gun_mk1_hk417"] execVM "\CGQC_2022\functions\getCustomGun.sqf";sleep 0.5;
+["cgqc_gun_mk1_hk417"] call CGQC_fnc_getCustomGun;
 player addPrimaryWeaponItem "Tier1_SandmanS_Black";
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk_light";
 player addPrimaryWeaponItem "Tier1_Razor_Gen3_110_Geissele_Docter";

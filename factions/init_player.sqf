@@ -29,7 +29,6 @@
     switch (_unit) do {
         // == Training ================================================================
         case "cgqc_soldat_moderne";
-        case "cgqc_officer_1_moderne";
         case "cgqc_officer_moderne": {
             [] spawn CGQC_fnc_initTraining;
         };

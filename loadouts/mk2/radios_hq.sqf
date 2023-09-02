@@ -1,5 +1,5 @@
 // === HQ Radios ================================
-player addItemToBackpack "ACRE_PRC343";
+player addItemToUniform "ACRE_PRC343";
 player addItemToBackpack "ACRE_PRC117F";
 player addItemToBackpack "ACRE_PRC117F";
 // Delete event in case it exists

@@ -20,6 +20,26 @@ class CGQC_units_mk1_0_HQ : cgqc_soldat_moderne
     backpack = "CGQC_units_mk1_0_HQ_pack";
     editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_0_HQ.jpg";
 };
+class CGQC_units_mk1_0_SL : cgqc_soldat_moderne
+{
+    faction = "CGQC";
+    editorSubcategory = "EdSubcat_cgqc_mk1";
+    side = 1;
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "Squad Lea";
+    uniformClass = "cgqc_uniform_mk1";
+    weapons[] = {"cgqc_gun_mk1_hq_m4a1", "cgqc_gun_glock19_wood", "Laserdesignator_01_khk_F", "Put", "Throw"};
+    respawnWeapons[] = {"cgqc_gun_mk1_hq_m4a1", "cgqc_gun_glock19_wood", "Laserdesignator_01_khk_F", "Put", "Throw"};
+    items[] = {};
+    respawnItems[] = {};
+    magazines[] = {};
+    respawnMagazines[] = {};
+    linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "Laserdesignator_01_khk_F", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan", "G_mas_can_shemag_gog_l"};
+    respawnLinkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "Laserdesignator_01_khk_F", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan", "G_mas_can_shemag_gog_l"};
+    backpack = "CGQC_units_mk1_0_HQ_pack";
+    editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_0_HQ.jpg";
+};
 class CGQC_units_mk1_0_TeamLeader_Carbine : cgqc_soldat_moderne
 {
     faction = "CGQC";
@@ -650,25 +670,25 @@ class CGQC_units_mk2_Tank_Crew_ai : cgqc_soldat_moderne
 class CGQC_units_mk1_5_Diver_TL : CGQC_units_mk1_0_TeamLeader_Carbine
 {
     editorSubcategory = "EdSubcat_cgqc_mk1";
-    displayName = "Plongeur (TL)";
+    displayName = "Diver (TL)";
     uniformClass = "cgqc_uniform_mk1";
 };
 class CGQC_units_mk1_5_Diver_sniper : CGQC_units_mk1_2_Sniper_ebr
 {
     editorSubcategory = "EdSubcat_cgqc_mk1";
-    displayName = "Plongeur (Sniper)";
+    displayName = "Diver (Sniper)";
     uniformClass = "cgqc_uniform_mk1";
 };
 class CGQC_units_mk1_5_Diver_Spotter : CGQC_units_mk1_2_Spotter
 {
     editorSubcategory = "EdSubcat_cgqc_mk1";
-    displayName = "Plongeur (Spotter)";
+    displayName = "Diver (Spotter)";
     uniformClass = "cgqc_uniform_mk1";
 };
 class CGQC_units_mk1_5_Diver_Engineer : CGQC_units_mk1_1_Engineer
 {
     editorSubcategory = "EdSubcat_cgqc_mk1";
-    displayName = "Plongeur (Saboteur)";
+    displayName = "Diver (Saboteur)";
     uniformClass = "cgqc_uniform_mk1";
 };
 

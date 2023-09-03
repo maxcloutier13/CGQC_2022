@@ -304,7 +304,7 @@ class cgqc_pack_mk1_kitbag : B_Kitbag_Base // Base
     displayName = "CGQC Kitbag Vert";
     picture = "\A3\Weapons_F\ammoboxes\bags\data\ui\icon_B_C_Kitbag_rgr";
     model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Fast";
-    hiddenSelectionsTextures[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_fast_rgr_co.paa"};   
+    hiddenSelectionsTextures[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_fast_rgr_co.paa"};
 };
 class cgqc_pack_mk1_kitbag_desert : B_mas_can_Kitbag_d // Desert
 {
@@ -472,7 +472,7 @@ class cgqc_pack_mk1_tank_driver : cgqc_pack_mk1_magic
     };
     class TransportItems
     {
-  
+
     };
     class TransportWeapons
     {
@@ -485,13 +485,13 @@ class CGQC_units_mk1_0_HQ_pack : cgqc_pack_mk1_radiobag
     scope = 1;
     class TransportMagazines
     {
-    
+
         class _xx_SmokeShell
         {
             count = 3;
             magazine = "SmokeShell";
         };
-      
+
     };
     class TransportItems
     {
@@ -719,7 +719,7 @@ class CGQC_units_mk1_0_TeamLeader_Carbine_pack : cgqc_pack_mk1_radiobag
             count = 1;
             name = "G_mas_can_gasmask";
         };
-        
+
         class _xx_ACRE_PRC117F
         {
             count = 1;
@@ -819,7 +819,7 @@ class CGQC_units_mk1_0_TeamLeader_CQB_pack : cgqc_pack_mk1_radiobag
             count = 1;
             name = "G_mas_can_gasmask";
         };
-        
+
         class _xx_ACRE_PRC117F
         {
             count = 1;
@@ -1553,7 +1553,7 @@ class CGQC_units_mk1_2_Marksman_pack : cgqc_pack_mk1_kitbag
             count = 1;
             name = "ACE_Kestrel4500";
         };
-        
+
     };
     class TransportWeapons
     {
@@ -1644,7 +1644,7 @@ class CGQC_units_mk1_2_Sniper_pack : cgqc_pack_mk1_kitbag
             count = 1;
             name = "ACE_Kestrel4500";
         };
-        
+
     };
     class TransportWeapons
     {
@@ -1827,7 +1827,7 @@ class CGQC_units_mk1_4_Tank_Driver_pack : cgqc_pack_mk1_magic
             count = 1;
             name = "ToolKit";
         };
-        
+
         class _xx_ACE_fieldDressing
         {
             count = 10;
@@ -1893,27 +1893,7 @@ class CGQC_units_mk1_4_crew_heli_pack : B_Parachute
     };
 };
 
-// ------ MK II -----------------------------------------------------------------------------------------
-// Mk2 Arsenal
-class cgqc_box_mk2_arsenal_old : B_supplyCrate_F
-{
-    scope = 2;
-    author = "silent1";
-    _generalMacro = "cgqc_box_mk2_arsenal_old";
-    displayName = "CGQC MK2 Arsenal (Old)";
-    hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_box_mk2.paa"};
-    editorPreview = "\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_supplyCrate_F.jpg";
-    ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
-    ace_cargo_noRename = 1;
-    class EventHandlers
-    {
-        init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk2.sqf'";
-    };
-    class TransportMagazines{};
-    class TransportWeapons{};
-    class TransportItems{};
-    class TransportBackpacks{};
-};
+// 2023 upgrades of Core containers
 // Parachute stuff
 class cgqc_box_mk2_parachute : Box_NATO_Equip_F
 {
@@ -1964,7 +1944,7 @@ class cgqc_box_mk2_parachute : Box_NATO_Equip_F
     };
     class EventHandlers
     {
-        init = "[_this, 'para'] execVM '\CGQC\loadouts\mk3_menu.sqf'";
+        init = "[_this, 'para'] call CGQC_fnc_loadMk3Menu";
     };
 };
 // Diving stuff
@@ -2014,36 +1994,6 @@ class cgqc_box_mk2_diving : Box_NATO_Equip_F
     };
     class EventHandlers
     {
-        init = "[_this, 'dive'] execVM '\CGQC\loadouts\mk3_menu.sqf'";
-    };
-};
-// Mk2 Cargo container
-class cgqc_box_mk2_cargo : Land_Cargo10_military_green_F
-{
-    scope = 2;
-    author = "silent1";
-    _generalMacro = "cgqc_box_mk2_cargo";
-    displayName = "CGQC MK2 Cargo Container";
-    model = "\cgqc_2022\containers\cgqc_box_cargo.p3d";
-    ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
-    ace_cargo_noRename = 1;
-    class EventHandlers
-    {
-        init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk2_cargo.sqf'";
-    };
-};
-// Legacy mk1 cargo
-class cgqc_box_mk1_cargo : Land_Cargo10_military_green_F
-{
-    scope = 0;
-    author = "silent1";
-    _generalMacro = "cgqc_box_mk1_cargo";
-    displayName = "CGQC MK2 Cargo Container";
-    model = "\cgqc_2022\containers\cgqc_box_cargo.p3d";
-    ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
-    ace_cargo_noRename = 1;
-    class EventHandlers
-    {
-        //init = "_this execVM '\CGQC_2022\loadouts\cgqc_box_mk2_cargo.sqf'";
+        init = "[_this, 'dive'] call CGQC_fnc_loadMk3Menu";
     };
 };

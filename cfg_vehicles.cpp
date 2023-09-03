@@ -598,7 +598,7 @@ class cgqc_vic_quad_ext : NDS_6x6_ATV_MIL_LR
     };
     class EventHandlers
     {
-         init = "[_this select 0, 'car'] execVM '\cgqc\functions\fnc_addSpares.sqf'";
+         init = "[_this select 0, 'car'] call CGQC_fnc_addSpares";
     };
     #include "vehicles\cgqc_vic_loadout_quadExt.cpp"
 };
@@ -656,7 +656,7 @@ class cgqc_vic_jeep : UK3CB_B_M151_Jeep_Open_HIDF {
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
     class EventHandlers
     {
-         init = "[_this select 0, 'car'] execVM '\cgqc\functions\fnc_addSpares.sqf'";
+         init = "[_this select 0, 'car'] call CGQC_fnc_addSpares";
     };
 };
 class cgqc_vic_jeep_cov : UK3CB_B_M151_Jeep_Closed_HIDF {

@@ -110,7 +110,7 @@ class cgqc_uniform_mk1_helipilot : U_mas_can_B_CombatUniform_S_SWAT
     class ItemInfo: UniformItem
     {
         uniformModel = "-";
-        uniformClass = "cgqc_soldat_moderne";
+        uniformClass = "B_mas_can_SoldierCQB_F";
         containerClass = "Supply80";
         mass = 20;
     };

@@ -1,1 +1,0 @@
-player addItemToBackpack "rev_darter_item";

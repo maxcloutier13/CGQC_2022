@@ -1,3 +1,4 @@
+
 class cfgGroups
 {
     class WEST
@@ -106,20 +107,7 @@ class cfgGroups
                         rank = "PRIVATE";
                         position[] = {0, -24, 0};
                     };
-                };
-                class CGQC_B_HQ
-                {
-                    name = "HQ";
-                    faction = "CGQC";
-                    side = 1;
-                    class Unit0
-                    {
-                        side = 1;
-                        vehicle = "cgqc_spawn_hq";
-                        rank = "PRIVATE";
-                        position[] = {0, -0, 0};
-                    };
-                };
+                }; 
                 class CGQC_B_Spartan_1
                 {
                     name = "Spartan 1 - Lead Section";
@@ -437,74 +425,11 @@ class cfgGroups
             };
             class Mechanized
             {
-                name = "Mechanized";
-                
-                /*class CGQC_Mech_HQ
-                {
-                    name = "HQ + Command Vehicle";
-                    faction = "CGQC";
-                    side = 1;
-                    class Unit0
-                    {
-                        side = 1;
-                        vehicle = "cgqc_spawn_hq";
-                        rank = "PRIVATE";
-                        position[] = {0, -0, 0};
-                    };
-                    class Unit1
-                    {
-                        side = 1;
-                        vehicle = "cgqc_vic_wiezel";
-                        rank = "PRIVATE";
-                        position[] = {0, -4, 0};
-                    };
-                };*/
+                name = "Mechanized";               
             };
             class Armored
             {
-                name = "Armored";
-                /*
-                class CGQC_IFV_Bradley
-                {
-                    name = "Centaure - Bradley";
-                    faction = "CGQC";
-                    side = 1;
-                    class Unit0
-                    {
-                        side = 1;
-                        vehicle = "cgqc_spawn_tank_driver";
-                        rank = "PRIVATE";
-                        position[] = {0, -0, 0};
-                    };
-                    class Unit1
-                    {
-                        side = 1;
-                        vehicle = "cgqc_vic_bradley";
-                        rank = "PRIVATE";
-                        position[] = {0, -4, 0};
-                    };
-                };
-                class CGQC_IFV_Badger
-                {
-                    name = "Centaure - Badger";
-                    faction = "CGQC";
-                    side = 1;
-                    class Unit0
-                    {
-                        side = 1;
-                        vehicle = "cgqc_spawn_tank_driver";
-                        rank = "PRIVATE";
-                        position[] = {0, -0, 0};
-                    };
-                    class Unit1
-                    {
-                        side = 1;
-                        vehicle = "cgqc_vic_badger";
-                        rank = "PRIVATE";
-                        position[] = {0, -4, 0};
-                    };
-                };
-                */
+                name = "Armored";               
             };
             class SpecOps
             {
@@ -554,128 +479,6 @@ class cfgGroups
             class Air
             {
                 name = "Air";
-                /*
-                class CGQC_B_air_lilbird
-                {
-                    name = "Griffon - Littlebird";
-                    faction = "CGQC";
-                    side = 1;
-                    class Unit0
-                    {
-                        side = 1;
-                        vehicle = "cgqc_spawn_pilot_heli";
-                        rank = "PRIVATE";
-                        position[] = {0, -0, 0};
-                    };
-                    class Unit1
-                    {
-                        side = 1;
-                        vehicle = "cgqc_heli_mh6";
-                        rank = "PRIVATE";
-                        position[] = {0, -4, 0};
-                    };
-                };
-                class CGQC_B_air_huey
-                {
-                    name = "Griffon - Huey";
-                    faction = "CGQC";
-                    side = 1;
-                    class Unit0
-                    {
-                        side = 1;
-                        vehicle = "cgqc_spawn_pilot_heli";
-                        rank = "PRIVATE";
-                        position[] = {0, -0, 0};
-                    };
-                    class Unit1
-                    {
-                        side = 1;
-                        vehicle = "cgqc_heli_uh1";
-                        rank = "PRIVATE";
-                        position[] = {0, -4, 0};
-                    };
-                };
-                class CGQC_B_air_blackhawk
-                {
-                    name = "Griffon - Blackhawk";
-                    faction = "CGQC";
-                    side = 1;
-                    class Unit0
-                    {
-                        side = 1;
-                        vehicle = "cgqc_spawn_pilot_heli";
-                        rank = "PRIVATE";
-                        position[] = {0, -0, 0};
-                    };
-                    class Unit1
-                    {
-                        side = 1;
-                        vehicle = "cgqc_heli_uh60m";
-                        rank = "PRIVATE";
-                        position[] = {0, -4, 0};
-                    };
-                };
-                class CGQC_B_air_chinook
-                {
-                    name = "Griffon - Chinook";
-                    faction = "CGQC";
-                    side = 1;
-                    class Unit0
-                    {
-                        side = 1;
-                        vehicle = "cgqc_spawn_pilot_heli";
-                        rank = "PRIVATE";
-                        position[] = {0, -0, 0};
-                    };
-                    class Unit1
-                    {
-                        side = 1;
-                        vehicle = "cgqc_heli_ch47_10";
-                        rank = "PRIVATE";
-                        position[] = {0, -4, 0};
-                    };
-                };
-                class CGQC_B_air_pegase_bird
-                {
-                    name = "Pégase - Littlebird";
-                    faction = "CGQC";
-                    side = 1;
-                    class Unit0
-                    {
-                        side = 1;
-                        vehicle = "cgqc_spawn_pilot_heli";
-                        rank = "PRIVATE";
-                        position[] = {0, -0, 0};
-                    };
-                    class Unit1
-                    {
-                        side = 1;
-                        vehicle = "cgqc_heli_ah6";
-                        rank = "PRIVATE";
-                        position[] = {0, -4, 0};
-                    };
-                };
-                class CGQC_B_air_pegase_apache
-                {
-                    name = "Pégase - Apache";
-                    faction = "CGQC";
-                    side = 1;
-                    class Unit0
-                    {
-                        side = 1;
-                        vehicle = "cgqc_spawn_pilot_heli";
-                        rank = "PRIVATE";
-                        position[] = {0, -0, 0};
-                    };
-                    class Unit1
-                    {
-                        side = 1;
-                        vehicle = "cgqc_heli_AH64D";
-                        rank = "PRIVATE";
-                        position[] = {0, -4, 0};
-                    };
-                };
-                */
             };
         };
     };

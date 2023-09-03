@@ -18,7 +18,7 @@
     #include "\cgqc_2022\loadouts\arsenal\1\arsenal_bipods.sqf";
 
     cgqc_mk2_arsenal_1 = (
-        cgqc_mk2_arsenal_1_uniforms + 
+        cgqc_mk2_arsenal_1_uniforms +
         cgqc_mk2_arsenal_1_helmets +
         cgqc_mk2_arsenal_1_face +
         cgqc_mk2_arsenal_1_items +
@@ -57,13 +57,10 @@
     // Rang 8 - État major
      #include "\cgqc_2022\loadouts\arsenal\arsenal_rank8.sqf";
     cgqc_mk2_arsenal_8 = (
-        cgqc_mk2_arsenal_5 + 
+        cgqc_mk2_arsenal_5 +
         cgqc_mk2_arsenal_rank8
     );
-    // 23rd stuff
-    #include "\cgqc_2022\loadouts\arsenal\arsenal_23rd.sqf";
-    cgqc_mk2_arsenal_23 = cgqc_mk2_arsenal_rank23;
-    
+
     // Arsenal init done
     cgqc_mk2_arsenal_init_done = true;
 };

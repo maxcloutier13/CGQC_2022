@@ -23,7 +23,7 @@ class XtdGearModels
 	class CfgWeapons
 	{
 		// Basic helmets ----------------------------
-		class CGQC_Helmets 
+		class CGQC_Helmets
 		{
 			options[] = {"Type", "Camo"};
 			label = "CGQC Helmets";
@@ -40,7 +40,7 @@ class XtdGearModels
 			};
 		};
 		// Tank helmets -----------------------------
-		class CGQC_Tank_Helmets 
+		class CGQC_Tank_Helmets
 		{
 			options[] = {"Type"};
 			label = "CGQC Tank Helmet";
@@ -420,33 +420,7 @@ class XtdGearInfos
             model = "CGQC_Tank_Helmets";
 			Type = "Cloutier";
         };
-		
-		// Uniform ------------------------------------------------------------------
-		class cgqc_uniform_mk1_desert
-		{
-            model = "CGQC_Uniform";
-			Camo = "TAN";
-        };
-		class cgqc_uniform_mk1_mcam
-		{
-            model = "CGQC_Uniform";
-			Camo = "MC";
-        };
-		class cgqc_uniform_mk1_cadpat
-		{
-            model = "CGQC_Uniform";
-			Camo = "CADPAT";
-        };
-		class cgqc_uniform_mk1_black
-		{
-            model = "CGQC_Uniform";
-			Camo = "Blk";
-        };
-		class cgqc_uniform_mk1_white
-		{
-            model = "CGQC_Uniform";
-			Camo = "WHT";
-        };
+
 		// Vests ------------------------------------------------------------------------------
         class cgqc_vest_mk1_tan
         {

@@ -439,7 +439,7 @@ class CGQC_units_mk1_4_Pilot_heli : cgqc_soldat_moderne
     scopeCurator = 2;
     displayName = "Helicopter Pilot";
     engineer = 1;
-    uniformClass = "cgqc_uniform_mk1_helipilot";
+    uniformClass = "cgqc_uniform_mk1_allBlack";
     weapons[] = {"cgqc_gun_mk1_p90", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
     respawnWeapons[] = {"cgqc_gun_mk1_p90", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
     items[] = {};
@@ -460,7 +460,7 @@ class CGQC_units_mk1_4_crew_heli : cgqc_soldat_moderne
     scopeCurator = 2;
     displayName = "Helicopter Crew";
     engineer = 1;
-    uniformClass = "cgqc_uniform_mk1_helipilot";
+    uniformClass = "cgqc_uniform_mk1_allBlack";
     weapons[] = {"cgqc_gun_mk1_p90", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
     respawnWeapons[] = {"cgqc_gun_mk1_p90", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
     items[] = {};
@@ -568,7 +568,7 @@ class CGQC_units_mk2_Pilot_heli_ai : cgqc_soldat_moderne
     scope = 1;
     displayName = "Helicopter Pilot";
     engineer = 1;
-    uniformClass = "cgqc_uniform_mk1_helipilot";
+    uniformClass = "cgqc_uniform_mk1_allBlack";
     weapons[] = {"cgqc_gun_mk1_p90", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
     respawnWeapons[] = {"cgqc_gun_mk1_p90", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
     items[] = {};
@@ -588,7 +588,7 @@ class CGQC_units_mk2_crew_heli_ai : cgqc_soldat_moderne
     scope = 1;
     displayName = "Helicopter Crew";
     engineer = 1;
-    uniformClass = "cgqc_uniform_mk1_helipilot";
+    uniformClass = "cgqc_uniform_mk1_allBlack";
     weapons[] = {"cgqc_gun_mk1_p90", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
     respawnWeapons[] = {"cgqc_gun_mk1_p90", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
     items[] = {};

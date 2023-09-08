@@ -65,8 +65,8 @@ class CGQC_units_mk1_0_TeamLeader_CQB : cgqc_soldat_moderne
     faction = "CGQC";
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
-    scope = 2;
-    scopeCurator = 2;
+    scope = 1;
+    scopeCurator = 1;
     displayName = "TeamLeader (mk18)";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_mk18_gl", "cgqc_gun_glock19_wood", "Laserdesignator_01_khk_F", "Put", "Throw"};
@@ -85,8 +85,8 @@ class CGQC_units_mk1_0_TeamLeader_noGL : cgqc_soldat_moderne
     faction = "CGQC";
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
-    scope = 2;
-    scopeCurator = 2;
+    scope = 1;
+    scopeCurator = 1;
     displayName = "TeamLeader (mk18 no GL)";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_rifleman_mk18", "cgqc_gun_glock19_wood", "Laserdesignator_01_khk_F", "Put", "Throw"};
@@ -106,8 +106,8 @@ class CGQC_units_mk1_1_Rifleman_CQB : cgqc_soldat_moderne
     faction = "CGQC";
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
-    scope = 2;
-    scopeCurator = 2;
+    scope = 1;
+    scopeCurator = 1;
     displayName = "Rifleman (CQB - MK18)";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_rifleman_mk18", "rhs_weap_m72a7", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
@@ -146,8 +146,8 @@ class CGQC_units_mk1_1_Rifleman_full : cgqc_soldat_moderne
     faction = "CGQC";
     editorSubcategory = "EdSubcat_cgqc_mk1";
     side = 1;
-    scope = 2;
-    scopeCurator = 2;
+    scope = 1;
+    scopeCurator = 1;
     displayName = "Rifleman (Rifle - M16a4)";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"rhs_weap_m16a4_imod_grip2", "rhs_weap_m72a7", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};

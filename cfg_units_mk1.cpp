@@ -27,7 +27,7 @@ class CGQC_units_mk1_0_SL : cgqc_soldat_moderne
     side = 1;
     scope = 2;
     scopeCurator = 2;
-    displayName = "Squad Lea";
+    displayName = "Squad Leader";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_hq_m4a1", "cgqc_gun_glock19_wood", "Laserdesignator_01_khk_F", "Put", "Throw"};
     respawnWeapons[] = {"cgqc_gun_mk1_hq_m4a1", "cgqc_gun_glock19_wood", "Laserdesignator_01_khk_F", "Put", "Throw"};

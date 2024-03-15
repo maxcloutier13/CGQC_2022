@@ -181,6 +181,72 @@ class CGQC_units_mk1_1_Rifleman_grenadier : cgqc_soldat_moderne
     backpack = "CGQC_units_mk1_1_Rifleman_Carbine_pack";
     editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_1_Rifleman_Carbine.jpg";
 };
+// Junior specialists
+class CGQC_units_mk1_2_Marksman : cgqc_soldat_moderne
+{
+    faction = "CGQC";
+    editorSubcategory = "EdSubcat_cgqc_mk1";
+    side = 1;
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "Combat Sharpshooter";
+    uniformClass = "cgqc_uniform_mk1";
+    weapons[] = {"cgqc_gun_mk1_hk417", "cgqc_gun_glock19_wood", "ACE_Vector", "Put", "Throw"};
+    respawnWeapons[] = {"cgqc_gun_mk1_hk417", "cgqc_gun_glock19_wood", "ACE_Vector", "Put", "Throw"};
+    items[] = {};
+    respawnItems[] = {};
+    magazines[] = {};
+    respawnMagazines[] = {};
+    linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "ACE_Vector", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_lr", "G_mas_can_balaM_T"};
+    respawnLinkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "ACE_Vector", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_lr", "G_mas_can_balaM_T"};
+    backpack = "CGQC_units_mk1_2_Marksman_pack";
+    editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_2_Marksman.jpg";
+};
+
+class CGQC_units_mk1_2_repair : cgqc_soldat_moderne
+{
+    faction = "CGQC";
+    editorSubcategory = "EdSubcat_cgqc_mk1";
+    side = 1;
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "Combat Engineer";
+    uniformClass = "cgqc_uniform_mk1";
+    weapons[] = {"cgqc_gun_mk1_hk417", "cgqc_gun_glock19_wood", "ACE_Vector", "Put", "Throw"};
+    respawnWeapons[] = {"cgqc_gun_mk1_hk417", "cgqc_gun_glock19_wood", "ACE_Vector", "Put", "Throw"};
+    items[] = {};
+    respawnItems[] = {};
+    magazines[] = {};
+    respawnMagazines[] = {};
+    linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "ACE_Vector", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_lr", "G_mas_can_balaM_T"};
+    respawnLinkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "ACE_Vector", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_lr", "G_mas_can_balaM_T"};
+    backpack = "CGQC_units_mk1_2_Marksman_pack";
+    editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_2_Marksman.jpg";
+};
+
+class CGQC_units_mk1_2_lifesaver : cgqc_soldat_moderne
+{
+    faction = "CGQC";
+    editorSubcategory = "EdSubcat_cgqc_mk1";
+    side = 1;
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "Combat Lifesaver";
+    uniformClass = "cgqc_uniform_mk1";
+    weapons[] = {"cgqc_gun_mk1_hk417", "cgqc_gun_glock19_wood", "ACE_Vector", "Put", "Throw"};
+    respawnWeapons[] = {"cgqc_gun_mk1_hk417", "cgqc_gun_glock19_wood", "ACE_Vector", "Put", "Throw"};
+    items[] = {};
+    respawnItems[] = {};
+    magazines[] = {};
+    respawnMagazines[] = {};
+    linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "ACE_Vector", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_lr", "G_mas_can_balaM_T"};
+    respawnLinkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "ACE_Vector", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_lr", "G_mas_can_balaM_T"};
+    backpack = "CGQC_units_mk1_2_Marksman_pack";
+    editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_2_Marksman.jpg";
+};
+
+
+
 // == Infantry + ================================================================
 class CGQC_units_mk1_3_AT_MAAWS : cgqc_soldat_moderne
 {
@@ -230,7 +296,7 @@ class CGQC_units_mk1_2_LMG : cgqc_soldat_moderne
     side = 1;
     scope = 2;
     scopeCurator = 2;
-    displayName = "MG (Light)";
+    displayName = "MG (5.56)";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_mk46", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
     respawnWeapons[] = {"cgqc_gun_mk1_mk46", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
@@ -250,7 +316,49 @@ class CGQC_units_mk1_2_HMG : cgqc_soldat_moderne
     side = 1;
     scope = 2;
     scopeCurator = 2;
-    displayName = "MG (Heavy)";
+    displayName = "MG (7.62)";
+    uniformClass = "cgqc_uniform_mk1";
+    weapons[] = {"cgqc_gun_mk1_mk48", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
+    respawnWeapons[] = {"cgqc_gun_mk1_mk48", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
+    items[] = {};
+    respawnItems[] = {};
+    magazines[] = {};
+    respawnMagazines[] = {};
+    linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "JAS_GPNVG18_blk", "cgqc_item_rangefinder", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_ar", "G_mas_can_balaM_T"};
+    respawnLinkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "JAS_GPNVG18_blk", "cgqc_item_rangefinder", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_ar", "G_mas_can_balaM_T"};
+    backpack = "CGQC_units_mk1_2_HMG_pack";
+    editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_2_HMG.jpg";
+};
+
+class CGQC_units_mk1_2_autorifleman : cgqc_soldat_moderne
+{
+    faction = "CGQC";
+    editorSubcategory = "EdSubcat_cgqc_mk1";
+    side = 1;
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "Autorifleman (5.56)";
+    uniformClass = "cgqc_uniform_mk1";
+    weapons[] = {"cgqc_gun_mk1_mk48", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
+    respawnWeapons[] = {"cgqc_gun_mk1_mk48", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
+    items[] = {};
+    respawnItems[] = {};
+    magazines[] = {};
+    respawnMagazines[] = {};
+    linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "JAS_GPNVG18_blk", "cgqc_item_rangefinder", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_ar", "G_mas_can_balaM_T"};
+    respawnLinkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "JAS_GPNVG18_blk", "cgqc_item_rangefinder", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_ar", "G_mas_can_balaM_T"};
+    backpack = "CGQC_units_mk1_2_HMG_pack";
+    editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_2_HMG.jpg";
+};
+
+class CGQC_units_mk1_2_LWMMG : cgqc_soldat_moderne
+{
+    faction = "CGQC";
+    editorSubcategory = "EdSubcat_cgqc_mk1";
+    side = 1;
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "LWMMG (338)";
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_mk48", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
     respawnWeapons[] = {"cgqc_gun_mk1_mk48", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
@@ -308,26 +416,7 @@ class CGQC_units_mk1_1_Medic : cgqc_soldat_moderne
     backpack = "CGQC_units_mk1_1_Medic_pack";
     editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_1_Medic.jpg";
 };
-class CGQC_units_mk1_2_Marksman : cgqc_soldat_moderne
-{
-    faction = "CGQC";
-    editorSubcategory = "EdSubcat_cgqc_mk1";
-    side = 1;
-    scope = 2;
-    scopeCurator = 2;
-    displayName = "Marksman (417)";
-    uniformClass = "cgqc_uniform_mk1";
-    weapons[] = {"cgqc_gun_mk1_hk417", "cgqc_gun_glock19_wood", "ACE_Vector", "Put", "Throw"};
-    respawnWeapons[] = {"cgqc_gun_mk1_hk417", "cgqc_gun_glock19_wood", "ACE_Vector", "Put", "Throw"};
-    items[] = {};
-    respawnItems[] = {};
-    magazines[] = {};
-    respawnMagazines[] = {};
-    linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "ACE_Vector", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_lr", "G_mas_can_balaM_T"};
-    respawnLinkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "ACE_Vector", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_lr", "G_mas_can_balaM_T"};
-    backpack = "CGQC_units_mk1_2_Marksman_pack";
-    editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_2_Marksman.jpg";
-};
+
 // == Recon ================================================================
 class CGQC_units_mk1_0_Drone_operator : cgqc_soldat_moderne
 {

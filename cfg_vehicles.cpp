@@ -444,7 +444,7 @@ class Rev_darter_b: B_UAV_01_F
     };
 };
 
-class cgqc_drone_darter_light : cgqc_drone_darter 
+class cgqc_drone_darter_light : cgqc_drone_darter
 {
     displayName = "CGQC - Darter Léger";
     maxSpeed = 100;
@@ -516,6 +516,21 @@ class cgqc_vic_wiezel : I_LT_01_scout_F
     //#include "vehicles\cgqc_vic_loadout_command"
     #include "vehicles\cgqc_vic_loadout_command.cpp"
 };
+
+class rhsgref_BRDM2_HQ;
+class cgqc_vic_brdm : rhsgref_BRDM2_HQ
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_cmd";
+    displayName = "Command BRDM (3+2+6)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+    //Custom inventory
+    #include "vehicles\cgqc_vic_loadout_command.cpp"
+};
+
 // Tanks -----------------------------------------------------------------------------------
 class UK3CB_LDF_B_Leopard_Cage;
 class cgqc_vic_tank_leopard : UK3CB_LDF_B_Leopard_Cage {
@@ -710,6 +725,19 @@ class cgqc_vic_polaris : rhsusf_mrzr4_d {
     #include "vehicles\cgqc_vic_loadout_small.cpp"
 };
 // Armed -----------------------------------------------------------------------------------
+class rhsusf_M1117_D;
+class cgqc_vic_m1117 : rhsusf_M1117_D
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_armed";
+    displayName = "M1117 HMG/Mk19 (3+4)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+
 class cgqc_vic_jeep_hmg : UK3CB_B_M151_Jeep_HMG_HIDF {
     scope = 2;
     side = 1;

@@ -3,7 +3,7 @@ class B_Kitbag_rgr;
 class B_mas_can_Kitbag_d;
 class B_mas_can_Kitbag_m;
 class rhssaf_kitbag_digital;
-class UK3CB_CW_US_B_LATE_B_RIF_04;
+
 class B_mas_can_Kitbag_LW;
 class B_RadioBag_01_black_F;
 class B_RadioBag_01_tropic_F;
@@ -24,10 +24,9 @@ class B_AssaultPack_dgtl;
 class B_AssaultPack_blk;
 class B_Carryall_cbr;
 class B_Carryall_mcamo;
-class UK3CB_LNM_B_B_CARRYALL_FLK_02;
 class B_Carryall_khk;
 class B_Carryall_oucamo;
-class UK3CB_AAF_B_B_ASS_DIGI_BLK;
+
 // Mk1 box
 class cgqc_box_mk1_rolebox : Box_NATO_Equip_F
 {
@@ -284,15 +283,7 @@ class cgqc_pack_mk1_assault_black : B_AssaultPack_blk // Black
     mass = 20;
     displayName = "CGQC AssaultPack Black";
 };
-class cgqc_pack_mk1_assault_white : UK3CB_AAF_B_B_ASS_DIGI_BLK // White
-{
-    scope = 2;
-    author = "silent1";
-    _generalMacro = "cgqc_pack_mk1_assault_white";
-    maximumLoad = 160;
-    mass = 20;
-    displayName = "CGQC AssaultPack White";
-};
+
 // Kitbags --------------------------------------------------------------------------------------
 class cgqc_pack_mk1_kitbag : B_Kitbag_Base // Base
 {
@@ -333,15 +324,7 @@ class cgqc_pack_mk1_kitbag_cadpat : rhssaf_kitbag_digital // Woodland
     mass = 30;
     displayName = "CGQC Kitbag Cadpat";
 };
-class cgqc_pack_mk1_kitbag_black : UK3CB_CW_US_B_LATE_B_RIF_04 // Black
-{
-    scope = 2;
-    author = "silent1";
-    _generalMacro = "cgqc_pack_mk1_kitbag_black";
-    maximumLoad = 280;
-    mass = 30;
-    displayName = "CGQC Kitbag Black";
-};
+
 class cgqc_pack_mk1_kitbag_white : B_Kitbag_rgr // Winter
 {
     scope = 2;
@@ -435,15 +418,7 @@ class cgqc_pack_mk1_carryall_mcam : B_Carryall_mcamo // Multicam
     mass = 50;
     displayName = "CGQC Carryall Multicam";
 };
-class cgqc_pack_mk1_carryall_cadpat : UK3CB_LNM_B_B_CARRYALL_FLK_02 // Cadpat
-{
-    scope = 2;
-    author = "silent1";
-    _generalMacro = "cgqc_pack_mk1_carryall_cadpat";
-    maximumLoad = 380;
-    mass = 50;
-    displayName = "CGQC Carryall Cadpat-ish";
-};
+
 class cgqc_pack_mk1_carryall_black : B_Carryall_khk // Black
 {
     scope = 2;
@@ -477,6 +452,36 @@ class cgqc_pack_mk1_tank_driver : cgqc_pack_mk1_magic
     class TransportWeapons
     {
     };
+};
+class cgqc_pack_mk1_assault_white : B_AssaultPack_rgr // White
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_pack_mk1_assault_white";
+    maximumLoad = 160;
+    mass = 20;
+    displayName = "CGQC AssaultPack White";
+    hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_assault_white.paa"};
+};
+class cgqc_pack_mk1_kitbag_black : B_Kitbag_rgr // Black
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_pack_mk1_kitbag_black";
+    maximumLoad = 280;
+    mass = 30;
+    displayName = "CGQC Kitbag Black";
+    hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_kitbag_black.paa"};
+};
+class cgqc_pack_mk1_carryall_cadpat : B_Carryall_cbr // Cadpat
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_pack_mk1_carryall_cadpat";
+    maximumLoad = 380;
+    mass = 50;
+    displayName = "CGQC Carryall Cadpat-ish";
+    hiddenSelectionsTextures[] = {"\CGQC_2022\containers\cgqc_carryall_cadpat.paa"};
 };
 
 // mk1 Backpacks --------------------------------------------------------------------------------------

@@ -797,7 +797,7 @@ class CGQC_units_swat_assaulter : cgqc_soldat_moderne
     show = "true";
     uniformClass = "cgqc_uniform_mk1_black";
     backpack = "cgqc_pack_mk1_assault_black";
-    weapons[] = {"UK3CB_MP5SD6", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Throw", "Put"};
+    weapons[] = {"arifle_mas_can_mp5sd6_F", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Throw", "Put"};
     magazines[] = {"Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "acex_intelitems_notepad", "DIGI_M7A3", "DIGI_M7A3", "ACE_M84", "ACE_M84", "SmokeShell", "SmokeShell", "SmokeShell", "30Rnd_9x21_Mag_SMG_02", "30Rnd_9x21_Mag_SMG_02", "30Rnd_9x21_Mag_SMG_02", "30Rnd_9x21_Mag_SMG_02", "30Rnd_9x21_Mag_SMG_02", "30Rnd_9x21_Mag_SMG_02", "30Rnd_9x21_Mag_SMG_02", "30Rnd_9x21_Mag_SMG_02", "ACE_M84", "ACE_M84", "ACE_M84", "ACE_M84", "DIGI_M7A3", "DIGI_M7A3", "DIGI_M7A3", "DIGI_M7A3", "tsp_popperCharge_auto_mag", "tsp_popperCharge_auto_mag", "tsp_popperCharge_auto_mag", "tsp_popperCharge_auto_mag", "30Rnd_9x21_Mag_SMG_02", "Tier1_20Rnd_9x19_JHP"};
     items[] = {"ACE_EarPlugs", "ACE_RangeCard", "WBK_HeadLampItem", "ItemAndroid", "ACE_MapTools", "ACE_CableTie", "ACE_CableTie", "ACE_CableTie", "cgqc_items_ifak", "ACRE_PRC343", "ACRE_PRC152", "ACE_Canteen", "ACE_microDAGR", "ACE_EntrenchingTool", "ACE_wirecutter"};
     linkedItems[] = {"cgqc_vest_mk1_black", "cgqc_helmet_mk1_f_black", "G_Balaclava_TI_blk_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "Tier1_MicroT2_Leap_Black", "Tier1_TiRant9S", "Tier1_DBALPL", "Tier1_SIG_Romeo1"};
@@ -816,7 +816,7 @@ class CGQC_units_swat_tl: cgqc_soldat_moderne
     show = "true";
     uniformClass = "cgqc_uniform_mk1_black";
     backpack = "cgqc_pack_mk1_assault_black";
-    weapons[] = {"UK3CB_P90C_TR_black", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Throw", "Put"};
+    weapons[] = {"cgqc_gun_mk1_p90", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Throw", "Put"};
     magazines[] = {"Tier1_15Rnd_9x19_JHP", "Tier1_15Rnd_9x19_JHP", "acex_intelitems_notepad", "DIGI_M7A3", "DIGI_M7A3", "ACE_M84", "ACE_M84", "SmokeShell", "SmokeShell", "SmokeShell", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "ACE_M84", "ACE_M84", "ACE_M84", "ACE_M84", "DIGI_M7A3", "DIGI_M7A3", "DIGI_M7A3", "DIGI_M7A3", "tsp_popperCharge_auto_mag", "tsp_popperCharge_auto_mag", "tsp_popperCharge_auto_mag", "tsp_popperCharge_auto_mag", "50Rnd_570x28_SMG_03", "Tier1_20Rnd_9x19_JHP"};
     items[] = {"ACE_EarPlugs", "ACE_RangeCard", "WBK_HeadLampItem", "ACE_MapTools", "ACE_CableTie", "ACE_CableTie", "ACE_CableTie", "cgqc_items_ifak", "ItemcTab", "ACRE_PRC343", "ACRE_PRC152", "ACE_Canteen", "ACE_microDAGR", "ACE_EntrenchingTool", "ACRE_PRC117F"};
     linkedItems[] = {"cgqc_vest_mk1_black", "cgqc_helmet_mk1_f_black", "G_Balaclava_TI_blk_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "muzzle_snds_570", "Tier1_MP7_NGAL_M300C_Black", "Tier1_MicroT2_Low_Black", "Tier1_TiRant9S", "Tier1_DBALPL", "Tier1_SIG_Romeo1"};

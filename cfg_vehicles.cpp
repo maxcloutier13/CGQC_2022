@@ -177,12 +177,7 @@ class Car_F;
 class Wheeled_APC_F;
 class Tank_F;
 class B_W_Quadbike_01_F;
-class UK3CB_AAF_B_SUV_Armoured;
 class NDS_6x6_ATV_MIL_LR;
-class UK3CB_B_M1030_USMC_WDL;
-class UK3CB_B_M151_Jeep_Open_HIDF;
-class UK3CB_B_M151_Jeep_Closed_HIDF;
-class UK3CB_B_M151_Jeep_HMG_HIDF;
 class rhsusf_mrzr4_d;
 class B_W_LSV_01_unarmed_F;
 class B_W_LSV_01_armed_F;
@@ -453,7 +448,6 @@ class cgqc_drone_darter_light : cgqc_drone_darter
 };
 // Land vehicles
 class B_W_APC_Wheeled_01_cannon_F;
-class UK3CB_MDF_B_Warrior_Cage;
 class RHS_M2A3_BUSKIII_wd;
 class I_LT_01_scout_F;
 class cgqc_vic_badger : B_W_APC_Wheeled_01_cannon_F
@@ -532,14 +526,14 @@ class cgqc_vic_brdm : rhsgref_BRDM2_HQ
 };
 
 // Tanks -----------------------------------------------------------------------------------
-class UK3CB_LDF_B_Leopard_Cage;
-class cgqc_vic_tank_leopard : UK3CB_LDF_B_Leopard_Cage {
-    scope = 2;
+class B_T_MBT_01_TUSK_F;
+class cgqc_vic_tank_leopard : B_T_MBT_01_TUSK_F {
+    scope = 1;
     side = 1;
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_mbt";
-    displayName = "Leopard II (3)";
+    displayName = "Leopard II (3) - Deprecated";
     crew = "CGQC_units_mk2_Tank_Driver_ai";
 };
 class O_T_MBT_04_cannon_F;
@@ -624,25 +618,27 @@ class cgqc_vic_quad_ext_mortarmk6 : cgqc_vic_quad_ext
     displayName = "6x6 ATV - Mk6 mortar (1)";
     #include "vehicles\cgqc_vic_loadout_quadExt_mk6.cpp"
 };
-class cgqc_vic_motocross : UK3CB_B_M1030_USMC_WDL
+class B_Quadbike_01_F;
+class cgqc_vic_motocross : B_Quadbike_01_F
 {
-    scope = 2;
+    scope = 1;
     side = 1;
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
-    displayName = "Motocross (1+1)";
+    displayName = "Motocross (1+1) - deprecated";
     crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_small.cpp"
 };
-class cgqc_vic_suv : UK3CB_AAF_B_SUV_Armoured
+class C_SUV_01_F;
+class cgqc_vic_suv : C_SUV_01_F
 {
     scope = 2;
     side = 1;
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
-    displayName = "SUV (1+5)";
+    displayName = "SUV (1+3)";
     crew = "CGQC_units_mk2_Rifleman_ai";
     class AcreRacks {
         class Rack_1 {
@@ -660,7 +656,8 @@ class cgqc_vic_suv : UK3CB_AAF_B_SUV_Armoured
     };
     #include "vehicles\cgqc_vic_loadout_ifv.cpp"
 };
-class cgqc_vic_jeep : UK3CB_B_M151_Jeep_Open_HIDF {
+class C_Offroad_02_unarmed_F;
+class cgqc_vic_jeep : C_Offroad_02_unarmed_F {
     scope = 2;
     side = 1;
     author = "silent1";
@@ -674,13 +671,13 @@ class cgqc_vic_jeep : UK3CB_B_M151_Jeep_Open_HIDF {
          init = "[_this select 0, 'car'] call CGQC_fnc_addSpares";
     };
 };
-class cgqc_vic_jeep_cov : UK3CB_B_M151_Jeep_Closed_HIDF {
-    scope = 2;
+class cgqc_vic_jeep_cov : cgqc_vic_jeep {
+    scope = 1;
     side = 1;
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
-    displayName = "Jeep Covered (1+3)";
+    displayName = "Jeep Covered (1+3) - deprecated";
     crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };
@@ -738,13 +735,13 @@ class cgqc_vic_m1117 : rhsusf_M1117_D
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };
 
-class cgqc_vic_jeep_hmg : UK3CB_B_M151_Jeep_HMG_HIDF {
-    scope = 2;
+class cgqc_vic_jeep_hmg : cgqc_vic_jeep {
+    scope = 1;
     side = 1;
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_armed";
-    displayName = "Jeep HMG (2+1)";
+    displayName = "Jeep HMG (2+1) - deprecated";
     crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };

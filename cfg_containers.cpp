@@ -453,7 +453,6 @@ class cgqc_pack_mk1_tank_driver : cgqc_pack_mk1_magic
     {
     };
 };
-class B_AssaultPack_rgr;
 class cgqc_pack_mk1_assault_white : B_AssaultPack_rgr // White
 {
     scope = 2;

@@ -1,5 +1,5 @@
 class TransportMagazines{
-	
+
 };
 
 class TransportWeapons{
@@ -29,11 +29,6 @@ class TransportItems{
         count = 5;
         name = "cgqc_items_ifak";
     };
-	class _xx_ACRE_PRC152
-	{
-		count = 2;
-		name = "ACRE_PRC152";
-	};
     class _xx_Toolkit
     {
         name = "Toolkit";
@@ -44,7 +39,7 @@ class TransportItems{
 		count = 2;
 		name = "ACE_UAVBattery";
 	};
-	
+
 	class _xx_ACE_bodyBag
 	{
 		count = 2;

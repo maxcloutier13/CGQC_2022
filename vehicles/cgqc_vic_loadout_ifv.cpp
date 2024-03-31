@@ -1,7 +1,7 @@
 class TransportBackpacks{};
 
 class TransportMagazines{
-	
+
 	class _xx_rhsusf_m112_mag
 	{
 		count = 4;
@@ -20,7 +20,7 @@ class TransportMagazines{
 };
 
 class TransportWeapons{
-	
+
 	class _xx_launch_NLAW_F
 	{
 		weapon = "launch_NLAW_F";
@@ -52,11 +52,6 @@ class TransportItems{
         count = 12;
         name = "cgqc_items_ifak";
     };
-	class _xx_ACRE_PRC152
-	{
-		count = 2;
-		name = "ACRE_PRC152";
-	};
     class _xx_Toolkit
     {
         name = "Toolkit";

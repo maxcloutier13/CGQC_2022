@@ -28,16 +28,6 @@ class TransportItems
 		count = 1;
 		name = "ACE_bodyBag";
 	};
-    class _xx_ACRE_PRC152
-    {
-        count = 1;
-        name = "ACRE_PRC152";
-    };
-    class _xx_ACRE_PRC343
-    {
-        count = 1;
-        name = "ACRE_PRC343";
-    };
 };
 class TransportBackpacks{};
 class TransportMagazines

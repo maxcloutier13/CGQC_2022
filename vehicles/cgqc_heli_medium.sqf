@@ -1,4 +1,4 @@
-// Medium helicopter loadout 
+// Medium helicopter loadout
 
 class TransportMagazines
 {
@@ -45,16 +45,6 @@ class TransportItems
 	{
 		count = 2;
 		name = "ACE_EarPlugs";
-	};
-	class _xx_ACRE_PRC343
-	{
-		count = 2;
-		name = "ACRE_PRC343";
-	};
-	class _xx_ACRE_PRC152
-	{
-		count = 2;
-		name = "ACRE_PRC152";
 	};
 	class _xx_ACE_EntrenchingTool
 	{

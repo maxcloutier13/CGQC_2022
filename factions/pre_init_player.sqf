@@ -1,5 +1,5 @@
 // Addon Options ===================================================================================================
-_menu_name = "CGQC Player settings";
+_menu_name = "[CGQC] Player settings";
 ["cgqc_config_sidearm", "CHECKBOX", ["Custom Sidearm", "À vos risques et périls. Assurez vous d'avoir une classe valide"],
 	[_menu_name, "Sidearm Perso (2023)"], false] call CBA_fnc_addSetting;
 ["cgqc_config_sidearm_pistol", "EDITBOX", ["Pistolet", "Ton pistolet préféré"],

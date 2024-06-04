@@ -126,7 +126,6 @@ class CfgPatches
 			"cgqc_heli_ch47_10",
 			"cgqc_heli_AH64D",
 			"cgqc_plane_a10",
-			"cgqc_drone_darter",
 			"cgqc_vic_badger",
 			"cgqc_vic_bradley",
 			"cgqc_vic_wiezel",

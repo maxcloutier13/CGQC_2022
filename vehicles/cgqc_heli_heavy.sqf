@@ -52,11 +52,6 @@ class TransportItems
 		count = 5;
 		name = "ACE_microDAGR";
 	};
-	class _xx_ACE_RangeCard
-	{
-		count = 5;
-		name = "ACE_RangeCard";
-	};
 	class _xx_ToolKit
 	{
 		count = 2;

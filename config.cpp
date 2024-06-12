@@ -22,6 +22,8 @@ class cfgWeapons
 	#include "cfg_mortar.cpp"
 	// Items -------------------------------------------------
 	#include "cfg_misc.cpp"
+	// Modifs de trucs existants  -------------------------------------------------
+	#include "cfg_optics_mod.cpp"
 };
 class cfgGlasses
 {

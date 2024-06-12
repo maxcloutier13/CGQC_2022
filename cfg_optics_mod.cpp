@@ -2476,3 +2476,148 @@ class Tier1_Elcan_156_C2_FDE: optic_lrps
         };
     };
 };
+
+
+
+class Tier1_Shortdot_Geissele_Black : optic_lrps
+{
+
+	class ItemInfo : InventoryOpticsItem_Base_F
+	{
+
+		class OpticsModes
+		{
+			class Scope
+			{
+
+				discreteDistance[] = {100};
+				discreteDistanceInitIndex = 0;
+			};
+			class Shortdot
+			{
+
+				distanceZoomMin = 100;
+				distanceZoomMax = 100;
+			};
+		};
+	};
+};
+
+class Tier1_Shortdot_Geissele_Black_CQB : optic_lrps
+{
+
+	class ItemInfo : InventoryOpticsItem_Base_F
+	{
+
+		class OpticsModes
+		{
+			class Scope
+			{
+
+				discreteDistance[] = {100};
+				discreteDistanceInitIndex = 0;
+        	};
+			class Shortdot
+			{
+
+				distanceZoomMin = 100;
+				distanceZoomMax = 100;
+			};
+		};
+	};
+};
+
+class Tier1_Shortdot_Geissele_Docter_Black : optic_lrps
+{
+
+	class ItemInfo : InventoryOpticsItem_Base_F
+	{
+
+		class OpticsModes
+		{
+			class Scope
+			{
+
+				discreteDistance[] = {100};
+				discreteDistanceInitIndex = 0;
+    		};
+			class Docter
+			{
+
+				distanceZoomMin = 100;
+				distanceZoomMax = 100;
+			};
+		};
+	};
+};
+
+class Tier1_Shortdot_Geissele_Docter_Black_CQB : optic_lrps
+{
+
+	class ItemInfo : InventoryOpticsItem_Base_F
+	{
+
+		class OpticsModes
+		{
+			class Scope
+			{
+
+				discreteDistance[] = {100};
+				discreteDistanceInitIndex = 0;
+            };
+			class Docter
+			{
+
+				distanceZoomMin = 100;
+				distanceZoomMax = 100;
+			};
+		};
+	};
+};
+
+class Tier1_ATACR18_Geissele_Black : optic_lrps
+{
+
+	class ItemInfo : InventoryOpticsItem_Base_F
+	{
+
+		class OpticsModes
+		{
+			class Scope
+			{
+                discreteDistance[] = {100};
+			    discreteDistanceInitIndex = 0;
+			};
+			class Nightforce
+			{
+
+				distanceZoomMin = 100;
+				distanceZoomMax = 100;
+			};
+		};
+	};
+};
+
+class Tier1_ATACR18_Geissele_Docter_Black : optic_lrps
+{
+
+	class ItemInfo : InventoryOpticsItem_Base_F
+	{
+
+		class OpticsModes
+		{
+			class Scope
+			{
+
+				discreteDistance[] = {100};
+				discreteDistanceInitIndex = 0;
+			};
+			class Docter
+			{
+
+				distanceZoomMin = 100;
+				distanceZoomMax = 100;
+			};
+		};
+	};
+};

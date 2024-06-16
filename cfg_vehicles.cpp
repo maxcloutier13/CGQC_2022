@@ -422,15 +422,15 @@ class cgqc_vic_motocross : B_Quadbike_01_F
     crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_small.cpp"
 };
-class C_SUV_01_F;
-class cgqc_vic_suv : C_SUV_01_F
+class ej_suv;
+class cgqc_vic_suv : ej_suv
 {
     scope = 2;
     side = 1;
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
-    displayName = "SUV (1+3)";
+    displayName = "SUV (1+5)";
     crew = "CGQC_units_mk2_Rifleman_ai";
     class AcreRacks {
         class Rack_1 {
@@ -503,6 +503,195 @@ class cgqc_vic_mrap : B_W_MRAP_01_F {
     crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };
+
+class rhsusf_m1240a1_m2_usmc_d;
+class rhsusf_m1240a1_m2_usmc_wd;
+class rhsusf_m1240a1_m2_uik_usarmy_d;
+class rhsusf_m1240a1_m2_uik_usarmy_wd;
+class cgqc_vic_mrap_M1240TA : rhsusf_m1240a1_m2_usmc_d {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_armed";
+    displayName = "M1240 (Tan) (3+2)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+class cgqc_vic_mrap_M1240WA : rhsusf_m1240a1_m2_usmc_wd {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_armed";
+    displayName = "M1240 (Wood) (3+2)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+class cgqc_vic_mrap_M1240TAF : rhsusf_m1240a1_m2_uik_usarmy_d {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_armed";
+    displayName = "M1240A1 (Tan) (3+2)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+class cgqc_vic_mrap_M1240WAF : rhsusf_m1240a1_m2_uik_usarmy_wd {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_armed";
+    displayName = "M1240A1 (Wood) (3+2)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+
+
+class rhsusf_m1240a1_usmc_d;
+class rhsusf_m1240a1_usmc_wd;
+class cgqc_vic_mrap_M1240TU : rhsusf_m1240a1_usmc_d {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
+    displayName = "M1240 (Tan) (2+2)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+class cgqc_vic_mrap_M1240WU : rhsusf_m1240a1_usmc_wd {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
+    displayName = "M1240 (Wood) (2+2)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+
+
+class rhsusf_CGRCAT1A2_M2_usmc_d;
+class rhsusf_CGRCAT1A2_M2_usmc_wda;
+class rhsusf_CGRCAT1A2_usmc_d;
+class rhsusf_CGRCAT1A2_usmc_wd;
+class cgqc_vic_mrap_CAT1A2TAF : rhsusf_CGRCAT1A2_M2_usmc_d {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_armed";
+    displayName = "CAT1A2 (Tan) (3+4)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+class cgqc_vic_mrap_CAT1A2WAF : rhsusf_CGRCAT1A2_M2_usmc_wda {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_armed";
+    displayName = "CAT1A2 (Wood) (3+4)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+class cgqc_vic_mrap_CAT1A2TU : rhsusf_CGRCAT1A2_usmc_d {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
+    displayName = "CAT1A2 (Tan) (2+4)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+class cgqc_vic_mrap_CAT1A2WU : rhsusf_CGRCAT1A2_usmc_wd {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
+    displayName = "CAT1A2 (Wood) (2+4)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+
+
+
+
+class rhsusf_M1232_MC_M2_usmc_d;
+class rhsusf_M1232_MC_M2_usmc_wd;
+class rhsusf_M1232_usarmy_d;
+class rhsusf_M1232_usarmy_wd;
+
+class cgqc_vic_mrap_M1232TAF : rhsusf_M1232_MC_M2_usmc_d {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_armed";
+    displayName = "M1232 (Tan) (3+7)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+class cgqc_vic_mrap_M1232WAF : rhsusf_M1232_MC_M2_usmc_wd {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_armed";
+    displayName = "M1232 (Wood) (3+7)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+class cgqc_vic_mrap_M1232TU : rhsusf_M1232_usarmy_d {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
+    displayName = "M1232 (Tan) (3+7)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+class cgqc_vic_mrap_M1232WU : rhsusf_M1232_usarmy_wd {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
+    displayName = "M1232 (Wood) (3+7)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+
+
+class rhsusf_M1230_M2_usarmy_d;
+class rhsusf_M1230_M2_usarmy_wd;
+class cgqc_vic_mrap_m1230TAF : rhsusf_M1230_M2_usarmy_d {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_armed";
+    displayName = "M1230 (Tan) (2+9)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+class cgqc_vic_mrap_m1230WAF : rhsusf_M1230_M2_usarmy_wd {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_armed";
+    displayName = "M1230 (Wood) (2+9)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+
 class cgqc_vic_polaris : rhsusf_mrzr4_d {
     scope = 2;
     side = 1;

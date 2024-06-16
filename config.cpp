@@ -39,6 +39,8 @@ class cfgVehicles
 	#include "cfg_units_training.cpp"
 	// mk1 units
 	#include "cfg_units_mk1.cpp"
+	// PMC Turcotte
+	#include "cfg_units_pmc_t.cpp"
 	// mk1 vehicles
 	#include "cfg_vehicles.cpp"
 };

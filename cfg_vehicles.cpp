@@ -248,7 +248,7 @@ class cgqc_vic_badger : B_W_APC_Wheeled_01_cannon_F
     side = 1;
     author = "silent1";
     faction = "cgqc";
-    editorSubcategory = "EdSubcat_cgqc_vic_ifv";
+    editorSubcategory = "EdSubcat_CGQC_vic_ifv_w";
     displayName = "Badger (3+8)";
     crew = "CGQC_units_mk2_Tank_Driver_ai";
     maximumLoad = 6000;
@@ -873,4 +873,179 @@ class cgqc_projector : Misc_Videoprojektor
             };
         };
     };
+};
+
+
+
+// IFV's
+class I_APC_tracked_03_cannon_F;
+class cgqc_vic_warrior : I_APC_tracked_03_cannon_F
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_ifv";
+    displayName = "FV510 Warrior (3+7)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+    maximumLoad = 6000;
+    //Custom inventory
+    #include "vehicles\cgqc_vic_loadout_ifv.cpp"
+};
+
+class B_T_APC_Tracked_01_rcws_F;
+class cgqc_vic_namer : B_T_APC_Tracked_01_rcws_F
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_ifv";
+    displayName = "Namer (3+8)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+    maximumLoad = 6000;
+    //Custom inventory
+    #include "vehicles\cgqc_vic_loadout_ifv.cpp"
+};
+
+
+class I_E_APC_tracked_03_cannon_F;
+class cgqc_vic_odyniec : I_E_APC_tracked_03_cannon_F
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_ifv";
+    displayName = "FV720 Odyniec (3+7)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+    maximumLoad = 6000;
+    //Custom inventory
+    #include "vehicles\cgqc_vic_loadout_ifv.cpp"
+};
+
+class B_APC_Wheeled_03_cannon_3_F;
+class cgqc_vic_gorgon : B_APC_Wheeled_03_cannon_3_F
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_CGQC_vic_ifv_w";
+    displayName = "AFV4 Gorgon (3+8)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+    maximumLoad = 6000;
+    //Custom inventory
+    #include "vehicles\cgqc_vic_loadout_ifv.cpp"
+};
+
+class B_T_AFV_Wheeled_01_cannon_F;
+class B_T_AFV_Wheeled_01_up_cannon_F;
+class cgqc_vic_roikat : B_T_AFV_Wheeled_01_up_cannon_F
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_CGQC_vic_mbt";
+    displayName = "Rooikat (3)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+    maximumLoad = 6000;
+    //Custom inventory
+    #include "vehicles\cgqc_vic_loadout_ifv.cpp"
+};
+
+class B_T_APC_Tracked_01_CRV_F;
+class cgqc_vic_nemmera : B_T_APC_Tracked_01_CRV_F
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_CGQC_vic_mbt";
+    displayName = "Nemmera (3)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+    maximumLoad = 6000;
+    //Custom inventory
+    #include "vehicles\cgqc_vic_loadout_ifv.cpp"
+};
+
+class I_LT_01_cannon_F;
+class cgqc_vic_wiezelm120 : I_LT_01_cannon_F
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_CGQC_vic_mbt";
+    displayName = "Wiezel MK20 (3)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+     // Boosted speed and space
+    enginePower = 190;
+    maxSpeed = 110;
+    maximumLoad = 2000;
+    //Custom inventory
+    //#include "vehicles\cgqc_vic_loadout_ifv.cpp"
+};
+class I_LT_01_AT_F;
+class cgqc_vic_wiezelatgm : I_LT_01_AT_F
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_CGQC_vic_mbt";
+    displayName = "Wiezel ATGM (3)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+     // Boosted speed and space
+    enginePower = 190;
+    maxSpeed = 110;
+    maximumLoad = 2000;
+    //Custom inventory
+    //#include "vehicles\cgqc_vic_loadout_ifv.cpp"
+};
+
+
+class cgqc_vic_roikat2 : B_T_AFV_Wheeled_01_cannon_F
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_CGQC_vic_mbt";
+    displayName = "Rooikat Up (3)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+    maximumLoad = 6000;
+    //Custom inventory
+    #include "vehicles\cgqc_vic_loadout_ifv.cpp"
+};
+
+class rhsusf_stryker_m1134_wd;
+class cgqc_vic_stryker3 : rhsusf_stryker_m1134_wd
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_CGQC_vic_mbt";
+    displayName = "M1134 (3)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+    maximumLoad = 6000;
+    //Custom inventory
+    #include "vehicles\cgqc_vic_loadout_ifv.cpp"
+};
+
+class rhsusf_stryker_m1126_m2_wd;
+class cgqc_vic_stryker : rhsusf_stryker_m1126_m2_wd
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_CGQC_vic_ifv_w";
+    displayName = "Stryker m1126 (3+8)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+    maximumLoad = 6000;
+    //Custom inventory
+    #include "vehicles\cgqc_vic_loadout_ifv.cpp"
 };

@@ -77,7 +77,7 @@ class CGQC_units_PMC_0_Marksman1 : CGQC_units_PMC_rifleman {
 	displayName = "Marksman (SVD)";
 	weapons[] = {"cgqc_gun_pmct_svd", "hlc_pistol_Mk25", "Rangefinder", "Throw", "Put"};
 	magazines[] = {"SmokeShell", "SmokeShell", "rhs_mag_rgd5", "rhs_mag_rgd5", "hlc_15Rnd_9x19_B_P226", "hlc_15Rnd_9x19_B_P226", "hlc_15Rnd_9x19_B_P226", "rhs_10Rnd_762x54mmR_7N14", "rhs_10Rnd_762x54mmR_7N14", "rhs_10Rnd_762x54mmR_7N14", "rhs_10Rnd_762x54mmR_7N14", "rhs_10Rnd_762x54mmR_7N14", "rhs_10Rnd_762x54mmR_7N14", "rhs_10Rnd_762x54mmR_7N14", "rhs_10Rnd_762x54mmR_7N14", "rhs_10Rnd_762x54mmR_7N14", "rhs_10Rnd_762x54mmR_7N14", "rhs_10Rnd_762x54mmR_7N14", "rhs_10Rnd_762x54mmR_7N14", "rhs_10Rnd_762x54mmR_7N14", "hlc_15Rnd_9x19_B_P226"};
-	items[] = {"cgqc_items_ifak", "ACRE_PRC343", "ItemAndroid", "ACE_Cellphone", "ACE_EarPlugs", "ACE_CableTie", "ACE_CableTie", "ACE_EntrenchingTool", "ACE_Kestrel4500", "ACE_ATragMX"};
+	items[] = {"cgqc_items_ifak", "ACRE_PRC343", "ItemAndroid", "ACE_Cellphone", "ACE_EarPlugs", "ACE_CableTie", "ACE_CableTie", "ACE_EntrenchingTool", "ACE_RangeCard"};
 	linkedItems[] = {"LOP_V_CarrierLite_TAN", "PO_H_SSh68Helmet_Partizan_2", "rhssaf_veil_Green", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS"};
 };
 
@@ -85,7 +85,7 @@ class CGQC_units_PMC_0_Marksman2 : CGQC_units_PMC_rifleman {
 	displayName = "Marksman (AWP)";
 	weapons[] = {"hlc_rifle_awmagnum_BL", "hlc_pistol_Mk25", "Rangefinder", "Throw", "Put"};
 	magazines[] = {"SmokeShell", "SmokeShell", "rhs_mag_rgd5", "rhs_mag_rgd5", "hlc_15Rnd_9x19_B_P226", "hlc_15Rnd_9x19_B_P226", "hlc_15Rnd_9x19_B_P226", "hlc_5rnd_300WM_AP_AWM", "hlc_5rnd_300WM_AP_AWM", "hlc_5rnd_300WM_FMJ_AWM", "hlc_5rnd_300WM_FMJ_AWM", "hlc_5rnd_300WM_FMJ_AWM", "hlc_5rnd_300WM_FMJ_AWM", "hlc_5rnd_300WM_FMJ_AWM", "hlc_5rnd_300WM_FMJ_AWM", "hlc_5rnd_300WM_FMJ_AWM", "hlc_5rnd_300WM_FMJ_AWM", "hlc_5rnd_300WM_FMJ_AWM", "hlc_5rnd_300WM_FMJ_AWM", "hlc_5rnd_300WM_FMJ_AWM", "hlc_15Rnd_9x19_B_P226"};
-	items[] = {"cgqc_items_ifak", "ACRE_PRC343", "ItemAndroid", "ACE_Cellphone", "ACE_EarPlugs", "ACE_CableTie", "ACE_CableTie", "ACE_EntrenchingTool", "ACE_Kestrel4500", "ACE_ATragMX", "ACE_Flashlight_KSF1"};
+	items[] = {"cgqc_items_ifak", "ACRE_PRC343", "ItemAndroid", "ACE_Cellphone", "ACE_EarPlugs", "ACE_CableTie", "ACE_CableTie", "ACE_EntrenchingTool", "ACE_RangeCard", "ACE_Kestrel4500", "ACE_ATragMX", "ACE_Flashlight_KSF1"};
 };
 
 class CGQC_units_PMC_0_CrewCommander : CGQC_units_PMC_rifleman {

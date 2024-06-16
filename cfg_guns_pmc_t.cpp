@@ -111,9 +111,9 @@ class cgqc_gun_pmct_AWM : hlc_rifle_awmagnum_BL {
 	baseWeapon = "cgqc_gun_pmct_svd";
 	displayName = "PMC-T AWM";
 	class LinkedItems	{
-		class LinkedItemsAcc {
-			slot = "PointerSlot";
-			item = "rhsusf_acc_premier_mrds";
+		class LinkedItemsOptic	{
+			slot = "CowsSlot";
+			item = "rhsusf_acc_premier";
 		};
 	};
 };

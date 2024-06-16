@@ -16,6 +16,8 @@ class cfgWeapons
 	#include "cfg_vests.cpp"
 	// Custom guns ---------------------------------------
 	#include "cfg_guns.cpp"
+	// PMC-T guns ----------------------------------------
+	#include "cfg_guns_pmc_t.cpp"
 	// Custom accessories ---------------------------------------
 	#include "cfg_acc.hpp"
 	// Mortar stuff -------------------------------------------

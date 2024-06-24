@@ -15,13 +15,37 @@ class CGQC_units_PMC_rifleman : cgqc_soldat_moderne {
 	editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_0_TeamLeader_Carbine.jpg";
 };
 
+class CGQC_units_PMC_lifesaver : CGQC_units_PMC_rifleman {
+	faction = "CGQC_PMC_T";
+	displayName = "Combat Lifesaver";
+};
+
 class CGQC_units_PMC_0_TeamLeaderSquadLeader : CGQC_units_PMC_rifleman {
-	displayName = "TeamLeader/SquadLeader";
+	displayName = "TeamLeader/SquadLeader DEPRECATED";
+	scope = 1;
 	backpack = "cgqc_pack_mk1_radiobag_black";
 	weapons[] = {"cgqc_gun_pmct_ak12gl", "Binocular", "Throw", "Put"};
 	magazines[] = {"SmokeShell", "SmokeShell", "rhs_mag_rgd5", "rhs_mag_rgd5", "hlc_30Rnd_545x39_B_AK_Black", "hlc_30Rnd_545x39_B_AK_Black", "hlc_30Rnd_545x39_B_AK_Black", "hlc_30Rnd_545x39_B_AK_Black", "hlc_30Rnd_545x39_B_AK_Black", "hlc_VOG25_AK", "hlc_VOG25_AK", "hlc_VOG25_AK", "hlc_VOG25_AK", "hlc_VOG25_AK", "hlc_GRD_White", "hlc_GRD_White", "hlc_GRD_White", "hlc_30Rnd_545x39_B_AK_Black", "hlc_VOG25_AK"};
 	items[] = {"cgqc_items_ifak", "ACRE_PRC343", "ItemAndroid", "ACE_Cellphone", "azm_bft_tx", "azm_bft_rx", "ACE_EarPlugs", "ACE_CableTie", "ACE_CableTie", "ACE_EntrenchingTool", "ACRE_PRC152", "ACRE_PRC152", "ItemcTab"};
 	perks = "sl";
+};
+
+class CGQC_units_PMC_0_SquadLeader : CGQC_units_PMC_rifleman {
+	displayName = "SquadLeader";
+	backpack = "cgqc_pack_mk1_radiobag_black";
+	weapons[] = {"cgqc_gun_pmct_ak12gl", "Binocular", "Throw", "Put"};
+	magazines[] = {"SmokeShell", "SmokeShell", "rhs_mag_rgd5", "rhs_mag_rgd5", "hlc_30Rnd_545x39_B_AK_Black", "hlc_30Rnd_545x39_B_AK_Black", "hlc_30Rnd_545x39_B_AK_Black", "hlc_30Rnd_545x39_B_AK_Black", "hlc_30Rnd_545x39_B_AK_Black", "hlc_VOG25_AK", "hlc_VOG25_AK", "hlc_VOG25_AK", "hlc_VOG25_AK", "hlc_VOG25_AK", "hlc_GRD_White", "hlc_GRD_White", "hlc_GRD_White", "hlc_30Rnd_545x39_B_AK_Black", "hlc_30Rnd_545x39_B_AK_Black", "hlc_30Rnd_545x39_B_AK_Black", "hlc_VOG25_AK"};
+	items[] = {"cgqc_items_ifak", "ACRE_PRC343", "ItemAndroid", "ACE_Cellphone", "azm_bft_tx", "azm_bft_rx", "ACE_EarPlugs", "ACE_CableTie", "ACE_CableTie", "ACE_EntrenchingTool", "ACRE_PRC152", "ACRE_PRC152", "ItemcTab"};
+	perks = "sl";
+};
+
+class CGQC_units_PMC_0_TeamLeader : CGQC_units_PMC_rifleman {
+	displayName = "TeamLeader";
+	backpack = "cgqc_pack_mk1_radiobag_black";
+	weapons[] = {"cgqc_gun_pmct_ak12gl", "Binocular", "Throw", "Put"};
+	magazines[] = {"SmokeShell", "SmokeShell", "rhs_mag_rgd5", "rhs_mag_rgd5", "hlc_30Rnd_545x39_B_AK_Black", "hlc_30Rnd_545x39_B_AK_Black", "hlc_30Rnd_545x39_B_AK_Black", "hlc_30Rnd_545x39_B_AK_Black", "hlc_30Rnd_545x39_B_AK_Black", "hlc_VOG25_AK", "hlc_VOG25_AK", "hlc_VOG25_AK", "hlc_VOG25_AK", "hlc_VOG25_AK", "hlc_GRD_White", "hlc_GRD_White", "hlc_GRD_White", "hlc_30Rnd_545x39_B_AK_Black", "hlc_30Rnd_545x39_B_AK_Black", "hlc_30Rnd_545x39_B_AK_Black", "hlc_VOG25_AK"};
+	items[] = {"cgqc_items_ifak", "ACRE_PRC343", "ItemAndroid", "ACE_Cellphone", "azm_bft_tx", "azm_bft_rx", "ACE_EarPlugs", "ACE_CableTie", "ACE_CableTie", "ACE_EntrenchingTool", "ACRE_PRC152"};
+	perks = "tl";
 };
 
 class CGQC_units_PMC_0_Grenadier : CGQC_units_PMC_rifleman {
@@ -83,9 +107,10 @@ class CGQC_units_PMC_0_Marksman1 : CGQC_units_PMC_rifleman {
 
 class CGQC_units_PMC_0_Marksman2 : CGQC_units_PMC_rifleman {
 	displayName = "Marksman (AWP)";
-	weapons[] = {"hlc_rifle_awmagnum_BL", "hlc_pistol_Mk25", "Rangefinder", "Throw", "Put"};
+	weapons[] = {"cgqc_gun_pmct_AWM", "hlc_pistol_Mk25", "Rangefinder", "Throw", "Put"};
 	magazines[] = {"SmokeShell", "SmokeShell", "rhs_mag_rgd5", "rhs_mag_rgd5", "hlc_15Rnd_9x19_B_P226", "hlc_15Rnd_9x19_B_P226", "hlc_15Rnd_9x19_B_P226", "hlc_5rnd_300WM_AP_AWM", "hlc_5rnd_300WM_AP_AWM", "hlc_5rnd_300WM_FMJ_AWM", "hlc_5rnd_300WM_FMJ_AWM", "hlc_5rnd_300WM_FMJ_AWM", "hlc_5rnd_300WM_FMJ_AWM", "hlc_5rnd_300WM_FMJ_AWM", "hlc_5rnd_300WM_FMJ_AWM", "hlc_5rnd_300WM_FMJ_AWM", "hlc_5rnd_300WM_FMJ_AWM", "hlc_5rnd_300WM_FMJ_AWM", "hlc_5rnd_300WM_FMJ_AWM", "hlc_5rnd_300WM_FMJ_AWM", "hlc_15Rnd_9x19_B_P226"};
 	items[] = {"cgqc_items_ifak", "ACRE_PRC343", "ItemAndroid", "ACE_Cellphone", "ACE_EarPlugs", "ACE_CableTie", "ACE_CableTie", "ACE_EntrenchingTool", "ACE_RangeCard", "ACE_Kestrel4500", "ACE_ATragMX", "ACE_Flashlight_KSF1"};
+	linkedItems[] = {"LOP_V_CarrierLite_TAN", "PO_H_SSh68Helmet_Partizan_2", "rhssaf_veil_Green", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS"};
 };
 
 class CGQC_units_PMC_0_CrewCommander : CGQC_units_PMC_rifleman {

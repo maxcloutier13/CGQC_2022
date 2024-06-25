@@ -1,6 +1,6 @@
 // Change Zeros and remove ranging from some optics
 class ItemCore;
-class ItemInfo;
+
 class OpticsModes;
 class ACO;
 class optic_lrps;

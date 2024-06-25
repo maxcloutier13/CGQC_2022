@@ -114,7 +114,7 @@ class CGQC_units_PMC_0_Marksman2 : CGQC_units_PMC_rifleman {
 };
 
 class CGQC_units_PMC_0_CrewCommander : CGQC_units_PMC_rifleman {
-	displayName = "Crew Commander";
+	displayName = "Tank Commander";
 	backpack = "cgqc_pack_mk1_magic";
 	weapons[] = {"cgqc_gun_pmct_aku12", "Binocular", "Throw", "Put"};
 	items[] = {"cgqc_items_ifak", "ACRE_PRC343", "ItemAndroid", "ACE_Cellphone", "azm_bft_tx", "azm_bft_rx", "ACE_EarPlugs", "ACE_CableTie", "ACE_CableTie", "ACE_EntrenchingTool", "ACRE_PRC152", "ACRE_PRC152", "ToolKit"};
@@ -123,7 +123,7 @@ class CGQC_units_PMC_0_CrewCommander : CGQC_units_PMC_rifleman {
 };
 
 class CGQC_units_PMC_0_CrewMember : CGQC_units_PMC_rifleman {
-	displayName = "Crew Member";
+	displayName = "Tank Crew";
 	backpack = "cgqc_pack_mk1_magic";
 	weapons[] = {"cgqc_gun_pmct_aku12", "Binocular", "Throw", "Put"};
 	items[] = {"cgqc_items_ifak", "ACRE_PRC343", "ItemAndroid", "ACE_Cellphone", "ACE_EarPlugs", "ACE_CableTie", "ACE_CableTie", "ACE_EntrenchingTool", "ToolKit"};

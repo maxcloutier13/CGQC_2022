@@ -122,9 +122,9 @@ class hlc_rifle_aku12;
 class cgqc_gun_pmct_aku12 : hlc_rifle_aku12 {
 	scope = 2;
 	author = "silent1";
-	_generalMacro = "cgqc_gun_pmct_rpk12";
-	baseWeapon = "cgqc_gun_pmct_rpk12";
-	displayName = "PMC-T AKU 12";
+	_generalMacro = "cgqc_gun_pmct_aku12";
+	baseWeapon = "cgqc_gun_pmct_aku12";
+	displayName = "PMC-T AK-U 12";
 	class LinkedItems	{
 		class LinkedItemsMuzzle	{
 			slot = "MuzzleSlot";
@@ -144,8 +144,8 @@ class cgqc_gun_pmct_aku12 : hlc_rifle_aku12 {
 class cgqc_gun_pmct_aku12_zeus : hlc_rifle_aku12 {
 	scope = 2;
 	author = "silent1";
-	_generalMacro = "cgqc_gun_pmct_rpk12";
-	baseWeapon = "cgqc_gun_pmct_rpk12";
+	_generalMacro = "cgqc_gun_pmct_aku12_zeus";
+	baseWeapon = "cgqc_gun_pmct_aku12_zeus";
 	displayName = "PMC-T AKU 12 Zeus";
 	class LinkedItems	{
 		class LinkedItemsMuzzle	{

@@ -98,7 +98,7 @@ class cgqc_gun_pmct_svd : rhs_weap_svdp_npz {
 	class LinkedItems	{
 		class LinkedItemsAcc {
 			slot = "PointerSlot";
-			item = "hlc_optic_ATACR_Offset";
+			item = "optic_DMS";
 		};
 	};
 };

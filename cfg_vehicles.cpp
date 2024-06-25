@@ -237,215 +237,7 @@ class cgqc_plane_c130 : RHS_C130J
     textureList[] = {"standard",1};
     */
 };
-// Drones CGQC versions
-class B_UAV_01_F : UAV_01_base_F{
-    class Turrets : Turrets
-    {
-        class MainTurret : MainTurret
-        {
-            class OpticsIn;
-        };
-    };
-    class sounds;
-};
-class cgqc_drone_darter : B_UAV_01_F
-{
-    scope = 2;
-    side = 1;
-    author = "silent1";
-    faction = "cgqc";
-    editorSubcategory = "EdSubcat_cgqc_drones";
-    displayName = "CGQC - HQ Darter";
-    camouflage = 0.01;
-	audible = 0.05;
-    maxSpeed = 250;
-    fuelCapacity = 2000;
-    liftForceCoef = 2.0;
-	cyclicAsideForceCoef = 2.0;
-	cyclicForwardForceCoef = 1.2;
-    radarTargetSize = 0.05;
-	visualTargetSize = 0.05;
-	LockDetectionSystem = 12;
-    incomingMissileDetectionSystem = 26;
-    class SimpleObject
-    {
-        eden = 1;
-        animate[] = {{"damagehide", 0}, {"rotorimpacthide", 0}, {"tailrotorimpacthide", 0}, {"propeller1_rotation", 0}, {"propeller1_blur_rotation", 0}, {"propeller2_rotation", 0}, {"propeller2_blur_rotation", 0}, {"propeller3_rotation", 0}, {"propeller3_blur_rotation", 0}, {"propeller4_rotation", 0}, {"propeller4_blur_rotation", 0}, {"propeller1_hide", 0}, {"propeller1_blur_hide", 0}, {"propeller2_hide", 0}, {"propeller2_blur_hide", 0}, {"propeller3_hide", 0}, {"propeller3_blur_hide", 0}, {"propeller4_hide", 0}, {"propeller4_blur_hide", 0}, {"mainturret", 0}, {"maingun", -0.05}};
-        hide[] = {"zasleh", "tail rotor blur", "main rotor blur", "zadni svetlo", "clan", "podsvit pristroju", "poskozeni"};
-        verticalOffset = 0.15;
-        verticalOffsetWorld = -0.001;
-        init = "''";
-    };
-    editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\B_UAV_01_F.jpg";
-    _generalMacro = "cgqc_drone_darter";
-    crew = "B_UAV_AI";
-    typicalCargo[] = {"B_UAV_AI"};
-    accuracy = 0.5;
-    class assembleInfo
-    {
-        primary = 1;
-        base = "";
-        assembleTo = "";
-        displayName = "";
-        dissasembleTo[] = {"B_UAV_01_backpack_F"};
-    };
-    hiddenSelectionsTextures[] = {"\CGQC_2022\vehicles\cgqc_drone_darter_dark.paa"};
-    class Turrets: Turrets {
-        class MainTurret: MainTurret {
-            class OpticsIn {
-                class Wide {
-                    opticsDisplayName = "W";
-                    initAngleX = 0;
-                    minAngleX = -30;
-                    maxAngleX = 30;
-                    initAngleY = 0;
-                    minAngleY = -100;
-                    maxAngleY = 100;
-                    initFov = 0.456;
-                    minFov = 0.021875;
-                    maxFov = 2.0;
-                    directionStabilized = 1;
-                    visionMode[] = {"Normal","NVG","Ti"};
-                    thermalMode[] = {0,1};
-                    gunnerOpticsModel = "A3\drones_f\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
-                };
-            };
-        };
-    };
-    class Sounds
-    {
-        class Engine
-        {
-            sound[] = {"A3\Sounds_F\air\Uav_01\quad_engine_full_01",0.4466836,1.0,200};
-            frequency = "rotorSpeed";
-            volume = "(camPos*((rotorSpeed-0.72)*4))/3";
-        };
-        class RotorLowOut
-        {
-            sound[] = {"A3\Sounds_F\air\Uav_01\blade",0.31622776,1.0,200};
-            frequency = "rotorSpeed";
-            volume = "(camPos*(0 max (rotorSpeed-0.1)))/3";
-            cone[] = {1.6,3.14,1.6,0.95};
-        };
-        class RotorHighOut
-        {
-            sound[] = {"A3\Sounds_F\air\Uav_01\blade_high",0.31622776,1.0,250};
-            frequency = "rotorSpeed";
-            volume = "(camPos*10*(0 max (rotorThrust-0.9)))/3";
-            cone[] = {1.6,3.14,1.6,0.95};
-        };
-        class EngineIn
-        {
-            sound[] = {"A3\Sounds_F\air\Uav_01\quad_engine_full_int",0.56234133,1.0};
-            frequency = "rotorSpeed";
-            volume = "((1-camPos)*((rotorSpeed-0.75)*4))/20";
-        };
-        class RotorLowIn
-        {
-            sound[] = {"A3\Sounds_F\air\Uav_01\blade_int",0.56234133,1.0};
-            frequency = "rotorSpeed";
-            volume = "((1-camPos)*(0 max (rotorSpeed-0.1)))/20";
-        };
-        class RotorHighIn
-        {
-            sound[] = {"A3\Sounds_F\air\Uav_01\blade_high_int",0.56234133,1.0};
-            frequency = "rotorSpeed";
-            volume = "((1-camPos)*3*(rotorThrust-0.9))/20";
-        };
-    };
-};
-// Override du deployable darter
-class Rev_darter_b: B_UAV_01_F
-{
-    author = "silent1";
-    faction = "cgqc";
-    editorSubcategory = "EdSubcat_cgqc_drones";
-    displayName = "CGQC - HQ Darter Deployed";
-    camouflage = 0.01;
-	audible = 0.05;
-    maxSpeed = 250;
-    fuelCapacity = 2000;
-    liftForceCoef = 2.0;
-	cyclicAsideForceCoef = 2.0;
-	cyclicForwardForceCoef = 1.2;
-    radarTargetSize = 0.05;
-	visualTargetSize = 0.05;
-	LockDetectionSystem = 12;
-    incomingMissileDetectionSystem = 26;
-    accuracy = 0.5;
-    hiddenSelectionsTextures[] = {"\CGQC_2022\vehicles\cgqc_drone_darter_dark.paa"};
-    class Turrets: Turrets {
-        class MainTurret: MainTurret {
-            class OpticsIn {
-                class Wide {
-                    opticsDisplayName = "W";
-                    initAngleX = 0;
-                    minAngleX = -30;
-                    maxAngleX = 30;
-                    initAngleY = 0;
-                    minAngleY = -100;
-                    maxAngleY = 100;
-                    initFov = 0.456;
-                    minFov = 0.021875;
-                    maxFov = 2.0;
-                    directionStabilized = 1;
-                    visionMode[] = {"Normal","NVG","Ti"};
-                    thermalMode[] = {0,1};
-                    gunnerOpticsModel = "A3\drones_f\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
-                };
-            };
-        };
-    };
-    class Sounds
-    {
-        class Engine
-        {
-            sound[] = {"A3\Sounds_F\air\Uav_01\quad_engine_full_01",0.4466836,1.0,200};
-            frequency = "rotorSpeed";
-            volume = "(camPos*((rotorSpeed-0.72)*4))/3";
-        };
-        class RotorLowOut
-        {
-            sound[] = {"A3\Sounds_F\air\Uav_01\blade",0.31622776,1.0,200};
-            frequency = "rotorSpeed";
-            volume = "(camPos*(0 max (rotorSpeed-0.1)))/3";
-            cone[] = {1.6,3.14,1.6,0.95};
-        };
-        class RotorHighOut
-        {
-            sound[] = {"A3\Sounds_F\air\Uav_01\blade_high",0.31622776,1.0,250};
-            frequency = "rotorSpeed";
-            volume = "(camPos*10*(0 max (rotorThrust-0.9)))/3";
-            cone[] = {1.6,3.14,1.6,0.95};
-        };
-        class EngineIn
-        {
-            sound[] = {"A3\Sounds_F\air\Uav_01\quad_engine_full_int",0.56234133,1.0};
-            frequency = "rotorSpeed";
-            volume = "((1-camPos)*((rotorSpeed-0.75)*4))/20";
-        };
-        class RotorLowIn
-        {
-            sound[] = {"A3\Sounds_F\air\Uav_01\blade_int",0.56234133,1.0};
-            frequency = "rotorSpeed";
-            volume = "((1-camPos)*(0 max (rotorSpeed-0.1)))/20";
-        };
-        class RotorHighIn
-        {
-            sound[] = {"A3\Sounds_F\air\Uav_01\blade_high_int",0.56234133,1.0};
-            frequency = "rotorSpeed";
-            volume = "((1-camPos)*3*(rotorThrust-0.9))/20";
-        };
-    };
-};
 
-class cgqc_drone_darter_light : cgqc_drone_darter
-{
-    displayName = "CGQC - Darter Léger";
-    maxSpeed = 100;
-    fuelCapacity = 100;
-    liftForceCoef = 1.0;
-};
 // Land vehicles
 class B_W_APC_Wheeled_01_cannon_F;
 class RHS_M2A3_BUSKIII_wd;
@@ -456,7 +248,7 @@ class cgqc_vic_badger : B_W_APC_Wheeled_01_cannon_F
     side = 1;
     author = "silent1";
     faction = "cgqc";
-    editorSubcategory = "EdSubcat_cgqc_vic_ifv";
+    editorSubcategory = "EdSubcat_CGQC_vic_ifv_w";
     displayName = "Badger (3+8)";
     crew = "CGQC_units_mk2_Tank_Driver_ai";
     maximumLoad = 6000;
@@ -630,15 +422,15 @@ class cgqc_vic_motocross : B_Quadbike_01_F
     crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_small.cpp"
 };
-class C_SUV_01_F;
-class cgqc_vic_suv : C_SUV_01_F
+class ej_suv;
+class cgqc_vic_suv : ej_suv
 {
     scope = 2;
     side = 1;
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
-    displayName = "SUV (1+3)";
+    displayName = "SUV (1+5)";
     crew = "CGQC_units_mk2_Rifleman_ai";
     class AcreRacks {
         class Rack_1 {
@@ -711,6 +503,195 @@ class cgqc_vic_mrap : B_W_MRAP_01_F {
     crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };
+
+class rhsusf_m1240a1_m2_usmc_d;
+class rhsusf_m1240a1_m2_usmc_wd;
+class rhsusf_m1240a1_m2_uik_usarmy_d;
+class rhsusf_m1240a1_m2_uik_usarmy_wd;
+class cgqc_vic_mrap_M1240TA : rhsusf_m1240a1_m2_usmc_d {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_armed";
+    displayName = "M1240 (Tan) (3+2)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+class cgqc_vic_mrap_M1240WA : rhsusf_m1240a1_m2_usmc_wd {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_armed";
+    displayName = "M1240 (Wood) (3+2)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+class cgqc_vic_mrap_M1240TAF : rhsusf_m1240a1_m2_uik_usarmy_d {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_armed";
+    displayName = "M1240A1 (Tan) (3+2)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+class cgqc_vic_mrap_M1240WAF : rhsusf_m1240a1_m2_uik_usarmy_wd {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_armed";
+    displayName = "M1240A1 (Wood) (3+2)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+
+
+class rhsusf_m1240a1_usmc_d;
+class rhsusf_m1240a1_usmc_wd;
+class cgqc_vic_mrap_M1240TU : rhsusf_m1240a1_usmc_d {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
+    displayName = "M1240 (Tan) (2+2)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+class cgqc_vic_mrap_M1240WU : rhsusf_m1240a1_usmc_wd {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
+    displayName = "M1240 (Wood) (2+2)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+
+
+class rhsusf_CGRCAT1A2_M2_usmc_d;
+class rhsusf_CGRCAT1A2_M2_usmc_wda;
+class rhsusf_CGRCAT1A2_usmc_d;
+class rhsusf_CGRCAT1A2_usmc_wd;
+class cgqc_vic_mrap_CAT1A2TAF : rhsusf_CGRCAT1A2_M2_usmc_d {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_armed";
+    displayName = "CAT1A2 (Tan) (3+4)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+class cgqc_vic_mrap_CAT1A2WAF : rhsusf_CGRCAT1A2_M2_usmc_wda {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_armed";
+    displayName = "CAT1A2 (Wood) (3+4)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+class cgqc_vic_mrap_CAT1A2TU : rhsusf_CGRCAT1A2_usmc_d {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
+    displayName = "CAT1A2 (Tan) (2+4)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+class cgqc_vic_mrap_CAT1A2WU : rhsusf_CGRCAT1A2_usmc_wd {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
+    displayName = "CAT1A2 (Wood) (2+4)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+
+
+
+
+class rhsusf_M1232_MC_M2_usmc_d;
+class rhsusf_M1232_MC_M2_usmc_wd;
+class rhsusf_M1232_usarmy_d;
+class rhsusf_M1232_usarmy_wd;
+
+class cgqc_vic_mrap_M1232TAF : rhsusf_M1232_MC_M2_usmc_d {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_armed";
+    displayName = "M1232 (Tan) (3+7)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+class cgqc_vic_mrap_M1232WAF : rhsusf_M1232_MC_M2_usmc_wd {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_armed";
+    displayName = "M1232 (Wood) (3+7)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+class cgqc_vic_mrap_M1232TU : rhsusf_M1232_usarmy_d {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
+    displayName = "M1232 (Tan) (3+7)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+class cgqc_vic_mrap_M1232WU : rhsusf_M1232_usarmy_wd {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_unarmed";
+    displayName = "M1232 (Wood) (3+7)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+
+
+class rhsusf_M1230_M2_usarmy_d;
+class rhsusf_M1230_M2_usarmy_wd;
+class cgqc_vic_mrap_m1230TAF : rhsusf_M1230_M2_usarmy_d {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_armed";
+    displayName = "M1230 (Tan) (2+9)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+class cgqc_vic_mrap_m1230WAF : rhsusf_M1230_M2_usarmy_wd {
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_armed";
+    displayName = "M1230 (Wood) (2+9)";
+    crew = "CGQC_units_mk2_Rifleman_ai";
+    #include "vehicles\cgqc_vic_loadout_medium.cpp"
+};
+
 class cgqc_vic_polaris : rhsusf_mrzr4_d {
     scope = 2;
     side = 1;
@@ -892,4 +873,179 @@ class cgqc_projector : Misc_Videoprojektor
             };
         };
     };
+};
+
+
+
+// IFV's
+class I_APC_tracked_03_cannon_F;
+class cgqc_vic_warrior : I_APC_tracked_03_cannon_F
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_ifv";
+    displayName = "FV510 Warrior (3+7)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+    maximumLoad = 6000;
+    //Custom inventory
+    #include "vehicles\cgqc_vic_loadout_ifv.cpp"
+};
+
+class B_T_APC_Tracked_01_rcws_F;
+class cgqc_vic_namer : B_T_APC_Tracked_01_rcws_F
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_ifv";
+    displayName = "Namer (3+8)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+    maximumLoad = 6000;
+    //Custom inventory
+    #include "vehicles\cgqc_vic_loadout_ifv.cpp"
+};
+
+
+class I_E_APC_tracked_03_cannon_F;
+class cgqc_vic_odyniec : I_E_APC_tracked_03_cannon_F
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_cgqc_vic_ifv";
+    displayName = "FV720 Odyniec (3+7)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+    maximumLoad = 6000;
+    //Custom inventory
+    #include "vehicles\cgqc_vic_loadout_ifv.cpp"
+};
+
+class B_APC_Wheeled_03_cannon_3_F;
+class cgqc_vic_gorgon : B_APC_Wheeled_03_cannon_3_F
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_CGQC_vic_ifv_w";
+    displayName = "AFV4 Gorgon (3+8)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+    maximumLoad = 6000;
+    //Custom inventory
+    #include "vehicles\cgqc_vic_loadout_ifv.cpp"
+};
+
+class B_T_AFV_Wheeled_01_cannon_F;
+class B_T_AFV_Wheeled_01_up_cannon_F;
+class cgqc_vic_roikat : B_T_AFV_Wheeled_01_up_cannon_F
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_CGQC_vic_mbt";
+    displayName = "Rooikat (3)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+    maximumLoad = 6000;
+    //Custom inventory
+    #include "vehicles\cgqc_vic_loadout_ifv.cpp"
+};
+
+class B_T_APC_Tracked_01_CRV_F;
+class cgqc_vic_nemmera : B_T_APC_Tracked_01_CRV_F
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_CGQC_vic_mbt";
+    displayName = "Nemmera (3)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+    maximumLoad = 6000;
+    //Custom inventory
+    #include "vehicles\cgqc_vic_loadout_ifv.cpp"
+};
+
+class I_LT_01_cannon_F;
+class cgqc_vic_wiezelm120 : I_LT_01_cannon_F
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_CGQC_vic_mbt";
+    displayName = "Wiezel MK20 (3)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+     // Boosted speed and space
+    enginePower = 190;
+    maxSpeed = 110;
+    maximumLoad = 2000;
+    //Custom inventory
+    //#include "vehicles\cgqc_vic_loadout_ifv.cpp"
+};
+class I_LT_01_AT_F;
+class cgqc_vic_wiezelatgm : I_LT_01_AT_F
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_CGQC_vic_mbt";
+    displayName = "Wiezel ATGM (3)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+     // Boosted speed and space
+    enginePower = 190;
+    maxSpeed = 110;
+    maximumLoad = 2000;
+    //Custom inventory
+    //#include "vehicles\cgqc_vic_loadout_ifv.cpp"
+};
+
+
+class cgqc_vic_roikat2 : B_T_AFV_Wheeled_01_cannon_F
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_CGQC_vic_mbt";
+    displayName = "Rooikat Up (3)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+    maximumLoad = 6000;
+    //Custom inventory
+    #include "vehicles\cgqc_vic_loadout_ifv.cpp"
+};
+
+class rhsusf_stryker_m1134_wd;
+class cgqc_vic_stryker3 : rhsusf_stryker_m1134_wd
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_CGQC_vic_mbt";
+    displayName = "M1134 (3)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+    maximumLoad = 6000;
+    //Custom inventory
+    #include "vehicles\cgqc_vic_loadout_ifv.cpp"
+};
+
+class rhsusf_stryker_m1126_m2_wd;
+class cgqc_vic_stryker : rhsusf_stryker_m1126_m2_wd
+{
+    scope = 2;
+    side = 1;
+    author = "silent1";
+    faction = "cgqc";
+    editorSubcategory = "EdSubcat_CGQC_vic_ifv_w";
+    displayName = "Stryker m1126 (3+8)";
+    crew = "CGQC_units_mk2_Tank_Driver_ai";
+    maximumLoad = 6000;
+    //Custom inventory
+    #include "vehicles\cgqc_vic_loadout_ifv.cpp"
 };

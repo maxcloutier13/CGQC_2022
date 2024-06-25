@@ -180,6 +180,19 @@ class cgqc_vest_mk1_belt : V_Rangemaster_belt
     _generalMacro = "cgqc_vest_mk1_belt";
     displayName = "CGQC Ceinture";
 };
+
+// PMC-T stuff
+class ItemInfo;
+class LOP_V_CarrierLite_TAN;
+class cgqc_vest_pmct_tan : LOP_V_CarrierLite_TAN {
+    _generalMacro = "V_mas_can_PlateCarrier1_rgr";
+    displayName = "CGQC PMC-T Vest - Tan";
+    class ItemInfo: ItemInfo {
+        containerClass = "Supply140";
+        mass = 40;
+    };
+};
+
 // Base/training
 class cgqc_vest_mk1_tan : V_mas_can_PlateCarrier1_tan
 {

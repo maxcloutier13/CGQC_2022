@@ -16,12 +16,16 @@ class cfgWeapons
 	#include "cfg_vests.cpp"
 	// Custom guns ---------------------------------------
 	#include "cfg_guns.cpp"
+	// PMC-T guns ----------------------------------------
+	#include "cfg_guns_pmc_t.cpp"
 	// Custom accessories ---------------------------------------
 	#include "cfg_acc.hpp"
 	// Mortar stuff -------------------------------------------
 	#include "cfg_mortar.cpp"
 	// Items -------------------------------------------------
 	#include "cfg_misc.cpp"
+	// Modifs de trucs existants  -------------------------------------------------
+	#include "cfg_optics_mod.cpp"
 };
 class cfgGlasses
 {
@@ -37,6 +41,8 @@ class cfgVehicles
 	#include "cfg_units_training.cpp"
 	// mk1 units
 	#include "cfg_units_mk1.cpp"
+	// PMC Turcotte
+	#include "cfg_units_pmc_t.cpp"
 	// mk1 vehicles
 	#include "cfg_vehicles.cpp"
 };

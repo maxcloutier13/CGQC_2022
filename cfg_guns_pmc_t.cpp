@@ -6,12 +6,12 @@ class hlc_rifle_RK62 : hlc_ak_base{
 	ACE_barrelLength = 418.0;
 };
 class hlc_rifle_ak12 : hlc_ak_base {
-	ACE_barrelTwist = 199.9;
-	ACE_barrelLength = 414.02;
+	ACE_barrelTwist = 228.6;
+	ACE_barrelLength = 415;
 };
 class hlc_rifle_ak12GL : hlc_rifle_ak12 {
-	ACE_barrelTwist = 199.9;
-	ACE_barrelLength = 414.02;
+	ACE_barrelTwist = 228.6;
+	ACE_barrelLength = 415;
 };
 
 class cgqc_gun_pmct_ak12 : hlc_rifle_ak12 {

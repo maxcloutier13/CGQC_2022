@@ -778,7 +778,7 @@ class cgqc_gun_mk1_hk417_tremblay : arifle_SPAR_03_base_F
 		"\CGQC\guns\cgqc_gun_spar17_wood_buttstock.paa" // spar1_01 - Buttstock
 	};
 };
-class cgqc_gun_mk1_mk18_fortin : cgqc_gun_mk1_mk18 
+class cgqc_gun_mk1_mk18_fortin : cgqc_gun_mk1_mk18
 {
 	scope = 2;
 	author = "silent1";
@@ -793,3 +793,14 @@ class cgqc_gun_mk1_mk18_fortin : cgqc_gun_mk1_mk18
 								  "rhsusf\addons\rhsusf_weapons\m4\data\magpulstock_co.paa",
 								  "\rhsusf\addons\rhsusf_weapons\m320\data\m320_co.paa"};
 };
+
+
+class rhsgref_sdn6_suppressor;
+class cgqc_silencer_sdn6: rhsgref_sdn6_suppressor
+{
+	author = "silent1";
+	displayName="CGQC Sdn6 - Tan";
+	picture="\rhsgref\addons\rhsgref_weapons\icons\sdn6.paa";
+	model = "\rhsgref\addons\rhsgref_weapons\m38\rhs_sdn6";
+};
+

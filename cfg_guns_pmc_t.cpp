@@ -1,11 +1,26 @@
-class hlc_rifle_ak12;
-class cgqc_gun_pmct_ak12 : hlc_rifle_ak12
-{
+class hlc_ak_base;
+class hlc_rifle_aku12;
+
+class hlc_rifle_RK62 : hlc_ak_base{
+	ACE_barrelTwist = 240.0;
+	ACE_barrelLength = 418.0;
+};
+class hlc_rifle_ak12 : hlc_ak_base {
+	ACE_barrelTwist = 199.9;
+	ACE_barrelLength = 414.02;
+};
+class hlc_rifle_ak12GL : hlc_rifle_ak12 {
+	ACE_barrelTwist = 199.9;
+	ACE_barrelLength = 414.02;
+};
+
+class cgqc_gun_pmct_ak12 : hlc_rifle_ak12 {
 	scope = 2;
 	author = "silent1";
 	_generalMacro = "cgqc_gun_pmct_ak12";
 	baseWeapon = "cgqc_gun_pmct_ak12";
-	displayName = "PMC-T AK12";
+	displayName = "PMC-T AK-12";
+
 	class LinkedItems	{
 		class LinkedItemsMuzzle		{
 			slot = "MuzzleSlot";
@@ -19,17 +34,14 @@ class cgqc_gun_pmct_ak12 : hlc_rifle_ak12
 			slot = "PointerSlot";
 			item = "rhs_acc_2dpZenit_ris";
 		};
-
 	};
 };
-
-class hlc_rifle_ak12GL;
 class cgqc_gun_pmct_ak12gl : hlc_rifle_ak12GL {
 	scope = 2;
 	author = "silent1";
 	_generalMacro = "cgqc_gun_pmct_ak12gl";
 	baseWeapon = "cgqc_gun_pmct_ak12gl";
-	displayName = "PMC-T AK12 GL";
+	displayName = "PMC-T AK-12GL";
 	class LinkedItems	{
 		class LinkedItemsMuzzle	{
 			slot = "MuzzleSlot";
@@ -44,6 +56,54 @@ class cgqc_gun_pmct_ak12gl : hlc_rifle_ak12GL {
 			item = "rhs_acc_2dpZenit_ris";
 		};
 	};
+};
+class cgqc_gun_pmct_aku12 : hlc_rifle_aku12 {
+	scope = 2;
+	author = "silent1";
+	_generalMacro = "cgqc_gun_pmct_aku12";
+	baseWeapon = "cgqc_gun_pmct_aku12";
+	displayName = "PMC-T AK-12U";
+	class LinkedItems	{
+		class LinkedItemsMuzzle	{
+			slot = "MuzzleSlot";
+			item = "hlc_muzzle_SF3P_762R";
+		};
+		class LinkedItemsOptic	{
+			slot = "CowsSlot";
+			item = "rhs_acc_1p87";
+		};
+		class LinkedItemsAcc {
+			slot = "PointerSlot";
+			item = "rhs_acc_2dpZenit_ris";
+		};
+	};
+};
+
+// Custom versions
+class cgqc_gun_pmct_ak12trig : hlc_rifle_ak12 {
+	scope = 2;
+	author = "silent1";
+	_generalMacro = "cgqc_gun_pmct_ak12trig";
+	baseWeapon = "cgqc_gun_pmct_ak12trig";
+	displayName = "PMC-T TrigMod AK12";
+	modes[] = {"Single", "FullAuto"};
+};
+class cgqc_gun_pmct_ak12gltrig : hlc_rifle_ak12GL {
+	scope = 2;
+	author = "silent1";
+	_generalMacro = "cgqc_gun_pmct_ak12gltrig";
+	baseWeapon = "cgqc_gun_pmct_ak12gltrig";
+	displayName = "PMC-T TrigMod AK12GL";
+	modes[] = {"FullAuto"};
+};
+
+class cgqc_gun_pmct_aku12trig : hlc_rifle_aku12 {
+	scope = 2;
+	author = "silent1";
+	_generalMacro = "cgqc_gun_pmct_aku12trig";
+	baseWeapon = "cgqc_gun_pmct_aku12trig";
+	displayName = "PMC-T TrigMod AK12U";
+	modes[] = {"Single", "FullAuto"};
 };
 
 class hlc_rifle_RPK12;
@@ -118,28 +178,7 @@ class cgqc_gun_pmct_AWM : hlc_rifle_awmagnum_BL {
 	};
 };
 
-class hlc_rifle_aku12;
-class cgqc_gun_pmct_aku12 : hlc_rifle_aku12 {
-	scope = 2;
-	author = "silent1";
-	_generalMacro = "cgqc_gun_pmct_aku12";
-	baseWeapon = "cgqc_gun_pmct_aku12";
-	displayName = "PMC-T AK-U 12";
-	class LinkedItems	{
-		class LinkedItemsMuzzle	{
-			slot = "MuzzleSlot";
-			item = "hlc_muzzle_SF3P_762R";
-		};
-		class LinkedItemsOptic	{
-			slot = "CowsSlot";
-			item = "rhs_acc_1p87";
-		};
-		class LinkedItemsAcc {
-			slot = "PointerSlot";
-			item = "rhs_acc_2dpZenit_ris";
-		};
-	};
-};
+
 
 class cgqc_gun_pmct_aku12_zeus : hlc_rifle_aku12 {
 	scope = 2;

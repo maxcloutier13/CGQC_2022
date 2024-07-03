@@ -167,8 +167,8 @@ class hlc_rifle_awmagnum_BL;
 class cgqc_gun_pmct_AWM : hlc_rifle_awmagnum_BL {
 	scope = 2;
 	author = "silent1";
-	_generalMacro = "cgqc_gun_pmct_svd";
-	baseWeapon = "cgqc_gun_pmct_svd";
+	_generalMacro = "cgqc_gun_pmct_AWM";
+	baseWeapon = "cgqc_gun_pmct_AWM";
 	displayName = "PMC-T AWM";
 	class LinkedItems	{
 		class LinkedItemsOptic	{

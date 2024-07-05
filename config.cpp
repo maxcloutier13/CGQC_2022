@@ -43,7 +43,7 @@ class cfgVehicles
 	#include "cfg_units_mk1.cpp"
 	// PMC Turcotte
 	#include "cfg_units_pmc_t.cpp"
-	// mk1 vehicles
+	// mk1 vehicless
 	#include "cfg_vehicles.cpp"
 };
 class CfgMagazines {

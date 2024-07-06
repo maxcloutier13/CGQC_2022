@@ -31,6 +31,33 @@ class cgqc_uniform_pmct_cadpat : U_mas_can_B_CombatUniform_T_aor2 {
         mass = 20;
     };
 };
+class U_mas_can_B_suite_VEG;
+class cgqc_uniform_pmct_cadpat_full : U_mas_can_B_suite_VEG {
+    author = "silent1";
+    _generalMacro = "cgqc_uniform_pmct_cadpat_full";
+    displayName = "CGQC PMC-T Uniforme - Cadpat Full";
+    class ItemInfo: UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "B_mas_can_SoldierVEG_F";
+        containerClass = "Supply80";
+        mass = 20;
+    };
+};
+
+
+class cgqc_uniform_swat_cqb : U_mas_can_B_suite_CQB {
+    author = "silent1";
+    _generalMacro = "cgqc_uniform_swat_cqb";
+    displayName = "CGQC Swat Uniforme";
+    class ItemInfo: UniformItem {
+        uniformModel = "-";
+        uniformClass = "B_mas_can_SoldierCQB_F";
+        containerClass = "Supply80";
+        mass = 20;
+    };
+};
+
 
 // Diver
 class cgqc_uniform_mk1_diver : U_mas_can_B_Wetsuit

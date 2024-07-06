@@ -85,6 +85,16 @@ class CGQC_units_PMC_0_Engineer : CGQC_units_PMC_rifleman {
 	perks = "eng";
 };
 
+class CGQC_units_PMC_0_eod : CGQC_units_PMC_rifleman {
+	displayName = "EOD";
+	uniformClass = "cgqc_uniform_pmct_cadpat_full";
+	backpack = "B_Kitbag_sgg";
+	weapons[] = {"cgqc_gun_pmct_ak12", "ACE_VMH3", "Binocular", "Throw", "Put"};
+	magazines[] = {"SmokeShell", "SmokeShell", "hlc_30Rnd_545x39_B_AK_Black", "hlc_30Rnd_545x39_B_AK_Black", "rhs_mag_rgd5", "hlc_30Rnd_545x39_B_AK_Black"};
+	items[] = {"cgqc_items_ifak", "ACRE_PRC343", "ItemAndroid", "ACE_Cellphone", "ACE_EarPlugs", "ACE_CableTie", "ACE_CableTie", "ACE_EntrenchingTool", "ACE_M26_Clacker", "ACE_DefusalKit", "ToolKit"};
+	linkedItems[] = {"V_PlateCarrierIAGL_oliDgtl", "rhs_altyn_visordown", "G_Balaclava_oli", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "hlc_muzzle_SF3P_762R", "rhs_acc_2dpZenit_ris", "rhs_acc_1p87"};
+};
+
 class CGQC_units_PMC_0_Medic : CGQC_units_PMC_rifleman {
 	displayName = "Medic";
 	items[] = {"cgqc_items_ifak", "ACRE_PRC343", "ItemAndroid", "ACE_Cellphone", "ACE_EarPlugs", "ACE_CableTie", "ACE_CableTie", "ACE_EntrenchingTool", "cgqc_items_medkit", "FSGm_ItemMedicBag"};

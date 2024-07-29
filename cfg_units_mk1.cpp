@@ -416,6 +416,13 @@ class CGQC_units_mk1_1_Engineer : cgqc_soldat_moderne
     backpack = "CGQC_units_mk1_1_Engineer_pack";
     editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_1_Engineer.jpg";
 };
+class CGQC_units_mk1_1_Saboteur : CGQC_units_mk1_1_Engineer {
+    displayName = "Saboteur";
+};
+class CGQC_units_mk1_1_Demolition : CGQC_units_mk1_1_Engineer {
+    displayName = "Demolition Specialist";
+};
+
 class CGQC_units_mk1_1_Medic : cgqc_soldat_moderne
 {
     faction = "CGQC";
@@ -779,25 +786,26 @@ class CGQC_units_mk2_Tank_Crew_ai : cgqc_soldat_moderne
 // == Divers ================================================================
 class CGQC_units_mk1_5_Diver_TL : CGQC_units_mk1_0_TeamLeader_Carbine
 {
-    editorSubcategory = "EdSubcat_cgqc_mk1";
+    scope = 1;
+    editorSubcategory = "EdSubcat_CGQC_mk1_dive";
     displayName = "Diver (TL)";
     uniformClass = "cgqc_uniform_mk1";
 };
 class CGQC_units_mk1_5_Diver_sniper : CGQC_units_mk1_2_Sniper_ebr
 {
-    editorSubcategory = "EdSubcat_cgqc_mk1";
+    editorSubcategory = "EdSubcat_CGQC_mk1_dive";
     displayName = "Diver (Sniper)";
     uniformClass = "cgqc_uniform_mk1";
 };
 class CGQC_units_mk1_5_Diver_Spotter : CGQC_units_mk1_2_Spotter
 {
-    editorSubcategory = "EdSubcat_cgqc_mk1";
+    editorSubcategory = "EdSubcat_CGQC_mk1_dive";
     displayName = "Diver (Spotter)";
     uniformClass = "cgqc_uniform_mk1";
 };
 class CGQC_units_mk1_5_Diver_Engineer : CGQC_units_mk1_1_Engineer
 {
-    editorSubcategory = "EdSubcat_cgqc_mk1";
+    editorSubcategory = "EdSubcat_CGQC_mk1_dive";
     displayName = "Diver (Saboteur)";
     uniformClass = "cgqc_uniform_mk1";
 };

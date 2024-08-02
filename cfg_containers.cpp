@@ -214,7 +214,7 @@ class cgqc_box_mk1_mortar : Box_NATO_WpsSpecial_F
     scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_mortar";
-    displayName = "CGQC Mk2 Mortier 60mm (1.3KM)";
+    displayName = "CGQC 60mm CSW (1.3KM)";
     ace_cargo_size = 1;  // Cargo space the object takes
     ace_cargo_canLoad = 1;
     hiddenSelectionsTextures[] = {
@@ -228,7 +228,7 @@ class cgqc_box_mk1_mortar_mk6 : Box_NATO_WpsSpecial_F
     scope = 2;
     author = "silent1";
     _generalMacro = "cgqc_box_mk1_mortar_auto";
-    displayName = "CGQC Mk2 Mortier Mk6 (4KM)";
+    displayName = "CGQC Mk6 CSW (4KM)";
     ace_cargo_size = 1;  // Cargo space the object takes
     ace_cargo_canLoad = 1;
     hiddenSelectionsTextures[] = {

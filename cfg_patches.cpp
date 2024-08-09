@@ -10,20 +10,7 @@ class CfgPatches
 		requiredVersion = 1.60;
 		// Required addons, used for setting load order.
 		// When any of the addons is missing, pop-up warning will appear when launching the game.
-		requiredAddons[] = {"CGQC",
-							"ace3painbegone",
-							"cTab",
-							"ace_medical_treatment",
-							"ace_hearing",
-							"ace_captives",
-							"ace_maptools",
-							"ace_attach",
-							"acre_sys_prc343",
-							"acre_sys_prc152",
-							"ace_trenches",
-							"ace_microdagr",
-							"ace_tagging",
-							"mas_can_lite_common"};
+		requiredAddons[] = {"CGQC"};
 		// List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content (units and groups) unlocking.
 		units[] = {
 			"cgqc_box_mk1_rolebox",

@@ -280,6 +280,7 @@ class cgqc_vic_bradley : RHS_M2A3_BUSKIII_wd
         "cgqc_2022\vehicles\cgqc_vic_bradley_3.paa",
         "cgqc_2022\vehicles\cgqc_vic_bradley_duke.paa"
     };
+
     #include "vehicles\cgqc_vic_loadout_ifv.cpp"
 };
 class cgqc_vic_wiezel : I_LT_01_scout_F

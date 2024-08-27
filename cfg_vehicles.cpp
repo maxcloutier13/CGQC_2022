@@ -246,7 +246,7 @@ class cgqc_vic_badger : B_W_APC_Wheeled_01_cannon_F
 {
     scope = 2;
     side = 1;
-    hasDriver=-1;
+    //hasDriver=-1;
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_CGQC_vic_ifv_w";
@@ -267,7 +267,7 @@ class cgqc_vic_bradley : RHS_M2A3_BUSKIII_wd
 {
     scope = 2;
     side = 1;
-    hasDriver=-1;
+    //hasDriver=-1;
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_ifv";
@@ -310,7 +310,7 @@ class cgqc_vic_brdm : rhsgref_BRDM2_HQ
 {
     scope = 2;
     side = 1;
-    hasDriver=-1;
+    //hasDriver=-1;
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_cmd";
@@ -325,7 +325,7 @@ class B_T_MBT_01_TUSK_F;
 class cgqc_vic_tank_leopard : B_T_MBT_01_TUSK_F {
     scope = 1;
     side = 1;
-    hasDriver=-1;
+    //hasDriver=-1;
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_mbt";
@@ -336,7 +336,7 @@ class O_T_MBT_04_cannon_F;
 class cgqc_vic_tank_armata : O_T_MBT_04_cannon_F {
     scope = 2;
     side = 1;
-    hasDriver=-1;
+    //hasDriver=-1;
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_mbt";
@@ -888,7 +888,7 @@ class cgqc_vic_warrior : I_APC_tracked_03_cannon_F
 {
     scope = 2;
     side = 1;
-    hasDriver=-1;
+    //hasDriver=-1;
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_ifv";
@@ -904,7 +904,7 @@ class cgqc_vic_namer : B_T_APC_Tracked_01_rcws_F
 {
     scope = 2;
     side = 1;
-    hasDriver=-1;
+    //hasDriver=-1;
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_ifv";
@@ -921,7 +921,7 @@ class cgqc_vic_odyniec : I_E_APC_tracked_03_cannon_F
 {
     scope = 2;
     side = 1;
-    hasDriver=-1;
+    //hasDriver=-1;
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_cgqc_vic_ifv";
@@ -937,7 +937,7 @@ class cgqc_vic_gorgon : B_APC_Wheeled_03_cannon_3_F
 {
     scope = 2;
     side = 1;
-    hasDriver=-1;
+    //hasDriver=-1;
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_CGQC_vic_ifv_w";
@@ -954,7 +954,7 @@ class cgqc_vic_roikat : B_T_AFV_Wheeled_01_up_cannon_F
 {
     scope = 2;
     side = 1;
-    hasDriver=-1;
+    //hasDriver=-1;
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_CGQC_vic_mbt";
@@ -970,7 +970,7 @@ class cgqc_vic_nemmera : B_T_APC_Tracked_01_CRV_F
 {
     scope = 2;
     side = 1;
-    hasDriver=-1;
+    //hasDriver=-1;
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_CGQC_vic_mbt";
@@ -986,7 +986,7 @@ class cgqc_vic_wiezelm120 : I_LT_01_cannon_F
 {
     scope = 2;
     side = 1;
-    hasDriver=-1;
+    //hasDriver=-1;
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_CGQC_vic_mbt";
@@ -1004,7 +1004,7 @@ class cgqc_vic_wiezelatgm : I_LT_01_AT_F
 {
     scope = 2;
     side = 1;
-    hasDriver=-1;
+    //hasDriver=-1;
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_CGQC_vic_mbt";
@@ -1023,7 +1023,7 @@ class cgqc_vic_roikat2 : B_T_AFV_Wheeled_01_cannon_F
 {
     scope = 2;
     side = 1;
-    hasDriver=-1;
+    //hasDriver=-1;
     author = "silent1";
     faction = "cgqc";
     editorSubcategory = "EdSubcat_CGQC_vic_mbt";

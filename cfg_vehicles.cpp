@@ -176,17 +176,17 @@ class Tank;
 class Car_F;
 class Wheeled_APC_F;
 class Tank_F;
-class B_W_Quadbike_01_F;
+class B_T_Quadbike_01_F;
 class NDS_6x6_ATV_MIL_LR;
 class rhsusf_mrzr4_d;
-class B_W_LSV_01_unarmed_F;
-class B_W_LSV_01_armed_F;
-class B_W_LSV_01_AT_F;
+class B_T_LSV_01_unarmed_F;
+class B_T_LSV_01_armed_F;
+class B_T_LSV_01_AT_F;
 class rhsusf_m998_d_s_4dr;
 class rhsusf_m1025_d_s_m2;
 class rhsusf_m1165a1_gmv_m2_m240_socom_d;
-class B_W_MRAP_01_F;
-class B_W_MRAP_01_hmg_F;
+class B_T_MRAP_01_F;
+class B_T_MRAP_01_hmg_F;
 
 // Boats
 class B_SDV_01_F;
@@ -239,10 +239,10 @@ class cgqc_plane_c130 : RHS_C130J
 };
 
 // Land vehicles
-class B_W_APC_Wheeled_01_cannon_F;
+class B_T_APC_Wheeled_01_cannon_F;
 class RHS_M2A3_BUSKIII_wd;
 class I_LT_01_scout_F;
-class cgqc_vic_badger : B_W_APC_Wheeled_01_cannon_F
+class cgqc_vic_badger : B_T_APC_Wheeled_01_cannon_F
 {
     scope = 2;
     side = 1;
@@ -346,7 +346,7 @@ class cgqc_vic_tank_armata : O_T_MBT_04_cannon_F {
 };
 
 // Unarmed -----------------------------------------------------------------------------------
-class cgqc_vic_quad : B_W_Quadbike_01_F {
+class cgqc_vic_quad : B_T_Quadbike_01_F {
     scope = 2;
     side = 1;
     author = "silent1";
@@ -479,7 +479,7 @@ class cgqc_vic_jeep_cov : cgqc_vic_jeep {
     crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };
-class cgqc_vic_dagor : B_W_LSV_01_unarmed_F {
+class cgqc_vic_dagor : B_T_LSV_01_unarmed_F {
     scope = 2;
     side = 1;
     author = "silent1";
@@ -499,7 +499,7 @@ class cgqc_vic_hmmw : rhsusf_m998_d_s_4dr {
     crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };
-class cgqc_vic_mrap : B_W_MRAP_01_F {
+class cgqc_vic_mrap : B_T_MRAP_01_F {
     scope = 2;
     side = 1;
     author = "silent1";
@@ -581,7 +581,7 @@ class cgqc_vic_mrap_M1240WU : rhsusf_m1240a1_usmc_wd {
 
 
 class rhsusf_CGRCAT1A2_M2_usmc_d;
-class rhsusf_CGRCAT1A2_M2_usmc_wda;
+class rhsusf_CGRCAT1A2_M2_usmc_wd;
 class rhsusf_CGRCAT1A2_usmc_d;
 class rhsusf_CGRCAT1A2_usmc_wd;
 class cgqc_vic_mrap_CAT1A2TAF : rhsusf_CGRCAT1A2_M2_usmc_d {
@@ -594,7 +594,7 @@ class cgqc_vic_mrap_CAT1A2TAF : rhsusf_CGRCAT1A2_M2_usmc_d {
     crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };
-class cgqc_vic_mrap_CAT1A2WAF : rhsusf_CGRCAT1A2_M2_usmc_wda {
+class cgqc_vic_mrap_CAT1A2WAF : rhsusf_CGRCAT1A2_M2_usmc_wd {
     scope = 2;
     side = 1;
     author = "silent1";
@@ -732,7 +732,7 @@ class cgqc_vic_jeep_hmg : cgqc_vic_jeep {
     crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };
-class cgqc_vic_dagor_hmg : B_W_LSV_01_armed_F {
+class cgqc_vic_dagor_hmg : B_T_LSV_01_armed_F {
     scope = 2;
     side = 1;
     author = "silent1";
@@ -742,7 +742,7 @@ class cgqc_vic_dagor_hmg : B_W_LSV_01_armed_F {
     crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };
-class cgqc_vic_dagor_at : B_W_LSV_01_AT_F {
+class cgqc_vic_dagor_at : B_T_LSV_01_AT_F {
     scope = 2;
     side = 1;
     author = "silent1";
@@ -772,7 +772,7 @@ class cgqc_vic_hmmw_armored : rhsusf_m1165a1_gmv_m2_m240_socom_d {
     crew = "CGQC_units_mk2_Rifleman_ai";
     #include "vehicles\cgqc_vic_loadout_medium.cpp"
 };
-class cgqc_vic_mrap_hmg : B_W_MRAP_01_hmg_F {
+class cgqc_vic_mrap_hmg : B_T_MRAP_01_hmg_F {
     scope = 2;
     side = 1;
     author = "silent1";

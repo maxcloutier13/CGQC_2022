@@ -19,7 +19,7 @@ class TransportItems
 	// Ammo -----------------------------------
     class _xx_cgqc_bandolier_ammo
     {
-        count = 3;
+        count = 5;
         name = "cgqc_bandolier_ammo";
     };
     // Medic Kit -----------------------------------
@@ -50,11 +50,6 @@ class TransportItems
 	{
 		count = 1;
 		name = "ACE_EntrenchingTool";
-	};
-	class _xx_ACE_microDAGR
-	{
-		count = 1;
-		name = "ACE_microDAGR";
 	};
 	class _xx_ToolKit
 	{

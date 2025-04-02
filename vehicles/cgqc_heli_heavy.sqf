@@ -35,6 +35,11 @@ class TransportItems
         count = 12;
         name = "cgqc_items_ifak";
     };
+	class _xx_ACE_bodyBag
+	{
+		count = 5;
+		name = "ACE_bodyBag";
+	};
 
 	// items ------------------------------------------------
 	class _xx_ACE_EarPlugs
@@ -44,13 +49,8 @@ class TransportItems
 	};
 	class _xx_ACE_EntrenchingTool
 	{
-		count = 5;
+		count = 2;
 		name = "ACE_EntrenchingTool";
-	};
-	class _xx_ACE_microDAGR
-	{
-		count = 5;
-		name = "ACE_microDAGR";
 	};
 	class _xx_ToolKit
 	{

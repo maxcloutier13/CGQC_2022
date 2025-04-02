@@ -51,11 +51,6 @@ class TransportItems
 		count = 2;
 		name = "ACE_EntrenchingTool";
 	};
-	class _xx_ACE_microDAGR
-	{
-		count = 2;
-		name = "ACE_microDAGR";
-	};
 	class _xx_ToolKit
 	{
 		count = 2;

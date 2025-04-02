@@ -430,7 +430,7 @@ class CGQC_units_mk1_1_Medic : cgqc_soldat_moderne
     side = 1;
     scope = 2;
     scopeCurator = 2;
-    displayName = "Medic";
+    displayName = "Squad Medic";
     attendant = 1;
     uniformClass = "cgqc_uniform_mk1";
     weapons[] = {"cgqc_gun_mk1_medic_m4a1", "cgqc_gun_glock19_wood", "cgqc_item_rangefinder", "Put", "Throw"};
@@ -546,6 +546,70 @@ class CGQC_units_mk1_2_Spotter : cgqc_soldat_moderne
     backpack = "CGQC_units_mk1_2_Sniper_pack";
     editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_2_Sniper.jpg";
 };
+
+class CGQC_units_mk1_2_mortar_portable : cgqc_soldat_moderne
+{
+    faction = "CGQC";
+    editorSubcategory = "EdSubcat_cgqc_mk1";
+    side = 1;
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "Mortar - OneMan 60mm";
+    uniformClass = "cgqc_uniform_mk1";
+    weapons[] = {"cgqc_gun_mk1_mk12", "cgqc_gun_glock19_wood", "ACE_Vector", "Put", "Throw"};
+    respawnWeapons[] = {"cgqc_gun_mk1_m200", "cgqc_gun_glock19_wood", "ACE_Vector", "Put", "Throw"};
+    items[] = {};
+    respawnItems[] = {};
+    magazines[] = {};
+    respawnMagazines[] = {};
+    linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "ACE_Vector", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_lr", "G_mas_can_balaM_T"};
+    respawnLinkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "ACE_Vector", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_lr", "G_mas_can_balaM_T"};
+    backpack = "CGQC_units_mk1_2_Sniper_pack";
+    editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_2_Sniper.jpg";
+};
+
+class CGQC_units_mk1_2_mk6_tube : cgqc_soldat_moderne
+{
+    faction = "CGQC";
+    editorSubcategory = "EdSubcat_cgqc_mk1";
+    side = 1;
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "Mortar - Mk6 tube";
+    uniformClass = "cgqc_uniform_mk1";
+    weapons[] = {"cgqc_gun_mk1_mk12", "cgqc_gun_glock19_wood", "ACE_Vector", "Put", "Throw"};
+    respawnWeapons[] = {"cgqc_gun_mk1_m200", "cgqc_gun_glock19_wood", "ACE_Vector", "Put", "Throw"};
+    items[] = {};
+    respawnItems[] = {};
+    magazines[] = {};
+    respawnMagazines[] = {};
+    linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "ACE_Vector", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_lr", "G_mas_can_balaM_T"};
+    respawnLinkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "ACE_Vector", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_lr", "G_mas_can_balaM_T"};
+    backpack = "CGQC_units_mk1_2_Sniper_pack";
+    editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_2_Sniper.jpg";
+};
+
+class CGQC_units_mk1_2_mk6_plate : cgqc_soldat_moderne
+{
+    faction = "CGQC";
+    editorSubcategory = "EdSubcat_cgqc_mk1";
+    side = 1;
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "Mortar - Mk6 Plate";
+    uniformClass = "cgqc_uniform_mk1";
+    weapons[] = {"cgqc_gun_mk1_mk12", "cgqc_gun_glock19_wood", "ACE_Vector", "Put", "Throw"};
+    respawnWeapons[] = {"cgqc_gun_mk1_m200", "cgqc_gun_glock19_wood", "ACE_Vector", "Put", "Throw"};
+    items[] = {};
+    respawnItems[] = {};
+    magazines[] = {};
+    respawnMagazines[] = {};
+    linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "ACE_Vector", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_lr", "G_mas_can_balaM_T"};
+    respawnLinkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "B_UavTerminal", "JAS_GPNVG18_blk", "ACE_Vector", "cgqc_helmet_mk1", "cgqc_vest_mk1_tan_lr", "G_mas_can_balaM_T"};
+    backpack = "CGQC_units_mk1_2_Sniper_pack";
+    editorPreview = "\CGQC_2022\pics\CGQC_units_mk1_2_Sniper.jpg";
+};
+
 // == Pilots ================================================================
 class CGQC_units_mk1_4_Pilot_heli : cgqc_soldat_moderne
 {

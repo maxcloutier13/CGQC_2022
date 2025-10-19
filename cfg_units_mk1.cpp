@@ -422,6 +422,9 @@ class CGQC_units_mk1_1_Saboteur : CGQC_units_mk1_1_Engineer {
 class CGQC_units_mk1_1_Demolition : CGQC_units_mk1_1_Engineer {
     displayName = "Demolition Specialist";
 };
+class CGQC_units_mk1_1_K9 : CGQC_units_mk1_1_Engineer {
+    displayName = "K-9 Operator";
+};
 
 class CGQC_units_mk1_1_Medic : cgqc_soldat_moderne
 {
